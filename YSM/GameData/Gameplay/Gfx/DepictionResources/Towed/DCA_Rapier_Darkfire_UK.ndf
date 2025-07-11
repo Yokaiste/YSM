@@ -1,0 +1,3 @@
+export Modele_DCA_Rapier_Darkfire_UK is TResourceMesh( Mesh="GameData:/Assets/3D/Units/UK/DCA/Towed_Rapier/Towed_Rapier_Darkfire.fbx")
+export Modele_DCA_Rapier_Darkfire_UK_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/UK/DCA/Towed_Rapier_MID/Towed_Rapier_Darkfire_MID.fbx")
+export Modele_DCA_Rapier_Darkfire_UK_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/UK/DCA/Towed_Rapier_LOW/Towed_Rapier_Darkfire_LOW.fbx")

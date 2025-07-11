@@ -1,0 +1,14 @@
+export Modele_OH58C_Scout_US is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Helico/OH_58D_Combat_Scout/OH_58C_Scout.fbx"
+)
+
+export Modele_OH58C_Scout_US_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Helico/OH_58D_Combat_Scout_MID/OH_58C_Scout_MID.fbx"
+)
+
+export Modele_OH58C_Scout_US_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Helico/OH_58D_Combat_Scout_LOW/OH_58C_Scout_LOW.fbx"
+)

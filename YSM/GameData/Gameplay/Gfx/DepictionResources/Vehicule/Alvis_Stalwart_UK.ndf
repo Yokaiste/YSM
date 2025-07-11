@@ -1,0 +1,14 @@
+export Modele_Alvis_Stalwart_UK is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Vehicule/Alvis_Stalwart/Alvis_Stalwart.fbx"
+)
+
+export Modele_Alvis_Stalwart_UK_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Vehicule/Alvis_Stalwart_MID/Alvis_Stalwart_MID.fbx"
+)
+
+export Modele_Alvis_Stalwart_UK_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Vehicule/Alvis_Stalwart_LOW/Alvis_Stalwart_LOW.fbx"
+)

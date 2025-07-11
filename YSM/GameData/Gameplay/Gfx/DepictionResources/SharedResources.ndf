@@ -1,0 +1,4 @@
+export ModelFile_Mortier_82mm_vz52_TCH is "GameData:/Assets/3D/Units/TCH/Canon/Mortier_82mm_vz52/Mortier_82mm_vz52.fbx"
+export ModelFile_Mortier_82mm_vz52_TCH_MID is "GameData:/Assets/3D/Units/TCH/Canon/Mortier_82mm_vz52_MID/Mortier_82mm_vz52_MID.fbx"
+export ModelFile_Mortier_82mm_vz52_TCH_LOW is "GameData:/Assets/3D/Units/TCH/Canon/Mortier_82mm_vz52_LOW/Mortier_82mm_vz52_LOW.fbx"
+

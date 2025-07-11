@@ -1,0 +1,17 @@
+export Modele_2K12_KUB_SOV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/DCA/2K12_KUB/2K12_KUB.fbx"
+)
+
+export Modele_2K12_KUB_SOV_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/DCA/2K12_KUB_MID/2K12_KUB_MID.fbx"
+)
+
+export Modele_2K12_KUB_SOV_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/DCA/2K12_KUB_LOW/2K12_KUB_LOW.fbx"
+)
+
+
+

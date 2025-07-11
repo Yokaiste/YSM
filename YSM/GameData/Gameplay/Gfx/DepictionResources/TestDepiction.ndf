@@ -1,0 +1,6 @@
+// TestCamo
+unnamed TResourceMesh ( Mesh="CommonData:/Assets/3D/Misc/OneMeterBox.fbx" Textures="CommonData:/Assets/3D/Misc/Camo1" )
+unnamed TResourceMesh ( Mesh="CommonData:/Assets/3D/Misc/OneMeterBox.fbx" Textures="CommonData:/Assets/3D/Misc/Camo2" )
+unnamed TResourceMesh ( Mesh="CommonData:/Assets/3D/Misc/OneMeterBox.fbx" Textures="CommonData:/Assets/3D/Misc/Camo3" )
+
+unnamed TResourceMesh ( Mesh="CommonData:/Assets/3D/Misc/BoxWithDuplicateTextureInMaterial.fbx" Textures="CommonData:/Assets/3D/Misc/Camo1" )

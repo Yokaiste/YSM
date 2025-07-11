@@ -1,0 +1,17 @@
+export Modele_M151C_RCL_NG_US is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Vehicule/M151C_RCL_NG/M151C_RCL_NG.fbx"
+)
+
+export Modele_M151C_RCL_NG_US_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Vehicule/M151C_RCL_NG_MID/M151C_RCL_NG_MID.fbx"
+)
+
+export Modele_M151C_RCL_NG_US_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Vehicule/M151C_RCL_NG_LOW/M151C_RCL_NG_LOW.fbx"
+)
+
+
+

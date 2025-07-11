@@ -1,0 +1,14 @@
+export Modele_M163_CS_US is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/DCA/M163_CS/M163_CS.fbx"
+)
+
+export Modele_M163_CS_US_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/DCA/M163_CS_MID/M163_CS_MID.fbx"
+)
+
+export Modele_M163_CS_US_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/DCA/M163_CS_LOW/M163_CS_LOW.fbx"
+)

@@ -1,0 +1,14 @@
+export Modele_AH1E_Cobra_US is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Helico/AH1E_Cobra_NG/AH1E_Cobra_NG.fbx"
+)
+
+export Modele_AH1E_Cobra_US_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Helico/AH1E_Cobra_NG_MID/AH1E_Cobra_NG_MID.fbx"
+)
+
+export Modele_AH1E_Cobra_US_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Helico/AH1E_Cobra_NG_LOW/AH1E_Cobra_NG_LOW.fbx"
+)

@@ -1,0 +1,20 @@
+export Modelfile_T54B_CMD_DDR is "GameData:/Assets/3D/Units/DDR/Char/T54B_CMD/T54B_CMD.fbx"
+export Modele_T54B_CMD_DDR is TResourceMesh
+(
+    Mesh=Modelfile_T54B_CMD_DDR
+)
+export Modelfile_T54B_CMD_DDR_MID is "GameData:/Assets/3D/Units/DDR/Char/T54B_CMD_MID/T54B_CMD_MID.fbx"
+export Modele_T54B_CMD_DDR_MID is TResourceMesh
+(
+    Mesh=Modelfile_T54B_CMD_DDR_MID
+)
+export Modelfile_T54B_CMD_DDR_LOW is "GameData:/Assets/3D/Units/DDR/Char/T54B_CMD_LOW/T54B_CMD_LOW.fbx"
+export Modele_T54B_CMD_DDR_LOW is TResourceMesh
+(
+    Mesh=Modelfile_T54B_CMD_DDR_LOW
+)
+
+export Modele_T54B_CMD_DDR_Tourelle_02 is TResourceMesh
+(
+    Mesh=ModelFile_DShK_127mm_no_ammo
+)

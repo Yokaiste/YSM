@@ -1,0 +1,20 @@
+export Modele_PT76B_CMD_Naval_POL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Char/PT_76B_CMD/PT_76B_CMD.fbx"
+    Textures="GameData:/Assets/3D/Units/POL/Char/PT_76B_CMD"
+)
+
+export Modele_PT76B_CMD_Naval_POL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Char/PT_76B_CMD_MID/PT_76B_CMD_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/POL/Char/PT_76B_CMD_MID"
+)
+
+export Modele_PT76B_CMD_Naval_POL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Char/PT_76B_CMD_LOW/PT_76B_CMD_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/POL/Char/PT_76B_CMD_LOW"
+)
+
+
+

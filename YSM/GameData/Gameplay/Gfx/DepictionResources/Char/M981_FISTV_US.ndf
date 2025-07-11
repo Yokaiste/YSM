@@ -1,0 +1,17 @@
+export Modele_M981_FISTV_US is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Antichar/M981_FISTV/M981_FISTV.fbx"
+)
+
+export Modele_M981_FISTV_US_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Antichar/M981_FISTV_MID/M981_FISTV_MID.fbx"
+)
+
+export Modele_M981_FISTV_US_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Antichar/M981_FISTV_LOW/M981_FISTV_LOW.fbx"
+)
+
+
+

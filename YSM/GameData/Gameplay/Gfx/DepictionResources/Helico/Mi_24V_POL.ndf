@@ -1,0 +1,14 @@
+export Modele_Mi_24V_POL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Helico/Mi_24V/Mi_24V.fbx"
+)
+
+export Modele_Mi_24V_POL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Helico/Mi_24V_MID/Mi_24V_MID.fbx"
+)
+
+export Modele_Mi_24V_POL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Helico/Mi_24V_LOW/Mi_24V_LOW.fbx"
+)

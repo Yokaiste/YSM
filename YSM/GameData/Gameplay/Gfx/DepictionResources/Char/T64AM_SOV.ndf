@@ -1,0 +1,19 @@
+export Modele_T64AM_SOV is TResourceMesh
+(
+    Mesh=ModelFile_T64A_SOV
+)
+
+export Modele_T64AM_SOV_MID is TResourceMesh
+(
+    Mesh=ModelFile_T64A_SOV_MID
+)
+
+export Modele_T64AM_SOV_LOW is TResourceMesh
+(
+    Mesh=ModelFile_T64A_SOV_LOW
+)
+
+export Modele_T64AM_SOV_Tourelle_02 is TResourceMesh
+(
+    Mesh=ModelFile_NSVT_no_ammo
+)

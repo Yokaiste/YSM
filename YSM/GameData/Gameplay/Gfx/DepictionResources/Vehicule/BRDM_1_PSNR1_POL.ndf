@@ -1,0 +1,19 @@
+export Modele_BRDM_1_PSNR1_POL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Vehicule/BRDM_1_PSNR/BRDM_1_PSNR.fbx"
+)
+
+export Modele_BRDM_1_PSNR1_POL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Vehicule/BRDM_1_PSNR_MID/BRDM_1_PSNR_MID.fbx"
+)
+
+export Modele_BRDM_1_PSNR1_POL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Vehicule/BRDM_1_PSNR_LOW/BRDM_1_PSNR_LOW.fbx"
+)
+
+export Modele_BRDM_1_PSNR1_POL_Tourelle_01 is TResourceMesh
+(
+    Mesh=ModelFile_DShK_127mm_t1
+)

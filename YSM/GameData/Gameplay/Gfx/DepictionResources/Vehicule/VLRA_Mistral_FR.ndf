@@ -1,0 +1,17 @@
+export Modele_VLRA_Mistral_FR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/DCA/VLRA_Mistral/VLRA_Mistral.fbx"
+)
+
+export Modele_VLRA_Mistral_FR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/DCA/VLRA_Mistral_MID/VLRA_Mistral_MID.fbx"
+)
+
+export Modele_VLRA_Mistral_FR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/DCA/VLRA_Mistral_LOW/VLRA_Mistral_LOW.fbx"
+)
+
+
+

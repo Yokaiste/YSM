@@ -1,0 +1,18 @@
+export Modele_Leopard_2A4B_CMD_NL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/NL/Char/Leopard_2A4/Leopard_2A4.fbx"
+    Textures="GameData:/Assets/3D/Units/NL/Char/Leopard_2A4_CMD"
+
+)
+
+export Modele_Leopard_2A4B_CMD_NL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/NL/Char/Leopard_2A4_MID/Leopard_2A4_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/NL/Char/Leopard_2A4_CMD_MID"
+)
+
+export Modele_Leopard_2A4B_CMD_NL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/NL/Char/Leopard_2A4_LOW/Leopard_2A4_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/NL/Char/Leopard_2A4_CMD_LOW"
+)

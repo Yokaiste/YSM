@@ -1,0 +1,19 @@
+export Modele_Su_25T_SOV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Avion/Su_25T/SU_25T.fbx"
+)
+
+export Modele_Su_25T_SOV_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Avion/Su_25T_MID/Su_25T_MID.fbx"
+)
+
+export Modele_Su_25T_SOV_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Avion/Su_25T_LOW/Su_25T_LOW.fbx"
+)
+
+export Modele_Su_25T_SOV_train is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Avion/Su_25T/SU_25T_train.fbx"
+)

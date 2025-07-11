@@ -1,0 +1,14 @@
+export Modele_Ural_4320_DDR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Vehicule/Ural_4320/Ural_4320.fbx"
+)
+
+export Modele_Ural_4320_DDR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Vehicule/Ural_4320_MID/Ural_4320_MID.fbx"
+)
+
+export Modele_Ural_4320_DDR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Vehicule/Ural_4320_LOW/Ural_4320_LOW.fbx"
+)

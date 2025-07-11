@@ -1,0 +1,3 @@
+export Modele_HMGteam_DShK_SOV is TResourceMesh( Mesh="GameData:/Assets/3D/Units/URSS/Canon/HMG_DShK_obr_38_MG/HMG_DShK_obr_38_MG.fbx")
+export Modele_HMGteam_DShK_SOV_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/URSS/Canon/HMG_DShK_obr_38_MG/HMG_DShK_obr_38_MG.fbx")
+export Modele_HMGteam_DShK_SOV_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/URSS/Canon/HMG_DShK_obr_38_MG/HMG_DShK_obr_38_MG.fbx")

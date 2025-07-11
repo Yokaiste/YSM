@@ -1,0 +1,19 @@
+export Modele_Supacat_ATMP_Javelin_LML_UK is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Vehicule/SUPACAT_ATMP_JAVELIN_LML/SUPACAT_ATMP_JAVELIN_LML.fbx"
+)
+
+export Modele_Supacat_ATMP_Javelin_LML_UK_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Vehicule/SUPACAT_ATMP_JAVELIN_LML_MID/SUPACAT_ATMP_JAVELIN_LML_MID.fbx"
+)
+
+export Modele_Supacat_ATMP_Javelin_LML_UK_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Vehicule/SUPACAT_ATMP_JAVELIN_LML_LOW/SUPACAT_ATMP_JAVELIN_LML_LOW.fbx"
+)
+
+export Modele_Supacat_ATMP_Javelin_LML_UK_Tourelle_01 is TResourceMesh
+(
+    Mesh=ModelFile_Javelin_LML_t1
+)

@@ -1,0 +1,17 @@
+export Modele_BRDM_2_POL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Vehicule/BRDM2/BRDM2.fbx"
+    Textures="GameData:/Assets/3D/Units/POL/Vehicule/BRDM2"
+)
+
+export Modele_BRDM_2_POL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Vehicule/BRDM2_MID/BRDM2_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/POL/Vehicule/BRDM2_MID"
+)
+
+export Modele_BRDM_2_POL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Vehicule/BRDM2_LOW/BRDM2_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/POL/Vehicule/BRDM2_LOW"
+)

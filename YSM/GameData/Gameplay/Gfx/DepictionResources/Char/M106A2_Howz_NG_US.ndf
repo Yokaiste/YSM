@@ -1,0 +1,22 @@
+export Modele_M106A2_Howz_NG_US is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Artillerie/M106_A2/M106_A2.fbx"
+    Textures="GameData:/Assets/3D/Units/US/Artillerie/M106_A2_NG"
+)
+
+export Modele_M106A2_Howz_NG_US_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Artillerie/M106_A2_MID/M106_A2_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/US/Artillerie/M106_A2_NG_MID"
+)
+
+export Modele_M106A2_Howz_NG_US_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Artillerie/M106_A2_LOW/M106_A2_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/US/Artillerie/M106_A2_NG_LOW"
+)
+
+export Modele_M106A2_Howz_NG_US_Tourelle_02 is TResourceMesh
+(
+    Mesh=ModelFile_M2HB_12_7mm_t2
+)

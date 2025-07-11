@@ -1,0 +1,17 @@
+export Modele_Luchs_A1_RFA is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/APC/Luchs_A1/Luchs_A1.fbx"
+)
+
+export Modele_Luchs_A1_RFA_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/APC/Luchs_A1_MID/Luchs_A1_MID.fbx"
+)
+
+export Modele_Luchs_A1_RFA_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/APC/Luchs_A1_LOW/Luchs_A1_LOW.fbx"
+)
+
+
+

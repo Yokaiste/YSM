@@ -1,0 +1,15 @@
+export Modele_FV432_MILAN_UK is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/APC/FV432_MILAN/FV432_MILAN.fbx"
+)
+
+export Modele_FV432_MILAN_UK_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/APC/FV432_MILAN/FV432_MILAN.fbx"
+)
+
+export Modele_FV432_MILAN_UK_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/APC/FV432_MILAN/FV432_MILAN.fbx"
+)
+

@@ -1,0 +1,3 @@
+export Modele_LAV_25_M1047_US_US     is TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/APC/LAV25/LAV25.fbx" )
+export Modele_LAV_25_M1047_US_US_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/APC/LAV25_MID/LAV25_MID.fbx" )
+export Modele_LAV_25_M1047_US_US_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/APC/LAV25_LOW/LAV25_LOW.fbx" )

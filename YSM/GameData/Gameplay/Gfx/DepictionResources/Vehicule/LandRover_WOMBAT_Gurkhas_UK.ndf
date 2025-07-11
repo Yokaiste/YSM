@@ -1,0 +1,17 @@
+export Modele_LandRover_WOMBAT_Gurkhas_UK is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Vehicule/LandRover_Para_WOMBAT/LandRover_Para_WOMBAT.fbx"
+)
+
+export Modele_LandRover_WOMBAT_Gurkhas_UK_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Vehicule/LandRover_Para_WOMBAT_MID/LandRover_Para_WOMBAT_MID.fbx"
+)
+
+export Modele_LandRover_WOMBAT_Gurkhas_UK_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Vehicule/LandRover_Para_WOMBAT_LOW/LandRover_Para_WOMBAT_LOW.fbx"
+)
+
+
+

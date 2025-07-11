@@ -1,0 +1,19 @@
+export Modele_TPZ_Fuchs_CMD_RFA is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/APC/TPZ_Fuchs_CMD/TPZ_Fuchs_CMD.fbx"
+)
+
+export Modele_TPZ_Fuchs_CMD_RFA_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/APC/TPZ_Fuchs_CMD_MID/TPZ_Fuchs_CMD_MID.fbx"
+)
+
+export Modele_TPZ_Fuchs_CMD_RFA_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/APC/TPZ_Fuchs_CMD_LOW/TPZ_Fuchs_CMD_LOW.fbx"
+)
+
+export Modele_TPZ_Fuchs_CMD_RFA_Tourelle_01 is TResourceMesh
+(
+    Mesh=ModelFile_MG3_t1
+)

@@ -1,0 +1,15 @@
+export ModelFile_VLTT_P4_MILAN_FR is "GameData:/Assets/3D/Units/FR/Vehicule/VLTT_P4_MILAN/VLTT_P4_MILAN.fbx"
+export Modele_VLTT_P4_MILAN_FR is TResourceMesh
+(
+    Mesh=ModelFile_VLTT_P4_MILAN_FR
+)
+export ModelFile_VLTT_P4_MILAN_FR_MID is "GameData:/Assets/3D/Units/FR/Vehicule/VLTT_P4_MILAN_MID/VLTT_P4_MILAN_MID.fbx"
+export Modele_VLTT_P4_MILAN_FR_MID is TResourceMesh
+(
+    Mesh=ModelFile_VLTT_P4_MILAN_FR_MID
+)
+export ModelFile_VLTT_P4_MILAN_FR_LOW is "GameData:/Assets/3D/Units/FR/Vehicule/VLTT_P4_MILAN_LOW/VLTT_P4_MILAN_LOW.fbx"
+export Modele_VLTT_P4_MILAN_FR_LOW is TResourceMesh
+(
+    Mesh=ModelFile_VLTT_P4_MILAN_FR_LOW
+)

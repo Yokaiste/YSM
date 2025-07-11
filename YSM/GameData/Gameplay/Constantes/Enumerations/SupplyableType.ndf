@@ -1,0 +1,15 @@
+//Correspondance : ESupplyableType.h
+///////////////////////////////////////////////////////////////////////////////////////////
+ESupplyableType_Fuel    is 0
+ESupplyableType_Weapons is 1
+ESupplyableType_Life    is 2
+
+//Correspondance : SupplyType.h
+///////////////////////////////////////////////////////////////////////////////////////////
+TSupplyType_Ammunition is 0
+TSupplyType_Health     is 1
+TSupplyType_Fuel       is 2
+TSupplyType_Critical   is 3
+TSupplyType_Supply     is 4
+TSupplyType_Length     is 5
+TSupplyType_All        is 6

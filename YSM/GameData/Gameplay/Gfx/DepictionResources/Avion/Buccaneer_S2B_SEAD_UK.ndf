@@ -1,0 +1,19 @@
+export Modele_Buccaneer_S2B_SEAD_UK is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Avion/Buccaneer_S2B_SEAD/Buccaneer_S2B_SEAD.fbx"
+)
+
+export Modele_Buccaneer_S2B_SEAD_UK_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Avion/Buccaneer_S2B_SEAD_MID/Buccaneer_S2B_SEAD_MID.fbx"
+)
+
+export Modele_Buccaneer_S2B_SEAD_UK_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Avion/Buccaneer_S2B_SEAD_LOW/Buccaneer_S2B_SEAD_LOW.fbx"
+)
+
+export Modele_Buccaneer_S2B_SEAD_UK_train is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Avion/Buccaneer_S2B_SEAD/Buccaneer_S2B_SEAD_train.fbx"
+)

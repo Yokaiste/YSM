@@ -1,0 +1,17 @@
+export Modele_Mi_8TB_reco_Marine_DDR is TResourceMesh
+(
+    Mesh=ModelFile_Mi_8TB_DDR
+    Textures="GameData:/Assets/3D/Units/DDR/Helico/Mi_8TB_reco_Marine"
+)
+
+export Modele_Mi_8TB_reco_Marine_DDR_MID is TResourceMesh
+(
+    Mesh=ModelFile_Mi_8TB_DDR_MID
+    Textures="GameData:/Assets/3D/Units/DDR/Helico/Mi_8TB_reco_Marine_MID"
+)
+
+export Modele_Mi_8TB_reco_Marine_DDR_LOW is TResourceMesh
+(
+    Mesh=ModelFile_Mi_8TB_DDR_LOW
+    Textures="GameData:/Assets/3D/Units/DDR/Helico/Mi_8TB_reco_Marine_LOW"
+)

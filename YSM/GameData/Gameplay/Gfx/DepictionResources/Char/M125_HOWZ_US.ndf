@@ -1,0 +1,15 @@
+export Modele_M125_HOWZ_US is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Artillerie/M125/M125.fbx"
+)
+
+export Modele_M125_HOWZ_US_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Artillerie/M125_MID/M125_MID.fbx"
+)
+
+export Modele_M125_HOWZ_US_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Artillerie/M125_LOW/M125_LOW.fbx"
+)
+

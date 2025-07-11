@@ -1,0 +1,3 @@
+export Modele_FAV_AGL_US     is TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/Vehicule/FAV_AGL/FAV_AGL.fbx" )
+export Modele_FAV_AGL_US_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/Vehicule/FAV_AGL_MID/FAV_AGL_MID.fbx" )
+export Modele_FAV_AGL_US_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/Vehicule/FAV_AGL_LOW/FAV_AGL_LOW.fbx" )

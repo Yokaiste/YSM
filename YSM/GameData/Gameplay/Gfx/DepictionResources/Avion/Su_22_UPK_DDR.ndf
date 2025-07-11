@@ -1,0 +1,24 @@
+export Modele_Su_22_UPK_DDR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Avion/Su_22/Su_22_UPK.fbx"
+)
+
+export Modele_Su_22_UPK_DDR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Avion/Su_22_MID/Su_22_UPK_MID.fbx"
+)
+
+export Modele_Su_22_UPK_DDR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Avion/Su_22_LOW/Su_22_UPK_LOW.fbx"
+)
+
+export Modele_Su_22_UPK_DDR_train is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Avion/Su_22/Su_22_train.fbx"
+)
+
+export Modele_Su_22_UPK_DDR_Tourelle_02 is TResourceMesh
+(
+    Mesh=ModelFile_Pod_UPK_t2
+)

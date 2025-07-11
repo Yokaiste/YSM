@@ -1,0 +1,19 @@
+export Modele_FV103_Spartan_GSR_UK is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/APC/FV103_Spartan_GSR/FV103_Spartan_GSR.fbx"
+)
+
+export Modele_FV103_Spartan_GSR_UK_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/APC/FV103_Spartan_GSR_MID/FV103_Spartan_GSR_MID.fbx"
+)
+
+export Modele_FV103_Spartan_GSR_UK_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/APC/FV103_Spartan_GSR_LOW/FV103_Spartan_GSR_LOW.fbx"
+)
+
+export Modele_FV103_Spartan_GSR_UK_Tourelle_01 is TResourceMesh
+(
+    Mesh=ModelFile_FV103_Spartan_UK_Tourelle_01
+)

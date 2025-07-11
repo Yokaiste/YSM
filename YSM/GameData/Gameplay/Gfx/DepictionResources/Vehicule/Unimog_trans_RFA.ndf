@@ -1,0 +1,14 @@
+export Modele_Unimog_trans_RFA is TResourceMesh
+(
+    Mesh=ModelFile_Unimog_S_404_RFA
+)
+
+export Modele_Unimog_trans_RFA_MID is TResourceMesh
+(
+    Mesh=ModelFile_Unimog_S_404_RFA_MID
+)
+
+export Modele_Unimog_trans_RFA_LOW is TResourceMesh
+(
+    Mesh=ModelFile_Unimog_S_404_RFA_LOW
+)

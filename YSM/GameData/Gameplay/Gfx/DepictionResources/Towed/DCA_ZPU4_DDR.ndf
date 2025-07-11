@@ -1,0 +1,3 @@
+export Modele_DCA_ZPU4_DDR is TResourceMesh( Mesh="GameData:/Assets/3D/Units/DDR/DCA/DCA_ZPU4/DCA_ZPU4.fbx")
+export Modele_DCA_ZPU4_DDR_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/DDR/DCA/DCA_ZPU4_MID/DCA_ZPU4_MID.fbx")
+export Modele_DCA_ZPU4_DDR_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/DDR/DCA/DCA_ZPU4_LOW/DCA_ZPU4_LOW.fbx")

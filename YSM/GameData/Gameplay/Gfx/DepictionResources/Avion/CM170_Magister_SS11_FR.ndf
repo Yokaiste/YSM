@@ -1,0 +1,19 @@
+export Modele_CM170_Magister_SS11_FR is TResourceMesh
+(
+    Mesh=ModelFile_CM170_Magister_FR
+)
+
+export Modele_CM170_Magister_SS11_FR_MID is TResourceMesh
+(
+    Mesh=ModelFile_CM170_Magister_FR_MID
+)
+
+export Modele_CM170_Magister_SS11_FR_LOW is TResourceMesh
+(
+    Mesh=ModelFile_CM170_Magister_FR_LOW
+)
+
+export Modele_CM170_Magister_SS11_FR_train is TResourceMesh
+(
+    Mesh=ModelFile_CM170_Magister_FR_train
+)

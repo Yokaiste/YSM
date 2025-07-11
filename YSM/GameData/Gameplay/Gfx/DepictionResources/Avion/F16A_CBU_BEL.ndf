@@ -1,0 +1,19 @@
+export Modele_F16A_CBU_BEL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Avion/F16A_CBU_BEL/F16A_CBU_BEL.fbx"
+)
+
+export Modele_F16A_CBU_BEL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Avion/F16A_CBU_BEL_MID/F16A_CBU_BEL_MID.fbx"
+)
+
+export Modele_F16A_CBU_BEL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Avion/F16A_CBU_BEL_LOW/F16A_CBU_BEL_LOW.fbx"
+)
+
+export Modele_F16A_CBU_BEL_train is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Avion/F16A_CBU_BEL/F16A_CBU_BEL_train.fbx"
+)

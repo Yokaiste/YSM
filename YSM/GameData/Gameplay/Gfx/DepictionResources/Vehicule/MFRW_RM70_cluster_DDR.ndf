@@ -1,0 +1,14 @@
+export Modele_MFRW_RM70_cluster_DDR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Artillerie/MFRW_RM70/MFRW_RM70.fbx"
+)
+
+export Modele_MFRW_RM70_cluster_DDR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Artillerie/MFRW_RM70_MID/MFRW_RM70_MID.fbx"
+)
+
+export Modele_MFRW_RM70_cluster_DDR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Artillerie/MFRW_RM70_LOW/MFRW_RM70_LOW.fbx"
+)

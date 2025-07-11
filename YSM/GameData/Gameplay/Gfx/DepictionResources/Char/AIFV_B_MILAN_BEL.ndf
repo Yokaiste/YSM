@@ -1,0 +1,14 @@
+export Modele_AIFV_B_MILAN_BEL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Antichar/AIFV_B_MILAN/AIFV_B_MILAN.fbx"
+)
+
+export Modele_AIFV_B_MILAN_BEL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Antichar/AIFV_B_MILAN_MID/AIFV_B_MILAN_MID.fbx"
+)
+
+export Modele_AIFV_B_MILAN_BEL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Antichar/AIFV_B_MILAN_LOW/AIFV_B_MILAN_LOW.fbx"
+)

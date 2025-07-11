@@ -1,0 +1,19 @@
+export Modele_BRDM_1_DDR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Vehicule/BRDM_1/BRDM_1.fbx"
+)
+
+export Modele_BRDM_1_DDR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Vehicule/BRDM_1_MID/BRDM_1_MID.fbx"
+)
+
+export Modele_BRDM_1_DDR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Vehicule/BRDM_1_LOW/BRDM_1_LOW.fbx"
+)
+
+export Modele_BRDM_1_DDR_Tourelle_01 is TResourceMesh
+(
+    Mesh=ModelFile_PKT_t1
+)

@@ -1,0 +1,15 @@
+export Modele_M551A1_TTS_Sheridan_CMD_US is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Char/M551A1_TTS_Sheridan_CMD/M551A1_TTS_Sheridan_CMD.fbx"
+)
+
+export Modele_M551A1_TTS_Sheridan_CMD_US_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Char/M551A1_TTS_Sheridan_CMD_MID/M551A1_TTS_Sheridan_CMD_MID.fbx"
+)
+
+export Modele_M551A1_TTS_Sheridan_CMD_US_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Char/M551A1_TTS_Sheridan_CMD_LOW/M551A1_TTS_Sheridan_CMD_LOW.fbx"
+)
+

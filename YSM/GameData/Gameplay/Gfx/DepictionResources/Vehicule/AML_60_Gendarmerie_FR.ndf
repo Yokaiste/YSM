@@ -1,0 +1,14 @@
+export Modele_AML_60_Gendarmerie_FR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/AML_60_Gendarmerie/AML_60_Gendarmerie.fbx"
+)
+
+export Modele_AML_60_Gendarmerie_FR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/AML_60_Gendarmerie_MID/AML_60_Gendarmerie_MID.fbx"
+)
+
+export Modele_AML_60_Gendarmerie_FR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/AML_60_Gendarmerie_LOW/AML_60_Gendarmerie_LOW.fbx"
+)

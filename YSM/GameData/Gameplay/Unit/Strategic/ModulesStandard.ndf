@@ -1,0 +1,60 @@
+ActionPointsReachModuleDescriptor is TActionPointsReachModuleDescriptor()
+IALinkToGroupModuleDescriptor is TIALinkToGroupModuleDescriptor()
+StrategicSequenceModuleDescriptor is TStrategicSequenceModuleDescriptor()
+StrategicAerialModuleDescriptor is TStrategicAerialModuleDescriptor()
+
+template StrategicFatigueModuleDescriptor [ InitialFatigue ] is TStrategicFatigueModuleDescriptor
+(
+  MaxFatigue      = ~/StrategicMaxFatiguePerUnit
+  InitialFatigue  = <InitialFatigue>
+)
+
+StrategicSelectionModuleDescriptor is TSelectionModuleDescriptor
+(
+    IsSelectable       = True
+    IsHighlightable    = True
+    HasSelectionShader = True
+    HasHighlightShader = True
+)
+
+PawnPositionModuleDescriptor is TPositionModuleDescriptor
+(
+    InGeoDb                    = True
+    ClampInWorld               = False
+    ClampOutMap                = False
+)
+
+StrategicStateEngineModuleDescriptor is TStateEngineUnitModuleDescriptor
+(
+)
+
+StrategicIdleStatusModuleDescriptor is TStrategicIdleStatusModuleDescriptor
+(
+)
+
+StrategicBuildingModuleDescriptor is TWargameBuildingModuleDescriptor
+(
+    BoundingBoxMinInLBU = $/GFX/Constantes/StrategicBuildingBoxMin
+    BoundingBoxMaxInLBU = $/GFX/Constantes/StrategicBuildingBoxMax
+)
+
+template StrategicUIModuleDescriptor [ NameToken, ProdMenuTexture ] is TPawnUIModuleDescriptor
+(
+    NameToken = <NameToken>
+    ProdMenuTexture = <ProdMenuTexture>
+)
+
+PawnAirplaneOrderConfigModuleDescriptor is TOrderConfigModuleDescriptor()
+
+PawnAirportScannerConfigurationDescriptor is TScannerConfigurationDescriptor
+(
+    VisionRangesGRU = MAP [
+        ( EVisionRange/Standard, 353.356890459 ),
+        ( EVisionRange/HighAltitude, 706.713780919 ),
+    ]
+    OpticalStrengths = MAP [
+        ( EOpticalStrength/Standard, 120.0 ),
+        ( EOpticalStrength/LowAltitude, 120.0 ),
+        ( EOpticalStrength/HighAltitude, 60.0 ),
+    ]
+)

@@ -1,0 +1,3 @@
+export Modele_AT_D44_85mm_VDV_SOV is TResourceMesh ( Mesh="GameData:/Assets/3D/Units/DDR/Canon/AT_D44_85mm/AT_D44_85mm.fbx")
+export Modele_AT_D44_85mm_VDV_SOV_MID is TResourceMesh ( Mesh="GameData:/Assets/3D/Units/DDR/Canon/AT_D44_85mm/AT_D44_85mm.fbx")
+export Modele_AT_D44_85mm_VDV_SOV_LOW is TResourceMesh ( Mesh="GameData:/Assets/3D/Units/DDR/Canon/AT_D44_85mm/AT_D44_85mm.fbx")

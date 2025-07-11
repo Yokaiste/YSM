@@ -1,0 +1,14 @@
+export Modele_M113_CV_MP_NL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/NL/APC/M113_C&V_MP/M113_C&V_MP.fbx"
+)
+
+export Modele_M113_CV_MP_NL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/NL/APC/M113_C&V_MP_MID/M113_C&V_MP_MID.fbx"
+)
+
+export Modele_M113_CV_MP_NL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/NL/APC/M113_C&V_MP_LOW/M113_C&V_MP_LOW.fbx"
+)

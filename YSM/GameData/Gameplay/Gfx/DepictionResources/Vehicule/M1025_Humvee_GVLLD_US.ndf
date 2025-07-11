@@ -1,0 +1,3 @@
+export Modele_M1025_Humvee_GVLLD_US     is TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/Vehicule/M1025_Humvee_GVLLD/M1025_Humvee_GVLLD.fbx" )
+export Modele_M1025_Humvee_GVLLD_US_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/Vehicule/M1025_Humvee_GVLLD_MID/M1025_Humvee_GVLLD_MID.fbx" )
+export Modele_M1025_Humvee_GVLLD_US_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/Vehicule/M1025_Humvee_GVLLD_LOW/M1025_Humvee_GVLLD_LOW.fbx" )

@@ -1,0 +1,3 @@
+export Modele_Mortier_2B9_Vasilek_Para_POL is TResourceMesh( Mesh="GameData:/Assets/3D/Units/URSS/Canon/2B9_Vasilek/2B9_Vasilek.fbx")
+export Modele_Mortier_2B9_Vasilek_Para_POL_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/URSS/Canon/2B9_Vasilek_MID/2B9_Vasilek_MID.fbx")
+export Modele_Mortier_2B9_Vasilek_Para_POL_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/URSS/Canon/2B9_Vasilek_LOW/2B9_Vasilek_LOW.fbx")

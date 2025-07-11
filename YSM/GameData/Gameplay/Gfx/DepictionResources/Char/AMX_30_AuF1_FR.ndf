@@ -1,0 +1,15 @@
+export Modele_AMX_30_AuF1_FR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Artillerie/AMX_30_AuF1/AMX_30_AuF1.fbx"
+)
+
+export Modele_AMX_30_AuF1_FR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Artillerie/AMX_30_AuF1_MID/AMX_30_AuF1_MID.fbx"
+)
+
+export Modele_AMX_30_AuF1_FR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Artillerie/AMX_30_AuF1_LOW/AMX_30_AuF1_LOW.fbx"
+)
+

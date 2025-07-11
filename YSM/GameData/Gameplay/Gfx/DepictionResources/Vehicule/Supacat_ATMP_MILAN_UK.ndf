@@ -1,0 +1,14 @@
+export Modele_Supacat_ATMP_MILAN_UK is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Vehicule/SUPACAT_ATMP_MILAN/SUPACAT_ATMP_MILAN.fbx"
+)
+
+export Modele_Supacat_ATMP_MILAN_UK_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Vehicule/SUPACAT_ATMP_MILAN_MID/SUPACAT_ATMP_MILAN_MID.fbx"
+)
+
+export Modele_Supacat_ATMP_MILAN_UK_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Vehicule/SUPACAT_ATMP_MILAN_LOW/SUPACAT_ATMP_MILAN_LOW.fbx"
+)

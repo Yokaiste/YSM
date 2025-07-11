@@ -1,0 +1,11 @@
+
+// CONSTANTES POUR LE GAME DESIGN
+
+unnamed TStrategicCameraConstantesDescriptor
+(
+    GoingBackDuration = 0.5             //  temps de certain mouvement de cam
+    IdleAltitude = 468000        //altitude en LBU par défaut quand on perd le controle de la camera pendant le tour de l'ia
+    FollowAltitude = 234000      //altitude en LBU mini de focus sur une/des unités (pendant la bataille ou pendant les ordres si activé)
+
+    IdleSite = -45
+)

@@ -1,0 +1,3 @@
+export Modele_HMGteam_M2HB_RIMa_FR is TResourceMesh( Mesh=ModelFile_HMGteam_M2HB_FR)
+export Modele_HMGteam_M2HB_RIMa_FR_MID is TResourceMesh( Mesh=ModelFile_HMGteam_M2HB_FR_MID)
+export Modele_HMGteam_M2HB_RIMa_FR_LOW is TResourceMesh( Mesh=ModelFile_HMGteam_M2HB_FR_LOW)

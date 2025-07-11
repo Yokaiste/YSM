@@ -1,0 +1,19 @@
+export Modele_EA6B_Prowler_US is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Avion/EA6B_Prowler/EA6B_Prowler.fbx"
+)
+
+export Modele_EA6B_Prowler_US_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Avion/EA6B_Prowler_MID/EA6B_Prowler_MID.fbx"
+)
+
+export Modele_EA6B_Prowler_US_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Avion/EA6B_Prowler_LOW/EA6B_Prowler_LOW.fbx"
+)
+
+export Modele_EA6B_Prowler_US_train is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Avion/EA6B_Prowler/EA6B_Prowler_train.fbx"
+)

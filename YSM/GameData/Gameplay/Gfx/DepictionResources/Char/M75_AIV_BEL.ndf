@@ -1,0 +1,17 @@
+export Modele_M75_AIV_BEL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/APC/M75_CMD/M75_AIV.fbx"
+    Textures="GameData:/Assets/3D/Units/BEL/APC/M75"
+)
+
+export Modele_M75_AIV_BEL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/APC/M75_CMD_MID/M75_AIV_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/BEL/APC/M75_MID"
+)
+
+export Modele_M75_AIV_BEL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/APC/M75_CMD_LOW/M75_CMD_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/BEL/APC/M75_LOW"
+)

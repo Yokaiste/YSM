@@ -1,0 +1,7 @@
+export ModelFile_AMX_30_B2_Brennus_FR     is 'GameData:/Assets/3D/Units/FR/Char/AMX_30B2_Brennus/AMX_30B2_Brennus.fbx'
+export ModelFile_AMX_30_B2_Brennus_FR_MID is 'GameData:/Assets/3D/Units/FR/Char/AMX_30B2_Brennus_MID/AMX_30B2_Brennus_MID.fbx'
+export ModelFile_AMX_30_B2_Brennus_FR_LOW is 'GameData:/Assets/3D/Units/FR/Char/AMX_30B2_Brennus_LOW/AMX_30B2_Brennus_LOW.fbx'
+
+export Modele_AMX_30_B2_Brennus_FR     is TResourceMesh( Mesh=ModelFile_AMX_30_B2_Brennus_FR )
+export Modele_AMX_30_B2_Brennus_FR_MID is TResourceMesh( Mesh=ModelFile_AMX_30_B2_Brennus_FR_MID )
+export Modele_AMX_30_B2_Brennus_FR_LOW is TResourceMesh( Mesh=ModelFile_AMX_30_B2_Brennus_FR_LOW )

@@ -1,0 +1,20 @@
+export ModelFile_T64B1_SOV is "GameData:/Assets/3D/Units/URSS/Char/T64B1/T64B1.fbx"
+export Modele_T64B1_SOV is TResourceMesh
+(
+    Mesh=ModelFile_T64B1_SOV
+)
+export ModelFile_T64B1_SOV_MID is "GameData:/Assets/3D/Units/URSS/Char/T64B1_MID/T64B1_MID.fbx"
+export Modele_T64B1_SOV_MID is TResourceMesh
+(
+    Mesh=ModelFile_T64B1_SOV_MID
+)
+export ModelFile_T64B1_SOV_LOW is "GameData:/Assets/3D/Units/URSS/Char/T64B1_LOW/T64B1_LOW.fbx"
+export Modele_T64B1_SOV_LOW is TResourceMesh
+(
+    Mesh=ModelFile_T64B1_SOV_LOW
+)
+
+export Modele_T64B1_SOV_Tourelle_02 is TResourceMesh
+(
+    Mesh=ModelFile_NSVT_no_ammo
+)

@@ -1,0 +1,14 @@
+export Modele_W50_LA_A_DDR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Vehicule/W50_LA_A_truck/W50_LA_A_truck.fbx"
+)
+
+export Modele_W50_LA_A_DDR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Vehicule/W50_LA_A_truck_MID/W50_LA_A_truck_MID.fbx"
+)
+
+export Modele_W50_LA_A_DDR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Vehicule/W50_LA_A_truck_LOW/W50_LA_A_truck_LOW.fbx"
+)

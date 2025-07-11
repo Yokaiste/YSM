@@ -1,0 +1,17 @@
+export Modele_Alouette_III_trans_NL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Helico/Alouette_III/Alouette_III.fbx"
+    Textures="GameData:/Assets/3D/Units/NL/Helico/Alouette_III"
+)
+
+export Modele_Alouette_III_trans_NL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Helico/Alouette_III_MID/Alouette_III_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/NL/Helico/Alouette_III_MID"
+)
+
+export Modele_Alouette_III_trans_NL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Helico/Alouette_III_LOW/Alouette_III_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/NL/Helico/Alouette_III_LOW"
+)

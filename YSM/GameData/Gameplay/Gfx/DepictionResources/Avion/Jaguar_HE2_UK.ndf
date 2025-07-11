@@ -1,0 +1,19 @@
+export Modele_Jaguar_HE2_UK is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Avion/Jaguar/Jaguar.fbx"
+)
+
+export Modele_Jaguar_HE2_UK_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Avion/Jaguar_MID/Jaguar_MID.fbx"
+)
+
+export Modele_Jaguar_HE2_UK_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Avion/Jaguar_LOW/Jaguar_LOW.fbx"
+)
+
+export Modele_Jaguar_HE2_UK_train is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Avion/Jaguar/Jaguar_train.fbx"
+)

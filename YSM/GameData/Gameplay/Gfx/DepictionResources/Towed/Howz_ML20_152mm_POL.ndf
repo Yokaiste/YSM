@@ -1,0 +1,3 @@
+export Modele_Howz_ML20_152mm_POL is TResourceMesh( Mesh="GameData:/Assets/3D/Units/POL/Canon/Howz_152mm_ML20/Howz_152mm_ML20.fbx")
+export Modele_Howz_ML20_152mm_POL_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/POL/Canon/Howz_152mm_ML20/Howz_152mm_ML20.fbx")
+export Modele_Howz_ML20_152mm_POL_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/POL/Canon/Howz_152mm_ML20/Howz_152mm_ML20.fbx")

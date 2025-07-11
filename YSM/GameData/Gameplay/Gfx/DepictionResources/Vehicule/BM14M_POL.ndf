@@ -1,0 +1,14 @@
+export Modele_BM14M_POL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Artillerie/BM14M/BM14M.fbx"
+)
+
+export Modele_BM14M_POL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Artillerie/BM14M_MID/BM14M_MID.fbx"
+)
+
+export Modele_BM14M_POL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Artillerie/BM14M_LOW/BM14M_LOW.fbx"
+)

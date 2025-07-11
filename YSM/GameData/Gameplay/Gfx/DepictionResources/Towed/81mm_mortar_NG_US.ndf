@@ -1,0 +1,3 @@
+export Modele_81mm_mortar_NG_US is TResourceMesh ( Mesh="GameData:/Assets/3D/Units/UK/Canon/81mm_mortar/81mm_mortar.fbx")
+export Modele_81mm_mortar_NG_US_MID is TResourceMesh ( Mesh="GameData:/Assets/3D/Units/UK/Canon/81mm_mortar_MID/81mm_mortar_MID.fbx")
+export Modele_81mm_mortar_NG_US_LOW is TResourceMesh ( Mesh="GameData:/Assets/3D/Units/UK/Canon/81mm_mortar_LOW/81mm_mortar_LOW.fbx")

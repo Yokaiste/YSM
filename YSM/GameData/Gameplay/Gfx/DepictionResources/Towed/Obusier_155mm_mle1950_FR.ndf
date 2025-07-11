@@ -1,0 +1,3 @@
+export Modele_Obusier_155mm_mle1950_FR is TResourceMesh( Mesh="GameData:/Assets/3D/Units/FR/Canon/Obusier_155mm_mle1950/Obusier_155mm_mle1950.fbx")
+export Modele_Obusier_155mm_mle1950_FR_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/FR/Canon/Obusier_155mm_mle1950_MID/Obusier_155mm_mle1950_MID.fbx")
+export Modele_Obusier_155mm_mle1950_FR_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/FR/Canon/Obusier_155mm_mle1950_LOW/Obusier_155mm_mle1950_LOW.fbx")

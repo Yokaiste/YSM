@@ -1,0 +1,3 @@
+export Modele_MLRS_WP_8z_POL is TResourceMesh( Mesh="GameData:/Assets/3D/Units/POL/Canon/MLRS_WP_8Z/MLRS_WP_8Z.fbx")
+export Modele_MLRS_WP_8z_POL_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/POL/Canon/MLRS_WP_8Z_MID/MLRS_WP_8Z_MID.fbx")
+export Modele_MLRS_WP_8z_POL_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/POL/Canon/MLRS_WP_8Z_LOW/MLRS_WP_8Z_LOW.fbx")

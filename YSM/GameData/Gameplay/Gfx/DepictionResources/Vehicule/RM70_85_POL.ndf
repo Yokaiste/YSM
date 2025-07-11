@@ -1,0 +1,16 @@
+export Modele_RM70_85_POL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Artillerie/RM70_85/RM70_85.fbx"
+)
+
+export Modele_RM70_85_POL_MID is TResourceMesh
+(
+    Mesh=ModelFile_RM70_85_DDR_MID
+    Textures="GameData:/Assets/3D/Units/POL/Artillerie/RM70_85_MID"
+)
+
+export Modele_RM70_85_POL_LOW is TResourceMesh
+(
+    Mesh=ModelFile_RM70_85_DDR_LOW
+    Textures="GameData:/Assets/3D/Units/POL/Artillerie/RM70_85_LOW"
+)

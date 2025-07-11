@@ -1,0 +1,14 @@
+export Modele_VW_T2b_MP_BEL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Vehicule/VW_T2b_MP/VW_T2b_MP.fbx"
+)
+
+export Modele_VW_T2b_MP_BEL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Vehicule/VW_T2b_MP_MID/VW_T2b_MP_MID.fbx"
+)
+
+export Modele_VW_T2b_MP_BEL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Vehicule/VW_T2b_MP_LOW/VW_T2b_MP_LOW.fbx"
+)

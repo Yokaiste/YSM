@@ -1,0 +1,3 @@
+export Modele_Howz_L118_105mm_LUX is TResourceMesh( Mesh="GameData:/Assets/3D/Units/UK/Canon/L118_Light_Gun/L118_Light_Gun.fbx")
+export Modele_Howz_L118_105mm_LUX_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/UK/Canon/L118_Light_Gun_MID/L118_Light_Gun_MID.fbx")
+export Modele_Howz_L118_105mm_LUX_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/UK/Canon/L118_Light_Gun_LOW/L118_Light_Gun_LOW.fbx")

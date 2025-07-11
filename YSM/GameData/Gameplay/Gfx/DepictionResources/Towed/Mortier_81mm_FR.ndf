@@ -1,0 +1,3 @@
+export Modele_Mortier_81mm_FR is TResourceMesh( Mesh="GameData:/Assets/3D/Units/FR/Artillerie/VAB_Mortar_81/Mortier_81mm_MO81_61C.fbx")
+export Modele_Mortier_81mm_FR_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/FR/Artillerie/VAB_Mortar_81_MID/Mortier_81mm_MO81_61C_MID.fbx")
+export Modele_Mortier_81mm_FR_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/FR/Artillerie/VAB_Mortar_81_LOW/Mortier_81mm_MO81_61C_LOW.fbx")

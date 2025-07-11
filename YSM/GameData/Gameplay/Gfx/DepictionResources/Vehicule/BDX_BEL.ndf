@@ -1,0 +1,17 @@
+export Modele_BDX_BEL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Vehicule/BDX/BDX.fbx"
+)
+
+export Modele_BDX_BEL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Vehicule/BDX_MID/BDX_MID.fbx"
+)
+
+export Modele_BDX_BEL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Vehicule/BDX_LOW/BDX_LOW.fbx"
+)
+
+
+

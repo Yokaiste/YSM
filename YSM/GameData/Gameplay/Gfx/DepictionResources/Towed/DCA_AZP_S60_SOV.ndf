@@ -1,0 +1,3 @@
+export Modele_DCA_AZP_S60_SOV is TResourceMesh( Mesh=ModelFile_DCA_AZP_S60_DDR Textures="GameData:/Assets/3D/Units/POL/Canon/DCA_AZP_S60")
+export Modele_DCA_AZP_S60_SOV_MID is TResourceMesh( Mesh=ModelFile_DCA_AZP_S60_DDR_MID Textures="GameData:/Assets/3D/Units/POL/Canon/DCA_AZP_S60_MID")
+export Modele_DCA_AZP_S60_SOV_LOW is TResourceMesh( Mesh=ModelFile_DCA_AZP_S60_DDR_LOW Textures="GameData:/Assets/3D/Units/POL/Canon/DCA_AZP_S60_LOW")

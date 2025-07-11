@@ -1,0 +1,3 @@
+export Modele_FH70_155mm_RFA is TResourceMesh( Mesh="GameData:/Assets/3D/Units/RFA/Canon/FH70_155mm/FH70_155mm.fbx")
+export Modele_FH70_155mm_RFA_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/RFA/Canon/FH70_155mm_MID/FH70_155mm_MID.fbx")
+export Modele_FH70_155mm_RFA_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/RFA/Canon/FH70_155mm_LOW/FH70_155mm_LOW.fbx")

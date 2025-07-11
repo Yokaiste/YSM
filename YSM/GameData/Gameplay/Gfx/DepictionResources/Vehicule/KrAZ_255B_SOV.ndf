@@ -1,0 +1,14 @@
+export Modele_KrAZ_255B_SOV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Vehicule/KrAZ_255B/KrAZ_255B.fbx"
+)
+
+export Modele_KrAZ_255B_SOV_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Vehicule/KrAZ_255B/KrAZ_255B.fbx"
+)
+
+export Modele_KrAZ_255B_SOV_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Vehicule/KrAZ_255B/KrAZ_255B.fbx"
+)

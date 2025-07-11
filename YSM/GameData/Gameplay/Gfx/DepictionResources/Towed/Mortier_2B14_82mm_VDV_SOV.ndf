@@ -1,0 +1,3 @@
+export Modele_Mortier_2B14_82mm_VDV_SOV is TResourceMesh( Mesh=ModelFile_Mortier_2B14_82mm_SOV)
+export Modele_Mortier_2B14_82mm_VDV_SOV_MID is TResourceMesh( Mesh=ModelFile_Mortier_2B14_82mm_SOV_MID)
+export Modele_Mortier_2B14_82mm_VDV_SOV_LOW is TResourceMesh( Mesh=ModelFile_Mortier_2B14_82mm_SOV_LOW)

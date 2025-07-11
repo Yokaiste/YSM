@@ -1,0 +1,14 @@
+export Modele_2S3M1_Akatsiya_SOV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Artillerie/2S3M1_Akatsiya/2S3M_Akatsiya.fbx"
+)
+
+export Modele_2S3M1_Akatsiya_SOV_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Artillerie/2S3M1_Akatsiya/2S3M_Akatsiya.fbx"
+)
+
+export Modele_2S3M1_Akatsiya_SOV_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Artillerie/2S3M1_Akatsiya/2S3M_Akatsiya.fbx"
+)

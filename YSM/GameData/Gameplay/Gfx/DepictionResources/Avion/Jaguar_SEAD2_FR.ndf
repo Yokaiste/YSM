@@ -1,0 +1,19 @@
+export Modele_Jaguar_SEAD2_FR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Avion/Jaguar_SEAD/Jaguar_A_SEAD_2.fbx"
+)
+
+export Modele_Jaguar_SEAD2_FR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Avion/Jaguar_SEAD_MID/Jaguar_A_SEAD_2_MID.fbx"
+)
+
+export Modele_Jaguar_SEAD2_FR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Avion/Jaguar_SEAD_LOW/Jaguar_A_SEAD_2_LOW.fbx"
+)
+
+export Modele_Jaguar_SEAD2_FR_train is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Avion/Jaguar_SEAD/Jaguar_A_train.fbx"
+)

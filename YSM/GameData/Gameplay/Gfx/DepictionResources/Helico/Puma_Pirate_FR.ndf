@@ -1,0 +1,14 @@
+export Modele_Puma_Pirate_FR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Helico/Puma_Pirate/Puma_Pirate.fbx"
+)
+
+export Modele_Puma_Pirate_FR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Helico/Puma_Pirate_MID/Puma_Pirate_MID.fbx"
+)
+
+export Modele_Puma_Pirate_FR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Helico/Puma_Pirate_LOW/Puma_Pirate_LOW.fbx"
+)

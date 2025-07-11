@@ -1,0 +1,76 @@
+//------------------------------------------------------------------------------
+//******************************************************************************
+//------------------------------------------------------------------------------
+export Rien is TResourceMesh
+(
+    Mesh="CommonData:/Assets/3D/Misc/Rien.fbx"
+)
+//------------------------------------------------------------------------------
+//--------------------Socle différent pour chaque camp--------------------------
+//------------------------------------------------------------------------------
+export MeshModele_Socle_US is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/Common/Strategic/Socle_USA.fbx"
+)
+export MeshModele_Socle_RFA is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/Common/Strategic/Socle_RFA.fbx"
+)
+export MeshModele_Socle_SOV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/Common/Strategic/Socle_SOV.fbx"
+)
+export MeshModele_Socle_DDR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/Common/Strategic/Socle_DDR.fbx"
+)
+export MeshModele_Socle_UK is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/Common/Strategic/Socle_UK.fbx"
+)
+export MeshModele_Socle_BEL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/Common/Strategic/Socle_BEL.fbx"
+)
+export MeshModele_Socle_NL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/Common/Strategic/Socle_NL.fbx"
+)
+export MeshModele_Socle_POL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/Common/Strategic/Socle_POL.fbx"
+)
+export MeshModele_Socle_CAN is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/Common/Strategic/Socle_CAN.fbx"
+)
+export MeshModele_Socle_ESP is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/Common/Strategic/Socle_ESP.fbx"
+)
+export MeshModele_Socle_FR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/Common/Strategic/Socle_FR.fbx"
+)
+export MeshModele_Socle_TCH is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/Common/Strategic/Socle_TCH.fbx"
+)
+//------------------------------------------------------------------------------
+//--------------------3 tailles différentes pour la tige------------------------
+//------------------------------------------------------------------------------
+export MeshModele_Tige_longue is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/Common/Strategic/Tige_longue.fbx"
+)
+export MeshModele_Tige_courte is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/Common/Strategic/Tige_courte.fbx"
+)
+export MeshModele_Tige_moyenne is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/Common/Strategic/Tige_moyenne.fbx"
+)
+//------------------------------------------------------------------------------
+//******************************************************************************
+//------------------------------------------------------------------------------

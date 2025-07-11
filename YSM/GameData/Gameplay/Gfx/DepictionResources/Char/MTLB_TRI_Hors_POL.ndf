@@ -1,0 +1,14 @@
+export Modele_MTLB_TRI_Hors_POL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/APC/MTLB_TRI_HORS/MTLB_TRI_HORS.fbx"
+)
+
+export Modele_MTLB_TRI_Hors_POL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/APC/MTLB_TRI_HORS_MID/MTLB_TRI_HORS_MID.fbx"
+)
+
+export Modele_MTLB_TRI_Hors_POL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/APC/MTLB_TRI_HORS_LOW/MTLB_TRI_HORS_LOW.fbx"
+)

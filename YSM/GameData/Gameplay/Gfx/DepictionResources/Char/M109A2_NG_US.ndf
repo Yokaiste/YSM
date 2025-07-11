@@ -1,0 +1,19 @@
+export Modele_M109A2_NG_US is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Artillerie/M109_A2_NG/M109_A2.fbx"
+)
+
+export Modele_M109A2_NG_US_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Artillerie/M109_A2_NG_MID/M109_A2_MID.fbx"
+)
+
+export Modele_M109A2_NG_US_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Artillerie/M109_A2_NG_LOW/M109_A2_LOW.fbx"
+)
+
+export Modele_M109A2_NG_US_Tourelle_02 is TResourceMesh
+(
+    Mesh=ModelFile_M2HB_12_7mm_t2
+)

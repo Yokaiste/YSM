@@ -1,0 +1,19 @@
+export Modele_Super_Etendard_CLU_FR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Avion/Super_Etendard/Super_Etendard.fbx"
+)
+
+export Modele_Super_Etendard_CLU_FR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Avion/Super_Etendard_MID/Super_Etendard_MID.fbx"
+)
+
+export Modele_Super_Etendard_CLU_FR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Avion/Super_Etendard_LOW/Super_Etendard_LOW.fbx"
+)
+
+export Modele_Super_Etendard_CLU_FR_train is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Avion/Super_Etendard/Super_Etendard_train.fbx"
+)

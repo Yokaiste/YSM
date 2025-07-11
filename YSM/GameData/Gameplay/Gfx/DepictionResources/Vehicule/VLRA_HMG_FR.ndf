@@ -1,0 +1,14 @@
+export Modele_VLRA_HMG_FR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/VLRA_HMG/VLRA_HMG.fbx"
+)
+
+export Modele_VLRA_HMG_FR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/VLRA_HMG_MID/VLRA_HMG_MID.fbx"
+)
+
+export Modele_VLRA_HMG_FR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/VLRA_HMG_LOW/VLRA_HMG_LOW.fbx"
+)

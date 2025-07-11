@@ -1,0 +1,19 @@
+export CaptureCommandZone_TestAuto_Strategy is TIAGeneralStrategy
+(
+    StrategyName = "CczTAStrat"
+    FirstGenerator = TestAuto_CommandCaptureZone
+    TransitionList =[]
+)
+
+
+export TestAuto_CommandCaptureZone is TSequenceGeneratorDescriptor
+(
+
+    GeneratorList =
+    [
+        ~/CaptureAllZoneObjectif_OnlyTestAuto,
+        ~/Attack_Objectives_OnlyTestAuto,
+        ~/Attack_Objectives_OnlyTestAuto,
+        ~/Attack_Objectives_OnlyTestAuto,
+    ]
+)

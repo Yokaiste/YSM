@@ -1,0 +1,3 @@
+export Modele_ATteam_RCL_M40A1_RFA is TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/APC/M113_ACAV/M40A1.fbx")
+export Modele_ATteam_RCL_M40A1_RFA_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/APC/M113_ACAV_MID/M40A1_MID.fbx")
+export Modele_ATteam_RCL_M40A1_RFA_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/APC/M113_ACAV_LOW/M40A1_LOW.fbx")

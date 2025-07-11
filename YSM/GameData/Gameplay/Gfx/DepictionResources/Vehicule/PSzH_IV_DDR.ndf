@@ -1,0 +1,14 @@
+export Modele_PSzH_IV_DDR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Vehicule/PSzH_IV/PSzH_IV.fbx"
+)
+
+export Modele_PSzH_IV_DDR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Vehicule/PSzH_IV_MID/PSzH_IV_MID.fbx"
+)
+
+export Modele_PSzH_IV_DDR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Vehicule/PSzH_IV_LOW/PSzH_IV_LOW.fbx"
+)

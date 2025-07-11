@@ -1,0 +1,14 @@
+export Modele_Star_266_supply_POL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Vehicule/Star_266/Star_266.fbx"
+)
+
+export Modele_Star_266_supply_POL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Vehicule/Star_266_MID/Star_266_MID.fbx"
+)
+
+export Modele_Star_266_supply_POL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Vehicule/Star_266_LOW/Star_266_LOW.fbx"
+)

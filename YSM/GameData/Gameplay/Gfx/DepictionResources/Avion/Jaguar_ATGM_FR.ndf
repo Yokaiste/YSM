@@ -1,0 +1,20 @@
+export ModelFile_Jaguar_ATGM_FR is "GameData:/Assets/3D/Units/FR/Avion/Jaguar_A/Jaguar_A_ATGM.fbx"
+export Modele_Jaguar_ATGM_FR is TResourceMesh
+(
+    Mesh=ModelFile_Jaguar_ATGM_FR
+)
+export ModelFile_Jaguar_ATGM_FR_MID is "GameData:/Assets/3D/Units/FR/Avion/Jaguar_A_MID/Jaguar_A_ATGM_MID.fbx"
+export Modele_Jaguar_ATGM_FR_MID is TResourceMesh
+(
+    Mesh=ModelFile_Jaguar_ATGM_FR_MID
+)
+export ModelFile_Jaguar_ATGM_FR_LOW is "GameData:/Assets/3D/Units/FR/Avion/Jaguar_A_LOW/Jaguar_A_ATGM_LOW.fbx"
+export Modele_Jaguar_ATGM_FR_LOW is TResourceMesh
+(
+    Mesh=ModelFile_Jaguar_ATGM_FR_LOW
+)
+export ModelFile_Jaguar_ATGM_FR_train is "GameData:/Assets/3D/Units/FR/Avion/Jaguar_A/Jaguar_A_train.fbx"
+export Modele_Jaguar_ATGM_FR_train is TResourceMesh
+(
+    Mesh=ModelFile_Jaguar_ATGM_FR_train
+)

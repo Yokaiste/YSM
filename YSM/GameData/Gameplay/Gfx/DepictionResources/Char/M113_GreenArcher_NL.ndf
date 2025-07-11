@@ -1,0 +1,20 @@
+export Modele_M113_GreenArcher_NL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/APC/M113_GreenArcher/M113_GreenArcher.fbx"
+    Textures="GameData:/Assets/3D/Units/NL/APC/M113_GreenArcher"
+)
+
+export Modele_M113_GreenArcher_NL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/APC/M113_GreenArcher_MID/M113_GreenArcher_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/NL/APC/M113_GreenArcher_MID"
+)
+
+export Modele_M113_GreenArcher_NL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/APC/M113_GreenArcher_LOW/M113_GreenArcher_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/NL/APC/M113_GreenArcher_LOW"
+)
+
+
+

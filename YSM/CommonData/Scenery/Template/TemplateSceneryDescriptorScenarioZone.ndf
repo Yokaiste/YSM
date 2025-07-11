@@ -1,0 +1,81 @@
+// %BEGIN_WATCH_BLOCK% vivien
+//-----------------------------------------------------------------------------
+//*****************************************************************************
+//-----------------------------------------------------------------------------
+template SceneryDescriptor_ScenarioZone
+[
+    RegistrationName         : string,
+    ColorCode                : color = RGBA[0, 0, 0, 0],
+
+    SymbolDatabaseProxy,
+    Layer                    = nil,
+
+    SurfaceColor             : color,
+    BorderWidthInLBU         : float,
+    BorderColor              : color,
+]
+is TSceneryDescriptorSurfaceWithBorder
+(
+    RegistrationName         = <RegistrationName>
+    SymbolDatabaseProxy      = <SymbolDatabaseProxy>
+    ColorCode                = <ColorCode>
+
+    Surface                  = TSceneryDescriptorTriangleSurface
+    (
+        Color                = <SurfaceColor>
+        MeshBucketHandler    = $/SceneryBase/SceneryMeshBucketHandler_VectorielArea
+
+        Mode                 = SDMode_Zone
+
+        Layer                = <Layer>
+    )
+
+    Border                   = TSceneryDescriptorBezierTriangleString
+    (
+        Color                = <BorderColor>
+        WidthInLBU           = <BorderWidthInLBU>
+        BezierMaxErrorInLBU  = 2.32558139535
+        MeshBucketHandler    = $/SceneryBase/SceneryMeshBucketHandler_TriangleString
+
+        Mode                 = SDMode_Zone
+
+        Layer                = <Layer>
+    )
+)
+//-----------------------------------------------------------------------------
+template SceneryDescriptor_ScenarioZone_WithAddOn
+[
+    RegistrationName         : string,
+    ColorCode                : color = RGBA[0, 0, 0, 0],
+
+    SymbolDatabaseProxy,
+    Layer                    = nil,
+
+    SurfaceColor             : color,
+    BorderWidthInLBU         : float,
+    BorderColor              : color,
+
+    AddOn                    : TLevelBuildItemAddOn_Name,
+] is TSceneryDescriptorTagAsSurface
+(
+    RegistrationName = <RegistrationName>
+    SymbolDatabaseProxy = <SymbolDatabaseProxy>
+    ColorCode = <ColorCode>
+    Layer = <Layer>
+
+    AddOn = <AddOn>
+
+    SurfaceFeedback = SceneryDescriptor_ScenarioZone
+    (
+        RegistrationName = ''
+        SymbolDatabaseProxy = nil
+
+        SurfaceColor = <SurfaceColor>
+        BorderWidthInLBU = <BorderWidthInLBU>
+        BorderColor = <BorderColor>
+    )
+)
+//-----------------------------------------------------------------------------
+//*****************************************************************************
+//-----------------------------------------------------------------------------
+// %END_WATCH_BLOCK%

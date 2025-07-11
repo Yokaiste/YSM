@@ -1,0 +1,17 @@
+export Modele_M901_TOW_US is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Antichar/M901_ITV/M901_ITV.fbx"
+)
+
+export Modele_M901_TOW_US_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Antichar/M901_ITV_MID/M901_ITV_MID.fbx"
+)
+
+export Modele_M901_TOW_US_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Antichar/M901_ITV_LOW/M901_ITV_LOW.fbx"
+)
+
+
+

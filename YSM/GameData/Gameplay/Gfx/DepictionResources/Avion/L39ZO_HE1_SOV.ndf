@@ -1,0 +1,19 @@
+export Modele_L39ZO_HE1_SOV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Avion/L39ZO/L39ZO.fbx"
+)
+
+export Modele_L39ZO_HE1_SOV_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Avion/L39ZO_MID/L39ZO_MID.fbx"
+)
+
+export Modele_L39ZO_HE1_SOV_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Avion/L39ZO_LOW/L39ZO_LOW.fbx"
+)
+
+export Modele_L39ZO_HE1_SOV_train is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Avion/L39ZO/L39ZO_train.fbx"
+)

@@ -1,0 +1,3 @@
+export Modele_DCA_I_Hawk_RFA is TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/DCA/DCA_I_Hawk/DCA_I_Hawk.fbx")
+export Modele_DCA_I_Hawk_RFA_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/DCA/DCA_I_Hawk_MID/DCA_I_Hawk_MID.fbx")
+export Modele_DCA_I_Hawk_RFA_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/DCA/DCA_I_Hawk_LOW/DCA_I_Hawk_LOW.fbx")

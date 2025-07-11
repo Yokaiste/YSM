@@ -1,0 +1,17 @@
+export Modele_BM24M_SOV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Artillerie/BM24M/BM24M.fbx"
+    Textures="GameData:/Assets/3D/Units/URSS/Artillerie/BM24M"
+)
+
+export Modele_BM24M_SOV_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Artillerie/BM21_Grad_MID/BM21_Grad_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/URSS/Artillerie/BM21_Grad_MID"
+)
+
+export Modele_BM24M_SOV_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Artillerie/BM21_Grad_LOW/BM21_Grad_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/URSS/Artillerie/BM21_Grad_LOW"
+)

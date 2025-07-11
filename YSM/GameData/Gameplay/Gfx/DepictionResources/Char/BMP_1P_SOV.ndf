@@ -1,0 +1,14 @@
+export Modele_BMP_1P_SOV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/APC/BMP_1P/BMP_1P.fbx"
+)
+
+export Modele_BMP_1P_SOV_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/APC/BMP_1P_MID/BMP_1P_MID.fbx"
+)
+
+export Modele_BMP_1P_SOV_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/APC/BMP_1P_LOW/BMP_1P_LOW.fbx"
+)

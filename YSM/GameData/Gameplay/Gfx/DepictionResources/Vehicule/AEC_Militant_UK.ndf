@@ -1,0 +1,7 @@
+Modele_AEC_Militant_UK_Path is "GameData:/Assets/3D/Units/UK/Vehicule/AEC_Militant"
+
+export Modele_AEC_Militant_UK     is TResourceMesh ( Mesh=Modele_AEC_Militant_UK_Path+"/AEC_Militant.fbx" )
+export Modele_AEC_Militant_UK_MID is TResourceMesh ( Mesh=Modele_AEC_Militant_UK_Path+"/AEC_Militant_MID.fbx" )
+export Modele_AEC_Militant_UK_LOW is TResourceMesh ( Mesh=Modele_AEC_Militant_UK_Path+"/AEC_Militant_LOW.fbx" )
+
+

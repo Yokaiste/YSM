@@ -1,0 +1,162 @@
+//------------------------------------------------------------------------------
+//******************************************************************************
+//------------------------------------------------------------------------------
+unnamed SceneryDescriptor_ScenarioZone_WithAddOn
+(
+    RegistrationName         = "Command_Zone"
+    SymbolDatabaseProxy      = $/M3D/Scene/LevelDesignSymbolDatabaseProxy
+    Layer                    = $/SceneryDBEditor/CommandZoneLayer
+
+    SurfaceColor             = [183,164,82,10]
+    BorderWidthInLBU         = 15.3488372093
+    BorderColor              = [183,164,82,180]
+
+    AddOn                    = TGameDesignAddOn_CommandPoints
+    (
+        Ranking              = 'CommandPoints'
+    )
+)
+//------------------------------------------------------------------------------
+//******************************************************************************
+//------------------------------------------------------------------------------
+template SceneryDescriptor_TexturedSurface
+[
+    RegistrationName : string,
+    Texture : string,
+    TilingLBU : float,
+    Mode : int,
+] is TSceneryDescriptorTexturedSurface
+(
+    Mode = <Mode>
+
+    MeshBucketHandler = TSceneryMeshBucketHandler
+    (
+        RenderLayerSelector = TRenderLayerSelector (RenderLayerName = 'Calque_VectorialArea' )
+
+        CastShadow = false
+        PrimitiveType = PrimitiveType_TRIANGLELIST
+        BaseBucketVertexCount = 1500
+        BaseBucketIndexCount  = 3000
+        MaxBucketVertexCount = 60000
+        MaxBucketIndexCount  = 120000
+        UseMeshBucketMemoryThreshold = 0
+        ContentType = ContentType_Sticker
+        TextureContentType = ContentType_Texture_Sticker
+        HasNoBetterResolution = true
+        SupportSubCase = false
+
+        MeshMaterial = TMeshMaterial
+        (
+            MaterialNameOnlyForReporting = <RegistrationName>
+            MaterialPasses = TGetMaterialPassesSinglePass( ShaderDescriptor = $/M3D/Shader/ShaderTexturedArea )
+
+            ParameterDico = MAP
+            [
+                ('TextureTilingLBU', 1.0 div <TilingLBU>),
+            ]
+
+            TextureDico = MAP
+            [
+                ('Texture', <Texture>),
+            ]
+        )
+
+        TypeVertex = $/M3D/System/VertexType/TVertex__Position_3f__TexCoord0_2f
+    )
+)
+//------------------------------------------------------------------------------
+unnamed TSceneryDescriptorMultiFiller
+(
+    RegistrationName         = 'Deployment_Zone'
+    SymbolDatabaseProxy      = $/M3D/Scene/LevelDesignSymbolDatabaseProxy
+
+    DeploymentZoneExtendedFeedback is TSceneryDescriptorTriangleSurface
+    (
+        Color                = [128,0,128,40]
+        MeshBucketHandler    = $/SceneryBase/SceneryMeshBucketHandler_VectorielArea
+        Mode                 = SDMode_Zone
+    )
+
+    Entries =
+    [
+        TSceneryDescriptorMultiFillerEntry
+        (
+            SceneryDescriptor = TSceneryDescriptorTagAsSurface
+            (
+                Layer                = $/SceneryDBEditor/DeploymentZoneLayer
+
+                AddOn                = TGameDesignAddOn_DeploymentZone
+                (
+                    Ranking          = 'DeploymentZone'
+                )
+
+                SurfaceFeedback = TSceneryDescriptorSurfaceWithBorder
+                (
+                    Surface                  = SceneryDescriptor_TexturedSurface
+                    (
+                        RegistrationName     = 'Deployment_Zone'
+                        Texture              = 'CommonData:/Assets/2D/Editor/deployment_zone.png'
+                        TilingLBU            = 100.0
+                        Mode                 = SDMode_Zone
+                    )
+
+                    Border                   = TSceneryDescriptorBezierTriangleString
+                    (
+                        Color                = [128,0,128,60]
+                        WidthInLBU           = 7.44186046512
+                        BezierMaxErrorInLBU  = 2.32558139535
+                        MeshBucketHandler    = $/SceneryBase/SceneryMeshBucketHandler_TriangleString
+
+                        Mode                 = SDMode_Zone
+                    )
+                )
+            )
+        ),
+        TSceneryDescriptorMultiFillerEntry
+        (
+            SceneryDescriptor = TSceneryDescriptorExtendedDeploymentZone
+            (
+                Surface = DeploymentZoneExtendedFeedback
+                Layer = $/SceneryDBEditor/DeploymentZoneParaLayer
+                // 26 = MetreRTS
+                Enlarge = 10000 * 26
+            )
+        ),
+        TSceneryDescriptorMultiFillerEntry
+        (
+            SceneryDescriptor = TSceneryDescriptorExtendedDeploymentZone
+            (
+                Surface = DeploymentZoneExtendedFeedback
+                Layer = $/SceneryDBEditor/DeploymentZoneRecoLayer
+                // 26 = MetreRTS
+                Enlarge = 7000 * 26
+            )
+        ),
+    ]
+)
+//------------------------------------------------------------------------------
+
+unnamed TSceneryDescriptorTagGD
+(
+    RegistrationName                = 'Tag_CommandZoneName'
+    SymbolDatabaseProxy             = $/M3D/Scene/LevelDesignSymbolDatabaseProxy
+    Scale                           = 12.0
+
+
+    AddOn = TGameDesignAddOn_CommandZoneName
+    (
+        Ranking = 'CommandZoneName'
+    )
+
+    TagSceneryDescriptor            = TSceneryDescriptorModel3D
+    (
+        ModeMask                    = SDMode_Zone
+        RenderLayerSelector         = $/M3D/Scene/OpaqueMobileRenderPlace
+        ContentTypeIfIndividualMesh = ContentType_Editor
+        MaterialTextureDico         = $/M3D/Misc/MaterialTextureDico
+        Resource = $/Editor/Resource/plot03
+    )
+)
+//------------------------------------------------------------------------------
+//******************************************************************************
+//------------------------------------------------------------------------------

@@ -1,0 +1,15 @@
+export Modele_YP_408_APC_NL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/NL/APC/YP_408_APC/YP_408_APC.fbx"
+)
+
+export Modele_YP_408_APC_NL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/NL/APC/YP_408_APC_MID/YP_408_APC_MID.fbx"
+)
+
+export Modele_YP_408_APC_NL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/NL/APC/YP_408_APC_LOW/YP_408_APC_LOW.fbx"
+)
+

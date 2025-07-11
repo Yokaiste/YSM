@@ -1,0 +1,18 @@
+export Modele_Iltis_para_CMD_RFA is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Vehicule/Iltis/Iltis.fbx"
+    Textures="GameData:/Assets/3D/Units/RFA/Vehicule/Iltis_CMD"
+
+)
+
+export Modele_Iltis_para_CMD_RFA_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Vehicule/Iltis/Iltis.fbx"
+    Textures="GameData:/Assets/3D/Units/RFA/Vehicule/Iltis_CMD"
+)
+
+export Modele_Iltis_para_CMD_RFA_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Vehicule/Iltis/Iltis.fbx"
+    Textures="GameData:/Assets/3D/Units/RFA/Vehicule/Iltis_CMD"
+)

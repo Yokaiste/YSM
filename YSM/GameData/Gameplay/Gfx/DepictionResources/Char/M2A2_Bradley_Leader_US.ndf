@@ -1,0 +1,17 @@
+export Modele_M2A2_Bradley_Leader_US is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Char/M2A2_Bradley/M2A2_Bradley.fbx"
+    Textures="GameData:/Assets/3D/Units/US/Char/M2A2_Bradley_CMD"
+)
+
+export Modele_M2A2_Bradley_Leader_US_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Char/M2A2_Bradley_MID/M2A2_Bradley_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/US/Char/M2A2_Bradley_CMD_MID"
+)
+
+export Modele_M2A2_Bradley_Leader_US_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Char/M2A2_Bradley_LOW/M2A2_Bradley_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/US/Char/M2A2_Bradley_CMD_LOW"
+)

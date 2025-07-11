@@ -1,0 +1,3 @@
+export Modele_DCA_M167_Vulcan_para_20mm_BEL is TResourceMesh (Mesh=DCA_M167_Vulcan_20mm_US)
+export Modele_DCA_M167_Vulcan_para_20mm_BEL_MID is TResourceMesh (Mesh=DCA_M167_Vulcan_20mm_US_MID)
+export Modele_DCA_M167_Vulcan_para_20mm_BEL_LOW is TResourceMesh (Mesh=DCA_M167_Vulcan_20mm_US_LOW)

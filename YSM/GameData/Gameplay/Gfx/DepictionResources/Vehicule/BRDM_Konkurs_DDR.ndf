@@ -1,0 +1,20 @@
+export Modele_BRDM_Konkurs_DDR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Antichar/BRDM2_Konkurs/BRDM2_Konkurs.fbx"
+    Textures="GameData:/Assets/3D/Units/DDR/Antichar/BRDM2_Konkurs"
+)
+
+export Modele_BRDM_Konkurs_DDR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Antichar/BRDM2_Konkurs_MID/BRDM2_Konkurs_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/DDR/Antichar/BRDM2_Konkurs_MID"
+)
+
+export Modele_BRDM_Konkurs_DDR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Antichar/BRDM2_Konkurs_LOW/BRDM2_Konkurs_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/DDR/Antichar/BRDM2_Konkurs_LOW"
+)
+
+
+

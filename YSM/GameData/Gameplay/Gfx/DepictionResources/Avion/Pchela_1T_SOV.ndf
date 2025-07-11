@@ -1,0 +1,19 @@
+export Modele_Pchela_1T_SOV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Avion/Pchela_1T/Pchela_1T.fbx"
+)
+
+export Modele_Pchela_1T_SOV_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Avion/Pchela_1T_MID/Pchela_1T_MID.fbx"
+)
+
+export Modele_Pchela_1T_SOV_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Avion/Pchela_1T_LOW/Pchela_1T_LOW.fbx"
+)
+
+export Modele_Pchela_1T_SOV_train is TResourceMesh
+(
+    Mesh=ModelFile_Support_Drones
+)

@@ -1,0 +1,3 @@
+export Modele_Howz_M59_LongTom_155mm_BEL is TResourceMesh( Mesh="GameData:/Assets/3D/Units/BEL/Canon/Howz_M59_LongTom_155mm/Howz_M59_LongTom_155mm.fbx")
+export Modele_Howz_M59_LongTom_155mm_BEL_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/BEL/Canon/Howz_M59_LongTom_155mm_MID/Howz_M59_LongTom_155mm_MID.fbx")
+export Modele_Howz_M59_LongTom_155mm_BEL_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/BEL/Canon/Howz_M59_LongTom_155mm_LOW/Howz_M59_LongTom_155mm_LOW.fbx")

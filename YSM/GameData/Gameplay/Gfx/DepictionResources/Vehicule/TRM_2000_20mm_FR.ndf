@@ -1,0 +1,14 @@
+export Modele_TRM_2000_20mm_FR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/TRM_2000_20mm/TRM_2000_20mm.fbx"
+)
+
+export Modele_TRM_2000_20mm_FR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/TRM_2000_20mm_MID/TRM_2000_20mm_MID.fbx"
+)
+
+export Modele_TRM_2000_20mm_FR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/TRM_2000_20mm_LOW/TRM_2000_20mm_LOW.fbx"
+)

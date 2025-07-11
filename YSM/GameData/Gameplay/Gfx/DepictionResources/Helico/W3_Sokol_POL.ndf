@@ -1,0 +1,14 @@
+export Modele_W3_Sokol_POL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Helico/W3_Sokol/W3_Sokol.fbx"
+)
+
+export Modele_W3_Sokol_POL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Helico/W3_Sokol_MID/W3_Sokol_MID.fbx"
+)
+
+export Modele_W3_Sokol_POL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Helico/W3_Sokol_LOW/W3_Sokol_LOW.fbx"
+)

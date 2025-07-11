@@ -1,0 +1,14 @@
+export Modele_Honker_4011_POL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Vehicule/Honker_4011/Honker_4011.fbx"
+)
+
+export Modele_Honker_4011_POL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Vehicule/Honker_4011_MID/Honker_4011_MID.fbx"
+)
+
+export Modele_Honker_4011_POL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Vehicule/Honker_4011_LOW/Honker_4011_LOW.fbx"
+)

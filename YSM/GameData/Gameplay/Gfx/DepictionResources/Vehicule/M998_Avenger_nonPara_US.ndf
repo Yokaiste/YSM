@@ -1,0 +1,17 @@
+export Modele_M998_Avenger_nonPara_US is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/DCA/M998_Avenger/M998_Avenger.fbx"
+)
+
+export Modele_M998_Avenger_nonPara_US_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/DCA/M998_Avenger_MID/M998_Avenger_MID.fbx"
+)
+
+export Modele_M998_Avenger_nonPara_US_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/DCA/M998_Avenger_LOW/M998_Avenger_LOW.fbx"
+)
+
+
+

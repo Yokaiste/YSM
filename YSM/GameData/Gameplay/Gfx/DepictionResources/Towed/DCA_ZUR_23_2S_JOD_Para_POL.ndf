@@ -1,0 +1,4 @@
+export Modele_DCA_ZUR_23_2S_JOD_Para_POL is TResourceMesh( Mesh=DCA_ZUR_23_2S_JOD_POL )
+export Modele_DCA_ZUR_23_2S_JOD_Para_POL_MID is TResourceMesh( Mesh=DCA_ZUR_23_2S_JOD_POL_MID )
+export Modele_DCA_ZUR_23_2S_JOD_Para_POL_LOW is TResourceMesh( Mesh=DCA_ZUR_23_2S_JOD_POL_LOW )
+export DeployAnimation_DCA_ZUR_23_2S_JOD_Para_POL is TResourceMatrixArrayAnimation( FileName = 'GameData:/Assets/3D/Units/POL/Canon/DCA_ZUR_23_2S_JOD/DCA_ZUR_23_2S_JOD.fbx' PlayInLoop = false)

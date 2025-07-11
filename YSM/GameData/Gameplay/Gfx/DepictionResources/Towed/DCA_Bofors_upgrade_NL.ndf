@@ -1,0 +1,3 @@
+export Modele_DCA_Bofors_upgrade_NL is TResourceMesh( Mesh="GameData:/Assets/3D/Units/NL/Canon/DCA_Bofors_upgrade/DCA_Bofors_upgrade.fbx")
+export Modele_DCA_Bofors_upgrade_NL_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/NL/Canon/DCA_Bofors_upgrade_MID/DCA_Bofors_upgrade_MID.fbx")
+export Modele_DCA_Bofors_upgrade_NL_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/NL/Canon/DCA_Bofors_upgrade_LOW/DCA_Bofors_upgrade_LOW.fbx")

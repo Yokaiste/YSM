@@ -1,0 +1,3 @@
+export ModelFile_ATteam_TOW_NL is 'GameData:/Assets/3D/Units/US/Antichar/BGM71E_TOW_2A/BGM71E_TOW_2A.fbx'export Modele_ATteam_TOW_NL is TResourceMesh( Mesh=ModelFile_ATteam_TOW_NL)
+export ModelFile_ATteam_TOW_NL_MID is 'GameData:/Assets/3D/Units/US/Antichar/BGM71E_TOW_2A_MID/BGM71E_TOW_2A_MID.fbx'export Modele_ATteam_TOW_NL_MID is TResourceMesh( Mesh=ModelFile_ATteam_TOW_NL_MID)
+export ModelFile_ATteam_TOW_NL_LOW is 'GameData:/Assets/3D/Units/US/Antichar/BGM71E_TOW_2A_LOW/BGM71E_TOW_2A_LOW.fbx'export Modele_ATteam_TOW_NL_LOW is TResourceMesh( Mesh=ModelFile_ATteam_TOW_NL_LOW)

@@ -1,0 +1,17 @@
+export Modele_AIFV_B_CMD_NL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/NL/APC/AIFV_B_50/AIFV_B_50.fbx"
+    Textures="GameData:/Assets/3D/Units/NL/CMD/AIFV_B_50_CMD"
+)
+
+export Modele_AIFV_B_CMD_NL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/NL/APC/AIFV_B_50_MID/AIFV_B_50_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/NL/CMD/AIFV_B_50_CMD_MID"
+)
+
+export Modele_AIFV_B_CMD_NL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/NL/APC/AIFV_B_50_LOW/AIFV_B_50_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/NL/CMD/AIFV_B_50_CMD_LOW"
+)

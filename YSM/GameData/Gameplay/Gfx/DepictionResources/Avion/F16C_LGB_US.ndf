@@ -1,0 +1,19 @@
+export Modele_F16C_LGB_US is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Avion/F16C_LGB/F16C_LGB.fbx"
+)
+
+export Modele_F16C_LGB_US_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Avion/F16C_LGB_MID/F16C_LGB_MID.fbx"
+)
+
+export Modele_F16C_LGB_US_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Avion/F16C_LGB_LOW/F16C_LGB_LOW.fbx"
+)
+
+export Modele_F16C_LGB_US_train is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Avion/F16C_LGB/F16C_LGB_Train.fbx"
+)

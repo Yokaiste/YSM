@@ -1,0 +1,14 @@
+export Modele_Alouette_III_SS11_FR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Helico/Alouette_III_SS11/Alouette_III_SS11.fbx"
+)
+
+export Modele_Alouette_III_SS11_FR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Helico/Alouette_III_SS11_MID/Alouette_III_SS11_MID.fbx"
+)
+
+export Modele_Alouette_III_SS11_FR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Helico/Alouette_III_SS11_LOW/Alouette_III_SS11_LOW.fbx"
+)

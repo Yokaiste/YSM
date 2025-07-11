@@ -1,0 +1,14 @@
+export Modele_MH47D_Super_Chinook_US is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Helico/MH47D_Chinook/MH47D_Chinook.fbx"
+)
+
+export Modele_MH47D_Super_Chinook_US_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Helico/MH47D_Chinook_MID/MH47D_Chinook_MID.fbx"
+)
+
+export Modele_MH47D_Super_Chinook_US_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Helico/MH47D_Chinook_LOW/MH47D_Chinook_LOW.fbx"
+)

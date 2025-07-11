@@ -1,0 +1,19 @@
+export Modele_MiG_21bis_RKT2_DDR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Avion/MiG_21_PFM/MiG_21_PFM_rkt.fbx"
+)
+
+export Modele_MiG_21bis_RKT2_DDR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Avion/MiG_21_PFM_MID/MiG_21_PFM_rkt_MID.fbx"
+)
+
+export Modele_MiG_21bis_RKT2_DDR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Avion/MiG_21_PFM_LOW/MiG_21_PFM_rkt_LOW.fbx"
+)
+
+export Modele_MiG_21bis_RKT2_DDR_train is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Avion/MiG_21_PFM/MiG_21_PFM_train.fbx"
+)

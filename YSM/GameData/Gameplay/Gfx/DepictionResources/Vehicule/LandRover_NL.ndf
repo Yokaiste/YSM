@@ -1,0 +1,17 @@
+export Modele_LandRover_NL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Vehicule/LandRover/LandRover.fbx"
+    Textures="GameData:/Assets/3D/Units/NL/Vehicule/LandRover"
+)
+
+export Modele_LandRover_NL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Vehicule/LandRover_MID/LandRover_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/NL/Vehicule/LandRover_MID"
+)
+
+export Modele_LandRover_NL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Vehicule/LandRover_LOW/LandRover_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/NL/Vehicule/LandRover_LOW"
+)

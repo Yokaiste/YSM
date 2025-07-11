@@ -1,0 +1,14 @@
+export Modele_OT_65_POL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Vehicule/OT_65/OT_65.fbx"
+)
+
+export Modele_OT_65_POL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Vehicule/OT_65_MID/OT_65_MID.fbx"
+)
+
+export Modele_OT_65_POL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Vehicule/OT_65_LOW/OT_65_LOW.fbx"
+)

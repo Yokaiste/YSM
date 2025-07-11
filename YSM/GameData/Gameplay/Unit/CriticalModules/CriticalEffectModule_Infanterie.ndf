@@ -1,0 +1,5 @@
+
+export CriticalEffectModule_Infanterie is TCriticalEffectModuleDescriptor
+(
+    Bounds = (1,10)
+)

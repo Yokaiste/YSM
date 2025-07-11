@@ -1,0 +1,19 @@
+export Modele_F111F_Aardvark_US is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Avion/Aardvark_F_111F/Aardvark_F_111F.fbx"
+)
+
+export Modele_F111F_Aardvark_US_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Avion/Aardvark_F_111F_MID/Aardvark_F_111F_MID.fbx"
+)
+
+export Modele_F111F_Aardvark_US_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Avion/Aardvark_F_111F_LOW/Aardvark_F_111F_LOW.fbx"
+)
+
+export Modele_F111F_Aardvark_US_train is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Avion/Aardvark_F_111F/Aardvark_F_111F_train.fbx"
+)

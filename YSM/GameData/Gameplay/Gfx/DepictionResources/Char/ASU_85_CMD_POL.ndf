@@ -1,0 +1,3 @@
+export Modele_ASU_85_CMD_POL     is TResourceMesh( Mesh=ModelFile_ASU_85_POL Textures="GameData:/Assets/3D/Units/POL/Char/ASU_85_CMD" )
+export Modele_ASU_85_CMD_POL_MID is TResourceMesh( Mesh=ModelFile_ASU_85_POL Textures="GameData:/Assets/3D/Units/POL/Char/ASU_85_CMD_MID" )
+export Modele_ASU_85_CMD_POL_LOW is TResourceMesh( Mesh=ModelFile_ASU_85_POL Textures="GameData:/Assets/3D/Units/POL/Char/ASU_85_CMD_LOW" )

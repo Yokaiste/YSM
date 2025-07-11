@@ -1,0 +1,901 @@
+//emplacement des meshes
+MotoStrelki_1_LOW is        'GameData:Assets/3D/Units/URSS/Infanterie/MotoStrelki/MotoStrelki_1_LOW.fbx'
+MotoStrelki_1_TTsko_LOW is  'GameData:/Assets/3D/Units/URSS/Infanterie/MotoStrelki_TTsko/MotoStrelki_1_TTsko_LOW.fbx'
+//------------------------------------------------------------------------------
+//Remorque
+//--------------------------------------------------------------------------------------------------------------------
+export EmptyBoxesWithMissileHooks is TResourceMesh( Mesh="GameData:/Assets/3D/Units/Common/empty_boxes.fbx" )
+//--------------------------------------------------------------------------------------------------------------------
+//Drivers VEHICULES
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Driver_US is TResourceMesh
+(
+    Mesh=US_GI_1
+)
+export MeshDescriptor_Driver_US_LOW is TResourceMesh
+(
+    Mesh=US_GI_1_LOW
+)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Driver_UK is TResourceMesh
+(
+    Mesh=UK_Rifleman_1
+)
+export MeshDescriptor_Driver_UK_LOW is TResourceMesh
+(
+    Mesh=UK_Rifleman_1_LOW
+)
+export MeshDescriptor_Driver_Delta_US is TResourceMesh
+(
+    Mesh=US_Delta_1
+)
+export MeshDescriptor_Driver_Delta_US_LOW is TResourceMesh
+(
+    Mesh=US_Delta_1_LOW
+)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Driver_Para_UK is TResourceMesh
+(
+    Mesh=UK_Para_spe
+)
+export MeshDescriptor_Driver_Para_UK_LOW is TResourceMesh
+(
+    Mesh=UK_Para_1_LOW
+)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Driver_RFA is TResourceMesh
+(
+    Mesh=RFA_PzGrenadier_1
+)
+export MeshDescriptor_Driver_RFA_LOW is TResourceMesh
+(
+    Mesh=RFA_PzGrenadier_LOW
+)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Driver_FJ_RFA is TResourceMesh
+(
+    Mesh=RFA_Fallschirm_NCO
+)
+export MeshDescriptor_Driver_FJ_RFA_LOW is TResourceMesh
+(
+    Mesh=RFA_Fallschirm_LOW
+)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Driver_BEL is TResourceMesh
+(
+    Mesh=BEL_Linie_2
+)
+export MeshDescriptor_Driver_BEL_LOW is TResourceMesh
+(
+    Mesh=BEL_Linie_1_LOW
+)
+export MeshDescriptor_Driver_ParaCmdo_BEL is TResourceMesh
+(
+    Mesh=BEL_ParaCmdo_1
+)
+export MeshDescriptor_Driver_ParaCmdo_BEL_LOW is TResourceMesh
+(
+    Mesh=BEL_ParaCmdo_1_LOW
+)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Driver_POL is TResourceMesh
+(
+    Mesh=POL_Piechota_1
+)
+export MeshDescriptor_Driver_POL_LOW is TResourceMesh
+(
+    Mesh=POL_Komandosi_1_LOW
+)
+export MeshDescriptor_Driver_Para_POL is TResourceMesh
+(
+    Mesh=POL_Spado_1
+)
+export MeshDescriptor_Driver_Para_POL_LOW is TResourceMesh
+(
+    Mesh=POL_Komandosi_1_LOW
+)
+export MeshDescriptor_Driver_Naval_POL is TResourceMesh
+(
+    Mesh=POL_Niebieskie_1
+)
+export MeshDescriptor_Driver_Naval_POL_LOW is TResourceMesh
+(
+    Mesh=POL_Niebieskie_1_LOW
+)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Driver_NL is TResourceMesh
+(
+    Mesh=NL_Infanterie_1
+)
+export MeshDescriptor_Driver_NL_LOW is TResourceMesh
+(
+    Mesh=NL_Infanterie_1_LOW
+)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Driver_SOV is TResourceMesh
+(
+    Mesh="GameData:Assets/3D/Units/URSS/Infanterie/MotoStrelki/MotoStrelki_1_Driver.fbx"
+)
+export MeshDescriptor_Driver_VdV_SOV is TResourceMesh
+(
+    Mesh=SOV_VDV_1_LOW
+)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Driver_DDR is TResourceMesh
+(
+    Mesh=DDR_MotSchutzen_NCO
+)
+export MeshDescriptor_Driver_DDR_LOW is TResourceMesh
+(
+    Mesh=DDR_MotSchutzen_LOW
+)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Driver_SOV_LOW is TResourceMesh (Mesh=MotoStrelki_1_LOW)
+export MeshDescriptor_Driver_VdV_SOV_LOW is TResourceMesh (Mesh=MotoStrelki_1_LOW)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Driver_FR is TResourceMesh
+(
+    Mesh=FR_Chasseur_1
+)
+export MeshDescriptor_Driver_FR_LOW is TResourceMesh
+(
+    Mesh=FR_Chasseur_LOW
+)
+export MeshDescriptor_Driver_Legion_2_FR is TResourceMesh
+(
+    Mesh=FR_Legion_2
+)
+export MeshDescriptor_Driver_Legion_2_FR_LOW is TResourceMesh
+(
+    Mesh=FR_Legion_1_LOW
+)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Driver_CAN is TResourceMesh
+(
+    Mesh=CAN_Soldier_3
+)
+export MeshDescriptor_Driver_CAN_LOW is TResourceMesh
+(
+    Mesh=US_GI_1_LOW
+)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Driver_vz85_TCH is TResourceMesh
+(
+    Mesh=TCH_Soldier_vz85_1
+)
+export MeshDescriptor_Driver_vz85_TCH_LOW is TResourceMesh
+(
+    Mesh=US_GI_1_LOW
+)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Driver_Vysadkar_TCH is TResourceMesh
+(
+    Mesh=TCH_Vysadkar_2
+)
+export MeshDescriptor_Driver_Vysadkar_TCH_LOW is TResourceMesh
+(
+    Mesh=US_GI_1_LOW
+)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Driver_ESP is TResourceMesh
+(
+    Mesh=Soldier_3_ESP
+)
+export MeshDescriptor_Driver_ESP_LOW is TResourceMesh
+(
+    Mesh=US_GI_1_LOW
+)
+//--------------------------------------------------------------------------------------------------------------------
+//Pilotes AVIONS
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Pilote_US      is TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/Infanterie/USAF_Pilot/USAF_Pilot.fbx" )
+export MeshDescriptor_Pilote_US_LOW  is TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/Infanterie/USAF_Pilot/USAF_Pilot.fbx" )
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Pilote_SOV     is TResourceMesh( Mesh="GameData:/Assets/3D/Units/URSS/Infanterie/VVS_Pilot/VVS_Pilot.fbx" )
+export MeshDescriptor_Pilote_SOV_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/URSS/Infanterie/VVS_Pilot/VVS_Pilot_LOW.fbx")
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Pilote_DDR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Infanterie/LSK_Pilot/LSK_Pilot.fbx"
+)
+export MeshDescriptor_Pilote_DDR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Infanterie/LSK_Pilot/LSK_Pilot.fbx"
+)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Pilote_UK is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Infanterie/RAF_Pilot/RAF_Pilot.fbx"
+)
+export MeshDescriptor_Pilote_UK_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Infanterie/RAF_Pilot/RAF_Pilot.fbx"
+)
+//--------------------------------------------------------------------------------------------------------------------
+//Fin Pilote AVIONS
+//--------------------------------------------------------------------------------------------------------------------
+//Pilote HELICOS
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Pilote_Helico_US      is TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/Infanterie/US_Helo_Pilot/US_Helo_Pilot.fbx" )
+export MeshDescriptor_Pilote_Helico_US_LOW  is TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/Infanterie/US_Helo_Pilot/US_Helo_Pilot.fbx" )
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Pilote_Helico_SOV     is TResourceMesh( Mesh="GameData:/Assets/3D/Units/URSS/Infanterie/SOV_Helo_Pilot/SOV_Helo_Pilot.fbx" )
+export MeshDescriptor_Pilote_Helico_SOV_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/URSS/Infanterie/SOV_Helo_Pilot/SOV_Helo_Pilot_LOW.fbx" )
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Pilote_Helico_DDR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Infanterie/DDR_Helo_Pilot/DDR_Helo_Pilot.fbx"
+)
+export MeshDescriptor_Pilote_Helico_DDR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Infanterie/DDR_Helo_Pilot/DDR_Helo_Pilot.fbx"
+)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Pilote_Helico_UK is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Infanterie/Brit_Helo_Pilot/Brit_Helo_Pilot.fbx"
+)
+export MeshDescriptor_Pilote_Helico_UK_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Infanterie/Brit_Helo_Pilot/Brit_Helo_Pilot.fbx"
+)
+//--------------------------------------------------------------------------------------------------------------------
+//Fin Pilote HELICOS
+//--------------------------------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------
+// Servants de canon
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Servant_G_SOV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Infanterie/MotoStrelki/MotoStrelki_1.fbx"
+)
+export MeshDescriptor_Servant_D_SOV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Infanterie/MotoStrelki/MotoStrelki_2.fbx"
+)
+export MeshDescriptor_Servant_G_SOV_LOW is TResourceMesh (Mesh=MotoStrelki_1_LOW)
+export MeshDescriptor_Servant_D_SOV_LOW is TResourceMesh (Mesh=MotoStrelki_1_LOW)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Servant_G_Rezervisti_SOV is TResourceMesh
+(
+    // Mesh="GameData:/Assets/3D/Units/URSS/Infanterie/MotoStrelki/MotoStrelki_1.fbx"
+    Mesh=SOV_Rezervisti_1
+)
+export MeshDescriptor_Servant_D_Rezervisti_SOV is TResourceMesh
+(
+    // Mesh="GameData:/Assets/3D/Units/URSS/Infanterie/Rezervisti/Rezervisti_2.fbx"
+    Mesh=SOV_Rezervisti_2
+)
+export MeshDescriptor_Servant_G_Rezervisti_SOV_LOW is TResourceMesh (Mesh=MotoStrelki_1_LOW)
+export MeshDescriptor_Servant_D_Rezervisti_SOV_LOW is TResourceMesh (Mesh=MotoStrelki_1_LOW)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Servant_G_LUX is TResourceMesh (Mesh=BEL_Lux_1)
+export MeshDescriptor_Servant_D_LUX is TResourceMesh (Mesh=BEL_Lux_2)
+// export MeshDescriptor_Servant_G_LUX is TResourceMesh
+// (
+//     Mesh="GameData:/Assets/3D/Units/BEL/Infanterie/Lux/Lux_1.fbx"
+// )
+// export MeshDescriptor_Servant_D_LUX is TResourceMesh
+// (
+//     Mesh="GameData:/Assets/3D/Units/BEL/Infanterie/Lux/Lux_2.fbx"
+// )
+export MeshDescriptor_Servant_G_LUX_LOW is TResourceMesh (Mesh=BEL_Lux_1_LOW)
+export MeshDescriptor_Servant_D_LUX_LOW is TResourceMesh (Mesh=BEL_Lux_1_LOW)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Servant_MotoStrelki_NCO_G_SOV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Infanterie/MotoStrelki/MotoStrelki_NCO.fbx"
+)
+export MeshDescriptor_Servant_MotoStrelki_Officer_D_SOV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Infanterie/MotoStrelki/MotoStrelki_Officer.fbx"
+)
+export MeshDescriptor_Servant_MotoStrelki_NCO_G_SOV_LOW is TResourceMesh (Mesh=MotoStrelki_1_LOW)
+export MeshDescriptor_Servant_MotoStrelki_Officer_D_SOV_LOW is TResourceMesh (Mesh=MotoStrelki_1_LOW)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Servant_MotoStrelki_spe_G_SOV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Infanterie/MotoStrelki/MotoStrelki_spe.fbx"
+)
+export MeshDescriptor_Servant_MotoStrelki_spe_D_SOV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Infanterie/MotoStrelki/MotoStrelki_spe.fbx"
+)
+export MeshDescriptor_Servant_MotoStrelki_spe_G_SOV_LOW is TResourceMesh (Mesh=MotoStrelki_1_LOW)
+export MeshDescriptor_Servant_MotoStrelki_spe_D_SOV_LOW is TResourceMesh (Mesh=MotoStrelki_1_LOW)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Servant_G_VDV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Infanterie/VDV/VDV_1.fbx"
+)
+export MeshDescriptor_Servant_D_VDV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Infanterie/VDV/VDV_2.fbx"
+)
+export MeshDescriptor_Servant_G_VDV_LOW is TResourceMesh (Mesh=MotoStrelki_1_LOW)
+export MeshDescriptor_Servant_D_VDV_LOW is TResourceMesh (Mesh=MotoStrelki_1_LOW)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Servant_NCO_G_VDV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Infanterie/VDV/VDV_NCO.fbx"
+)
+export MeshDescriptor_Servant_NCO_D_VDV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Infanterie/VDV/VDV_NCO.fbx"
+)
+export MeshDescriptor_Servant_NCO_G_VDV_LOW is TResourceMesh (Mesh=MotoStrelki_1_LOW)
+export MeshDescriptor_Servant_NCO_D_VDV_LOW is TResourceMesh (Mesh=MotoStrelki_1_LOW)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Servant_Officer_G_VDV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Infanterie/VDV/VDV_Officer.fbx"
+)
+export MeshDescriptor_Servant_Officer_D_VDV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Infanterie/VDV/VDV_Officer.fbx"
+)
+export MeshDescriptor_Servant_Officer_G_VDV_LOW is TResourceMesh (Mesh=MotoStrelki_1_LOW)
+export MeshDescriptor_Servant_Officer_D_VDV_LOW is TResourceMesh (Mesh=MotoStrelki_1_LOW)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Servant_Spe_G_VDV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Infanterie/VDV/VDV_spe.fbx"
+)
+export MeshDescriptor_Servant_Spe_D_VDV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Infanterie/VDV/VDV_spe.fbx"
+)
+export MeshDescriptor_Servant_Spe_G_VDV_LOW is TResourceMesh (Mesh=MotoStrelki_1_LOW)
+export MeshDescriptor_Servant_Spe_D_VDV_LOW is TResourceMesh (Mesh=MotoStrelki_1_LOW)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Servant_G_TTsko is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Infanterie/MotoStrelki_TTsko/MotoStrelki_1_TTsko.fbx"
+)
+export MeshDescriptor_Servant_D_TTsko is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Infanterie/MotoStrelki_TTsko/MotoStrelki_TTsko_spe.fbx"
+)
+export MeshDescriptor_Servant_G_TTsko_LOW is TResourceMesh (Mesh=MotoStrelki_1_TTsko_LOW)
+export MeshDescriptor_Servant_D_TTsko_LOW is TResourceMesh (Mesh=MotoStrelki_1_TTsko_LOW)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Servant_G_DDR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Infanterie/MotSchutzen/MotSchutzen_1.fbx"
+)
+export MeshDescriptor_Servant_D_DDR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Infanterie/MotSchutzen/MotSchutzen_2.fbx"
+)
+export MeshDescriptor_Servant_G_DDR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Infanterie/MotSchutzen/MotSchutzen_1.fbx"
+)
+export MeshDescriptor_Servant_D_DDR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Infanterie/MotSchutzen/MotSchutzen_2.fbx"
+)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Servant_G_FJ_DDR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Infanterie/FJB/FJB_1.fbx"
+)
+export MeshDescriptor_Servant_D_FJ_DDR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Infanterie/FJB/FJB_2.fbx"
+)
+export MeshDescriptor_Servant_G_FJ_DDR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Infanterie/FJB/FJB_1.fbx"
+)
+export MeshDescriptor_Servant_D_FJ_DDR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Infanterie/FJB/FJB_2.fbx"
+)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Servant_G_US is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Infanterie/GI/GI_1.fbx"
+)
+export MeshDescriptor_Servant_D_US is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Infanterie/GI/GI_2.fbx"
+)
+export MeshDescriptor_Servant_G_US_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Infanterie/GI/GI_1.fbx"
+)
+export MeshDescriptor_Servant_D_US_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Infanterie/GI/GI_2.fbx"
+)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Servant_GI_NCO_G_US is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Infanterie/GI/GI_NCO.fbx"
+)
+export MeshDescriptor_Servant_GI_NCO_D_US is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Infanterie/GI/GI_NCO.fbx"
+)
+export MeshDescriptor_Servant_GI_NCO_G_US_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Infanterie/GI/GI_NCO.fbx"
+)
+export MeshDescriptor_Servant_GI_NCO_D_US_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Infanterie/GI/GI_NCO.fbx"
+)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Servant_GI_Officer_G_US is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Infanterie/GI/GI_Officer.fbx"
+)
+export MeshDescriptor_Servant_GI_Officer_D_US is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Infanterie/GI/GI_Officer.fbx"
+)
+export MeshDescriptor_Servant_GI_Officer_G_US_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Infanterie/GI/GI_Officer.fbx"
+)
+export MeshDescriptor_Servant_GI_Officer_D_US_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Infanterie/GI/GI_Officer.fbx"
+)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Servant_GI_spe_G_US is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Infanterie/GI/GI_spe.fbx"
+)
+export MeshDescriptor_Servant_GI_spe_D_US is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Infanterie/GI/GI_spe.fbx"
+)
+export MeshDescriptor_Servant_GI_spe_G_US_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Infanterie/GI/GI_spe.fbx"
+)
+export MeshDescriptor_Servant_GI_spe_D_US_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Infanterie/GI/GI_spe.fbx"
+)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Servant_Airborne_G_US is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Infanterie/Airborne/Airborne_1.fbx"
+)
+export MeshDescriptor_Servant_Airborne_D_US is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Infanterie/Airborne/Airborne_2.fbx"
+)
+export MeshDescriptor_Servant_Airborne_G_US_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Infanterie/Airborne/Airborne_1.fbx"
+)
+export MeshDescriptor_Servant_Airborne_D_US_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Infanterie/Airborne/Airborne_2.fbx"
+)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Servant_G_RFA is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Infanterie/PzGrenadier/PzGrenadier_1.fbx"
+)
+export MeshDescriptor_Servant_D_RFA is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Infanterie/PzGrenadier/PzGrenadier_2.fbx"
+)
+export MeshDescriptor_Servant_G_RFA_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Infanterie/PzGrenadier/PzGrenadier_1.fbx"
+)
+export MeshDescriptor_Servant_D_RFA_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Infanterie/PzGrenadier/PzGrenadier_2.fbx"
+)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Servant_G_FJ_RFA is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Infanterie/Fallschirm/Fallschirm_NCO.fbx"
+)
+export MeshDescriptor_Servant_D_FJ_RFA is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Infanterie/Fallschirm/Fallschirm_NCO.fbx"
+)
+export MeshDescriptor_Servant_G_FJ_RFA_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Infanterie/Fallschirm/Fallschirm_NCO.fbx"
+)
+export MeshDescriptor_Servant_D_FJ_RFA_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Infanterie/Fallschirm/Fallschirm_NCO.fbx"
+)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Servant_PzGrenadier_NCO_G_RFA is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Infanterie/PzGrenadier/PzGrenadier_NCO.fbx"
+)
+export MeshDescriptor_Servant_PzGrenadier_NCO_D_RFA is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Infanterie/PzGrenadier/PzGrenadier_NCO.fbx"
+)
+export MeshDescriptor_Servant_PzGrenadier_NCO_G_RFA_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Infanterie/PzGrenadier/PzGrenadier_NCO.fbx"
+)
+export MeshDescriptor_Servant_PzGrenadier_NCO_D_RFA_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Infanterie/PzGrenadier/PzGrenadier_NCO.fbx"
+)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Servant_PzGrenadier_Officer_G_RFA is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Infanterie/PzGrenadier/PzGrenadier_Officer.fbx"
+)
+export MeshDescriptor_Servant_PzGrenadier_Officer_D_RFA is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Infanterie/PzGrenadier/PzGrenadier_Officer.fbx"
+)
+export MeshDescriptor_Servant_PzGrenadier_Officer_G_RFA_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Infanterie/PzGrenadier/PzGrenadier_Officer.fbx"
+)
+export MeshDescriptor_Servant_PzGrenadier_Officer_D_RFA_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Infanterie/PzGrenadier/PzGrenadier_Officer.fbx"
+)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Servant_PzGrenadier_spe_G_RFA is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Infanterie/PzGrenadier/PzGrenadier_spe.fbx"
+)
+export MeshDescriptor_Servant_PzGrenadier_spe_D_RFA is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Infanterie/PzGrenadier/PzGrenadier_spe.fbx"
+)
+export MeshDescriptor_Servant_PzGrenadier_spe_G_RFA_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Infanterie/PzGrenadier/PzGrenadier_spe.fbx"
+)
+export MeshDescriptor_Servant_PzGrenadier_spe_D_RFA_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Infanterie/PzGrenadier/PzGrenadier_spe.fbx"
+)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Servant_Fallschirm_G_RFA is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Infanterie/Fallschirm/Fallschirm_1.fbx"
+)
+export MeshDescriptor_Servant_Fallschirm_D_RFA is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Infanterie/Fallschirm/Fallschirm_2.fbx"
+)
+export MeshDescriptor_Servant_Fallschirm_G_RFA_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Infanterie/Fallschirm/Fallschirm_1.fbx"
+)
+export MeshDescriptor_Servant_Fallschirm_D_RFA_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Infanterie/Fallschirm/Fallschirm_2.fbx"
+)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Servant_G_UK is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Infanterie/Rifleman/Rifleman_1.fbx"
+)
+export MeshDescriptor_Servant_D_UK is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Infanterie/Rifleman/Rifleman_2.fbx"
+)
+export MeshDescriptor_Servant_G_UK_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Infanterie/Rifleman/Rifleman_1.fbx"
+)
+export MeshDescriptor_Servant_D_UK_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Infanterie/Rifleman/Rifleman_2.fbx"
+)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Servant_para_G_UK is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Infanterie/Paratroopers/Para_2.fbx"
+)
+export MeshDescriptor_Servant_para_D_UK is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Infanterie/Paratroopers/Para_NCO.fbx"
+)
+export MeshDescriptor_Servant_para_G_UK_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Infanterie/Paratroopers/Para_2.fbx"
+)
+export MeshDescriptor_Servant_para_D_UK_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Infanterie/Paratroopers/Para_NCO.fbx"
+)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Servant_G_FR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Infanterie/Chasseurs/Chasseur_1.fbx"
+)
+export MeshDescriptor_Servant_D_FR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Infanterie/Chasseurs/Chasseur_2.fbx"
+)
+export MeshDescriptor_Servant_G_FR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Infanterie/Chasseurs/Chasseur_1.fbx"
+)
+export MeshDescriptor_Servant_D_FR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Infanterie/Chasseurs/Chasseur_2.fbx"
+)
+
+export MeshDescriptor_Servant_G_Legion_2_FR is TResourceMesh
+(
+    Mesh=FR_Legion_2
+)
+export MeshDescriptor_Servant_D_Legion_2_FR is TResourceMesh
+(
+    Mesh=FR_Legion_2
+)
+export MeshDescriptor_Servant_G_Legion_2_FR_LOW is TResourceMesh
+(
+    Mesh=FR_Legion_1_LOW
+)
+export MeshDescriptor_Servant_D_Legion_2_FR_LOW is TResourceMesh
+(
+    Mesh=FR_Legion_1_LOW
+)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Servant_Para_Sep_G_FR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Infanterie/Paras/Para_spe.fbx"
+)
+export MeshDescriptor_Servant_Para_NCO_D_FR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Infanterie/Paras/Para_NCO.fbx"
+)
+export MeshDescriptor_Servant_Para_Sep_G_FR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Infanterie/Paras/Para_spe.fbx"
+)
+export MeshDescriptor_Servant_Para_NCO_D_FR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Infanterie/Paras/Para_NCO.fbx"
+)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Servant_G_BEL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Infanterie/Linie/Linie_1.fbx"
+)
+export MeshDescriptor_Servant_D_BEL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Infanterie/Linie/Linie_2.fbx"
+)
+export MeshDescriptor_Servant_G_BEL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Infanterie/Linie/Linie_1.fbx"
+)
+export MeshDescriptor_Servant_D_BEL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Infanterie/Linie/Linie_2.fbx"
+)
+export MeshDescriptor_Servant_G_ParaCmdo_BEL is TResourceMesh
+(
+    Mesh=BEL_ParaCmdo_1
+)
+export MeshDescriptor_Servant_D_ParaCmdo_BEL is TResourceMesh
+(
+    Mesh=BEL_ParaCmdo_2
+)
+export MeshDescriptor_Servant_G_ParaCmdo_BEL_LOW is TResourceMesh
+(
+    Mesh=BEL_ParaCmdo_1_LOW
+)
+export MeshDescriptor_Servant_D_ParaCmdo_BEL_LOW is TResourceMesh
+(
+    Mesh=BEL_ParaCmdo_1_LOW
+)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Servant_G_POL is TResourceMesh
+(
+    Mesh=POL_Piechota_1
+)
+export MeshDescriptor_Servant_D_POL is TResourceMesh
+(
+    Mesh=POL_Piechota_NCO
+)
+export MeshDescriptor_Servant_G_POL_LOW is TResourceMesh
+(
+    Mesh=POL_Komandosi_1_LOW
+)
+export MeshDescriptor_Servant_D_POL_LOW is TResourceMesh
+(
+    Mesh=POL_Komandosi_1_LOW
+)
+export MeshDescriptor_Servant_G_Para_POL is TResourceMesh
+(
+    Mesh=POL_Spado_1
+)
+export MeshDescriptor_Servant_D_Para_POL is TResourceMesh
+(
+    Mesh=POL_Spado_2
+)
+export MeshDescriptor_Servant_G_Para_POL_LOW is TResourceMesh
+(
+    Mesh=POL_Komandosi_1_LOW
+)
+export MeshDescriptor_Servant_D_Para_POL_LOW is TResourceMesh
+(
+    Mesh=POL_Komandosi_1_LOW
+)
+export MeshDescriptor_Servant_G_Naval_POL is TResourceMesh
+(
+    Mesh=POL_Niebieskie_1
+)
+export MeshDescriptor_Servant_D_Naval_POL is TResourceMesh
+(
+    Mesh=POL_Niebieskie_2
+)
+export MeshDescriptor_Servant_G_Naval_POL_LOW is TResourceMesh
+(
+    Mesh=POL_Niebieskie_1_LOW
+)
+export MeshDescriptor_Servant_D_Naval_POL_LOW is TResourceMesh
+(
+    Mesh=POL_Niebieskie_1_LOW
+)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Servant_G_NL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/NL/Infanterie/Infanterie/Infanterie_1.fbx"
+)
+export MeshDescriptor_Servant_D_NL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/NL/Infanterie/Infanterie/Infanterie_2.fbx"
+)
+export MeshDescriptor_Servant_G_NL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/NL/Infanterie/Infanterie/Infanterie_1_LOW.fbx"
+)
+export MeshDescriptor_Servant_D_NL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/NL/Infanterie/Infanterie/Infanterie_1_LOW.fbx"
+)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Servant_G_Marinier_NL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/NL/Infanterie/Marinier/Marinier_1.fbx"
+)
+export MeshDescriptor_Servant_D_Marinier_NL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/NL/Infanterie/Marinier/Marinier_2.fbx"
+)
+export MeshDescriptor_Servant_G_Marinier_NL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/NL/Infanterie/Marinier/Marinier_1_LOW.fbx"
+)
+export MeshDescriptor_Servant_D_Marinier_NL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/NL/Infanterie/Marinier/Marinier_1_LOW.fbx"
+)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Servant_D_vz60_TCH is TResourceMesh
+(
+    Mesh=TCH_NCO_vz60
+)
+export MeshDescriptor_Servant_D_vz60_TCH_LOW is TResourceMesh
+(
+    Mesh=US_GI_1_LOW
+)
+export MeshDescriptor_Servant_G_vz60_TCH is TResourceMesh
+(
+    Mesh=TCH_Soldier_vz60_1
+)
+export MeshDescriptor_Servant_G_vz60_TCH_LOW is TResourceMesh
+(
+    Mesh=US_GI_1_LOW
+)
+export MeshDescriptor_Servant_D_vz85_TCH is TResourceMesh
+(
+    Mesh=TCH_NCO_vz85
+)
+export MeshDescriptor_Servant_D_vz85_TCH_LOW is TResourceMesh
+(
+    Mesh=US_GI_1_LOW
+)
+export MeshDescriptor_Servant_G_vz85_TCH is TResourceMesh
+(
+    Mesh=TCH_Soldier_vz85_1
+)
+export MeshDescriptor_Servant_G_vz85_TCH_LOW is TResourceMesh
+(
+    Mesh=US_GI_1_LOW
+)
+export MeshDescriptor_Servant_D_Vysadkar_TCH is TResourceMesh
+(
+    Mesh=TCH_NCO_Vysadkar
+)
+export MeshDescriptor_Servant_D_Vysadkar_TCH_LOW is TResourceMesh
+(
+    Mesh=US_GI_1_LOW
+)
+export MeshDescriptor_Servant_G_Vysadkar_TCH is TResourceMesh
+(
+    Mesh=TCH_Vysadkar_2
+)
+export MeshDescriptor_Servant_G_Vysadkar_TCH_LOW is TResourceMesh
+(
+    Mesh=US_GI_1_LOW
+)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Servant_D_CAN is TResourceMesh
+(
+    Mesh=CAN_NCO_1
+)
+export MeshDescriptor_Servant_G_CAN is TResourceMesh
+(
+    Mesh=CAN_Soldier_3
+)
+export MeshDescriptor_Servant_D_CAN_LOW is TResourceMesh
+(
+    Mesh=US_GI_1_LOW
+)
+export MeshDescriptor_Servant_G_CAN_LOW is TResourceMesh
+(
+    Mesh=US_GI_1_LOW
+)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Servant_D_ESP is TResourceMesh
+(
+    Mesh=Soldier_3_ESP
+)
+export MeshDescriptor_Servant_G_ESP is TResourceMesh
+(
+    Mesh=Soldier_1_ESP
+)
+export MeshDescriptor_Servant_D_ESP_LOW is TResourceMesh
+(
+    Mesh=US_GI_1_LOW
+)
+export MeshDescriptor_Servant_G_ESP_LOW is TResourceMesh
+(
+    Mesh=US_GI_1_LOW
+)
+//--------------------------------------------------------------------------------------------------------------------
+export FuldaSoldier is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Infanterie/Test_Soldier/Fulda_Soldier.fbx"
+)
+//--------------------------------------------------------------------------------------------------------------------
+template DriverPoseTemplate
+[
+    FileName,
+] is TResourceMatrixArrayAnimation
+(
+    FileName   = 'GameData:/Assets/3D/Units/Common/Driver/' + <FileName>
+    PlayInLoop     = false
+)
+//--------------------------------------------------------------------------------------------------------------------
+export PilotStand is DriverPoseTemplate(FileName = 'Pilot_Stand.fbx')
+export DriverStand is DriverPoseTemplate(FileName = 'Driver_Stand.fbx')
+export DriverLSV is DriverPoseTemplate(FileName = 'Driver_LSV.fbx')
+
+export GunnerSittingDown is TResourceMatrixArrayAnimation
+(
+    FileName       = 'GameData:/Assets/3D/Units/Common/sources/Anims_Gunner_FULDA/Gunner_Sitting_Down.fbx'
+    PlayInLoop     = false
+)
+
+export GunnerStandingUp is TResourceMatrixArrayAnimation
+(
+    FileName       = 'GameData:/Assets/3D/Units/Common/sources/Anims_Gunner_FULDA/Gunner_Standing_Up.fbx'
+    PlayInLoop     = false
+)
+
+export GunnerSittingDown_6U6 is TResourceMatrixArrayAnimation
+(
+    FileName       = 'GameData:/Assets/3D/Units/Common/sources/Anims_Gunner_FULDA/Gunner_Sitting_Down_6U6.fbx'
+    PlayInLoop     = false
+)

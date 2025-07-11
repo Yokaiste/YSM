@@ -1,0 +1,11 @@
+export AirplaneConstantesWargame is TAirplaneConstantesModernWarfareDescriptor
+(
+    EvacuationAltitudeGRU  = 3534
+
+    TempsEntreDeuxDecollagesEnSecondes = 0.6
+
+    UtiliserArmesPendantEvac = true
+
+    FrontLandingGearMeshNodeName = "train_avant"
+    BackLandingGearMeshNodeName = "train_arriere"
+)

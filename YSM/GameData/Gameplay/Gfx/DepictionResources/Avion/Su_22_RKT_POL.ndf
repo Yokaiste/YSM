@@ -1,0 +1,19 @@
+export Modele_Su_22_RKT_POL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Avion/Su_22/Su_22_rkt.fbx"
+)
+
+export Modele_Su_22_RKT_POL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Avion/Su_22_MID/Su_22_rkt_MID.fbx"
+)
+
+export Modele_Su_22_RKT_POL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Avion/Su_22_LOW/Su_22_rkt_LOW.fbx"
+)
+
+export Modele_Su_22_RKT_POL_train is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Avion/Su_22/Su_22_train.fbx"
+)

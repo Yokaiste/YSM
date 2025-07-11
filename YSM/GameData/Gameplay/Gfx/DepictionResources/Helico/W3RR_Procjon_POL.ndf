@@ -1,0 +1,14 @@
+export Modele_W3RR_Procjon_POL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Helico/W3RR_Procjon/W3RR_Procjon.fbx"
+)
+
+export Modele_W3RR_Procjon_POL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Helico/W3RR_Procjon_MID/W3RR_Procjon_MID.fbx"
+)
+
+export Modele_W3RR_Procjon_POL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Helico/W3RR_Procjon_LOW/W3RR_Procjon_LOW.fbx"
+)

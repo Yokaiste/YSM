@@ -1,0 +1,21 @@
+export Modele_ZSU_23_Shilka_POL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/DCA/ZSU_23_Shilka/ZSU_23_Shilka.fbx"
+    Textures="GameData:/Assets/3D/Units/POL/DCA/ZSU_23_Shilka"
+)
+
+export Modele_ZSU_23_Shilka_POL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/DCA/ZSU_23_Shilka_MID/ZSU_23_Shilka_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/POL/DCA/ZSU_23_Shilka_MID"
+
+)
+
+export Modele_ZSU_23_Shilka_POL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/DCA/ZSU_23_Shilka_LOW/ZSU_23_Shilka_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/POL/DCA/ZSU_23_Shilka_LOW"
+)
+
+
+

@@ -1,0 +1,3 @@
+export Modele_CH54B_Tarhe_trans_US is TResourceMesh (Mesh="GameData:/Assets/3D/Units/US/Helico/CH54B_Tarhe_trans/CH54B_Tarhe_trans.fbx")
+export Modele_CH54B_Tarhe_trans_US_MID is TResourceMesh (Mesh="GameData:/Assets/3D/Units/US/Helico/CH54B_Tarhe_trans_MID/CH54B_Tarhe_trans_MID.fbx")
+export Modele_CH54B_Tarhe_trans_US_LOW is TResourceMesh (Mesh="GameData:/Assets/3D/Units/US/Helico/CH54B_Tarhe_trans_LOW/CH54B_Tarhe_trans_LOW.fbx")

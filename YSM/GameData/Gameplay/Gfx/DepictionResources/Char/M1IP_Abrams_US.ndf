@@ -1,0 +1,14 @@
+export Modele_M1IP_Abrams_US is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Char/M1IP_Abrams/M1IP_Abrams.fbx"
+)
+
+export Modele_M1IP_Abrams_US_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Char/M1IP_Abrams_MID/M1IP_Abrams_MID.fbx"
+)
+
+export Modele_M1IP_Abrams_US_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Char/M1IP_Abrams_LOW/M1IP_Abrams_LOW.fbx"
+)

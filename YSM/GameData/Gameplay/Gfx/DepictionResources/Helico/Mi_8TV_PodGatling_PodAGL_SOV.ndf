@@ -1,0 +1,26 @@
+export Modele_Mi_8TV_PodGatling_PodAGL_SOV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Helico/Mi_8TV/Mi_8TV.fbx"
+)
+
+export Modele_Mi_8TV_PodGatling_PodAGL_SOV_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Helico/Mi_8TV_MID/Mi_8TV_MID.fbx"
+)
+
+export Modele_Mi_8TV_PodGatling_PodAGL_SOV_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Helico/Mi_8TV_LOW/Mi_8TV_LOW.fbx"
+)
+
+export Modele_Mi_8TV_PodGatling_PodAGL_SOV_Tourelle_01 is TResourceMesh
+(
+    Mesh=ModelFile_Pod_GUV_Gatling_t1
+)
+
+export ModelFile_Pod_GUV_AGL_t2 is 'GameData:/Assets/3D/Units/Ammo/Tourelles/SOV/GUV/GUV_AGL_t2.fbx'
+
+export Modele_Mi_8TV_PodGatling_PodAGL_SOV_Tourelle_02 is TResourceMesh
+(
+    Mesh=ModelFile_Pod_GUV_AGL_t2
+)

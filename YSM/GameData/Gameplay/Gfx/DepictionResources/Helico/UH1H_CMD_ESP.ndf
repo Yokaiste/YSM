@@ -1,0 +1,14 @@
+export Modele_UH1H_CMD_ESP is TResourceMesh
+(
+    Mesh=ModelFile_UH1A_US
+)
+
+export Modele_UH1H_CMD_ESP_MID is TResourceMesh
+(
+    Mesh=ModelFile_UH1A_US_MID
+)
+
+export Modele_UH1H_CMD_ESP_LOW is TResourceMesh
+(
+    Mesh=ModelFile_UH1A_US_LOW
+)

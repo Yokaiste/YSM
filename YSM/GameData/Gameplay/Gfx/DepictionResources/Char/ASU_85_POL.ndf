@@ -1,0 +1,7 @@
+export ModelFile_ASU_85_POL     is 'GameData:/Assets/3D/Units/POL/Char/ASU_85/ASU_85.fbx'
+export ModelFile_ASU_85_POL_MID is 'GameData:/Assets/3D/Units/POL/Char/ASU_85_MID/ASU_85_MID.fbx'
+export ModelFile_ASU_85_POL_LOW is 'GameData:/Assets/3D/Units/POL/Char/ASU_85_LOW/ASU_85_LOW.fbx'
+
+export Modele_ASU_85_POL     is TResourceMesh( Mesh=ModelFile_ASU_85_POL )
+export Modele_ASU_85_POL_MID is TResourceMesh( Mesh=ModelFile_ASU_85_POL_MID )
+export Modele_ASU_85_POL_LOW is TResourceMesh( Mesh=ModelFile_ASU_85_POL_LOW )

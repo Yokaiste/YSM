@@ -1,0 +1,14 @@
+export Modele_M577_US is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/CMD/M577/M577.fbx"
+)
+
+export Modele_M577_US_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/CMD/M577_MID/M577_MID.fbx"
+)
+
+export Modele_M577_US_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/CMD/M577_LOW/M577_LOW.fbx"
+)

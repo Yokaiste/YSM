@@ -1,0 +1,17 @@
+export Modele_ZSU_23_Shilka_Afghan_SOV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/DCA/ZSU_23_Shilka_Afghanskii/ZSU_23_Shilka_Afghanskii.fbx"
+)
+
+export Modele_ZSU_23_Shilka_Afghan_SOV_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/DCA/ZSU_23_Shilka_Afghanskii_MID/ZSU_23_Shilka_Afghanskii_MID.fbx"
+)
+
+export Modele_ZSU_23_Shilka_Afghan_SOV_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/DCA/ZSU_23_Shilka_Afghanskii_LOW/ZSU_23_Shilka_Afghanskii_LOW.fbx"
+)
+
+
+

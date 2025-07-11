@@ -1,0 +1,14 @@
+export Modele_MCV_80_Warrior_UK is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Char/MCV_80_Warrior/MCV_80_Warrior.fbx"
+)
+
+export Modele_MCV_80_Warrior_UK_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Char/MCV_80_Warrior_MID/MCV_80_Warrior_MID.fbx"
+)
+
+export Modele_MCV_80_Warrior_UK_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Char/MCV_80_Warrior_LOW/MCV_80_Warrior_LOW.fbx"
+)

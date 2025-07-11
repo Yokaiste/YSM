@@ -1,0 +1,17 @@
+export Modele_CH47_Chinook_UK is TResourceMesh
+(
+    Mesh=ModelFile_CH47_Chinook_US
+    Textures="GameData:/Assets/3D/Units/UK/Helico/CH_47D_Chinook"
+)
+
+export Modele_CH47_Chinook_UK_MID is TResourceMesh
+(
+    Mesh=ModelFile_CH47_Chinook_US_MID
+    Textures="GameData:/Assets/3D/Units/UK/Helico/CH_47D_Chinook_MID"
+)
+
+export Modele_CH47_Chinook_UK_LOW is TResourceMesh
+(
+    Mesh=ModelFile_CH47_Chinook_US_LOW
+    Textures="GameData:/Assets/3D/Units/UK/Helico/CH_47D_Chinook_LOW"
+)

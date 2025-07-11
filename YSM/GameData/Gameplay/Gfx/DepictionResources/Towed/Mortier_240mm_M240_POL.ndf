@@ -1,0 +1,3 @@
+export Modele_Mortier_240mm_M240_POL is TResourceMesh( Mesh=ModelFile_Mortier_240mm_M240_SOV)
+export Modele_Mortier_240mm_M240_POL_MID is TResourceMesh( Mesh=ModelFile_Mortier_240mm_M240_SOV_MID)
+export Modele_Mortier_240mm_M240_POL_LOW is TResourceMesh( Mesh=ModelFile_Mortier_240mm_M240_SOV_LOW)

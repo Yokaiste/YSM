@@ -1,0 +1,19 @@
+export Modele_M55_203mm_BEL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Artillerie/M55_203mm/M55_203mm.fbx"
+)
+
+export Modele_M55_203mm_BEL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Artillerie/M55_203mm_MID/M55_203mm_MID.fbx"
+)
+
+export Modele_M55_203mm_BEL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Artillerie/M55_203mm_LOW/M55_203mm_LOW.fbx"
+)
+
+export Modele_M55_203mm_BEL_Tourelle_02 is TResourceMesh
+(
+    Mesh=ModelFile_M2HB_12_7mm_t2
+)

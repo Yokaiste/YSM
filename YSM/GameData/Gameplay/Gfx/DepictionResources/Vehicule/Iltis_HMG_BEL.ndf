@@ -1,0 +1,19 @@
+export Modele_Iltis_HMG_BEL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Vehicule/Iltis_reco/Iltis_reco.fbx"
+)
+
+export Modele_Iltis_HMG_BEL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Vehicule/Iltis_reco/Iltis_reco.fbx"
+)
+
+export Modele_Iltis_HMG_BEL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Vehicule/Iltis_reco/Iltis_reco.fbx"
+)
+
+export Modele_Iltis_HMG_BEL_Tourelle_01 is TResourceMesh
+(
+    Mesh=ModelFile_M2HB_12_7mm_t1
+)

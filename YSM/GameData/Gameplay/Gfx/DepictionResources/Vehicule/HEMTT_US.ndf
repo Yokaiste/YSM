@@ -1,0 +1,3 @@
+export Modele_HEMTT_US     is TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/Vehicule/M978_HEMTT/M978_HEMTT.fbx" )
+export Modele_HEMTT_US_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/Vehicule/M978_HEMTT_MID/M978_HEMTT_MID.fbx" )
+export Modele_HEMTT_US_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/Vehicule/M978_HEMTT_LOW/M978_HEMTT_LOW.fbx" )

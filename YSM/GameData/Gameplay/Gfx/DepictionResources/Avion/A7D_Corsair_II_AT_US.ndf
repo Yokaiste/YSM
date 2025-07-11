@@ -1,0 +1,4 @@
+export Modele_A7D_Corsair_II_AT_US     is TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/Avion/A7D_Corsair_II_AT/A7D_Corsair_II_AT.fbx" )
+export Modele_A7D_Corsair_II_AT_US_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/Avion/A7D_Corsair_II_AT_MID/A7D_Corsair_II_AT_MID.fbx" )
+export Modele_A7D_Corsair_II_AT_US_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/Avion/A7D_Corsair_II_AT_LOW/A7D_Corsair_II_AT_LOW.fbx" )
+export Modele_A7D_Corsair_II_AT_US_train is TResourceMesh ( Mesh="GameData:/Assets/3D/Units/US/Avion/A7D_Corsair_II_AT/A7D_Corsair_II_AT_train.fbx")

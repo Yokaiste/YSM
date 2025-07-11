@@ -1,0 +1,14 @@
+export Modele_LSV_MILAN_UK is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Vehicule/LSV_MILAN/LSV_MILAN.fbx"
+)
+
+export Modele_LSV_MILAN_UK_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Vehicule/LSV_MILAN_MID/LSV_MILAN_MID.fbx"
+)
+
+export Modele_LSV_MILAN_UK_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Vehicule/LSV_MILAN_LOW/LSV_MILAN_LOW.fbx"
+)

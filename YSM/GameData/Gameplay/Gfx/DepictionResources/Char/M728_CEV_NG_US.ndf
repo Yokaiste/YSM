@@ -1,0 +1,17 @@
+export Modele_M728_CEV_NG_US is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Char/M728_CEV/M728_CEV.fbx"
+    Textures="GameData:/Assets/3D/Units/US/Char/M728_CEV_NG"
+)
+
+export Modele_M728_CEV_NG_US_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Char/M728_CEV/M728_CEV.fbx"
+    Textures="GameData:/Assets/3D/Units/US/Char/M728_CEV_NG"
+)
+
+export Modele_M728_CEV_NG_US_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Char/M728_CEV/M728_CEV.fbx"
+    Textures="GameData:/Assets/3D/Units/US/Char/M728_CEV_NG"
+)

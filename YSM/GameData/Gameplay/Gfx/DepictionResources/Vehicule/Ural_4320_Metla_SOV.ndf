@@ -1,0 +1,17 @@
+export Modele_Ural_4320_Metla_SOV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Vehicule/Ural_4320_Metla/URAL_4320_Metla.fbx"
+)
+
+export Modele_Ural_4320_Metla_SOV_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Vehicule/Ural_4320_Metla_MID/URAL_4320_Metla_MID.fbx"
+)
+
+export Modele_Ural_4320_Metla_SOV_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Vehicule/Ural_4320_Metla_LOW/URAL_4320_Metla_LOW.fbx"
+)
+
+
+

@@ -1,0 +1,14 @@
+export Modele_Centurion_AVRE_105_UK is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Char/Centurion_AVRE/Centurion_AVRE_105.fbx"
+)
+
+export Modele_Centurion_AVRE_105_UK_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Char/Centurion_AVRE_MID/Centurion_AVRE_105_MID.fbx"
+)
+
+export Modele_Centurion_AVRE_105_UK_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Char/Centurion_AVRE_LOW/Centurion_AVRE_LOW.fbx"
+)

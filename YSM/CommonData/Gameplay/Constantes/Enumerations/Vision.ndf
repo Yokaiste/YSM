@@ -1,0 +1,16 @@
+// TVisionRange
+EVisionRange is TBaseClass
+(
+    Standard             is 0
+    LowAltitude          is 1
+    HighAltitude         is 2
+)
+
+// TOpticalStrength
+EOpticalStrength is TBaseClass
+(
+    Standard             is 0
+    LowAltitude          is 1
+    AntiRadar            is 2
+    HighAltitude         is 3
+)

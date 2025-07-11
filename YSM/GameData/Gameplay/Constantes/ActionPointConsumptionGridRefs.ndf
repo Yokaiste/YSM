@@ -1,0 +1,5 @@
+ActionPointConsumptionRefs is TBaseClass
+(
+    CaseSizeLBU is 60.4651167
+    CaseSizeGRU is 176.678445
+)

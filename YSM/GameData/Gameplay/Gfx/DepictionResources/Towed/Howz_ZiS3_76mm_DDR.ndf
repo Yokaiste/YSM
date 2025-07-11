@@ -1,0 +1,3 @@
+export Modele_Howz_ZiS3_76mm_DDR is TResourceMesh( Mesh="GameData:/Assets/3D/Units/DDR/Canon/AT_ZiS3_76mm/AT_ZiS3_76mm.fbx")
+export Modele_Howz_ZiS3_76mm_DDR_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/DDR/Canon/AT_ZiS3_76mm_MID/AT_ZiS3_76mm_MID.fbx")
+export Modele_Howz_ZiS3_76mm_DDR_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/DDR/Canon/AT_ZiS3_76mm_LOW/AT_ZiS3_76mm_LOW.fbx")

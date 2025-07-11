@@ -1,0 +1,14 @@
+export Modele_Gazelle_Mistral_FR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Helico/Gazelle_Mistral/Gazelle_Mistral.fbx"
+)
+
+export Modele_Gazelle_Mistral_FR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Helico/Gazelle_Mistral_MID/Gazelle_Mistral_MID.fbx"
+)
+
+export Modele_Gazelle_Mistral_FR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Helico/Gazelle_Mistral_LOW/Gazelle_Mistral_LOW.fbx"
+)

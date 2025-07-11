@@ -1,0 +1,14 @@
+export Modele_YP_408_Radar_NL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/NL/APC/YP_408_Radar/YP_408_Radar.fbx"
+)
+
+export Modele_YP_408_Radar_NL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/NL/APC/YP_408_Radar_MID/YP_408_Radar_MID.fbx"
+)
+
+export Modele_YP_408_Radar_NL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/NL/APC/YP_408_Radar_LOW/YP_408_Radar_LOW.fbx"
+)

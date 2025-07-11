@@ -1,0 +1,14 @@
+export Modele_M38A1_TOW_NL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/NL/Vehicule/M38A1_TOW/M38A1_TOW.fbx"
+)
+
+export Modele_M38A1_TOW_NL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/NL/Vehicule/M38A1_TOW_MID/M38A1_TOW_MID.fbx"
+)
+
+export Modele_M38A1_TOW_NL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/NL/Vehicule/M38A1_TOW_LOW/M38A1_TOW_LOW.fbx"
+)

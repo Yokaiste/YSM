@@ -1,0 +1,16 @@
+export CorridorDefense_TestAuto_Strategy is TIAGeneralStrategy
+(
+    StrategyName = "CorDefTA"
+    FirstGenerator = TestAuto_CorridorDefense
+    TransitionList =[]
+)
+
+
+export TestAuto_CorridorDefense is TSequenceGeneratorDescriptor
+(
+
+    GeneratorList =
+    [
+        ~/Corridor_Defense_OnlyTestAuto,
+    ]
+)

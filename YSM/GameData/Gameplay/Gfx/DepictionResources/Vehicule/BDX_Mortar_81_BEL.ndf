@@ -1,0 +1,17 @@
+export Modele_BDX_Mortar_81_BEL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Artillerie/VAB_Mortar_81/VAB_Mortar_81.fbx"
+)
+
+export Modele_BDX_Mortar_81_BEL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Artillerie/VAB_Mortar_81_MID/VAB_Mortar_81_MID.fbx"
+)
+
+export Modele_BDX_Mortar_81_BEL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Artillerie/VAB_Mortar_81_LOW/VAB_Mortar_81_LOW.fbx"
+)
+
+
+

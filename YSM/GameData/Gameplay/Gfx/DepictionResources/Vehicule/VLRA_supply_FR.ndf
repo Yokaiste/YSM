@@ -1,0 +1,14 @@
+export Modele_VLRA_supply_FR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/VLRA_Supply/VLRA_Supply.fbx"
+)
+
+export Modele_VLRA_supply_FR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/VLRA_Supply_MID/VLRA_Supply_MID.fbx"
+)
+
+export Modele_VLRA_supply_FR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/VLRA_Supply_LOW/VLRA_Supply_LOW.fbx"
+)

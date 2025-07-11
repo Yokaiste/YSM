@@ -1,0 +1,14 @@
+export Modele_Gazelle_20mm_reco_FR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Helico/Gazelle_Reco_20mm/Gazelle_Reco_20mm.fbx"
+)
+
+export Modele_Gazelle_20mm_reco_FR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Helico/Gazelle_Reco_20mm_MID/Gazelle_Reco_20mm_MID.fbx"
+)
+
+export Modele_Gazelle_20mm_reco_FR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Helico/Gazelle_Reco_20mm_LOW/Gazelle_Reco_20mm_LOW.fbx"
+)

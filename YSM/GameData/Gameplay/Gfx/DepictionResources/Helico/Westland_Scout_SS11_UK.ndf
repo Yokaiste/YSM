@@ -1,0 +1,14 @@
+export Modele_Westland_Scout_SS11_UK is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Helico/Westland_Scout_SS11/Westland_Scout_SS11.fbx"
+)
+
+export Modele_Westland_Scout_SS11_UK_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Helico/Westland_Scout_SS11_MID/Westland_Scout_SS11_MID.fbx"
+)
+
+export Modele_Westland_Scout_SS11_UK_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Helico/Westland_Scout_SS11_LOW/Westland_Scout_SS11_LOW.fbx"
+)

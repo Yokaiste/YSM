@@ -1,0 +1,20 @@
+export ModelFile_Su_22_RKT_DDR is "GameData:/Assets/3D/Units/DDR/Avion/Su_22/Su_22_rkt.fbx"
+export Modele_Su_22_RKT_DDR is TResourceMesh
+(
+    Mesh=ModelFile_Su_22_RKT_DDR
+)
+export ModelFile_Su_22_RKT_DDR_MID is "GameData:/Assets/3D/Units/DDR/Avion/Su_22_MID/Su_22_rkt_MID.fbx"
+export Modele_Su_22_RKT_DDR_MID is TResourceMesh
+(
+    Mesh=ModelFile_Su_22_RKT_DDR_MID
+)
+export ModelFile_Su_22_RKT_DDR_LOW is "GameData:/Assets/3D/Units/DDR/Avion/Su_22_LOW/Su_22_rkt_LOW.fbx"
+export Modele_Su_22_RKT_DDR_LOW is TResourceMesh
+(
+    Mesh=ModelFile_Su_22_RKT_DDR_LOW
+)
+export ModelFile_Su_22_RKT_DDR_train is "GameData:/Assets/3D/Units/DDR/Avion/Su_22/Su_22_train.fbx"
+export Modele_Su_22_RKT_DDR_train is TResourceMesh
+(
+    Mesh=ModelFile_Su_22_RKT_DDR_train
+)

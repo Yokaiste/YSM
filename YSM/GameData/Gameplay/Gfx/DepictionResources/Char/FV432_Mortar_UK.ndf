@@ -1,0 +1,19 @@
+export Modele_FV432_Mortar_UK is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/APC/FV432_Mortar/FV432_Mortar.fbx"
+)
+
+export Modele_FV432_Mortar_UK_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/APC/FV432_Mortar_MID/FV432_Mortar_MID.fbx"
+)
+
+export Modele_FV432_Mortar_UK_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/APC/FV432_Mortar_LOW/FV432_Mortar_LOW.fbx"
+)
+
+export Modele_FV432_Mortar_UK_Tourelle_02 is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Char/Chieftain_Mk11/L37_t2.fbx"
+)

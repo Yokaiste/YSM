@@ -1,0 +1,1223 @@
+// Ne pas éditer, ce fichier est généré par DamageLevelsFileWriter
+
+
+export DamageLevelsPackDescriptor_Airplanes_packSupp is TDamageLevelsPackDescriptor
+(
+    DescriptorId = GUID:{96f0b695-5a0c-44c2-a260-373c33976cd1}
+    DamageLevelsDescriptors = [
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{c4d5b5de-0214-4278-8af2-e67c52f6011b}
+            Value = 0
+            LocalizationToken = "mrl_4"
+            MoralModifier = 20
+            AnimationType = ESoldierSuppressStatus/Operational
+            EffectsPacks = [
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{48b9e365-d5bd-48ab-8c89-4848e83f35d0}
+            Value = 0.2
+            LocalizationToken = "mrl_4"
+            MoralModifier = 20
+            AnimationType = ESoldierSuppressStatus/Suppressed
+            EffectsPacks = [
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{681fa518-bd4a-4b14-bfd7-d31c9ffaaf8d}
+            Value = 0.35
+            LocalizationToken = "mrl_3"
+            MoralModifier = 20
+            AnimationType = ESoldierSuppressStatus/Suppressed
+            PrecisionEffectValue = 25
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Precision_moins_25,
+                $/GFX/EffectCapacity/UnitEffect_AirUnit_Cohesion_Normal,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{39c4f2b6-b3c0-4ebc-849b-3fed9efd30a9}
+            Value = 0.5
+            LocalizationToken = "mrl_2"
+            MoralModifier = 20
+            AnimationType = ESoldierSuppressStatus/Suppressed
+            PrecisionEffectValue = 45
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Precision_moins_45,
+                $/GFX/EffectCapacity/UnitEffect_AirUnit_Cohesion_Mediocre,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{4dba3d0a-3cbf-4467-a3b8-192579b94437}
+            Value = 0.65
+            LocalizationToken = "mrl_1"
+            MoralModifier = 20
+            AnimationType = ESoldierSuppressStatus/Pinned
+            PrecisionEffectValue = 70
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Precision_moins_70,
+                $/GFX/EffectCapacity/UnitEffect_AirUnit_Cohesion_Low,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{b552faf6-9893-45b0-815b-680379a7817a}
+            Value = 0.8
+            LocalizationToken = "mrl_1"
+            MoralModifier = 0
+            AnimationType = ESoldierSuppressStatus/Cowering
+            FeedbackOnSelf = "OnUnitPanicking"
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Baisse_Dangerosite_et_Transport_0_Effet,
+                $/GFX/EffectCapacity/UnitEffect_evac_avion,
+                $/GFX/EffectCapacity/UnitEffect_AirUnit_Cohesion_Low,
+            ]
+        ),
+    ]
+)
+export DamageLevelsPackDescriptor_ArtillerieInf_packSupp is TDamageLevelsPackDescriptor
+(
+    DescriptorId = GUID:{bbd98092-57b7-4907-b811-9634b47463be}
+    DamageLevelsDescriptors = [
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{cfa01906-69e2-4554-b8ef-ab9cb6dc7021}
+            Value = 0
+            LocalizationToken = "CALM"
+            MoralModifier = 99
+            AnimationType = ESoldierSuppressStatus/Operational
+            EffectsPacks = [
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{f25fd210-568c-4b93-ab19-94f6edf30218}
+            Value = 0.2
+            LocalizationToken = "ENGAGED"
+            MoralModifier = 99
+            AnimationType = ESoldierSuppressStatus/Suppressed
+            PrecisionEffectValue = 10
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Precision_moins_10,
+                $/GFX/EffectCapacity/UnitEffect_ArtInf_Engaged,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{bcc987f1-ef21-4e3e-8357-a0c97eda3f65}
+            Value = 0.35
+            LocalizationToken = "WORRIED"
+            MoralModifier = 99
+            AnimationType = ESoldierSuppressStatus/Suppressed
+            PrecisionEffectValue = 25
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Precision_moins_25,
+                $/GFX/EffectCapacity/UnitEffect_ArtInf_Stressed,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{c343efb4-e54c-4198-9be1-413902eed3d0}
+            Value = 0.5
+            LocalizationToken = "STRESSED"
+            MoralModifier = 99
+            AnimationType = ESoldierSuppressStatus/Suppressed
+            PrecisionEffectValue = 45
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Precision_moins_45,
+                $/GFX/EffectCapacity/UnitEffect_ArtInf_Suppressed,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{f61b815a-5cc3-4b80-acb0-5def9f14dcd0}
+            Value = 0.65
+            LocalizationToken = "SHAKEN"
+            MoralModifier = 99
+            AnimationType = ESoldierSuppressStatus/Pinned
+            PrecisionEffectValue = 70
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Precision_moins_70,
+                $/GFX/EffectCapacity/UnitEffect_ArtInf_Pinned,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{5ab7307c-e865-49d0-a6f1-81ec5d5014bc}
+            Value = 0.8
+            LocalizationToken = "PINNED"
+            MoralModifier = 99
+            AnimationType = ESoldierSuppressStatus/Cowering
+            FeedbackOnSelf = "OnUnitPanicking"
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_ArtInf_Cowering,
+                $/GFX/EffectCapacity/UnitEffect_Baisse_Dangerosite_et_Transport_0_Effet,
+            ]
+        ),
+    ]
+)
+export DamageLevelsPackDescriptor_Artillerie_packSupp is TDamageLevelsPackDescriptor
+(
+    DescriptorId = GUID:{b331f780-1683-433b-82e3-35eacc5131a9}
+    DamageLevelsDescriptors = [
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{96a6f9cf-527a-4101-854b-c54f00404454}
+            Value = 0
+            LocalizationToken = "CALM"
+            MoralModifier = 99
+            AnimationType = ESoldierSuppressStatus/Operational
+            EffectsPacks = [
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{ac5dadce-f086-4779-8627-9ac9aa5972ce}
+            Value = 0.2
+            LocalizationToken = "ENGAGED"
+            MoralModifier = 99
+            AnimationType = ESoldierSuppressStatus/Suppressed
+            PrecisionEffectValue = 10
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Precision_moins_10,
+                $/GFX/EffectCapacity/UnitEffect_Artillerie_Engaged,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{52ccbf2b-f81f-4286-b17c-35169bb54ea0}
+            Value = 0.35
+            LocalizationToken = "WORRIED"
+            MoralModifier = 99
+            AnimationType = ESoldierSuppressStatus/Suppressed
+            PrecisionEffectValue = 25
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Precision_moins_25,
+                $/GFX/EffectCapacity/UnitEffect_Artillerie_Stressed,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{a1e1c79a-9390-4212-a291-7cb2bf7f7217}
+            Value = 0.5
+            LocalizationToken = "STRESSED"
+            MoralModifier = 99
+            AnimationType = ESoldierSuppressStatus/Suppressed
+            PrecisionEffectValue = 45
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Precision_moins_45,
+                $/GFX/EffectCapacity/UnitEffect_Artillerie_Suppressed,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{8c317b2d-899f-4f94-8774-89e2df8975a4}
+            Value = 0.65
+            LocalizationToken = "SHAKEN"
+            MoralModifier = 99
+            AnimationType = ESoldierSuppressStatus/Pinned
+            PrecisionEffectValue = 70
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Precision_moins_70,
+                $/GFX/EffectCapacity/UnitEffect_Artillerie_Pinned,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{339ac7fa-6b02-4077-82c7-18f263b86633}
+            Value = 0.8
+            LocalizationToken = "PANICKED"
+            MoralModifier = 0
+            AnimationType = ESoldierSuppressStatus/Cowering
+            FeedbackOnSelf = "OnUnitPanicking"
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Artillerie_Cowering,
+                $/GFX/EffectCapacity/UnitEffect_Baisse_Dangerosite_et_Transport_0_Effet,
+            ]
+        ),
+    ]
+)
+export DamageLevelsPackDescriptor_ArtyUnits_packSupp is TDamageLevelsPackDescriptor
+(
+    DescriptorId = GUID:{e682ec45-c730-4e4f-84a8-0b35443ff000}
+    DamageLevelsDescriptors = [
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{0cb01082-7fb8-41b2-a897-0e14bba232fc}
+            Value = 0
+            LocalizationToken = "mrl_4"
+            MoralModifier = 99
+            AnimationType = ESoldierSuppressStatus/Operational
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_ArtyUnit_Cohesion_High,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{31dd7ef1-7ecc-4a59-894b-3f1cdc62382c}
+            Value = 0.1
+            LocalizationToken = "mrl_4"
+            MoralModifier = 99
+            AnimationType = ESoldierSuppressStatus/Suppressed
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_ArtyUnit_Cohesion_High,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{9860eea1-5d9a-425d-b1e4-6376693b15b8}
+            Value = 0.25
+            LocalizationToken = "mrl_3"
+            MoralModifier = 99
+            AnimationType = ESoldierSuppressStatus/Suppressed
+            PrecisionEffectValue = 25
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Precision_moins_25,
+                $/GFX/EffectCapacity/UnitEffect_ArtyUnit_Cohesion_Normal,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{bb0b8b79-83ee-4d08-82e1-66422ac0a5f0}
+            Value = 0.5
+            LocalizationToken = "mrl_2"
+            MoralModifier = 99
+            AnimationType = ESoldierSuppressStatus/Suppressed
+            PrecisionEffectValue = 45
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Precision_moins_45,
+                $/GFX/EffectCapacity/UnitEffect_ArtyUnit_Cohesion_Mediocre,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{7d04a2e7-8032-4fc6-a081-a0aca57b6c36}
+            Value = 0.75
+            LocalizationToken = "mrl_1"
+            MoralModifier = 99
+            AnimationType = ESoldierSuppressStatus/Pinned
+            PrecisionEffectValue = 70
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Precision_moins_70,
+                $/GFX/EffectCapacity/UnitEffect_ArtyUnit_Cohesion_Low,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{4e606f80-a55e-4222-9f36-401edbae3252}
+            Value = 0.8
+            LocalizationToken = "mrl_1"
+            AnimationType = ESoldierSuppressStatus/Cowering
+            FeedbackOnSelf = "OnUnitPanicking"
+            PrecisionEffectValue = 70
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Precision_moins_70,
+                $/GFX/EffectCapacity/UnitEffect_ArtyUnit_Cohesion_Low,
+                $/GFX/EffectCapacity/UnitEffect_Baisse_Dangerosite,
+            ]
+        ),
+    ]
+)
+export DamageLevelsPackDescriptor_Bombardier_Cluster_packSupp is TDamageLevelsPackDescriptor
+(
+    DescriptorId = GUID:{95770a77-5cb1-4e64-9495-cfa50be74330}
+    DamageLevelsDescriptors = [
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{6c01209c-a68a-44e4-aa66-23b5e3a7530a}
+            Value = 0
+            LocalizationToken = "CALM"
+            MoralModifier = 20
+            AnimationType = ESoldierSuppressStatus/Operational
+            EffectsPacks = [
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{c5e78ca4-35a2-45d5-a4f2-28015b1e015d}
+            Value = 0.2
+            LocalizationToken = "ENGAGED"
+            MoralModifier = 20
+            AnimationType = ESoldierSuppressStatus/Suppressed
+            PrecisionEffectValue = 10
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Precision_moins_10,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{3ee4af78-d9e1-4171-bf4e-8b7404e25e2c}
+            Value = 0.35
+            LocalizationToken = "WORRIED"
+            MoralModifier = 20
+            AnimationType = ESoldierSuppressStatus/Suppressed
+            PrecisionEffectValue = 25
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Precision_moins_25,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{1e5b0614-aaaa-4025-b732-2c3a395d4950}
+            Value = 0.5
+            LocalizationToken = "STRESSED"
+            MoralModifier = 20
+            AnimationType = ESoldierSuppressStatus/Suppressed
+            PrecisionEffectValue = 45
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Precision_moins_45,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{64aca58e-676c-4402-90a6-6d400ca41e50}
+            Value = 0.65
+            LocalizationToken = "SHAKEN"
+            MoralModifier = 20
+            AnimationType = ESoldierSuppressStatus/Pinned
+            PrecisionEffectValue = 70
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Precision_moins_70,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{65a7a41e-0f8a-4dbd-9aa6-9d36c42aaab7}
+            Value = 0.8
+            LocalizationToken = "PANICKED"
+            MoralModifier = -60
+            AnimationType = ESoldierSuppressStatus/Cowering
+            FeedbackOnSelf = "OnUnitPanicking"
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Baisse_Dangerosite_et_Transport_0_Effet,
+            ]
+        ),
+    ]
+)
+export DamageLevelsPackDescriptor_Bombardier_Leger_packSupp is TDamageLevelsPackDescriptor
+(
+    DescriptorId = GUID:{5a211ddb-634e-4681-85d1-9a0c6cbc8935}
+    DamageLevelsDescriptors = [
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{5398c1fe-c16a-44bf-aa25-3dfc0d1264fc}
+            Value = 0
+            LocalizationToken = "CALM"
+            MoralModifier = 20
+            AnimationType = ESoldierSuppressStatus/Operational
+            EffectsPacks = [
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{289deb94-8c2e-40dd-a461-f20a2b2a90dd}
+            Value = 0.2
+            LocalizationToken = "ENGAGED"
+            MoralModifier = 20
+            AnimationType = ESoldierSuppressStatus/Suppressed
+            PrecisionEffectValue = 10
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Precision_moins_10,
+                $/GFX/EffectCapacity/UnitEffect_Dispersion_Bombes_plus25,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{6838d916-4c72-4ec9-a0cf-9463c0537215}
+            Value = 0.35
+            LocalizationToken = "WORRIED"
+            MoralModifier = 20
+            AnimationType = ESoldierSuppressStatus/Suppressed
+            PrecisionEffectValue = 25
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Precision_moins_25,
+                $/GFX/EffectCapacity/UnitEffect_Dispersion_Bombes_plus50,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{e0a59fc8-f870-4a67-a16d-207708aa32f2}
+            Value = 0.5
+            LocalizationToken = "STRESSED"
+            MoralModifier = 20
+            AnimationType = ESoldierSuppressStatus/Suppressed
+            PrecisionEffectValue = 45
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Precision_moins_45,
+                $/GFX/EffectCapacity/UnitEffect_Dispersion_Bombes_plus100,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{a987f075-26e8-4a8a-8359-c42bdb32fd1f}
+            Value = 0.65
+            LocalizationToken = "SHAKEN"
+            MoralModifier = 20
+            AnimationType = ESoldierSuppressStatus/Pinned
+            PrecisionEffectValue = 70
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Precision_moins_70,
+                $/GFX/EffectCapacity/UnitEffect_Dispersion_Bombes_plus150,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{79f7f82a-ab6e-4b83-8584-eb39eec9f9ad}
+            Value = 0.8
+            LocalizationToken = "PANICKED"
+            MoralModifier = -60
+            AnimationType = ESoldierSuppressStatus/Cowering
+            FeedbackOnSelf = "OnUnitPanicking"
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Baisse_Dangerosite_et_Transport_0_Effet,
+            ]
+        ),
+    ]
+)
+export DamageLevelsPackDescriptor_Bombardier_Lourd_packSupp is TDamageLevelsPackDescriptor
+(
+    DescriptorId = GUID:{55681cc9-af7f-4ace-a516-35e4b1995ced}
+    DamageLevelsDescriptors = [
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{144c5052-1f1b-4375-8166-01994b6af739}
+            Value = 0
+            LocalizationToken = "CALM"
+            MoralModifier = 20
+            AnimationType = ESoldierSuppressStatus/Operational
+            EffectsPacks = [
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{be0adb4c-034b-4fac-b6d8-e7bb2fe98ed8}
+            Value = 0.2
+            LocalizationToken = "ENGAGED"
+            MoralModifier = 20
+            AnimationType = ESoldierSuppressStatus/Suppressed
+            PrecisionEffectValue = 10
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Precision_moins_10,
+                $/GFX/EffectCapacity/UnitEffect_Dispersion_Bombes_plus100,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{b936cd95-f9fd-4543-8da6-fd8e9a5ca46e}
+            Value = 0.35
+            LocalizationToken = "WORRIED"
+            MoralModifier = 20
+            AnimationType = ESoldierSuppressStatus/Suppressed
+            PrecisionEffectValue = 25
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Precision_moins_25,
+                $/GFX/EffectCapacity/UnitEffect_Dispersion_Bombes_plus150,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{dda61fce-236d-4e77-8e9d-bdfa88f2cbd1}
+            Value = 0.5
+            LocalizationToken = "STRESSED"
+            MoralModifier = 20
+            AnimationType = ESoldierSuppressStatus/Suppressed
+            PrecisionEffectValue = 45
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Precision_moins_45,
+                $/GFX/EffectCapacity/UnitEffect_Dispersion_Bombes_plus200,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{e47af697-97f7-46f7-9643-d99eb9d3abc7}
+            Value = 0.65
+            LocalizationToken = "SHAKEN"
+            MoralModifier = 20
+            AnimationType = ESoldierSuppressStatus/Pinned
+            PrecisionEffectValue = 70
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Precision_moins_70,
+                $/GFX/EffectCapacity/UnitEffect_Dispersion_Bombes_plus300,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{da0f38c2-7fd4-4234-8614-7e940a902840}
+            Value = 0.8
+            LocalizationToken = "PANICKED"
+            MoralModifier = -60
+            AnimationType = ESoldierSuppressStatus/Cowering
+            FeedbackOnSelf = "OnUnitPanicking"
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Baisse_Dangerosite_et_Transport_0_Effet,
+            ]
+        ),
+    ]
+)
+export DamageLevelsPackDescriptor_CanonAT_packSupp is TDamageLevelsPackDescriptor
+(
+    DescriptorId = GUID:{6035e583-c604-41d3-9cf3-fd05b404f97a}
+    DamageLevelsDescriptors = [
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{238e47c6-f6d9-430d-9414-69f6bfebfdcb}
+            Value = 0
+            LocalizationToken = "CALM"
+            MoralModifier = 99
+            AnimationType = ESoldierSuppressStatus/Operational
+            EffectsPacks = [
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{578c7de2-d3d1-4e1b-8b43-02d7b07a85a1}
+            Value = 0.2
+            LocalizationToken = "ENGAGED"
+            MoralModifier = 99
+            AnimationType = ESoldierSuppressStatus/Suppressed
+            PrecisionEffectValue = 10
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Precision_moins_10,
+                $/GFX/EffectCapacity/UnitEffect_CanonAT_Engaged,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{5dca8124-7ddf-49c1-9424-4ce3563f9858}
+            Value = 0.35
+            LocalizationToken = "WORRIED"
+            MoralModifier = 99
+            AnimationType = ESoldierSuppressStatus/Suppressed
+            PrecisionEffectValue = 25
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Precision_moins_25,
+                $/GFX/EffectCapacity/UnitEffect_CanonAT_Stressed,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{616b6342-74bf-47f2-8c43-60ae6c026cdd}
+            Value = 0.5
+            LocalizationToken = "STRESSED"
+            MoralModifier = 99
+            AnimationType = ESoldierSuppressStatus/Suppressed
+            PrecisionEffectValue = 45
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Precision_moins_45,
+                $/GFX/EffectCapacity/UnitEffect_CanonAT_Suppressed,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{2098d1e0-ff30-414c-adbe-14c7a13a52a9}
+            Value = 0.65
+            LocalizationToken = "SHAKEN"
+            MoralModifier = 99
+            AnimationType = ESoldierSuppressStatus/Pinned
+            PrecisionEffectValue = 70
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Precision_moins_70,
+                $/GFX/EffectCapacity/UnitEffect_CanonAT_Pinned,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{f0ea4074-90a9-409e-a558-ee35353da1e9}
+            Value = 0.8
+            LocalizationToken = "PINNED"
+            MoralModifier = 99
+            AnimationType = ESoldierSuppressStatus/Cowering
+            FeedbackOnSelf = "OnUnitPanicking"
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_CanonAT_Cowering,
+                $/GFX/EffectCapacity/UnitEffect_Baisse_Dangerosite_et_Transport_0_Effet,
+            ]
+        ),
+    ]
+)
+export DamageLevelsPackDescriptor_Default_pack_paliers_suppression is TDamageLevelsPackDescriptor
+(
+    DescriptorId = GUID:{b701f707-92ff-4fe6-9c93-9b825f85a42c}
+    DamageLevelsDescriptors = [
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{b69e3935-5fb5-4153-830b-f71d34ff5903}
+            Value = 0
+            LocalizationToken = "CALM"
+            MoralModifier = 99
+            AnimationType = ESoldierSuppressStatus/Operational
+            EffectsPacks = [
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{e68aea86-b498-44cf-99c4-3c603b911a4a}
+            Value = 0.2
+            LocalizationToken = "ENGAGED"
+            MoralModifier = 99
+            AnimationType = ESoldierSuppressStatus/Suppressed
+            PrecisionEffectValue = 10
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Precision_moins_10,
+                $/GFX/EffectCapacity/UnitEffect_Nb_Places_Transport_0,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{86fff9f9-d43a-441b-8468-2537afac526f}
+            Value = 0.35
+            LocalizationToken = "WORRIED"
+            MoralModifier = 99
+            AnimationType = ESoldierSuppressStatus/Suppressed
+            PrecisionEffectValue = 25
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Precision_moins_25,
+                $/GFX/EffectCapacity/UnitEffect_Nb_Places_Transport_0,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{db229a38-40bc-4850-9a8d-3258174e32d0}
+            Value = 0.5
+            LocalizationToken = "STRESSED"
+            MoralModifier = 99
+            AnimationType = ESoldierSuppressStatus/Suppressed
+            PrecisionEffectValue = 45
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Precision_moins_45,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{5550cd6b-1518-4394-9d1c-38082a3899de}
+            Value = 0.65
+            LocalizationToken = "SHAKEN"
+            MoralModifier = 99
+            AnimationType = ESoldierSuppressStatus/Pinned
+            PrecisionEffectValue = 70
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Precision_moins_70,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{1e7c6057-36fa-4be8-9d88-87cf384407a7}
+            Value = 0.8
+            LocalizationToken = "PANICKED"
+            MoralModifier = 0
+            AnimationType = ESoldierSuppressStatus/Cowering
+            EffectsPacks = [
+            ]
+        ),
+    ]
+)
+export DamageLevelsPackDescriptor_GroundUnits_packSupp is TDamageLevelsPackDescriptor
+(
+    DescriptorId = GUID:{e6812caa-2e57-4247-9583-3c2518472857}
+    DamageLevelsDescriptors = [
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{8bc5fc12-9d76-4ad4-a49b-49f4098a1b8d}
+            Value = 0
+            LocalizationToken = "mrl_4"
+            MoralModifier = 99
+            AnimationType = ESoldierSuppressStatus/Operational
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_GroundUnit_Cohesion_High,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{0098b129-aba1-4489-ba44-7f4d3c450f4c}
+            Value = 0.1
+            LocalizationToken = "mrl_4"
+            MoralModifier = 99
+            AnimationType = ESoldierSuppressStatus/Suppressed
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_GroundUnit_Cohesion_High,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{85c20653-3701-4c19-959f-a4830f1c0003}
+            Value = 0.25
+            LocalizationToken = "mrl_3"
+            MoralModifier = 99
+            AnimationType = ESoldierSuppressStatus/Suppressed
+            PrecisionEffectValue = 25
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Precision_moins_25,
+                $/GFX/EffectCapacity/UnitEffect_GroundUnit_Cohesion_Normal,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{6e35e672-dd5d-4a89-8432-fc2c78c5a844}
+            Value = 0.5
+            LocalizationToken = "mrl_2"
+            MoralModifier = 99
+            AnimationType = ESoldierSuppressStatus/Suppressed
+            PrecisionEffectValue = 45
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Precision_moins_45,
+                $/GFX/EffectCapacity/UnitEffect_GroundUnit_Cohesion_Mediocre,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{dd969136-acdc-4c5e-8ce2-577bba7afd3c}
+            Value = 0.75
+            LocalizationToken = "mrl_1"
+            MoralModifier = 99
+            AnimationType = ESoldierSuppressStatus/Pinned
+            PrecisionEffectValue = 70
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Precision_moins_70,
+                $/GFX/EffectCapacity/UnitEffect_GroundUnit_Cohesion_Low,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{17ba57bd-fe1a-4600-8a7a-64b8378bc125}
+            Value = 0.8
+            LocalizationToken = "mrl_1"
+            AnimationType = ESoldierSuppressStatus/Cowering
+            FeedbackOnSelf = "OnUnitPanicking"
+            PrecisionEffectValue = 70
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Precision_moins_70,
+                $/GFX/EffectCapacity/UnitEffect_GroundUnit_Cohesion_Low,
+                $/GFX/EffectCapacity/UnitEffect_Baisse_Dangerosite,
+            ]
+        ),
+    ]
+)
+export DamageLevelsPackDescriptor_Infanterie_packSupp is TDamageLevelsPackDescriptor
+(
+    DescriptorId = GUID:{cbc745d2-9548-4702-9db7-b2f47874d2d0}
+    DamageLevelsDescriptors = [
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{9c286926-5d16-47af-aff4-9d0e247bfa68}
+            Value = 0
+            LocalizationToken = "CALM"
+            MoralModifier = 99
+            AnimationType = ESoldierSuppressStatus/Operational
+            EffectsPacks = [
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{3bc7e6a3-a8b2-465d-85fa-6e5eeb84a8d0}
+            Value = 0.2
+            LocalizationToken = "ENGAGED"
+            MoralModifier = 99
+            AnimationType = ESoldierSuppressStatus/Suppressed
+            PrecisionEffectValue = 10
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Precision_moins_10,
+                $/GFX/EffectCapacity/UnitEffect_Infanterie_Engaged,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{6ffb481f-424c-4429-9c18-00553b244833}
+            Value = 0.35
+            LocalizationToken = "WORRIED"
+            MoralModifier = 99
+            AnimationType = ESoldierSuppressStatus/Suppressed
+            PrecisionEffectValue = 25
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Precision_moins_25,
+                $/GFX/EffectCapacity/UnitEffect_Infanterie_Stressed,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{25a44aa0-5398-44f5-a713-43f4e0dca062}
+            Value = 0.5
+            LocalizationToken = "STRESSED"
+            MoralModifier = 99
+            AnimationType = ESoldierSuppressStatus/Suppressed
+            PrecisionEffectValue = 45
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Precision_moins_45,
+                $/GFX/EffectCapacity/UnitEffect_Infanterie_Suppressed,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{300ffa99-f9bf-403a-a2be-e7d9d88fe9f9}
+            Value = 0.65
+            LocalizationToken = "SHAKEN"
+            MoralModifier = 99
+            AnimationType = ESoldierSuppressStatus/Pinned
+            PrecisionEffectValue = 70
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Precision_moins_70,
+                $/GFX/EffectCapacity/UnitEffect_Infanterie_Pinned,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{6df4d82e-71ef-4216-a078-9e1fa692b928}
+            Value = 0.8
+            LocalizationToken = "PINNED"
+            MoralModifier = 99
+            AnimationType = ESoldierSuppressStatus/Cowering
+            FeedbackOnSelf = "OnUnitPanicking"
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Infanterie_Cowering,
+                $/GFX/EffectCapacity/UnitEffect_Baisse_Dangerosite_et_Transport_0_Effet,
+            ]
+        ),
+    ]
+)
+export DamageLevelsPackDescriptor_Moral_packSupp is TDamageLevelsPackDescriptor
+(
+    DescriptorId = GUID:{b4247dc2-93e4-40b9-b4af-1dd4bed403d9}
+    DamageLevelsDescriptors = [
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{d6c686c3-cb60-42e1-a1be-446fd85ee8de}
+            Value = 0
+            LocalizationToken = "moral1"
+            MoralModifier = 99
+            EffectsPacks = [
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{4b282174-d6f3-42d5-adb2-07623760b8fb}
+            Value = 0.3
+            LocalizationToken = "STRESSED"
+            MoralModifier = 99
+            PrecisionEffectValue = 25
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Precision_moins_25,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{41e01608-cb2e-4901-97b0-a3c7611e1aa9}
+            Value = 0.6
+            LocalizationToken = "moral3"
+            MoralModifier = 50
+            FeedbackOnSelf = "OnUnitPanicking"
+            PrecisionEffectValue = 50
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Precision_moins_50,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{4367e8a6-8852-41f0-9039-5f1b94f3acd2}
+            Value = 0.8
+            LocalizationToken = "moral3"
+            MoralModifier = 0
+            FeedbackOnSelf = "OnUnitPanicking"
+            EffectsPacks = [
+            ]
+        ),
+    ]
+)
+export DamageLevelsPackDescriptor_New_Default_packSuppression is TDamageLevelsPackDescriptor
+(
+    DescriptorId = GUID:{e4c1ee59-c732-4b07-9194-df8183113e89}
+    DamageLevelsDescriptors = [
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{cb8bccf1-363c-4dc1-94b5-eefb4e094d80}
+            Value = 0
+            LocalizationToken = "CALM"
+            MoralModifier = 99
+            AnimationType = ESoldierSuppressStatus/Operational
+            EffectsPacks = [
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{df1ef87b-1430-4a1e-9f8e-7d77a1869382}
+            Value = 0.25
+            LocalizationToken = "WORRIED"
+            MoralModifier = 99
+            AnimationType = ESoldierSuppressStatus/Suppressed
+            PrecisionEffectValue = 25
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Precision_moins_25,
+                $/GFX/EffectCapacity/UnitEffect_Default_Worried,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{85f206c0-2fc7-40e0-ae0e-0d087b69f97c}
+            Value = 0.5
+            LocalizationToken = "STRESSED"
+            MoralModifier = 99
+            AnimationType = ESoldierSuppressStatus/Suppressed
+            PrecisionEffectValue = 50
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Precision_moins_50,
+                $/GFX/EffectCapacity/UnitEffect_Default_Stressed,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{3f100fa4-52d2-4baf-acc8-a73e08997c21}
+            Value = 0.75
+            LocalizationToken = "PANICKED"
+            MoralModifier = 99
+            AnimationType = ESoldierSuppressStatus/Suppressed
+            PrecisionEffectValue = 75
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Precision_moins_75,
+                $/GFX/EffectCapacity/UnitEffect_Default_Panicked,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{533b7545-7a5f-43b0-bb1c-d765e0b8c897}
+            Value = 0.9
+            LocalizationToken = "PINNED"
+            MoralModifier = 0
+            AnimationType = ESoldierSuppressStatus/Cowering
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Infanterie_Cowering,
+            ]
+        ),
+    ]
+)
+export DamageLevelsPackDescriptor_helo_packSupp is TDamageLevelsPackDescriptor
+(
+    DescriptorId = GUID:{ba0a7f2b-8d01-4d59-872b-ddd4e0bf3c10}
+    DamageLevelsDescriptors = [
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{04336cca-66ea-4105-adbe-dd266f8ee4a9}
+            Value = 0
+            LocalizationToken = "mrl_4"
+            MoralModifier = 99
+            AnimationType = ESoldierSuppressStatus/Operational
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_GroundUnit_Cohesion_High,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{6b492d58-8607-4d50-93ee-b422139c0a52}
+            Value = 0.1
+            LocalizationToken = "mrl_4"
+            MoralModifier = 99
+            AnimationType = ESoldierSuppressStatus/Suppressed
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_GroundUnit_Cohesion_High,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{270dd3eb-6671-45dd-a966-6ae6979e0bd1}
+            Value = 0.25
+            LocalizationToken = "mrl_3"
+            MoralModifier = 99
+            AnimationType = ESoldierSuppressStatus/Suppressed
+            PrecisionEffectValue = 25
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Precision_moins_25,
+                $/GFX/EffectCapacity/UnitEffect_GroundUnit_Cohesion_Normal,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{988b3934-6271-4f1c-9b1e-ed877a6d8317}
+            Value = 0.5
+            LocalizationToken = "mrl_2"
+            MoralModifier = 99
+            AnimationType = ESoldierSuppressStatus/Suppressed
+            PrecisionEffectValue = 45
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Precision_moins_45,
+                $/GFX/EffectCapacity/UnitEffect_GroundUnit_Cohesion_Mediocre,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{bee6ba71-675b-4fa7-bab5-11822e80e59c}
+            Value = 0.75
+            LocalizationToken = "mrl_1"
+            MoralModifier = 99
+            AnimationType = ESoldierSuppressStatus/Pinned
+            PrecisionEffectValue = 70
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Precision_moins_70,
+                $/GFX/EffectCapacity/UnitEffect_GroundUnit_Cohesion_Low,
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{ebd9a6fc-b4c7-42c3-b893-1265309d92fb}
+            Value = 0.8
+            LocalizationToken = "mrl_1"
+            AnimationType = ESoldierSuppressStatus/Cowering
+            FeedbackOnSelf = "OnUnitPanicking"
+            PrecisionEffectValue = 70
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Precision_moins_70,
+                $/GFX/EffectCapacity/UnitEffect_GroundUnit_Cohesion_Low,
+                $/GFX/EffectCapacity/UnitEffect_Baisse_Dangerosite,
+            ]
+        ),
+    ]
+)
+
+export DamageLevelsPackDescriptor_Default_pack_paliers_degats_phy is TDamageLevelsPackDescriptor
+(
+    DescriptorId = GUID:{1eceabc4-2c92-41e8-9df2-eb11cc9a75b8}
+    DamageLevelsDescriptors = [
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{56026087-7fc9-41a3-b6df-ba27b0c22c38}
+            Value = 0
+            MoralModifier = 1
+            EffectsPacks = [
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{ec3e971d-5b52-4775-b2a9-72d3974b503f}
+            Value = 0.16
+            MoralModifier = 0
+            EffectsPacks = [
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{05e2fdc4-3c6a-49dc-9b7c-a9a7f50a20c8}
+            Value = 0.33
+            MoralModifier = -1
+            EffectsPacks = [
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{f3ad806b-c56e-43a0-ad92-8aa8a8b21bc2}
+            Value = 0.5
+            MoralModifier = -2
+            EffectsPacks = [
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{7a342d52-e4f7-4dc0-a5b2-d24c43aea30f}
+            Value = 0.66
+            MoralModifier = -3
+            EffectsPacks = [
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{5c501a41-edf8-4c98-a07c-659c0767d422}
+            Value = 0.83
+            MoralModifier = -4
+            EffectsPacks = [
+            ]
+        ),
+    ]
+)
+
+export DamageLevelsPackDescriptor_Default_pack_paliers_stun is TDamageLevelsPackDescriptor
+(
+    DescriptorId = GUID:{a15b3e65-ceba-4c2b-ad0b-b23a1439428e}
+    DamageLevelsDescriptors = [
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{e48ef5bf-fb7e-414e-b08d-480c1a7ed813}
+            Value = 0
+            EffectsPacks = [
+            ]
+        ),
+    ]
+)
+export DamageLevelsPackDescriptor_Unit_packNoStun is TDamageLevelsPackDescriptor
+(
+    DescriptorId = GUID:{6605c12a-44c7-4c67-befc-aaea45d1cdee}
+    DamageLevelsDescriptors = [
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{ea7fd599-7b7f-4c24-a101-5836a289665d}
+            Value = 0
+            EffectsPacks = [
+            ]
+        ),
+    ]
+)
+export DamageLevelsPackDescriptor_Unit_packStun is TDamageLevelsPackDescriptor
+(
+    DescriptorId = GUID:{6aa7c2a1-a2de-40e7-ad34-17f6fedf56da}
+    DamageLevelsDescriptors = [
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{dee4a6bc-d069-448e-a396-b559739b9dbe}
+            Value = 0
+            EffectsPacks = [
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{874d4150-4a54-4fff-9604-2eb9d0271f56}
+            Value = 0.99
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Unit_Stunned,
+                $/GFX/EffectCapacity/UnitEffect_Infanterie_Cowering_Rampe,
+            ]
+        ),
+    ]
+)
+export DamageLevelsPackDescriptor_Unit_packStun_Artillerie is TDamageLevelsPackDescriptor
+(
+    DescriptorId = GUID:{a6fa675a-6ef6-49e9-b797-e4e91481a78d}
+    DamageLevelsDescriptors = [
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{400057ba-7b50-4104-b86c-94a9b5128ad1}
+            Value = 0
+            EffectsPacks = [
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{6c96a000-e86e-44ef-a3bf-223824785639}
+            Value = 0.33
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Unit_Stunned,
+                $/GFX/EffectCapacity/UnitEffect_Infanterie_Cowering_Rampe,
+            ]
+        ),
+    ]
+)
+export DamageLevelsPackDescriptor_Unit_packStun_aa is TDamageLevelsPackDescriptor
+(
+    DescriptorId = GUID:{64218ca1-523a-4df2-bc3c-8398436e2b64}
+    DamageLevelsDescriptors = [
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{b8b7720c-a687-4f49-b4a7-0facd7e9b529}
+            Value = 0
+            EffectsPacks = [
+            ]
+        ),
+        TDamageLevelDescriptor
+        (
+            DescriptorId = GUID:{4ee1f225-d696-447d-bb9d-18b12094c383}
+            Value = 0.58
+            EffectsPacks = [
+                $/GFX/EffectCapacity/UnitEffect_Unit_Stunned,
+                $/GFX/EffectCapacity/UnitEffect_Infanterie_Cowering_Rampe,
+            ]
+        ),
+    ]
+)

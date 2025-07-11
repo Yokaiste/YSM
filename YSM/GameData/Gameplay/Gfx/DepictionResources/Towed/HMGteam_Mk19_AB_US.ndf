@@ -1,0 +1,3 @@
+export Modele_HMGteam_Mk19_AB_US is TResourceMesh( Mesh="GameData:/Assets/3D/Units/Ammo/Armes/HMG_trepied/Mk19.fbx")
+export Modele_HMGteam_Mk19_AB_US_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/Ammo/Armes/HMG_trepied/Mk19.fbx")
+export Modele_HMGteam_Mk19_AB_US_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/Ammo/Armes/HMG_trepied/Mk19.fbx")

@@ -1,0 +1,20 @@
+export Modele_Gepard_1A2_BEL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/DCA/Gepard_1A2/Gepard_1A2.fbx"
+    Textures="GameData:/Assets/3D/Units/BEL/DCA/Gepard_1A2"
+)
+
+export Modele_Gepard_1A2_BEL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/DCA/Gepard_1A2_MID/Gepard_1A2_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/BEL/DCA/Gepard_1A2_MID"
+)
+
+export Modele_Gepard_1A2_BEL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/DCA/Gepard_1A2_LOW/Gepard_1A2_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/BEL/DCA/Gepard_1A2_LOW"
+)
+
+
+

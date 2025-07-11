@@ -1,0 +1,3 @@
+export Modele_HMGteam_M2HB_para_UK is TResourceMesh( Mesh=ModelFile_HMGteam_M2HB_US)
+export Modele_HMGteam_M2HB_para_UK_MID is TResourceMesh( Mesh=ModelFile_HMGteam_M2HB_US_MID)
+export Modele_HMGteam_M2HB_para_UK_LOW is TResourceMesh( Mesh=ModelFile_HMGteam_M2HB_US_LOW)

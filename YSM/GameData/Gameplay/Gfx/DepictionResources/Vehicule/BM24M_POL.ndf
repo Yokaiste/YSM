@@ -1,0 +1,17 @@
+export Modele_BM24M_POL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Artillerie/BM24M/BM24M.fbx"
+    Textures="GameData:/Assets/3D/Units/POL/Artillerie/BM24M"
+)
+
+export Modele_BM24M_POL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Artillerie/BM24M/BM24M.fbx"
+    Textures="GameData:/Assets/3D/Units/POL/Artillerie/BM24M"
+)
+
+export Modele_BM24M_POL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Artillerie/BM24M/BM24M.fbx"
+    Textures="GameData:/Assets/3D/Units/POL/Artillerie/BM24M"
+)

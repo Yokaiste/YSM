@@ -1,0 +1,14 @@
+export Modele_VAB_RASIT_FR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/VAB_RASIT/VAB_RASIT.fbx"
+)
+
+export Modele_VAB_RASIT_FR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/VAB_RASIT_MID/VAB_RASIT_MID.fbx"
+)
+
+export Modele_VAB_RASIT_FR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/VAB_RASIT_LOW/VAB_RASIT_LOW.fbx"
+)

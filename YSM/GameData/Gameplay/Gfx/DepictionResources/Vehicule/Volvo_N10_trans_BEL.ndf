@@ -1,0 +1,14 @@
+export Modele_Volvo_N10_trans_BEL is TResourceMesh
+(
+    Mesh=ModelFile_Volvo_N10_supply_BEL
+)
+
+export Modele_Volvo_N10_trans_BEL_MID is TResourceMesh
+(
+    Mesh=ModelFile_Volvo_N10_supply_BEL_MID
+)
+
+export Modele_Volvo_N10_trans_BEL_LOW is TResourceMesh
+(
+    Mesh=ModelFile_Volvo_N10_supply_BEL_LOW
+)

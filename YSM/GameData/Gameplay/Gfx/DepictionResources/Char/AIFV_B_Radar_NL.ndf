@@ -1,0 +1,5 @@
+export Modele_AIFV_B_Radar_NL     is TResourceMesh( Mesh="GameData:/Assets/3D/Units/NL/APC/AIFV_B_Radar/AIFV_B_Radar.fbx" )
+export Modele_AIFV_B_Radar_NL_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/NL/APC/AIFV_B_Radar_MID/AIFV_B_Radar_MID.fbx" )
+export Modele_AIFV_B_Radar_NL_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/NL/APC/AIFV_B_Radar_LOW/AIFV_B_Radar_LOW.fbx" )
+
+export Modele_AIFV_B_Radar_NL_Tourelle_01 is TResourceMesh ( Mesh = ModelFile_M2HB_12_7mm_t1)

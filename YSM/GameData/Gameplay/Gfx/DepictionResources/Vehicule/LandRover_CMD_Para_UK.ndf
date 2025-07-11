@@ -1,0 +1,14 @@
+export Modele_LandRover_CMD_Para_UK is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Vehicule/LandRover_Para_CV/LandRover_Para_CV.fbx"
+)
+
+export Modele_LandRover_CMD_Para_UK_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Vehicule/LandRover_Para_CV_MID/LandRover_Para_CV_MID.fbx"
+)
+
+export Modele_LandRover_CMD_Para_UK_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Vehicule/LandRover_Para_CV_LOW/LandRover_Para_CV_LOW.fbx"
+)

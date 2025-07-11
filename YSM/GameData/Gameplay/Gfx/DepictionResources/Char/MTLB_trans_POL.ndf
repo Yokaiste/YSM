@@ -1,0 +1,20 @@
+export Modele_MTLB_trans_POL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/APC/MTLB/MTLB.fbx"
+    Textures="GameData:/Assets/3D/Units/POL/APC/MTLB"
+)
+
+export Modele_MTLB_trans_POL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/APC/MTLB_MID/MTLB_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/POL/APC/MTLB_MID"
+)
+
+export Modele_MTLB_trans_POL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/APC/MTLB_LOW/MTLB_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/POL/APC/MTLB_LOW"
+)
+
+
+

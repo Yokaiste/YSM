@@ -1,0 +1,14 @@
+export Modele_M44_155mm_BEL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Artillerie/M44_155mm/M44_155mm.fbx"
+)
+
+export Modele_M44_155mm_BEL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Artillerie/M44_155mm_MID/M44_155mm_MID.fbx"
+)
+
+export Modele_M44_155mm_BEL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Artillerie/M44_155mm_LOW/M44_155mm_LOW.fbx"
+)

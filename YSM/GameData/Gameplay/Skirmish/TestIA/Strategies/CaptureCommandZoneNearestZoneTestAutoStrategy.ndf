@@ -1,0 +1,16 @@
+export CaptureCommandZone_NearestZone_TestAuto_Strategy is TIAGeneralStrategy
+(
+    StrategyName = "CczNearIA"
+    FirstGenerator = TestAuto_CommandCaptureZone_NearestZone
+    TransitionList =[]
+)
+
+
+export TestAuto_CommandCaptureZone_NearestZone is TSequenceGeneratorDescriptor
+(
+
+    GeneratorList =
+    [
+        ~/CaptureOneZoneObjectif_OnlyTestAuto,
+    ]
+)

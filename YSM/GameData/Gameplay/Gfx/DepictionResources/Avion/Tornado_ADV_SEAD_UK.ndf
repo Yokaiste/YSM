@@ -1,0 +1,19 @@
+export Modele_Tornado_ADV_SEAD_UK is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Avion/Tornado_IDS/Tornado_IDS.fbx"
+)
+
+export Modele_Tornado_ADV_SEAD_UK_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Avion/Tornado_IDS_MID/Tornado_IDS_MID.fbx"
+)
+
+export Modele_Tornado_ADV_SEAD_UK_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Avion/Tornado_IDS_LOW/Tornado_IDS_LOW.fbx"
+)
+
+export Modele_Tornado_ADV_SEAD_UK_train is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Avion/Tornado_IDS/Tornado_IDS_train.fbx"
+)

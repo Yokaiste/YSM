@@ -1,0 +1,19 @@
+export Modele_Jaguar_overwing_UK is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Avion/Jaguar_GR1A/Jaguar_GR1A.fbx"
+)
+
+export Modele_Jaguar_overwing_UK_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Avion/Jaguar_GR1A_MID/Jaguar_GR1A_MID.fbx"
+)
+
+export Modele_Jaguar_overwing_UK_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Avion/Jaguar_GR1A_LOW/Jaguar_GR1A_LOW.fbx"
+)
+
+export Modele_Jaguar_overwing_UK_train is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Avion/Jaguar_GR1A/Jaguar_GR1A_train.fbx"
+)

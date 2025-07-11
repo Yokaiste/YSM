@@ -1,0 +1,17 @@
+export Modele_AMX_10_P_MILAN_FR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/APC/AMX_10P_MILAN/AMX_10P_MILAN.fbx"
+)
+
+export Modele_AMX_10_P_MILAN_FR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/APC/AMX_10P_MILAN_MID/AMX_10P_MILAN_MID.fbx"
+)
+
+export Modele_AMX_10_P_MILAN_FR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/APC/AMX_10P_MILAN_LOW/AMX_10P_MILAN_LOW.fbx"
+)
+
+
+

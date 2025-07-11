@@ -1,0 +1,17 @@
+export Modele_Challenger_1_Mk1_CMD_UK is TResourceMesh
+(
+    Mesh=ModelFile_Challenger_1_Mk1_UK
+    Textures="GameData:/Assets/3D/Units/UK/Char/Challenger_1_Mk1_CMD"
+)
+
+export Modele_Challenger_1_Mk1_CMD_UK_MID is TResourceMesh
+(
+    Mesh=ModelFile_Challenger_1_Mk1_UK_MID
+    Textures="GameData:/Assets/3D/Units/UK/Char/Challenger_1_Mk1_CMD_MID"
+)
+
+export Modele_Challenger_1_Mk1_CMD_UK_LOW is TResourceMesh
+(
+    Mesh=ModelFile_Challenger_1_Mk1_UK_LOW
+    Textures="GameData:/Assets/3D/Units/UK/Char/Challenger_1_Mk1_CMD_LOW"
+)

@@ -1,0 +1,5 @@
+export Modele_CUCV_AGL_US     is TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/Vehicule/CUCV_AGL/CUCV_AGL.fbx" )
+export Modele_CUCV_AGL_US_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/Vehicule/CUCV_AGL_MID/CUCV_AGL_MID.fbx" )
+export Modele_CUCV_AGL_US_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/Vehicule/CUCV_AGL_LOW/CUCV_AGL_LOW.fbx" )
+
+

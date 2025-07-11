@@ -1,0 +1,3 @@
+export Modele_Mortier_107mm_NL is TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/Canon/M30_107mm_Mortar/M30_107mm_Mortar.fbx")
+export Modele_Mortier_107mm_NL_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/Canon/M30_107mm_Mortar_MID/M30_107mm_Mortar_MID.fbx")
+export Modele_Mortier_107mm_NL_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/Canon/M30_107mm_Mortar_LOW/M30_107mm_Mortar_LOW.fbx")

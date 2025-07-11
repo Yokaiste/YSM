@@ -1,0 +1,1654 @@
+// Ne pas éditer, ce fichier est généré par CapacityNDFFileWriter
+
+
+export Capacite_Aura_Commandement_1 is TCapaciteDescriptor
+(
+    DescriptorId            = GUID:{c5266c39-d304-4d30-8c15-7ff72e65cf4e}
+    Name                    = "Aura_Commandement_1"
+    NameToken               = "None"
+    CumulEffect             = ~/CapaciteCumulEffect_jamais
+    Declenchement           = ~/CapaciteDeclenchementType_automatique
+    TargetTeamFilter        = ~/CapaciteTargetFilter_allie
+    InfluenceMapAlliance    = ~/AllianceRelation/vide
+    RangeGRU                = 450
+    CastTime                = 0.00
+    CheckVisibility         = True
+    CanBeCastFromTransport  = False
+    TargetEffect            = ~/UnitEffect_Gain_un_niveau_XP
+    EffectDuration          = -1.00
+    MaxTargetNb             = -1
+    TargetInBuilding        = True
+    TargetInTransport       = True
+    TargetInSelf            = True
+    TargetMySelf            = False
+    FeedbackActivationMask  = ~/CapaciteFeedbackActivationMask_selected | ~/CapaciteFeedbackActivationMask_anyalliance
+    DisplayRangeColor       = RGBA[255,255,255,255]
+    DisplayRangeThickness   = 0.80
+    TagsCiblePossible       = [
+        "GagneXP",
+    ]
+    TagsCibleExcluded       = [
+    ]
+    Conditions              = [
+        ~/ConditionTagNotRaisedInUnit_Panique,
+        ~/ConditionTagRaisedInUnit_Hors_Transport,
+    ]
+)
+export Capacite_Aura_Commandement_2 is TCapaciteDescriptor
+(
+    DescriptorId            = GUID:{3b515032-11c0-4948-9360-7e389019da94}
+    Name                    = "Aura_Commandement_2"
+    NameToken               = "None"
+    CumulEffect             = ~/CapaciteCumulEffect_jamais
+    Declenchement           = ~/CapaciteDeclenchementType_automatique
+    TargetTeamFilter        = ~/CapaciteTargetFilter_allie
+    InfluenceMapAlliance    = ~/AllianceRelation/vide
+    RangeGRU                = 601
+    CastTime                = 0.00
+    CheckVisibility         = True
+    CanBeCastFromTransport  = False
+    TargetEffect            = ~/UnitEffect_Gain_un_niveau_XP
+    EffectDuration          = -1.00
+    MaxTargetNb             = -1
+    TargetInBuilding        = True
+    TargetInTransport       = True
+    TargetInSelf            = True
+    TargetMySelf            = False
+    FeedbackActivationMask  = ~/CapaciteFeedbackActivationMask_selected | ~/CapaciteFeedbackActivationMask_anyalliance
+    DisplayRangeColor       = RGBA[255,255,255,255]
+    DisplayRangeThickness   = 0.80
+    TagsCiblePossible       = [
+        "GagneXP",
+    ]
+    TagsCibleExcluded       = [
+    ]
+    Conditions              = [
+        ~/ConditionTagNotRaisedInUnit_Panique,
+        ~/ConditionTagRaisedInUnit_Hors_Transport,
+    ]
+)
+export Capacite_Aura_Commandement_3 is TCapaciteDescriptor
+(
+    DescriptorId            = GUID:{a946282c-af30-490b-b121-9184d813dc55}
+    Name                    = "Aura_Commandement_3"
+    NameToken               = "None"
+    CumulEffect             = ~/CapaciteCumulEffect_jamais
+    Declenchement           = ~/CapaciteDeclenchementType_automatique
+    TargetTeamFilter        = ~/CapaciteTargetFilter_allie
+    InfluenceMapAlliance    = ~/AllianceRelation/vide
+    RangeGRU                = 750
+    CastTime                = 0.00
+    CheckVisibility         = True
+    CanBeCastFromTransport  = False
+    TargetEffect            = ~/UnitEffect_Gain_un_niveau_XP
+    EffectDuration          = -1.00
+    MaxTargetNb             = -1
+    TargetInBuilding        = True
+    TargetInTransport       = True
+    TargetInSelf            = True
+    TargetMySelf            = False
+    FeedbackActivationMask  = ~/CapaciteFeedbackActivationMask_selected | ~/CapaciteFeedbackActivationMask_anyalliance
+    DisplayRangeColor       = RGBA[255,255,255,255]
+    DisplayRangeThickness   = 0.80
+    TagsCiblePossible       = [
+        "GagneXP",
+    ]
+    TagsCibleExcluded       = [
+    ]
+    Conditions              = [
+        ~/ConditionTagNotRaisedInUnit_Panique,
+        ~/ConditionTagRaisedInUnit_Hors_Transport,
+    ]
+)
+export Capacite_Aura_capture_allie_solo is TCapaciteDescriptor
+(
+    DescriptorId            = GUID:{212e3fe5-13da-47ad-a015-f418b57f8f71}
+    Name                    = "Aura_capture_allie_solo"
+    NameToken               = "None"
+    CumulEffect             = ~/CapaciteCumulEffect_jamais
+    Declenchement           = ~/CapaciteDeclenchementType_automatique
+    TargetTeamFilter        = ~/CapaciteTargetFilter_allie_different_de_caster
+    InfluenceMapAlliance    = ~/AllianceRelation/vide
+    RangeGRU                = 123
+    CastTime                = 0.00
+    CheckVisibility         = True
+    CanBeCastFromTransport  = True
+    TargetEffect            = ~/UnitEffect_capture_allie_solo
+    EffectDuration          = -1.00
+    MaxTargetNb             = -1
+    TargetInBuilding        = True
+    TargetInTransport       = True
+    TargetInSelf            = True
+    TargetMySelf            = True
+    FeedbackActivationMask  = ~/CapaciteFeedbackActivationMask_never
+    DisplayRangeColor       = RGBA[255,255,255,255]
+    DisplayRangeThickness   = 0.80
+    TagsCiblePossible       = [
+        "GroundUnits",
+    ]
+    TagsCibleExcluded       = [
+    ]
+
+)
+export Capacite_Bouclier_Anti_Suppression_50 is TCapaciteDescriptor
+(
+    DescriptorId            = GUID:{0f882623-2007-4cd6-8643-4b72b8582393}
+    Name                    = "Bouclier_Anti_Suppression_50"
+    NameToken               = "None"
+    CumulEffect             = ~/CapaciteCumulEffect_jamais
+    Declenchement           = ~/CapaciteDeclenchementType_automatique
+    TargetTeamFilter        = ~/CapaciteTargetFilter_allie
+    InfluenceMapAlliance    = ~/AllianceRelation/vide
+    RangeGRU                = 353
+    CastTime                = 0.00
+    CheckVisibility         = True
+    CanBeCastFromTransport  = True
+    TargetEffect            = ~/UnitEffect_Bouclier_Suppression_50
+    EffectDuration          = -1.00
+    MaxTargetNb             = -1
+    TargetInBuilding        = True
+    TargetInTransport       = True
+    TargetInSelf            = True
+    TargetMySelf            = True
+    FeedbackActivationMask  = ~/CapaciteFeedbackActivationMask_selected | ~/CapaciteFeedbackActivationMask_anyalliance
+    DisplayRangeColor       = RGBA[255,255,255,255]
+    DisplayRangeThickness   = 0.80
+    TagsCiblePossible       = [
+    ]
+    TagsCibleExcluded       = [
+    ]
+
+)
+export Capacite_Bouclier_Anti_Suppression_99 is TCapaciteDescriptor
+(
+    DescriptorId            = GUID:{5bbc7ba8-708c-4418-bc5f-7f6148dc5aaa}
+    Name                    = "Bouclier_Anti_Suppression_99"
+    NameToken               = "None"
+    CumulEffect             = ~/CapaciteCumulEffect_jamais
+    Declenchement           = ~/CapaciteDeclenchementType_automatique
+    TargetTeamFilter        = ~/CapaciteTargetFilter_allie
+    InfluenceMapAlliance    = ~/AllianceRelation/vide
+    RangeGRU                = 250
+    CastTime                = 0.00
+    CheckVisibility         = True
+    CanBeCastFromTransport  = True
+    TargetEffect            = ~/UnitEffect_Bouclier_Suppression_99
+    EffectDuration          = -1.00
+    MaxTargetNb             = -1
+    TargetInBuilding        = True
+    TargetInTransport       = True
+    TargetInSelf            = True
+    TargetMySelf            = True
+    FeedbackActivationMask  = ~/CapaciteFeedbackActivationMask_selected | ~/CapaciteFeedbackActivationMask_anyalliance
+    DisplayRangeColor       = RGBA[255,0,0,255]
+    DisplayRangeThickness   = 0.40
+    TagsCiblePossible       = [
+    ]
+    TagsCibleExcluded       = [
+    ]
+
+)
+export Capacite_Choc is TCapaciteDescriptor
+(
+    DescriptorId            = GUID:{206928d2-f3f0-49a8-800d-484b2822b0c6}
+    Name                    = "Choc"
+    NameToken               = "None"
+    CumulEffect             = ~/CapaciteCumulEffect_jamais
+    Declenchement           = ~/CapaciteDeclenchementType_automatique
+    TargetTeamFilter        = ~/CapaciteTargetFilter_ennemi
+    InfluenceMapAlliance    = ~/AllianceRelation/vide
+    RangeGRU                = 175
+    CastTime                = 0.00
+    CheckVisibility         = True
+    CanBeCastFromTransport  = True
+    TargetEffect            = nil
+    SelfEffect              = ~/UnitEffect_Choc
+    EffectDuration          = -1.00
+    MaxTargetNb             = -1
+    TargetInBuilding        = True
+    TargetInTransport       = True
+    TargetInSelf            = True
+    TargetMySelf            = True
+    FeedbackActivationMask  = ~/CapaciteFeedbackActivationMask_never
+    DisplayRangeColor       = RGBA[0,0,0,0]
+    DisplayRangeThickness   = 0.00
+    TagsCiblePossible       = [
+        "GroundUnits",
+    ]
+    TagsCibleExcluded       = [
+    ]
+
+)
+export Capacite_Choc_feedback is TCapaciteDescriptor
+(
+    DescriptorId            = GUID:{c1c26b50-425f-4f23-b329-fc342f6eab10}
+    Name                    = "Choc_feedback"
+    NameToken               = "None"
+    CumulEffect             = ~/CapaciteCumulEffect_jamais
+    Declenchement           = ~/CapaciteDeclenchementType_automatique
+    TargetTeamFilter        = ~/CapaciteTargetFilter_joueur
+    InfluenceMapAlliance    = ~/AllianceRelation/vide
+    RangeGRU                = 0
+    CastTime                = 1.00
+    CheckVisibility         = True
+    CanBeCastFromTransport  = True
+    TargetEffect            = ~/UnitEffect_Choc_feedback
+    EffectDuration          = -1.00
+    MaxTargetNb             = 1
+    TargetInBuilding        = True
+    TargetInTransport       = True
+    TargetInSelf            = True
+    TargetMySelf            = True
+    FeedbackActivationMask  = ~/CapaciteFeedbackActivationMask_never
+    DisplayRangeColor       = RGBA[0,0,0,0]
+    DisplayRangeThickness   = 0.00
+    TagsCiblePossible       = [
+    ]
+    TagsCibleExcluded       = [
+    ]
+    Conditions              = [
+        ~/ConditionTagNotRaisedInUnit_choc_ok,
+    ]
+)
+export Capacite_Cowering_Rampe_Capacite is TCapaciteDescriptor
+(
+    DescriptorId            = GUID:{2f7b9b74-2d8c-4883-babf-2fe3607e1b15}
+    Name                    = "Cowering_Rampe_Capacite"
+    NameToken               = "None"
+    CumulEffect             = ~/CapaciteCumulEffect_jamais
+    Declenchement           = ~/CapaciteDeclenchementType_automatique
+    TargetTeamFilter        = ~/CapaciteTargetFilter_joueur
+    InfluenceMapAlliance    = ~/AllianceRelation/vide
+    RangeGRU                = 0
+    CastTime                = 0.00
+    CheckVisibility         = True
+    CanBeCastFromTransport  = True
+    TargetEffect            = ~/UnitEffect_Infanterie_Cowering_Rampe
+    EffectDuration          = -1.00
+    MaxTargetNb             = 1
+    TargetInBuilding        = False
+    TargetInTransport       = False
+    TargetInSelf            = False
+    TargetMySelf            = True
+    FeedbackActivationMask  = ~/CapaciteFeedbackActivationMask_never
+    DisplayRangeColor       = RGBA[0,0,0,0]
+    DisplayRangeThickness   = 0.00
+    TagsCiblePossible       = [
+    ]
+    TagsCibleExcluded       = [
+    ]
+    Conditions              = [
+        ~/ConditionTagNotRaisedInUnit_Retraite,
+        ~/ConditionTagRaisedInUnit_Infanterie_Cowering,
+    ]
+)
+export Capacite_Cowering_Stop_Capacite is TCapaciteDescriptor
+(
+    DescriptorId            = GUID:{10fd9b1b-7702-4c6a-9df7-b2afc8595400}
+    Name                    = "Cowering_Stop_Capacite"
+    NameToken               = "None"
+    CumulEffect             = ~/CapaciteCumulEffect_jamais
+    Declenchement           = ~/CapaciteDeclenchementType_automatique
+    TargetTeamFilter        = ~/CapaciteTargetFilter_joueur
+    InfluenceMapAlliance    = ~/AllianceRelation/vide
+    RangeGRU                = 0
+    CastTime                = 0.00
+    CheckVisibility         = True
+    CanBeCastFromTransport  = True
+    TargetEffect            = ~/UnitEffect_Infanterie_Cowering_Stop
+    EffectDuration          = -1.00
+    MaxTargetNb             = 1
+    TargetInBuilding        = False
+    TargetInTransport       = False
+    TargetInSelf            = False
+    TargetMySelf            = True
+    FeedbackActivationMask  = ~/CapaciteFeedbackActivationMask_never
+    DisplayRangeColor       = RGBA[0,0,0,0]
+    DisplayRangeThickness   = 0.00
+    TagsCiblePossible       = [
+    ]
+    TagsCibleExcluded       = [
+    ]
+    Conditions              = [
+        ~/ConditionTagNotRaisedInUnit_Retraite,
+        ~/ConditionTagRaisedInUnit_Infanterie_Cowering,
+    ]
+)
+export Capacite_Debarque_camion is TCapaciteDescriptor
+(
+    DescriptorId            = GUID:{c5233e7f-e71a-4884-8df7-80e1b4cd14a8}
+    Name                    = "Debarque_camion"
+    NameToken               = "None"
+    CumulEffect             = ~/CapaciteCumulEffect_jamais
+    Declenchement           = ~/CapaciteDeclenchementType_automatique
+    TargetTeamFilter        = ~/CapaciteTargetFilter_joueur
+    InfluenceMapAlliance    = ~/AllianceRelation/vide
+    RangeGRU                = 0
+    CastTime                = 2.00
+    CheckVisibility         = True
+    CanBeCastFromTransport  = True
+    TargetEffect            = ~/UnitEffect_Baisse_Dangerosite_et_Transport_0_Effet
+    EffectDuration          = -1.00
+    MaxTargetNb             = 1
+    TargetInBuilding        = False
+    TargetInTransport       = False
+    TargetInSelf            = False
+    TargetMySelf            = True
+    FeedbackActivationMask  = ~/CapaciteFeedbackActivationMask_never
+    DisplayRangeColor       = RGBA[0,0,0,0]
+    DisplayRangeThickness   = 0.00
+    TagsCiblePossible       = [
+    ]
+    TagsCibleExcluded       = [
+    ]
+    Conditions              = [
+        ~/ConditionTagRaisedInUnit_GroundUnit_Engaged,
+    ]
+)
+export Capacite_Declare_hors_transport is TCapaciteDescriptor
+(
+    DescriptorId            = GUID:{13f8a78f-6d73-48e7-9fb1-4c3b2a535d4b}
+    Name                    = "Declare_hors_transport"
+    NameToken               = "None"
+    CumulEffect             = ~/CapaciteCumulEffect_jamais
+    Declenchement           = ~/CapaciteDeclenchementType_automatique
+    TargetTeamFilter        = ~/CapaciteTargetFilter_joueur
+    InfluenceMapAlliance    = ~/AllianceRelation/vide
+    RangeGRU                = 0
+    CastTime                = 0.00
+    CheckVisibility         = True
+    CanBeCastFromTransport  = True
+    TargetEffect            = ~/UnitEffect_Ajoute_Tag_Hors_Transport
+    EffectDuration          = -1.00
+    MaxTargetNb             = 1
+    TargetInBuilding        = True
+    TargetInTransport       = False
+    TargetInSelf            = True
+    TargetMySelf            = True
+    FeedbackActivationMask  = ~/CapaciteFeedbackActivationMask_never
+    DisplayRangeColor       = RGBA[0,0,0,0]
+    DisplayRangeThickness   = 0.00
+    TagsCiblePossible       = [
+    ]
+    TagsCibleExcluded       = [
+    ]
+
+)
+export Capacite_GSR is TCapaciteDescriptor
+(
+    DescriptorId            = GUID:{8a9ab073-0ff1-4cd8-be49-e66a0cba4d60}
+    Name                    = "GSR"
+    NameToken               = "None"
+    CumulEffect             = ~/CapaciteCumulEffect_jamais
+    Declenchement           = ~/CapaciteDeclenchementType_automatique
+    TargetTeamFilter        = ~/CapaciteTargetFilter_joueur
+    InfluenceMapAlliance    = ~/AllianceRelation/vide
+    RangeGRU                = 0
+    CastTime                = 1.00
+    CheckVisibility         = True
+    CanBeCastFromTransport  = True
+    TargetEffect            = ~/UnitEffect_GSR
+    EffectDuration          = -1.00
+    MaxTargetNb             = 1
+    TargetInBuilding        = True
+    TargetInTransport       = True
+    TargetInSelf            = True
+    TargetMySelf            = True
+    FeedbackActivationMask  = ~/CapaciteFeedbackActivationMask_never
+    DisplayRangeColor       = RGBA[0,0,0,0]
+    DisplayRangeThickness   = 0.00
+    TagsCiblePossible       = [
+    ]
+    TagsCibleExcluded       = [
+    ]
+    Conditions              = [
+        ~/ConditionTagNotRaisedInUnit_RadioJammed_gsr,
+        ~/ConditionTagRaisedInUnit_GSR_ok,
+        ~/ConditionNotInMovement,
+    ]
+)
+export Capacite_GSR_no_GSR is TCapaciteDescriptor
+(
+    DescriptorId            = GUID:{73e98a18-b95e-436a-a9c7-b581f1e26e97}
+    Name                    = "GSR_no_GSR"
+    NameToken               = "None"
+    CumulEffect             = ~/CapaciteCumulEffect_jamais
+    Declenchement           = ~/CapaciteDeclenchementType_automatique
+    TargetTeamFilter        = ~/CapaciteTargetFilter_joueur
+    InfluenceMapAlliance    = ~/AllianceRelation/vide
+    RangeGRU                = 0
+    CastTime                = 8.00
+    CheckVisibility         = True
+    CanBeCastFromTransport  = True
+    TargetEffect            = ~/UnitEffect_Ajoute_Tag_GSR_ok
+    EffectDuration          = -1.00
+    MaxTargetNb             = 1
+    TargetInBuilding        = True
+    TargetInTransport       = True
+    TargetInSelf            = True
+    TargetMySelf            = True
+    FeedbackActivationMask  = ~/CapaciteFeedbackActivationMask_never
+    DisplayRangeColor       = RGBA[0,0,0,0]
+    DisplayRangeThickness   = 0.00
+    TagsCiblePossible       = [
+    ]
+    TagsCibleExcluded       = [
+    ]
+    Conditions              = [
+        ~/ConditionNotInMovement,
+    ]
+)
+export Capacite_IFV is TCapaciteDescriptor
+(
+    DescriptorId            = GUID:{9945a737-8bd6-4461-9d6f-d630e01fdfe1}
+    Name                    = "IFV"
+    NameToken               = "None"
+    CumulEffect             = ~/CapaciteCumulEffect_jamais
+    Declenchement           = ~/CapaciteDeclenchementType_automatique
+    TargetTeamFilter        = ~/CapaciteTargetFilter_joueur
+    InfluenceMapAlliance    = ~/AllianceRelation/vide
+    RangeGRU                = 350
+    CastTime                = 0.00
+    CheckVisibility         = True
+    CanBeCastFromTransport  = False
+    TargetEffect            = ~/UnitEffect_Bouclier_Suppression_IFV
+    EffectDuration          = -1.00
+    MaxTargetNb             = -1
+    TargetInBuilding        = True
+    TargetInTransport       = True
+    TargetInSelf            = True
+    TargetMySelf            = False
+    FeedbackActivationMask  = ~/CapaciteFeedbackActivationMask_soloselected | ~/CapaciteFeedbackActivationMask_anyalliance
+    DisplayRangeColor       = RGBA[255,255,255,255]
+    DisplayRangeThickness   = 0.80
+    TagsCiblePossible       = [
+        "Infanterie_IFV",
+    ]
+    TagsCibleExcluded       = [
+    ]
+
+)
+export Capacite_IFV_feedback is TCapaciteDescriptor
+(
+    DescriptorId            = GUID:{cba5c0b1-0d5e-445b-abe1-f7f734bfc0c5}
+    Name                    = "IFV_feedback"
+    NameToken               = "None"
+    CumulEffect             = ~/CapaciteCumulEffect_jamais
+    Declenchement           = ~/CapaciteDeclenchementType_automatique
+    TargetTeamFilter        = ~/CapaciteTargetFilter_joueur
+    InfluenceMapAlliance    = ~/AllianceRelation/vide
+    RangeGRU                = 0
+    CastTime                = 1.00
+    CheckVisibility         = True
+    CanBeCastFromTransport  = True
+    TargetEffect            = ~/UnitEffect_IFV_feedback
+    EffectDuration          = -1.00
+    MaxTargetNb             = 1
+    TargetInBuilding        = True
+    TargetInTransport       = True
+    TargetInSelf            = True
+    TargetMySelf            = True
+    FeedbackActivationMask  = ~/CapaciteFeedbackActivationMask_never
+    DisplayRangeColor       = RGBA[0,0,0,0]
+    DisplayRangeThickness   = 0.00
+    TagsCiblePossible       = [
+    ]
+    TagsCibleExcluded       = [
+    ]
+    Conditions              = [
+        ~/ConditionTagNotRaisedInUnit_IFV_ok,
+    ]
+)
+export Capacite_Infanterie_Dissimulee is TCapaciteDescriptor
+(
+    DescriptorId            = GUID:{da97526b-947b-4690-9066-254e4b06106c}
+    Name                    = "Infanterie_Dissimulee"
+    NameToken               = "None"
+    CumulEffect             = ~/CapaciteCumulEffect_jamais
+    Declenchement           = ~/CapaciteDeclenchementType_automatique
+    TargetTeamFilter        = ~/CapaciteTargetFilter_joueur
+    InfluenceMapAlliance    = ~/AllianceRelation/vide
+    RangeGRU                = 0
+    CastTime                = 1.00
+    CheckVisibility         = True
+    CanBeCastFromTransport  = True
+    TargetEffect            = ~/UnitEffect_Infanterie_bonus_discretion
+    EffectDuration          = -1.00
+    MaxTargetNb             = 1
+    TargetInBuilding        = False
+    TargetInTransport       = False
+    TargetInSelf            = False
+    TargetMySelf            = True
+    FeedbackActivationMask  = ~/CapaciteFeedbackActivationMask_never
+    DisplayRangeColor       = RGBA[0,0,0,0]
+    DisplayRangeThickness   = 0.00
+    TagsCiblePossible       = [
+        "Infanterie",
+        "Unite_transportable",
+    ]
+    TagsCibleExcluded       = [
+    ]
+    Conditions              = [
+        ~/ConditionNotInMovement,
+    ]
+)
+export Capacite_Infanterie_Retranchee is TCapaciteDescriptor
+(
+    DescriptorId            = GUID:{43c036c8-70ef-48de-b223-e9ce406db313}
+    Name                    = "Infanterie_Retranchee"
+    NameToken               = "None"
+    CumulEffect             = ~/CapaciteCumulEffect_jamais
+    Declenchement           = ~/CapaciteDeclenchementType_automatique
+    TargetTeamFilter        = ~/CapaciteTargetFilter_joueur
+    InfluenceMapAlliance    = ~/AllianceRelation/vide
+    RangeGRU                = 0
+    CastTime                = 1.00
+    CheckVisibility         = True
+    CanBeCastFromTransport  = False
+    TargetEffect            = ~/UnitEffect_Infanterie_bonus_defense
+    EffectDuration          = -1.00
+    MaxTargetNb             = 1
+    TargetInBuilding        = False
+    TargetInTransport       = False
+    TargetInSelf            = False
+    TargetMySelf            = True
+    FeedbackActivationMask  = ~/CapaciteFeedbackActivationMask_never
+    DisplayRangeColor       = RGBA[0,0,0,0]
+    DisplayRangeThickness   = 0.00
+    TagsCiblePossible       = [
+        "Infanterie",
+    ]
+    TagsCibleExcluded       = [
+    ]
+    Conditions              = [
+        ~/ConditionNotInMovement,
+    ]
+)
+export Capacite_Malus_Suppress_AllTime is TCapaciteDescriptor
+(
+    DescriptorId            = GUID:{9449549b-03f5-4bf7-bc64-eef556033256}
+    Name                    = "Malus_Suppress_AllTime"
+    NameToken               = "None"
+    CumulEffect             = ~/CapaciteCumulEffect_jamais
+    Declenchement           = ~/CapaciteDeclenchementType_automatique
+    TargetTeamFilter        = ~/CapaciteTargetFilter_joueur
+    InfluenceMapAlliance    = ~/AllianceRelation/vide
+    RangeGRU                = 0
+    CastTime                = 0.00
+    CheckVisibility         = True
+    CanBeCastFromTransport  = True
+    TargetEffect            = ~/UnitEffect_Effet_Suppress_Recu_125pourcent
+    EffectDuration          = -1.00
+    MaxTargetNb             = 1
+    TargetInBuilding        = True
+    TargetInTransport       = True
+    TargetInSelf            = True
+    TargetMySelf            = True
+    FeedbackActivationMask  = ~/CapaciteFeedbackActivationMask_never
+    DisplayRangeColor       = RGBA[0,0,0,0]
+    DisplayRangeThickness   = 0.00
+    TagsCiblePossible       = [
+    ]
+    TagsCibleExcluded       = [
+    ]
+
+)
+export Capacite_Malus_Suppress_Zone_Influence_Ennemie is TCapaciteDescriptor
+(
+    DescriptorId            = GUID:{ad4f4562-2bb2-4b42-9dbd-cfd8b30c1cd2}
+    Name                    = "Malus_Suppress_Zone_Influence_Ennemie"
+    NameToken               = "None"
+    CumulEffect             = ~/CapaciteCumulEffect_jamais
+    Declenchement           = ~/CapaciteDeclenchementType_automatique
+    TargetTeamFilter        = ~/CapaciteTargetFilter_joueur
+    InfluenceMapAlliance    = ~/AllianceRelation/ennemi
+    RangeGRU                = 0
+    CastTime                = 0.00
+    CheckVisibility         = True
+    CanBeCastFromTransport  = True
+    TargetEffect            = ~/UnitEffect_Effet_Suppress_Recu_125pourcent
+    EffectDuration          = -1.00
+    MaxTargetNb             = 1
+    TargetInBuilding        = True
+    TargetInTransport       = True
+    TargetInSelf            = True
+    TargetMySelf            = True
+    FeedbackActivationMask  = ~/CapaciteFeedbackActivationMask_never
+    DisplayRangeColor       = RGBA[0,0,0,0]
+    DisplayRangeThickness   = 0.00
+    TagsCiblePossible       = [
+    ]
+    TagsCibleExcluded       = [
+    ]
+
+)
+export Capacite_MilitaryPolice is TCapaciteDescriptor
+(
+    DescriptorId            = GUID:{ff813fc2-fb20-4376-9d76-842fbc3f71df}
+    Name                    = "MilitaryPolice"
+    NameToken               = "None"
+    CumulEffect             = ~/CapaciteCumulEffect_jamais
+    Declenchement           = ~/CapaciteDeclenchementType_automatique
+    TargetTeamFilter        = ~/CapaciteTargetFilter_joueur
+    InfluenceMapAlliance    = ~/AllianceRelation/vide
+    RangeGRU                = 500
+    CastTime                = 0.00
+    CheckVisibility         = True
+    CanBeCastFromTransport  = False
+    TargetEffect            = ~/UnitEffect_military_police
+    EffectDuration          = -1.00
+    MaxTargetNb             = -1
+    TargetInBuilding        = True
+    TargetInTransport       = True
+    TargetInSelf            = False
+    TargetMySelf            = False
+    FeedbackActivationMask  = ~/CapaciteFeedbackActivationMask_soloselected | ~/CapaciteFeedbackActivationMask_anyalliance
+    DisplayRangeColor       = RGBA[255,255,255,255]
+    DisplayRangeThickness   = 0.40
+    TagsCiblePossible       = [
+        "GroundUnits",
+    ]
+    TagsCibleExcluded       = [
+    ]
+
+)
+export Capacite_MilitaryPolice_feedback is TCapaciteDescriptor
+(
+    DescriptorId            = GUID:{29dff076-b61d-47f4-bb62-884b4feaa105}
+    Name                    = "MilitaryPolice_feedback"
+    NameToken               = "None"
+    CumulEffect             = ~/CapaciteCumulEffect_jamais
+    Declenchement           = ~/CapaciteDeclenchementType_automatique
+    TargetTeamFilter        = ~/CapaciteTargetFilter_joueur
+    InfluenceMapAlliance    = ~/AllianceRelation/vide
+    RangeGRU                = 0
+    CastTime                = 1.00
+    CheckVisibility         = True
+    CanBeCastFromTransport  = True
+    TargetEffect            = ~/UnitEffect_military_police_feedback
+    EffectDuration          = -1.00
+    MaxTargetNb             = 1
+    TargetInBuilding        = True
+    TargetInTransport       = True
+    TargetInSelf            = True
+    TargetMySelf            = True
+    FeedbackActivationMask  = ~/CapaciteFeedbackActivationMask_never
+    DisplayRangeColor       = RGBA[0,0,0,0]
+    DisplayRangeThickness   = 0.00
+    TagsCiblePossible       = [
+    ]
+    TagsCibleExcluded       = [
+    ]
+
+)
+export Capacite_Regen_suppress_xp_1 is TCapaciteDescriptor
+(
+    DescriptorId            = GUID:{64d0cd8c-d3b0-4b04-90db-013399e53746}
+    Name                    = "Regen_suppress_xp_1"
+    NameToken               = "None"
+    CumulEffect             = ~/CapaciteCumulEffect_oui
+    Declenchement           = ~/CapaciteDeclenchementType_automatique
+    TargetTeamFilter        = ~/CapaciteTargetFilter_joueur
+    InfluenceMapAlliance    = ~/AllianceRelation/vide
+    RangeGRU                = 0
+    CastTime                = 1.00
+    CheckVisibility         = True
+    CanBeCastFromTransport  = False
+    TargetEffect            = ~/UnitEffect_Regen_suppress_regular
+    EffectDuration          = -1.00
+    MaxTargetNb             = 1
+    TargetInBuilding        = False
+    TargetInTransport       = False
+    TargetInSelf            = False
+    TargetMySelf            = True
+    FeedbackActivationMask  = ~/CapaciteFeedbackActivationMask_never
+    DisplayRangeColor       = RGBA[0,0,0,0]
+    DisplayRangeThickness   = 0.00
+    TagsCiblePossible       = [
+    ]
+    TagsCibleExcluded       = [
+    ]
+    Conditions              = [
+        ~/ConditionTagRaisedInUnit_xp_regular,
+        ~/ConditionNotInMovement,
+    ]
+)
+export Capacite_Regen_suppress_xp_2 is TCapaciteDescriptor
+(
+    DescriptorId            = GUID:{7180e5fe-d260-436d-a83e-1a880d4da946}
+    Name                    = "Regen_suppress_xp_2"
+    NameToken               = "None"
+    CumulEffect             = ~/CapaciteCumulEffect_oui
+    Declenchement           = ~/CapaciteDeclenchementType_automatique
+    TargetTeamFilter        = ~/CapaciteTargetFilter_joueur
+    InfluenceMapAlliance    = ~/AllianceRelation/vide
+    RangeGRU                = 0
+    CastTime                = 1.00
+    CheckVisibility         = True
+    CanBeCastFromTransport  = False
+    TargetEffect            = ~/UnitEffect_Regen_suppress_veteran
+    EffectDuration          = -1.00
+    MaxTargetNb             = 1
+    TargetInBuilding        = False
+    TargetInTransport       = False
+    TargetInSelf            = False
+    TargetMySelf            = True
+    FeedbackActivationMask  = ~/CapaciteFeedbackActivationMask_never
+    DisplayRangeColor       = RGBA[0,0,0,0]
+    DisplayRangeThickness   = 0.00
+    TagsCiblePossible       = [
+    ]
+    TagsCibleExcluded       = [
+    ]
+    Conditions              = [
+        ~/ConditionTagRaisedInUnit_xp_veteran,
+        ~/ConditionNotInMovement,
+    ]
+)
+export Capacite_Regen_suppress_xp_3 is TCapaciteDescriptor
+(
+    DescriptorId            = GUID:{94d01f8c-32e2-4a4b-824c-23e9e2ee0e58}
+    Name                    = "Regen_suppress_xp_3"
+    NameToken               = "None"
+    CumulEffect             = ~/CapaciteCumulEffect_oui
+    Declenchement           = ~/CapaciteDeclenchementType_automatique
+    TargetTeamFilter        = ~/CapaciteTargetFilter_joueur
+    InfluenceMapAlliance    = ~/AllianceRelation/vide
+    RangeGRU                = 0
+    CastTime                = 1.00
+    CheckVisibility         = True
+    CanBeCastFromTransport  = False
+    TargetEffect            = ~/UnitEffect_Regen_suppress_elite
+    EffectDuration          = -1.00
+    MaxTargetNb             = 1
+    TargetInBuilding        = False
+    TargetInTransport       = False
+    TargetInSelf            = False
+    TargetMySelf            = True
+    FeedbackActivationMask  = ~/CapaciteFeedbackActivationMask_never
+    DisplayRangeColor       = RGBA[0,0,0,0]
+    DisplayRangeThickness   = 0.00
+    TagsCiblePossible       = [
+    ]
+    TagsCibleExcluded       = [
+    ]
+    Conditions              = [
+        ~/ConditionTagRaisedInUnit_xp_elite,
+        ~/ConditionNotInMovement,
+    ]
+)
+export Capacite_SF_feedback is TCapaciteDescriptor
+(
+    DescriptorId            = GUID:{df3bc3d9-bc30-407d-817c-1d10d1d7c235}
+    Name                    = "SF_feedback"
+    NameToken               = "None"
+    CumulEffect             = ~/CapaciteCumulEffect_jamais
+    Declenchement           = ~/CapaciteDeclenchementType_automatique
+    TargetTeamFilter        = ~/CapaciteTargetFilter_joueur
+    InfluenceMapAlliance    = ~/AllianceRelation/vide
+    RangeGRU                = 0
+    CastTime                = 1.00
+    CheckVisibility         = True
+    CanBeCastFromTransport  = True
+    TargetEffect            = ~/UnitEffect_SF_feedback
+    EffectDuration          = -1.00
+    MaxTargetNb             = 1
+    TargetInBuilding        = True
+    TargetInTransport       = True
+    TargetInSelf            = True
+    TargetMySelf            = True
+    FeedbackActivationMask  = ~/CapaciteFeedbackActivationMask_never
+    DisplayRangeColor       = RGBA[0,0,0,0]
+    DisplayRangeThickness   = 0.00
+    TagsCiblePossible       = [
+    ]
+    TagsCibleExcluded       = [
+    ]
+
+)
+export Capacite_Stop_On_Shot is TCapaciteDescriptor
+(
+    DescriptorId            = GUID:{87d2fd05-83f8-43d5-80b2-355c6558314f}
+    Name                    = "Stop_On_Shot"
+    NameToken               = "None"
+    CumulEffect             = ~/CapaciteCumulEffect_jamais
+    Declenchement           = ~/CapaciteDeclenchementType_automatique
+    TargetTeamFilter        = ~/CapaciteTargetFilter_joueur
+    InfluenceMapAlliance    = ~/AllianceRelation/vide
+    RangeGRU                = 0
+    CastTime                = 0.00
+    CheckVisibility         = True
+    CanBeCastFromTransport  = False
+    TargetEffect            = nil
+    SelfEffect              = ~/UnitEffect_Stop_Mouvement
+    EffectDuration          = -1.00
+    MaxTargetNb             = 1
+    TargetInBuilding        = False
+    TargetInTransport       = False
+    TargetInSelf            = False
+    TargetMySelf            = True
+    FeedbackActivationMask  = ~/CapaciteFeedbackActivationMask_never
+    DisplayRangeColor       = RGBA[0,0,0,0]
+    DisplayRangeThickness   = 0.00
+    TagsCiblePossible       = [
+    ]
+    TagsCibleExcluded       = [
+    ]
+    Conditions              = [
+        ~/ConditionTimeAfterShot_30000,
+    ]
+)
+export Capacite_StressOnMiss_high is TCapaciteDescriptor
+(
+    DescriptorId            = GUID:{d94dc338-6d42-4a2c-8e97-accd98d09167}
+    Name                    = "StressOnMiss_high"
+    NameToken               = "None"
+    CumulEffect             = ~/CapaciteCumulEffect_jamais
+    Declenchement           = ~/CapaciteDeclenchementType_automatique
+    TargetTeamFilter        = ~/CapaciteTargetFilter_ennemi
+    InfluenceMapAlliance    = ~/AllianceRelation/vide
+    RangeGRU                = 400
+    CastTime                = 0.00
+    CheckVisibility         = False
+    CanBeCastFromTransport  = True
+    TargetEffect            = ~/UnitEffect_stressOnMiss_high
+    EffectDuration          = -1.00
+    MaxTargetNb             = 1
+    TargetInBuilding        = True
+    TargetInTransport       = True
+    TargetInSelf            = True
+    TargetMySelf            = True
+    FeedbackActivationMask  = ~/CapaciteFeedbackActivationMask_never
+    DisplayRangeColor       = RGBA[0,0,0,0]
+    DisplayRangeThickness   = 0.00
+    TagsCiblePossible       = [
+        "Avion",
+        "Helo",
+    ]
+    TagsCibleExcluded       = [
+        "UAV",
+        "UAV",
+    ]
+
+)
+export Capacite_StressOnMiss_low is TCapaciteDescriptor
+(
+    DescriptorId            = GUID:{ebd79ee3-f1be-443e-a8e2-86b8837bef13}
+    Name                    = "StressOnMiss_low"
+    NameToken               = "None"
+    CumulEffect             = ~/CapaciteCumulEffect_jamais
+    Declenchement           = ~/CapaciteDeclenchementType_automatique
+    TargetTeamFilter        = ~/CapaciteTargetFilter_ennemi
+    InfluenceMapAlliance    = ~/AllianceRelation/vide
+    RangeGRU                = 400
+    CastTime                = 0.00
+    CheckVisibility         = False
+    CanBeCastFromTransport  = True
+    TargetEffect            = ~/UnitEffect_stressOnMiss_low
+    EffectDuration          = -1.00
+    MaxTargetNb             = 1
+    TargetInBuilding        = True
+    TargetInTransport       = True
+    TargetInSelf            = True
+    TargetMySelf            = True
+    FeedbackActivationMask  = ~/CapaciteFeedbackActivationMask_never
+    DisplayRangeColor       = RGBA[0,0,0,0]
+    DisplayRangeThickness   = 0.00
+    TagsCiblePossible       = [
+        "Avion",
+        "Helo",
+    ]
+    TagsCibleExcluded       = [
+        "UAV",
+        "UAV",
+    ]
+
+)
+export Capacite_StressOnMiss_mid is TCapaciteDescriptor
+(
+    DescriptorId            = GUID:{9c4f4136-a292-4620-b94a-7cca717482dc}
+    Name                    = "StressOnMiss_mid"
+    NameToken               = "None"
+    CumulEffect             = ~/CapaciteCumulEffect_jamais
+    Declenchement           = ~/CapaciteDeclenchementType_automatique
+    TargetTeamFilter        = ~/CapaciteTargetFilter_ennemi
+    InfluenceMapAlliance    = ~/AllianceRelation/vide
+    RangeGRU                = 400
+    CastTime                = 0.00
+    CheckVisibility         = False
+    CanBeCastFromTransport  = True
+    TargetEffect            = ~/UnitEffect_stressOnMiss_mid
+    EffectDuration          = -1.00
+    MaxTargetNb             = 1
+    TargetInBuilding        = True
+    TargetInTransport       = True
+    TargetInSelf            = True
+    TargetMySelf            = True
+    FeedbackActivationMask  = ~/CapaciteFeedbackActivationMask_never
+    DisplayRangeColor       = RGBA[0,0,0,0]
+    DisplayRangeThickness   = 0.00
+    TagsCiblePossible       = [
+        "Avion",
+        "Helo",
+    ]
+    TagsCibleExcluded       = [
+        "UAV",
+        "UAV",
+    ]
+
+)
+export Capacite_Tank_Dissimule is TCapaciteDescriptor
+(
+    DescriptorId            = GUID:{db9adea3-7f78-4360-b9cd-62e078ee81ce}
+    Name                    = "Tank_Dissimule"
+    NameToken               = "None"
+    CumulEffect             = ~/CapaciteCumulEffect_jamais
+    Declenchement           = ~/CapaciteDeclenchementType_automatique
+    TargetTeamFilter        = ~/CapaciteTargetFilter_joueur
+    InfluenceMapAlliance    = ~/AllianceRelation/vide
+    RangeGRU                = 0
+    CastTime                = 1.00
+    CheckVisibility         = True
+    CanBeCastFromTransport  = True
+    TargetEffect            = ~/UnitEffect_Tank_bonus_discretion
+    EffectDuration          = -1.00
+    MaxTargetNb             = 1
+    TargetInBuilding        = False
+    TargetInTransport       = False
+    TargetInSelf            = False
+    TargetMySelf            = True
+    FeedbackActivationMask  = ~/CapaciteFeedbackActivationMask_never
+    DisplayRangeColor       = RGBA[0,0,0,0]
+    DisplayRangeThickness   = 0.00
+    TagsCiblePossible       = [
+    ]
+    TagsCibleExcluded       = [
+    ]
+    Conditions              = [
+        ~/ConditionNotInMovement,
+    ]
+)
+export Capacite_Trepied is TCapaciteDescriptor
+(
+    DescriptorId            = GUID:{dc4f6df4-271c-4cf6-b2cc-cfc4cb6704f9}
+    Name                    = "Trepied"
+    NameToken               = "None"
+    CumulEffect             = ~/CapaciteCumulEffect_jamais
+    Declenchement           = ~/CapaciteDeclenchementType_automatique
+    TargetTeamFilter        = ~/CapaciteTargetFilter_joueur
+    InfluenceMapAlliance    = ~/AllianceRelation/vide
+    RangeGRU                = 0
+    CastTime                = 1.00
+    CheckVisibility         = True
+    CanBeCastFromTransport  = True
+    TargetEffect            = ~/UnitEffect_Trepied
+    EffectDuration          = -1.00
+    MaxTargetNb             = 1
+    TargetInBuilding        = True
+    TargetInTransport       = True
+    TargetInSelf            = True
+    TargetMySelf            = True
+    FeedbackActivationMask  = ~/CapaciteFeedbackActivationMask_never
+    DisplayRangeColor       = RGBA[0,0,0,0]
+    DisplayRangeThickness   = 0.00
+    TagsCiblePossible       = [
+    ]
+    TagsCibleExcluded       = [
+    ]
+    Conditions              = [
+        ~/ConditionTagRaisedInUnit_Trepied_ok,
+        ~/ConditionNotInMovement,
+    ]
+)
+export Capacite_Trepied_no_Trepied is TCapaciteDescriptor
+(
+    DescriptorId            = GUID:{80fcb3ad-eb26-4d3e-b01d-523d53602d2b}
+    Name                    = "Trepied_no_Trepied"
+    NameToken               = "None"
+    CumulEffect             = ~/CapaciteCumulEffect_jamais
+    Declenchement           = ~/CapaciteDeclenchementType_automatique
+    TargetTeamFilter        = ~/CapaciteTargetFilter_joueur
+    InfluenceMapAlliance    = ~/AllianceRelation/vide
+    RangeGRU                = 0
+    CastTime                = 10.00
+    CheckVisibility         = True
+    CanBeCastFromTransport  = True
+    TargetEffect            = ~/UnitEffect_Ajoute_Tag_Trepied_ok
+    EffectDuration          = -1.00
+    MaxTargetNb             = 1
+    TargetInBuilding        = True
+    TargetInTransport       = True
+    TargetInSelf            = True
+    TargetMySelf            = True
+    FeedbackActivationMask  = ~/CapaciteFeedbackActivationMask_never
+    DisplayRangeColor       = RGBA[0,0,0,0]
+    DisplayRangeThickness   = 0.00
+    TagsCiblePossible       = [
+    ]
+    TagsCibleExcluded       = [
+    ]
+    Conditions              = [
+        ~/ConditionNotInMovement,
+    ]
+)
+export Capacite_UAV is TCapaciteDescriptor
+(
+    DescriptorId            = GUID:{5df09981-76d9-4e63-b27b-6a4605eab9eb}
+    Name                    = "UAV"
+    NameToken               = "None"
+    CumulEffect             = ~/CapaciteCumulEffect_jamais
+    Declenchement           = ~/CapaciteDeclenchementType_automatique
+    TargetTeamFilter        = ~/CapaciteTargetFilter_joueur
+    InfluenceMapAlliance    = ~/AllianceRelation/vide
+    RangeGRU                = 0
+    CastTime                = 0.00
+    CheckVisibility         = True
+    CanBeCastFromTransport  = True
+    TargetEffect            = ~/UnitEffect_Malus_ciblage_UAV
+    EffectDuration          = -1.00
+    MaxTargetNb             = -1
+    TargetInBuilding        = True
+    TargetInTransport       = True
+    TargetInSelf            = True
+    TargetMySelf            = True
+    FeedbackActivationMask  = ~/CapaciteFeedbackActivationMask_never
+    DisplayRangeColor       = RGBA[0,0,0,0]
+    DisplayRangeThickness   = 0.00
+    TagsCiblePossible       = [
+    ]
+    TagsCibleExcluded       = [
+    ]
+
+)
+export Capacite_electronic_warfare is TCapaciteDescriptor
+(
+    DescriptorId            = GUID:{831c591b-a9f2-43d7-9bff-52e05bb68760}
+    Name                    = "electronic_warfare"
+    NameToken               = "None"
+    CumulEffect             = ~/CapaciteCumulEffect_jamais
+    Declenchement           = ~/CapaciteDeclenchementType_automatique
+    TargetTeamFilter        = ~/CapaciteTargetFilter_ennemi
+    InfluenceMapAlliance    = ~/AllianceRelation/vide
+    RangeGRU                = 3887
+    CastTime                = 0.00
+    CheckVisibility         = False
+    CanBeCastFromTransport  = False
+    TargetEffect            = ~/UnitEffect_electronic_warfare
+    EffectDuration          = -1.00
+    MaxTargetNb             = -1
+    TargetInBuilding        = True
+    TargetInTransport       = True
+    TargetInSelf            = True
+    TargetMySelf            = True
+    FeedbackActivationMask  = ~/CapaciteFeedbackActivationMask_selected | ~/CapaciteFeedbackActivationMask_anyalliance
+    DisplayRangeColor       = RGBA[0,255,255,255]
+    DisplayRangeThickness   = 0.40
+    TagsCiblePossible       = [
+        "AA_radar",
+    ]
+    TagsCibleExcluded       = [
+    ]
+
+)
+export Capacite_eo_dazzler is TCapaciteDescriptor
+(
+    DescriptorId            = GUID:{54695330-337e-4fb3-9034-0014b72c079f}
+    Name                    = "eo_dazzler"
+    NameToken               = "None"
+    CumulEffect             = ~/CapaciteCumulEffect_jamais
+    Declenchement           = ~/CapaciteDeclenchementType_automatique
+    TargetTeamFilter        = ~/CapaciteTargetFilter_joueur
+    InfluenceMapAlliance    = ~/AllianceRelation/vide
+    RangeGRU                = 0
+    CastTime                = 0.00
+    CheckVisibility         = True
+    CanBeCastFromTransport  = True
+    TargetEffect            = ~/UnitEffect_eo_dazzler
+    EffectDuration          = -1.00
+    MaxTargetNb             = 1
+    TargetInBuilding        = True
+    TargetInTransport       = True
+    TargetInSelf            = True
+    TargetMySelf            = True
+    FeedbackActivationMask  = ~/CapaciteFeedbackActivationMask_never
+    DisplayRangeColor       = RGBA[0,0,0,0]
+    DisplayRangeThickness   = 0.00
+    TagsCiblePossible       = [
+    ]
+    TagsCibleExcluded       = [
+    ]
+    Conditions              = [
+        ~/ConditionNotInMovement,
+    ]
+)
+export Capacite_fireDirection is TCapaciteDescriptor
+(
+    DescriptorId            = GUID:{d5e050b2-5ce4-46fe-9642-6ba1b55f56ef}
+    Name                    = "fireDirection"
+    NameToken               = "None"
+    CumulEffect             = ~/CapaciteCumulEffect_jamais
+    Declenchement           = ~/CapaciteDeclenchementType_automatique
+    TargetTeamFilter        = ~/CapaciteTargetFilter_joueur
+    InfluenceMapAlliance    = ~/AllianceRelation/vide
+    RangeGRU                = 1415
+    CastTime                = 0.00
+    CheckVisibility         = True
+    CanBeCastFromTransport  = False
+    TargetEffect            = ~/UnitEffect_fireDirection
+    EffectDuration          = -1.00
+    MaxTargetNb             = -1
+    TargetInBuilding        = True
+    TargetInTransport       = False
+    TargetInSelf            = False
+    TargetMySelf            = False
+    FeedbackActivationMask  = ~/CapaciteFeedbackActivationMask_soloselected | ~/CapaciteFeedbackActivationMask_allied
+    DisplayRangeColor       = RGBA[248,248,248,200]
+    DisplayRangeThickness   = 0.40
+    TagsCiblePossible       = [
+        "Artillerie",
+    ]
+    TagsCibleExcluded       = [
+    ]
+
+)
+export Capacite_jammer is TCapaciteDescriptor
+(
+    DescriptorId            = GUID:{e8d88ab7-f594-4802-bc2a-b28d3c8e9f79}
+    Name                    = "jammer"
+    NameToken               = "None"
+    CumulEffect             = ~/CapaciteCumulEffect_jamais
+    Declenchement           = ~/CapaciteDeclenchementType_automatique
+    TargetTeamFilter        = ~/CapaciteTargetFilter_ennemi
+    InfluenceMapAlliance    = ~/AllianceRelation/vide
+    RangeGRU                = 3887
+    CastTime                = 0.00
+    CheckVisibility         = False
+    CanBeCastFromTransport  = False
+    TargetEffect            = ~/UnitEffect_jammer
+    EffectDuration          = -1.00
+    MaxTargetNb             = -1
+    TargetInBuilding        = True
+    TargetInTransport       = True
+    TargetInSelf            = True
+    TargetMySelf            = True
+    FeedbackActivationMask  = ~/CapaciteFeedbackActivationMask_selected | ~/CapaciteFeedbackActivationMask_anyalliance
+    DisplayRangeColor       = RGBA[255,0,0,255]
+    DisplayRangeThickness   = 0.40
+    TagsCiblePossible       = [
+        "reco_radar",
+    ]
+    TagsCibleExcluded       = [
+        "isGSR",
+    ]
+
+)
+export Capacite_jammer_arty is TCapaciteDescriptor
+(
+    DescriptorId            = GUID:{4bcbd225-2ea6-4389-9f9a-17a5025d3055}
+    Name                    = "jammer_arty"
+    NameToken               = "None"
+    CumulEffect             = ~/CapaciteCumulEffect_jamais
+    Declenchement           = ~/CapaciteDeclenchementType_automatique
+    TargetTeamFilter        = ~/CapaciteTargetFilter_ennemi
+    InfluenceMapAlliance    = ~/AllianceRelation/vide
+    RangeGRU                = 3887
+    CastTime                = 0.00
+    CheckVisibility         = False
+    CanBeCastFromTransport  = False
+    TargetEffect            = ~/UnitEffect_electronic_warfare_arty
+    EffectDuration          = -1.00
+    MaxTargetNb             = -1
+    TargetInBuilding        = True
+    TargetInTransport       = True
+    TargetInSelf            = True
+    TargetMySelf            = True
+    FeedbackActivationMask  = ~/CapaciteFeedbackActivationMask_selected | ~/CapaciteFeedbackActivationMask_anyalliance
+    DisplayRangeColor       = RGBA[0,255,255,255]
+    DisplayRangeThickness   = 0.40
+    TagsCiblePossible       = [
+        "Artillerie",
+    ]
+    TagsCibleExcluded       = [
+        "isGSR",
+    ]
+
+)
+export Capacite_jammer_gsr is TCapaciteDescriptor
+(
+    DescriptorId            = GUID:{73449dc3-0614-4351-848d-47cc53b19d14}
+    Name                    = "jammer_gsr"
+    NameToken               = "None"
+    CumulEffect             = ~/CapaciteCumulEffect_jamais
+    Declenchement           = ~/CapaciteDeclenchementType_automatique
+    TargetTeamFilter        = ~/CapaciteTargetFilter_ennemi
+    InfluenceMapAlliance    = ~/AllianceRelation/vide
+    RangeGRU                = 3887
+    CastTime                = 0.00
+    CheckVisibility         = False
+    CanBeCastFromTransport  = False
+    TargetEffect            = ~/UnitEffect_jammer_gsr
+    EffectDuration          = -1.00
+    MaxTargetNb             = -1
+    TargetInBuilding        = True
+    TargetInTransport       = True
+    TargetInSelf            = True
+    TargetMySelf            = True
+    FeedbackActivationMask  = ~/CapaciteFeedbackActivationMask_selected | ~/CapaciteFeedbackActivationMask_anyalliance
+    DisplayRangeColor       = RGBA[255,0,0,255]
+    DisplayRangeThickness   = 0.40
+    TagsCiblePossible       = [
+        "reco_radar",
+    ]
+    TagsCibleExcluded       = [
+    ]
+
+)
+export Capacite_militia is TCapaciteDescriptor
+(
+    DescriptorId            = GUID:{070fde78-1545-4fa8-9010-278172d62e5c}
+    Name                    = "militia"
+    NameToken               = "None"
+    CumulEffect             = ~/CapaciteCumulEffect_jamais
+    Declenchement           = ~/CapaciteDeclenchementType_automatique
+    TargetTeamFilter        = ~/CapaciteTargetFilter_joueur
+    InfluenceMapAlliance    = ~/AllianceRelation/vide
+    RangeGRU                = 0
+    CastTime                = 0.00
+    CheckVisibility         = True
+    CanBeCastFromTransport  = True
+    TargetEffect            = ~/UnitEffect_militia
+    EffectDuration          = -1.00
+    MaxTargetNb             = 1
+    TargetInBuilding        = True
+    TargetInTransport       = True
+    TargetInSelf            = True
+    TargetMySelf            = True
+    FeedbackActivationMask  = ~/CapaciteFeedbackActivationMask_never
+    DisplayRangeColor       = RGBA[0,0,0,0]
+    DisplayRangeThickness   = 0.00
+    TagsCiblePossible       = [
+    ]
+    TagsCibleExcluded       = [
+    ]
+    Conditions              = [
+        ~/ConditionTagNotRaisedInUnit_reserviste_immune,
+    ]
+)
+export Capacite_mountaineer is TCapaciteDescriptor
+(
+    DescriptorId            = GUID:{dd57118b-9c5f-4ac1-8fbd-084883cbbf77}
+    Name                    = "mountaineer"
+    NameToken               = "None"
+    CumulEffect             = ~/CapaciteCumulEffect_jamais
+    Declenchement           = ~/CapaciteDeclenchementType_automatique
+    TargetTeamFilter        = ~/CapaciteTargetFilter_joueur
+    InfluenceMapAlliance    = ~/AllianceRelation/vide
+    RangeGRU                = 0
+    CastTime                = 0.00
+    CheckVisibility         = True
+    CanBeCastFromTransport  = True
+    TargetEffect            = ~/UnitEffect_mountaineer
+    EffectDuration          = -1.00
+    MaxTargetNb             = 1
+    TargetInBuilding        = True
+    TargetInTransport       = True
+    TargetInSelf            = True
+    TargetMySelf            = True
+    FeedbackActivationMask  = ~/CapaciteFeedbackActivationMask_never
+    DisplayRangeColor       = RGBA[0,0,0,0]
+    DisplayRangeThickness   = 0.00
+    TagsCiblePossible       = [
+    ]
+    TagsCibleExcluded       = [
+    ]
+
+)
+export Capacite_poorly_trained is TCapaciteDescriptor
+(
+    DescriptorId            = GUID:{d1d22ef2-f237-4549-a51d-ccdad940f7aa}
+    Name                    = "poorly_trained"
+    NameToken               = "None"
+    CumulEffect             = ~/CapaciteCumulEffect_jamais
+    Declenchement           = ~/CapaciteDeclenchementType_automatique
+    TargetTeamFilter        = ~/CapaciteTargetFilter_joueur
+    InfluenceMapAlliance    = ~/AllianceRelation/vide
+    RangeGRU                = 0
+    CastTime                = 0.00
+    CheckVisibility         = True
+    CanBeCastFromTransport  = True
+    TargetEffect            = ~/UnitEffect_reserviste
+    EffectDuration          = -1.00
+    MaxTargetNb             = 1
+    TargetInBuilding        = True
+    TargetInTransport       = True
+    TargetInSelf            = True
+    TargetMySelf            = True
+    FeedbackActivationMask  = ~/CapaciteFeedbackActivationMask_never
+    DisplayRangeColor       = RGBA[0,0,0,0]
+    DisplayRangeThickness   = 0.00
+    TagsCiblePossible       = [
+    ]
+    TagsCibleExcluded       = [
+    ]
+    Conditions              = [
+        ~/ConditionTagNotRaisedInUnit_reserviste_immune,
+        ~/ConditionNotInMovement,
+    ]
+)
+export Capacite_reserviste is TCapaciteDescriptor
+(
+    DescriptorId            = GUID:{7ede2a6d-5414-4cfd-b6a0-dd9ce3a6b0f4}
+    Name                    = "reserviste"
+    NameToken               = "None"
+    CumulEffect             = ~/CapaciteCumulEffect_jamais
+    Declenchement           = ~/CapaciteDeclenchementType_automatique
+    TargetTeamFilter        = ~/CapaciteTargetFilter_joueur
+    InfluenceMapAlliance    = ~/AllianceRelation/vide
+    RangeGRU                = 0
+    CastTime                = 0.00
+    CheckVisibility         = True
+    CanBeCastFromTransport  = True
+    TargetEffect            = ~/UnitEffect_reserviste
+    EffectDuration          = -1.00
+    MaxTargetNb             = 1
+    TargetInBuilding        = True
+    TargetInTransport       = True
+    TargetInSelf            = True
+    TargetMySelf            = True
+    FeedbackActivationMask  = ~/CapaciteFeedbackActivationMask_never
+    DisplayRangeColor       = RGBA[0,0,0,0]
+    DisplayRangeThickness   = 0.00
+    TagsCiblePossible       = [
+    ]
+    TagsCibleExcluded       = [
+    ]
+    Conditions              = [
+        ~/ConditionTagNotRaisedInUnit_reserviste_immune,
+    ]
+)
+export Capacite_resolute is TCapaciteDescriptor
+(
+    DescriptorId            = GUID:{7409762f-9ed4-43a7-9852-d614b1229500}
+    Name                    = "resolute"
+    NameToken               = "None"
+    CumulEffect             = ~/CapaciteCumulEffect_jamais
+    Declenchement           = ~/CapaciteDeclenchementType_automatique
+    TargetTeamFilter        = ~/CapaciteTargetFilter_joueur
+    InfluenceMapAlliance    = ~/AllianceRelation/vide
+    RangeGRU                = 0
+    CastTime                = 0.00
+    CheckVisibility         = True
+    CanBeCastFromTransport  = True
+    TargetEffect            = ~/UnitEffect_resolute
+    EffectDuration          = -1.00
+    MaxTargetNb             = 1
+    TargetInBuilding        = True
+    TargetInTransport       = True
+    TargetInSelf            = True
+    TargetMySelf            = True
+    FeedbackActivationMask  = ~/CapaciteFeedbackActivationMask_never
+    DisplayRangeColor       = RGBA[0,0,0,0]
+    DisplayRangeThickness   = 0.00
+    TagsCiblePossible       = [
+    ]
+    TagsCibleExcluded       = [
+    ]
+
+)
+export Capacite_security is TCapaciteDescriptor
+(
+    DescriptorId            = GUID:{3ae34252-5259-4533-aa47-6737becd9a48}
+    Name                    = "security"
+    NameToken               = "None"
+    CumulEffect             = ~/CapaciteCumulEffect_jamais
+    Declenchement           = ~/CapaciteDeclenchementType_automatique
+    TargetTeamFilter        = ~/CapaciteTargetFilter_joueur
+    InfluenceMapAlliance    = ~/AllianceRelation/vide
+    RangeGRU                = 0
+    CastTime                = 1.00
+    CheckVisibility         = True
+    CanBeCastFromTransport  = True
+    TargetEffect            = ~/UnitEffect_security
+    EffectDuration          = -1.00
+    MaxTargetNb             = 1
+    TargetInBuilding        = True
+    TargetInTransport       = True
+    TargetInSelf            = True
+    TargetMySelf            = True
+    FeedbackActivationMask  = ~/CapaciteFeedbackActivationMask_never
+    DisplayRangeColor       = RGBA[0,0,0,0]
+    DisplayRangeThickness   = 0.00
+    TagsCiblePossible       = [
+        "GroundUnits",
+    ]
+    TagsCibleExcluded       = [
+    ]
+    Conditions              = [
+        ~/ConditionNotInMovement,
+    ]
+)
+export Capacite_security_feedback is TCapaciteDescriptor
+(
+    DescriptorId            = GUID:{2bdba237-87c2-495c-812c-23df856856f7}
+    Name                    = "security_feedback"
+    NameToken               = "None"
+    CumulEffect             = ~/CapaciteCumulEffect_jamais
+    Declenchement           = ~/CapaciteDeclenchementType_automatique
+    TargetTeamFilter        = ~/CapaciteTargetFilter_joueur
+    InfluenceMapAlliance    = ~/AllianceRelation/vide
+    RangeGRU                = 0
+    CastTime                = 1.00
+    CheckVisibility         = True
+    CanBeCastFromTransport  = True
+    TargetEffect            = ~/UnitEffect_Choc_feedback
+    EffectDuration          = -1.00
+    MaxTargetNb             = 1
+    TargetInBuilding        = True
+    TargetInTransport       = True
+    TargetInSelf            = True
+    TargetMySelf            = True
+    FeedbackActivationMask  = ~/CapaciteFeedbackActivationMask_never
+    DisplayRangeColor       = RGBA[0,0,0,0]
+    DisplayRangeThickness   = 0.00
+    TagsCiblePossible       = [
+    ]
+    TagsCibleExcluded       = [
+    ]
+
+)
+export Capacite_sigint_close is TCapaciteDescriptor
+(
+    DescriptorId            = GUID:{d0116721-a8a9-4943-a9c8-929671d551fd}
+    Name                    = "sigint_close"
+    NameToken               = "None"
+    CumulEffect             = ~/CapaciteCumulEffect_jamais
+    Declenchement           = ~/CapaciteDeclenchementType_automatique
+    TargetTeamFilter        = ~/CapaciteTargetFilter_ennemi
+    InfluenceMapAlliance    = ~/AllianceRelation/vide
+    RangeGRU                = 2250
+    CastTime                = 0.00
+    CheckVisibility         = False
+    CanBeCastFromTransport  = False
+    TargetEffect            = nil
+    SelfEffect              = ~/UnitEffect_sigint_close
+    EffectDuration          = -1.00
+    MaxTargetNb             = -1
+    TargetInBuilding        = True
+    TargetInTransport       = True
+    TargetInSelf            = True
+    TargetMySelf            = True
+    FeedbackActivationMask  = ~/CapaciteFeedbackActivationMask_selected | ~/CapaciteFeedbackActivationMask_allied
+    DisplayRangeColor       = RGBA[10,240,199,100]
+    DisplayRangeThickness   = 0.20
+    TagsCiblePossible       = [
+        "GroundUnits",
+        "Helo",
+    ]
+    TagsCibleExcluded       = [
+        "noSIGINT",
+    ]
+    Conditions              = [
+        ~/ConditionTagNotRaisedInUnit_RadioJammed,
+    ]
+)
+export Capacite_sigint_far is TCapaciteDescriptor
+(
+    DescriptorId            = GUID:{4da4c11e-18aa-4ba7-8d78-2fdf564a9022}
+    Name                    = "sigint_far"
+    NameToken               = "None"
+    CumulEffect             = ~/CapaciteCumulEffect_jamais
+    Declenchement           = ~/CapaciteDeclenchementType_automatique
+    TargetTeamFilter        = ~/CapaciteTargetFilter_ennemi
+    InfluenceMapAlliance    = ~/AllianceRelation/vide
+    RangeGRU                = 4500
+    CastTime                = 0.00
+    CheckVisibility         = False
+    CanBeCastFromTransport  = False
+    TargetEffect            = nil
+    SelfEffect              = ~/UnitEffect_sigint_far
+    EffectDuration          = -1.00
+    MaxTargetNb             = -1
+    TargetInBuilding        = True
+    TargetInTransport       = True
+    TargetInSelf            = True
+    TargetMySelf            = True
+    FeedbackActivationMask  = ~/CapaciteFeedbackActivationMask_selected | ~/CapaciteFeedbackActivationMask_allied
+    DisplayRangeColor       = RGBA[248,248,248,200]
+    DisplayRangeThickness   = 0.40
+    TagsCiblePossible       = [
+        "GroundUnits",
+        "Helo",
+    ]
+    TagsCibleExcluded       = [
+        "noSIGINT",
+    ]
+    Conditions              = [
+        ~/ConditionTagNotRaisedInUnit_RadioJammed,
+        ~/ConditionTagNotRaisedInUnit_sigint_close,
+    ]
+)
+export Capacite_sigint_feedback is TCapaciteDescriptor
+(
+    DescriptorId            = GUID:{655f1d47-cca6-4ce9-bb43-f62b8c0d7033}
+    Name                    = "sigint_feedback"
+    NameToken               = "None"
+    CumulEffect             = ~/CapaciteCumulEffect_jamais
+    Declenchement           = ~/CapaciteDeclenchementType_automatique
+    TargetTeamFilter        = ~/CapaciteTargetFilter_joueur
+    InfluenceMapAlliance    = ~/AllianceRelation/vide
+    RangeGRU                = 0
+    CastTime                = 1.00
+    CheckVisibility         = True
+    CanBeCastFromTransport  = True
+    TargetEffect            = ~/UnitEffect_sigint_feedback
+    EffectDuration          = -1.00
+    MaxTargetNb             = 1
+    TargetInBuilding        = True
+    TargetInTransport       = True
+    TargetInSelf            = True
+    TargetMySelf            = True
+    FeedbackActivationMask  = ~/CapaciteFeedbackActivationMask_never
+    DisplayRangeColor       = RGBA[0,0,0,0]
+    DisplayRangeThickness   = 0.00
+    TagsCiblePossible       = [
+    ]
+    TagsCibleExcluded       = [
+    ]
+    Conditions              = [
+        ~/ConditionTagNotRaisedInUnit_sigint_ok,
+    ]
+)
+export Capacite_sniper is TCapaciteDescriptor
+(
+    DescriptorId            = GUID:{8d3a0125-e213-4514-84d8-6921a5d1feb5}
+    Name                    = "sniper"
+    NameToken               = "None"
+    CumulEffect             = ~/CapaciteCumulEffect_jamais
+    Declenchement           = ~/CapaciteDeclenchementType_automatique
+    TargetTeamFilter        = ~/CapaciteTargetFilter_joueur
+    InfluenceMapAlliance    = ~/AllianceRelation/vide
+    RangeGRU                = 0
+    CastTime                = 1.00
+    CheckVisibility         = True
+    CanBeCastFromTransport  = True
+    TargetEffect            = ~/UnitEffect_sniper
+    EffectDuration          = -1.00
+    MaxTargetNb             = 1
+    TargetInBuilding        = True
+    TargetInTransport       = True
+    TargetInSelf            = True
+    TargetMySelf            = True
+    FeedbackActivationMask  = ~/CapaciteFeedbackActivationMask_never
+    DisplayRangeColor       = RGBA[0,0,0,0]
+    DisplayRangeThickness   = 0.00
+    TagsCiblePossible       = [
+    ]
+    TagsCibleExcluded       = [
+    ]
+    Conditions              = [
+        ~/ConditionTagRaisedInUnit_snipe_ok,
+        ~/ConditionNotInMovement,
+    ]
+)
+export Capacite_sniper_feedback is TCapaciteDescriptor
+(
+    DescriptorId            = GUID:{7a2fd586-e50d-4ea4-97e7-3b5843938a77}
+    Name                    = "sniper_feedback"
+    NameToken               = "None"
+    CumulEffect             = ~/CapaciteCumulEffect_jamais
+    Declenchement           = ~/CapaciteDeclenchementType_automatique
+    TargetTeamFilter        = ~/CapaciteTargetFilter_joueur
+    InfluenceMapAlliance    = ~/AllianceRelation/vide
+    RangeGRU                = 0
+    CastTime                = 1.00
+    CheckVisibility         = True
+    CanBeCastFromTransport  = True
+    TargetEffect            = ~/UnitEffect_sniper_feedback
+    EffectDuration          = -1.00
+    MaxTargetNb             = 1
+    TargetInBuilding        = True
+    TargetInTransport       = True
+    TargetInSelf            = True
+    TargetMySelf            = True
+    FeedbackActivationMask  = ~/CapaciteFeedbackActivationMask_never
+    DisplayRangeColor       = RGBA[0,0,0,0]
+    DisplayRangeThickness   = 0.00
+    TagsCiblePossible       = [
+    ]
+    TagsCibleExcluded       = [
+    ]
+    Conditions              = [
+        ~/ConditionTagNotRaisedInUnit_snipe_ok,
+    ]
+)
+export Capacite_sniper_no_snipe is TCapaciteDescriptor
+(
+    DescriptorId            = GUID:{d789677b-b842-44d8-990e-82b1a32f91c7}
+    Name                    = "sniper_no_snipe"
+    NameToken               = "None"
+    CumulEffect             = ~/CapaciteCumulEffect_jamais
+    Declenchement           = ~/CapaciteDeclenchementType_automatique
+    TargetTeamFilter        = ~/CapaciteTargetFilter_joueur
+    InfluenceMapAlliance    = ~/AllianceRelation/vide
+    RangeGRU                = 0
+    CastTime                = 10.00
+    CheckVisibility         = True
+    CanBeCastFromTransport  = True
+    TargetEffect            = ~/UnitEffect_Ajoute_Tag_snipe_ok
+    EffectDuration          = -1.00
+    MaxTargetNb             = 1
+    TargetInBuilding        = True
+    TargetInTransport       = True
+    TargetInSelf            = True
+    TargetMySelf            = True
+    FeedbackActivationMask  = ~/CapaciteFeedbackActivationMask_never
+    DisplayRangeColor       = RGBA[0,0,0,0]
+    DisplayRangeThickness   = 0.00
+    TagsCiblePossible       = [
+    ]
+    TagsCibleExcluded       = [
+    ]
+    Conditions              = [
+        ~/ConditionNotInMovement,
+    ]
+)

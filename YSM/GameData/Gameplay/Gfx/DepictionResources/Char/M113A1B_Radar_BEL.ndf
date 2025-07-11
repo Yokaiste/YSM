@@ -1,0 +1,19 @@
+export Modele_M113A1B_Radar_BEL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/APC/M113A1B_radar/M113A1B_radar.fbx"
+)
+
+export Modele_M113A1B_Radar_BEL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/APC/M113A1B_radar_MID/M113A1B_radar_MID.fbx"
+)
+
+export Modele_M113A1B_Radar_BEL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/APC/M113A1B_radar_LOW/M113A1B_radar_LOW.fbx"
+)
+
+export Modele_M113A1B_Radar_BEL_Tourelle_01 is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Char/Chieftain_Mk11/L37_t1.fbx"
+)

@@ -1,0 +1,17 @@
+export Modele_BTR_60_DDR is TResourceMesh
+(
+    Mesh=ModelFile_BTR_60_SOV
+    Textures="GameData:/Assets/3D/Units/DDR/APC/BTR_60"
+)
+
+export Modele_BTR_60_DDR_MID is TResourceMesh
+(
+    Mesh=ModelFile_BTR_60_SOV_MID
+    Textures="GameData:/Assets/3D/Units/DDR/APC/BTR_60_MID"
+)
+
+export Modele_BTR_60_DDR_LOW is TResourceMesh
+(
+    Mesh=ModelFile_BTR_60_SOV_LOW
+    Textures="GameData:/Assets/3D/Units/DDR/APC/BTR_60_LOW"
+)

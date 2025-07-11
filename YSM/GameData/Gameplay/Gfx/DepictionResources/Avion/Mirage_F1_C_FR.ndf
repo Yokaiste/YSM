@@ -1,0 +1,19 @@
+export Modele_Mirage_F1_C_FR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Avion/Mirage_F1_C/Mirage_F1_C.fbx"
+)
+
+export Modele_Mirage_F1_C_FR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Avion/Mirage_F1_C_MID/Mirage_F1_C_MID.fbx"
+)
+
+export Modele_Mirage_F1_C_FR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Avion/Mirage_F1_C_LOW/Mirage_F1_C_LOW.fbx"
+)
+
+export Modele_Mirage_F1_C_FR_train is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Avion/Mirage_F1_C/Mirage_F1_C_train.fbx"
+)

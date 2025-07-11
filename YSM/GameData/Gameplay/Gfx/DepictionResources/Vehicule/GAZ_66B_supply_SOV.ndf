@@ -1,0 +1,14 @@
+export Modele_GAZ_66B_supply_SOV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Vehicule/GAZ_66B/GAZ_66B.fbx"
+)
+
+export Modele_GAZ_66B_supply_SOV_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Vehicule/GAZ_66B_MID/GAZ_66B_MID.fbx"
+)
+
+export Modele_GAZ_66B_supply_SOV_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Vehicule/GAZ_66B_LOW/GAZ_66B_LOW.fbx"
+)

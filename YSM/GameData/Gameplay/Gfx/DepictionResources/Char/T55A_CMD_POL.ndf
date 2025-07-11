@@ -1,0 +1,19 @@
+export Modele_T55A_CMD_POL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Char/T55A_CMD/T55A_CMD.fbx"
+)
+
+export Modele_T55A_CMD_POL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Char/T55A_CMD_MID/T55A_CMD_MID.fbx"
+)
+
+export Modele_T55A_CMD_POL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Char/T55A_CMD_LOW/T55A_CMD_LOW.fbx"
+)
+
+export Modele_T55A_CMD_POL_Tourelle_02 is TResourceMesh
+(
+    Mesh=ModelFile_DShK_127mm_t2
+)

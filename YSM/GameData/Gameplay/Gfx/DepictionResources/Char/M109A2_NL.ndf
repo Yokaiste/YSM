@@ -1,0 +1,19 @@
+export Modele_M109A2_NL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Artillerie/M109_A2/M109_A2.fbx"
+    Textures="GameData:/Assets/3D/Units/NL/Artillerie/M109_A2"
+
+)
+
+export Modele_M109A2_NL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Artillerie/M109_A2_MID/M109_A2_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/NL/Artillerie/M109_A2_MID"
+)
+
+export Modele_M109A2_NL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Artillerie/M109_A2_LOW/M109_A2_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/NL/Artillerie/M109_A2_LOW"
+)
+

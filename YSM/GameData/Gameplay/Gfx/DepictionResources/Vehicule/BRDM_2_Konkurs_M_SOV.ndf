@@ -1,0 +1,17 @@
+export Modele_BRDM_2_Konkurs_M_SOV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Antichar/BRDM2_Konkurs_M/BRDM2_Konkurs_M.fbx"
+)
+
+export Modele_BRDM_2_Konkurs_M_SOV_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Antichar/BRDM2_Konkurs_M_MID/BRDM2_Konkurs_M_MID.fbx"
+)
+
+export Modele_BRDM_2_Konkurs_M_SOV_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Antichar/BRDM2_Konkurs_M_LOW/BRDM2_Konkurs_M_LOW.fbx"
+)
+
+
+

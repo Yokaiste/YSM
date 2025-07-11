@@ -1,0 +1,14 @@
+export Modele_Rover_101FC_UK is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Vehicule/ROVER_101FC/ROVER_101FC.fbx"
+)
+
+export Modele_Rover_101FC_UK_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Vehicule/ROVER_101FC_MID/ROVER_101FC_MID.fbx"
+)
+
+export Modele_Rover_101FC_UK_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Vehicule/ROVER_101FC_LOW/ROVER_101FC_LOW.fbx"
+)

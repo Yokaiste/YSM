@@ -1,0 +1,14 @@
+export Modele_VLRA_20mm_FR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/DCA/VLRA_20mm/VLRA_20mm.fbx"
+)
+
+export Modele_VLRA_20mm_FR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/DCA/VLRA_20mm_MID/VLRA_20mm_MID.fbx"
+)
+
+export Modele_VLRA_20mm_FR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/DCA/VLRA_20mm_LOW/VLRA_20mm_LOW.fbx"
+)

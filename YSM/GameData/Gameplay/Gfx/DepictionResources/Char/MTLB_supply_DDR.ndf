@@ -1,0 +1,17 @@
+export Modele_MTLB_supply_DDR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Antichar/MTLB_Shturm/MTLB_Supply.fbx"
+    Textures="GameData:/Assets/3D/Units/DDR/Antichar/MTLB_Shturm"
+)
+
+export Modele_MTLB_supply_DDR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Antichar/MTLB_Shturm_MID/MTLB_Supply_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/DDR/Antichar/MTLB_Shturm_MID"
+)
+
+export Modele_MTLB_supply_DDR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Antichar/MTLB_Shturm_LOW/MTLB_Supply_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/DDR/Antichar/MTLB_Shturm_LOW"
+)

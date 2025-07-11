@@ -1,0 +1,17 @@
+export Modele_AML_90_Reserve_FR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/AML_90/AML_90.fbx"
+    Textures="GameData:/Assets/3D/Units/FR/Vehicule/AML_90_Reserve"
+)
+
+export Modele_AML_90_Reserve_FR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/AML_90_MID/AML_90_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/FR/Vehicule/AML_90_Reserve_MID"
+)
+
+export Modele_AML_90_Reserve_FR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/AML_90_LOW/AML_90_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/FR/Vehicule/AML_90_Reserve_LOW"
+)

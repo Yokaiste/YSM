@@ -1,0 +1,19 @@
+export Modele_MiG_23ML_SOV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Avion/MiG_23ML/MiG_23ML.fbx"
+)
+
+export Modele_MiG_23ML_SOV_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Avion/MiG_23ML_MID/MiG_23ML_MID.fbx"
+)
+
+export Modele_MiG_23ML_SOV_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Avion/MiG_23ML_LOW/MiG_23ML_LOW.fbx"
+)
+
+export Modele_MiG_23ML_SOV_train is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Avion/MiG_23ML/MiG_23ML_Train.fbx"
+)

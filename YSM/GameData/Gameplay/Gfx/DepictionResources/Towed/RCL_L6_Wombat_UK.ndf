@@ -1,0 +1,3 @@
+export Modele_RCL_L6_Wombat_UK is TResourceMesh( Mesh="GameData:/Assets/3D/Units/UK/Vehicule/LandRover_Para_WOMBAT/RCL_L6_Wombat.fbx")
+export Modele_RCL_L6_Wombat_UK_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/UK/Vehicule/LandRover_Para_WOMBAT/RCL_L6_Wombat.fbx")
+export Modele_RCL_L6_Wombat_UK_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/UK/Vehicule/LandRover_Para_WOMBAT/RCL_L6_Wombat.fbx")

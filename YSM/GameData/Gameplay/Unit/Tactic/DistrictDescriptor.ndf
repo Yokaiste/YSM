@@ -1,0 +1,110 @@
+template DistrictDescriptor
+[
+    DescriptorId,
+    ClassNameForDebug       : string,
+    NbSlots                 : int,
+    MaxPhysicalDamages      : int,
+    KillWhenDamagesReachMax : bool,
+] is TEntityDescriptor
+(
+    DescriptorId = <DescriptorId>
+    ClassNameForDebug = <ClassNameForDebug>
+    ModulesDescriptors =
+    [
+        TTypeUnitModuleDescriptor(),
+        ~/DistrictTagsModuleDescriptor,
+        ~/DistrictFlagsModuleDescriptor,
+        ~/DistrictModuleDescriptor,
+        TDistrictUnitsContainerModuleDescriptor
+        (
+            NbSlots                         = <NbSlots>
+            AllowedTagSet                   = [
+                "Inf_quartier_ok",
+            ]
+        ),
+        TDynamicTerrainModuleDescriptor
+        (
+            TerrainToApplyOnInit  = ETerrainType/Batiment
+            TerrainToApplyOnDeath = ETerrainType/Ruin
+        ),
+        ~/InflammableModuleDescriptorDistrict,
+        ~/DistrictPositionModuleDescriptor,
+        TBaseDamageModuleDescriptor
+        (
+            MaxPhysicalDamages = <MaxPhysicalDamages>
+            MaxSuppressionDamages = ~/Building_MaxSuppressionDamages
+            MaxStunDamages = ~/Building_MaxStunDamages
+        ),
+        TDamageModuleDescriptor
+        (
+            SuppressDamagesRegenRatio = ~/Building_SuppressDamagesRegenRatioList
+            StunDamagesRegen = ~/Building_StunDamagesRegen
+            BlindageProperties = TBlindageProperties
+            (
+                ResistanceFront = TResistanceTypeRTTI(Family=ResistanceFamily_batiment Index=1)
+                ResistanceSides = TResistanceTypeRTTI(Family=ResistanceFamily_batiment Index=1)
+                ResistanceRear = TResistanceTypeRTTI(Family=ResistanceFamily_batiment Index=1)
+                ResistanceTop = TResistanceTypeRTTI(Family=ResistanceFamily_batiment Index=1)
+                ExplosiveReactiveArmor = False
+            )
+            KillWhenDamagesReachMax = <KillWhenDamagesReachMax>
+            HitRollECM = 0.0
+            AutoOrientation = False
+            UseTopArmorAgainstFire = True
+        ),
+        ~/DistrictSelectionModuleDescriptor,
+        TShootingPointsModuleDescriptor(),
+        ~/DistrictApparenceModuleDescriptor,
+        ~/LinkTeamModuleDescriptor,
+        ~/DebugModuleDescriptor,
+        TIAStratModuleDescriptor
+        (
+            DatabaseId = 1
+            GameplayBehavior = EGameplayBehavior/Nothing
+        ),
+        DistrictCadavreGeneratorModuleDescriptor(),
+        TMinimapDisplayModuleDescriptor
+        (
+            Texture = "Texture_Minimap_Unit_inf"
+            FollowUnitOrientation = True
+        ),
+        ~/PackSignauxModuleDescriptor,
+        ~/TargetDataModuleDescriptor,
+    ]
+)
+// ------------------------------------------------------------------------------------
+export Descriptor_District_Big_District is DistrictDescriptor
+(
+    DescriptorId            = GUID:{c3bee1ea-9a61-47ce-8e66-31c571c362ae}
+    ClassNameForDebug       = 'Big_District'
+    NbSlots                 = 4
+    MaxPhysicalDamages      = 60
+    KillWhenDamagesReachMax = true
+)
+
+export Descriptor_District_HLM_District is DistrictDescriptor
+(
+    DescriptorId            = GUID:{97cc18e2-21f5-4c6d-b0ea-82db7b12ca41}
+    ClassNameForDebug       = 'HLM_District'
+    NbSlots                 = 4
+    MaxPhysicalDamages      = 90
+    KillWhenDamagesReachMax = false
+)
+
+export Descriptor_District_Mid_District is DistrictDescriptor
+(
+    DescriptorId            = GUID:{9efebf25-6b32-4903-91d0-912fc061ec1c}
+    ClassNameForDebug       = 'Mid_District'
+    NbSlots                 = 4
+    MaxPhysicalDamages      = 45
+    KillWhenDamagesReachMax = true
+)
+
+export Descriptor_District_Small_District is DistrictDescriptor
+(
+    DescriptorId            = GUID:{b48192ea-4d1e-491b-a8a6-cb1244251f58}
+    ClassNameForDebug       = 'Small_District'
+    NbSlots                 = 4
+    MaxPhysicalDamages      = 15
+    KillWhenDamagesReachMax = true
+)

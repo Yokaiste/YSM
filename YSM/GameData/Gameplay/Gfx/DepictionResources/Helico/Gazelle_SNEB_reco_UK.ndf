@@ -1,0 +1,14 @@
+export Modele_Gazelle_SNEB_reco_UK is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Helico/Gazelle_SNEB_Reco/Gazelle_SNEB_Reco.fbx"
+)
+
+export Modele_Gazelle_SNEB_reco_UK_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Helico/Gazelle_SNEB_Reco_MID/Gazelle_SNEB_Reco_MID.fbx"
+)
+
+export Modele_Gazelle_SNEB_reco_UK_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Helico/Gazelle_SNEB_Reco_LOW/Gazelle_SNEB_Reco_LOW.fbx"
+)

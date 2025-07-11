@@ -1,0 +1,3 @@
+export Modele_AT_2A45_SprutB_SOV is TResourceMesh ( Mesh="GameData:/Assets/3D/Units/URSS/Canon/AT_2A45_SprutB/AT_2A45_SprutB.fbx")
+export Modele_AT_2A45_SprutB_SOV_MID is TResourceMesh ( Mesh="GameData:/Assets/3D/Units/URSS/Canon/AT_2A45_SprutB_MID/AT_2A45_SprutB_MID.fbx")
+export Modele_AT_2A45_SprutB_SOV_LOW is TResourceMesh ( Mesh="GameData:/Assets/3D/Units/URSS/Canon/AT_2A45_SprutB_LOW/AT_2A45_SprutB_LOW.fbx")

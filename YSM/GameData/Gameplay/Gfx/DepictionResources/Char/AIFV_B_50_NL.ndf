@@ -1,0 +1,14 @@
+export Modele_AIFV_B_50_NL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/NL/APC/AIFV_B_50/AIFV_B_50.fbx"
+)
+
+export Modele_AIFV_B_50_NL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/NL/APC/AIFV_B_50_MID/AIFV_B_50_MID.fbx"
+)
+
+export Modele_AIFV_B_50_NL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/NL/APC/AIFV_B_50_LOW/AIFV_B_50_LOW.fbx"
+)

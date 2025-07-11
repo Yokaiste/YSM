@@ -1,0 +1,13 @@
+template DeckPackDescriptor
+[
+    Xp : int = 0,
+    Transport : TEntityDescriptor = nil,
+    Unit : TEntityDescriptor,
+    Number : int = 1,
+] is TDeckPackDescriptor
+(
+    ExperienceLevel = <Xp>
+    TransporterDescriptor = <Transport>
+    UnitDescriptor = <Unit>
+    Number = <Number>
+)

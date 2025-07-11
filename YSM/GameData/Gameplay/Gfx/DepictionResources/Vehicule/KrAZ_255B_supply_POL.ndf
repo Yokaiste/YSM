@@ -1,0 +1,14 @@
+export Modele_KrAZ_255B_supply_POL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Vehicule/KrAZ_255B/KrAZ_255B.fbx"
+)
+
+export Modele_KrAZ_255B_supply_POL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Vehicule/KrAZ_255B_MID/KrAZ_255B_MID.fbx"
+)
+
+export Modele_KrAZ_255B_supply_POL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Vehicule/KrAZ_255B_LOW/KrAZ_255B_LOW.fbx"
+)

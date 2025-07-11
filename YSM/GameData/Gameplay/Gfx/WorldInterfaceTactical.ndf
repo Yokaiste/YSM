@@ -1,0 +1,12 @@
+
+WorldInterfaceTactical is TWorldInterfaceDescriptor
+(
+    World3D = $/M3D/Scene/DefaultWorld
+    GamePhaseManagerDescriptor = ~/tacticalGamePhaseManagerDescriptor
+    ZoneManagerDescriptors =
+    [
+        ~/deploiementZoneManagerDescriptor,
+        ~/commandementZoneManagerDescriptor,
+        ~/zoneManagerForIAStratDescriptor,
+    ]
+)

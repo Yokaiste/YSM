@@ -1,0 +1,151 @@
+//-----------------------------------------------------------------------------
+//*****************************************************************************
+//-----------------------------------------------------------------------------
+
+template Template_SceneryDescriptorTagCircularZone
+[
+    Name           : string,
+    ColorFill      = [15,15,150,128],
+    ColorPerimeter = [255,255,255,255],
+    ModelResource  : TResourceMesh,
+    Scale          = 20.0,
+] is TSceneryDescriptorTagGDCircularZone
+(
+    SymbolDatabaseProxy          = $/M3D/Scene/LevelDesignSymbolDatabaseProxy
+    RegistrationName             = <Name>
+    Scale                        = <Scale>
+    Layer                        = $/SceneryDBEditor/Layer_CircularZone
+    CampsSharedLayerState        = $/SceneryDBEditor/CampsSharedLayerState
+    TagSceneryDescriptor         = TSceneryDescriptorModel3D
+    (
+        ModeMask                 = SDMode_LevelDesign
+        MaterialTextureDico      = $/M3D/Misc/MaterialTextureDico
+        RenderLayerSelector      = $/M3D/Scene/OpaqueMobileRenderPlace
+        ContentTypeIfIndividualMesh = ContentType_Editor
+        Resource                 = <ModelResource>
+    )
+    CircleSceneryDescriptor      = TSceneryDescriptorFillRegularPolygon
+    (
+        SymbolDatabaseProxy      = $/M3D/Scene/LevelDesignSymbolDatabaseProxy
+        ModeMask                 = SDMode_LevelDesign
+        SideCount                = 30
+        LineColor                = <ColorPerimeter>
+        SurfaceColor             = <ColorFill>
+        Radius                   = 5000
+        LineMeshBucketHandler    = $/SceneryBase/SceneryMeshBucketHandler_Lines
+        SurfaceMeshBucketHandler = $/SceneryBase/SceneryMeshBucketHandler_FillTagCircularZone
+    )
+    AddOn                        = TGameDesignAddOn_CircularZone
+    (
+        RadiusGRU                = 1000
+        Ranking                  = 'CircularZones'
+    )
+)
+
+//-----------------------------------------------------------------------------
+//*****************************************************************************
+//-----------------------------------------------------------------------------
+
+template Template_SceneryDescriptorTagGD
+[
+    Name    : string,
+    AddOn   : TGameDesignAddOn_Name,
+    ModelResource : TResourceMesh,
+    Scale = 20.0,
+    Layer   : TLayer = nil,
+] is TSceneryDescriptorTagGD
+(
+    SymbolDatabaseProxy          = $/M3D/Scene/LevelDesignSymbolDatabaseProxy
+    RegistrationName             = <Name>
+    Scale                        = <Scale>
+    Layer                        = <Layer>
+    CampsSharedLayerState        = $/SceneryDBEditor/CampsSharedLayerState
+    TagSceneryDescriptor         = TSceneryDescriptorModel3D
+    (
+        ModeMask                 = SDMode_LevelDesign
+        MaterialTextureDico      = $/M3D/Misc/MaterialTextureDico
+        RenderLayerSelector      =  $/M3D/Scene/OpaqueMobileRenderPlace
+        ContentTypeIfIndividualMesh = ContentType_Editor
+        Resource                 = <ModelResource>
+    )
+    AddOn                        = <AddOn>
+)
+
+//-----------------------------------------------------------------------------
+//*****************************************************************************
+//-----------------------------------------------------------------------------
+
+template template_SceneryDescriptorTag_ReinforcementLine
+[
+    Name                : string,
+    AddOn               : TGameDesignAddOn_Name,
+    WidthInMeters       : float,
+    ArrowWidthInMeters  : float,
+    ArrowLengthInMeters : float,
+    Color,
+] is TSceneryDescriptorTagAsLine
+(
+    SymbolDatabaseProxy          = $/M3D/Scene/LevelDesignSymbolDatabaseProxy
+    RegistrationName             = <Name>
+
+    AddOn = <AddOn>
+    Layer = $/SceneryDBEditor/Layer_Reinforcement
+
+    LineFeedback = TSceneryDescriptorBezierTriangleStringArrow
+    (
+        WidthInLBU              = <WidthInMeters>
+        ArrowWidthInLBU         = <ArrowWidthInMeters>
+        ArrowLengthInLBU        = <ArrowLengthInMeters>
+        Color                   = <Color>
+        BezierMaxError          = 500
+        Mode                    = SDMode_LevelDesign
+        MeshBucketHandler       = $/SceneryBase/SceneryMeshBucketHandler_TriangleStringArrow
+    )
+)
+
+
+//-----------------------------------------------------------------------------
+//*****************************************************************************
+//-----------------------------------------------------------------------------
+
+template Template_SceneryDescriptorSpawn
+[
+    RegistrationName : string,
+    ClassName        : string,
+    AutoNameBase     : string,
+    ModelResource    : TResourceMesh,
+    ThumbstackScale  : float,
+] is TSceneryDescriptorTagGDUnitSpawn
+(
+    SymbolDatabaseProxy          = $/M3D/Scene/LevelDesignSymbolDatabaseProxy
+    CampsSharedLayerState        = $/SceneryDBEditor/CampsSharedLayerState
+    RegistrationName             = <RegistrationName>
+    Layer                        = $/SceneryDBEditor/Layer_Spawn
+    Scale                        = <ThumbstackScale>
+    TagSceneryDescriptor         = TSceneryDescriptorModel3D
+    (
+        ModeMask                     = SDMode_LevelDesign
+        MaterialTextureDico          = $/M3D/Misc/MaterialTextureDico
+        SceneryMeshBucketHandlerDico = $/SceneryBase/SceneryMeshBucketHandlerDicoOpaque_High
+        HasNoBetterResolution        = true
+        ContentTypeIfIndividualMesh  = ContentType_Editor
+        Resource                     = $/Editor/Resource/Icone_Spawn_Unit
+    )
+    UnitMesh                         = (<ModelResource> != nil ? TSceneryDescriptorModel3D
+    (
+        MaterialTextureDico          = $/M3D/Misc/MaterialTextureDico
+        RenderLayerSelector          = $/M3D/Scene/OpaqueMobileRenderPlace
+        ModeMask                     = SDMode_LevelDesign
+        ContentTypeIfIndividualMesh  = ContentType_Editor
+        Resource                     = <ModelResource>
+    ) : nil)
+    AddOn                            = TGameDesignAddOn_Spawn
+    (
+        ClassName                    = <ClassName>
+        AutoNameBase                 = <AutoNameBase>
+    )
+)
+
+//-----------------------------------------------------------------------------
+//*****************************************************************************
+//-----------------------------------------------------------------------------

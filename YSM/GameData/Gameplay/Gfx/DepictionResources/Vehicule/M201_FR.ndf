@@ -1,0 +1,15 @@
+export ModelFile_M201_FR is "GameData:/Assets/3D/Units/FR/Vehicule/M201/M201.fbx"
+export Modele_M201_FR is TResourceMesh
+(
+    Mesh=ModelFile_M201_FR
+)
+export ModelFile_M201_FR_MID is "GameData:/Assets/3D/Units/FR/Vehicule/M201_MID/M201_MID.fbx"
+export Modele_M201_FR_MID is TResourceMesh
+(
+    Mesh=ModelFile_M201_FR_MID
+)
+export ModelFile_M201_FR_LOW is "GameData:/Assets/3D/Units/FR/Vehicule/M201_LOW/M201_LOW.fbx"
+export Modele_M201_FR_LOW is TResourceMesh
+(
+    Mesh=ModelFile_M201_FR_LOW
+)

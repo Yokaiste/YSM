@@ -1,0 +1,14 @@
+export Modele_FV4201_Chieftain_Mk9_UK is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Char/FV4201_Chieftain_Mk9/FV4201_Chieftain_Mk9.fbx"
+)
+
+export Modele_FV4201_Chieftain_Mk9_UK_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Char/FV4201_Chieftain_Mk9_MID/FV4201_Chieftain_Mk9_MID.fbx"
+)
+
+export Modele_FV4201_Chieftain_Mk9_UK_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Char/FV4201_Chieftain_Mk9_LOW/FV4201_Chieftain_Mk9_LOW.fbx"
+)

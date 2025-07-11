@@ -1,0 +1,17 @@
+export Modele_FV721_Fox_UK is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Vehicule/FV721_Fox/FV721_Fox.fbx"
+)
+
+export Modele_FV721_Fox_UK_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Vehicule/FV721_Fox_MID/FV721_Fox_MID.fbx"
+)
+
+export Modele_FV721_Fox_UK_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Vehicule/FV721_Fox_LOW/FV721_Fox_LOW.fbx"
+)
+
+
+

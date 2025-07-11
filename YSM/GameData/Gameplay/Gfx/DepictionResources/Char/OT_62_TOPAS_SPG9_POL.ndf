@@ -1,0 +1,17 @@
+export Modele_OT_62_TOPAS_SPG9_POL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/APC/OT_62_TOPAS_SPG9/OT_62_TOPAS_SPG9.fbx"
+)
+
+export Modele_OT_62_TOPAS_SPG9_POL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/APC/OT_62_TOPAS_SPG9_MID/OT_62_TOPAS_SPG9_MID.fbx"
+)
+
+export Modele_OT_62_TOPAS_SPG9_POL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/APC/OT_62_TOPAS_SPG9_LOW/OT_62_TOPAS_SPG9_LOW.fbx"
+)
+
+
+

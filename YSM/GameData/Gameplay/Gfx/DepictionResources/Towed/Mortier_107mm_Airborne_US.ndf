@@ -1,0 +1,3 @@
+export Modele_Mortier_107mm_Airborne_US is TResourceMesh( Mesh=ModelFile_Mortier_107mm_US)
+export Modele_Mortier_107mm_Airborne_US_MID is TResourceMesh( Mesh=ModelFile_Mortier_107mm_US_MID)
+export Modele_Mortier_107mm_Airborne_US_LOW is TResourceMesh( Mesh=ModelFile_Mortier_107mm_US_LOW)

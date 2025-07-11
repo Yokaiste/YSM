@@ -1,0 +1,18 @@
+export Modele_M1038_Humvee_LUX is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Vehicule/M1038_Humvee/M1038_Humvee.fbx"
+    Textures="GameData:/Assets/3D/Units/LUX/Vehicule/M1038_Humvee"
+
+)
+
+export Modele_M1038_Humvee_LUX_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Vehicule/M1038_Humvee_MID/M1038_Humvee_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/LUX/Vehicule/M1038_Humvee_MID"
+)
+
+export Modele_M1038_Humvee_LUX_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Vehicule/M1038_Humvee_LOW/M1038_Humvee_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/LUX/Vehicule/M1038_Humvee_LOW"
+)

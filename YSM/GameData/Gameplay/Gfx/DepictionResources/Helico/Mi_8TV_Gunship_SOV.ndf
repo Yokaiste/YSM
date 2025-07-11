@@ -1,0 +1,4 @@
+export Modele_Mi_8TV_Gunship_SOV     is TResourceMesh( Mesh="GameData:/Assets/3D/Units/URSS/Helico/Mi_8MT_ESKORTNIY/Mi_8MT_Eskortniy.fbx" )
+export Modele_Mi_8TV_Gunship_SOV_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/URSS/Helico/Mi_8MT_ESKORTNIY_MID/Mi_8MT_Eskortniy_MID.fbx" )
+export Modele_Mi_8TV_Gunship_SOV_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/URSS/Helico/Mi_8MT_ESKORTNIY_LOW/Mi_8MT_Eskortniy_LOW.fbx" )
+

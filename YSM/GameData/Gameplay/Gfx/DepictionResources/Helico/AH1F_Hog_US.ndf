@@ -1,0 +1,6 @@
+export ModelFile_AH1F_Hog_US is "GameData:/Assets/3D/Units/US/Helico/Cobra_AH_1S/Cobra_AH_1S.fbx"
+export Modele_AH1F_Hog_US is TResourceMesh( Mesh=ModelFile_AH1F_Hog_US )
+export ModelFile_AH1F_Hog_US_MID is "GameData:/Assets/3D/Units/US/Helico/Cobra_AH_1S_MID/Cobra_AH_1S_MID.fbx"
+export Modele_AH1F_Hog_US_MID is TResourceMesh( Mesh=ModelFile_AH1F_Hog_US_MID )
+export ModelFile_AH1F_Hog_US_LOW is "GameData:/Assets/3D/Units/US/Helico/Cobra_AH_1S_LOW/Cobra_AH_1S_LOW.fbx"
+export Modele_AH1F_Hog_US_LOW is TResourceMesh( Mesh=ModelFile_AH1F_Hog_US_LOW )

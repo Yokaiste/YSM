@@ -1,0 +1,26 @@
+
+export CriticalEffectModule_Vehicule_Arme is TemplateCriticalEffectModule_GroundUnit()
+export CriticalEffectModule_Vehicule_ArmeSansTourelle is TemplateCriticalEffectModule_GroundUnit(PackEffetCritique = PackEffetCritique_VehiculeSansTourelle)
+export CriticalEffectModule_Vehicule_NonArme is TemplateCriticalEffectModule_GroundUnit( PackEffetCritique = PackEffetCritique_VehiculeNonArme )
+export CriticalEffectModule_Helico_NonArme is TemplateCriticalEffectModule_GroundUnit( PackEffetCritique = PackEffetCritique_HelicoNonArme )
+export CriticalEffectModule_Helico_Arme is TemplateCriticalEffectModule_GroundUnit( PackEffetCritique = PackEffetCritique_HelicoArme )
+
+private template TemplateCriticalEffectModule_GroundUnit
+[
+    PackEffetCritique = PackEffetCritique_VehiculeStandard,
+]
+is TCriticalEffectModuleDescriptor
+(
+    Bounds = (1,200)
+
+    EffectsOnFront = <PackEffetCritique>
+    EffectsOnSides = <PackEffetCritique>
+    EffectsOnRear = <PackEffetCritique>
+    EffectsOnTop = <PackEffetCritique>
+
+    PierceEffectsOnFront = <PackEffetCritique>
+    PierceEffectsOnSides = <PackEffetCritique>
+    PierceEffectsOnRear = <PackEffetCritique>
+    PierceEffectsOnTop = []
+)
+

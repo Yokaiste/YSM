@@ -1,0 +1,19 @@
+export Modele_MiG_25RBF_SOV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Avion/MiG_25RBF/MiG_25RBF.fbx"
+)
+
+export Modele_MiG_25RBF_SOV_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Avion/MiG_25RBF/MiG_25RBF.fbx"
+)
+
+export Modele_MiG_25RBF_SOV_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Avion/MiG_25RBF/MiG_25RBF.fbx"
+)
+
+export Modele_MiG_25RBF_SOV_train is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Avion/MiG_25RBF/MiG_25RBF_train.fbx"
+)

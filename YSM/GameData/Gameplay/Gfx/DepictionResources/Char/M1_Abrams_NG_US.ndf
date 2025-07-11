@@ -1,0 +1,17 @@
+export Modele_M1_Abrams_NG_US is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Char/M1_Abrams/M1_Abrams.fbx"
+    Textures="GameData:/Assets/3D/Units/US/Char/M1_Abrams_NG"
+)
+
+export Modele_M1_Abrams_NG_US_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Char/M1_Abrams_MID/M1_Abrams_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/US/Char/M1_Abrams_NG_MID"
+)
+
+export Modele_M1_Abrams_NG_US_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Char/M1_Abrams_LOW/M1_Abrams_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/US/Char/M1_Abrams_NG_LOW"
+)

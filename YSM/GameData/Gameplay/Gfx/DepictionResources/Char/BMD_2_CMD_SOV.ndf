@@ -1,0 +1,17 @@
+export Modele_BMD_2_CMD_SOV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/APC/BMD_2/BMD_2.fbx"
+    Textures="GameData:/Assets/3D/Units/URSS/CMD/BMD_2_CMD"
+)
+
+export Modele_BMD_2_CMD_SOV_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/APC/BMD_2_MID/BMD_2_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/URSS/CMD/BMD_2_CMD_MID"
+)
+
+export Modele_BMD_2_CMD_SOV_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/APC/BMD_2_LOW/BMD_2_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/URSS/CMD/BMD_2_CMD_LOW"
+)

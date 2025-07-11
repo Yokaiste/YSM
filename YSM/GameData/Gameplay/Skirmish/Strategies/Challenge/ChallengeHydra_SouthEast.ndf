@@ -1,0 +1,104 @@
+//-------------------------------------------------------------------------
+//----------------------------- STRATEGY ----------------------------------
+//-------------------------------------------------------------------------
+
+export ChallengeHydra_SouthEast_Strategy is TIAGeneralStrategy
+(
+    StrategyName = "HydraAIse"
+    FirstGenerator = ChalHydra_SE_Choose_Strategy
+    AuthorizedCorridorList = [4]
+    TransitionList =
+    [
+        ChalHydra_SE_Transition_StartToPhaseCommand,
+        ChalHydra_SE_Transition_StartToGeneric,
+        ChalHydra_SE_Transition_DeployToCommandPhase,
+    ]
+)
+
+//-------------------------------------------------------------------------
+//---------------------------- CONDITIONS ---------------------------------
+//-------------------------------------------------------------------------
+export ChalHydra_SE_Condition_GotoGeneric is TSequenceCondition_True
+(
+)
+//-------------------------------------------------------------------------
+export ChalHydra_SE_Condition_CommandPhase is TSequenceCondition_Phase
+(
+    PhaseType = CommandPhase
+)
+
+//-------------------------------------------------------------------------
+//--------------------------- TRANSITIONS ---------------------------------
+//-------------------------------------------------------------------------
+export ChalHydra_SE_Transition_StartToPhaseCommand is TIAGeneralStrategyTransition
+(
+    Origine = ChalHydra_SE_Choose_Strategy
+    Condition = ChalHydra_SE_Condition_CommandPhase
+    Destination = ChalHydra_SE_Phase_Command
+)
+export ChalHydra_SE_Transition_StartToGeneric is TIAGeneralStrategyTransition
+(
+    Origine = ChalHydra_SE_Choose_Strategy
+    Condition = ChalHydra_SE_Condition_GotoGeneric
+    Destination = ChalHydra_SE_Phase_Deploiement
+)
+//-------------------------------------------------------------------------
+export ChalHydra_SE_Transition_DeployToCommandPhase is TIAGeneralStrategyTransition
+(
+    Origine = ChalHydra_SE_Phase_Deploiement
+    Condition = ChalHydra_SE_Condition_CommandPhase
+    Destination = ChalHydra_SE_Phase_Command
+)
+
+//-------------------------------------------------------------------------
+//------------------------------ PHASES -----------------------------------
+//-------------------------------------------------------------------------
+export ChalHydra_SE_Choose_Strategy is TSequenceGeneratorDescriptor
+(
+    // Fake phase qui permet juste d'orienter la strategie dans la direction voulue
+    GeneratorList =
+    [
+        ~/Supply_Skirmish,
+    ]
+)
+//-------------------------------------------------------------------------
+export ChalHydra_SE_Phase_Deploiement is TSequenceGeneratorDescriptor
+(
+    GeneratorList =
+    [
+        ~/Supply_Skirmish,
+
+        ~/CaptureOneObjectif,
+
+        ~/Challenge_Hydra_Defense_Objectif,
+        ~/Challenge_Hydra_Main_Attack,
+        ~/Challenge_Hydra_Main_Attack,
+
+        ~/CaptureAllZoneObjectif,
+    ]
+
+    ScalingGeneratorList = ~/ChalHydra_SE_Scaling
+)
+//-------------------------------------------------------------------------
+export ChalHydra_SE_Phase_Command is TSequenceGeneratorDescriptor
+(
+    GeneratorList =
+    [
+        ~/Supply_Skirmish,
+
+        ~/CaptureOneObjectif,
+
+        ~/Challenge_Hydra_Defense_Objectif,
+        ~/Challenge_Hydra_Main_Attack,
+        ~/Challenge_Hydra_Main_Attack,
+
+        ~/CaptureAllZoneObjectif,
+    ]
+
+    ScalingGeneratorList = ~/ChalHydra_SE_Scaling
+)
+
+ChalHydra_SE_Scaling is
+[
+    ~/Challenge_Hydra_Main_Attack,
+]

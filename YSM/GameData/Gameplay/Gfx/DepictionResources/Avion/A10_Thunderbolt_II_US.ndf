@@ -1,0 +1,19 @@
+export Modele_A10_Thunderbolt_II_US is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Avion/A10_Thunderbolt_II_Grey/A10_Thunderbolt_II.fbx"
+)
+
+export Modele_A10_Thunderbolt_II_US_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Avion/A10_Thunderbolt_II_Grey/A10_Thunderbolt_II.fbx"
+)
+
+export Modele_A10_Thunderbolt_II_US_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Avion/A10_Thunderbolt_II_Grey/A10_Thunderbolt_II.fbx"
+)
+
+export Modele_A10_Thunderbolt_II_US_train is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Avion/A10_Thunderbolt_II/A10_Thunderbolt_II_train.fbx"
+)

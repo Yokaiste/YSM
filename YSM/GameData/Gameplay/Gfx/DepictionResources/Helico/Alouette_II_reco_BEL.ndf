@@ -1,0 +1,14 @@
+export Modele_Alouette_II_reco_BEL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Helico/Alouette_II_reco/Alouette_II_reco.fbx"
+)
+
+export Modele_Alouette_II_reco_BEL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Helico/Alouette_II_reco_MID/Alouette_II_reco_MID.fbx"
+)
+
+export Modele_Alouette_II_reco_BEL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Helico/Alouette_II_reco_LOW/Alouette_II_reco_LOW.fbx"
+)

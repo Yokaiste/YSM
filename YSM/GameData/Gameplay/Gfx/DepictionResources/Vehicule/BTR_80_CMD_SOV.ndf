@@ -1,0 +1,17 @@
+export Modele_BTR_80_CMD_SOV is TResourceMesh
+(
+    Mesh=ModelFile_BTR_80_SOV
+    Textures="GameData:/Assets/3D/Units/URSS/CMD/BTR_80_CMD"
+)
+
+export Modele_BTR_80_CMD_SOV_MID is TResourceMesh
+(
+    Mesh=ModelFile_BTR_80_SOV_MID
+    Textures="GameData:/Assets/3D/Units/URSS/CMD/BTR_80_CMD_MID"
+)
+
+export Modele_BTR_80_CMD_SOV_LOW is TResourceMesh
+(
+    Mesh=ModelFile_BTR_80_SOV_LOW
+    Textures="GameData:/Assets/3D/Units/URSS/CMD/BTR_80_CMD_LOW"
+)

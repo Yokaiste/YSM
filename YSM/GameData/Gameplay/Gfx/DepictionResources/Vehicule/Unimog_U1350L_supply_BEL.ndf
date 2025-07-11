@@ -1,0 +1,14 @@
+export Modele_Unimog_U1350L_supply_BEL is TResourceMesh
+(
+    Mesh=ModelFile_Unimog_U1350L_BEL
+)
+
+export Modele_Unimog_U1350L_supply_BEL_MID is TResourceMesh
+(
+    Mesh=ModelFile_Unimog_U1350L_BEL_MID
+)
+
+export Modele_Unimog_U1350L_supply_BEL_LOW is TResourceMesh
+(
+    Mesh=ModelFile_Unimog_U1350L_BEL_LOW
+)

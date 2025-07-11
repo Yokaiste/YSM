@@ -1,0 +1,15 @@
+export ModelFile_Volvo_N10_supply_BEL is "GameData:/Assets/3D/Units/BEL/Vehicule/Volvo_N10_supply/Volvo_N10_supply.fbx"
+export Modele_Volvo_N10_supply_BEL is TResourceMesh
+(
+    Mesh=ModelFile_Volvo_N10_supply_BEL
+)
+export ModelFile_Volvo_N10_supply_BEL_MID is "GameData:/Assets/3D/Units/BEL/Vehicule/Volvo_N10_supply_MID/Volvo_N10_supply_MID.fbx"
+export Modele_Volvo_N10_supply_BEL_MID is TResourceMesh
+(
+    Mesh=ModelFile_Volvo_N10_supply_BEL_MID
+)
+export ModelFile_Volvo_N10_supply_BEL_LOW is "GameData:/Assets/3D/Units/BEL/Vehicule/Volvo_N10_supply_LOW/Volvo_N10_supply_LOW.fbx"
+export Modele_Volvo_N10_supply_BEL_LOW is TResourceMesh
+(
+    Mesh=ModelFile_Volvo_N10_supply_BEL_LOW
+)

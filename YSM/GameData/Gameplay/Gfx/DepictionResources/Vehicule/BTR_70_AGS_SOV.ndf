@@ -1,0 +1,17 @@
+export Modele_BTR_70_AGS_SOV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/APC/BTR_70_AGS/BTR_70_AGS.fbx"
+)
+
+export Modele_BTR_70_AGS_SOV_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/APC/BTR_70_AGS_MID/BTR_70_AGS_MID.fbx"
+)
+
+export Modele_BTR_70_AGS_SOV_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/APC/BTR_70_AGS_LOW/BTR_70_AGS_LOW.fbx"
+)
+
+
+

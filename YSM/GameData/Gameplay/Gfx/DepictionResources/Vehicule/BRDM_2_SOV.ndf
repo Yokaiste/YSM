@@ -1,0 +1,14 @@
+export Modele_BRDM_2_SOV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Vehicule/BRDM2/BRDM2.fbx"
+)
+
+export Modele_BRDM_2_SOV_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Vehicule/BRDM2_MID/BRDM2_MID.fbx"
+)
+
+export Modele_BRDM_2_SOV_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Vehicule/BRDM2_LOW/BRDM2_LOW.fbx"
+)

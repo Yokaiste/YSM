@@ -1,0 +1,15 @@
+export Modele_Lynx_AH_Mk7_Chancellor_UK is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Helico/Lynx_AH_Mk7_SNEB/Lynx_AH_Mk7_Chancellor.fbx"
+)
+
+export Modele_Lynx_AH_Mk7_Chancellor_UK_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Helico/Lynx_AH_Mk7_SNEB_MID/Lynx_AH_Mk7_Chancellor_MID.fbx"
+)
+
+export Modele_Lynx_AH_Mk7_Chancellor_UK_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Helico/Lynx_AH_Mk7_SNEB_LOW/Lynx_AH_Mk7_Chancellor_LOW.fbx"
+)
+

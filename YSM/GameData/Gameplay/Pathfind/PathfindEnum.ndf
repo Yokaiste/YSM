@@ -1,0 +1,9 @@
+//A maintenir synchro avec PathfindEnum.h
+
+export PathfindTypes is TBaseClass
+(
+    export Flying is 0
+    export AmphibiousVehicle is 1
+    export Infantry is 2
+    export Vehicle is 3
+)

@@ -1,0 +1,3 @@
+export Modele_DCA_Javelin_LML_UK is TResourceMesh( Mesh="GameData:/Assets/3D/Units/UK/Canon/Javelin_LML/Javelin_LML.fbx")
+export Modele_DCA_Javelin_LML_UK_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/UK/Canon/Javelin_LML_MID/Javelin_LML_MID.fbx")
+export Modele_DCA_Javelin_LML_UK_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/UK/Canon/Javelin_LML_LOW/Javelin_LML_LOW.fbx")

@@ -1,0 +1,22 @@
+export Modele_BTR_152K_SOV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Vehicule/SPW_152K/SPW_152K.fbx"
+    Textures="GameData:/Assets/3D/Units/URSS/Vehicule/SPW_152K"
+)
+
+export Modele_BTR_152K_SOV_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Vehicule/SPW_152K_MID/SPW_152K_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/URSS/Vehicule/SPW_152K_MID"
+)
+
+export Modele_BTR_152K_SOV_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Vehicule/SPW_152K_LOW/SPW_152K_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/URSS/Vehicule/SPW_152K_LOW"
+)
+
+export Modele_BTR_152K_SOV_Tourelle_01 is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/APC/BTR_50/SGMB_t1.fbx"
+)

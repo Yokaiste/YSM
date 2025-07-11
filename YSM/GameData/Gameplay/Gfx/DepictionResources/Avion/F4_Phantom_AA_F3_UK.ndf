@@ -1,0 +1,19 @@
+export Modele_F4_Phantom_AA_F3_UK is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Avion/F4_Phantom_F3/F4_Phantom_F3.fbx"
+)
+
+export Modele_F4_Phantom_AA_F3_UK_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Avion/F4_Phantom_F3_MID/F4_Phantom_F3_MID.fbx"
+)
+
+export Modele_F4_Phantom_AA_F3_UK_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Avion/F4_Phantom_F3_LOW/F4_Phantom_F3_LOW.fbx"
+)
+
+export Modele_F4_Phantom_AA_F3_UK_train is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Avion/F4_Phantom_F3/F4_Phantom_F3_Train.fbx"
+)

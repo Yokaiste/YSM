@@ -1,0 +1,17 @@
+export Modele_Gazelle_HOT_2_FR is TResourceMesh
+(
+    Mesh=ModelFile_Gazelle_HOT_FR
+    Textures="GameData:/Assets/3D/Units/FR/Helico/Gazelle_HOT_2"
+)
+
+export Modele_Gazelle_HOT_2_FR_MID is TResourceMesh
+(
+    Mesh=ModelFile_Gazelle_HOT_FR_MID
+    Textures="GameData:/Assets/3D/Units/FR/Helico/Gazelle_HOT_2_MID"
+)
+
+export Modele_Gazelle_HOT_2_FR_LOW is TResourceMesh
+(
+    Mesh=ModelFile_Gazelle_HOT_FR_LOW
+    Textures="GameData:/Assets/3D/Units/FR/Helico/Gazelle_HOT_2_LOW"
+)

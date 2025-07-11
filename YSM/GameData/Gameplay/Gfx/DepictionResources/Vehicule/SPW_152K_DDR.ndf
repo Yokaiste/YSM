@@ -1,0 +1,19 @@
+export Modele_SPW_152K_DDR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Vehicule/SPW_152K/SPW_152K.fbx"
+)
+
+export Modele_SPW_152K_DDR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Vehicule/SPW_152K_MID/SPW_152K_MID.fbx"
+)
+
+export Modele_SPW_152K_DDR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Vehicule/SPW_152K_LOW/SPW_152K_LOW.fbx"
+)
+
+export Modele_SPW_152K_DDR_Tourelle_01 is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/APC/BTR_50/SGMB_t1.fbx"
+)

@@ -1,0 +1,14 @@
+export Modele_AH6C_Little_Bird_US is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Helico/AH_6C_Little_Bird/AH_6C_Little_Bird.fbx"
+)
+
+export Modele_AH6C_Little_Bird_US_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Helico/AH_6C_Little_Bird_MID/AH_6C_Little_Bird_MID.fbx"
+)
+
+export Modele_AH6C_Little_Bird_US_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Helico/AH_6C_Little_Bird_LOW/AH_6C_Little_Bird_LOW.fbx"
+)

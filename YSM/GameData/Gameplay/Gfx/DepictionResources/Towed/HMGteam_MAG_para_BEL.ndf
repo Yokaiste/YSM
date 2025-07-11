@@ -1,0 +1,3 @@
+export Modele_HMGteam_MAG_para_BEL is TResourceMesh( Mesh="GameData:/Assets/3D/Units/Ammo/Armes/HMG_trepied/MAG_L7A2_HMG.fbx")
+export Modele_HMGteam_MAG_para_BEL_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/Ammo/Armes/HMG_trepied/MAG_L7A2_HMG.fbx")
+export Modele_HMGteam_MAG_para_BEL_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/Ammo/Armes/HMG_trepied/MAG_L7A2_HMG.fbx")

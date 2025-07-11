@@ -1,0 +1,155 @@
+//-------------------------------------------------------------------------
+export Challenge_Defense_Corridor_Filler is TMacroActionDescriptor_CorridorDefense_Specific
+(
+    ParametresDeMission =
+    [
+        TGenerationSettingHolder(GenerationType = TGenerationType_BasedOnNumberOfCorridors NumberLaunchBasedOnGenerationType = 1),
+        TAirStrikeSettingHolder(Setting = ~/BasicAirstrikeSupport),
+        TArtilleryAmountSettingHolder(ArtilleryAmount = 2),
+        TMacroActionProductionSettingHolder(PoolModelList = [ ~/Pool_Defense_Filler]),
+    ]
+)
+
+//-------------------------------------------------------------------------
+export Challenge_CaptureAllZoneObjectif is Template_Capture_Command_Zone
+(
+    GenerationType = TGenerationType_BasedOnNumberOfObjectives
+    NumberLaunchBasedOnGenerationType = 1
+    AlsoConsiderTheseDescriptorsForMaintain = [Challenge_CaptureOneObjectif_LowCost, CaptureOneObjectif, CaptureHalfZoneObjectif_Floor, CaptureHalfZoneObjectif_Ceil]
+)
+
+//-------------------------------------------------------------------------
+export Challenge_CaptureOneObjectif_LowCost is Template_Capture_Command_Zone
+(
+    GenerationType = TGenerationType_FixedSize
+    NumberLaunchBasedOnGenerationType = 1
+    PoolModelList = [~/Pool_Commandant_LowCost_One_Mission]
+)
+
+//-------------------------------------------------------------------------
+export Challenge_Hydra_Defense_Objectif is TMacroActionDescriptor_Defense_Specific
+(
+    ParametresDeMission =
+    [
+        TGenerationSettingHolder(GenerationType = TGenerationType_BasedOnNumberOfObjectives NumberLaunchBasedOnGenerationType = 1 ConsiderOnlyOwnedObjectives = true ConsiderOnlyAssignedCorridors = true),
+        TAirStrikeSettingHolder(Setting = ~/BasicAirstrikeSupport),
+        TArtilleryAmountSettingHolder(ArtilleryAmount = 1),
+        TMacroActionProductionSettingHolder(ProdProperties = [TProdProperty_LaunchAsSoonAsPossible] PoolModelList = [ ~/Pool_Defense_Objectif_Challenge_Hydra]),
+        TForcedPlacementSettingHolder(OrderedPrioritaryZoneWeightList = [~/CommandZoneCustomWeighForIAStrat] ForceInAssignedCorridor = true),
+    ]
+)
+
+//-------------------------------------------------------------------------
+export Pool_Defense_Objectif_Challenge_Hydra is TPoolModel
+(
+    Budget = MAP [($/GFX/Resources/Resource_CommandPoints, 300)]
+    ModelList = [
+        TPoolElement(
+            DescriptorId = GUID:{211e7a3f-84f9-456e-8517-6af0c32f5fcd}
+            Required = false
+            Nb = 1
+            IndexPriorityOverPrice = false
+            PriceComparisonMethod = EPriceComparatorType/Random
+            TagsPriority = [
+                "Infanterie_AA",
+                "Canon_AA_Standard",
+                "Canon_AA_Porte",
+            ]
+        ),
+        TPoolElement(
+            DescriptorId = GUID:{c84c5b19-77c7-44b2-bc58-91da331b38ee}
+            Required = false
+            Nb = 1
+            IndexPriorityOverPrice = false
+            PriceComparisonMethod = EPriceComparatorType/MostExpensive
+            TagsPriority = [
+                "Vehicule_Appui",
+                "Canon_AT_Standard",
+                "Infanterie_Spec_Defense",
+                "Char"
+            ]
+        ),
+        TPoolElement(
+            DescriptorId = GUID:{c88565e7-47c5-4bdb-bee4-91c58b473ee9}
+            Required = false
+            Nb = 1
+            IndexPriorityOverPrice = false
+            PriceComparisonMethod = EPriceComparatorType/Random
+            TagsPriority = [
+                "Infanterie_Reco",
+                "Vehicule_Reco",
+            ]
+        ),
+        TPoolElement(
+            DescriptorId = GUID:{de541844-2c68-4238-bc54-cc7170a93433}
+            Required = false
+            Nb = 1
+            IndexPriorityOverPrice = false
+            PriceComparisonMethod = EPriceComparatorType/Random
+            TagsPriority = [
+                "Vehicule_Appui",
+                "Infanterie_Standard",
+                "Infanterie_Spec_Defense",
+                "Char"
+            ]
+        ),
+        TPoolElement(
+            DescriptorId = GUID:{3357bf7c-67e6-4e66-a16f-ba6b6e76e057}
+            Required = false
+            Nb = 1
+            IndexPriorityOverPrice = false
+            PriceComparisonMethod = EPriceComparatorType/Random
+            TagsPriority = [
+                "Vehicule_Appui",
+                "Infanterie_Standard",
+                "Infanterie_Spec_Defense",
+                "Char"
+            ]
+        ),
+        TPoolElement(
+            DescriptorId = GUID:{15ce6dc3-a29b-4058-94ef-9f58893f551b}
+            Required = false
+            Nb = 1
+            IndexPriorityOverPrice = false
+            PriceComparisonMethod = EPriceComparatorType/Random
+            TagsPriority = [
+                "Vehicule_Appui",
+                "Canon_AT_Standard",
+                "Infanterie_Spec_Defense",
+                "Char"
+            ]
+        ),
+        TPoolElement(
+            DescriptorId = GUID:{5bfb1c65-fd62-42e0-84d8-f1413b3ae733}
+            Required = false
+            Nb = 1
+            IndexPriorityOverPrice = false
+            PriceComparisonMethod = EPriceComparatorType/Random
+            TagsPriority = [
+                "Infanterie_AA",
+                "Canon_AA_Standard",
+                "Canon_AA_Porte",
+            ]
+        ),
+    ]
+    + ~/Infantry_Fallback
+)
+
+//-------------------------------------------------------------------------
+export Pool_Commandant_LowCost_One_Mission is TPoolModel
+(
+    ModelList = [
+        TPoolElement(
+            DescriptorId = GUID:{47715c5b-50b0-49b8-b12f-eb0e35ffb2a9}
+            Required = true
+            Nb = 1
+            IndexPriorityOverPrice = true
+            PriceComparisonMethod = EPriceComparatorType/Cheapest
+            TagsPriority = [
+                "Vehicule_CMD",
+                "Char_CMD",
+                "InfmapCommander",
+            ]
+        ),
+    ]
+)

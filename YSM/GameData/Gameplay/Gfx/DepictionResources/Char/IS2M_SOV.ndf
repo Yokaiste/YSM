@@ -1,0 +1,19 @@
+export Modele_IS2M_SOV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Char/IS2M/IS2M.fbx"
+)
+
+export Modele_IS2M_SOV_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Char/IS2M_MID/IS2M_MID.fbx"
+)
+
+export Modele_IS2M_SOV_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Char/IS2M_LOW/IS2M_LOW.fbx"
+)
+
+export Modele_IS2M_SOV_Tourelle_02 is TResourceMesh
+(
+    Mesh=ModelFile_DShK_127mm_no_ammo
+)

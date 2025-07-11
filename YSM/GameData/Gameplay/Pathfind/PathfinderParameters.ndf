@@ -1,0 +1,70 @@
+
+export FlyingPathFinderParameters is TIAPathfinderParameters
+(
+    CanUseRoads = False
+    ObstacleMasks = ~/ETerrainType/None
+
+    SmartMoveCoeffByTerrain = MAP
+    [
+    ]
+)
+
+export AmphibiousPathFinderParameters is TIAPathfinderParameters
+(
+    CanUseRoads = True
+    EnteringRoadCost = 0.5
+    LeavingRoadCost = 2.5
+
+    ObstacleMasks = ~/ETerrainType/None
+        | ~/ETerrainType/PetitBatiment
+        | ~/ETerrainType/Batiment
+        | ~/ETerrainType/Ruin
+        | ~/ETerrainType/Rocher
+        | ~/ETerrainType/Bloqueur
+        | ~/ETerrainType/ForetDense
+
+    SmartMoveCoeffByTerrain = MAP
+    [
+    ]
+)
+
+export InfantryPathFinderParameters is TIAPathfinderParameters
+(
+    CanUseRoads = False
+    EnteringRoadCost = 0.0
+    LeavingRoadCost = 0.0
+
+    ObstacleMasks = ~/ETerrainType/None
+        | ~/ETerrainType/PetitBatiment
+        | ~/ETerrainType/Batiment
+        | ~/ETerrainType/Bloqueur
+        | ~/ETerrainType/EauProfonde
+        | ~/ETerrainType/Rocher
+
+    SmartMoveCoeffByTerrain = MAP
+    [
+        (~/ETerrainType/ForetLegere,        2.7),
+        (~/ETerrainType/ForetDense,         3.2),
+    ]
+)
+
+export VehiclesPathFinderParameters is TIAPathfinderParameters
+(
+    CanUseRoads = True
+    EnteringRoadCost = 1.0
+    LeavingRoadCost = 2.5
+
+    ObstacleMasks = ~/ETerrainType/None
+        | ~/ETerrainType/EauProfonde
+        | ~/ETerrainType/EauPeuProfonde
+        | ~/ETerrainType/PetitBatiment
+        | ~/ETerrainType/Batiment
+        | ~/ETerrainType/Ruin
+        | ~/ETerrainType/Rocher
+        | ~/ETerrainType/Bloqueur
+        | ~/ETerrainType/ForetDense
+
+    SmartMoveCoeffByTerrain = MAP
+    [
+    ]
+)

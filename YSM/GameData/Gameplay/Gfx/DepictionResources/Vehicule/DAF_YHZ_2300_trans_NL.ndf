@@ -1,0 +1,14 @@
+export Modele_DAF_YHZ_2300_trans_NL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/NL/Vehicule/DAF_YHZ_2300/DAF_YHZ_2300.fbx"
+)
+
+export Modele_DAF_YHZ_2300_trans_NL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/NL/Vehicule/DAF_YHZ_2300_MID/DAF_YHZ_2300_MID.fbx"
+)
+
+export Modele_DAF_YHZ_2300_trans_NL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/NL/Vehicule/DAF_YHZ_2300_LOW/DAF_YHZ_2300_LOW.fbx"
+)

@@ -1,0 +1,14 @@
+export Modele_Roland_2_FR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/DCA/Roland_2/Roland_2.fbx"
+)
+
+export Modele_Roland_2_FR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/DCA/Roland_2_MID/Roland_2_MID.fbx"
+)
+
+export Modele_Roland_2_FR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/DCA/Roland_2_LOW/Roland_2_LOW.fbx"
+)

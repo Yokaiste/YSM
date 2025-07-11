@@ -1,0 +1,20 @@
+export ModelFile_T55AM2B_DDR is "GameData:/Assets/3D/Units/DDR/Char/T55AM2B/T55AM2B.fbx"
+export Modele_T55AM2B_DDR is TResourceMesh
+(
+    Mesh=ModelFile_T55AM2B_DDR
+)
+export ModelFile_T55AM2B_DDR_MID is "GameData:/Assets/3D/Units/DDR/Char/T55AM2B_MID/T55AM2B_MID.fbx"
+export Modele_T55AM2B_DDR_MID is TResourceMesh
+(
+    Mesh=ModelFile_T55AM2B_DDR_MID
+)
+export ModelFile_T55AM2B_DDR_LOW is "GameData:/Assets/3D/Units/DDR/Char/T55AM2B_LOW/T55AM2B_LOW.fbx"
+export Modele_T55AM2B_DDR_LOW is TResourceMesh
+(
+    Mesh=ModelFile_T55AM2B_DDR_LOW
+)
+
+export Modele_T55AM2B_DDR_Tourelle_02 is TResourceMesh
+(
+    Mesh=ModelFile_DShK_127mm_t2
+)

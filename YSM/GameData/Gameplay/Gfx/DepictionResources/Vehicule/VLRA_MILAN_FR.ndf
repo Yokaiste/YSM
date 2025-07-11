@@ -1,0 +1,14 @@
+export Modele_VLRA_MILAN_FR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Antichar/VLRA_MILAN/VLRA_MILAN.fbx"
+)
+
+export Modele_VLRA_MILAN_FR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Antichar/VLRA_MILAN_MID/VLRA_MILAN_MID.fbx"
+)
+
+export Modele_VLRA_MILAN_FR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Antichar/VLRA_MILAN_LOW/VLRA_MILAN_LOW.fbx"
+)

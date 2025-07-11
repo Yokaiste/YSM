@@ -1,0 +1,14 @@
+export Modele_Mi_24V_AA_SOV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Helico/Mi_24V/Mi_24V_AA.fbx"
+)
+
+export Modele_Mi_24V_AA_SOV_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Helico/Mi_24V_MID/Mi_24V_AA_MID.fbx"
+)
+
+export Modele_Mi_24V_AA_SOV_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Helico/Mi_24V_LOW/Mi_24V_AA_LOW.fbx"
+)

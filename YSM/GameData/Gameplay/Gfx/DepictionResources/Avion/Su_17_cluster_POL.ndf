@@ -1,0 +1,19 @@
+export Modele_Su_17_cluster_POL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Avion/Su_17/Su_17_cluster.fbx"
+)
+
+export Modele_Su_17_cluster_POL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Avion/Su_17_MID/Su_17_cluster_MID.fbx"
+)
+
+export Modele_Su_17_cluster_POL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Avion/Su_17_LOW/Su_17_cluster_LOW.fbx"
+)
+
+export Modele_Su_17_cluster_POL_train is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Avion/Su_17/Su_17_train.fbx"
+)

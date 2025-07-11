@@ -1,0 +1,19 @@
+export Modele_T80BV_SOV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Char/T80BV/T80BV.fbx"
+)
+
+export Modele_T80BV_SOV_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Char/T80BV_MID/T80BV_MID.fbx"
+)
+
+export Modele_T80BV_SOV_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Char/T80BV_LOW/T80BV_LOW.fbx"
+)
+
+export Modele_T80BV_SOV_Tourelle_02 is TResourceMesh
+(
+    Mesh=ModelFile_NSVT_no_ammo
+)

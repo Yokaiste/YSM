@@ -1,0 +1,5 @@
+///// ! \ Attention, doit etre synchro avec la liste dans Engine\Code\Eugen\CPP\EugIA_Common\EnumGamePhaseType.h.h
+//0 correspond a l'etat d'initialisation du jeu, il ne doit pas etre utilise.
+DeploiementPhase is 1
+CommandPhase     is 2
+StrategicGame    is 3

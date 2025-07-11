@@ -1,0 +1,14 @@
+export Modele_T815_supply_DDR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Vehicule/T815_supply/T815_supply.fbx"
+)
+
+export Modele_T815_supply_DDR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Vehicule/T815_supply_MID/T815_supply_MID.fbx"
+)
+
+export Modele_T815_supply_DDR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Vehicule/T815_supply_LOW/T815_supply_LOW.fbx"
+)

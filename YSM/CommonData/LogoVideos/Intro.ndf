@@ -1,0 +1,32 @@
+
+IntroSubtitles is
+[
+    // Updated by YSM | INTRO
+    TBUCKTextVideoIntroOneSubtitleDescriptor(Text = "YSM"  StartTimeInSeconds = 0),
+    TBUCKTextVideoIntroOneSubtitleDescriptor(Text = "YSM_MT"  StartTimeInSeconds = 1),
+    TBUCKTextVideoIntroOneSubtitleDescriptor(Text = "YSM_MI"  StartTimeInSeconds = 2),
+    // TBUCKTextVideoIntroOneSubtitleDescriptor(Text = "VIDSUB1"  StartTimeInSeconds = 11),
+    // TBUCKTextVideoIntroOneSubtitleDescriptor(Text = "VIDSUB2"  StartTimeInSeconds = 15),
+    // TBUCKTextVideoIntroOneSubtitleDescriptor(Text = "VIDSUB3"  StartTimeInSeconds = 19),
+    // TBUCKTextVideoIntroOneSubtitleDescriptor(Text = "VIDSUB4"  StartTimeInSeconds = 25),
+    // TBUCKTextVideoIntroOneSubtitleDescriptor(Text = "VIDSUB5"  StartTimeInSeconds = 32),
+    // TBUCKTextVideoIntroOneSubtitleDescriptor(Text = "VIDSUB6"  StartTimeInSeconds = 38),
+    // TBUCKTextVideoIntroOneSubtitleDescriptor(Text = "VIDSUB7"  StartTimeInSeconds = 46),
+    // TBUCKTextVideoIntroOneSubtitleDescriptor(Text = "VIDSUB8"  StartTimeInSeconds = 50),
+    // TBUCKTextVideoIntroOneSubtitleDescriptor(Text = "VIDSUB9"  StartTimeInSeconds = 60),
+    // TBUCKTextVideoIntroOneSubtitleDescriptor(Text = "VIDSUB10" StartTimeInSeconds = 64),
+    // TBUCKTextVideoIntroOneSubtitleDescriptor(Text = "VIDSUB11" StartTimeInSeconds = 71),
+    // TBUCKTextVideoIntroOneSubtitleDescriptor(Text = "VIDSUB12" StartTimeInSeconds = 79),
+    // TBUCKTextVideoIntroOneSubtitleDescriptor(Text = "VIDSUB13" StartTimeInSeconds = 86),
+    // TBUCKTextVideoIntroOneSubtitleDescriptor(Text = "VIDSUB14" StartTimeInSeconds = 95),
+    // TBUCKTextVideoIntroOneSubtitleDescriptor(Text = "VIDSUB15" StartTimeInSeconds = 103),
+    // TBUCKTextVideoIntroOneSubtitleDescriptor(Text = "VIDSUB16" StartTimeInSeconds = 112),
+    // TBUCKTextVideoIntroOneSubtitleDescriptor(Text = "VIDSUB17" StartTimeInSeconds = 119),
+    // TBUCKTextVideoIntroOneSubtitleDescriptor(Text = "VIDSUB18" StartTimeInSeconds = 128),
+    // TBUCKTextVideoIntroOneSubtitleDescriptor(Text = "VIDSUB19" StartTimeInSeconds = 141),
+    // TBUCKTextVideoIntroOneSubtitleDescriptor(Text = "VIDSUB20" StartTimeInSeconds = 151),
+    // TBUCKTextVideoIntroOneSubtitleDescriptor(Text = "VIDSUB21" StartTimeInSeconds = 158),
+    // TBUCKTextVideoIntroOneSubtitleDescriptor(StartTimeInSeconds = 167),
+]
+
+CurrentVideoLogo is template_VideoLogo(VideoFile = 'GameData:/Assets/Videos/Logo/intro.webm' SubtitleComponent = template_VideoLogoSubtitles(Subtitles = ~/IntroSubtitles))

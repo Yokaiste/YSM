@@ -1,0 +1,14 @@
+export Modele_Lynx_AH_Mk1_TOW_UK is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Helico/Lynx_AH_Mk1_TOW/Lynx_AH_Mk1_TOW.fbx"
+)
+
+export Modele_Lynx_AH_Mk1_TOW_UK_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Helico/Lynx_AH_Mk1_TOW_MID/Lynx_AH_Mk1_TOW_MID.fbx"
+)
+
+export Modele_Lynx_AH_Mk1_TOW_UK_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Helico/Lynx_AH_Mk1_TOW_LOW/Lynx_AH_Mk1_TOW_LOW.fbx"
+)

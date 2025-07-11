@@ -1,0 +1,14 @@
+export Modele_LO_1800_ZPU_2_POL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/DCA/GAZ_66B_ZU/GAZ_66B_ZU.fbx"
+)
+
+export Modele_LO_1800_ZPU_2_POL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/DCA/GAZ_66B_ZU/GAZ_66B_ZU.fbx"
+)
+
+export Modele_LO_1800_ZPU_2_POL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/DCA/GAZ_66B_ZU/GAZ_66B_ZU.fbx"
+)

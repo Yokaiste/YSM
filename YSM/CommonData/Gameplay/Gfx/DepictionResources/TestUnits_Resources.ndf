@@ -1,0 +1,8 @@
+export Modele_TestUnit_Tank     is TResourceMesh( Mesh = 'CommonData:/Assets/3D/Units/Tests/Char/Char_Test.fbx' )
+export Modele_TestUnit_Vehicule is TResourceMesh( Mesh = 'CommonData:/Assets/3D/Units/Tests/Vehicule/Vehicule_Test.fbx' )
+export Modele_TestUnit_Helico   is TResourceMesh( Mesh = 'CommonData:/Assets/3D/Units/Tests/Helico/Helico_Test.fbx' )
+export Modele_TestUnit_Avion    is TResourceMesh( Mesh = 'CommonData:/Assets/3D/Units/Tests/Avion/Avion_Test.fbx' )
+export Modele_TestUnit_Bateau   is TResourceMesh( Mesh = 'CommonData:/Assets/3D/Units/Tests/Bateau/Bateau_Test.fbx' )
+export Modele_TestUnit_Infantry is TResourceMesh( Mesh = 'CommonData:/Assets/3D/Units/Tests/Infanterie/Infanterie_Test.fbx' )
+export Modele_TestUnit_Building is TResourceMesh( Mesh = 'CommonData:/Assets/3D/Units/Tests/Building/BaseBuilding_Batiment_Placeholder.fbx' )
+export Modele_TestUnit_Missile  is TResourceMesh( Mesh = 'CommonData:/Assets/3D/Units/Tests/Missiles/TestMissile.fbx' )

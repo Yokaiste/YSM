@@ -1,0 +1,14 @@
+export Modele_SeaKing_Mk48_BEL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Helico/SeaKing_Mk48/SeaKing_Mk48.fbx"
+)
+
+export Modele_SeaKing_Mk48_BEL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Helico/SeaKing_Mk48_MID/SeaKing_Mk48_MID.fbx"
+)
+
+export Modele_SeaKing_Mk48_BEL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Helico/SeaKing_Mk48_LOW/SeaKing_Mk48_LOW.fbx"
+)

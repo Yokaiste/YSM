@@ -1,0 +1,18 @@
+FOBRadius is 45
+FOBHeight is 10
+
+unnamed TDynamicTerrainRegularPolygonDelimiter
+(
+    Radius = FOBRadius
+    SideCount = 15
+)
+
+export FOBBoxMin is float3[-FOBRadius, -FOBRadius, 0]
+export FOBBoxMax is float3[ FOBRadius,  FOBRadius, FOBHeight]
+
+// (Vivien 08/02/2023) valeurs complètement au pif, de toutes façons la BBox ne devrait pas être importante en mode stratégique,
+// c'est uniquement pour faire plaisir au PositionModule qui veut absolument une BBox.
+HalfStrategicBuildingSize is 10
+StrategicBuildingHeight is 10
+export StrategicBuildingBoxMin is float3[-HalfStrategicBuildingSize, -HalfStrategicBuildingSize, 0]
+export StrategicBuildingBoxMax is float3[ HalfStrategicBuildingSize,  HalfStrategicBuildingSize, StrategicBuildingHeight]

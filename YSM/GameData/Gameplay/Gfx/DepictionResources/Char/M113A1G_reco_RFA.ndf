@@ -1,0 +1,19 @@
+export Modele_M113A1G_reco_RFA is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/APC/M113A1G_Reco/M113A1G.fbx"
+)
+
+export Modele_M113A1G_reco_RFA_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/APC/M113A1G_Reco_MID/M113A1G_Reco_MID.fbx"
+)
+
+export Modele_M113A1G_reco_RFA_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/APC/M113A1G_Reco_LOW/M113A1G_Reco_LOW.fbx"
+)
+
+export Modele_M113A1G_reco_RFA_Tourelle_01 is TResourceMesh
+(
+    Mesh=ModelFile_MG3_t1
+)

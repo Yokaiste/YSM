@@ -1,0 +1,146 @@
+
+template TacticProductionQueue
+[
+    FactoryType,
+]
+is TProductionQueueDescriptor
+(
+    FactoryType = <FactoryType>
+    TimeMinBetweenEndOfEachProductionInSec = 1
+    IsSimultaneous = true
+)
+
+export Tactic_TeamUnitDescriptor is TEntityDescriptor
+(
+    World          = WorldIndices_Team
+    DescriptorId        = GUID:{00000000-0000-0000-0000-000032000000}
+
+    ModulesDescriptors =
+    [
+        TTeamAirportModuleDescriptor
+        (
+            FuelSupplyAmountBySecond = 10
+            HealthSupplyAmountBySecond = 0.0198
+            AmmunitionSupplyAmountBySecond = 1
+        ),
+        TTeamCurrencyManagerModuleDescriptor
+        (
+            PiggyBanks = [
+                TPiggyBankDescriptor
+                (
+                    CurrencyType = $/GFX/Resources/Resource_CommandPoints
+                ),
+                TPiggyBankDescriptor
+                (
+                    CurrencyType = $/GFX/Resources/Resource_Tickets
+                ),
+            ]
+        ),
+        TTeamDeckModuleDescriptor
+        (
+        ),
+        TWargameTeamProductionModuleDescriptor
+        (
+        ),
+        TFactoryModuleDescriptor
+        (
+            ProductionQueues = [
+                TacticProductionQueue
+                (
+                    FactoryType = EFactory/Logistic
+                ),
+                TacticProductionQueue
+                (
+                    FactoryType = EFactory/Infantry
+                ),
+                TacticProductionQueue
+                (
+                    FactoryType = EFactory/Planes
+                ),
+                TacticProductionQueue
+                (
+                    FactoryType = EFactory/Vehicles
+                ),
+                TacticProductionQueue
+                (
+                    FactoryType = EFactory/Tanks
+                ),
+                TacticProductionQueue
+                (
+                    FactoryType = EFactory/Recons
+                ),
+                TacticProductionQueue
+                (
+                    FactoryType = EFactory/Helis
+                ),
+                TacticProductionQueue
+                (
+                    FactoryType = EFactory/Support
+                ),
+                TacticProductionQueue
+                (
+                    FactoryType = EFactory/DCA
+                ),
+                TacticProductionQueue
+                (
+                    FactoryType = EFactory/Art
+                ),
+                TacticProductionQueue
+                (
+                    FactoryType = EFactory/AT
+                ),
+                TacticProductionQueue
+                (
+                    FactoryType = EFactory/Defense
+                ),
+            ]
+        ),
+        TEventInfoManagerModuleDescriptor
+        (
+            SoundAcknowUnitPriority = 1
+            SoundAcknowUnitDuration = 5
+            DamageFeedbackTriggerLevel = 0.5        // niveau de santé restante pour trigger le feedback "damage received"
+            HeavyDamageFeedbackTriggerLevel = 0.25  // niveau de santé restante pour trigger le feedback "heavy damage received"
+            EnemyContactZoneRadiusGRU = 3534
+        ),
+        TTeamDescriptionModuleDescriptor
+        (
+        ),
+        TTeamUnitsModuleDescriptor
+        (
+        ),
+        TTagsModuleDescriptor
+        (
+        ),
+        TEffectApplierModuleDescriptor
+        (
+        ),
+        TLinkAllianceModuleDescriptor
+        (
+        ),
+        TTeamForAIModuleDescriptor
+        (
+        ),
+        TTeamDefeatModuleDescriptor
+        (
+        ),
+        TTeamScoreModuleDescriptor
+        (
+        ),
+        TTeamInitialCurrencyModuleDescriptor
+        (
+        ),
+        TTeamUpkeepModuleDescriptor
+        (
+        ),
+        TFumigeneModuleDescriptor
+        (
+        ),
+        TStatisticsModuleDescriptor
+        (
+        ),
+        TStrategicAssociationModuleDescriptor
+        (
+        ),
+    ]
+)

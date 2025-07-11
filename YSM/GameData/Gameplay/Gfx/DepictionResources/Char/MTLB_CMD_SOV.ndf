@@ -1,0 +1,17 @@
+export Modele_MTLB_CMD_SOV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Antichar/MTLB_CMD/MTLB_CMD.fbx"
+)
+
+export Modele_MTLB_CMD_SOV_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Antichar/MTLB_CMD_MID/MTLB_CMD_MID.fbx"
+)
+
+export Modele_MTLB_CMD_SOV_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Antichar/MTLB_CMD_LOW/MTLB_CMD_LOW.fbx"
+)
+
+
+

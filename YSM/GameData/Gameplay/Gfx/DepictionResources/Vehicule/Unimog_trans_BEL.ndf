@@ -1,0 +1,17 @@
+export Modele_Unimog_trans_BEL is TResourceMesh
+(
+    Mesh=ModelFile_Unimog_S_404_RFA
+    Textures="GameData:/Assets/3D/Units/BEL/Vehicule/Unimog_S_404"
+)
+
+export Modele_Unimog_trans_BEL_MID is TResourceMesh
+(
+    Mesh=ModelFile_Unimog_S_404_RFA_MID
+    Textures="GameData:/Assets/3D/Units/BEL/Vehicule/Unimog_S_404_MID"
+)
+
+export Modele_Unimog_trans_BEL_LOW is TResourceMesh
+(
+    Mesh=ModelFile_Unimog_S_404_RFA_LOW
+    Textures="GameData:/Assets/3D/Units/BEL/Vehicule/Unimog_S_404_LOW"
+)

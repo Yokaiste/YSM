@@ -1,0 +1,19 @@
+export Modele_MiG_27K_SEAD_SOV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Avion/MIG_27K_SEAD/MIG_27K_SEAD.fbx"
+)
+
+export Modele_MiG_27K_SEAD_SOV_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Avion/MIG_27K_SEAD/MIG_27K_SEAD.fbx"
+)
+
+export Modele_MiG_27K_SEAD_SOV_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Avion/MIG_27K_SEAD/MIG_27K_SEAD.fbx"
+)
+
+export Modele_MiG_27K_SEAD_SOV_train is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Avion/MIG_27K_SEAD/MIG_27K_SEAD_train.fbx"
+)

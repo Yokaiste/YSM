@@ -1,0 +1,14 @@
+export Modele_EH60A_EW_US is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Helico/EH_60A_Black_Hawk/EH_60A_Black_Hawk.fbx"
+)
+
+export Modele_EH60A_EW_US_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Helico/EH_60A_Black_Hawk_MID/EH_60A_Black_Hawk_MID.fbx"
+)
+
+export Modele_EH60A_EW_US_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Helico/EH_60A_Black_Hawk_LOW/EH_60A_Black_Hawk_LOW.fbx"
+)

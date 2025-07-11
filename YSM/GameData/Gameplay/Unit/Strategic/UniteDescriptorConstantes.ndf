@@ -1,0 +1,7 @@
+
+StrategicUniteDescriptorConstantes is TEntityDescriptorConstantes
+(
+    TeamUnitDescriptor                = ~/Strategic_TeamUnitDescriptor
+    AllianceUnitDescriptor            = ~/Strategic_AllianceUnitDescriptor
+    GroupUnitDescriptor               = ~/Strategic_ModularUnitGroupDescriptor
+)

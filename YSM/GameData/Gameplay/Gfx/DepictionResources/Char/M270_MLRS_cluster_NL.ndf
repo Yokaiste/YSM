@@ -1,0 +1,18 @@
+export Modele_M270_MLRS_cluster_NL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Artillerie/M270_Cluster/M270_Cluster.fbx"
+    Textures="GameData:/Assets/3D/Units/NL/Artillerie/M270_Cluster"
+)
+
+export Modele_M270_MLRS_cluster_NL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Artillerie/M270_Cluster_MID/M270_Cluster_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/NL/Artillerie/M270_Cluster_MID"
+)
+
+export Modele_M270_MLRS_cluster_NL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Artillerie/M270_Cluster_LOW/M270_Cluster_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/NL/Artillerie/M270_Cluster_LOW"
+)
+

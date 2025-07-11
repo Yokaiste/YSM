@@ -1,0 +1,14 @@
+export Modele_M1038_Humvee_US is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Vehicule/M1038_Humvee/M1038_Humvee.fbx"
+)
+
+export Modele_M1038_Humvee_US_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Vehicule/M1038_Humvee_MID/M1038_Humvee_MID.fbx"
+)
+
+export Modele_M1038_Humvee_US_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Vehicule/M1038_Humvee_LOW/M1038_Humvee_LOW.fbx"
+)

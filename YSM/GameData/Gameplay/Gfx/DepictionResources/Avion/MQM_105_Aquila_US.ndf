@@ -1,0 +1,19 @@
+export Modele_MQM_105_Aquila_US is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Avion/MQM_105_AQUILA/MQM_105_AQUILA.fbx"
+)
+
+export Modele_MQM_105_Aquila_US_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Avion/MQM_105_AQUILA_MID/MQM_105_AQUILA_MID.fbx"
+)
+
+export Modele_MQM_105_Aquila_US_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Avion/MQM_105_AQUILA_LOW/MQM_105_AQUILA_LOW.fbx"
+)
+
+export Modele_MQM_105_Aquila_US_train is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/Ammo/Drones/support_drones_Aquila.fbx"
+)

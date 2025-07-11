@@ -1,0 +1,22 @@
+export Modele_Leopard_1A5_CMD_BEL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Char/Leopard_1A5/Leopard_1A5.fbx"
+    Textures="GameData:/Assets/3D/Units/BEL/Char/Leopard_1A5_CMD/"
+)
+
+export Modele_Leopard_1A5_CMD_BEL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Char/Leopard_1A5_MID/Leopard_1A5_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/BEL/Char/Leopard_1A5_CMD_MID/"
+)
+
+export Modele_Leopard_1A5_CMD_BEL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Char/Leopard_1A5_LOW/Leopard_1A5_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/BEL/Char/Leopard_1A5_CMD_LOW/"
+)
+
+export Modele_Leopard_1A5_CMD_BEL_Tourelle_02 is TResourceMesh
+(
+    Mesh=ModelFile_MAG_t2
+)

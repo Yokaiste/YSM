@@ -1,0 +1,19 @@
+export Modele_L39ZO_HE1_DDR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Avion/L39ZO/L39ZO.fbx"
+)
+
+export Modele_L39ZO_HE1_DDR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Avion/L39ZO_MID/L39ZO_MID.fbx"
+)
+
+export Modele_L39ZO_HE1_DDR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Avion/L39ZO_LOW/L39ZO_LOW.fbx"
+)
+
+export Modele_L39ZO_HE1_DDR_train is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Avion/L39ZO/L39ZO_train.fbx"
+)

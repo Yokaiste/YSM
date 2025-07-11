@@ -1,0 +1,53 @@
+export Modele_A222_Bereg_SOV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Artillerie/A222_Bereg/A222_Bereg.fbx"
+)
+
+export Modele_A222_Bereg_SOV_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Artillerie/A222_Bereg_MID/A222_Bereg_MID.fbx"
+)
+
+export Modele_A222_Bereg_SOV_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Artillerie/A222_Bereg_LOW/A222_Bereg_LOW.fbx"
+)
+
+export DepictionOperator_Deployable_A222_Bereg_SOV is DepictionOperator_AnimationDeployable
+(
+    DeployAnimation = TResourceMatrixArrayAnimation
+    (
+        FileName   = 'GameData:/Assets/3D/Units/URSS/Artillerie/A222_Bereg/A222_Bereg_deploy.fbx'
+        PlayInLoop     = false
+    )
+
+    FoldAnimation = TResourceMatrixArrayAnimation
+    (
+        FileName   = 'GameData:/Assets/3D/Units/URSS/Artillerie/A222_Bereg/A222_Bereg_fold.fbx'
+        PlayInLoop     = false
+    )
+
+    IdleAnimation = TResourceMatrixArrayAnimation
+    (
+        FileName   = 'GameData:/Assets/3D/Units/URSS/Artillerie/A222_Bereg/A222_Bereg_deploy.fbx'
+        PlayInLoop     = false
+    )
+
+    MoveFrontAnimation = TResourceMatrixArrayAnimation
+    (
+        FileName   = 'GameData:/Assets/3D/Units/URSS/Artillerie/A222_Bereg/A222_Bereg_fold.fbx'
+        PlayInLoop     = false
+    )
+
+    MoveBackAnimation = TResourceMatrixArrayAnimation
+    (
+        FileName   = 'GameData:/Assets/3D/Units/URSS/Artillerie/A222_Bereg/A222_Bereg_fold.fbx'
+        PlayInLoop     = true
+    )
+
+    DeployFromMoveTime  = 1
+    DeployFromTurnTime  = 1
+    FoldForMoveTime  = 1
+    FoldForTurnTime  = 1
+    FilterTurretBoneForAllAnimation = true
+)

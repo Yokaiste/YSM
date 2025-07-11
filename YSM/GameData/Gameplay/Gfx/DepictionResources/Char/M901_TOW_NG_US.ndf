@@ -1,0 +1,20 @@
+export Modele_M901_TOW_NG_US is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Antichar/M901_ITV/M901_ITV.fbx"
+    Textures="GameData:/Assets/3D/Units/US/Antichar/M901_ITV_NG"
+)
+
+export Modele_M901_TOW_NG_US_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Antichar/M901_ITV_MID/M901_ITV_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/US/Antichar/M901_ITV_NG_MID"
+)
+
+export Modele_M901_TOW_NG_US_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Antichar/M901_ITV_LOW/M901_ITV_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/US/Antichar/M901_ITV_NG_LOW"
+)
+
+
+

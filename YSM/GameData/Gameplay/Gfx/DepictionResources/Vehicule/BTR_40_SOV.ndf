@@ -1,0 +1,14 @@
+export Modele_BTR_40_SOV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Vehicule/BTR_40/BTR_40.fbx"
+)
+
+export Modele_BTR_40_SOV_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Vehicule/BTR_40_MID/BTR_40_MID.fbx"
+)
+
+export Modele_BTR_40_SOV_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Vehicule/BTR_40_LOW/BTR_40_LOW.fbx"
+)

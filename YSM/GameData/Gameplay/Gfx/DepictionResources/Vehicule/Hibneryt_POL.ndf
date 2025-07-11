@@ -1,0 +1,14 @@
+export Modele_Hibneryt_POL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/DCA/Hibneryt/Hibneryt.fbx"
+)
+
+export Modele_Hibneryt_POL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/DCA/Hibneryt_MID/Hibneryt_MID.fbx"
+)
+
+export Modele_Hibneryt_POL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/DCA/Hibneryt_LOW/Hibneryt_LOW.fbx"
+)

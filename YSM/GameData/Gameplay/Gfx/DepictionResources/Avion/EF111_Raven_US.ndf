@@ -1,0 +1,19 @@
+export Modele_EF111_Raven_US is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Avion/Raven_EF_111A/Raven_EF_111A.fbx"
+)
+
+export Modele_EF111_Raven_US_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Avion/Raven_EF_111A_MID/Raven_EF_111A_MID.fbx"
+)
+
+export Modele_EF111_Raven_US_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Avion/Raven_EF_111A_LOW/Raven_EF_111A_LOW.fbx"
+)
+
+export Modele_EF111_Raven_US_train is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Avion/Raven_EF_111A/Raven_EF_111A_train.fbx"
+)

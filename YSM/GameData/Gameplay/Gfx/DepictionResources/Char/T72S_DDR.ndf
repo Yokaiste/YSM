@@ -1,0 +1,20 @@
+export ModelFile_T72S_DDR is "GameData:/Assets/3D/Units/DDR/Char/T72S/T72S.fbx"
+export Modele_T72S_DDR is TResourceMesh
+(
+    Mesh=ModelFile_T72S_DDR
+)
+export ModelFile_T72S_DDR_MID is "GameData:/Assets/3D/Units/DDR/Char/T72S_LOW/T72S_LOW.fbx"
+export Modele_T72S_DDR_MID is TResourceMesh
+(
+    Mesh=ModelFile_T72S_DDR_MID
+)
+export ModelFile_T72S_DDR_LOW is "GameData:/Assets/3D/Units/DDR/Char/T72S_LOW/T72S_LOW.fbx"
+export Modele_T72S_DDR_LOW is TResourceMesh
+(
+    Mesh=ModelFile_T72S_DDR_LOW
+)
+
+export Modele_T72S_DDR_Tourelle_02 is TResourceMesh
+(
+    Mesh=ModelFile_NSVT_no_ammo
+)

@@ -1,0 +1,14 @@
+export Modele_Tracked_Rapier_UK is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/DCA/Tracked_Rapier/Tracked_Rapier.fbx"
+)
+
+export Modele_Tracked_Rapier_UK_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/DCA/Tracked_Rapier_MID/Tracked_Rapier_MID.fbx"
+)
+
+export Modele_Tracked_Rapier_UK_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/DCA/Tracked_Rapier_LOW/Tracked_Rapier_LOW.fbx"
+)

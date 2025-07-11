@@ -1,0 +1,19 @@
+export Modele_F15E_StrikeEagle_US is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Avion/F15E_Strike_Eagle/F15E_Strike_Eagle.fbx"
+)
+
+export Modele_F15E_StrikeEagle_US_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Avion/F15E_Strike_Eagle_MID/F15E_Strike_Eagle_MID.fbx"
+)
+
+export Modele_F15E_StrikeEagle_US_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Avion/F15E_Strike_Eagle_LOW/F15E_Strike_Eagle_LOW.fbx"
+)
+
+export Modele_F15E_StrikeEagle_US_train is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Avion/F15E_Strike_Eagle/F15E_Strike_Eagle_train.fbx"
+)

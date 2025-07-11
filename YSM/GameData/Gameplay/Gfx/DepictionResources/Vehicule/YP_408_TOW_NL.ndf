@@ -1,0 +1,14 @@
+export Modele_YP_408_TOW_NL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/NL/APC/YP_408_TOW/YP_408_TOW.fbx"
+)
+
+export Modele_YP_408_TOW_NL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/NL/APC/YP_408_TOW_MID/YP_408_TOW_MID.fbx"
+)
+
+export Modele_YP_408_TOW_NL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/NL/APC/YP_408_TOW_LOW/YP_408_TOW_LOW.fbx"
+)

@@ -1,0 +1,56 @@
+unnamed Template_SceneryDescriptorSpawn
+(
+    RegistrationName      = 'TestUnit_M1A1_Abrams'
+    ClassName             = '$/GFX/Unit/Descriptor_Unit_TestUnit_M1A1_Abrams'
+    AutoNameBase          = 'TestUnit_M1A1_Abrams'
+    ModelResource         = $/GFX/DepictionResources/Modele_TestUnit_Tank
+    ThumbstackScale       = 20
+)
+unnamed Template_SceneryDescriptorSpawn
+(
+    RegistrationName      = 'TestUnit_AMX_10_P'
+    ClassName             = '$/GFX/Unit/Descriptor_Unit_TestUnit_AMX_10_P'
+    AutoNameBase          = 'TestUnit_AMX_10_P'
+    ModelResource         = $/GFX/DepictionResources/Modele_TestUnit_Tank
+    ThumbstackScale       = 20
+)
+unnamed Template_SceneryDescriptorSpawn
+(
+    RegistrationName      = 'TestUnit_HEMTT'
+    ClassName             = '$/GFX/Unit/Descriptor_Unit_TestUnit_HEMTT'
+    AutoNameBase          = 'TestUnit_HEMTT'
+    ModelResource         = $/GFX/DepictionResources/Modele_TestUnit_Vehicule
+    ThumbstackScale       = 20
+)
+unnamed Template_SceneryDescriptorSpawn
+(
+    RegistrationName      = 'TestUnit_M1_Abrams'
+    ClassName             = '$/GFX/Unit/Descriptor_Unit_TestUnit_M1_Abrams'
+    AutoNameBase          = 'TestUnit_M1_Abrams'
+    ModelResource         = $/GFX/DepictionResources/Modele_TestUnit_Tank
+    ThumbstackScale       = 20
+)
+unnamed Template_SceneryDescriptorSpawn
+(
+    RegistrationName      = 'TestUnit_M2_Bradley'
+    ClassName             = '$/GFX/Unit/Descriptor_Unit_TestUnit_M2_Bradley'
+    AutoNameBase          = 'TestUnit_M2_Bradley'
+    ModelResource         = $/GFX/DepictionResources/Modele_TestUnit_Tank
+    ThumbstackScale       = 20
+)
+unnamed Template_SceneryDescriptorSpawn
+(
+    RegistrationName      = 'TestUnit_Riflemen'
+    ClassName             = '$/GFX/Unit/Descriptor_Unit_TestUnit_Riflemen'
+    AutoNameBase          = 'TestUnit_Riflemen'
+    ModelResource         = $/GFX/DepictionResources/Modele_TestUnit_Infantry
+    ThumbstackScale       = 20
+)
+unnamed Template_SceneryDescriptorSpawn
+(
+    RegistrationName      = 'TestUnit_T72'
+    ClassName             = '$/GFX/Unit/Descriptor_Unit_TestUnit_T72'
+    AutoNameBase          = 'TestUnit_T72'
+    ModelResource         = $/GFX/DepictionResources/Modele_TestUnit_Tank
+    ThumbstackScale       = 20
+)

@@ -1,0 +1,17 @@
+export Modele_GAZ_46_POL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Vehicule/GAZ_46/GAZ_46.fbx"
+    Textures="GameData:/Assets/3D/Units/POL/Vehicule/GAZ_46"
+)
+
+export Modele_GAZ_46_POL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Vehicule/GAZ_46_MID/GAZ_46_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/POL/Vehicule/GAZ_46_MID"
+)
+
+export Modele_GAZ_46_POL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Vehicule/GAZ_46_LOW/GAZ_46_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/POL/Vehicule/GAZ_46_LOW"
+)

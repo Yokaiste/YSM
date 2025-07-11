@@ -1,0 +1,14 @@
+export Modele_Mi_2Ro_reco_POL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Helico/Mi_2Ro_RECON/Mi_2Ro_RECON.fbx"
+)
+
+export Modele_Mi_2Ro_reco_POL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Helico/Mi_2Ro_RECON_MID/Mi_2Ro_RECON_MID.fbx"
+)
+
+export Modele_Mi_2Ro_reco_POL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Helico/Mi_2Ro_RECON_LOW/Mi_2Ro_RECON_LOW.fbx"
+)

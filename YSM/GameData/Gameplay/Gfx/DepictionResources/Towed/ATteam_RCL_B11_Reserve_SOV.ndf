@@ -1,0 +1,3 @@
+export Modele_ATteam_RCL_B11_Reserve_SOV is TResourceMesh( Mesh="GameData:/Assets/3D/Units/POL/Canon/B11_recoiless_rifle/B11_recoiless_rifle.fbx")
+export Modele_ATteam_RCL_B11_Reserve_SOV_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/POL/Canon/B11_recoiless_rifle_MID/B11_recoiless_rifle_MID.fbx")
+export Modele_ATteam_RCL_B11_Reserve_SOV_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/POL/Canon/B11_recoiless_rifle_LOW/B11_recoiless_rifle_LOW.fbx")

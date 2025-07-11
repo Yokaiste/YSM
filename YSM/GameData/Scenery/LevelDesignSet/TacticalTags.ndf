@@ -1,0 +1,46 @@
+
+unnamed template_SceneryDescriptorTag_ReinforcementLine
+(
+    Name  = 'Tag_ReinforcementLand'
+
+    WidthInMeters = 40
+    ArrowWidthInMeters = 70
+    ArrowLengthInMeters = 70
+    Color = [255, 255, 50, 150]
+
+    AddOn = TGameDesignAddOn_ReinforcementLocation
+    (
+        Ranking = 'ReinforcementLocations'
+        NumAlliance = -1
+    )
+)
+
+unnamed template_SceneryDescriptorTag_ReinforcementLine
+(
+    Name  = 'Tag_ReinforcementAir'
+
+    WidthInMeters = 30
+    ArrowWidthInMeters = 30
+    ArrowLengthInMeters = 30
+    Color = [255, 255, 50, 150]
+
+    AddOn = TGameDesignAddOn_AerialCorridor
+    (
+        Ranking = 'AerialCorridors'
+        NumAlliance = -1
+    )
+)
+//-----------------------------------------------------------------------------
+unnamed Template_SceneryDescriptorTagGD
+(
+    Name  = 'Tag_Objective'
+    Scale = 8.0
+    AddOn = TGameDesignAddOn_ConquestObjective
+    (
+        Ranking = 'Objective'
+    )
+    ModelResource = $/Editor/Resource/plot03
+)
+//-----------------------------------------------------------------------------
+//*****************************************************************************
+//-----------------------------------------------------------------------------

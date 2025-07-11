@@ -1,0 +1,3 @@
+export Modele_ATteam_TOW2_NL is TResourceMesh( Mesh=ModelFile_ATteam_TOW_NL)
+export Modele_ATteam_TOW2_NL_MID is TResourceMesh( Mesh=ModelFile_ATteam_TOW_NL_MID)
+export Modele_ATteam_TOW2_NL_LOW is TResourceMesh( Mesh=ModelFile_ATteam_TOW_NL_LOW)

@@ -1,0 +1,14 @@
+export Modele_VBL_Reco_FR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/VBL_RECO/VBL_RECO.fbx"
+)
+
+export Modele_VBL_Reco_FR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/VBL_RECO_MID/VBL_RECO_MID.fbx"
+)
+
+export Modele_VBL_Reco_FR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/VBL_RECO_LOW/VBL_RECO_LOW.fbx"
+)

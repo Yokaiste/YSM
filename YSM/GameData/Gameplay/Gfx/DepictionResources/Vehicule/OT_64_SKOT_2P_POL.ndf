@@ -1,0 +1,17 @@
+export Modele_OT_64_SKOT_2P_POL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/APC/OT_64_SKOT_2AP/OT_64_SKOT_2AP.fbx"
+)
+
+export Modele_OT_64_SKOT_2P_POL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/APC/OT_64_SKOT_2AP_MID/OT_64_SKOT_2AP_MID.fbx"
+)
+
+export Modele_OT_64_SKOT_2P_POL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/APC/OT_64_SKOT_2AP_LOW/OT_64_SKOT_2AP_LOW.fbx"
+)
+
+
+

@@ -1,0 +1,14 @@
+export Modele_PTS_M_supply_POL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Vehicule/PTS_M_supply/PTS_M_supply.fbx"
+)
+
+export Modele_PTS_M_supply_POL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Vehicule/PTS_M_supply_MID/PTS_M_supply_MID.fbx"
+)
+
+export Modele_PTS_M_supply_POL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Vehicule/PTS_M_supply_LOW/PTS_M_supply_LOW.fbx"
+)

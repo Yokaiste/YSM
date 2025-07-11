@@ -1,0 +1,14 @@
+export Modele_Mi_8TZ_SOV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Helico/Mi_8TZ/Mi_8TZ.fbx"
+)
+
+export Modele_Mi_8TZ_SOV_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Helico/Mi_8TZ_MID/Mi_8TZ_MID.fbx"
+)
+
+export Modele_Mi_8TZ_SOV_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Helico/Mi_8TZ_LOW/Mi_8TZ_LOW.fbx"
+)

@@ -1,0 +1,19 @@
+export Modele_F8P_Crusader_AA2_FR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Avion/F8P_Crusader/F8P_Crusader.fbx"
+)
+
+export Modele_F8P_Crusader_AA2_FR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Avion/F8P_Crusader_MID/F8P_Crusader_MID.fbx"
+)
+
+export Modele_F8P_Crusader_AA2_FR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Avion/F8P_Crusader_LOW/F8P_Crusader_LOW.fbx"
+)
+
+export Modele_F8P_Crusader_AA2_FR_train is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Avion/F8P_Crusader/F8P_Crusader_train.fbx"
+)

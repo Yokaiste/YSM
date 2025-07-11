@@ -1,0 +1,19 @@
+export Modele_M151A2_scout_US is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Vehicule/M151A2_Scout/M151A2_Scout.fbx"
+)
+
+export Modele_M151A2_scout_US_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Vehicule/M151A2_Scout_MID/M151A2_Scout_MID.fbx"
+)
+
+export Modele_M151A2_scout_US_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Vehicule/M151A2_Scout_LOW/M151A2_Scout_LOW.fbx"
+)
+
+export Modele_M151A2_scout_US_Tourelle_01 is TResourceMesh
+(
+    Mesh=ModelFile_M2HB_12_7mm_t1
+)

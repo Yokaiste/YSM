@@ -1,0 +1,17 @@
+export Modele_LUAZ_967M_SPG9_SOV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Vehicule/LUAZ_967M_SPG9/LUAZ_967M_SPG9.fbx"
+)
+
+export Modele_LUAZ_967M_SPG9_SOV_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Vehicule/LUAZ_967M_SPG9_MID/LUAZ_967M_SPG9_MID.fbx"
+)
+
+export Modele_LUAZ_967M_SPG9_SOV_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Vehicule/LUAZ_967M_SPG9_LOW/LUAZ_967M_SPG9_LOW.fbx"
+)
+
+
+

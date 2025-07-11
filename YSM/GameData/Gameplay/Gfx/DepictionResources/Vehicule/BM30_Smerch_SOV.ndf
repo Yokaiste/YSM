@@ -1,0 +1,14 @@
+export Modele_BM30_Smerch_SOV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Artillerie/BM30_Smerch/BM30_Smerch.fbx"
+)
+
+export Modele_BM30_Smerch_SOV_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Artillerie/BM30_Smerch_MID/BM30_Smerch_MID.fbx"
+)
+
+export Modele_BM30_Smerch_SOV_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Artillerie/BM30_Smerch_LOW/BM30_Smerch_LOW.fbx"
+)

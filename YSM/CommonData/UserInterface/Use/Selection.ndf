@@ -1,0 +1,8 @@
+export SelectionRenderer is TSelectionRenderer
+(
+    Scene2D   = $/M3D/Scene/Scene_2D_Interface
+    MeshMaterialBorder2D = $/M3D/Shader/MeshMaterialVisualDebugInfoHandler_Blend2D
+    MeshMaterialFill2D = $/M3D/Shader/MeshMaterialVisualDebugInfoHandler_Blend2D
+    CalqueFill2D = $/M3D/Scene/Scene_2D_Interface/Calque_Selection_Fill
+    CalqueLine2D = $/M3D/Scene/Scene_2D_Interface/Calque_Selection_Line
+)

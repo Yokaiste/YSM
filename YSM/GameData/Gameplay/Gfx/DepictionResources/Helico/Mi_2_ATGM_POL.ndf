@@ -1,0 +1,14 @@
+export Modele_Mi_2_ATGM_POL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Helico/Mi_2_ATGM/Mi_2_ATGM.fbx"
+)
+
+export Modele_Mi_2_ATGM_POL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Helico/Mi_2_ATGM_MID/Mi_2_ATGM_MID.fbx"
+)
+
+export Modele_Mi_2_ATGM_POL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Helico/Mi_2_ATGM_LOW/Mi_2_ATGM_LOW.fbx"
+)

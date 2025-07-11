@@ -1,0 +1,17 @@
+export Modele_M577_NL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/CMD/M577/M577.fbx"
+    Textures="GameData:/Assets/3D/Units/NL/CMD/M577"
+)
+
+export Modele_M577_NL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/CMD/M577_MID/M577_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/NL/CMD/M577_MID"
+)
+
+export Modele_M577_NL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/CMD/M577_LOW/M577_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/NL/CMD/M577_LOW"
+)

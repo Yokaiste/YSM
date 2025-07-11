@@ -1,0 +1,14 @@
+export Modele_BMP_1P_Konkurs_DDR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/APC/BMP_1P_Konkur/BMP_1P.fbx"
+)
+
+export Modele_BMP_1P_Konkurs_DDR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/APC/BMP_1P_Konkur/BMP_1P.fbx"
+)
+
+export Modele_BMP_1P_Konkurs_DDR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/APC/BMP_1P_Konkur/BMP_1P.fbx"
+)

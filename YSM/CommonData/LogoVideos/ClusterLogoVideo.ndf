@@ -1,0 +1,46 @@
+
+export ClusterCreateComponents is TClusterCreateUIComponents
+(
+    UILayer = $/UserInterface/UILayer_Calque_CutScene_Video
+    Components = [ ~/CurrentVideoLogo ]
+    StyleGuide = ~/StyleGuideLogo
+    SafeBoxSize = ~/FullScreenSafeBoxSize
+)
+
+TextStyleSubtitles is TTextStyle
+(
+    ColorBottom = [255, 255, 255, 255]
+    ColorUp     = [255, 255, 255, 255]
+    // Updated by YSM | INTRO
+    ColorStroke = [0, 0, 0, 255]
+    Stroke = true
+    StrokeSize = 1.0
+    // ColorStroke = [255, 255, 255, 255]
+    // Stroke = false
+    // StrokeSize = 0.7
+    StrokeHardness = 0.5
+    FontSize = 1
+)
+
+StyleGuideLogo is TUIStyleGuide
+(
+    BlockColorsMap = MAP[
+        ("Black", MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = [0,0,0,255] ) ), ]),
+    ]
+
+    TextStylesMap = MAP [
+        ("Subtitle", MAP [ ( ~/ComponentState/Normal, ~/TextStyleSubtitles ), ]),
+    ]
+
+    Typeface = MAP [
+        ("Liberator", $/M3D/Typefaces/Typeface_Main_OutGame),
+    ]
+
+    TextColorsMap = MAP [
+        ("Subtitle/Default", MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = [235,235,235,255] ) ), ]),
+    ]
+
+    TextSizesMap = MAP [
+        ("Subtitle/Default",                          MAP [ ( ~/ComponentState/Normal, TFloatRTTI( Value = 25 ) ), ]),
+    ]
+)

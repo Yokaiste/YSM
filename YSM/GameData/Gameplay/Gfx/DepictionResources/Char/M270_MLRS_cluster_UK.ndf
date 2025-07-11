@@ -1,0 +1,15 @@
+export Modele_M270_MLRS_cluster_UK is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Artillerie/M270_Cluster/M270_Cluster.fbx"
+)
+
+export Modele_M270_MLRS_cluster_UK_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Artillerie/M270_Cluster_MID/M270_Cluster_MID.fbx"
+)
+
+export Modele_M270_MLRS_cluster_UK_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Artillerie/M270_Cluster_LOW/M270_Cluster_LOW.fbx"
+)
+

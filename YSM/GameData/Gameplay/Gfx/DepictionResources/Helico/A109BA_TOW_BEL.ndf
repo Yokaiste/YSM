@@ -1,0 +1,14 @@
+export Modele_A109BA_TOW_BEL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Helico/A109BA_TOW/A109BA_TOW_x2.fbx"
+)
+
+export Modele_A109BA_TOW_BEL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Helico/A109BA_TOW_MID/A109BA_TOW_x2_MID.fbx"
+)
+
+export Modele_A109BA_TOW_BEL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Helico/A109BA_TOW_LOW/A109BA_TOW_x2_LOW.fbx"
+)

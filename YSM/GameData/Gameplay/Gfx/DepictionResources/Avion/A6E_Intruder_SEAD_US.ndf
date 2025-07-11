@@ -1,0 +1,19 @@
+export Modele_A6E_Intruder_SEAD_US is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Avion/A6E_Intruder_SEAD/A6E_Intruder_SEAD.fbx"
+)
+
+export Modele_A6E_Intruder_SEAD_US_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Avion/A6E_Intruder_SEAD_MID/A6E_Intruder_SEAD_MID.fbx"
+)
+
+export Modele_A6E_Intruder_SEAD_US_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Avion/A6E_Intruder_SEAD_LOW/A6E_Intruder_SEAD_LOW.fbx"
+)
+
+export Modele_A6E_Intruder_SEAD_US_train is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Avion/A6E_Intruder_SEAD/A6E_Intruder_SEAD_train.fbx"
+)

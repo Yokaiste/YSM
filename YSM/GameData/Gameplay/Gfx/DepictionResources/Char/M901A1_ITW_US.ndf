@@ -1,0 +1,17 @@
+export Modele_M901A1_ITW_US is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Antichar/M901A1_ITV/M901A1_ITV.fbx"
+)
+
+export Modele_M901A1_ITW_US_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Antichar/M901A1_ITV_MID/M901A1_ITV_MID.fbx"
+)
+
+export Modele_M901A1_ITW_US_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Antichar/M901A1_ITV_LOW/M901A1_ITV_LOW.fbx"
+)
+
+
+

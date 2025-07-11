@@ -1,0 +1,14 @@
+export Modele_AIFV_B_C25_NL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/NL/APC/AIFV_B_C25/AIFV_B_C25.fbx"
+)
+
+export Modele_AIFV_B_C25_NL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/NL/APC/AIFV_B_C25_MID/AIFV_B_C25_MID.fbx"
+)
+
+export Modele_AIFV_B_C25_NL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/NL/APC/AIFV_B_C25_LOW/AIFV_B_C25_LOW.fbx"
+)

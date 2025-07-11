@@ -1,0 +1,17 @@
+export Modele_BTR_152A_SOV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/APC/BTR_152A/BTR_152A.fbx"
+    Textures="GameData:/Assets/3D/Units/URSS/APC/BTR_152A"
+)
+
+export Modele_BTR_152A_SOV_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/APC/BTR_152A_MID/BTR_152A_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/URSS/APC/BTR_152A_MID"
+)
+
+export Modele_BTR_152A_SOV_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/APC/BTR_152A_LOW/BTR_152A_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/URSS/APC/BTR_152A_LOW"
+)

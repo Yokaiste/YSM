@@ -1,0 +1,22 @@
+export Modele_VAB_Reserve_FR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/VAB/VAB.fbx"
+    Textures="GameData:/Assets/3D/Units/FR/Vehicule/VAB_Reservist"
+)
+
+export Modele_VAB_Reserve_FR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/VAB_MID/VAB_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/FR/Vehicule/VAB_Reservist_MID"
+)
+
+export Modele_VAB_Reserve_FR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/VAB_LOW/VAB_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/FR/Vehicule/VAB_Reservist_LOW"
+)
+
+export Modele_VAB_Reserve_FR_Tourelle_01 is TResourceMesh
+(
+    Mesh=ModelFile_M2HB_12_7mm_t1
+)

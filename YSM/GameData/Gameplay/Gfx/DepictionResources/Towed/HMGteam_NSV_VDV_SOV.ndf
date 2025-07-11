@@ -1,0 +1,3 @@
+export Modele_HMGteam_NSV_VDV_SOV is TResourceMesh( Mesh="GameData:/Assets/3D/Units/Ammo/Armes/HMG_trepied/NSVT.fbx")
+export Modele_HMGteam_NSV_VDV_SOV_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/Ammo/Armes/HMG_trepied/NSVT.fbx")
+export Modele_HMGteam_NSV_VDV_SOV_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/Ammo/Armes/HMG_trepied/NSVT.fbx")

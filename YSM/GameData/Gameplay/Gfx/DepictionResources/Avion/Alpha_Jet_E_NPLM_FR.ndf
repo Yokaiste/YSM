@@ -1,0 +1,19 @@
+export Modele_Alpha_Jet_E_NPLM_FR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Avion/Alpha_Jet_E/Alpha_Jet_E.fbx"
+)
+
+export Modele_Alpha_Jet_E_NPLM_FR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Avion/Alpha_Jet_E_MID/Alpha_Jet_E_MID.fbx"
+)
+
+export Modele_Alpha_Jet_E_NPLM_FR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Avion/Alpha_Jet_E_LOW/Alpha_Jet_E_LOW.fbx"
+)
+
+export Modele_Alpha_Jet_E_NPLM_FR_train is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Avion/Alpha_Jet_E/Alpha_Jet_E_train.fbx"
+)

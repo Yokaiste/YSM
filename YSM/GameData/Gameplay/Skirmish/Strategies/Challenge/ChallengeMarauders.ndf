@@ -1,0 +1,136 @@
+//-------------------------------------------------------------------------
+//----------------------------- STRATEGY ----------------------------------
+//-------------------------------------------------------------------------
+
+export ChallengeMarauders is TIAGeneralStrategy
+(
+    StrategyName = "MaraudAI"
+    FirstGenerator = ChalMarauders_Choose_Strategy
+    TransitionList =
+    [
+        ChalMarauders_Transition_StartToPhaseCommand,
+        ChalMarauders_Transition_StartToGeneric,
+        ChalMarauders_Transition_DeployToCommandPhase,
+    ]
+)
+
+//-------------------------------------------------------------------------
+//---------------------------- CONDITIONS ---------------------------------
+//-------------------------------------------------------------------------
+export ChalMarauders_Condition_GotoGeneric is TSequenceCondition_True
+(
+)
+//-------------------------------------------------------------------------
+export ChalMarauders_Condition_CommandPhase is TSequenceCondition_Phase
+(
+    PhaseType = CommandPhase
+)
+
+//-------------------------------------------------------------------------
+//--------------------------- TRANSITIONS ---------------------------------
+//-------------------------------------------------------------------------
+export ChalMarauders_Transition_StartToPhaseCommand is TIAGeneralStrategyTransition
+(
+    Origine = ChalMarauders_Choose_Strategy
+    Condition = ChalMarauders_Condition_CommandPhase
+    Destination = ChalMarauders_Phase_Command
+)
+export ChalMarauders_Transition_StartToGeneric is TIAGeneralStrategyTransition
+(
+    Origine = ChalMarauders_Choose_Strategy
+    Condition = ChalMarauders_Condition_GotoGeneric
+    Destination = ChalMarauders_Phase_Deploiement
+)
+//-------------------------------------------------------------------------
+export ChalMarauders_Transition_DeployToCommandPhase is TIAGeneralStrategyTransition
+(
+    Origine = ChalMarauders_Phase_Deploiement
+    Condition = ChalMarauders_Condition_CommandPhase
+    Destination = ChalMarauders_Phase_Command
+)
+
+//-------------------------------------------------------------------------
+//------------------------------ PHASES -----------------------------------
+//-------------------------------------------------------------------------
+export ChalMarauders_Choose_Strategy is TSequenceGeneratorDescriptor
+(
+    // Fake phase qui permet juste d'orienter la strategie dans la direction voulue
+    GeneratorList =
+    [
+        ~/Supply_Skirmish,
+    ]
+)
+//-------------------------------------------------------------------------
+export ChalMarauders_Phase_Deploiement is TSequenceGeneratorDescriptor
+(
+    GeneratorList =
+    [
+        ~/Supply_Skirmish,
+
+        ~/CaptureOneObjectif,
+
+        ~/Challenge_Marauders_Main_Attack,
+        ~/Challenge_Marauders_Aux_Attack,
+
+        ~/Challenge_Marauders_Artillery,
+        ~/Challenge_Marauders_Artillery,
+
+        ~/CaptureAllZoneObjectif,
+    ]
+
+    ScalingGeneratorList = ~/ChalMarauders_Scaling
+)
+//-------------------------------------------------------------------------
+export ChalMarauders_Phase_Command is TSequenceGeneratorDescriptor
+(
+    GeneratorList =
+    [
+        ~/Supply_Skirmish,
+
+        ~/CaptureOneObjectif,
+
+        ~/Challenge_Marauders_Main_Attack,
+        ~/Challenge_Marauders_Aux_Attack,
+
+        ~/Challenge_Marauders_Artillery,
+        ~/Challenge_Marauders_Artillery,
+
+        ~/CaptureAllZoneObjectif,
+    ]
+
+    ScalingGeneratorList = ~/ChalMarauders_Scaling
+)
+
+//-------------------------------------------------------------------------
+export ChalMarauders_Phase_2 is TSequenceGeneratorDescriptor
+(
+    GeneratorList =
+    [
+        ~/Supply_Skirmish,
+
+        ~/CaptureOneObjectif,
+
+        ~/Challenge_Marauders_Main_Attack_Phase2,
+        ~/Challenge_Marauders_Aux_Attack_Phase2,
+
+        ~/Challenge_Marauders_Artillery,
+        ~/Challenge_Marauders_Artillery,
+
+        ~/CaptureAllZoneObjectif,
+
+        ~/Challenge_Marauders_Artillery,
+        ~/Challenge_Marauders_Artillery,
+    ]
+
+    ScalingGeneratorList = ~/ChalMarauders_Scaling_Phase2
+)
+
+ChalMarauders_Scaling is
+[
+    ~/Challenge_Marauders_Aux_Attack,
+]
+
+ChalMarauders_Scaling_Phase2 is
+[
+    ~/Challenge_Marauders_Aux_Attack_Phase2,
+]

@@ -1,0 +1,3 @@
+export Modele_DCA_Bofors_57mm_BEL is TResourceMesh( Mesh="GameData:/Assets/3D/Units/BEL/Canon/DCA_Bofors_57mm/DCA_Bofors_57mm.fbx")
+export Modele_DCA_Bofors_57mm_BEL_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/BEL/Canon/DCA_Bofors_57mm/DCA_Bofors_57mm.fbx")
+export Modele_DCA_Bofors_57mm_BEL_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/BEL/Canon/DCA_Bofors_57mm/DCA_Bofors_57mm.fbx")

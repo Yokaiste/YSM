@@ -1,0 +1,17 @@
+export Modele_M110A2_Howz_NG_US is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Artillerie/M110_A2/M110_A2.fbx"
+    Textures="GameData:/Assets/3D/Units/US/Artillerie/M110_A2_NG"
+)
+
+export Modele_M110A2_Howz_NG_US_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Artillerie/M110_A2_MID/M110_A2_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/US/Artillerie/M110_A2_NG_MID"
+)
+
+export Modele_M110A2_Howz_NG_US_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Artillerie/M110_A2_LOW/M110_A2_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/US/Artillerie/M110_A2_NG_LOW"
+)

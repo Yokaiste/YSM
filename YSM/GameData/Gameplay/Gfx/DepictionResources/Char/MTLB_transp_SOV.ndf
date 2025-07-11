@@ -1,0 +1,17 @@
+export Modele_MTLB_transp_SOV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/APC/MTLB/MTLB.fbx"
+)
+
+export Modele_MTLB_transp_SOV_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/APC/MTLB_MID/MTLB_MID.fbx"
+)
+
+export Modele_MTLB_transp_SOV_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/APC/MTLB_LOW/MTLB_LOW.fbx"
+)
+
+
+

@@ -1,0 +1,22 @@
+export Modele_T64B1_reco_SOV is TResourceMesh
+(
+    Mesh=ModelFile_T64B1_SOV
+    Textures="GameData:/Assets/3D/Units/URSS/Char/T64B1_Reco"
+)
+
+export Modele_T64B1_reco_SOV_MID is TResourceMesh
+(
+    Mesh=ModelFile_T64B1_SOV_MID
+    Textures="GameData:/Assets/3D/Units/URSS/Char/T64B1_Reco_MID"
+)
+
+export Modele_T64B1_reco_SOV_LOW is TResourceMesh
+(
+    Mesh=ModelFile_T64B1_SOV_LOW
+    Textures="GameData:/Assets/3D/Units/URSS/Char/T64B1_Reco_LOW"
+)
+
+export Modele_T64B1_reco_SOV_Tourelle_02 is TResourceMesh
+(
+    Mesh=ModelFile_NSVT_no_ammo
+)

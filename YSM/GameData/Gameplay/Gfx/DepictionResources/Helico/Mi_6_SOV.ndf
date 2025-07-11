@@ -1,0 +1,15 @@
+export ModelFile_Mi_6_SOV is 'GameData:/Assets/3D/Units/URSS/Helico/Mi_6_supply/Mi_6_supply.fbx'
+export Modele_Mi_6_SOV is TResourceMesh
+(
+    Mesh=ModelFile_Mi_6_SOV
+)
+export ModelFile_Mi_6_SOV_MID is 'GameData:/Assets/3D/Units/URSS/Helico/Mi_6_supply_MID/Mi_6_supply_MID.fbx'
+export Modele_Mi_6_SOV_MID is TResourceMesh
+(
+    Mesh=ModelFile_Mi_6_SOV_MID
+)
+export ModelFile_Mi_6_SOV_LOW is 'GameData:/Assets/3D/Units/URSS/Helico/Mi_6_supply_LOW/Mi_6_supply_LOW.fbx'
+export Modele_Mi_6_SOV_LOW is TResourceMesh
+(
+    Mesh=ModelFile_Mi_6_SOV_LOW
+)

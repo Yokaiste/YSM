@@ -1,0 +1,14 @@
+export Modele_M201_MILAN_FR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/M201_MILAN/M201_MILAN.fbx"
+)
+
+export Modele_M201_MILAN_FR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/M201_MILAN_MID/M201_MILAN_MID.fbx"
+)
+
+export Modele_M201_MILAN_FR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/M201_MILAN_LOW/M201_MILAN_LOW.fbx"
+)

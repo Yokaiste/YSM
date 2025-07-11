@@ -1,0 +1,14 @@
+export Modele_FV432_supply_UK is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/APC/FV432/FV432.fbx"
+)
+
+export Modele_FV432_supply_UK_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/APC/FV432_MID/FV432_MID.fbx"
+)
+
+export Modele_FV432_supply_UK_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/APC/FV432_LOW/FV432_LOW.fbx"
+)

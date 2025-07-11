@@ -1,0 +1,14 @@
+export Modele_MH_60A_DAP_US is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Helico/MH_60A_DAP/MH_60A_DAP.fbx"
+)
+
+export Modele_MH_60A_DAP_US_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Helico/MH_60A_DAP_MID/MH_60A_DAP_MID.fbx"
+)
+
+export Modele_MH_60A_DAP_US_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Helico/MH_60A_DAP_LOW/MH_60A_DAP_LOW.fbx"
+)

@@ -1,0 +1,14 @@
+export Modele_BTR_50_DDR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/APC/BTR_50/BTR_50.fbx"
+)
+
+export Modele_BTR_50_DDR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/APC/BTR_50/BTR_50.fbx"
+)
+
+export Modele_BTR_50_DDR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/APC/BTR_50/BTR_50.fbx"
+)

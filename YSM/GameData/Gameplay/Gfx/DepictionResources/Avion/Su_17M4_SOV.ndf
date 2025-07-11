@@ -1,0 +1,19 @@
+export Modele_Su_17M4_SOV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Avion/Su_17M4/Su_17M4.fbx"
+)
+
+export Modele_Su_17M4_SOV_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Avion/Su_17M4_MID/Su_17M4_MID.fbx"
+)
+
+export Modele_Su_17M4_SOV_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Avion/Su_17M4_LOW/Su_17M4_LOW.fbx"
+)
+
+export Modele_Su_17M4_SOV_train is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Avion/Su_17M4/Su_17M4_train.fbx"
+)

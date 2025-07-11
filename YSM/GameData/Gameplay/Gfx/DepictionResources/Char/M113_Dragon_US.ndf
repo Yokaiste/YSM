@@ -1,0 +1,19 @@
+export Modele_M113_Dragon_US is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/APC/M113_Dragon/M113_Dragon.fbx"
+)
+
+export Modele_M113_Dragon_US_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/APC/M113_Dragon_MID/M113_Dragon_MID.fbx"
+)
+
+export Modele_M113_Dragon_US_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/APC/M113_Dragon_LOW/M113_Dragon_LOW.fbx"
+)
+
+export Modele_M113_Dragon_US_Tourelle_02 is TResourceMesh
+(
+    Mesh=ModelFile_M47_Dragon_II_t2
+)

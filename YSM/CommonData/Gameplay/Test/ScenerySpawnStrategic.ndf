@@ -1,0 +1,8 @@
+unnamed Template_SceneryDescriptorSpawn
+(
+    RegistrationName      = 'TestStrategicCampaign_Airport'
+    ClassName             = '$/GFX/Pawn/Descriptor_Unit_TestStrategicCampaign_Airport'
+    AutoNameBase          = 'TestStrategicCampaign_Airport'
+    ModelResource         = nil
+    ThumbstackScale       = 7
+)

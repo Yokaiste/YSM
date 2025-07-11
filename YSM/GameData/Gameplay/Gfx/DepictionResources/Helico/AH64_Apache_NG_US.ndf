@@ -1,0 +1,14 @@
+export Modele_AH64_Apache_NG_US is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Helico/AH64A_Apache_NG/AH64A_Apache_NG.fbx"
+)
+
+export Modele_AH64_Apache_NG_US_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Helico/AH64A_Apache_NG_MID/AH64A_Apache_NG_MID.fbx"
+)
+
+export Modele_AH64_Apache_NG_US_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Helico/AH64A_Apache_NG_LOW/AH64A_Apache_NG_LOW.fbx"
+)

@@ -1,0 +1,5 @@
+export Modele_CGage_V150_Commando_US     is TResourceMesh( Mesh="GameData:/Assets/3D/Units/FR/Vehicule/VAB/VAB.fbx" )
+export Modele_CGage_V150_Commando_US_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/FR/Vehicule/VAB_MID/VAB_MID.fbx" )
+export Modele_CGage_V150_Commando_US_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/FR/Vehicule/VAB_LOW/VAB_LOW.fbx" )
+
+export Modele_CGage_V150_Commando_US_Tourelle_01 is TResourceMesh( Mesh=ModelFile_M2HB_12_7mm_t1 )

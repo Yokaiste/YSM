@@ -1,0 +1,14 @@
+export Modele_Bedford_MJ_4t_trans_UK is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Vehicule/Bedford_MJ_4t/Bedford_MJ_4t.fbx"
+)
+
+export Modele_Bedford_MJ_4t_trans_UK_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Vehicule/Bedford_MJ_4t_MID/Bedford_MJ_4t_MID.fbx"
+)
+
+export Modele_Bedford_MJ_4t_trans_UK_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Vehicule/Bedford_MJ_4t_LOW/Bedford_MJ_4t_LOW.fbx"
+)

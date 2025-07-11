@@ -1,0 +1,14 @@
+export Modele_M38A1_NL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/NL/Vehicule/M38A1/M38A1.fbx"
+)
+
+export Modele_M38A1_NL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/NL/Vehicule/M38A1_MID/M38A1_MID.fbx"
+)
+
+export Modele_M38A1_NL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/NL/Vehicule/M38A1_LOW/M38A1_LOW.fbx"
+)

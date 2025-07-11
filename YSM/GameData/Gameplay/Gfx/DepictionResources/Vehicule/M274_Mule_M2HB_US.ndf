@@ -1,0 +1,14 @@
+export Modele_M274_Mule_M2HB_US is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Vehicule/M274_Mule_M2HB/M274_Mule_M2HB.fbx"
+)
+
+export Modele_M274_Mule_M2HB_US_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Vehicule/M274_Mule_M2HB_MID/M274_Mule_M2HB_MID.fbx"
+)
+
+export Modele_M274_Mule_M2HB_US_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Vehicule/M274_Mule_M2HB_LOW/M274_Mule_M2HB_LOW.fbx"
+)

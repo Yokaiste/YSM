@@ -1,0 +1,14 @@
+export Modele_MAN_Z311_Mi50_BEL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Vehicule/MAN_Z311_Mi50/MAN_Z311_Mi50.fbx"
+)
+
+export Modele_MAN_Z311_Mi50_BEL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Vehicule/MAN_Z311_Mi50_MID/MAN_Z311_Mi50_MID.fbx"
+)
+
+export Modele_MAN_Z311_Mi50_BEL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Vehicule/MAN_Z311_Mi50_LOW/MAN_Z311_Mi50_LOW.fbx"
+)

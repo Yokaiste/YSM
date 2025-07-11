@@ -1,0 +1,14 @@
+export Modele_T34_85M_CMD_POL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Char/T34_85_obr_44/T34_85_obr_44.fbx"
+)
+
+export Modele_T34_85M_CMD_POL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Char/T34_85_obr_44_MID/T34_85_obr_44_MID.fbx"
+)
+
+export Modele_T34_85M_CMD_POL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Char/T34_85_obr_44_LOW/T34_85_obr_44_LOW.fbx"
+)

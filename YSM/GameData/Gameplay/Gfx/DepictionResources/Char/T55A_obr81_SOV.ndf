@@ -1,0 +1,19 @@
+export Modele_T55A_obr81_SOV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Char/T55A_obr81/T55A_obr81.fbx"
+)
+
+export Modele_T55A_obr81_SOV_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Char/T55A_obr81_MID/T55A_obr81_MID.fbx"
+)
+
+export Modele_T55A_obr81_SOV_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Char/T55A_obr81_LOW/T55A_obr81_LOW.fbx"
+)
+
+export Modele_T55A_obr81_SOV_Tourelle_02 is TResourceMesh
+(
+    Mesh=ModelFile_DShK_127mm_t2
+)

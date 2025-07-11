@@ -1,0 +1,19 @@
+export Modele_M998_Humvee_HMG_US is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Vehicule/M998_Humvee_HMG/M998_Humvee_HMG.fbx"
+)
+
+export Modele_M998_Humvee_HMG_US_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Vehicule/M998_Humvee_HMG/M998_Humvee_HMG.fbx"
+)
+
+export Modele_M998_Humvee_HMG_US_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Vehicule/M998_Humvee_HMG/M998_Humvee_HMG.fbx"
+)
+
+export Modele_M998_Humvee_HMG_US_Tourelle_01 is TResourceMesh
+(
+    Mesh=ModelFile_M2HB_12_7mm_t1
+)

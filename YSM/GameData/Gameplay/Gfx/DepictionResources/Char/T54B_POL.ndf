@@ -1,0 +1,19 @@
+export Modele_T54B_POL is TResourceMesh
+(
+    Mesh=ModelFile_T54B_DDR
+)
+
+export Modele_T54B_POL_MID is TResourceMesh
+(
+    Mesh=ModelFile_T54B_DDR_MID
+)
+
+export Modele_T54B_POL_LOW is TResourceMesh
+(
+    Mesh=ModelFile_T54B_DDR_LOW
+)
+
+export Modele_T54B_POL_Tourelle_02 is TResourceMesh
+(
+    Mesh=ModelFile_DShK_127mm_no_ammo
+)

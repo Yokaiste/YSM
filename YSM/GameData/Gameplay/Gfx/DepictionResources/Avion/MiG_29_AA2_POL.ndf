@@ -1,0 +1,19 @@
+export Modele_MiG_29_AA2_POL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Avion/MiG_29_9_12/MiG_29_9_12_AA2.fbx"
+)
+
+export Modele_MiG_29_AA2_POL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Avion/MiG_29_9_12_MID/MiG_29_9_12_AA2_MID.fbx"
+)
+
+export Modele_MiG_29_AA2_POL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Avion/MiG_29_9_12_LOW/MiG_29_9_12_AA2_LOW.fbx"
+)
+
+export Modele_MiG_29_AA2_POL_train is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Avion/MiG_29_9_12/MiG_29_9_12_Train.fbx"
+)

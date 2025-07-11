@@ -1,0 +1,19 @@
+export Modele_Honker_RYS_POL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Vehicule/Honker_4011_RYS/Honker_4011_RYS.fbx"
+)
+
+export Modele_Honker_RYS_POL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Vehicule/Honker_4011_RYS/Honker_4011_RYS.fbx"
+)
+
+export Modele_Honker_RYS_POL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Vehicule/Honker_4011_RYS/Honker_4011_RYS.fbx"
+)
+
+export Modele_Honker_RYS_POL_Tourelle_01 is TResourceMesh
+(
+    Mesh=ModelFile_DShK_127mm_t1
+)

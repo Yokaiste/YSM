@@ -1,0 +1,3 @@
+// Benchmark depictions; its like test depictions, but for performance measuring.
+// Benchmark assets are designed to be immutable, so as to not invalidate
+export Modele_BenchUnit_Unicorn is TResourceMesh( Mesh="CommonData:/Assets/3D/Units/Bench/unicorn/unicorn.fbx" )

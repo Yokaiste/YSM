@@ -1,0 +1,14 @@
+
+Texture_Test_Minimap_Unit is TUIResourceTexture_Common
+(
+    FileName = "CommonData:/Assets/2D/Interface/UseInGame/TestUnits/Minimap/unit.png"
+)
+
+TestAdditionalTextureBank is TBUCKToolAdditionalTextureBank
+(
+    Textures = MAP
+    [
+        ("Texture_Test_Minimap_Unit", MAP [(~/ComponentState/Normal, ~/Texture_Test_Minimap_Unit)]),
+    ]
+)
+

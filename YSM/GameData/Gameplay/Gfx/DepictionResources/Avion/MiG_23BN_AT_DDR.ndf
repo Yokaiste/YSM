@@ -1,0 +1,19 @@
+export Modele_MiG_23BN_AT_DDR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Avion/MiG_23MF/MiG_23MF.fbx"
+)
+
+export Modele_MiG_23BN_AT_DDR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Avion/MiG_23MF_MID/MiG_23MF_MID.fbx"
+)
+
+export Modele_MiG_23BN_AT_DDR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Avion/MiG_23MF_LOW/MiG_23MF_LOW.fbx"
+)
+
+export Modele_MiG_23BN_AT_DDR_train is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Avion/MiG_23MF/MiG_23MF_Train.fbx"
+)

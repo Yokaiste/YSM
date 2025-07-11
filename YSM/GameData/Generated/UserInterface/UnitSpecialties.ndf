@@ -1,0 +1,827 @@
+// Ne pas éditer, ce fichier est généré par UnitSpecialtiesFileWriter
+
+UnitSpecialties is TUnitSpecialtiesContainer
+(
+    Descriptors = MAP
+    [
+
+        (
+            "AA",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_AA"
+                SpecialtyHintTitleToken    = "GWHTQVXRKM"
+                SpecialtyHintBodyToken     = "EHMDGAYXHS"
+                ShowAsFilterInShowroom = True
+            )
+        ),
+        (
+            "AT",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_AT"
+                SpecialtyHintTitleToken    = "UNPERXCQJZ"
+                SpecialtyHintBodyToken     = "YNKYLBXYRM"
+                ShowAsFilterInShowroom = True
+            )
+        ),
+        (
+            "Infantry_choc_para",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_infantry_half"
+                SpecialtyHintTitleToken    = "GEFBTMRHWG"
+                SpecialtyHintBodyToken     = "PAUSJGTPDI"
+                ShowAsFilterInShowroom = False
+            )
+        ),
+        (
+            "Infantry_choc_para_small",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_infantry_half"
+                SpecialtyHintTitleToken    = "UHPTVZIXCH"
+                SpecialtyHintBodyToken     = "PAUSJGTPDI"
+                ShowAsFilterInShowroom = False
+            )
+        ),
+        (
+            "Infantry_sf_para",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_infantry_half"
+                SpecialtyHintBodyToken     = "PAUSJGTPDI"
+                ShowAsFilterInShowroom = False
+            )
+        ),
+        (
+            "Infantry_sf_para_small",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_infantry_half"
+                SpecialtyHintBodyToken     = "PAUSJGTPDI"
+                ShowAsFilterInShowroom = False
+            )
+        ),
+        (
+            "_airlift",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_airlift"
+                SpecialtyHintTitleToken    = "LWBHQYSFCZ"
+                SpecialtyHintBodyToken     = "RZEPXEKHWE"
+                SpecialtyHintExtendedToken = "INBSWDRRZV"
+                ShowAsFilterInShowroom = True
+            )
+        ),
+        (
+            "_amphibie",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_amphibie"
+                SpecialtyHintTitleToken    = "UDXYROJWVH"
+                SpecialtyHintBodyToken     = "QIOAXNCXTO"
+                SpecialtyHintExtendedToken = "QBQLKNVKST"
+                ShowAsFilterInShowroom = True
+            )
+        ),
+        (
+            "_canBeAirlifted",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_canBeAirlifted"
+                SpecialtyHintTitleToken    = "DRNJAVYWZZ"
+                SpecialtyHintBodyToken     = "WFDQQPKCLN"
+                SpecialtyHintExtendedToken = "ARDXKSHFIO"
+                ShowAsFilterInShowroom = True
+            )
+        ),
+        (
+            "_choc",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_shock"
+                SpecialtyHintTitleToken    = "HYFFKJIDVC"
+                SpecialtyHintBodyToken     = "ZFJUSSGJXR"
+                SpecialtyHintExtendedToken = "JTXMKMYWPL"
+                ShowAsFilterInShowroom = True
+            )
+        ),
+        (
+            "_electronic_warfare",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_electronic_warfare"
+                SpecialtyHintTitleToken    = "TSVZPHOVBU"
+                SpecialtyHintBodyToken     = "WNBCASMQQC"
+                SpecialtyHintExtendedToken = "GWMUGGFPRZ"
+                ShowAsFilterInShowroom = True
+            )
+        ),
+        (
+            "_eo_dazzler",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_eo_dazzler"
+                SpecialtyHintTitleToken    = "FWEIJWNFYV"
+                SpecialtyHintBodyToken     = "JJTHKZBDVR"
+                SpecialtyHintExtendedToken = "ABFHGHQSQY"
+                ShowAsFilterInShowroom = True
+            )
+        ),
+        (
+            "_era",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_era"
+                SpecialtyHintTitleToken    = "PLSBNXSZEF"
+                SpecialtyHintBodyToken     = "SPZUNHQJFJ"
+                SpecialtyHintExtendedToken = "PHHWJUIYKW"
+                ShowAsFilterInShowroom = True
+            )
+        ),
+        (
+            "_falseflag",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_falseflag"
+                SpecialtyHintTitleToken    = "SIHQPRGNKW"
+                SpecialtyHintBodyToken     = "Body_FFlag"
+                SpecialtyHintExtendedToken = "Ext_FFlag"
+                ShowAsFilterInShowroom = True
+            )
+        ),
+        (
+            "_fireDirection",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_fireDirection"
+                SpecialtyHintTitleToken    = "LJIYEHNXPY"
+                SpecialtyHintBodyToken     = "XMIJYQCDLR"
+                SpecialtyHintExtendedToken = "RPNBOROUDT"
+                ShowAsFilterInShowroom = False
+            )
+        ),
+        (
+            "_gsr",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_gsr"
+                SpecialtyHintTitleToken    = "ZHWAHMBMTI"
+                SpecialtyHintBodyToken     = "GUCKZLWCRO"
+                SpecialtyHintExtendedToken = "GGUYVLGVCX"
+                ShowAsFilterInShowroom = True
+            )
+        ),
+        (
+            "_guidedmunition",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyHintTitleToken    = "RGAHSNEABX"
+                SpecialtyHintBodyToken     = "WRJYXEDJKO"
+                SpecialtyHintExtendedToken = "EJVINZUHAB"
+                ShowAsFilterInShowroom = False
+            )
+        ),
+        (
+            "_ifv",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_ifv_2"
+                SpecialtyHintTitleToken    = "SKBEKQUOWJ"
+                SpecialtyHintBodyToken     = "VBIRXDYEPR"
+                SpecialtyHintExtendedToken = "XKAFYZLHWN"
+                ShowAsFilterInShowroom = True
+            )
+        ),
+        (
+            "_jammer",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_jammer"
+                SpecialtyHintTitleToken    = "HNVPJAYHUW"
+                SpecialtyHintBodyToken     = "ALBKAPAUKL"
+                SpecialtyHintExtendedToken = "OMRDTDBYQW"
+                ShowAsFilterInShowroom = True
+            )
+        ),
+        (
+            "_laserdesignator",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyHintTitleToken    = "VRHIUPVROI"
+                SpecialtyHintBodyToken     = "OGUNVXTNLM"
+                SpecialtyHintExtendedToken = "DVODPWBUTW"
+                ShowAsFilterInShowroom = False
+            )
+        ),
+        (
+            "_leader",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_cmd"
+                SpecialtyHintTitleToken    = "YNKZWZNLDT"
+                SpecialtyHintBodyToken     = "REIDQXMIMJ"
+                SpecialtyHintExtendedToken = "CSUKPTRVAR"
+                ShowAsFilterInShowroom = False
+            )
+        ),
+        (
+            "_militia",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_militia"
+                SpecialtyHintTitleToken    = "FPVDUPYIFO"
+                SpecialtyHintBodyToken     = "TTHFPULZNS"
+                SpecialtyHintExtendedToken = "QWWPCCDOMH"
+                ShowAsFilterInShowroom = True
+            )
+        ),
+        (
+            "_mountaineer",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_mountaineer"
+                SpecialtyHintTitleToken    = "OTCBUVJGIF"
+                SpecialtyHintBodyToken     = "DVQVPNIGPN"
+                SpecialtyHintExtendedToken = "ORMYAKKBYG"
+                ShowAsFilterInShowroom = True
+            )
+        ),
+        (
+            "_mp",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_mp"
+                SpecialtyHintTitleToken    = "BUYTRAWJCH"
+                SpecialtyHintBodyToken     = "UKMPLYOTKP"
+                SpecialtyHintExtendedToken = "VTQBDKPSFY"
+                ShowAsFilterInShowroom = True
+            )
+        ),
+        (
+            "_para",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_para"
+                SpecialtyHintTitleToken    = "CWSHQEZXJG"
+                SpecialtyHintBodyToken     = "YNUTASHOHT"
+                SpecialtyHintExtendedToken = "SJUDEPLDMU"
+                ShowAsFilterInShowroom = True
+            )
+        ),
+        (
+            "_reco",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_reco_deploy"
+                SpecialtyHintTitleToken    = "DSCOQBSCCN"
+                SpecialtyHintBodyToken     = "IBLWJFVPAZ"
+                SpecialtyHintExtendedToken = "HMSDSNIOAH"
+                ShowAsFilterInShowroom = False
+            )
+        ),
+        (
+            "_reservist",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_reserviste"
+                SpecialtyHintTitleToken    = "XZZROHBDLX"
+                SpecialtyHintBodyToken     = "DNLMBTAJCI"
+                SpecialtyHintExtendedToken = "PFTATHDCER"
+                ShowAsFilterInShowroom = True
+            )
+        ),
+        (
+            "_resolute",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_resolute"
+                SpecialtyHintTitleToken    = "JOSSGTFICR"
+                SpecialtyHintBodyToken     = "TTKKJMWGPA"
+                SpecialtyHintExtendedToken = "YSPNDCTXOL"
+                ShowAsFilterInShowroom = True
+            )
+        ),
+        (
+            "_security",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_security"
+                SpecialtyHintTitleToken    = "MLJIRDYOXA"
+                SpecialtyHintBodyToken     = "IHJPQTAJCT"
+                SpecialtyHintExtendedToken = "THDEWVKNZI"
+                ShowAsFilterInShowroom = True
+            )
+        ),
+        (
+            "_sf",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_sf"
+                SpecialtyHintTitleToken    = "KFSLDLHQES"
+                SpecialtyHintBodyToken     = "BYWHTUHHIT"
+                SpecialtyHintExtendedToken = "LXHBLLQUDL"
+                ShowAsFilterInShowroom = True
+            )
+        ),
+        (
+            "_singint",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_singint"
+                SpecialtyHintTitleToken    = "NWRIKXJLND"
+                SpecialtyHintBodyToken     = "BERHQPQPHU"
+                SpecialtyHintExtendedToken = "OAQYKODKFQ"
+                ShowAsFilterInShowroom = True
+            )
+        ),
+        (
+            "_smoke_launcher",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_smoke_launcher"
+                SpecialtyHintTitleToken    = "XQSJEKJCWA"
+                SpecialtyHintBodyToken     = "PPQXITMDXU"
+                SpecialtyHintExtendedToken = "VLYGCDSRHV"
+                ShowAsFilterInShowroom = True
+            )
+        ),
+        (
+            "_sniper",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_sniper"
+                SpecialtyHintTitleToken    = "QSLZFXXVBT"
+                SpecialtyHintBodyToken     = "RMWWPIEKBR"
+                SpecialtyHintExtendedToken = "CWDGYQVLLC"
+                ShowAsFilterInShowroom = True
+            )
+        ),
+        (
+            "_transport1",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_transport1"
+                SpecialtyHintTitleToken    = "PGBAFCGCMG"
+                SpecialtyHintBodyToken     = "FCMDHDUUTO"
+                SpecialtyHintExtendedToken = "OPIKYFBZSX"
+                ShowAsFilterInShowroom = True
+            )
+        ),
+        (
+            "_transport2",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_transport2"
+                SpecialtyHintTitleToken    = "SZKLCJLYOW"
+                SpecialtyHintBodyToken     = "AYHDTFWXIG"
+                SpecialtyHintExtendedToken = "DNZLCAJJBE"
+                ShowAsFilterInShowroom = True
+            )
+        ),
+        (
+            "appui",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_appui"
+                SpecialtyHintTitleToken    = "KVOMNGVYBX"
+                SpecialtyHintBodyToken     = "NIVSTJEQPI"
+                ShowAsFilterInShowroom = True
+            )
+        ),
+        (
+            "armor",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_armor"
+                SpecialtyHintTitleToken    = "VYMQMINNFG"
+                SpecialtyHintBodyToken     = "XVPCXOITMI"
+                ShowAsFilterInShowroom = True
+            )
+        ),
+        (
+            "assault",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_assault"
+                SpecialtyHintTitleToken    = "WRXSCSRSJT"
+                SpecialtyHintBodyToken     = "TGITLCGGCD"
+                ShowAsFilterInShowroom = False
+            )
+        ),
+        (
+            "assault_half",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_assault_half"
+                SpecialtyHintTitleToken    = "KJKMOQGWHI"
+                SpecialtyHintBodyToken     = "VXPXCPSVHB"
+                ShowAsFilterInShowroom = False
+            )
+        ),
+        (
+            "bomb",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_bomb"
+                SpecialtyHintTitleToken    = "TTYQBAIHUI"
+                SpecialtyHintBodyToken     = "MROFZGCQCS"
+                ShowAsFilterInShowroom = False
+            )
+        ),
+        (
+            "engineer",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_engineer"
+                SpecialtyHintTitleToken    = "MYUEQEOTJD"
+                SpecialtyHintBodyToken     = "SXHFUVVURL"
+                ShowAsFilterInShowroom = True
+            )
+        ),
+        (
+            "flak",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_flak"
+                SpecialtyHintTitleToken    = "AYJONPOBIT"
+                SpecialtyHintBodyToken     = "ZMSEOCXAMK"
+                ShowAsFilterInShowroom = False
+            )
+        ),
+        (
+            "gunship",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_gunship"
+                SpecialtyHintTitleToken    = "KFJVLCTDZK"
+                SpecialtyHintBodyToken     = "GBFQVMCWJU"
+                ShowAsFilterInShowroom = False
+            )
+        ),
+        (
+            "half",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_half"
+                SpecialtyHintTitleToken    = "VJMEJCSLJF"
+                SpecialtyHintBodyToken     = "LVHIBNMOIL"
+                ShowAsFilterInShowroom = False
+            )
+        ),
+        (
+            "howitzer",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_howitzer"
+                SpecialtyHintTitleToken    = "FUCVOGQOWH"
+                SpecialtyHintBodyToken     = "EGHHQHKPHO"
+                ShowAsFilterInShowroom = True
+            )
+        ),
+        (
+            "hq",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_hq"
+                SpecialtyHintTitleToken    = "KSIPPUIXTO"
+                SpecialtyHintBodyToken     = "QVDCGNHJOX"
+                ShowAsFilterInShowroom = True
+            )
+        ),
+        (
+            "hq_helo",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_hq"
+                SpecialtyHintTitleToken    = "YMVYEELSTX"
+                SpecialtyHintBodyToken     = "QVDCGNHJOX"
+                ShowAsFilterInShowroom = True
+            )
+        ),
+        (
+            "hq_inf",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_hq"
+                SpecialtyHintTitleToken    = "CSDDTKXJEM"
+                SpecialtyHintBodyToken     = "QVDCGNHJOX"
+                ShowAsFilterInShowroom = True
+            )
+        ),
+        (
+            "hq_tank",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_hq"
+                SpecialtyHintTitleToken    = "PQZYDVUPFK"
+                SpecialtyHintBodyToken     = "QVDCGNHJOX"
+                ShowAsFilterInShowroom = True
+            )
+        ),
+        (
+            "hq_veh",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_hq"
+                SpecialtyHintTitleToken    = "EQYLCKGFHP"
+                SpecialtyHintBodyToken     = "QVDCGNHJOX"
+                ShowAsFilterInShowroom = True
+            )
+        ),
+        (
+            "ifv",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_ifv"
+                SpecialtyHintTitleToken    = "WJNFVCGXIG"
+                SpecialtyHintBodyToken     = "TKYCQOXMIT"
+                ShowAsFilterInShowroom = True
+            )
+        ),
+        (
+            "infanterie",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_infantry"
+                SpecialtyHintTitleToken    = "XNRSFVIBPP"
+                SpecialtyHintBodyToken     = "WUSDSPXWGV"
+                ShowAsFilterInShowroom = False
+            )
+        ),
+        (
+            "infantry",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_infantry"
+                SpecialtyHintTitleToken    = "IFYTKHYQBH"
+                SpecialtyHintBodyToken     = "NWUARXVFDT"
+                ShowAsFilterInShowroom = True
+            )
+        ),
+        (
+            "infantry_cmd",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_infantry"
+                SpecialtyHintBodyToken     = "NWUARXVFDT"
+                ShowAsFilterInShowroom = False
+            )
+        ),
+        (
+            "infantry_cmd_choc_para",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_infantry"
+                SpecialtyHintTitleToken    = "YLZONFRFTS"
+                SpecialtyHintBodyToken     = "NWUARXVFDT"
+                ShowAsFilterInShowroom = False
+            )
+        ),
+        (
+            "infantry_cmd_choc_para_small",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_infantry"
+                SpecialtyHintTitleToken    = "ZPGIUYYTAQ"
+                SpecialtyHintBodyToken     = "NWUARXVFDT"
+                ShowAsFilterInShowroom = False
+            )
+        ),
+        (
+            "infantry_cmd_sf_para",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_infantry"
+                SpecialtyHintBodyToken     = "NWUARXVFDT"
+                ShowAsFilterInShowroom = False
+            )
+        ),
+        (
+            "infantry_half",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_infantry_half"
+                SpecialtyHintTitleToken    = "RBJBLQADOH"
+                SpecialtyHintBodyToken     = "ZDHZNBWLVF"
+                ShowAsFilterInShowroom = False
+            )
+        ),
+        (
+            "infantry_half_choc",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_infantry_half"
+                SpecialtyHintBodyToken     = "ZDHZNBWLVF"
+                ShowAsFilterInShowroom = False
+            )
+        ),
+        (
+            "infantry_half_cmd",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_infantry_half"
+                SpecialtyHintBodyToken     = "ZDHZNBWLVF"
+                ShowAsFilterInShowroom = False
+            )
+        ),
+        (
+            "infantry_half_ifv",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_infantry_half"
+                SpecialtyHintBodyToken     = "ZDHZNBWLVF"
+                ShowAsFilterInShowroom = False
+            )
+        ),
+        (
+            "infantry_half_para",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_infantry_half"
+                SpecialtyHintBodyToken     = "ZDHZNBWLVF"
+                ShowAsFilterInShowroom = False
+            )
+        ),
+        (
+            "infantry_half_sf",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_infantry_half"
+                SpecialtyHintBodyToken     = "ZDHZNBWLVF"
+                ShowAsFilterInShowroom = False
+            )
+        ),
+        (
+            "line",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_infantry"
+                SpecialtyHintTitleToken    = "GQPQRAFLDI"
+                SpecialtyHintBodyToken     = "NOXIRYAMLV"
+                ShowAsFilterInShowroom = False
+            )
+        ),
+        (
+            "mlrs",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_mlrs"
+                SpecialtyHintTitleToken    = "AFJDSIVAHJ"
+                SpecialtyHintBodyToken     = "OPRONSNCTO"
+                ShowAsFilterInShowroom = True
+            )
+        ),
+        (
+            "mortar",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_mortar"
+                SpecialtyHintTitleToken    = "THFMHCDEIO"
+                SpecialtyHintBodyToken     = "WYUYTYZAHE"
+                ShowAsFilterInShowroom = True
+            )
+        ),
+        (
+            "reco",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_reco"
+                SpecialtyHintTitleToken    = "AJZGBZYDQL"
+                SpecialtyHintBodyToken     = "XJEANPNPRF"
+                SpecialtyHintExtendedToken = "KADDENGJDS"
+                ShowAsFilterInShowroom = True
+            )
+        ),
+        (
+            "sead",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_sead"
+                SpecialtyHintTitleToken    = "HXDESARIUF"
+                SpecialtyHintBodyToken     = "RTIPQYJAEV"
+                ShowAsFilterInShowroom = True
+            )
+        ),
+        (
+            "special",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_special"
+                SpecialtyHintTitleToken    = "GEOVZDBVBT"
+                ShowAsFilterInShowroom = False
+            )
+        ),
+        (
+            "squad",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_infantry"
+                SpecialtyHintTitleToken    = "VNTEVZCFTH"
+                SpecialtyHintBodyToken     = "PIFQSXQYAZ"
+                ShowAsFilterInShowroom = False
+            )
+        ),
+        (
+            "supply",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_supply"
+                SpecialtyHintTitleToken    = "XARQSRSXNK"
+                SpecialtyHintBodyToken     = "NVCHTWNNGZ"
+                ShowAsFilterInShowroom = True
+            )
+        ),
+        (
+            "tank_A",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_A"
+                SpecialtyHintTitleToken    = "EPTCYEWXNW"
+                SpecialtyHintBodyToken     = "MFYCRLTFAU"
+                ShowAsFilterInShowroom = False
+            )
+        ),
+        (
+            "tank_B",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_B"
+                SpecialtyHintTitleToken    = "VUVDBNFDYX"
+                SpecialtyHintBodyToken     = "MFYCRLTFAU"
+                ShowAsFilterInShowroom = False
+            )
+        ),
+        (
+            "tank_C",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_C"
+                SpecialtyHintTitleToken    = "BHZJSYQRLF"
+                SpecialtyHintBodyToken     = "MFYCRLTFAU"
+                ShowAsFilterInShowroom = False
+            )
+        ),
+        (
+            "tank_D",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_D"
+                SpecialtyHintTitleToken    = "JVEDODJPNM"
+                SpecialtyHintBodyToken     = "MFYCRLTFAU"
+                ShowAsFilterInShowroom = False
+            )
+        ),
+        (
+            "team",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_team"
+                SpecialtyHintTitleToken    = "PWLQGRCLQB"
+                SpecialtyHintBodyToken     = "ONEJEZTOYS"
+                ShowAsFilterInShowroom = False
+            )
+        ),
+        (
+            "test",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyHintTitleToken    = "test"
+                SpecialtyHintBodyToken     = "test"
+                SpecialtyHintExtendedToken = "test"
+                ShowAsFilterInShowroom = False
+            )
+        ),
+        (
+            "transport",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_transport"
+                SpecialtyHintTitleToken    = "VZCBEYSPBA"
+                SpecialtyHintBodyToken     = "FBVQTNKGDN"
+                ShowAsFilterInShowroom = True
+            )
+        ),
+        (
+            "uav",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_uav"
+                SpecialtyHintTitleToken    = "KNQFXISJFI"
+                SpecialtyHintBodyToken     = "UKLNNEMOYK"
+                SpecialtyHintExtendedToken = "BWVDZIMIMQ"
+                ShowAsFilterInShowroom = True
+            )
+        ),
+        (
+            "veh",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_veh"
+                SpecialtyHintTitleToken    = "HCHUHTBIYJ"
+                ShowAsFilterInShowroom = False
+            )
+        ),
+    ]
+)

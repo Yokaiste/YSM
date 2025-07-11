@@ -1,0 +1,14 @@
+export Modele_FV105_Sultan_para_BEL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/CMD/FV105_Sultan/FV105_Sultan.fbx"
+)
+
+export Modele_FV105_Sultan_para_BEL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/CMD/FV105_Sultan_MID/FV105_Sultan_MID.fbx"
+)
+
+export Modele_FV105_Sultan_para_BEL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/CMD/FV105_Sultan_LOW/FV105_Sultan_LOW.fbx"
+)

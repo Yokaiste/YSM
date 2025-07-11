@@ -1,0 +1,19 @@
+export Modele_Epervier_BEL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Avion/MBLE_Epervier/MBLE_Epervier.fbx"
+)
+
+export Modele_Epervier_BEL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Avion/MBLE_Epervier_MID/MBLE_Epervier_MID.fbx"
+)
+
+export Modele_Epervier_BEL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Avion/MBLE_Epervier_LOW/MBLE_Epervier_LOW.fbx"
+)
+
+export Modele_Epervier_BEL_train is TResourceMesh
+(
+    Mesh=ModelFile_Support_Drones
+)

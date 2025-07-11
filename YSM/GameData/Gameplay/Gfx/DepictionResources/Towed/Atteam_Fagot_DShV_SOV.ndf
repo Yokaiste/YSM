@@ -1,0 +1,3 @@
+export Modele_Atteam_Fagot_DShV_SOV is TResourceMesh ( Mesh="GameData:/Assets/3D/Units/URSS/Antichar/Fagot_Launcher/Fagot.fbx")
+export Modele_Atteam_Fagot_DShV_SOV_MID is TResourceMesh ( Mesh="GameData:/Assets/3D/Units/URSS/Antichar/Fagot_Launcher_MID/Fagot_MID.fbx")
+export Modele_Atteam_Fagot_DShV_SOV_LOW is TResourceMesh ( Mesh="GameData:/Assets/3D/Units/URSS/Antichar/Fagot_Launcher_LOW/Fagot_LOW.fbx")

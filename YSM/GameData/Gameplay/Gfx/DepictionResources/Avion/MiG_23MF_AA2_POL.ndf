@@ -1,0 +1,22 @@
+export Modele_MiG_23MF_AA2_POL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Avion/MiG_23MF/MiG_23MF_AA.fbx"
+    Textures="GameData:/Assets/3D/Units/POL/Avion/MiG_23MF"
+)
+
+export Modele_MiG_23MF_AA2_POL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Avion/MiG_23MF_MID/MiG_23MF_AA_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/POL/Avion/MiG_23MF_MID"
+)
+
+export Modele_MiG_23MF_AA2_POL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Avion/MiG_23MF_LOW/MiG_23MF_AA_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/POL/Avion/MiG_23MF_LOW"
+)
+
+export Modele_MiG_23MF_AA2_POL_train is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Avion/MiG_23MF/MiG_23MF_Train.fbx"
+)

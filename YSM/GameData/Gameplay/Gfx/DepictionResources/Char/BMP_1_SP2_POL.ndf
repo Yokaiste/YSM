@@ -1,0 +1,17 @@
+export Modele_BMP_1_SP2_POL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/APC/BMP1P_reco/BMP1P_reco.fbx"
+    Textures="GameData:/Assets/3D/Units/POL/APC/BMP1P_reco"
+)
+
+export Modele_BMP_1_SP2_POL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/APC/BMP1P_reco_MID/BMP1P_reco_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/POL/APC/BMP1P_reco_MID"
+)
+
+export Modele_BMP_1_SP2_POL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/APC/BMP1P_reco_LOW/BMP1P_reco_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/POL/APC/BMP1P_reco_LOW"
+)

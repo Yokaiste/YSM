@@ -1,0 +1,20 @@
+export Modele_PT76B_POL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Char/PT_76B/PT_76B.fbx"
+    Textures="GameData:/Assets/3D/Units/POL/Char/PT_76B_Non_Naval"
+)
+
+export Modele_PT76B_POL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Char/PT_76B_MID/PT_76B_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/POL/Char/PT_76B_Non_Naval_MID"
+)
+
+export Modele_PT76B_POL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Char/PT_76B_LOW/PT_76B_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/POL/Char/PT_76B_Non_Naval_LOW"
+)
+
+
+

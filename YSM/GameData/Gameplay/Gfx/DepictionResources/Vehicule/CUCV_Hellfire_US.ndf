@@ -1,0 +1,3 @@
+export Modele_CUCV_Hellfire_US     is TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/Vehicule/CUCV_Hellfire/CUCV_Hellfire.fbx" )
+export Modele_CUCV_Hellfire_US_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/Vehicule/CUCV_Hellfire_MID/CUCV_Hellfire_MID.fbx" )
+export Modele_CUCV_Hellfire_US_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/Vehicule/CUCV_Hellfire_LOW/CUCV_Hellfire_LOW.fbx" )

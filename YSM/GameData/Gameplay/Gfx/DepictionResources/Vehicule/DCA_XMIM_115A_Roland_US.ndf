@@ -1,0 +1,3 @@
+export Modele_DCA_XMIM_115A_Roland_US     is TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/DCA/DCA_XMIM_115A_ROLAND/DCA_XMIM_115A_ROLAND.fbx" )
+export Modele_DCA_XMIM_115A_Roland_US_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/DCA/DCA_XMIM_115A_ROLAND_MID/DCA_XMIM_115A_ROLAND_MID.fbx" )
+export Modele_DCA_XMIM_115A_Roland_US_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/DCA/DCA_XMIM_115A_ROLAND_LOW/DCA_XMIM_115A_ROLAND_LOW.fbx" )

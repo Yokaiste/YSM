@@ -1,0 +1,14 @@
+export Modele_FV107_Scimitar_para_BEL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Char/FV107_Scimitar/FV107_Scimitar.fbx"
+)
+
+export Modele_FV107_Scimitar_para_BEL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Char/FV107_Scimitar_MID/FV107_Scimitar_MID.fbx"
+)
+
+export Modele_FV107_Scimitar_para_BEL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Char/FV107_Scimitar_LOW/FV107_Scimitar_LOW.fbx"
+)

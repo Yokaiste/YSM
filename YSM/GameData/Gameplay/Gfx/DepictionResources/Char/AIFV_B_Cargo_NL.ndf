@@ -1,0 +1,14 @@
+export Modele_AIFV_B_Cargo_NL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/NL/APC/AIFV_B_Cargo/AIFV_B_Cargo.fbx"
+)
+
+export Modele_AIFV_B_Cargo_NL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/NL/APC/AIFV_B_Cargo_MID/AIFV_B_Cargo_MID.fbx"
+)
+
+export Modele_AIFV_B_Cargo_NL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/NL/APC/AIFV_B_Cargo_LOW/AIFV_B_Cargo_LOW.fbx"
+)

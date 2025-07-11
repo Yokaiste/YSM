@@ -1,0 +1,14 @@
+export Modele_M60A3_Patton_US is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Char/M60A3_Patton/M60A3_Patton.fbx"
+)
+
+export Modele_M60A3_Patton_US_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Char/M60A3_Patton_MID/M60A3_Patton_MID.fbx"
+)
+
+export Modele_M60A3_Patton_US_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Char/M60A3_Patton_LOW/M60A3_Patton_LOW.fbx"
+)

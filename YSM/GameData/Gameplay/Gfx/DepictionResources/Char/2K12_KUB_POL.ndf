@@ -1,0 +1,20 @@
+export Modele_2K12_KUB_POL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/DCA/2K12_KUB/2K12_KUB.fbx"
+    Textures="GameData:/Assets/3D/Units/POL/DCA/2K12_KUB"
+)
+
+export Modele_2K12_KUB_POL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/DCA/2K12_KUB_MID/2K12_KUB_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/POL/DCA/2K12_KUB_MID"
+)
+
+export Modele_2K12_KUB_POL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/DCA/2K12_KUB_LOW/2K12_KUB_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/POL/DCA/2K12_KUB_LOW"
+)
+
+
+

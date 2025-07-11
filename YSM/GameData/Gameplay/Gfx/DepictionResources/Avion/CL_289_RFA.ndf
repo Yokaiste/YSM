@@ -1,0 +1,19 @@
+export Modele_CL_289_RFA is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Avion/CL_289/CL_289.fbx"
+)
+
+export Modele_CL_289_RFA_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Avion/CL_289_MID/CL_289_MID.fbx"
+)
+
+export Modele_CL_289_RFA_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Avion/CL_289_LOW/CL_289_LOW.fbx"
+)
+
+export Modele_CL_289_RFA_train is TResourceMesh
+(
+    Mesh=ModelFile_Support_Drones
+)

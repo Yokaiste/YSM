@@ -1,0 +1,14 @@
+export Modele_OT_62_TOPAS_JOD_POL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/APC/OT_62_TOPAS_JOD/OT_62_TOPAS_JOD.fbx"
+)
+
+export Modele_OT_62_TOPAS_JOD_POL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/APC/OT_62_TOPAS_JOD_MID/OT_62_TOPAS_JOD_MID.fbx"
+)
+
+export Modele_OT_62_TOPAS_JOD_POL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/APC/OT_62_TOPAS_JOD_LOW/OT_62_TOPAS_JOD_LOW.fbx"
+)

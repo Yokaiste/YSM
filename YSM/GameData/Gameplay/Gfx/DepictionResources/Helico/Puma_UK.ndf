@@ -1,0 +1,14 @@
+export Modele_Puma_UK is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Helico/Puma/Puma.fbx"
+)
+
+export Modele_Puma_UK_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Helico/Puma_MID/Puma_MID.fbx"
+)
+
+export Modele_Puma_UK_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Helico/Puma_LOW/Puma_LOW.fbx"
+)

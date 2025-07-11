@@ -1,0 +1,15 @@
+export ModelFile_M113A1_NG_US is "GameData:/Assets/3D/Units/US/APC/M113A1/M113A1.fbx"
+export Modele_M113A1_NG_US is TResourceMesh
+(
+    Mesh=ModelFile_M113A1_NG_US
+)
+export ModelFile_M113A1_NG_US_MID is "GameData:/Assets/3D/Units/US/APC/M113A1_MID/M113A1_MID.fbx"
+export Modele_M113A1_NG_US_MID is TResourceMesh
+(
+    Mesh=ModelFile_M113A1_NG_US_MID
+)
+export ModelFile_M113A1_NG_US_LOW is "GameData:/Assets/3D/Units/US/APC/M113A1_LOW/M113A1_LOW.fbx"
+export Modele_M113A1_NG_US_LOW is TResourceMesh
+(
+    Mesh=ModelFile_M113A1_NG_US_LOW
+)

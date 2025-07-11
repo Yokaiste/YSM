@@ -1,0 +1,25 @@
+
+export CriticalEffectModule_TestUnits is TCriticalEffectModuleDescriptor
+(
+    Bounds = (1,100)
+
+    PierceEffectsOnFront =
+    [
+        CriticalEffect_AmmoExplosion(Roll = (1,50)),
+    ]
+
+    PierceEffectsOnSides =
+    [
+        CriticalEffect_AmmoExplosion(Roll = (1,50)),
+    ]
+
+    PierceEffectsOnRear =
+    [
+        CriticalEffect_AmmoExplosion(Roll = (1,50)),
+    ]
+
+    PierceEffectsOnTop =
+    [
+        CriticalEffect_AmmoExplosion(Roll = (1,50)),
+    ]
+)

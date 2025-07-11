@@ -1,0 +1,15 @@
+export ModelFile_Gazelle_HOT_FR is "GameData:/Assets/3D/Units/FR/Helico/Gazelle_HOT/Gazelle_HOT.fbx"
+export Modele_Gazelle_HOT_FR is TResourceMesh
+(
+    Mesh=ModelFile_Gazelle_HOT_FR
+)
+export ModelFile_Gazelle_HOT_FR_MID is "GameData:/Assets/3D/Units/FR/Helico/Gazelle_HOT_MID/Gazelle_HOT_MID.fbx"
+export Modele_Gazelle_HOT_FR_MID is TResourceMesh
+(
+    Mesh=ModelFile_Gazelle_HOT_FR_MID
+)
+export ModelFile_Gazelle_HOT_FR_LOW is "GameData:/Assets/3D/Units/FR/Helico/Gazelle_HOT_LOW/Gazelle_HOT_LOW.fbx"
+export Modele_Gazelle_HOT_FR_LOW is TResourceMesh
+(
+    Mesh=ModelFile_Gazelle_HOT_FR_LOW
+)

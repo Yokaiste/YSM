@@ -1,0 +1,17 @@
+export Modele_FV603_Saracen_UK is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/APC/FV603_Saracen/FV603_Saracen.fbx"
+)
+
+export Modele_FV603_Saracen_UK_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/APC/FV603_Saracen_MID/FV603_Saracen_MID.fbx"
+)
+
+export Modele_FV603_Saracen_UK_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/APC/FV603_Saracen_LOW/FV603_Saracen_LOW.fbx"
+)
+
+
+

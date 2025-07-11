@@ -1,0 +1,19 @@
+export Modele_Harrier_RKT1_UK is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Avion/Harrier_GR3/Harrier_GR3.fbx"
+)
+
+export Modele_Harrier_RKT1_UK_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Avion/Harrier_GR3_MID/Harrier_GR3_MID.fbx"
+)
+
+export Modele_Harrier_RKT1_UK_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Avion/Harrier_GR3_LOW/Harrier_GR3_LOW.fbx"
+)
+
+export Modele_Harrier_RKT1_UK_train is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Avion/Harrier_GR3/Harrier_GR3_train.fbx"
+)

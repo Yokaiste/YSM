@@ -1,0 +1,3 @@
+export Modele_Atteam_Dragon_NL is TResourceMesh ( Mesh="GameData:/Assets/3D/Units/Ammo/Armes/HMG_trepied/M47_Dragon_trepied.fbx")
+export Modele_Atteam_Dragon_NL_MID is TResourceMesh ( Mesh="GameData:/Assets/3D/Units/Ammo/Armes/HMG_trepied/M47_Dragon_trepied.fbx")
+export Modele_Atteam_Dragon_NL_LOW is TResourceMesh ( Mesh="GameData:/Assets/3D/Units/Ammo/Armes/HMG_trepied/M47_Dragon_trepied.fbx")

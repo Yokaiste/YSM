@@ -1,0 +1,19 @@
+export Modele_T64B_SOV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Char/T64B/T64B.fbx"
+)
+
+export Modele_T64B_SOV_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Char/T64B_MID/T64B_MID.fbx"
+)
+
+export Modele_T64B_SOV_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Char/T64B_LOW/T64B_LOW.fbx"
+)
+
+export Modele_T64B_SOV_Tourelle_02 is TResourceMesh
+(
+    Mesh=ModelFile_NSVT_no_ammo
+)

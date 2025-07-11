@@ -1,0 +1,17 @@
+export Modele_PT76B_tank_DDR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Char/PT_76B/PT_76B.fbx"
+)
+
+export Modele_PT76B_tank_DDR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Char/PT_76B_MID/PT_76B_MID.fbx"
+)
+
+export Modele_PT76B_tank_DDR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Char/PT_76B_LOW/PT_76B_LOW.fbx"
+)
+
+
+

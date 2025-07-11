@@ -1,0 +1,19 @@
+export Modele_F117_Nighthawk_US is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Avion/F117_Nighthawk/F117_Nighthawk.fbx"
+)
+
+export Modele_F117_Nighthawk_US_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Avion/F117_Nighthawk_MID/F117_Nighthawk_MID.fbx"
+)
+
+export Modele_F117_Nighthawk_US_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Avion/F117_Nighthawk_LOW/F117_Nighthawk_LOW.fbx"
+)
+
+export Modele_F117_Nighthawk_US_train is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Avion/F117_Nighthawk/F117_Nighthawk_Train.fbx"
+)

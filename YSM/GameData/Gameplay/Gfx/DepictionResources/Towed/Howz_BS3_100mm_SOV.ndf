@@ -1,0 +1,3 @@
+export Modele_Howz_BS3_100mm_SOV is TResourceMesh( Mesh="GameData:/Assets/3D/Units/URSS/Canon/Howz_BS3_100mm/Howz_BS3_100mm.fbx")
+export Modele_Howz_BS3_100mm_SOV_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/URSS/Canon/Howz_BS3_100mm_MID/Howz_BS3_100mm_MID.fbx")
+export Modele_Howz_BS3_100mm_SOV_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/URSS/Canon/Howz_BS3_100mm_LOW/Howz_BS3_100mm_LOW.fbx")

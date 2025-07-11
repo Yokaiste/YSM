@@ -1,0 +1,14 @@
+export Modele_JOH_58C_US is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Helico/JOH_58C/JOH_58C.fbx"
+)
+
+export Modele_JOH_58C_US_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Helico/JOH_58C_MID/JOH_58C_MID.fbx"
+)
+
+export Modele_JOH_58C_US_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Helico/JOH_58C_LOW/JOH_58C_LOW.fbx"
+)

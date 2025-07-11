@@ -1,0 +1,15 @@
+export ModelFile_UH1A_US is "GameData:/Assets/3D/Units/US/Helico/UH_1H_Huey_CMD/UH_1H_Huey_CMD.fbx"
+export Modele_UH1A_US is TResourceMesh
+(
+    Mesh=ModelFile_UH1A_US
+)
+export ModelFile_UH1A_US_MID is "GameData:/Assets/3D/Units/US/Helico/UH_1H_Huey_CMD_MID/UH_1H_Huey_CMD_MID.fbx"
+export Modele_UH1A_US_MID is TResourceMesh
+(
+    Mesh=ModelFile_UH1A_US_MID
+)
+export ModelFile_UH1A_US_LOW is "GameData:/Assets/3D/Units/US/Helico/UH_1H_Huey_CMD_LOW/UH_1H_Huey_CMD_LOW.fbx"
+export Modele_UH1A_US_LOW is TResourceMesh
+(
+    Mesh=ModelFile_UH1A_US_LOW
+)

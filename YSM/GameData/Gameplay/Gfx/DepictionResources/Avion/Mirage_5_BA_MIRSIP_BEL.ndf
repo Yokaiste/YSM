@@ -1,0 +1,19 @@
+export Modele_Mirage_5_BA_MIRSIP_BEL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Avion/MIRAGE_5BA_MIRSIP/MIRAGE_5BA_MIRSIP.fbx"
+)
+
+export Modele_Mirage_5_BA_MIRSIP_BEL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Avion/MIRAGE_5BA_MIRSIP_MID/MIRAGE_5BA_MIRSIP_MID.fbx"
+)
+
+export Modele_Mirage_5_BA_MIRSIP_BEL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Avion/MIRAGE_5BA_MIRSIP_LOW/MIRAGE_5BA_MIRSIP_LOW.fbx"
+)
+
+export Modele_Mirage_5_BA_MIRSIP_BEL_train is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Avion/MIRAGE_5BA_MIRSIP/MIRAGE_5BA_MIRSIP_train.fbx"
+)

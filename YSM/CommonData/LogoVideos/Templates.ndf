@@ -1,0 +1,62 @@
+
+template template_VideoLogoSubtitles
+[
+    Subtitles : LIST<TBUCKTextVideoIntroOneSubtitleDescriptor>
+]
+is TBUCKTextVideoIntroSubtitlesDescriptor
+(
+    ComponentFrame = TUIFramePropertyRTTI
+    (
+        RelativeWidthHeight = [0.8, 0.0]
+        MagnifiableWidthHeight = [0.0, 30.0]
+        AlignementToFather = [0.5, 1.0]
+        AlignementToAnchor = [0.5, 0.0]
+        MagnifiableOffset = [0.0, -60.0]
+    )
+
+    ParagraphStyle = TParagraphStyle
+        (
+        Alignment         = UIText_Center
+        VerticalAlignment = UIText_Bottom
+        InterLine         = 0
+        LineWidth         = 0
+        Balanced          = true
+    )
+    TextStyle = "Subtitle"
+
+    TypefaceToken = "Liberator"
+
+    BigLineAction = ~/BigLineAction/MultiLine
+
+    TextColor = "Subtitle/Default"
+    TextSize = "Subtitle/Default"
+
+    TextDico = ~/LocalisationConstantes/dico_interface_outgame
+
+    Subtitles = <Subtitles>
+)
+
+template template_VideoLogo
+[
+    VideoFile,
+    SubtitleComponent: TBUCKTextVideoIntroSubtitlesDescriptor,
+] is BUCKVideoDescriptor
+(
+    ComponentFrame = TUIFramePropertyRTTI
+    (
+        RelativeWidthHeight = [1.0, 1.0]
+    )
+    Video = TResourceVideo
+    (
+        VideoFile =  <VideoFile>
+    )
+    VideoFrame = TUIFramePropertyRTTI
+    (
+        RelativeWidthHeight = [1.0, 1.0]
+    )
+    HasBackground = true
+    BackgroundBlockColorToken = "Black"
+    CommandExecuteOnFinishVideo = "ApplicationRun::Quit"
+
+    Components = <SubtitleComponent> != nil ? [<SubtitleComponent>] : []
+)

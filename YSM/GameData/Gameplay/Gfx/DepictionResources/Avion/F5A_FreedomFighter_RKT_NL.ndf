@@ -1,0 +1,19 @@
+export Modele_F5A_FreedomFighter_RKT_NL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/NL/Avion/F5A_FreedomFighter/F5A_FreedomFighter.fbx"
+)
+
+export Modele_F5A_FreedomFighter_RKT_NL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/NL/Avion/F5A_FreedomFighter_MID/F5A_FreedomFighter_MID.fbx"
+)
+
+export Modele_F5A_FreedomFighter_RKT_NL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/NL/Avion/F5A_FreedomFighter_LOW/F5A_FreedomFighter_LOW.fbx"
+)
+
+export Modele_F5A_FreedomFighter_RKT_NL_train is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/NL/Avion/F5A_FreedomFighter/F5A_FreedomFighter_train.fbx"
+)

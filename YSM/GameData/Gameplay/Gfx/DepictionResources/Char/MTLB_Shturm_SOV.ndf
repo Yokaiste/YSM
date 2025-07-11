@@ -1,0 +1,14 @@
+export Modele_MTLB_Shturm_SOV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Antichar/MTLB_Shturm/MTLB_Shturm.fbx"
+)
+
+export Modele_MTLB_Shturm_SOV_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Antichar/MTLB_Shturm_MID/MTLB_Shturm_MID.fbx"
+)
+
+export Modele_MTLB_Shturm_SOV_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Antichar/MTLB_Shturm_LOW/MTLB_Shturm_LOW.fbx"
+)

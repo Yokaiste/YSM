@@ -1,0 +1,19 @@
+export Modele_Mirage_5_BA_BEL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Avion/Mirage_5BA/Mirage_5_F.fbx"
+)
+
+export Modele_Mirage_5_BA_BEL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Avion/Mirage_5BA/Mirage_5_F.fbx"
+)
+
+export Modele_Mirage_5_BA_BEL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Avion/Mirage_5BA/Mirage_5_F.fbx"
+)
+
+export Modele_Mirage_5_BA_BEL_train is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Avion/Mirage_5BA/Mirage_5_F_train.fbx"
+)

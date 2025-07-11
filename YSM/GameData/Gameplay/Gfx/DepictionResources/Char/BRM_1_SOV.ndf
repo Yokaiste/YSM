@@ -1,0 +1,17 @@
+export Modele_BRM_1_SOV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/APC/BRM1/BRM1.fbx"
+)
+
+export Modele_BRM_1_SOV_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/APC/BRM1_MID/BRM1_MID.fbx"
+)
+
+export Modele_BRM_1_SOV_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/APC/BRM1_LOW/BRM1_LOW.fbx"
+)
+
+
+

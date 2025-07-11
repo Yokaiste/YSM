@@ -1,0 +1,3 @@
+export Modele_DCA_M55_BEL is TResourceMesh( Mesh="GameData:/Assets/3D/Units/NL/Canon/DCA_M55_Maxson/DCA_M55_Maxson.fbx" Textures="GameData:/Assets/3D/Units/BEL/Canon/DCA_M55_Maxson")
+export Modele_DCA_M55_BEL_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/NL/Canon/DCA_M55_Maxson_MID/DCA_M55_Maxson_MID.fbx" Textures="GameData:/Assets/3D/Units/BEL/Canon/DCA_M55_Maxson_MID")
+export Modele_DCA_M55_BEL_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/NL/Canon/DCA_M55_Maxson_LOW/DCA_M55_Maxson_LOW.fbx" Textures="GameData:/Assets/3D/Units/BEL/Canon/DCA_M55_Maxson_LOW")

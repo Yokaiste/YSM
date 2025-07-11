@@ -1,0 +1,17 @@
+export Modele_BMP_2_DDR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/APC/BMP2/BMP2.fbx"
+)
+
+export Modele_BMP_2_DDR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/APC/BMP2_MID/BMP2_MID.fbx"
+)
+
+export Modele_BMP_2_DDR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/APC/BMP2_LOW/BMP2_LOW.fbx"
+)
+
+
+

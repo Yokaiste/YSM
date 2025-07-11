@@ -1,0 +1,14 @@
+export Modele_Wiesel_TOW_RFA is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Char/WIESEL_TOW/WIESEL_TOW.fbx"
+)
+
+export Modele_Wiesel_TOW_RFA_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Char/WIESEL_TOW_MID/WIESEL_TOW_MID.fbx"
+)
+
+export Modele_Wiesel_TOW_RFA_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Char/WIESEL_TOW_LOW/WIESEL_TOW_LOW.fbx"
+)

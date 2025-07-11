@@ -1,0 +1,14 @@
+export Modele_AMX_10_PC_CMD_FR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/APC/AMX_10PC/AMX_10PC.fbx"
+)
+
+export Modele_AMX_10_PC_CMD_FR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/APC/AMX_10PC_MID/AMX_10PC_MID.fbx"
+)
+
+export Modele_AMX_10_PC_CMD_FR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/APC/AMX_10PC_LOW/AMX_10PC_LOW.fbx"
+)

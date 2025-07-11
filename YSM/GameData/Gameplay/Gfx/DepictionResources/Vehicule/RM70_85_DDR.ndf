@@ -1,0 +1,17 @@
+export ModelFile_RM70_85_DDR is 'GameData:/Assets/3D/Units/DDR/Artillerie/RM70_85/RM70_85.fbx'
+export Modele_RM70_85_DDR is TResourceMesh
+(
+    Mesh=ModelFile_RM70_85_DDR
+)
+
+export ModelFile_RM70_85_DDR_MID is 'GameData:/Assets/3D/Units/DDR/Artillerie/RM70_85_MID/RM70_85_MID.fbx'
+export Modele_RM70_85_DDR_MID is TResourceMesh
+(
+    Mesh=ModelFile_RM70_85_DDR_MID
+)
+
+export ModelFile_RM70_85_DDR_LOW is 'GameData:/Assets/3D/Units/DDR/Artillerie/RM70_85_LOW/RM70_85_LOW.fbx'
+export Modele_RM70_85_DDR_LOW is TResourceMesh
+(
+    Mesh=ModelFile_RM70_85_DDR_LOW
+)

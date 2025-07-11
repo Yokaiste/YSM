@@ -1,0 +1,19 @@
+export Modele_T55AM2_DDR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Char/T55AM2/T55AM2.fbx"
+)
+
+export Modele_T55AM2_DDR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Char/T55AM2_MID/T55AM2_MID.fbx"
+)
+
+export Modele_T55AM2_DDR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Char/T55AM2_LOW/T55AM2_LOW.fbx"
+)
+
+export Modele_T55AM2_DDR_Tourelle_02 is TResourceMesh
+(
+    Mesh=ModelFile_DShK_127mm_t2
+)

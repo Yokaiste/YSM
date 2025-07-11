@@ -1,0 +1,19 @@
+export Modele_F4F_Phantom_II_RKT2_RFA is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Avion/F4E_Phantom_II/F4E_Phantom_II.fbx"
+)
+
+export Modele_F4F_Phantom_II_RKT2_RFA_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Avion/F4E_Phantom_II_MID/F4E_Phantom_II_MID.fbx"
+)
+
+export Modele_F4F_Phantom_II_RKT2_RFA_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Avion/F4E_Phantom_II_LOW/F4E_Phantom_II_LOW.fbx"
+)
+
+export Modele_F4F_Phantom_II_RKT2_RFA_train is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Avion/F4E_Phantom_II/F4E_Phantom_II_train.fbx"
+)

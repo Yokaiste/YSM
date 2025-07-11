@@ -1,0 +1,14 @@
+export Modele_M35_trans_tuto_US is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Vehicule/M35_Cargo/M35_Cargo.fbx"
+)
+
+export Modele_M35_trans_tuto_US_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Vehicule/M35_Cargo_MID/M35_Cargo_MID.fbx"
+)
+
+export Modele_M35_trans_tuto_US_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Vehicule/M35_Cargo_LOW/M35_Cargo_LOW.fbx"
+)

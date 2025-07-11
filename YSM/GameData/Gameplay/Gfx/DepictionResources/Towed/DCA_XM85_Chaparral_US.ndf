@@ -1,0 +1,3 @@
+export Modele_DCA_XM85_Chaparral_US is TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/DCA/DCA_XM85_Chapparal/DCA_XM85_Chapparal.fbx")
+export Modele_DCA_XM85_Chaparral_US_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/DCA/DCA_XM85_Chapparal_MID/DCA_XM85_Chapparal_MID.fbx")
+export Modele_DCA_XM85_Chaparral_US_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/DCA/DCA_XM85_Chapparal_LOW/DCA_XM85_Chapparal_LOW.fbx")
