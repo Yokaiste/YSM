@@ -1,8 +1,8 @@
 # Yokaiste’s Sandbox Mod source files for Warno
 - [YSM Community](https://discord.gg/XmbhaSRqfZ)
 - [Steam Workshop page](https://steamcommunity.com/sharedfiles/filedetails/?id=3296415395)
-- Updated: July 11, 2025
-- Tested on game version: 160324
+- Updated: July 17, 2025
+- Tested on game version: 160943
 
 
 ### License

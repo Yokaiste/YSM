@@ -1,6 +1,7 @@
 import fs from 'fs';
 
 console.log('\n\n\nThis script will process all units and buildings in the game and create DivisionRules for YSM');
+console.log('\n\n\nUpdated: July 17, 2025');
 console.log('\n\n\n');
 
 console.log('Looking for files...');
@@ -21,8 +22,12 @@ console.log('Parsing buildings...');
  */
 const buildings = [];
 function parseBuildings() {
-    for (const line of buildingsFile.split('\n')) {
+    const lines = buildingsFile.split('\n');
+    for (const [i, line] of lines.entries()) {
+        if (!line?.length) continue;
+
         if (line.match(/export Descriptor_Unit_.+ is TEntityDescriptor/g)) {
+            if (lines[i - 1].match(/ysm ignore/g)) continue;
             buildings.push([line.trim().split(' ')[1], []]);
         }
     }
@@ -66,11 +71,13 @@ function parseUnits() {
         return s.replaceAll(/[",]+/g, '').replaceAll(' ', '');
     }
 
-    for (const line of unitsFile.split('\n')) {
+    const lines = unitsFile.split('\n');
+    for (const [i, line] of lines.entries()) {
         if (!line?.length) continue;
 
         if (line.match(/export Descriptor_Unit_.+ is TEntityDescriptor/g)) {
             reset();
+            if (lines[i - 1].match(/ysm ignore/g)) continue;
             name = line.trim().split(' ')[1];
         } else if (name) {
             if (line[0] === ')') {
