@@ -27,7 +27,10 @@ function parseBuildings() {
         if (!line?.length) continue;
 
         if (line.match(/export Descriptor_Unit_.+ is TEntityDescriptor/g)) {
-            if (lines[i - 1].match(/ysm ignore/g)) continue;
+            if (lines[i - 1].match(/ysm ignore/g)) {
+                console.log('Skipping ' + line.trim().split(' ')[1]);
+                continue;
+            }
             buildings.push([line.trim().split(' ')[1], []]);
         }
     }
@@ -77,7 +80,10 @@ function parseUnits() {
 
         if (line.match(/export Descriptor_Unit_.+ is TEntityDescriptor/g)) {
             reset();
-            if (lines[i - 1].match(/ysm ignore/g)) continue;
+            if (lines[i - 1].match(/ysm ignore/g)) {
+                console.log('Skipping ' + line.trim().split(' ')[1]);
+                continue;
+            }
             name = line.trim().split(' ')[1];
         } else if (name) {
             if (line[0] === ')') {
