@@ -37,7 +37,6 @@ export Descriptor_Unit_pion_BEL_10Wing_GROUPE is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_BEL_10Wing_GROUPE'
@@ -133,7 +132,6 @@ export Descriptor_Unit_pion_BEL_11Sq is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_BEL_11Sq'
@@ -229,7 +227,6 @@ export Descriptor_Unit_pion_BEL_1Sq is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_BEL_1Sq'
@@ -317,7 +314,6 @@ export Descriptor_Unit_pion_BEL_1Wing_GROUPE is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_BEL_1Wing_GROUPE'
@@ -413,7 +409,6 @@ export Descriptor_Unit_pion_BEL_23Sq is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_BEL_23Sq'
@@ -509,7 +504,6 @@ export Descriptor_Unit_pion_BEL_2Sq is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_BEL_2Sq'
@@ -597,7 +591,6 @@ export Descriptor_Unit_pion_BEL_2Wing_GROUPE is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_BEL_2Wing_GROUPE'
@@ -693,7 +686,6 @@ export Descriptor_Unit_pion_BEL_31Sq is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_BEL_31Sq'
@@ -789,7 +781,6 @@ export Descriptor_Unit_pion_BEL_349Sq is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_BEL_349Sq'
@@ -885,7 +876,6 @@ export Descriptor_Unit_pion_BEL_350Sq is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_BEL_350Sq'
@@ -973,7 +963,6 @@ export Descriptor_Unit_pion_BEL_3Wing_GROUPE is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_BEL_3Wing_GROUPE'
@@ -1069,7 +1058,6 @@ export Descriptor_Unit_pion_BEL_42Sq is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_BEL_42Sq'
@@ -1165,7 +1153,6 @@ export Descriptor_Unit_pion_BEL_7Sq is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_BEL_7Sq'
@@ -1261,7 +1248,6 @@ export Descriptor_Unit_pion_BEL_8Sq is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_BEL_8Sq'
@@ -1349,7 +1335,6 @@ export Descriptor_Unit_pion_BEL_9Wing_GROUPE is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_BEL_9Wing_GROUPE'
@@ -1437,7 +1422,6 @@ export Descriptor_Unit_pion_BEL_BAF_GROUPE is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_BEL_BAF_GROUPE'
@@ -1533,7 +1517,6 @@ export Descriptor_Unit_pion_NL_Grp_Eindhoven is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_NL_Grp_Eindhoven'
@@ -1629,7 +1612,6 @@ export Descriptor_Unit_pion_NL_Grp_Leeuwarden is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_NL_Grp_Leeuwarden'
@@ -1725,7 +1707,6 @@ export Descriptor_Unit_pion_NL_Grp_Twenthe is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_NL_Grp_Twenthe'
@@ -1821,7 +1802,6 @@ export Descriptor_Unit_pion_NL_Grp_Volkel is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_NL_Grp_Volkel'
@@ -1910,7 +1890,6 @@ export Descriptor_Unit_pion_NL_KLu_GROUPE is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_NL_KLu_GROUPE'
@@ -1998,7 +1977,6 @@ export Descriptor_Unit_pion_POL_3DLMB_GROUPE is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_POL_3DLMB_GROUPE'
@@ -2094,7 +2072,6 @@ export Descriptor_Unit_pion_POL_PLMB40 is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_POL_PLMB40'
@@ -2190,7 +2167,6 @@ export Descriptor_Unit_pion_POL_PLMB8 is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_POL_PLMB8'
@@ -2279,7 +2255,6 @@ export Descriptor_Unit_pion_RDA_1LVD_GROUPE is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_RDA_1LVD_GROUPE'
@@ -2368,7 +2343,6 @@ export Descriptor_Unit_pion_RDA_3LVD_GROUPE is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_RDA_1LVD_GROUPE'
@@ -2464,7 +2438,6 @@ export Descriptor_Unit_pion_RDA_JBG28 is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_RDA_JBG28'
@@ -2560,7 +2533,6 @@ export Descriptor_Unit_pion_RDA_JBG37 is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_RDA_JBG37'
@@ -2656,7 +2628,6 @@ export Descriptor_Unit_pion_RDA_JBG77 is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_RDA_JBG77'
@@ -2752,7 +2723,6 @@ export Descriptor_Unit_pion_RDA_JG1 is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_RDA_JG1'
@@ -2848,7 +2818,6 @@ export Descriptor_Unit_pion_RDA_JG2 is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_RDA_JG2'
@@ -2944,7 +2913,6 @@ export Descriptor_Unit_pion_RDA_JG3 is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_RDA_JG3'
@@ -3040,7 +3008,6 @@ export Descriptor_Unit_pion_RDA_JG7 is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_RDA_JG7'
@@ -3136,7 +3103,6 @@ export Descriptor_Unit_pion_RDA_JG8 is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_RDA_JG8'
@@ -3232,7 +3198,6 @@ export Descriptor_Unit_pion_RDA_JG9 is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_RDA_JG9'
@@ -3320,7 +3285,6 @@ export Descriptor_Unit_pion_RFA_2LwDiv_GROUPE is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_RFA_2LwDiv_GROUPE'
@@ -3416,7 +3380,6 @@ export Descriptor_Unit_pion_RFA_JBG33 is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_RFA_JBG33'
@@ -3512,7 +3475,6 @@ export Descriptor_Unit_pion_RFA_JBG33_2 is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_RFA_JBG33_2'
@@ -3608,7 +3570,6 @@ export Descriptor_Unit_pion_RFA_JBG34 is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_RFA_JBG34'
@@ -3704,7 +3665,6 @@ export Descriptor_Unit_pion_RFA_JBG34_2 is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_RFA_JBG34_2'
@@ -3800,7 +3760,6 @@ export Descriptor_Unit_pion_RFA_JBG35 is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_RFA_JBG35'
@@ -3896,7 +3855,6 @@ export Descriptor_Unit_pion_RFA_JBG35_2 is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_RFA_JBG35_2'
@@ -3992,7 +3950,6 @@ export Descriptor_Unit_pion_RFA_JG74 is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_RFA_JG74'
@@ -4088,7 +4045,6 @@ export Descriptor_Unit_pion_RFA_JG74_2 is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_RFA_JG74_2'
@@ -4176,7 +4132,6 @@ export Descriptor_Unit_pion_SOV_105ADIB_GROUPE is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_SOV_105ADIB_GROUPE'
@@ -4272,7 +4227,6 @@ export Descriptor_Unit_pion_SOV_11ORAP is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_SOV_11ORAP'
@@ -4360,7 +4314,6 @@ export Descriptor_Unit_pion_SOV_125ADIB_GROUPE is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_SOV_125ADIB_GROUPE'
@@ -4448,7 +4401,6 @@ export Descriptor_Unit_pion_SOV_126IAD_GROUPE is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_SOV_126IAD_GROUPE'
@@ -4536,7 +4488,6 @@ export Descriptor_Unit_pion_SOV_16GvIAD_GROUPE is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_SOV_16GvIAD_GROUPE'
@@ -4624,7 +4575,6 @@ export Descriptor_Unit_pion_SOV_16VA_GROUPE is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_SOV_16VA_GROUPE'
@@ -4720,7 +4670,6 @@ export Descriptor_Unit_pion_SOV_19GAPIB is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_SOV_19GAPIB'
@@ -4816,7 +4765,6 @@ export Descriptor_Unit_pion_SOV_20GAPIB is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_SOV_20GAPIB'
@@ -4912,7 +4860,6 @@ export Descriptor_Unit_pion_SOV_294ORAP is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_SOV_294ORAP'
@@ -5008,7 +4955,6 @@ export Descriptor_Unit_pion_SOV_296APIB is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_SOV_296APIB'
@@ -5104,7 +5050,6 @@ export Descriptor_Unit_pion_SOV_31IGAP is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_SOV_31IGAP'
@@ -5200,7 +5145,6 @@ export Descriptor_Unit_pion_SOV_33IAP is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_SOV_33IAP'
@@ -5296,7 +5240,6 @@ export Descriptor_Unit_pion_SOV_357OCHAP is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_SOV_357OCHAP'
@@ -5392,7 +5335,6 @@ export Descriptor_Unit_pion_SOV_35IAP is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_SOV_35IAP'
@@ -5488,7 +5430,6 @@ export Descriptor_Unit_pion_SOV_368OCHAP is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_SOV_368OCHAP'
@@ -5584,7 +5525,6 @@ export Descriptor_Unit_pion_SOV_559APIB is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_SOV_559APIB'
@@ -5672,7 +5612,6 @@ export Descriptor_Unit_pion_SOV_6GvIAD_GROUPE is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_SOV_6GvIAD_GROUPE'
@@ -5768,7 +5707,6 @@ export Descriptor_Unit_pion_SOV_730APIB is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_SOV_730APIB'
@@ -5864,7 +5802,6 @@ export Descriptor_Unit_pion_SOV_73IAP is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_SOV_73IAP'
@@ -5960,7 +5897,6 @@ export Descriptor_Unit_pion_SOV_773IAP is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_SOV_773IAP'
@@ -6056,7 +5992,6 @@ export Descriptor_Unit_pion_SOV_787IAP is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_SOV_787IAP'
@@ -6152,7 +6087,6 @@ export Descriptor_Unit_pion_SOV_833IAP is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_SOV_833IAP'
@@ -6248,7 +6182,6 @@ export Descriptor_Unit_pion_SOV_85IGAP is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_SOV_85IGAP'
@@ -6344,7 +6277,6 @@ export Descriptor_Unit_pion_SOV_911APIB is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_SOV_911APIB'
@@ -6440,7 +6372,6 @@ export Descriptor_Unit_pion_SOV_931ORAP is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_SOV_931ORAP'
@@ -6536,7 +6467,6 @@ export Descriptor_Unit_pion_SOV_968IAP is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_SOV_968IAP'
@@ -6632,7 +6562,6 @@ export Descriptor_Unit_pion_UK_12Sq is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_UK_12Sq'
@@ -6728,7 +6657,6 @@ export Descriptor_Unit_pion_UK_16_20Sq is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_UK_16_20Sq'
@@ -6824,7 +6752,6 @@ export Descriptor_Unit_pion_UK_17_31Sq is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_UK_17_31Sq'
@@ -6920,7 +6847,6 @@ export Descriptor_Unit_pion_UK_19_92Sq is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_UK_19_92Sq'
@@ -7008,7 +6934,6 @@ export Descriptor_Unit_pion_UK_2ATAF_GROUPE is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_UK_2ATAF_GROUPE'
@@ -7104,7 +7029,6 @@ export Descriptor_Unit_pion_UK_2_15Sq is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_UK_2_15Sq'
@@ -7200,7 +7124,6 @@ export Descriptor_Unit_pion_UK_3_4Sq is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_UK_3_4Sq'
@@ -7296,7 +7219,6 @@ export Descriptor_Unit_pion_UK_9_14Sq is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_UK_9_14Sq'
@@ -7384,7 +7306,6 @@ export Descriptor_Unit_pion_UK_RAFG_GROUPE is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_UK_RAFG_GROUPE'
@@ -7472,7 +7393,6 @@ export Descriptor_Unit_pion_UK_RAF_Bruggen_GROUPE is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_UK_RAF_Bruggen_GROUPE'
@@ -7560,7 +7480,6 @@ export Descriptor_Unit_pion_UK_RAF_Gutersloh_GROUPE is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_UK_RAF_Gutersloh_GROUPE'
@@ -7648,7 +7567,6 @@ export Descriptor_Unit_pion_UK_RAF_Laarbruch_GROUPE is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_UK_RAF_Laarbruch_GROUPE'
@@ -7736,7 +7654,6 @@ export Descriptor_Unit_pion_UK_RAF_Wildenrath_GROUPE is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_UK_RAF_Wildenrath_GROUPE'
@@ -7832,7 +7749,6 @@ export Descriptor_Unit_pion_US_10TFS is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_US_10TFS'
@@ -7920,7 +7836,6 @@ export Descriptor_Unit_pion_US_10TFW_GROUPE is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_US_10TFW_GROUPE'
@@ -8008,7 +7923,6 @@ export Descriptor_Unit_pion_US_17AF_GROUPE is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_US_17AF_GROUPE'
@@ -8096,7 +8010,6 @@ export Descriptor_Unit_pion_US_20TFW_GROUPE is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_US_20TFW_GROUPE'
@@ -8192,7 +8105,6 @@ export Descriptor_Unit_pion_US_22TFS is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_US_22TFS'
@@ -8288,7 +8200,6 @@ export Descriptor_Unit_pion_US_23TFS is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_US_23TFS'
@@ -8384,7 +8295,6 @@ export Descriptor_Unit_pion_US_313TFS is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_US_313TFS'
@@ -8480,7 +8390,6 @@ export Descriptor_Unit_pion_US_32TFS is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_US_32TFS'
@@ -8568,7 +8477,6 @@ export Descriptor_Unit_pion_US_36TFW_GROUPE is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_US_36TFW_GROUPE'
@@ -8656,7 +8564,6 @@ export Descriptor_Unit_pion_US_3AF_GROUPE is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_US_3AF_GROUPE'
@@ -8752,7 +8659,6 @@ export Descriptor_Unit_pion_US_4450TFS is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_US_4450TFS'
@@ -8848,7 +8754,6 @@ export Descriptor_Unit_pion_US_480TFS is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_US_480TFS'
@@ -8936,7 +8841,6 @@ export Descriptor_Unit_pion_US_48TFW_GROUPE is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_US_48TFW_GROUPE'
@@ -9032,7 +8936,6 @@ export Descriptor_Unit_pion_US_492TFS is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_US_492TFS'
@@ -9128,7 +9031,6 @@ export Descriptor_Unit_pion_US_493TFS is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_US_493TFS'
@@ -9224,7 +9126,6 @@ export Descriptor_Unit_pion_US_494TFS is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_US_494TFS'
@@ -9320,7 +9221,6 @@ export Descriptor_Unit_pion_US_495TFS is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_US_495TFS'
@@ -9416,7 +9316,6 @@ export Descriptor_Unit_pion_US_496TFS is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_US_496TFS'
@@ -9504,7 +9403,6 @@ export Descriptor_Unit_pion_US_4ATAF_GROUPE is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_US_4ATAF_GROUPE'
@@ -9600,7 +9498,6 @@ export Descriptor_Unit_pion_US_509TFS is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_US_509TFS'
@@ -9688,7 +9585,6 @@ export Descriptor_Unit_pion_US_50TFW_GROUPE is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_US_50TFW_GROUPE'
@@ -9784,7 +9680,6 @@ export Descriptor_Unit_pion_US_510TFS is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_US_510TFS'
@@ -9880,7 +9775,6 @@ export Descriptor_Unit_pion_US_511TFS is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_US_511TFS'
@@ -9976,7 +9870,6 @@ export Descriptor_Unit_pion_US_512TFS is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_US_512TFS'
@@ -10072,7 +9965,6 @@ export Descriptor_Unit_pion_US_525TFS is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_US_525TFS'
@@ -10168,7 +10060,6 @@ export Descriptor_Unit_pion_US_526TFS is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_US_526TFS'
@@ -10264,7 +10155,6 @@ export Descriptor_Unit_pion_US_527Aggress is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_US_527Aggress'
@@ -10352,7 +10242,6 @@ export Descriptor_Unit_pion_US_52TFW_GROUPE is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_US_52TFW_GROUPE'
@@ -10448,7 +10337,6 @@ export Descriptor_Unit_pion_US_53TFS is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_US_53TFS'
@@ -10544,7 +10432,6 @@ export Descriptor_Unit_pion_US_55TFS is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_US_55TFS'
@@ -10640,7 +10527,6 @@ export Descriptor_Unit_pion_US_77TFS is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_US_77TFS'
@@ -10736,7 +10622,6 @@ export Descriptor_Unit_pion_US_78TFS is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_US_78TFS'
@@ -10832,7 +10717,6 @@ export Descriptor_Unit_pion_US_79TFS is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_US_79TFS'
@@ -10928,7 +10812,6 @@ export Descriptor_Unit_pion_US_81TFS is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_US_81TFS'
@@ -11024,7 +10907,6 @@ export Descriptor_Unit_pion_US_81TFW is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_US_81TFW'
@@ -11112,7 +10994,6 @@ export Descriptor_Unit_pion_US_81TFW_GROUPE is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_US_81TFW_GROUPE'
@@ -11200,7 +11081,6 @@ export Descriptor_Unit_pion_US_86TFW_GROUPE is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_US_86TFW_GROUPE'
@@ -11296,7 +11176,6 @@ export Descriptor_Unit_pion_US_91TFS is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_US_91TFS'
@@ -11392,7 +11271,6 @@ export Descriptor_Unit_pion_US_92TFS is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'pion_US_92TFS'
@@ -11487,7 +11365,6 @@ export Descriptor_Unit_test_avion_alex is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'test_deck_avion'
@@ -11582,7 +11459,6 @@ export Descriptor_Unit_test_avion_cas is TEntityDescriptor
             )
         ),
         ~/PawnAirplaneOrderConfigModuleDescriptor,
-        ~/PackSignauxModuleDescriptor,
         TDeckModuleDescriptor
         (
             DeckIdentifier = 'test_deck_avion'

@@ -1,0 +1,6 @@
+export ModelFile_Howz_M56_Pack_Geb_RFA is "GameData:/Assets/3D/Units/RFA/Canon/Howz_M101_105mm_L27/Howz_M101_105mm_L27.fbx"
+export ModelFile_Howz_M56_Pack_Geb_RFA_MID is "GameData:/Assets/3D/Units/RFA/Canon/Howz_M101_105mm_L27_MID/Howz_M101_105mm_L27_MID.fbx"
+export ModelFile_Howz_M56_Pack_Geb_RFA_LOW is "GameData:/Assets/3D/Units/RFA/Canon/Howz_M101_105mm_L27_LOW/Howz_M101_105mm_L27_LOW.fbx"
+export Modele_Howz_M56_Pack_Geb_RFA is TResourceMesh( Mesh=ModelFile_Howz_M56_Pack_Geb_RFA)
+export Modele_Howz_M56_Pack_Geb_RFA_MID is TResourceMesh( Mesh=ModelFile_Howz_M56_Pack_Geb_RFA_MID)
+export Modele_Howz_M56_Pack_Geb_RFA_LOW is TResourceMesh( Mesh=ModelFile_Howz_M56_Pack_Geb_RFA_LOW)

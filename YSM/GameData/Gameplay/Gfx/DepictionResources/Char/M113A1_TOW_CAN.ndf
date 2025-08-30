@@ -1,0 +1,17 @@
+export Modele_M113A1_TOW_CAN is TResourceMesh
+(
+    Mesh=ModelFile_M113A2_TOW_US
+    Textures="GameData:/Assets/3D/Units/CAN/APC/M113A2_TOW"
+)
+
+export Modele_M113A1_TOW_CAN_MID is TResourceMesh
+(
+    Mesh=ModelFile_M113A2_TOW_US
+    Textures="GameData:/Assets/3D/Units/CAN/APC/M113A2_TOW_MID"
+)
+
+export Modele_M113A1_TOW_CAN_LOW is TResourceMesh
+(
+    Mesh=ModelFile_M113A2_TOW_US
+    Textures="GameData:/Assets/3D/Units/CAN/APC/M113A2_TOW_LOW"
+)

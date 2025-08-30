@@ -1,0 +1,14 @@
+export Modele_UAZ_469_MP_TCH is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/Vehicule/UAZ_469_MP/UAZ_469_MP.fbx"
+)
+
+export Modele_UAZ_469_MP_TCH_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/Vehicule/UAZ_469_MP_MID/UAZ_469_MP_MID.fbx"
+)
+
+export Modele_UAZ_469_MP_TCH_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/Vehicule/UAZ_469_MP_LOW/UAZ_469_MP_LOW.fbx"
+)

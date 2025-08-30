@@ -1,0 +1,17 @@
+export Modele_AVGP_Cougar_CMD_CAN is TResourceMesh
+(
+    Mesh=ModelFile_AVGP_Cougar_CAN
+    Textures="GameData:/Assets/3D/Units/CAN/Vehicule/AVGP_COUGAR_CMD"
+)
+
+export Modele_AVGP_Cougar_CMD_CAN_MID is TResourceMesh
+(
+    Mesh=ModelFile_AVGP_Cougar_CAN_MID
+    Textures="GameData:/Assets/3D/Units/CAN/Vehicule/AVGP_COUGAR_CMD_MID"
+)
+
+export Modele_AVGP_Cougar_CMD_CAN_LOW is TResourceMesh
+(
+    Mesh=ModelFile_AVGP_Cougar_CAN_LOW
+    Textures="GameData:/Assets/3D/Units/CAN/Vehicule/AVGP_COUGAR_CMD_LOW"
+)

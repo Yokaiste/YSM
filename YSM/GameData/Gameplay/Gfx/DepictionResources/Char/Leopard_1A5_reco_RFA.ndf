@@ -1,0 +1,22 @@
+export Modele_Leopard_1A5_reco_RFA is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Char/Leopard_1A5/Leopard_1A5.fbx"
+    Textures="GameData:/Assets/3D/Units/RFA/Char/Leopard_1A5_reco"
+)
+
+export Modele_Leopard_1A5_reco_RFA_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Char/Leopard_1A5_MID/Leopard_1A5_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/RFA/Char/Leopard_1A5_reco_MID"
+)
+
+export Modele_Leopard_1A5_reco_RFA_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Char/Leopard_1A5_LOW/Leopard_1A5_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/RFA/Char/Leopard_1A5_reco_LOW"
+)
+
+export Modele_Leopard_1A5_reco_RFA_Tourelle_02 is TResourceMesh
+(
+    Mesh=ModelFile_MG3_t2
+)

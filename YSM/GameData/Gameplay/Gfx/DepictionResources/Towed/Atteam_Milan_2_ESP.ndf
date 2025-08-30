@@ -1,0 +1,3 @@
+export Modele_Atteam_Milan_2_ESP is TResourceMesh( Mesh="GameData:/Assets/3D/Units/FR/Antichar/Milan_F1/Milan_F1.fbx")
+export Modele_Atteam_Milan_2_ESP_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/FR/Antichar/Milan_F1_MID/Milan_F1_MID.fbx")
+export Modele_Atteam_Milan_2_ESP_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/FR/Antichar/Milan_F1_LOW/Milan_F1_LOW.fbx")

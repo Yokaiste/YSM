@@ -1,0 +1,15 @@
+export ModelFile_AVGP_Cougar_CAN is 'GameData:/Assets/3D/Units/CAN/Vehicule/AVGP_COUGAR/AVGP_COUGAR.fbx'
+export Modele_AVGP_Cougar_CAN is TResourceMesh
+(
+    Mesh=ModelFile_AVGP_Cougar_CAN
+)
+export ModelFile_AVGP_Cougar_CAN_MID is 'GameData:/Assets/3D/Units/CAN/Vehicule/AVGP_COUGAR_MID/AVGP_COUGAR_MID.fbx'
+export Modele_AVGP_Cougar_CAN_MID is TResourceMesh
+(
+    Mesh=ModelFile_AVGP_Cougar_CAN_MID
+)
+export ModelFile_AVGP_Cougar_CAN_LOW is 'GameData:/Assets/3D/Units/CAN/Vehicule/AVGP_COUGAR_LOW/AVGP_COUGAR_LOW.fbx'
+export Modele_AVGP_Cougar_CAN_LOW is TResourceMesh
+(
+    Mesh=ModelFile_AVGP_Cougar_CAN_LOW
+)

@@ -1113,7 +1113,6 @@ DefaultStyleGuide is TUIStyleGuide
         ("ProductionMenu/UnitNameWhenNotAvailable",                     MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = GrisClair7 ) ), ]),
 
 
-        ("SliderBasic/ThumbColor",                                      MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = Blanc184 ) ), ]),
         ("SliderBasic/SliderBar",                                       MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = Noir ) ), ]),
 
         ("UIPlayerSpecific/Red/Primary",                                MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = [255, 0, 0, 255] ) ), ]),
@@ -2590,7 +2589,7 @@ DefaultStyleGuide is TUIStyleGuide
         ("bataillon_otan",                        MAP [( ~/ComponentState/Normal,                 TColorRTTI( Color = [159,105,118,255] ) ),]),
 
         ("Feedback/DeadUnit",                     MAP [ ( ~/ComponentState/Normal,          TColorRTTI( Color = RGBA[255,180,  0,255] ) ), ]),
-        ("Feedback/AutomaticBehavior",            MAP [ ( ~/ComponentState/Normal,          TColorRTTI( Color = RGBA[244, 50, 50,255] ) ), ]),
+        ("Feedback/AttackReaction",               MAP [ ( ~/ComponentState/Normal,          TColorRTTI( Color = RGBA[244, 50, 50,255] ) ), ]),
         ("Feedback/UnitSold",                     MAP [ ( ~/ComponentState/Normal,          TColorRTTI( Color = RGBA[244,187, 50,255] ) ), ]),
         ("Feedback/OnGainXpLevel",                MAP [ ( ~/ComponentState/Normal,          TColorRTTI( Color = RGBA[229,218, 92,255] ) ), ]),
 

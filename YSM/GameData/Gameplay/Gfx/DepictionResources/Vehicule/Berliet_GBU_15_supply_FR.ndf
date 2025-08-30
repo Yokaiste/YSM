@@ -1,0 +1,14 @@
+export Modele_Berliet_GBU_15_supply_FR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/Berliet_GBU_15/Berliet_GBU_15.fbx"
+)
+
+export Modele_Berliet_GBU_15_supply_FR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/Berliet_GBU_15_MID/Berliet_GBU_15_MID.fbx"
+)
+
+export Modele_Berliet_GBU_15_supply_FR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/Berliet_GBU_15_LOW/Berliet_GBU_15_LOW.fbx"
+)

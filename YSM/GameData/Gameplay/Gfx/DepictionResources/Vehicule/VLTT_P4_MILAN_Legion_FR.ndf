@@ -1,0 +1,17 @@
+export Modele_VLTT_P4_MILAN_Legion_FR is TResourceMesh
+(
+    Mesh=ModelFile_VLTT_P4_MILAN_FR
+    Textures="GameData:/Assets/3D/Units/FR/Vehicule/VLTT_P4_MILAN_Legion"
+)
+
+export Modele_VLTT_P4_MILAN_Legion_FR_MID is TResourceMesh
+(
+    Mesh=ModelFile_VLTT_P4_MILAN_FR_MID
+    Textures="GameData:/Assets/3D/Units/FR/Vehicule/VLTT_P4_MILAN_Legion_MID"
+)
+
+export Modele_VLTT_P4_MILAN_Legion_FR_LOW is TResourceMesh
+(
+    Mesh=ModelFile_VLTT_P4_MILAN_FR_LOW
+    Textures="GameData:/Assets/3D/Units/FR/Vehicule/VLTT_P4_MILAN_Legion_LOW"
+)

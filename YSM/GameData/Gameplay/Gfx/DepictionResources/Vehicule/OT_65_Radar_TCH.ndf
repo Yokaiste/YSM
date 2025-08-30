@@ -1,0 +1,14 @@
+export Modele_OT_65_Radar_TCH is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/APC/OT_65_RADAR/OT_65_RADAR.fbx"
+)
+
+export Modele_OT_65_Radar_TCH_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/APC/OT_65_RADAR_MID/OT_65_RADAR_MID.fbx"
+)
+
+export Modele_OT_65_Radar_TCH_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/APC/OT_65_RADAR_LOW/OT_65_RADAR_LOW.fbx"
+)

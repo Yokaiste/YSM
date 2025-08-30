@@ -4,8 +4,6 @@ private UnitInfoPanelShowRoomScale is 1.0
 private SingleWeaponColumnWidth is 144.0
 private WeaponsColumnTotalWidth is 441.0
 
-MaxNbWeaponToShowInUI is 4
-
 //-------------------------------------------------------------------------------------
 
 InfoPanelValuesColors is MAP
@@ -1185,7 +1183,6 @@ is TUISpecificUnitInfoPanelViewDescriptor
     MainComponentContainerUniqueName = <MainComponentContainerUniqueName>
 
     DefaultNbWeaponForSize = 3
-    MaxNbWeaponToShow = ~/MaxNbWeaponToShowInUI
 
     WeaponViewDescriptor = UISpecificUnitInfoSingleWeaponPanelViewDescriptor( Scale = Scale)
     UnitSpecialtiesContainer = ~/UnitSpecialties

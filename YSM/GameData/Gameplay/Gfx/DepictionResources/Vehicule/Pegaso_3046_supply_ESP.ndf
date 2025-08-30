@@ -1,0 +1,14 @@
+export Modele_Pegaso_3046_supply_ESP is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/ESP/Vehicule/PEGASO_3046/PEGASO_3046.fbx"
+)
+
+export Modele_Pegaso_3046_supply_ESP_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/ESP/Vehicule/PEGASO_3046/PEGASO_3046.fbx"
+)
+
+export Modele_Pegaso_3046_supply_ESP_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/ESP/Vehicule/PEGASO_3046/PEGASO_3046.fbx"
+)

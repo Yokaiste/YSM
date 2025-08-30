@@ -14,7 +14,7 @@ export Modele_Leopard_1BE_CMD_BEL_MID is TResourceMesh
 export Modele_Leopard_1BE_CMD_BEL_LOW is TResourceMesh
 (
     Mesh="GameData:/Assets/3D/Units/BEL/Char/Leopard_1BE_LOW/Leopard_1BE_LOW.fbx"
-	Textures="GameData:/Assets/3D/Units/BEL/Char/Leopard_1BE_LOW/"
+    Textures="GameData:/Assets/3D/Units/BEL/Char/Leopard_1BE_LOW/"
 )
 
 export Modele_Leopard_1BE_CMD_BEL_Tourelle_02 is TResourceMesh

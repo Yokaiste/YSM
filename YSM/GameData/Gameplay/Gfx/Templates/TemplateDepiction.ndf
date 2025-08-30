@@ -199,16 +199,13 @@ template TemplateInfantryDepictionFactoryGhost
 template TemplateInfantryDepictionSquad
 [
     SoundOperator
-] is TTimelyDepictionReceiverFactory
+] is TDepictionDescriptor
 (
-  DepictionDescriptor = TDepictionDescriptor
-  (
     Selector = OnlyHighDepictionSelector
     DepictionAlternatives = [
       DepictionVisual_LOD_High(MeshDescriptor = $/GFX/DepictionResources/Rien),
     ]
     Operators = [ <SoundOperator>, DepictionOperator_AlwaysAliveSoundProbe ]
-  )
 )
 
 template GhostUnitDepictionDesc
@@ -250,22 +247,19 @@ template TacticVehicleDepictionDesc
     SubDepictions = [],
     SubDepictionGenerators = []
 ]
-is TTimelyDepictionReceiverFactory
+is TDepictionDescriptor
 (
-    DepictionDescriptor = TDepictionDescriptor
-    (
-        ResidentMaterialTags = [ MaterialTagMech ]
-        PossibleCullingSubBBoxes = ['tourelle_01']
-        AdditionalTextures = $/M3D/Shader/VehicleDestTextures
-        CoatingName = <CoatingName>
-        Scaler = CommonVehicleScaler
-        Selector = <Selector>
-        DepictionAlternatives = <Alternatives>
-        Operators = CommonTacticOperators + <Operators>
-        Actions = <Actions>
-        SubDepictions = <SubDepictions>
-        SubDepictionGenerators = <SubDepictionGenerators>
-    )
+    ResidentMaterialTags = [ MaterialTagMech ]
+    PossibleCullingSubBBoxes = ['tourelle_01']
+    AdditionalTextures = $/M3D/Shader/VehicleDestTextures
+    CoatingName = <CoatingName>
+    Scaler = CommonVehicleScaler
+    Selector = <Selector>
+    DepictionAlternatives = <Alternatives>
+    Operators = CommonTacticOperators + <Operators>
+    Actions = <Actions>
+    SubDepictions = <SubDepictions>
+    SubDepictionGenerators = <SubDepictionGenerators>
 )
 
 template TacticAerialDepictionDesc
@@ -280,30 +274,27 @@ template TacticAerialDepictionDesc
     SubDepictions = [],
     SubDepictionGenerators = [],
 ]
-is TTimelyDepictionReceiverFactory
+is TDepictionDescriptor
 (
-    DepictionDescriptor = TDepictionDescriptor
-    (
-        Deviator = <Deviator>
-        AdditionalTextures = <AdditionalTextures>
-        ResidentMaterialTags = [ MaterialTagMech ]
-        PossibleCullingSubBBoxes =
-        [
-            'aile_droite',
-            'aile_gauche',
-            'reacteur_droite',
-            'reacteur_gauche',
-            'queue',
-        ]
-        CoatingName = <CoatingName>
-        Scaler = SpecificFlyingScaler
-        Selector = <Selector>
-        DepictionAlternatives = <Alternatives>
-        Operators = CommonTacticOperators + [ DepictionOperator_CadaverCrashing ] + <Operators>
-        Actions = <Actions>
-        SubDepictions = <SubDepictions>
-        SubDepictionGenerators = <SubDepictionGenerators>
-    )
+    Deviator = <Deviator>
+    AdditionalTextures = <AdditionalTextures>
+    ResidentMaterialTags = [ MaterialTagMech ]
+    PossibleCullingSubBBoxes =
+    [
+        'aile_droite',
+        'aile_gauche',
+        'reacteur_droite',
+        'reacteur_gauche',
+        'queue',
+    ]
+    CoatingName = <CoatingName>
+    Scaler = SpecificFlyingScaler
+    Selector = <Selector>
+    DepictionAlternatives = <Alternatives>
+    Operators = CommonTacticOperators + [ DepictionOperator_CadaverCrashing ] + <Operators>
+    Actions = <Actions>
+    SubDepictions = <SubDepictions>
+    SubDepictionGenerators = <SubDepictionGenerators>
 )
 
 template ShowroomVehicleDepictionDesc
@@ -313,16 +304,13 @@ template ShowroomVehicleDepictionDesc
     SubDepictions = [],
     SubDepictionGenerators = []
 ]
-is TTimelyDepictionReceiverFactory
+is TDepictionDescriptor
 (
-    DepictionDescriptor = TDepictionDescriptor
-    (
-        Selector = <Selector>
-        Operators = [ DepictionOperator_ShadowPointCloudProvider ]
-        DepictionAlternatives = <Alternatives>
-        SubDepictions = <SubDepictions>
-        SubDepictionGenerators = <SubDepictionGenerators>
-    )
+    Selector = <Selector>
+    Operators = [ DepictionOperator_ShadowPointCloudProvider ]
+    DepictionAlternatives = <Alternatives>
+    SubDepictions = <SubDepictions>
+    SubDepictionGenerators = <SubDepictionGenerators>
 )
 
 template ShowroomDepictionDescInternal
@@ -349,15 +337,12 @@ template ShowroomAerialDepictionDesc
     SubDepictions = [],
     SubDepictionGenerators = []
 ]
-is TTimelyDepictionReceiverFactory
+is ShowroomDepictionDescInternal
 (
-    DepictionDescriptor = ShowroomDepictionDescInternal
-    (
-        MeshDescriptor = <MeshDescriptor>
-        Operators = <Operators> + [ DepictionOperator_ShadowPointCloudProvider ]
-        SubDepictions = <SubDepictions>
-        SubDepictionGenerators = <SubDepictionGenerators>
-    )
+    MeshDescriptor = <MeshDescriptor>
+    Operators = <Operators> + [ DepictionOperator_ShadowPointCloudProvider ]
+    SubDepictions = <SubDepictions>
+    SubDepictionGenerators = <SubDepictionGenerators>
 )
 
 template ShowroomLandingGear

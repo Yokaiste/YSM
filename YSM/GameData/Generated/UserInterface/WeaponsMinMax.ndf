@@ -58,7 +58,7 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                )
                RateOfFire = TMinMaxValue (
                        Min = 30.0
-                       Max = 30.0
+                       Max = 40.0
                )
                TimeBetweenTwoShots = TMinMaxValue (
                        Min = 0.2
@@ -66,11 +66,11 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                )
                NbShotsBySalvo = TMinMaxValue (
                        Min = 1
-                       Max = 1
+                       Max = 2
                )
                SupplyCost = TMinMaxValue (
                        Min = 20
-                       Max = 30
+                       Max = 40
               )
          )
        ),
@@ -165,7 +165,7 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                        Max = 4
                )
                MaxRangeGRU = TMinMaxValue (
-                       Min = 1250
+                       Min = 1050
                        Max = 2800
                )
                MaxRangeHelicopterGRU = TMinMaxValue (
@@ -177,12 +177,12 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                        Max = 0
                )
                AimTime = TMinMaxValue (
-                       Min = 2.25
-                       Max = 2.25
+                       Min = 1.5
+                       Max = 2.5
                )
                ReloadTime = TMinMaxValue (
                        Min = 5.0
-                       Max = 15.0
+                       Max = 20.0
                )
                TurretSpeed = TMinMaxValue (
                        Min = 60
@@ -202,7 +202,7 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                )
                Penetration = TMinMaxValue (
                        Min = 14
-                       Max = 25
+                       Max = 26
                )
                TimeBetweenTwoShots = TMinMaxValue (
                        Min = 1.0
@@ -225,12 +225,12 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                // PhysicalDamages x weapon_count_ (Number of weapons)
                PhysicalDamages = TMinMaxValue (
                        Min = 0.045
-                       Max = 0.65
+                       Max = 0.7000000000000001
                )
                // SuppressDamages x weapon_count_ (Number of weapons)
                SuppressDamages = TMinMaxValue (
                        Min = 4
-                       Max = 52
+                       Max = 65
                )
                SplashDamageRadiusGRU = TMinMaxValue (
                        Min = 2
@@ -406,11 +406,11 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                )
                Accuracy = TMinMaxValue (
                        Min = 30
-                       Max = 90
+                       Max = 100
                )
                AccuracyMovement = TMinMaxValue (
                        Min = 30
-                       Max = 90
+                       Max = 100
                )
                RateOfFire = TMinMaxValue (
                        Min = 12.0
@@ -677,7 +677,7 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                        Max = 0
                )
                AimTime = TMinMaxValue (
-                       Min = 4.0
+                       Min = 2.0
                        Max = 4.0
                )
                ReloadTime = TMinMaxValue (
@@ -942,7 +942,7 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                // SuppressDamages x weapon_count_ (Number of weapons)
                SuppressDamages = TMinMaxValue (
                        Min = 7
-                       Max = 440
+                       Max = 494
                )
                SplashDamageRadiusGRU = TMinMaxValue (
                        Min = 2
@@ -990,7 +990,7 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                )
                NbShotsBySalvo = TMinMaxValue (
                        Min = 2
-                       Max = 40
+                       Max = 50
                )
                SupplyCost = TMinMaxValue (
                        Min = 8.0
@@ -998,7 +998,7 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                )
                Penetration = TMinMaxValue (
                        Min = 1
-                       Max = 8
+                       Max = 10
               )
          )
        ),
@@ -1009,7 +1009,7 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                // PhysicalDamages x weapon_count_ (Number of weapons)
                PhysicalDamages = TMinMaxValue (
                        Min = 0.147
-                       Max = 0.4515
+                       Max = 0.5
                )
                // SuppressDamages x weapon_count_ (Number of weapons)
                SuppressDamages = TMinMaxValue (
@@ -1026,11 +1026,11 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                )
                MaxRangeHelicopterGRU = TMinMaxValue (
                        Min = 0
-                       Max = 1225
+                       Max = 2475
                )
                MaxRangeAirplaneGRU = TMinMaxValue (
                        Min = 0
-                       Max = 0
+                       Max = 1950
                )
                AimTime = TMinMaxValue (
                        Min = 1.0
@@ -1045,8 +1045,8 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                        Max = 360
                )
                Accuracy = TMinMaxValue (
-                       Min = 20
-                       Max = 30
+                       Min = 10
+                       Max = 50
                )
                AccuracyMovement = TMinMaxValue (
                        Min = 0
@@ -1152,7 +1152,7 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
           (
                // PhysicalDamages x weapon_count_ (Number of weapons)
                PhysicalDamages = TMinMaxValue (
-                       Min = 0.132
+                       Min = 0.12
                        Max = 2.4
                )
                // SuppressDamages x weapon_count_ (Number of weapons)
@@ -1182,10 +1182,10 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                )
                ReloadTime = TMinMaxValue (
                        Min = 1.0
-                       Max = 1.0
+                       Max = 30.0
                )
                Accuracy = TMinMaxValue (
-                       Min = 20
+                       Min = 0
                        Max = 40
                )
                AccuracyMovement = TMinMaxValue (
@@ -1193,12 +1193,12 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                        Max = 40
                )
                RateOfFire = TMinMaxValue (
-                       Min = 92.3076923076923
+                       Min = 21.719457013574658
                        Max = 285.0
                )
                Penetration = TMinMaxValue (
                        Min = 1
-                       Max = 10
+                       Max = 12
                )
                TimeBetweenTwoShots = TMinMaxValue (
                        Min = 0.2
@@ -1213,7 +1213,7 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                        Max = 320.0
                )
                TurretSpeed = TMinMaxValue (
-                       Min = 100
+                       Min = 60
                        Max = 360
               )
          )
@@ -1257,7 +1257,7 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                        Max = 30.0
                )
                TurretSpeed = TMinMaxValue (
-                       Min = 90
+                       Min = 60
                        Max = 360
                )
                Accuracy = TMinMaxValue (

@@ -1,0 +1,22 @@
+export Modele_M113A1_reco_CAN is TResourceMesh
+(
+    Mesh=ModelFile_M113A1_NG_US
+    Textures="GameData:/Assets/3D/Units/CAN/APC/M113A1_Reco"
+)
+
+export Modele_M113A1_reco_CAN_MID is TResourceMesh
+(
+    Mesh=ModelFile_M113A1_NG_US_MID
+    Textures="GameData:/Assets/3D/Units/CAN/APC/M113A1_Reco_MID"
+)
+
+export Modele_M113A1_reco_CAN_LOW is TResourceMesh
+(
+    Mesh=ModelFile_M113A1_NG_US_LOW
+    Textures="GameData:/Assets/3D/Units/CAN/APC/M113A1_Reco_LOW"
+)
+
+export Modele_M113A1_reco_CAN_Tourelle_01 is TResourceMesh
+(
+    Mesh=ModelFile_M2HB_12_7mm_t2
+)

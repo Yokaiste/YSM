@@ -1,0 +1,23 @@
+export Modele_Su_17M4_thermo_SOV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Avion/Su_22/Su_22.fbx"
+    Textures="GameData:/Assets/3D/Units/URSS/Avion/Su_22"
+)
+
+export Modele_Su_17M4_thermo_SOV_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Avion/Su_22_MID/Su_22_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/URSS/Avion/Su_22_MID"
+)
+
+export Modele_Su_17M4_thermo_SOV_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Avion/Su_22_LOW/Su_22_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/URSS/Avion/Su_22_LOW"
+)
+
+export Modele_Su_17M4_thermo_SOV_train is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Avion/Su_22/Su_22_train.fbx"
+    Textures="GameData:/Assets/3D/Units/URSS/Avion/Su_22"
+)

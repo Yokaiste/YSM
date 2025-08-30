@@ -1,0 +1,17 @@
+export Modele_BMP_2_TCH is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/APC/BMP2/BMP2.fbx"
+    Textures="GameData:/Assets/3D/Units/TCH/APC/BMP2"
+)
+
+export Modele_BMP_2_TCH_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/APC/BMP2_MID/BMP2_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/TCH/CMD/BMP2_MID"
+)
+
+export Modele_BMP_2_TCH_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/APC/BMP2_LOW/BMP2_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/TCH/APC/BMP2_LOW"
+)

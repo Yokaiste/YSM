@@ -1,0 +1,20 @@
+export Modele_VAB_Mortar_81_Legion_FR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Artillerie/VAB_Mortar_81/VAB_Mortar_81.fbx"
+    Textures="GameData:/Assets/3D/Units/FR/Artillerie/VAB_Mortar_81_Legion"
+)
+
+export Modele_VAB_Mortar_81_Legion_FR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Artillerie/VAB_Mortar_81_MID/VAB_Mortar_81_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/FR/Artillerie/VAB_Mortar_81_Legion_MID"
+)
+
+export Modele_VAB_Mortar_81_Legion_FR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Artillerie/VAB_Mortar_81_LOW/VAB_Mortar_81_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/FR/Artillerie/VAB_Mortar_81_Legion_LOW"
+)
+
+
+

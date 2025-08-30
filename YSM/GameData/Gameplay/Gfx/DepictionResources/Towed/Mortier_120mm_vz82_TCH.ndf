@@ -1,0 +1,3 @@
+export Modele_Mortier_120mm_vz82_TCH is TResourceMesh( Mesh="GameData:/Assets/3D/Units/TCH/Canon/Mortier_120mm_vz82/Mortier_120mm_vz82.fbx")
+export Modele_Mortier_120mm_vz82_TCH_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/TCH/Canon/Mortier_120mm_vz82_MID/Mortier_120mm_vz82_MID.fbx")
+export Modele_Mortier_120mm_vz82_TCH_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/TCH/Canon/Mortier_120mm_vz82_LOW/Mortier_120mm_vz82_LOW.fbx")

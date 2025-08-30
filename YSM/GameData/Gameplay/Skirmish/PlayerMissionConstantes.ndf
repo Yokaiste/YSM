@@ -47,7 +47,7 @@ export playerMissionArtilleryCounterBatteryDescriptor is TMacroActionDescriptor_
     [
         TGenerationSettingHolder(GenerationType = TGenerationType_FixedSize NumberLaunchBasedOnGenerationType = 1),
         TArtilleryPositionningSettingHolder(SupportZoneMaxRangeGRU = 5049),
-        TMacroActionProductionSettingHolder(PoolModelList = [] DistanceToOptimumStartDuringDeploymentGRU = 1060),
+        TMacroActionProductionSettingHolder(PoolModelList = []),
         TMacroActionLifetimeSettingHolder(MaintainForever = true), //IMPORTANT
         TArtilleryPlayerMissionSettingHolder(
             AuthorizedTargetTags = ["Artillerie_MLRS", "Artillerie_Longue_Portee", "Artillerie_Courte_Portee"] TargetFilter = ETargetFilter_HasShot MaxDurationForTargetValidity = 60 MinDurationForTargetValidity = 2),
@@ -61,7 +61,7 @@ export playerMissionArtilleryDescriptor is TMacroActionDescriptor_Artillery_Spec
     [
         TGenerationSettingHolder(GenerationType = TGenerationType_FixedSize NumberLaunchBasedOnGenerationType = 1),
         TArtilleryPositionningSettingHolder(SupportZoneMaxRangeGRU = 5049),
-        TMacroActionProductionSettingHolder(PoolModelList = [] DistanceToOptimumStartDuringDeploymentGRU = 1060),
+        TMacroActionProductionSettingHolder(PoolModelList = []),
         TMacroActionLifetimeSettingHolder(MaintainForever = true), //IMPORTANT
         TArtilleryPlayerMissionSettingHolder(AuthorizedTargetTags = ["AllUnits"] TargetFilter = ETargetFilter_UnitSeen MinDurationForTargetValidity = 5),
         TDisableUnitToReleaseSettingHolder(),

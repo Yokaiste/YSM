@@ -211,6 +211,11 @@ GhostDepiction_Alouette_II_trans_FR is GhostAerialDepictionDesc
     Alternatives = Alternatives_Alouette_II_trans_FR
     Selector = SpecificHelicoDepictionSelector
 )
+GhostDepiction_Alpha_Jet_A_KWS_RFA is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_Alpha_Jet_A_KWS_RFA
+    Selector = SpecificAirplaneDepictionSelector
+)
 GhostDepiction_Alpha_Jet_A_clu_RFA is GhostAerialDepictionDesc
 (
     Alternatives = Alternatives_Alpha_Jet_A_clu_RFA
@@ -251,6 +256,16 @@ GhostDepiction_Alpha_Jet_HE2_BEL is GhostAerialDepictionDesc
     Alternatives = Alternatives_Alpha_Jet_HE2_BEL
     Selector = SpecificAirplaneDepictionSelector
 )
+GhostDepiction_Bo_105_CB_20mm_ESP is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_Bo_105_CB_20mm_ESP
+    Selector = SpecificHelicoDepictionSelector
+)
+GhostDepiction_Bo_105_CB_ESP is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_Bo_105_CB_ESP
+    Selector = SpecificHelicoDepictionSelector
+)
 GhostDepiction_Bo_105_CB_NL is GhostAerialDepictionDesc
 (
     Alternatives = Alternatives_Bo_105_CB_NL
@@ -269,6 +284,11 @@ GhostDepiction_Bo_105_Minigun_NL is GhostAerialDepictionDesc
 GhostDepiction_Bo_105_PAH_1A1_RFA is GhostAerialDepictionDesc
 (
     Alternatives = Alternatives_Bo_105_PAH_1A1_RFA
+    Selector = SpecificHelicoDepictionSelector
+)
+GhostDepiction_Bo_105_PAH_1_ESP is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_Bo_105_PAH_1_ESP
     Selector = SpecificHelicoDepictionSelector
 )
 GhostDepiction_Bo_105_PAH_1_RFA is GhostAerialDepictionDesc
@@ -306,6 +326,11 @@ GhostDepiction_Buccaneer_S2B_SEAD_UK is GhostAerialDepictionDesc
     Alternatives = Alternatives_Buccaneer_S2B_SEAD_UK
     Selector = SpecificAirplaneDepictionSelector
 )
+GhostDepiction_CH47D_Chinook_CAN is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_CH47D_Chinook_CAN
+    Selector = SpecificHelicoDepictionSelector
+)
 GhostDepiction_CH47D_Chinook_supply_UK is GhostAerialDepictionDesc
 (
     Alternatives = Alternatives_CH47D_Chinook_supply_UK
@@ -319,6 +344,11 @@ GhostDepiction_CH47_Chinook_UK is GhostAerialDepictionDesc
 GhostDepiction_CH47_Chinook_US is GhostAerialDepictionDesc
 (
     Alternatives = Alternatives_CH47_Chinook_US
+    Selector = SpecificHelicoDepictionSelector
+)
+GhostDepiction_CH47_Super_Chinook_ESP is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_CH47_Super_Chinook_ESP
     Selector = SpecificHelicoDepictionSelector
 )
 GhostDepiction_CH47_Super_Chinook_US is GhostAerialDepictionDesc
@@ -351,6 +381,16 @@ GhostDepiction_CL_289_RFA is GhostAerialDepictionDesc
     Alternatives = Alternatives_CL_289_RFA
     Selector = SpecificAirplaneDepictionSelector
 )
+GhostDepiction_CL_89_CAN is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_CL_89_CAN
+    Selector = SpecificAirplaneDepictionSelector
+)
+GhostDepiction_CL_89_FR is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_CL_89_FR
+    Selector = SpecificAirplaneDepictionSelector
+)
 GhostDepiction_CM170_Magister_BEL is GhostAerialDepictionDesc
 (
     Alternatives = Alternatives_CM170_Magister_BEL
@@ -374,6 +414,11 @@ GhostDepiction_EA6B_Prowler_US is GhostAerialDepictionDesc
 GhostDepiction_EF111_Raven_US is GhostAerialDepictionDesc
 (
     Alternatives = Alternatives_EF111_Raven_US
+    Selector = SpecificAirplaneDepictionSelector
+)
+GhostDepiction_EF_101B_Electric_Voodoo_CAN is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_EF_101B_Electric_Voodoo_CAN
     Selector = SpecificAirplaneDepictionSelector
 )
 GhostDepiction_EH60A_EW_US is GhostAerialDepictionDesc
@@ -551,6 +596,61 @@ GhostDepiction_F16E_napalm_US is GhostAerialDepictionDesc
     Alternatives = Alternatives_F16E_napalm_US
     Selector = SpecificAirplaneDepictionSelector
 )
+GhostDepiction_F18_Hornet_AA_CAN is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_F18_Hornet_AA_CAN
+    Selector = SpecificAirplaneDepictionSelector
+)
+GhostDepiction_F18_Hornet_AA_ESP is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_F18_Hornet_AA_ESP
+    Selector = SpecificAirplaneDepictionSelector
+)
+GhostDepiction_F18_Hornet_AT_ESP is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_F18_Hornet_AT_ESP
+    Selector = SpecificAirplaneDepictionSelector
+)
+GhostDepiction_F18_Hornet_CLUS_CAN is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_F18_Hornet_CLUS_CAN
+    Selector = SpecificAirplaneDepictionSelector
+)
+GhostDepiction_F18_Hornet_CRV7_CAN is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_F18_Hornet_CRV7_CAN
+    Selector = SpecificAirplaneDepictionSelector
+)
+GhostDepiction_F18_Hornet_HE_CAN is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_F18_Hornet_HE_CAN
+    Selector = SpecificAirplaneDepictionSelector
+)
+GhostDepiction_F4C_Phantom_II_CLU_ESP is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_F4C_Phantom_II_CLU_ESP
+    Selector = SpecificAirplaneDepictionSelector
+)
+GhostDepiction_F4C_Phantom_II_ESP is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_F4C_Phantom_II_ESP
+    Selector = SpecificAirplaneDepictionSelector
+)
+GhostDepiction_F4C_Phantom_II_HE_ESP is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_F4C_Phantom_II_HE_ESP
+    Selector = SpecificAirplaneDepictionSelector
+)
+GhostDepiction_F4C_Phantom_II_NPLM_ESP is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_F4C_Phantom_II_NPLM_ESP
+    Selector = SpecificAirplaneDepictionSelector
+)
+GhostDepiction_F4C_Phantom_II_RKT_ESP is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_F4C_Phantom_II_RKT_ESP
+    Selector = SpecificAirplaneDepictionSelector
+)
 GhostDepiction_F4E_Phantom_II_AA_US is GhostAerialDepictionDesc
 (
     Alternatives = Alternatives_F4E_Phantom_II_AA_US
@@ -576,6 +676,11 @@ GhostDepiction_F4E_Phantom_II_napalm_US is GhostAerialDepictionDesc
     Alternatives = Alternatives_F4E_Phantom_II_napalm_US
     Selector = SpecificAirplaneDepictionSelector
 )
+GhostDepiction_F4F_Phantom_II_AA2_RFA is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_F4F_Phantom_II_AA2_RFA
+    Selector = SpecificAirplaneDepictionSelector
+)
 GhostDepiction_F4F_Phantom_II_AA_RFA is GhostAerialDepictionDesc
 (
     Alternatives = Alternatives_F4F_Phantom_II_AA_RFA
@@ -594,6 +699,16 @@ GhostDepiction_F4F_Phantom_II_HE1_RFA is GhostAerialDepictionDesc
 GhostDepiction_F4F_Phantom_II_HE2_RFA is GhostAerialDepictionDesc
 (
     Alternatives = Alternatives_F4F_Phantom_II_HE2_RFA
+    Selector = SpecificAirplaneDepictionSelector
+)
+GhostDepiction_F4F_Phantom_II_LGB_RFA is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_F4F_Phantom_II_LGB_RFA
+    Selector = SpecificAirplaneDepictionSelector
+)
+GhostDepiction_F4F_Phantom_II_RKT1_RFA is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_F4F_Phantom_II_RKT1_RFA
     Selector = SpecificAirplaneDepictionSelector
 )
 GhostDepiction_F4F_Phantom_II_RKT2_RFA is GhostAerialDepictionDesc
@@ -629,6 +744,16 @@ GhostDepiction_F4_Wild_Weasel_US is GhostAerialDepictionDesc
 GhostDepiction_F5A_FreedomFighter_AA_NL is GhostAerialDepictionDesc
 (
     Alternatives = Alternatives_F5A_FreedomFighter_AA_NL
+    Selector = SpecificAirplaneDepictionSelector
+)
+GhostDepiction_F5A_FreedomFighter_CAN is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_F5A_FreedomFighter_CAN
+    Selector = SpecificAirplaneDepictionSelector
+)
+GhostDepiction_F5A_FreedomFighter_CLU_CAN is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_F5A_FreedomFighter_CLU_CAN
     Selector = SpecificAirplaneDepictionSelector
 )
 GhostDepiction_F5A_FreedomFighter_CLU_NL is GhostAerialDepictionDesc
@@ -691,6 +816,11 @@ GhostDepiction_Gazelle_20mm_reco_FR is GhostAerialDepictionDesc
     Alternatives = Alternatives_Gazelle_20mm_reco_FR
     Selector = SpecificHelicoDepictionSelector
 )
+GhostDepiction_Gazelle_CMD_FR is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_Gazelle_CMD_FR
+    Selector = SpecificHelicoDepictionSelector
+)
 GhostDepiction_Gazelle_CMD_UK is GhostAerialDepictionDesc
 (
     Alternatives = Alternatives_Gazelle_CMD_UK
@@ -735,6 +865,11 @@ GhostDepiction_Gazelle_trans_UK is GhostAerialDepictionDesc
 (
     Alternatives = Alternatives_Gazelle_trans_UK
     Selector = SpecificHelicoDepictionSelector
+)
+GhostDepiction_HFB_320_ECM_RFA is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_HFB_320_ECM_RFA
+    Selector = SpecificAirplaneDepictionSelector
 )
 GhostDepiction_Harrier_CLU_UK is GhostAerialDepictionDesc
 (
@@ -801,6 +936,16 @@ GhostDepiction_Jaguar_HE_FR is GhostAerialDepictionDesc
     Alternatives = Alternatives_Jaguar_HE_FR
     Selector = SpecificAirplaneDepictionSelector
 )
+GhostDepiction_Jaguar_LGB_FR is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_Jaguar_LGB_FR
+    Selector = SpecificAirplaneDepictionSelector
+)
+GhostDepiction_Jaguar_RKT2_FR is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_Jaguar_RKT2_FR
+    Selector = SpecificAirplaneDepictionSelector
+)
 GhostDepiction_Jaguar_RKT_FR is GhostAerialDepictionDesc
 (
     Alternatives = Alternatives_Jaguar_RKT_FR
@@ -846,6 +991,11 @@ GhostDepiction_Ka_50_SOV is GhostAerialDepictionDesc
     Alternatives = Alternatives_Ka_50_SOV
     Selector = SpecificHelicoDepictionSelector
 )
+GhostDepiction_L39ZA_TCH is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_L39ZA_TCH
+    Selector = SpecificAirplaneDepictionSelector
+)
 GhostDepiction_L39ZO_CLU_DDR is GhostAerialDepictionDesc
 (
     Alternatives = Alternatives_L39ZO_CLU_DDR
@@ -866,9 +1016,19 @@ GhostDepiction_L39ZO_HE1_SOV is GhostAerialDepictionDesc
     Alternatives = Alternatives_L39ZO_HE1_SOV
     Selector = SpecificAirplaneDepictionSelector
 )
+GhostDepiction_L39ZO_HE_TCH is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_L39ZO_HE_TCH
+    Selector = SpecificAirplaneDepictionSelector
+)
 GhostDepiction_L39ZO_NPLM_SOV is GhostAerialDepictionDesc
 (
     Alternatives = Alternatives_L39ZO_NPLM_SOV
+    Selector = SpecificAirplaneDepictionSelector
+)
+GhostDepiction_L39ZO_TCH is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_L39ZO_TCH
     Selector = SpecificAirplaneDepictionSelector
 )
 GhostDepiction_Lynx_AH_Mk1_LBH_UK is GhostAerialDepictionDesc
@@ -926,6 +1086,11 @@ GhostDepiction_MiG_17PF_POL is GhostAerialDepictionDesc
     Alternatives = Alternatives_MiG_17PF_POL
     Selector = SpecificAirplaneDepictionSelector
 )
+GhostDepiction_MiG_21MA_TCH is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_MiG_21MA_TCH
+    Selector = SpecificAirplaneDepictionSelector
+)
 GhostDepiction_MiG_21PFM_AA_DDR is GhostAerialDepictionDesc
 (
     Alternatives = Alternatives_MiG_21PFM_AA_DDR
@@ -941,6 +1106,11 @@ GhostDepiction_MiG_21bis_AA2_DDR is GhostAerialDepictionDesc
     Alternatives = Alternatives_MiG_21bis_AA2_DDR
     Selector = SpecificAirplaneDepictionSelector
 )
+GhostDepiction_MiG_21bis_AA2_TCH is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_MiG_21bis_AA2_TCH
+    Selector = SpecificAirplaneDepictionSelector
+)
 GhostDepiction_MiG_21bis_AA3_DDR is GhostAerialDepictionDesc
 (
     Alternatives = Alternatives_MiG_21bis_AA3_DDR
@@ -951,9 +1121,24 @@ GhostDepiction_MiG_21bis_AA_POL is GhostAerialDepictionDesc
     Alternatives = Alternatives_MiG_21bis_AA_POL
     Selector = SpecificAirplaneDepictionSelector
 )
+GhostDepiction_MiG_21bis_AA_TCH is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_MiG_21bis_AA_TCH
+    Selector = SpecificAirplaneDepictionSelector
+)
+GhostDepiction_MiG_21bis_AT_POL is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_MiG_21bis_AT_POL
+    Selector = SpecificAirplaneDepictionSelector
+)
 GhostDepiction_MiG_21bis_CLU_DDR is GhostAerialDepictionDesc
 (
     Alternatives = Alternatives_MiG_21bis_CLU_DDR
+    Selector = SpecificAirplaneDepictionSelector
+)
+GhostDepiction_MiG_21bis_CLU_TCH is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_MiG_21bis_CLU_TCH
     Selector = SpecificAirplaneDepictionSelector
 )
 GhostDepiction_MiG_21bis_HE_DDR is GhostAerialDepictionDesc
@@ -966,9 +1151,19 @@ GhostDepiction_MiG_21bis_HE_POL is GhostAerialDepictionDesc
     Alternatives = Alternatives_MiG_21bis_HE_POL
     Selector = SpecificAirplaneDepictionSelector
 )
+GhostDepiction_MiG_21bis_HE_TCH is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_MiG_21bis_HE_TCH
+    Selector = SpecificAirplaneDepictionSelector
+)
 GhostDepiction_MiG_21bis_NPLM_DDR is GhostAerialDepictionDesc
 (
     Alternatives = Alternatives_MiG_21bis_NPLM_DDR
+    Selector = SpecificAirplaneDepictionSelector
+)
+GhostDepiction_MiG_21bis_NPLM_TCH is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_MiG_21bis_NPLM_TCH
     Selector = SpecificAirplaneDepictionSelector
 )
 GhostDepiction_MiG_21bis_POL is GhostAerialDepictionDesc
@@ -986,6 +1181,11 @@ GhostDepiction_MiG_21bis_RKT2_POL is GhostAerialDepictionDesc
     Alternatives = Alternatives_MiG_21bis_RKT2_POL
     Selector = SpecificAirplaneDepictionSelector
 )
+GhostDepiction_MiG_21bis_RKT2_TCH is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_MiG_21bis_RKT2_TCH
+    Selector = SpecificAirplaneDepictionSelector
+)
 GhostDepiction_MiG_23BN_AT2_DDR is GhostAerialDepictionDesc
 (
     Alternatives = Alternatives_MiG_23BN_AT2_DDR
@@ -999,6 +1199,11 @@ GhostDepiction_MiG_23BN_AT_DDR is GhostAerialDepictionDesc
 GhostDepiction_MiG_23BN_CLU_DDR is GhostAerialDepictionDesc
 (
     Alternatives = Alternatives_MiG_23BN_CLU_DDR
+    Selector = SpecificAirplaneDepictionSelector
+)
+GhostDepiction_MiG_23BN_CLU_TCH is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_MiG_23BN_CLU_TCH
     Selector = SpecificAirplaneDepictionSelector
 )
 GhostDepiction_MiG_23BN_DDR is GhostAerialDepictionDesc
@@ -1016,9 +1221,24 @@ GhostDepiction_MiG_23BN_RKT_DDR is GhostAerialDepictionDesc
     Alternatives = Alternatives_MiG_23BN_RKT_DDR
     Selector = SpecificAirplaneDepictionSelector
 )
+GhostDepiction_MiG_23BN_RKT_TCH is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_MiG_23BN_RKT_TCH
+    Selector = SpecificAirplaneDepictionSelector
+)
+GhostDepiction_MiG_23BN_TCH is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_MiG_23BN_TCH
+    Selector = SpecificAirplaneDepictionSelector
+)
 GhostDepiction_MiG_23BN_nplm_DDR is GhostAerialDepictionDesc
 (
     Alternatives = Alternatives_MiG_23BN_nplm_DDR
+    Selector = SpecificAirplaneDepictionSelector
+)
+GhostDepiction_MiG_23BN_nplm_TCH is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_MiG_23BN_nplm_TCH
     Selector = SpecificAirplaneDepictionSelector
 )
 GhostDepiction_MiG_23MF_AA2_POL is GhostAerialDepictionDesc
@@ -1039,6 +1259,11 @@ GhostDepiction_MiG_23MF_AA_POL is GhostAerialDepictionDesc
 GhostDepiction_MiG_23MF_DDR is GhostAerialDepictionDesc
 (
     Alternatives = Alternatives_MiG_23MF_DDR
+    Selector = SpecificAirplaneDepictionSelector
+)
+GhostDepiction_MiG_23MLA_AA_TCH is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_MiG_23MLA_AA_TCH
     Selector = SpecificAirplaneDepictionSelector
 )
 GhostDepiction_MiG_23MLD_AA1_SOV is GhostAerialDepictionDesc
@@ -1156,6 +1381,11 @@ GhostDepiction_MiG_29_AA_SOV is GhostAerialDepictionDesc
     Alternatives = Alternatives_MiG_29_AA_SOV
     Selector = SpecificAirplaneDepictionSelector
 )
+GhostDepiction_MiG_29_AA_TCH is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_MiG_29_AA_TCH
+    Selector = SpecificAirplaneDepictionSelector
+)
 GhostDepiction_MiG_31M_SOV is GhostAerialDepictionDesc
 (
     Alternatives = Alternatives_MiG_31M_SOV
@@ -1206,6 +1436,11 @@ GhostDepiction_Mi_24D_s5_AT_SOV is GhostAerialDepictionDesc
     Alternatives = Alternatives_Mi_24D_s5_AT_SOV
     Selector = SpecificHelicoDepictionSelector
 )
+GhostDepiction_Mi_24D_s5_AT_TCH is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_Mi_24D_s5_AT_TCH
+    Selector = SpecificHelicoDepictionSelector
+)
 GhostDepiction_Mi_24D_s8_AT_DDR is GhostAerialDepictionDesc
 (
     Alternatives = Alternatives_Mi_24D_s8_AT_DDR
@@ -1236,6 +1471,11 @@ GhostDepiction_Mi_24P_SOV is GhostAerialDepictionDesc
     Alternatives = Alternatives_Mi_24P_SOV
     Selector = SpecificHelicoDepictionSelector
 )
+GhostDepiction_Mi_24P_TCH is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_Mi_24P_TCH
+    Selector = SpecificHelicoDepictionSelector
+)
 GhostDepiction_Mi_24P_s8_AT2_DDR is GhostAerialDepictionDesc
 (
     Alternatives = Alternatives_Mi_24P_s8_AT2_DDR
@@ -1261,6 +1501,11 @@ GhostDepiction_Mi_24V_AT_SOV is GhostAerialDepictionDesc
     Alternatives = Alternatives_Mi_24V_AT_SOV
     Selector = SpecificHelicoDepictionSelector
 )
+GhostDepiction_Mi_24V_AT_TCH is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_Mi_24V_AT_TCH
+    Selector = SpecificHelicoDepictionSelector
+)
 GhostDepiction_Mi_24V_POL is GhostAerialDepictionDesc
 (
     Alternatives = Alternatives_Mi_24V_POL
@@ -1271,9 +1516,19 @@ GhostDepiction_Mi_24V_RKT2_SOV is GhostAerialDepictionDesc
     Alternatives = Alternatives_Mi_24V_RKT2_SOV
     Selector = SpecificHelicoDepictionSelector
 )
+GhostDepiction_Mi_24V_RKT2_TCH is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_Mi_24V_RKT2_TCH
+    Selector = SpecificHelicoDepictionSelector
+)
 GhostDepiction_Mi_24V_RKT_SOV is GhostAerialDepictionDesc
 (
     Alternatives = Alternatives_Mi_24V_RKT_SOV
+    Selector = SpecificHelicoDepictionSelector
+)
+GhostDepiction_Mi_24V_RKT_TCH is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_Mi_24V_RKT_TCH
     Selector = SpecificHelicoDepictionSelector
 )
 GhostDepiction_Mi_24V_SOV is GhostAerialDepictionDesc
@@ -1299,6 +1554,11 @@ GhostDepiction_Mi_2_AA_POL is GhostAerialDepictionDesc
 GhostDepiction_Mi_2_ATGM_POL is GhostAerialDepictionDesc
 (
     Alternatives = Alternatives_Mi_2_ATGM_POL
+    Selector = SpecificHelicoDepictionSelector
+)
+GhostDepiction_Mi_2_ATGM_TCH is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_Mi_2_ATGM_TCH
     Selector = SpecificHelicoDepictionSelector
 )
 GhostDepiction_Mi_2_CMD_DDR is GhostAerialDepictionDesc
@@ -1331,6 +1591,11 @@ GhostDepiction_Mi_2_reco_SOV is GhostAerialDepictionDesc
     Alternatives = Alternatives_Mi_2_reco_SOV
     Selector = SpecificHelicoDepictionSelector
 )
+GhostDepiction_Mi_2_reco_TCH is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_Mi_2_reco_TCH
+    Selector = SpecificHelicoDepictionSelector
+)
 GhostDepiction_Mi_2_rocket_DDR is GhostAerialDepictionDesc
 (
     Alternatives = Alternatives_Mi_2_rocket_DDR
@@ -1356,6 +1621,31 @@ GhostDepiction_Mi_2_trans_SOV is GhostAerialDepictionDesc
     Alternatives = Alternatives_Mi_2_trans_SOV
     Selector = SpecificHelicoDepictionSelector
 )
+GhostDepiction_Mi_2_trans_TCH is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_Mi_2_trans_TCH
+    Selector = SpecificHelicoDepictionSelector
+)
+GhostDepiction_Mi_4AV_130mm_TCH is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_Mi_4AV_130mm_TCH
+    Selector = SpecificHelicoDepictionSelector
+)
+GhostDepiction_Mi_4AV_57mm_TCH is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_Mi_4AV_57mm_TCH
+    Selector = SpecificHelicoDepictionSelector
+)
+GhostDepiction_Mi_4A_trans_TCH is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_Mi_4A_trans_TCH
+    Selector = SpecificHelicoDepictionSelector
+)
+GhostDepiction_Mi_6_CMD_SOV is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_Mi_6_CMD_SOV
+    Selector = SpecificHelicoDepictionSelector
+)
 GhostDepiction_Mi_6_POL is GhostAerialDepictionDesc
 (
     Alternatives = Alternatives_Mi_6_POL
@@ -1369,6 +1659,11 @@ GhostDepiction_Mi_6_SOV is GhostAerialDepictionDesc
 GhostDepiction_Mi_8K_CMD_SOV is GhostAerialDepictionDesc
 (
     Alternatives = Alternatives_Mi_8K_CMD_SOV
+    Selector = SpecificHelicoDepictionSelector
+)
+GhostDepiction_Mi_8K_CMD_TCH is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_Mi_8K_CMD_TCH
     Selector = SpecificHelicoDepictionSelector
 )
 GhostDepiction_Mi_8MTPI_SOV is GhostAerialDepictionDesc
@@ -1394,6 +1689,11 @@ GhostDepiction_Mi_8PPA_SOV is GhostAerialDepictionDesc
 GhostDepiction_Mi_8R_SOV is GhostAerialDepictionDesc
 (
     Alternatives = Alternatives_Mi_8R_SOV
+    Selector = SpecificHelicoDepictionSelector
+)
+GhostDepiction_Mi_8R_TCH is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_Mi_8R_TCH
     Selector = SpecificHelicoDepictionSelector
 )
 GhostDepiction_Mi_8TB_DDR is GhostAerialDepictionDesc
@@ -1436,6 +1736,11 @@ GhostDepiction_Mi_8TV_SOV is GhostAerialDepictionDesc
     Alternatives = Alternatives_Mi_8TV_SOV
     Selector = SpecificHelicoDepictionSelector
 )
+GhostDepiction_Mi_8TV_TCH is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_Mi_8TV_TCH
+    Selector = SpecificHelicoDepictionSelector
+)
 GhostDepiction_Mi_8TV_UPK_DDR is GhostAerialDepictionDesc
 (
     Alternatives = Alternatives_Mi_8TV_UPK_DDR
@@ -1451,6 +1756,11 @@ GhostDepiction_Mi_8TV_s57_16_SOV is GhostAerialDepictionDesc
     Alternatives = Alternatives_Mi_8TV_s57_16_SOV
     Selector = SpecificHelicoDepictionSelector
 )
+GhostDepiction_Mi_8TV_s57_16_TCH is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_Mi_8TV_s57_16_TCH
+    Selector = SpecificHelicoDepictionSelector
+)
 GhostDepiction_Mi_8TV_s57_32_DDR is GhostAerialDepictionDesc
 (
     Alternatives = Alternatives_Mi_8TV_s57_32_DDR
@@ -1461,9 +1771,19 @@ GhostDepiction_Mi_8TV_s57_32_SOV is GhostAerialDepictionDesc
     Alternatives = Alternatives_Mi_8TV_s57_32_SOV
     Selector = SpecificHelicoDepictionSelector
 )
+GhostDepiction_Mi_8TV_s57_32_TCH is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_Mi_8TV_s57_32_TCH
+    Selector = SpecificHelicoDepictionSelector
+)
 GhostDepiction_Mi_8TV_s80_SOV is GhostAerialDepictionDesc
 (
     Alternatives = Alternatives_Mi_8TV_s80_SOV
+    Selector = SpecificHelicoDepictionSelector
+)
+GhostDepiction_Mi_8TV_s80_TCH is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_Mi_8TV_s80_TCH
     Selector = SpecificHelicoDepictionSelector
 )
 GhostDepiction_Mi_8TZ_SOV is GhostAerialDepictionDesc
@@ -1491,6 +1811,16 @@ GhostDepiction_Mi_8T_non_arme_POL is GhostAerialDepictionDesc
     Alternatives = Alternatives_Mi_8T_non_arme_POL
     Selector = SpecificHelicoDepictionSelector
 )
+GhostDepiction_Mi_8T_non_arme_TCH is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_Mi_8T_non_arme_TCH
+    Selector = SpecificHelicoDepictionSelector
+)
+GhostDepiction_Mi_8Z2_TCH is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_Mi_8Z2_TCH
+    Selector = SpecificHelicoDepictionSelector
+)
 GhostDepiction_Mi_8_supply_DDR is GhostAerialDepictionDesc
 (
     Alternatives = Alternatives_Mi_8_supply_DDR
@@ -1499,6 +1829,11 @@ GhostDepiction_Mi_8_supply_DDR is GhostAerialDepictionDesc
 GhostDepiction_Mi_8_supply_POL is GhostAerialDepictionDesc
 (
     Alternatives = Alternatives_Mi_8_supply_POL
+    Selector = SpecificHelicoDepictionSelector
+)
+GhostDepiction_Mi_8_supply_TCH is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_Mi_8_supply_TCH
     Selector = SpecificHelicoDepictionSelector
 )
 GhostDepiction_Mi_9_DDR is GhostAerialDepictionDesc
@@ -1566,6 +1901,11 @@ GhostDepiction_Mirage_III_E_FR is GhostAerialDepictionDesc
     Alternatives = Alternatives_Mirage_III_E_FR
     Selector = SpecificAirplaneDepictionSelector
 )
+GhostDepiction_Mirage_III_E_SEAD_FR is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_Mirage_III_E_SEAD_FR
+    Selector = SpecificAirplaneDepictionSelector
+)
 GhostDepiction_Mirage_IV_FR is GhostAerialDepictionDesc
 (
     Alternatives = Alternatives_Mirage_IV_FR
@@ -1581,9 +1921,29 @@ GhostDepiction_OA10A_US is GhostAerialDepictionDesc
     Alternatives = Alternatives_OA10A_US
     Selector = SpecificAirplaneDepictionSelector
 )
+GhostDepiction_OH58A_CAN is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_OH58A_CAN
+    Selector = SpecificHelicoDepictionSelector
+)
+GhostDepiction_OH58A_CMD_CAN is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_OH58A_CMD_CAN
+    Selector = SpecificHelicoDepictionSelector
+)
+GhostDepiction_OH58A_Gatling_CAN is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_OH58A_Gatling_CAN
+    Selector = SpecificHelicoDepictionSelector
+)
 GhostDepiction_OH58A_reco_NG_US is GhostAerialDepictionDesc
 (
     Alternatives = Alternatives_OH58A_reco_NG_US
+    Selector = SpecificHelicoDepictionSelector
+)
+GhostDepiction_OH58A_trans_CAN is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_OH58A_trans_CAN
     Selector = SpecificHelicoDepictionSelector
 )
 GhostDepiction_OH58C_CMD_US is GhostAerialDepictionDesc
@@ -1626,6 +1986,11 @@ GhostDepiction_Puma_HET_FR is GhostAerialDepictionDesc
     Alternatives = Alternatives_Puma_HET_FR
     Selector = SpecificHelicoDepictionSelector
 )
+GhostDepiction_Puma_Orchidee_FR is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_Puma_Orchidee_FR
+    Selector = SpecificHelicoDepictionSelector
+)
 GhostDepiction_Puma_PC_FR is GhostAerialDepictionDesc
 (
     Alternatives = Alternatives_Puma_PC_FR
@@ -1646,6 +2011,11 @@ GhostDepiction_SeaKing_Mk48_BEL is GhostAerialDepictionDesc
     Alternatives = Alternatives_SeaKing_Mk48_BEL
     Selector = SpecificHelicoDepictionSelector
 )
+GhostDepiction_SilverStar_Mk3AT_RKT_CAN is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_SilverStar_Mk3AT_RKT_CAN
+    Selector = SpecificAirplaneDepictionSelector
+)
 GhostDepiction_Su_15TM_AA2_SOV is GhostAerialDepictionDesc
 (
     Alternatives = Alternatives_Su_15TM_AA2_SOV
@@ -1656,9 +2026,24 @@ GhostDepiction_Su_15TM_AA_SOV is GhostAerialDepictionDesc
     Alternatives = Alternatives_Su_15TM_AA_SOV
     Selector = SpecificAirplaneDepictionSelector
 )
+GhostDepiction_Su_17M4_HE1_SOV is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_Su_17M4_HE1_SOV
+    Selector = SpecificAirplaneDepictionSelector
+)
+GhostDepiction_Su_17M4_HE2_SOV is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_Su_17M4_HE2_SOV
+    Selector = SpecificAirplaneDepictionSelector
+)
 GhostDepiction_Su_17M4_SOV is GhostAerialDepictionDesc
 (
     Alternatives = Alternatives_Su_17M4_SOV
+    Selector = SpecificAirplaneDepictionSelector
+)
+GhostDepiction_Su_17M4_thermo_SOV is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_Su_17M4_thermo_SOV
     Selector = SpecificAirplaneDepictionSelector
 )
 GhostDepiction_Su_17_cluster_POL is GhostAerialDepictionDesc
@@ -1686,6 +2071,11 @@ GhostDepiction_Su_22_AT_SOV is GhostAerialDepictionDesc
     Alternatives = Alternatives_Su_22_AT_SOV
     Selector = SpecificAirplaneDepictionSelector
 )
+GhostDepiction_Su_22_AT_TCH is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_Su_22_AT_TCH
+    Selector = SpecificAirplaneDepictionSelector
+)
 GhostDepiction_Su_22_DDR is GhostAerialDepictionDesc
 (
     Alternatives = Alternatives_Su_22_DDR
@@ -1706,6 +2096,11 @@ GhostDepiction_Su_22_RKT2_POL is GhostAerialDepictionDesc
     Alternatives = Alternatives_Su_22_RKT2_POL
     Selector = SpecificAirplaneDepictionSelector
 )
+GhostDepiction_Su_22_RKT2_TCH is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_Su_22_RKT2_TCH
+    Selector = SpecificAirplaneDepictionSelector
+)
 GhostDepiction_Su_22_RKT_DDR is GhostAerialDepictionDesc
 (
     Alternatives = Alternatives_Su_22_RKT_DDR
@@ -1724,6 +2119,11 @@ GhostDepiction_Su_22_SEAD_DDR is GhostAerialDepictionDesc
 GhostDepiction_Su_22_SEAD_POL is GhostAerialDepictionDesc
 (
     Alternatives = Alternatives_Su_22_SEAD_POL
+    Selector = SpecificAirplaneDepictionSelector
+)
+GhostDepiction_Su_22_SEAD_TCH is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_Su_22_SEAD_TCH
     Selector = SpecificAirplaneDepictionSelector
 )
 GhostDepiction_Su_22_UPK_DDR is GhostAerialDepictionDesc
@@ -1816,9 +2216,34 @@ GhostDepiction_Su_25T_SOV is GhostAerialDepictionDesc
     Alternatives = Alternatives_Su_25T_SOV
     Selector = SpecificAirplaneDepictionSelector
 )
+GhostDepiction_Su_25_CLU_TCH is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_Su_25_CLU_TCH
+    Selector = SpecificAirplaneDepictionSelector
+)
+GhostDepiction_Su_25_HE_TCH is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_Su_25_HE_TCH
+    Selector = SpecificAirplaneDepictionSelector
+)
+GhostDepiction_Su_25_NPLM_TCH is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_Su_25_NPLM_TCH
+    Selector = SpecificAirplaneDepictionSelector
+)
+GhostDepiction_Su_25_RKT_TCH is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_Su_25_RKT_TCH
+    Selector = SpecificAirplaneDepictionSelector
+)
 GhostDepiction_Su_25_SOV is GhostAerialDepictionDesc
 (
     Alternatives = Alternatives_Su_25_SOV
+    Selector = SpecificAirplaneDepictionSelector
+)
+GhostDepiction_Su_25_TCH is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_Su_25_TCH
     Selector = SpecificAirplaneDepictionSelector
 )
 GhostDepiction_Su_25_clu_SOV is GhostAerialDepictionDesc
@@ -1921,6 +2346,21 @@ GhostDepiction_Tornado_IDS_MW1_RFA is GhostAerialDepictionDesc
     Alternatives = Alternatives_Tornado_IDS_MW1_RFA
     Selector = SpecificAirplaneDepictionSelector
 )
+GhostDepiction_Tornado_IDS_RFA is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_Tornado_IDS_RFA
+    Selector = SpecificAirplaneDepictionSelector
+)
+GhostDepiction_Tornado_IDS_SEAD_RFA is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_Tornado_IDS_SEAD_RFA
+    Selector = SpecificAirplaneDepictionSelector
+)
+GhostDepiction_Tu_143_TCH is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_Tu_143_TCH
+    Selector = SpecificAirplaneDepictionSelector
+)
 GhostDepiction_UH1A_US is GhostAerialDepictionDesc
 (
     Alternatives = Alternatives_UH1A_US
@@ -1946,6 +2386,11 @@ GhostDepiction_UH1H_CMD_ESP is GhostAerialDepictionDesc
     Alternatives = Alternatives_UH1H_CMD_ESP
     Selector = SpecificHelicoDepictionSelector
 )
+GhostDepiction_UH1H_ESP is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_UH1H_ESP
+    Selector = SpecificHelicoDepictionSelector
+)
 GhostDepiction_UH1H_Huey_US is GhostAerialDepictionDesc
 (
     Alternatives = Alternatives_UH1H_Huey_US
@@ -1959,6 +2404,16 @@ GhostDepiction_UH1H_supply_US is GhostAerialDepictionDesc
 GhostDepiction_UH1M_gunship_US is GhostAerialDepictionDesc
 (
     Alternatives = Alternatives_UH1M_gunship_US
+    Selector = SpecificHelicoDepictionSelector
+)
+GhostDepiction_UH1N_TwinHuey_CAN is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_UH1N_TwinHuey_CAN
+    Selector = SpecificHelicoDepictionSelector
+)
+GhostDepiction_UH1N_TwinHuey_CRV7_CAN is GhostAerialDepictionDesc
+(
+    Alternatives = Alternatives_UH1N_TwinHuey_CRV7_CAN
     Selector = SpecificHelicoDepictionSelector
 )
 GhostDepiction_UH60A_Black_Hawk_US is GhostAerialDepictionDesc

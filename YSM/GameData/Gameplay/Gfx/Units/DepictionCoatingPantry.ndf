@@ -95,6 +95,14 @@ Faun_Kraka_20mm_RFA_offset_coating_ingredient is TCoatingIngredientOperator
     )
 )
 
+Faun_Kraka_M40A1_RFA_offset_coating_ingredient is TCoatingIngredientOperator
+(
+    Descriptor = TCosmeticOffsetTurretWhileMovingOperatorDesc
+    (
+        AngleInDegree = 20
+    )
+)
+
 Mi_24V_SOV_landing_gears_coating_ingredient is TCoatingIngredientOperator
 (
     Descriptor = TCosmeticLandingGearOperatorDesc

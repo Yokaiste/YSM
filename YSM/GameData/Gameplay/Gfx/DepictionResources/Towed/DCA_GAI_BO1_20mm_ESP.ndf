@@ -1,0 +1,3 @@
+export Modele_DCA_GAI_BO1_20mm_ESP is TResourceMesh( Mesh="GameData:/Assets/3D/Units/ESP/Canon/DCA_GAI_BO1_20mm/DCA_GAI_BO1_20mm.fbx")
+export Modele_DCA_GAI_BO1_20mm_ESP_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/ESP/Canon/DCA_GAI_BO1_20mm_MID/DCA_GAI_BO1_20mm_MID.fbx")
+export Modele_DCA_GAI_BO1_20mm_ESP_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/ESP/Canon/DCA_GAI_BO1_20mm_LOW/DCA_GAI_BO1_20mm_LOW.fbx")

@@ -1,0 +1,14 @@
+export Modele_Puma_Orchidee_FR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Helico/Puma_Orchidee/Puma_Orchidee.fbx"
+)
+
+export Modele_Puma_Orchidee_FR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Helico/Puma_Orchidee_MID/Puma_Orchidee_MID.fbx"
+)
+
+export Modele_Puma_Orchidee_FR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Helico/Puma_Orchidee_LOW/Puma_Orchidee_LOW.fbx"
+)

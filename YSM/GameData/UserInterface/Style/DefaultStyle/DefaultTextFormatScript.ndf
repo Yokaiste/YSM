@@ -2134,6 +2134,10 @@ DefaultTextFormatScript is TTextFormatScriptRTTI
             TemplateTFS_Division(TextureToken = "CommonTexture_division_RFA_4PzGren")
         ),
         (
+            "RFA_1Gebirgs",
+            TemplateTFS_Division(TextureToken = "CommonTexture_division_RFA_1Gebirgs")
+        ),
+        (
             "RFA_default",
             TemplateTFS_Division(TextureToken = "CommonTexture_division_RFA_default")
         ),

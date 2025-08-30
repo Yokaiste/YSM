@@ -1,0 +1,20 @@
+export ModelFile_M113_ESP is "GameData:/Assets/3D/Units/ESP/APC/M113A1/M113A1.fbx"
+export Modele_M113_ESP is TResourceMesh
+(
+    Mesh=ModelFile_M113_ESP
+)
+export ModelFile_M113_ESP_MID is "GameData:/Assets/3D/Units/ESP/APC/M113A1_MID/M113A1_MID.fbx"
+export Modele_M113_ESP_MID is TResourceMesh
+(
+    Mesh=ModelFile_M113_ESP_MID
+)
+export ModelFile_M113_ESP_LOW is "GameData:/Assets/3D/Units/ESP/APC/M113A1_LOW/M113A1_LOW.fbx"
+export Modele_M113_ESP_LOW is TResourceMesh
+(
+    Mesh=ModelFile_M113_ESP_LOW
+)
+
+export Modele_M113_ESP_Tourelle_01 is TResourceMesh
+(
+    Mesh=ModelFile_M2HB_12_7mm_t1
+)

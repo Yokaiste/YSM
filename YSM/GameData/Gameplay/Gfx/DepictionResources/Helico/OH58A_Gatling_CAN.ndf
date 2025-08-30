@@ -1,0 +1,14 @@
+export Modele_OH58A_Gatling_CAN is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/CAN/Helico/OH58A_Gatling/OH58A_Gatling.fbx"
+)
+
+export Modele_OH58A_Gatling_CAN_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/CAN/Helico/OH58A_Gatling_MID/OH58A_Gatling_MID.fbx"
+)
+
+export Modele_OH58A_Gatling_CAN_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/CAN/Helico/OH58A_Gatling_LOW/OH58A_Gatling_LOW.fbx"
+)

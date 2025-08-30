@@ -1,0 +1,17 @@
+export Modele_M577_CAN is TResourceMesh
+(
+    Mesh=ModelFile_M577_ESP
+    Textures="GameData:/Assets/3D/Units/CAN/CMD/M113_CMD"
+)
+
+export Modele_M577_CAN_MID is TResourceMesh
+(
+    Mesh=ModelFile_M577_ESP_MID
+    Textures="GameData:/Assets/3D/Units/CAN/CMD/M113_CMD_MID"
+)
+
+export Modele_M577_CAN_LOW is TResourceMesh
+(
+    Mesh=ModelFile_M577_ESP_LOW
+    Textures="GameData:/Assets/3D/Units/CAN/CMD/M113_CMD_LOW"
+)

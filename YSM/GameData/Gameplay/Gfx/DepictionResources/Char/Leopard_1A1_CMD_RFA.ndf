@@ -18,5 +18,5 @@ export Modele_Leopard_1A1_CMD_RFA_LOW is TResourceMesh
 
 export Modele_Leopard_1A1_CMD_RFA_Tourelle_02 is TResourceMesh
 (
-    Mesh=ModelFile_M60_t2
+    Mesh=ModelFile_MG3_t2
 )

@@ -1,0 +1,14 @@
+export Modele_M35_supply_CAN is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/CAN/Vehicule/M35_supply/M35_Supply.fbx"
+)
+
+export Modele_M35_supply_CAN_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/CAN/Vehicule/M35_supply_MID/M35_Supply_MID.fbx"
+)
+
+export Modele_M35_supply_CAN_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/CAN/Vehicule/M35_supply_LOW/M35_supply_LOW.fbx"
+)

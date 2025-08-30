@@ -1,23 +1,17 @@
 
-private PackTransactionFiles is [
-    'GFX/DepictionResources.ndfbin',
-    'GFX/UI.ndfbin',
-]
-
 unnamed TResourcePackLoader
 (
     Packs =
     [
         TResourceDescriptorMeshPack
         (
-            PackName = "Pack/YSM/Mesh_All.spk"
-            TransactionFiles = PackTransactionFiles
-            UseDecompressedBufferResourceThreshold = 2
+            PackName = "Base"
+            PackFileName = "Pack/YSM/Mesh_All.spk"
         ),
         TResourceDescriptorProxyPack
         (
-            PackName = "Pack/YSM/Mesh_All.ndfbin"
-            TransactionFiles = PackTransactionFiles
+            PackName = "Base"
+            PackFileName = "Pack/YSM/Mesh_All.ndfbin"
         ),
     ]
 )

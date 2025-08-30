@@ -1,0 +1,19 @@
+export Modele_Faun_Kraka_MILAN_RFA is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Vehicule/Faun_Kraka_Milan/Faun_Kraka_Milan.fbx"
+)
+
+export Modele_Faun_Kraka_MILAN_RFA_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Vehicule/Faun_Kraka_Milan_MID/Faun_Kraka_Milan_MID.fbx"
+)
+
+export Modele_Faun_Kraka_MILAN_RFA_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Vehicule/Faun_Kraka_Milan_LOW/Faun_Kraka_Milan_LOW.fbx"
+)
+
+export Modele_Faun_Kraka_MILAN_RFA_Tourelle_01 is TResourceMesh
+(
+    Mesh=ModelFile_Milan_F1_t1
+)

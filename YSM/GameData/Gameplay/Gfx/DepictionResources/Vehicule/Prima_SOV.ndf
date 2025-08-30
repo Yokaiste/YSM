@@ -1,0 +1,14 @@
+export Modele_Prima_SOV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Artillerie/PRIMA/PRIMA.fbx"
+)
+
+export Modele_Prima_SOV_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Artillerie/PRIMA_MID/PRIMA_MID.fbx"
+)
+
+export Modele_Prima_SOV_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Artillerie/PRIMA_LOW/PRIMA_LOW.fbx"
+)

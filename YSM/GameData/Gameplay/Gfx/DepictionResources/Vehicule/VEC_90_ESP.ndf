@@ -1,0 +1,17 @@
+export Modele_VEC_90_ESP is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/ESP/Vehicule/VEC_H90/VEC_H90.fbx"
+)
+
+export Modele_VEC_90_ESP_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/ESP/Vehicule/VEC_H90_MID/VEC_H90_MID.fbx"
+)
+
+export Modele_VEC_90_ESP_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/ESP/Vehicule/VEC_H90_LOW/VEC_H90_LOW.fbx"
+)
+
+
+

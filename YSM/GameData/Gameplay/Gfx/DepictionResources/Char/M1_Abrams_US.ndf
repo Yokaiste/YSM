@@ -1,14 +1,15 @@
+export ModelFile_M1_Abrams_US is "GameData:/Assets/3D/Units/US/Char/M1_Abrams/M1_Abrams.fbx"
 export Modele_M1_Abrams_US is TResourceMesh
 (
-    Mesh="GameData:/Assets/3D/Units/US/Char/M1_Abrams/M1_Abrams.fbx"
+    Mesh=ModelFile_M1_Abrams_US
 )
-
+export ModelFile_M1_Abrams_US_MID is "GameData:/Assets/3D/Units/US/Char/M1_Abrams_MID/M1_Abrams_MID.fbx"
 export Modele_M1_Abrams_US_MID is TResourceMesh
 (
-    Mesh="GameData:/Assets/3D/Units/US/Char/M1_Abrams_MID/M1_Abrams_MID.fbx"
+    Mesh=ModelFile_M1_Abrams_US_MID
 )
-
+export ModelFile_M1_Abrams_US_LOW is "GameData:/Assets/3D/Units/US/Char/M1_Abrams_LOW/M1_Abrams_LOW.fbx"
 export Modele_M1_Abrams_US_LOW is TResourceMesh
 (
-    Mesh="GameData:/Assets/3D/Units/US/Char/M1_Abrams_LOW/M1_Abrams_LOW.fbx"
+    Mesh=ModelFile_M1_Abrams_US_LOW
 )

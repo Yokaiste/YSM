@@ -1,0 +1,4 @@
+export Modele_BMR_PM_81_ESP is TResourceMesh( Mesh="GameData:/Assets/3D/Units/ESP/Vehicule/BMR_PM_81/BMR_PM_81.fbx" )
+export Modele_BMR_PM_81_ESP_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/ESP/Vehicule/BMR_PM_81_MID/BMR_PM_81_MID.fbx" )
+export Modele_BMR_PM_81_ESP_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/ESP/Vehicule/BMR_PM_81_LOW/BMR_PM_81_LOW.fbx" )
+export Modele_BMR_PM_81_ESP_Tourelle_02 is TResourceMesh ( Mesh=ModelFile_M2HB_12_7mm_t1 )

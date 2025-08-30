@@ -1,0 +1,20 @@
+export Modele_BRDM_2_Malyu_P_TCH is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Antichar/BRDM_Malyutka/BRDM_Malyutka.fbx"
+    Textures="GameData:/Assets/3D/Units/TCH/Antichar/BRDM_Malyutka"
+)
+
+export Modele_BRDM_2_Malyu_P_TCH_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Antichar/BRDM_Malyutka_MID/BRDM_Malyutka_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/TCH/Antichar/BRDM_Malyutka_MID"
+)
+
+export Modele_BRDM_2_Malyu_P_TCH_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Antichar/BRDM_Malyutka_LOW/BRDM_Malyutka_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/TCH/Antichar/BRDM_Malyutka_LOW"
+)
+
+
+

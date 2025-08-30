@@ -1,0 +1,14 @@
+export Modele_Mi_24V_RKT_TCH is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/Helico/Mi_24V/Mi_24V_Rocket.fbx"
+)
+
+export Modele_Mi_24V_RKT_TCH_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/Helico/Mi_24V_MID/Mi_24V_Rocket_MID.fbx"
+)
+
+export Modele_Mi_24V_RKT_TCH_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/Helico/Mi_24V_LOW/Mi_24V_Rocket_LOW.fbx"
+)

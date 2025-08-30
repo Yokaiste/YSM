@@ -58,7 +58,7 @@ FeedbackMessage_OnBuildingUnderAttack           is 53
 FeedbackMessage_OnShootOnPositionSmokeOrder     is 54
 FeedbackMessage_OnCriticEvacuate                is 55
 FeedbackMessage_OnUnitSold                      is 56
-FeedbackMessage_OnAutomaticBehavior             is 57
+FeedbackMessage_OnAttackReaction             is 57
 FeedbackMessage_Strategic_APLost                is 58
 FeedbackMessage_Strategic_APGained              is 59
 FeedbackMessage_Strategic_PawnDeath             is 60
@@ -164,7 +164,7 @@ export Generated_DispatchedMessageType_Enum is TDispatchedMessageType
         "FeedbackMessage_OnShootOnPositionSmokeOrder",
         "FeedbackMessage_OnCriticEvacuate",
         "FeedbackMessage_OnUnitSold",
-        "FeedbackMessage_OnAutomaticBehavior",
+        "FeedbackMessage_OnAttackReaction",
         "FeedbackMessage_Strategic_APLost",
         "FeedbackMessage_Strategic_APGained",
         "FeedbackMessage_Strategic_PawnDeath",

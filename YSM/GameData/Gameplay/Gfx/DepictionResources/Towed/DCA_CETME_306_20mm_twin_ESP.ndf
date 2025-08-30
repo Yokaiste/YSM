@@ -1,0 +1,4 @@
+export Modele_DCA_CETME_306_20mm_twin_ESP is TResourceMesh( Mesh="GameData:/Assets/3D/Units/ESP/Canon/DCA_CETME_306_20mm_twin/DCA_CETME_306_20mm_twin.fbx")
+export Modele_DCA_CETME_306_20mm_twin_ESP_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/ESP/Canon/DCA_CETME_306_20mm_twin_MID/DCA_CETME_306_20mm_twin_MID.fbx")
+export Modele_DCA_CETME_306_20mm_twin_ESP_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/ESP/Canon/DCA_CETME_306_20mm_twin_LOW/DCA_CETME_306_20mm_twin_LOW.fbx")
+

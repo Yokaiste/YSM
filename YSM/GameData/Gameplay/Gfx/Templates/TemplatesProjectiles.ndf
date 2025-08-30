@@ -80,7 +80,7 @@ template templateFXWeapon_ProjectileActionDescriptor
 [
     Action,
     Power,
-    WithoutPhysics,
+    WithPhysics,
     DirectFire,
     FluidFriction,
     InitialSpeed,
@@ -101,7 +101,7 @@ is TActionCall
         private parShotCount        is TPinnableValue(ExpectedType = 'float'    InitialValue = <ShotCount>),
         private parShotOnGround     is TPinnableValue(ExpectedType = 'bool'     InitialValue = true),
         private parTerrain          is TPinnableValue(ExpectedType = 'int'      InitialValue = 1),
-        private parTirPhysic        is TPinnableValue(ExpectedType = 'bool'     InitialValue = !<WithoutPhysics>),
+        private parTirPhysic        is TPinnableValue(ExpectedType = 'bool'     InitialValue = <WithPhysics>),
         private parTirTendu         is TPinnableValue(ExpectedType = 'bool'     InitialValue = <DirectFire>),
         private parTravelDuration   is TPinnableValue(ExpectedType = 'float'),
         private parWaitBetweenShot  is TPinnableValue(ExpectedType = 'float'    InitialValue = <WaitBetweenShot>),
@@ -128,7 +128,7 @@ template FXWeaponProjectileHappeningSingle
 [
     Action,
     Power,
-    WithoutPhysics,
+    WithPhysics,
     DirectFire,
     FluidFriction,
     InitialSpeed,
@@ -140,7 +140,7 @@ template FXWeaponProjectileHappeningSingle
         Action = <Action>
         Power = <Power>
         ShotCount = 1
-        WithoutPhysics = <WithoutPhysics>
+        WithPhysics = <WithPhysics>
         DirectFire = <DirectFire>
         FluidFriction = <FluidFriction>
         InitialSpeed = <InitialSpeed>
@@ -152,7 +152,7 @@ template FXWeaponProjectileHappeningInfinite
 [
     Action,
     Power,
-    WithoutPhysics,
+    WithPhysics,
     DirectFire,
     FluidFriction,
     InitialSpeed,
@@ -164,7 +164,7 @@ template FXWeaponProjectileHappeningInfinite
         Action = <Action>
         Power = <Power>
         ShotCount = 0
-        WithoutPhysics = <WithoutPhysics>
+        WithPhysics = <WithPhysics>
         DirectFire = <DirectFire>
         FluidFriction = <FluidFriction>
         InitialSpeed = <InitialSpeed>

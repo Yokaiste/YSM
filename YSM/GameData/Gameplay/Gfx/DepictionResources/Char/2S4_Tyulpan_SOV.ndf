@@ -1,0 +1,20 @@
+export ModelFile_2S4_Tyulpan_SOV is "GameData:/Assets/3D/Units/URSS/Artillerie/2S4_Tyulpan/2S4_Tyulpan.fbx"
+export Modele_2S4_Tyulpan_SOV is TResourceMesh
+(
+    Mesh=ModelFile_2S4_Tyulpan_SOV
+)
+export ModelFile_2S4_Tyulpan_SOV_MID is "GameData:/Assets/3D/Units/URSS/Artillerie/2S4_Tyulpan_MID/2S4_Tyulpan_MID.fbx"
+export Modele_2S4_Tyulpan_SOV_MID is TResourceMesh
+(
+    Mesh=ModelFile_2S4_Tyulpan_SOV_MID
+)
+export ModelFile_2S4_Tyulpan_SOV_LOW is "GameData:/Assets/3D/Units/URSS/Artillerie/2S4_Tyulpan_LOW/2S4_Tyulpan_LOW.fbx"
+export Modele_2S4_Tyulpan_SOV_LOW is TResourceMesh
+(
+    Mesh=ModelFile_2S4_Tyulpan_SOV_MID
+)
+
+export Modele_2S4_Tyulpan_SOV_Tourelle_02 is TResourceMesh
+(
+    Mesh=ModelFile_PKT_no_ammo
+)

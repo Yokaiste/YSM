@@ -62,34 +62,3 @@ template BUCKSpecificUrlButtonMainComponentDescriptor
         ),
     ]
 )
-
-//------------------------------------------------------------------------------
-
-template UISpecificUrlButtonViewDescriptor
-[
-    BackgroundTextureToken : string = "",
-    TextToken : string = "",
-    Url : string = "",
-
-    HintTitleToken : string = "",
-    HintBodyToken : string = "",
-    HintExtendedToken : string = "",
-    HintDico : string = ~/LocalisationConstantes/dico_interface_outgame,
-    HintableAreaElementName : string = "",
-] is TUISpecificUrlButtonViewDescriptor
-(
-    MainComponentDescriptor = BUCKSpecificUrlButtonMainComponentDescriptor
-    (
-        ElementName = "VideoButton"
-        BackgroundTextureToken = <BackgroundTextureToken>
-        TextToken = <TextToken>
-
-        HintTitleToken = <HintTitleToken>
-        HintBodyToken = <HintBodyToken>
-        HintExtendedToken = <HintExtendedToken>
-        HintDico = <HintDico>
-        HintableAreaElementName = <HintableAreaElementName>
-    )
-    MainComponentContainerUniqueName = "" // Permet d'indiquer l'endroit ou le composant doit s'insérer
-    Url = <Url>
-)

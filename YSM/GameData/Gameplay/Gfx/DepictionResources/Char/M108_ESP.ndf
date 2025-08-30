@@ -1,0 +1,22 @@
+export Modele_M108_ESP is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Artillerie/M108/M108.fbx"
+    Textures="GameData:/Assets/3D/Units/ESP/Artillerie/M108"
+)
+
+export Modele_M108_ESP_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Artillerie/M108_MID/M108_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/ESP/Artillerie/M108_MID"
+)
+
+export Modele_M108_ESP_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/Artillerie/M108_LOW/M108_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/ESP/Artillerie/M108_LOW"
+)
+
+export Modele_M108_ESP_Tourelle_02 is TResourceMesh
+(
+    Mesh=ModelFile_M2HB_12_7mm_t2
+)

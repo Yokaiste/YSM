@@ -1,0 +1,19 @@
+export Modele_OT_810D_TCH is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/Vehicule/OT_810/OT_810.fbx"
+)
+
+export Modele_OT_810D_TCH_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/Vehicule/OT_810_MID/OT_810_MID.fbx"
+)
+
+export Modele_OT_810D_TCH_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/Vehicule/OT_810_LOW/OT_810_LOW.fbx"
+)
+
+export Modele_OT_810D_TCH_Tourelle_01 is TResourceMesh
+(
+    Mesh=ModelFile_VZ59_t1
+)

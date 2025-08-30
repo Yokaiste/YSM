@@ -1,0 +1,20 @@
+export ModelFile_F18_Hornet_AA_CAN is "GameData:/Assets/3D/Units/CAN/Avion/F18_HORNET_AA/F18_HORNET_AA.fbx"
+export Modele_F18_Hornet_AA_CAN is TResourceMesh
+(
+    Mesh=ModelFile_F18_Hornet_AA_CAN
+)
+export ModelFile_F18_Hornet_AA_CAN_MID is "GameData:/Assets/3D/Units/CAN/Avion/F18_HORNET_AA_MID/F18_HORNET_AA_MID.fbx"
+export Modele_F18_Hornet_AA_CAN_MID is TResourceMesh
+(
+    Mesh=ModelFile_F18_Hornet_AA_CAN_MID
+)
+export ModelFile_F18_Hornet_AA_CAN_LOW is "GameData:/Assets/3D/Units/CAN/Avion/F18_HORNET_AA_LOW/F18_HORNET_AA_LOW.fbx"
+export Modele_F18_Hornet_AA_CAN_LOW is TResourceMesh
+(
+    Mesh=ModelFile_F18_Hornet_AA_CAN_LOW
+)
+export ModelFile_F18_Hornet_AA_CAN_train is "GameData:/Assets/3D/Units/CAN/Avion/F18_HORNET_AA/F18_HORNET_AA_train.fbx"
+export Modele_F18_Hornet_AA_CAN_train is TResourceMesh
+(
+    Mesh=ModelFile_F18_Hornet_AA_CAN_train
+)

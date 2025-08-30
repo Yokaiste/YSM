@@ -1,0 +1,6 @@
+export Modele_2K11_KRUG_TCH     is TResourceMesh( Mesh=ModelFile_2K11_KRUG_DDR     Textures="GameData:/Assets/3D/Units/TCH/DCA/2K11_KRUG" )
+export Modele_2K11_KRUG_TCH_MID is TResourceMesh( Mesh=ModelFile_2K11_KRUG_DDR_MID Textures="GameData:/Assets/3D/Units/TCH/DCA/2K11_KRUG_MID" )
+export Modele_2K11_KRUG_TCH_LOW is TResourceMesh( Mesh=ModelFile_2K11_KRUG_DDR_LOW Textures="GameData:/Assets/3D/Units/TCH/DCA/2K11_KRUG_LOW" )
+
+
+

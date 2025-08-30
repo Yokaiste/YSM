@@ -1,0 +1,14 @@
+export Modele_Praga_V3S_TCH is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/Vehicule/V3S_PRAGA/V3S_PRAGA.fbx"
+)
+
+export Modele_Praga_V3S_TCH_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/Vehicule/V3S_PRAGA_MID/V3S_PRAGA_MID.fbx"
+)
+
+export Modele_Praga_V3S_TCH_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/Vehicule/V3S_PRAGA_LOW/V3S_PRAGA_LOW.fbx"
+)

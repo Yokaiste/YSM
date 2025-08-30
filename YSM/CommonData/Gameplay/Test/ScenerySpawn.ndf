@@ -8,9 +8,9 @@ unnamed Template_SceneryDescriptorSpawn
 )
 unnamed Template_SceneryDescriptorSpawn
 (
-    RegistrationName      = 'TestUnit_AMX_10_P'
-    ClassName             = '$/GFX/Unit/Descriptor_Unit_TestUnit_AMX_10_P'
-    AutoNameBase          = 'TestUnit_AMX_10_P'
+    RegistrationName      = 'TestUnit_Transporter_Armed'
+    ClassName             = '$/GFX/Unit/Descriptor_Unit_TestUnit_Transporter_Armed'
+    AutoNameBase          = 'TestUnit_Transporter_Armed'
     ModelResource         = $/GFX/DepictionResources/Modele_TestUnit_Tank
     ThumbstackScale       = 20
 )

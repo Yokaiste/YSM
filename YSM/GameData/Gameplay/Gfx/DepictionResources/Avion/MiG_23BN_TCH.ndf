@@ -1,0 +1,19 @@
+export Modele_MiG_23BN_TCH is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/Avion/MiG_23BN/MiG_23BN.fbx"
+)
+
+export Modele_MiG_23BN_TCH_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/Avion/MiG_23BN_MID/MiG_23BN_MID.fbx"
+)
+
+export Modele_MiG_23BN_TCH_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/Avion/MiG_23BN_LOW/MiG_23BN_LOW.fbx"
+)
+
+export Modele_MiG_23BN_TCH_train is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/Avion/MiG_23BN/MiG_23BN_train.fbx"
+)

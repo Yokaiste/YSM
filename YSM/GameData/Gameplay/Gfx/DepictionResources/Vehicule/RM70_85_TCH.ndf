@@ -1,0 +1,17 @@
+export Modele_RM70_85_TCH is TResourceMesh
+(
+    Mesh=ModelFile_RM70_85_DDR
+    Textures="GameData:/Assets/3D/Units/TCH/Artillerie/RM70_85"
+)
+
+export Modele_RM70_85_TCH_MID is TResourceMesh
+(
+    Mesh=ModelFile_RM70_85_DDR_MID
+    Textures="GameData:/Assets/3D/Units/TCH/Artillerie/RM70_85_MID"
+)
+
+export Modele_RM70_85_TCH_LOW is TResourceMesh
+(
+    Mesh=ModelFile_RM70_85_DDR_LOW
+    Textures="GameData:/Assets/3D/Units/TCH/Artillerie/RM70_85_LOW"
+)

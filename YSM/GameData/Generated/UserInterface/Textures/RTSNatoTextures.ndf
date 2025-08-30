@@ -165,9 +165,9 @@ Texture_RTS_H_Infantry is TUIResourceTexture_Common
     FileName      = 'GameData:/Assets/2D/Interface/UseInGame/LabelIcons/RTS/Infantry.png'
 )
 
-Texture_AT is TUIResourceTexture_Common
+Texture_FireSupport is TUIResourceTexture_Common
 (
-    FileName      = 'GameData:/Assets/2D/Interface/UseInGame/LabelIcons/NATO/AT.png'
+    FileName      = 'GameData:/Assets/2D/Interface/UseInGame/LabelIcons/NATO/FireSupport.png'
 )
 
 Texture_RTS_H_AT is TUIResourceTexture_Common
@@ -175,9 +175,9 @@ Texture_RTS_H_AT is TUIResourceTexture_Common
     FileName      = 'GameData:/Assets/2D/Interface/UseInGame/LabelIcons/RTS/AT.png'
 )
 
-Texture_FireSupport is TUIResourceTexture_Common
+Texture_AT is TUIResourceTexture_Common
 (
-    FileName      = 'GameData:/Assets/2D/Interface/UseInGame/LabelIcons/NATO/FireSupport.png'
+    FileName      = 'GameData:/Assets/2D/Interface/UseInGame/LabelIcons/NATO/AT.png'
 )
 
 Texture_CMD_inf is TUIResourceTexture_Common
@@ -468,9 +468,9 @@ NATORTSAdditionalTextureBank is TBUCKToolAdditionalTextureBank
         ("Texture_RTS_H_ATGun", MAP [(~/ComponentState/Normal, ~/Texture_RTS_H_ATGun)]),
         ("Texture_Infantry", MAP [(~/ComponentState/Normal, ~/Texture_Infantry)]),
         ("Texture_RTS_H_Infantry", MAP [(~/ComponentState/Normal, ~/Texture_RTS_H_Infantry)]),
-        ("Texture_AT", MAP [(~/ComponentState/Normal, ~/Texture_AT)]),
-        ("Texture_RTS_H_AT", MAP [(~/ComponentState/Normal, ~/Texture_RTS_H_AT)]),
         ("Texture_FireSupport", MAP [(~/ComponentState/Normal, ~/Texture_FireSupport)]),
+        ("Texture_RTS_H_AT", MAP [(~/ComponentState/Normal, ~/Texture_RTS_H_AT)]),
+        ("Texture_AT", MAP [(~/ComponentState/Normal, ~/Texture_AT)]),
         ("Texture_CMD_inf", MAP [(~/ComponentState/Normal, ~/Texture_CMD_inf)]),
         ("Texture_RTS_H_CMD_inf", MAP [(~/ComponentState/Normal, ~/Texture_RTS_H_CMD_inf)]),
         ("Texture_assault", MAP [(~/ComponentState/Normal, ~/Texture_assault)]),

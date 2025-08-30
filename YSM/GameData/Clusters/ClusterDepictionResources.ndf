@@ -6,13 +6,14 @@ export Main is TClusterNdfTransactions
         (
             BaseName  = 'GFX/DepictionResources'
             NameSpace = 'GFX/DepictionResources'
+            ResourcePackName = 'Base'
             Moddable = true
-            FillResourceList = true
 
             Files =
             [
                 'CommonData:System/Globals.ndf',
                 'CommonData:/Gameplay/Gfx/DepictionResources/TestUnits_Resources.ndf',
+                'GameData:/Gameplay/Gfx/DepictionResources/DepictionAnimationOperators.ndf',
                 'GameData:/Gameplay/Gfx/DepictionResources/DepictionAnimationResources.ndf',
                 'GameData:/Gameplay/Gfx/DepictionResources/Gfx_infanterie.ndf',
                 'GameData:/Gameplay/Gfx/DepictionResources/PylonsModelResources.ndf',

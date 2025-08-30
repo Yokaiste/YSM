@@ -1,0 +1,17 @@
+export Modele_CUCV_trans_CAN is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Vehicule/CUCV/CUCV.fbx"
+    Textures="GameData:/Assets/3D/Units/CAN/Vehicule/CUCV"
+)
+
+export Modele_CUCV_trans_CAN_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Vehicule/CUCV_MID/CUCV_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/CAN/Vehicule/CUCV_MID"
+)
+
+export Modele_CUCV_trans_CAN_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Vehicule/CUCV_LOW/CUCV_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/CAN/Vehicule/CUCV_LOW"
+)

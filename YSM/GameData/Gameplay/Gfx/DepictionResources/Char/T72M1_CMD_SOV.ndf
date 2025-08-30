@@ -1,0 +1,22 @@
+export Modele_T72M1_CMD_SOV is TResourceMesh
+(
+    Mesh=ModelFile_T72M1_CMD_TCH
+    Textures="GameData:/Assets/3D/Units/URSS/Char/T72M1_CMD2"
+)
+
+export Modele_T72M1_CMD_SOV_MID is TResourceMesh
+(
+    Mesh=ModelFile_T72M1_CMD_TCH_MID
+    Textures="GameData:/Assets/3D/Units/URSS/Char/T72M1_CMD2_MID"
+)
+
+export Modele_T72M1_CMD_SOV_LOW is TResourceMesh
+(
+    Mesh=ModelFile_T72M1_CMD_TCH_LOW
+    Textures="GameData:/Assets/3D/Units/URSS/Char/T72M1_CMD2_LOW"
+)
+
+export Modele_T72M1_CMD_SOV_Tourelle_02 is TResourceMesh
+(
+    Mesh=ModelFile_NSVT_no_ammo
+)

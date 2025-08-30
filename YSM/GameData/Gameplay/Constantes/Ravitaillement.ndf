@@ -39,7 +39,7 @@ export StandardSupply is TSupplyDescriptor
     FeedbackDrawer = ~/SupplyFeedbackDrawer
 )
 
-SupplyFeedbackDrawer is TSupplyFeedbackDrawer
+export SupplyFeedbackDrawer is TSupplyFeedbackDrawer
 (
     LineColor = RGBA[244, 187, 50, 255]
     ZOffset = 250.0

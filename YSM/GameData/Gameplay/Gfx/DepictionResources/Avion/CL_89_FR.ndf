@@ -1,0 +1,20 @@
+export Modele_CL_89_FR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Avion/CL_89/CL_89.fbx"
+)
+
+export Modele_CL_89_FR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Avion/CL_89_MID/CL_89_MID.fbx"
+)
+
+export Modele_CL_89_FR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Avion/CL_89_LOW/CL_89_LOW.fbx"
+)
+
+export Modele_CL_89_FR_train is TResourceMesh
+(
+    Mesh=ModelFile_Support_Drones
+)
+

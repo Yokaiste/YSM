@@ -1,0 +1,19 @@
+export Modele_Mi_4AV_57mm_TCH is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/Helico/Mi_4AV/Mi_4AV_no_pod.fbx"
+)
+
+export Modele_Mi_4AV_57mm_TCH_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/Helico/Mi_4AV_MID/Mi_4AV_no_pod_MID.fbx"
+)
+
+export Modele_Mi_4AV_57mm_TCH_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/Helico/Mi_4AV_LOW/Mi_4AV_no_pod_LOW.fbx"
+)
+
+export Modele_Mi_4AV_57mm_TCH_Tourelle_01 is TResourceMesh
+(
+    Mesh=ModelFile_A_127mm_t1
+)

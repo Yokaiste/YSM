@@ -1,0 +1,22 @@
+export Modele_M113_MILAN_ESP is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/ESP/APC/M113_TOA_MILAN/M113_TOA_MILAN.fbx"
+)
+export Modele_M113_MILAN_ESP_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/ESP/APC/M113_TOA_MILAN_MID/M113_TOA_MILAN_MID.fbx"
+)
+export Modele_M113_MILAN_ESP_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/ESP/APC/M113_TOA_MILAN_LOW/M113_TOA_MILAN_LOW.fbx"
+)
+
+export Modele_M113_MILAN_ESP_Tourelle_01 is TResourceMesh
+(
+    Mesh=ModelFile_M2HB_12_7mm_t1
+)
+
+export Modele_M113_MILAN_ESP_Tourelle_02 is TResourceMesh
+(
+    Mesh=ModelFile_Milan_F1_t2
+)

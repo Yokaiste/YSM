@@ -1,0 +1,19 @@
+export Modele_L39ZO_HE_TCH is TResourceMesh
+(
+    Mesh=ModelFile_L39ZO_TCH
+)
+
+export Modele_L39ZO_HE_TCH_MID is TResourceMesh
+(
+    Mesh=ModelFile_L39ZO_TCH_MID
+)
+
+export Modele_L39ZO_HE_TCH_LOW is TResourceMesh
+(
+    Mesh=ModelFile_L39ZO_TCH_LOW
+)
+
+export Modele_L39ZO_HE_TCH_train is TResourceMesh
+(
+    Mesh=ModelFile_L39ZO_TCH_train
+)

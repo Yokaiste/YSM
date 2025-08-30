@@ -1,0 +1,20 @@
+export Modele_UAZ_469_trans_TCH is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Vehicule/UAZ_469_CMD/UAZ_469_CMD.fbx"
+    Textures="GameData:/Assets/3D/Units/TCH/Vehicule/UAZ_469_CMD"
+)
+
+export Modele_UAZ_469_trans_TCH_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Vehicule/UAZ_469_CMD_MID/UAZ_469_CMD_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/TCH/Vehicule/UAZ_469_CMD_MID"
+)
+
+export Modele_UAZ_469_trans_TCH_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Vehicule/UAZ_469_CMD_LOW/UAZ_469_CMD_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/TCH/Vehicule/UAZ_469_CMD_LOW"
+)
+
+
+

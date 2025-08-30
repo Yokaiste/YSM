@@ -1,0 +1,17 @@
+export Modele_Mi_24P_TCH is TResourceMesh
+(
+    Mesh=ModelFile_Mi_24P_s8_AT_DDR
+    Textures="GameData:/Assets/3D/Units/TCH/Helico/Mi_24P"
+)
+
+export Modele_Mi_24P_TCH_MID is TResourceMesh
+(
+    Mesh=ModelFile_Mi_24P_s8_AT_DDR_MID
+    Textures="GameData:/Assets/3D/Units/TCH/Helico/Mi_24P_MID"
+)
+
+export Modele_Mi_24P_TCH_LOW is TResourceMesh
+(
+    Mesh=ModelFile_Mi_24P_s8_AT_DDR_LOW
+    Textures="GameData:/Assets/3D/Units/TCH/Helico/Mi_24P_LOW"
+)

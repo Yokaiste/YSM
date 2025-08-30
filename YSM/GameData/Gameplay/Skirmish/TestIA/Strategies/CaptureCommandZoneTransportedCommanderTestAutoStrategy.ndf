@@ -1,0 +1,15 @@
+export CaptureCommandZoneTransportedCommander_TestAuto_Strategy is TIAGeneralStrategy
+(
+    StrategyName = "CctTAStrat"
+    FirstGenerator = ~/TestAuto_CommandCaptureZoneTransportedCommander
+    TransitionList =[]
+)
+
+
+export TestAuto_CommandCaptureZoneTransportedCommander is TSequenceGeneratorDescriptor
+(
+    GeneratorList =
+    [
+        ~/CaptureOneZoneObjectifTransportedCommander_OnlyTestAuto,
+    ]
+)

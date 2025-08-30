@@ -1,0 +1,19 @@
+export Modele_Faun_Kraka_MG3_RFA is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Vehicule/Faun_Kraka_MG3/Faun_Kraka_MG3.fbx"
+)
+
+export Modele_Faun_Kraka_MG3_RFA_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Vehicule/Faun_Kraka_MG3_MID/Faun_Kraka_MG3_MID.fbx"
+)
+
+export Modele_Faun_Kraka_MG3_RFA_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Vehicule/Faun_Kraka_MG3_LOW/Faun_Kraka_MG3_LOW.fbx"
+)
+
+export Modele_Faun_Kraka_MG3_RFA_Tourelle_02 is TResourceMesh
+(
+    Mesh=ModelFile_MG3_t2_no_ammo
+)

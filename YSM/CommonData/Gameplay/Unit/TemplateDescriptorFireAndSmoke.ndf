@@ -39,7 +39,7 @@ template Template_DescriptorFire_Depiction
                             ]
                         )
                     ),
-                    $/SoundDescriptors/SoundHappening_Incendie,
+                    $/GFX/Sound/SoundHappening_Incendie,
                 ]
             ))
         )

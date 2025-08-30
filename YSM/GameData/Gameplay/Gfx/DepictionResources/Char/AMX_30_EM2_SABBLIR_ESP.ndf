@@ -1,0 +1,5 @@
+export Modele_AMX_30_EM2_SABBLIR_ESP     is TResourceMesh( Mesh='GameData:/Assets/3D/Units/ESP/Char/AMX_30_EM2_SABBLIR/AMX_30_EM2_SABBLIR.fbx' )
+export Modele_AMX_30_EM2_SABBLIR_ESP_MID is TResourceMesh( Mesh='GameData:/Assets/3D/Units/ESP/Char/AMX_30_EM2_SABBLIR_MID/AMX_30_EM2_SABBLIR_MID.fbx' )
+export Modele_AMX_30_EM2_SABBLIR_ESP_LOW is TResourceMesh( Mesh='GameData:/Assets/3D/Units/ESP/Char/AMX_30_EM2_SABBLIR_LOW/AMX_30_EM2_SABBLIR_LOW.fbx' )
+export Modele_AMX_30_EM2_SABBLIR_ESP_Tourelle_02 is TResourceMesh( Mesh=ModelFile_MG3_t2_no_ammo )
+export Modele_AMX_30_EM2_SABBLIR_ESP_Tourelle_03 is TResourceMesh( Mesh=ModelFile_M2HB_12_7mm_t3 )

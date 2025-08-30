@@ -16,6 +16,11 @@ GhostDepiction_2K11_KRUG_SOV is GhostVehicleDepictionDesc
     Alternatives = Alternatives_2K11_KRUG_SOV
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_2K11_KRUG_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_2K11_KRUG_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_2K12_KUB_DDR is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_2K12_KUB_DDR
@@ -29,6 +34,11 @@ GhostDepiction_2K12_KUB_POL is GhostVehicleDepictionDesc
 GhostDepiction_2K12_KUB_SOV is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_2K12_KUB_SOV
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_2K12_KUB_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_2K12_KUB_TCH
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_2S19_MstaS_SOV is GhostVehicleDepictionDesc
@@ -56,6 +66,11 @@ GhostDepiction_2S1_POL is GhostVehicleDepictionDesc
     Alternatives = Alternatives_2S1_POL
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_2S1_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_2S1_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_2S23_Nona_SVK_SOV is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_2S23_Nona_SVK_SOV
@@ -76,6 +91,16 @@ GhostDepiction_2S3_DDR is GhostVehicleDepictionDesc
     Alternatives = Alternatives_2S3_DDR
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_2S4_Tyulpan_SOV is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_2S4_Tyulpan_SOV
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_2S4_Tyulpan_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_2S4_Tyulpan_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_2S5_GiatsintS_SOV is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_2S5_GiatsintS_SOV
@@ -91,6 +116,11 @@ GhostDepiction_2S7_Pion_POL is GhostVehicleDepictionDesc
     Alternatives = Alternatives_2S7_Pion_POL
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_2S7_Pion_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_2S7_Pion_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_2S9_Nona_SOV is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_2S9_Nona_SOV
@@ -99,6 +129,11 @@ GhostDepiction_2S9_Nona_SOV is GhostVehicleDepictionDesc
 GhostDepiction_81mm_mortar_Aero_US is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_81mm_mortar_Aero_US
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_81mm_mortar_CAN is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_81mm_mortar_CAN
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_81mm_mortar_CLU_UK is GhostVehicleDepictionDesc
@@ -241,9 +276,34 @@ GhostDepiction_AMX_10_RCR_FR is GhostVehicleDepictionDesc
     Alternatives = Alternatives_AMX_10_RCR_FR
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_AMX_10_RCR_tank_FR is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_AMX_10_RCR_tank_FR
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_AMX_10_RC_CMD_FR is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_AMX_10_RC_CMD_FR
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_AMX_10_RC_FR is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_AMX_10_RC_FR
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_AMX_10_RC_Legion_FR is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_AMX_10_RC_Legion_FR
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_AMX_10_RC_tank_FR is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_AMX_10_RC_tank_FR
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_AMX_13_75mm_TCM_FR is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_AMX_13_75mm_TCM_FR
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_AMX_13_90mm_FR is GhostVehicleDepictionDesc
@@ -254,6 +314,11 @@ GhostDepiction_AMX_13_90mm_FR is GhostVehicleDepictionDesc
 GhostDepiction_AMX_13_DCA_FR is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_AMX_13_DCA_FR
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_AMX_13_VCG_12_7mm_FR is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_AMX_13_VCG_12_7mm_FR
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_AMX_13_VCI_12_7mm_FR is GhostVehicleDepictionDesc
@@ -269,6 +334,11 @@ GhostDepiction_AMX_13_VCI_20mm_FR is GhostVehicleDepictionDesc
 GhostDepiction_AMX_13_mod56_CMD_BEL is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_AMX_13_mod56_CMD_BEL
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_AMX_13_mod56_CMD_FR is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_AMX_13_mod56_CMD_FR
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_AMX_13_mod56_MILAN_BEL is GhostVehicleDepictionDesc
@@ -321,6 +391,36 @@ GhostDepiction_AMX_30_EBG_FR is GhostVehicleDepictionDesc
     Alternatives = Alternatives_AMX_30_EBG_FR
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_AMX_30_EM1_ESP is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_AMX_30_EM1_ESP
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_AMX_30_EM2_CMD_ESP is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_AMX_30_EM2_CMD_ESP
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_AMX_30_EM2_ESP is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_AMX_30_EM2_ESP
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_AMX_30_EM2_SABBLIR_ESP is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_AMX_30_EM2_SABBLIR_ESP
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_AMX_30_E_CMD_ESP is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_AMX_30_E_CMD_ESP
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_AMX_30_E_ESP is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_AMX_30_E_ESP
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_ASU_85_CMD_POL is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_ASU_85_CMD_POL
@@ -361,6 +461,11 @@ GhostDepiction_AT_KSM65_100mm_SOV is GhostVehicleDepictionDesc
     Alternatives = Alternatives_AT_KSM65_100mm_SOV
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_AT_M53_100mm_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_AT_M53_100mm_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_AT_T12R_Ruta_SOV is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_AT_T12R_Ruta_SOV
@@ -386,6 +491,16 @@ GhostDepiction_AT_vz52_85mm_DDR is GhostVehicleDepictionDesc
     Alternatives = Alternatives_AT_vz52_85mm_DDR
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_AT_vz52_85mm_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_AT_vz52_85mm_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_AT_vz59_RCL_Vysadkar_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_AT_vz59_RCL_Vysadkar_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_ATteam_Fagot_DDR is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_ATteam_Fagot_DDR
@@ -399,6 +514,11 @@ GhostDepiction_ATteam_Fagot_FJ_DDR is GhostVehicleDepictionDesc
 GhostDepiction_ATteam_Fagot_SOV is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_ATteam_Fagot_SOV
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_ATteam_Fagot_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_ATteam_Fagot_TCH
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_ATteam_ITOW_NG_US is GhostVehicleDepictionDesc
@@ -429,6 +549,11 @@ GhostDepiction_ATteam_Konkurs_DDR is GhostVehicleDepictionDesc
 GhostDepiction_ATteam_Konkurs_SOV is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_ATteam_Konkurs_SOV
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_ATteam_Konkurs_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_ATteam_Konkurs_TCH
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_ATteam_Konkurs_TTsko_SOV is GhostVehicleDepictionDesc
@@ -474,6 +599,11 @@ GhostDepiction_ATteam_Milan_2_BEL is GhostVehicleDepictionDesc
 GhostDepiction_ATteam_Milan_2_FR is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_ATteam_Milan_2_FR
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_ATteam_Milan_2_Legion_FR is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_ATteam_Milan_2_Legion_FR
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_ATteam_Milan_2_RFA is GhostVehicleDepictionDesc
@@ -571,6 +701,11 @@ GhostDepiction_ATteam_RCL_SPG9_VDV_SOV is GhostVehicleDepictionDesc
     Alternatives = Alternatives_ATteam_RCL_SPG9_VDV_SOV
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_ATteam_RCL_vz59_82mm_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_ATteam_RCL_vz59_82mm_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_ATteam_TOW2A_US is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_ATteam_TOW2A_US
@@ -604,6 +739,26 @@ GhostDepiction_ATteam_TOW_NL is GhostVehicleDepictionDesc
 GhostDepiction_ATteam_TOW_US is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_ATteam_TOW_US
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_AVGP_Cougar_CAN is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_AVGP_Cougar_CAN
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_AVGP_Cougar_CMD_CAN is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_AVGP_Cougar_CMD_CAN
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_AVGP_Cougar_reco_CAN is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_AVGP_Cougar_reco_CAN
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_AVGP_Grizzly_CAN is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_AVGP_Grizzly_CAN
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_Alvis_Stalwart_UK is GhostVehicleDepictionDesc
@@ -641,6 +796,11 @@ GhostDepiction_Atteam_Fagot_VDV_SOV is GhostVehicleDepictionDesc
     Alternatives = Alternatives_Atteam_Fagot_VDV_SOV
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_Atteam_ITOW_CAN is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_Atteam_ITOW_CAN
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_Atteam_Konkurs_DShV_SOV is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_Atteam_Konkurs_DShV_SOV
@@ -656,6 +816,36 @@ GhostDepiction_Atteam_Konkurs_VDV_SOV is GhostVehicleDepictionDesc
     Alternatives = Alternatives_Atteam_Konkurs_VDV_SOV
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_Atteam_Konkurs_Vysadkari_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_Atteam_Konkurs_Vysadkari_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_Atteam_Milan_1_ESP is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_Atteam_Milan_1_ESP
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_Atteam_Milan_2_ESP is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_Atteam_Milan_2_ESP
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_Atteam_TOW2_CAN is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_Atteam_TOW2_CAN
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_Atteam_TOW_CAN is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_Atteam_TOW_CAN
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_Automoteur_F3_155mm_FR is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_Automoteur_F3_155mm_FR
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_BAV_485_POL is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_BAV_485_POL
@@ -664,6 +854,11 @@ GhostDepiction_BAV_485_POL is GhostVehicleDepictionDesc
 GhostDepiction_BAV_485_Supply_POL is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_BAV_485_Supply_POL
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_BAV_485_Supply_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_BAV_485_Supply_TCH
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_BDX_BEL is GhostVehicleDepictionDesc
@@ -796,6 +991,11 @@ GhostDepiction_BMP_1P_SOV is GhostVehicleDepictionDesc
     Alternatives = Alternatives_BMP_1P_SOV
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_BMP_1P_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_BMP_1P_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_BMP_1P_reco_DDR is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_BMP_1P_reco_DDR
@@ -811,6 +1011,11 @@ GhostDepiction_BMP_1P_reco_SOV is GhostVehicleDepictionDesc
     Alternatives = Alternatives_BMP_1P_reco_SOV
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_BMP_1P_reco_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_BMP_1P_reco_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_BMP_1_CMD_DDR is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_BMP_1_CMD_DDR
@@ -824,6 +1029,11 @@ GhostDepiction_BMP_1_CMD_POL is GhostVehicleDepictionDesc
 GhostDepiction_BMP_1_CMD_SOV is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_BMP_1_CMD_SOV
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_BMP_1_CMD_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_BMP_1_CMD_TCH
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_BMP_1_SP1_DDR is GhostVehicleDepictionDesc
@@ -846,9 +1056,24 @@ GhostDepiction_BMP_1_SP2_SOV is GhostVehicleDepictionDesc
     Alternatives = Alternatives_BMP_1_SP2_SOV
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_BMP_1_SP2_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_BMP_1_SP2_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_BMP_1_SP2_reco_POL is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_BMP_1_SP2_reco_POL
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_BMP_1_SP2_reco_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_BMP_1_SP2_reco_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_BMP_1_Svatava_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_BMP_1_Svatava_TCH
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_BMP_2AG_SOV is GhostVehicleDepictionDesc
@@ -871,6 +1096,11 @@ GhostDepiction_BMP_2_CMD_SOV is GhostVehicleDepictionDesc
     Alternatives = Alternatives_BMP_2_CMD_SOV
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_BMP_2_CMD_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_BMP_2_CMD_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_BMP_2_DDR is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_BMP_2_DDR
@@ -886,14 +1116,59 @@ GhostDepiction_BMP_2_SOV is GhostVehicleDepictionDesc
     Alternatives = Alternatives_BMP_2_SOV
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_BMP_2_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_BMP_2_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_BMP_2_reco_SOV is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_BMP_2_reco_SOV
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_BMP_2_reco_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_BMP_2_reco_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_BMP_3_SOV is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_BMP_3_SOV
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_BMR_CC_I_TOW_ESP is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_BMR_CC_I_TOW_ESP
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_BMR_PC_ESP is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_BMR_PC_ESP
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_BMR_PM_81_ESP is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_BMR_PM_81_ESP
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_BMR_PP_AGL_ESP is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_BMR_PP_AGL_ESP
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_BMR_PP_ESP is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_BMR_PP_ESP
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_BMR_PP_VCZ_ESP is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_BMR_PP_VCZ_ESP
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_BMR_PP_reco_ESP is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_BMR_PP_reco_ESP
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_BRDM_1_DDR is GhostVehicleDepictionDesc
@@ -956,6 +1231,11 @@ GhostDepiction_BRDM_2_Konkurs_SOV is GhostVehicleDepictionDesc
     Alternatives = Alternatives_BRDM_2_Konkurs_SOV
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_BRDM_2_Konkurs_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_BRDM_2_Konkurs_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_BRDM_2_Malyu_P_POL is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_BRDM_2_Malyu_P_POL
@@ -964,6 +1244,11 @@ GhostDepiction_BRDM_2_Malyu_P_POL is GhostVehicleDepictionDesc
 GhostDepiction_BRDM_2_Malyu_P_SOV is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_BRDM_2_Malyu_P_SOV
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_BRDM_2_Malyu_P_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_BRDM_2_Malyu_P_TCH
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_BRDM_2_POL is GhostVehicleDepictionDesc
@@ -1186,6 +1471,26 @@ GhostDepiction_Bedford_MJ_4t_trans_UK is GhostVehicleDepictionDesc
     Alternatives = Alternatives_Bedford_MJ_4t_trans_UK
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_Berliet_GBC_8KT_FR is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_Berliet_GBC_8KT_FR
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_Berliet_GBC_8KT_HMG_FR is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_Berliet_GBC_8KT_HMG_FR
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_Berliet_GBU_15_FR is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_Berliet_GBU_15_FR
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_Berliet_GBU_15_supply_FR is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_Berliet_GBU_15_supply_FR
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_Bofors_40mm_RFA is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_Bofors_40mm_RFA
@@ -1216,6 +1521,11 @@ GhostDepiction_CUCV_AGL_US is GhostVehicleDepictionDesc
     Alternatives = Alternatives_CUCV_AGL_US
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_CUCV_Blowpipe_CAN is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_CUCV_Blowpipe_CAN
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_CUCV_HMG_US is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_CUCV_HMG_US
@@ -1226,6 +1536,11 @@ GhostDepiction_CUCV_Hellfire_US is GhostVehicleDepictionDesc
     Alternatives = Alternatives_CUCV_Hellfire_US
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_CUCV_MP_CAN is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_CUCV_MP_CAN
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_CUCV_MP_US is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_CUCV_MP_US
@@ -1234,6 +1549,11 @@ GhostDepiction_CUCV_MP_US is GhostVehicleDepictionDesc
 GhostDepiction_CUCV_US is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_CUCV_US
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_CUCV_trans_CAN is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_CUCV_trans_CAN
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_CUCV_trans_US is GhostVehicleDepictionDesc
@@ -1296,9 +1616,19 @@ GhostDepiction_DANA_POL is GhostVehicleDepictionDesc
     Alternatives = Alternatives_DANA_POL
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_DANA_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_DANA_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_DCA_53T2_20mm_FR is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_DCA_53T2_20mm_FR
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_DCA_53T2_20mm_Legion_FR is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_DCA_53T2_20mm_Legion_FR
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_DCA_53T2_20mm_Para_FR is GhostVehicleDepictionDesc
@@ -1326,9 +1656,19 @@ GhostDepiction_DCA_AZP_S60_SOV is GhostVehicleDepictionDesc
     Alternatives = Alternatives_DCA_AZP_S60_SOV
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_DCA_Aspide_ESP is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_DCA_Aspide_ESP
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_DCA_Bofors_57mm_BEL is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_DCA_Bofors_57mm_BEL
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_DCA_Bofors_ESP is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_DCA_Bofors_ESP
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_DCA_Bofors_L60_FR is GhostVehicleDepictionDesc
@@ -1341,9 +1681,19 @@ GhostDepiction_DCA_Bofors_upgrade_NL is GhostVehicleDepictionDesc
     Alternatives = Alternatives_DCA_Bofors_upgrade_NL
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_DCA_CETME_306_20mm_twin_ESP is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_DCA_CETME_306_20mm_twin_ESP
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_DCA_FASTA_4_DDR is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_DCA_FASTA_4_DDR
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_DCA_FK20_2_20mm_FJ_RFA is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_DCA_FK20_2_20mm_FJ_RFA
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_DCA_FK20_2_20mm_RFA is GhostVehicleDepictionDesc
@@ -1356,6 +1706,11 @@ GhostDepiction_DCA_FK20_2_20mm_Zwillinge_RFA is GhostVehicleDepictionDesc
     Alternatives = Alternatives_DCA_FK20_2_20mm_Zwillinge_RFA
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_DCA_GAI_BO1_20mm_ESP is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_DCA_GAI_BO1_20mm_ESP
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_DCA_HSS630_triple_20mm_BEL is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_DCA_HSS630_triple_20mm_BEL
@@ -1364,6 +1719,11 @@ GhostDepiction_DCA_HSS630_triple_20mm_BEL is GhostVehicleDepictionDesc
 GhostDepiction_DCA_I_Hawk_BEL is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_DCA_I_Hawk_BEL
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_DCA_I_Hawk_FR is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_DCA_I_Hawk_FR
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_DCA_I_Hawk_NL is GhostVehicleDepictionDesc
@@ -1399,6 +1759,11 @@ GhostDepiction_DCA_KS19_100mm_DDR is GhostVehicleDepictionDesc
 GhostDepiction_DCA_KS30_130mm_SOV is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_DCA_KS30_130mm_SOV
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_DCA_KS30_130mm_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_DCA_KS30_130mm_TCH
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_DCA_M167A2_Vulcan_20mm_Aero_US is GhostVehicleDepictionDesc
@@ -1444,6 +1809,31 @@ GhostDepiction_DCA_M55_NL is GhostVehicleDepictionDesc
 GhostDepiction_DCA_Oerlikon_GDF_002_35mm_UK is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_DCA_Oerlikon_GDF_002_35mm_UK
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_DCA_Oerlikon_GDF_005_35mm_CAN is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_DCA_Oerlikon_GDF_005_35mm_CAN
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_DCA_Oerlikon_GDF_005_35mm_ESP is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_DCA_Oerlikon_GDF_005_35mm_ESP
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_DCA_PLDvK_30mm_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_DCA_PLDvK_30mm_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_DCA_PLK_57mm_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_DCA_PLK_57mm_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_DCA_PL_vz53_DShK_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_DCA_PL_vz53_DShK_TCH
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_DCA_Rapier_Darkfire_UK is GhostVehicleDepictionDesc
@@ -1524,6 +1914,16 @@ GhostDepiction_DCA_ZU_23_2_nonPara_SOV is GhostVehicleDepictionDesc
 GhostDepiction_DEP_M109A2 is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_DEP_M109A2
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_DaimlerBenz_Typ1017_supply_RFA is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_DaimlerBenz_Typ1017_supply_RFA
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_DaimlerBenz_Typ1017_trans_RFA is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_DaimlerBenz_Typ1017_trans_RFA
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_Dragoon_300_US is GhostVehicleDepictionDesc
@@ -1791,9 +2191,29 @@ GhostDepiction_Faun_Kraka_20mm_RFA is GhostVehicleDepictionDesc
     Alternatives = Alternatives_Faun_Kraka_20mm_RFA
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_Faun_Kraka_CMD_RFA is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_Faun_Kraka_CMD_RFA
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_Faun_Kraka_Log_RFA is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_Faun_Kraka_Log_RFA
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_Faun_Kraka_M40A1_RFA is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_Faun_Kraka_M40A1_RFA
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_Faun_Kraka_MG3_RFA is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_Faun_Kraka_MG3_RFA
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_Faun_Kraka_MILAN_RFA is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_Faun_Kraka_MILAN_RFA
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_Faun_Kraka_TOW_RFA is GhostVehicleDepictionDesc
@@ -1926,6 +2346,11 @@ GhostDepiction_HMGteam_AANF1_FR is GhostVehicleDepictionDesc
     Alternatives = Alternatives_HMGteam_AANF1_FR
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_HMGteam_AANF1_Legion_FR is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_HMGteam_AANF1_Legion_FR
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_HMGteam_AANF1_Reserve_FR is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_HMGteam_AANF1_Reserve_FR
@@ -1956,6 +2381,11 @@ GhostDepiction_HMGteam_AGS17_SOV is GhostVehicleDepictionDesc
     Alternatives = Alternatives_HMGteam_AGS17_SOV
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_HMGteam_AGS17_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_HMGteam_AGS17_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_HMGteam_AGS17_TTsko_SOV is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_HMGteam_AGS17_TTsko_SOV
@@ -1976,9 +2406,19 @@ GhostDepiction_HMGteam_DShK_SOV is GhostVehicleDepictionDesc
     Alternatives = Alternatives_HMGteam_DShK_SOV
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_HMGteam_GAI_BO1_20mm_ESP is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_HMGteam_GAI_BO1_20mm_ESP
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_HMGteam_KPVT_SOV is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_HMGteam_KPVT_SOV
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_HMGteam_LAG40_ESP is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_HMGteam_LAG40_ESP
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_HMGteam_M1919A4_NL is GhostVehicleDepictionDesc
@@ -1999,6 +2439,11 @@ GhostDepiction_HMGteam_M2HB_Aero_US is GhostVehicleDepictionDesc
 GhostDepiction_HMGteam_M2HB_BEL is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_HMGteam_M2HB_BEL
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_HMGteam_M2HB_CAN is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_HMGteam_M2HB_CAN
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_HMGteam_M2HB_FR is GhostVehicleDepictionDesc
@@ -2094,6 +2539,11 @@ GhostDepiction_HMGteam_MAG_para_BEL is GhostVehicleDepictionDesc
 GhostDepiction_HMGteam_MAG_para_UK is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_HMGteam_MAG_para_UK
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_HMGteam_MG3_ESP is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_HMGteam_MG3_ESP
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_HMGteam_MG3_FJ_RFA is GhostVehicleDepictionDesc
@@ -2201,6 +2651,11 @@ GhostDepiction_HMGteam_PKM_para_POL is GhostVehicleDepictionDesc
     Alternatives = Alternatives_HMGteam_PKM_para_POL
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_HMGteam_UKvz59_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_HMGteam_UKvz59_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_HS30_Panzermorser_120mm_RFA is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_HS30_Panzermorser_120mm_RFA
@@ -2229,6 +2684,11 @@ GhostDepiction_Honker_RYS_POL is GhostVehicleDepictionDesc
 GhostDepiction_Howz_2A36_Giatsint_B_SOV is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_Howz_2A36_Giatsint_B_SOV
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_Howz_A19_122mm_ESP is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_Howz_A19_122mm_ESP
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_Howz_A19_122mm_POL is GhostVehicleDepictionDesc
@@ -2281,6 +2741,11 @@ GhostDepiction_Howz_D30_122mm_SOV is GhostVehicleDepictionDesc
     Alternatives = Alternatives_Howz_D30_122mm_SOV
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_Howz_D30_122mm_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_Howz_D30_122mm_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_Howz_D30_122mm_VDV_SOV is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_Howz_D30_122mm_VDV_SOV
@@ -2326,6 +2791,11 @@ GhostDepiction_Howz_M102_105mm_US is GhostVehicleDepictionDesc
     Alternatives = Alternatives_Howz_M102_105mm_US
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_Howz_M114_155mm_CAN is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_Howz_M114_155mm_CAN
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_Howz_M114_155mm_NL is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_Howz_M114_155mm_NL
@@ -2366,6 +2836,11 @@ GhostDepiction_Howz_M30_122mm_POL is GhostVehicleDepictionDesc
     Alternatives = Alternatives_Howz_M30_122mm_POL
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_Howz_M30_122mm_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_Howz_M30_122mm_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_Howz_M46_130mm_DDR is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_Howz_M46_130mm_DDR
@@ -2374,6 +2849,16 @@ GhostDepiction_Howz_M46_130mm_DDR is GhostVehicleDepictionDesc
 GhostDepiction_Howz_M46_130mm_POL is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_Howz_M46_130mm_POL
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_Howz_M56_Pack_FJ_RFA is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_Howz_M56_Pack_FJ_RFA
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_Howz_M56_Pack_Geb_RFA is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_Howz_M56_Pack_Geb_RFA
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_Howz_M59_LongTom_155mm_BEL is GhostVehicleDepictionDesc
@@ -2391,9 +2876,19 @@ GhostDepiction_Howz_MstaB_150mm_SOV is GhostVehicleDepictionDesc
     Alternatives = Alternatives_Howz_MstaB_150mm_SOV
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_Howz_TRF1_155mm_FR is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_Howz_TRF1_155mm_FR
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_Howz_ZiS3_76mm_DDR is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_Howz_ZiS3_76mm_DDR
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_Howz_vz18_47_152mm_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_Howz_vz18_47_152mm_TCH
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_IS2M_SOV is GhostVehicleDepictionDesc
@@ -2404,6 +2899,11 @@ GhostDepiction_IS2M_SOV is GhostVehicleDepictionDesc
 GhostDepiction_Iltis_CMD_BEL is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_Iltis_CMD_BEL
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_Iltis_CMD_CAN is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_Iltis_CMD_CAN
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_Iltis_HMG_BEL is GhostVehicleDepictionDesc
@@ -2441,6 +2941,11 @@ GhostDepiction_Iltis_trans_BEL is GhostVehicleDepictionDesc
     Alternatives = Alternatives_Iltis_trans_BEL
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_Iltis_trans_CAN is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_Iltis_trans_CAN
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_Iltis_trans_RFA is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_Iltis_trans_RFA
@@ -2474,6 +2979,11 @@ GhostDepiction_KrAZ_255B_POL is GhostVehicleDepictionDesc
 GhostDepiction_KrAZ_255B_SOV is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_KrAZ_255B_SOV
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_KrAZ_255B_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_KrAZ_255B_TCH
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_KrAZ_255B_supply_DDR is GhostVehicleDepictionDesc
@@ -2571,6 +3081,11 @@ GhostDepiction_LUAZ_967M_supply_SOV is GhostVehicleDepictionDesc
     Alternatives = Alternatives_LUAZ_967M_supply_SOV
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_LandRover_CMD_ESP is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_LandRover_CMD_ESP
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_LandRover_CMD_NL is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_LandRover_CMD_NL
@@ -2586,6 +3101,16 @@ GhostDepiction_LandRover_CMD_UK is GhostVehicleDepictionDesc
     Alternatives = Alternatives_LandRover_CMD_UK
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_LandRover_ESP is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_LandRover_ESP
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_LandRover_GSR_ESP is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_LandRover_GSR_ESP
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_LandRover_MILAN_Para_UK is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_LandRover_MILAN_Para_UK
@@ -2599,6 +3124,11 @@ GhostDepiction_LandRover_MILAN_UK is GhostVehicleDepictionDesc
 GhostDepiction_LandRover_MP_BEL is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_LandRover_MP_BEL
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_LandRover_MP_ESP is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_LandRover_MP_ESP
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_LandRover_MP_NL is GhostVehicleDepictionDesc
@@ -2641,6 +3171,11 @@ GhostDepiction_Leopard_1A1A1_NL is GhostVehicleDepictionDesc
     Alternatives = Alternatives_Leopard_1A1A1_NL
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_Leopard_1A1A2_RFA is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_Leopard_1A1A2_RFA
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_Leopard_1A1_CMD_RFA is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_Leopard_1A1_CMD_RFA
@@ -2654,6 +3189,16 @@ GhostDepiction_Leopard_1A1_NL is GhostVehicleDepictionDesc
 GhostDepiction_Leopard_1A1_RFA is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_Leopard_1A1_RFA
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_Leopard_1A3_CAN is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_Leopard_1A3_CAN
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_Leopard_1A3_CMD_CAN is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_Leopard_1A3_CMD_CAN
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_Leopard_1A5_BEL is GhostVehicleDepictionDesc
@@ -2674,6 +3219,11 @@ GhostDepiction_Leopard_1A5_CMD_RFA is GhostVehicleDepictionDesc
 GhostDepiction_Leopard_1A5_RFA is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_Leopard_1A5_RFA
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_Leopard_1A5_reco_RFA is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_Leopard_1A5_reco_RFA
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_Leopard_1BE_BEL is GhostVehicleDepictionDesc
@@ -2846,9 +3396,24 @@ GhostDepiction_M108_BEL is GhostVehicleDepictionDesc
     Alternatives = Alternatives_M108_BEL
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_M108_ESP is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_M108_ESP
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_M109A1_HOWZ_ESP is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_M109A1_HOWZ_ESP
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_M109A2_BEL is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_M109A2_BEL
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_M109A2_CAN is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_M109A2_CAN
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_M109A2_NG_US is GhostVehicleDepictionDesc
@@ -2871,6 +3436,11 @@ GhostDepiction_M109A3G_HOWZ_RFA is GhostVehicleDepictionDesc
     Alternatives = Alternatives_M109A3G_HOWZ_RFA
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_M109G_RFA is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_M109G_RFA
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_M110A2_HOWZ_BEL is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_M110A2_HOWZ_BEL
@@ -2884,6 +3454,11 @@ GhostDepiction_M110A2_HOWZ_NL is GhostVehicleDepictionDesc
 GhostDepiction_M110A2_HOWZ_US is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_M110A2_HOWZ_US
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_M110A2_Howz_ESP is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_M110A2_Howz_ESP
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_M110A2_Howz_NG_US is GhostVehicleDepictionDesc
@@ -2941,6 +3516,16 @@ GhostDepiction_M113A1_ACAV_NG_US is GhostVehicleDepictionDesc
     Alternatives = Alternatives_M113A1_ACAV_NG_US
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_M113A1_CAN is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_M113A1_CAN
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_M113A1_Dozer_CAN is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_M113A1_Dozer_CAN
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_M113A1_Dragon_NG_US is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_M113A1_Dragon_NG_US
@@ -2956,14 +3541,39 @@ GhostDepiction_M113A1_NL is GhostVehicleDepictionDesc
     Alternatives = Alternatives_M113A1_NL
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_M113A1_RCL_CAN is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_M113A1_RCL_CAN
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_M113A1_TOW_CAN is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_M113A1_TOW_CAN
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_M113A1_TOW_US is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_M113A1_TOW_US
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_M113A1_TUA_CAN is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_M113A1_TUA_CAN
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_M113A1_reco_CAN is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_M113A1_reco_CAN
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_M113A1_reco_NL is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_M113A1_reco_NL
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_M113A1_reserve_CAN is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_M113A1_reserve_CAN
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_M113A2_TOW_US is GhostVehicleDepictionDesc
@@ -2991,6 +3601,16 @@ GhostDepiction_M113_ACAV_US is GhostVehicleDepictionDesc
     Alternatives = Alternatives_M113_ACAV_US
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_M113_ADATS_CAN is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_M113_ADATS_CAN
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_M113_AGL_ESP is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_M113_AGL_ESP
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_M113_CV_25mm_NL is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_M113_CV_25mm_NL
@@ -3004,6 +3624,11 @@ GhostDepiction_M113_CV_MP_NL is GhostVehicleDepictionDesc
 GhostDepiction_M113_Dragon_US is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_M113_Dragon_US
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_M113_ESP is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_M113_ESP
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_M113_GreenArcher_NL is GhostVehicleDepictionDesc
@@ -3021,9 +3646,49 @@ GhostDepiction_M113_GreenArcher_UK is GhostVehicleDepictionDesc
     Alternatives = Alternatives_M113_GreenArcher_UK
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_M113_LML_CAN is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_M113_LML_CAN
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_M113_Lynx_CAN is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_M113_Lynx_CAN
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_M113_MILAN_ESP is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_M113_MILAN_ESP
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_M113_PM120_ESP is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_M113_PM120_ESP
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_M113_PzMorser_RFA is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_M113_PzMorser_RFA
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_M113_TOW_ESP is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_M113_TOW_ESP
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_M113_VCZ_ESP is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_M113_VCZ_ESP
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_M113_reco_ESP is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_M113_reco_ESP
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_M125_HOWZ_ESP is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_M125_HOWZ_ESP
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_M125_HOWZ_NG_US is GhostVehicleDepictionDesc
@@ -3034,6 +3699,11 @@ GhostDepiction_M125_HOWZ_NG_US is GhostVehicleDepictionDesc
 GhostDepiction_M125_HOWZ_US is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_M125_HOWZ_US
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_M151A2_TOW_CAN is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_M151A2_TOW_CAN
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_M151A2_TOW_NG_US is GhostVehicleDepictionDesc
@@ -3054,6 +3724,11 @@ GhostDepiction_M151C_RCL_NG_US is GhostVehicleDepictionDesc
 GhostDepiction_M151_MUTT_CMD_US is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_M151_MUTT_CMD_US
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_M151_MUTT_trans_CAN is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_M151_MUTT_trans_CAN
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_M151_MUTT_trans_DDR is GhostVehicleDepictionDesc
@@ -3146,6 +3821,16 @@ GhostDepiction_M201_MILAN_FR is GhostVehicleDepictionDesc
     Alternatives = Alternatives_M201_MILAN_FR
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_M201_RASURA_FR is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_M201_RASURA_FR
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_M270_MLRS_FR is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_M270_MLRS_FR
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_M270_MLRS_RFA is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_M270_MLRS_RFA
@@ -3216,9 +3901,19 @@ GhostDepiction_M2_Bradley_IFV_NG_US is GhostVehicleDepictionDesc
     Alternatives = Alternatives_M2_Bradley_IFV_NG_US
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_M35_supply_CAN is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_M35_supply_CAN
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_M35_supply_US is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_M35_supply_US
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_M35_trans_CAN is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_M35_trans_CAN
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_M35_trans_DDR is GhostVehicleDepictionDesc
@@ -3311,6 +4006,21 @@ GhostDepiction_M48A2GA2_RFA is GhostVehicleDepictionDesc
     Alternatives = Alternatives_M48A2GA2_RFA
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_M48A2GA2_nonHeimat_RFA is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_M48A2GA2_nonHeimat_RFA
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_M48A5E_CMD_ESP is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_M48A5E_CMD_ESP
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_M48A5E_ESP is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_M48A5E_ESP
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_M48A5_reco_NG_US is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_M48A5_reco_NG_US
@@ -3319,6 +4029,21 @@ GhostDepiction_M48A5_reco_NG_US is GhostVehicleDepictionDesc
 GhostDepiction_M48_Chaparral_MIM72F_US is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_M48_Chaparral_MIM72F_US
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_M53_59_Praga_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_M53_59_Praga_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_M548A2_supply_CAN is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_M548A2_supply_CAN
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_M548A2_supply_ESP is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_M548A2_supply_ESP
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_M548A2_supply_US is GhostVehicleDepictionDesc
@@ -3344,6 +4069,16 @@ GhostDepiction_M551A1_TTS_Sheridan_US is GhostVehicleDepictionDesc
 GhostDepiction_M55_203mm_BEL is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_M55_203mm_BEL
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_M577_CAN is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_M577_CAN
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_M577_ESP is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_M577_ESP
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_M577_NL is GhostVehicleDepictionDesc
@@ -3486,6 +4221,11 @@ GhostDepiction_MAN_Kat_6x6_RFA is GhostVehicleDepictionDesc
     Alternatives = Alternatives_MAN_Kat_6x6_RFA
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_MAN_Kat_6x6_supply_CAN is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_MAN_Kat_6x6_supply_CAN
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_MAN_Kat_6x6_trans_RFA is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_MAN_Kat_6x6_trans_RFA
@@ -3541,6 +4281,11 @@ GhostDepiction_MLRS_WP_8z_POL is GhostVehicleDepictionDesc
     Alternatives = Alternatives_MLRS_WP_8z_POL
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_MTLB_BMAN_SOV is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_MTLB_BMAN_SOV
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_MTLB_CMD_DDR is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_MTLB_CMD_DDR
@@ -3581,6 +4326,11 @@ GhostDepiction_MTLB_Strela10_SOV is GhostVehicleDepictionDesc
     Alternatives = Alternatives_MTLB_Strela10_SOV
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_MTLB_Strela10_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_MTLB_Strela10_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_MTLB_TRI_Hors_POL is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_MTLB_TRI_Hors_POL
@@ -3614,6 +4364,16 @@ GhostDepiction_MTLB_trans_POL is GhostVehicleDepictionDesc
 GhostDepiction_MTLB_transp_SOV is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_MTLB_transp_SOV
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_Marder_1A1_MILAN_RFA is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_Marder_1A1_MILAN_RFA
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_Marder_1A1_RFA is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_Marder_1A1_RFA
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_Marder_1A2_MILAN_RFA is GhostVehicleDepictionDesc
@@ -3679,6 +4439,16 @@ GhostDepiction_Mortier_107mm_US is GhostVehicleDepictionDesc
 GhostDepiction_Mortier_107mm_para_BEL is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_Mortier_107mm_para_BEL
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_Mortier_120mm_L65_ESP is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_Mortier_120mm_L65_ESP
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_Mortier_120mm_vz82_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_Mortier_120mm_vz82_TCH
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_Mortier_240mm_M240_Cluster_SOV is GhostVehicleDepictionDesc
@@ -3771,6 +4541,11 @@ GhostDepiction_Mortier_81mm_FR is GhostVehicleDepictionDesc
     Alternatives = Alternatives_Mortier_81mm_FR
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_Mortier_81mm_L65_ESP is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_Mortier_81mm_L65_ESP
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_Mortier_81mm_LUX is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_Mortier_81mm_LUX
@@ -3779,6 +4554,11 @@ GhostDepiction_Mortier_81mm_LUX is GhostVehicleDepictionDesc
 GhostDepiction_Mortier_81mm_para_BEL is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_Mortier_81mm_para_BEL
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_Mortier_82mm_vz52_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_Mortier_82mm_vz52_TCH
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_Mortier_M29_81mm_Marines_NL is GhostVehicleDepictionDesc
@@ -3826,6 +4606,11 @@ GhostDepiction_Mortier_MORT61_120mm_FR is GhostVehicleDepictionDesc
     Alternatives = Alternatives_Mortier_MORT61_120mm_FR
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_Mortier_MORT61_120mm_Legion_FR is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_Mortier_MORT61_120mm_Legion_FR
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_Mortier_MORT61_120mm_NL is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_Mortier_MORT61_120mm_NL
@@ -3871,6 +4656,21 @@ GhostDepiction_OT_62_TOPAS_2AP_POL is GhostVehicleDepictionDesc
     Alternatives = Alternatives_OT_62_TOPAS_2AP_POL
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_OT_62_TOPAS_2A_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_OT_62_TOPAS_2A_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_OT_62_TOPAS_2B_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_OT_62_TOPAS_2B_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_OT_62_TOPAS_2D_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_OT_62_TOPAS_2D_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_OT_62_TOPAS_JOD_POL is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_OT_62_TOPAS_JOD_POL
@@ -3884,6 +4684,11 @@ GhostDepiction_OT_62_TOPAS_POL is GhostVehicleDepictionDesc
 GhostDepiction_OT_62_TOPAS_R3M_CMD_POL is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_OT_62_TOPAS_R3M_CMD_POL
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_OT_62_TOPAS_R4M_CMD_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_OT_62_TOPAS_R4M_CMD_TCH
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_OT_62_TOPAS_SPG9_POL is GhostVehicleDepictionDesc
@@ -3901,6 +4706,11 @@ GhostDepiction_OT_64_SKOT_2A_POL is GhostVehicleDepictionDesc
     Alternatives = Alternatives_OT_64_SKOT_2A_POL
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_OT_64_SKOT_2A_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_OT_64_SKOT_2A_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_OT_64_SKOT_2P_POL is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_OT_64_SKOT_2P_POL
@@ -3911,14 +4721,34 @@ GhostDepiction_OT_64_SKOT_2_POL is GhostVehicleDepictionDesc
     Alternatives = Alternatives_OT_64_SKOT_2_POL
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_OT_64_SKOT_2_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_OT_64_SKOT_2_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_OT_64_SKOT_CMD_POL is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_OT_64_SKOT_CMD_POL
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_OT_64_SKOT_CMD_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_OT_64_SKOT_CMD_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_OT_65A_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_OT_65A_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_OT_65_CMD_POL is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_OT_65_CMD_POL
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_OT_65_CMD_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_OT_65_CMD_TCH
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_OT_65_DDR is GhostVehicleDepictionDesc
@@ -3929,6 +4759,31 @@ GhostDepiction_OT_65_DDR is GhostVehicleDepictionDesc
 GhostDepiction_OT_65_POL is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_OT_65_POL
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_OT_65_Radar_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_OT_65_Radar_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_OT_65_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_OT_65_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_OT_810D_CMD_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_OT_810D_CMD_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_OT_810D_RCL_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_OT_810D_RCL_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_OT_810D_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_OT_810D_TCH
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_Obusier_155mm_mle1950_FR is GhostVehicleDepictionDesc
@@ -3949,6 +4804,16 @@ GhostDepiction_Osa_9K33M3_POL is GhostVehicleDepictionDesc
 GhostDepiction_Osa_9K33M3_SOV is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_Osa_9K33M3_SOV
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_Osa_9K33M3_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_Osa_9K33M3_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_PRAM_S_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_PRAM_S_TCH
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_PSzH_IV_DDR is GhostVehicleDepictionDesc
@@ -4011,9 +4876,54 @@ GhostDepiction_PTS_M_supply_POL is GhostVehicleDepictionDesc
     Alternatives = Alternatives_PTS_M_supply_POL
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_Pegaso_3046_ESP is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_Pegaso_3046_ESP
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_Pegaso_3046_supply_ESP is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_Pegaso_3046_supply_ESP
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_Pegaso_3055_20mm_twin_ESP is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_Pegaso_3055_20mm_twin_ESP
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_Pegaso_3055_GAI_BO1_ESP is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_Pegaso_3055_GAI_BO1_ESP
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_Pegaso_3055_supply_ESP is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_Pegaso_3055_supply_ESP
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_Praga_V3S_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_Praga_V3S_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_Praga_V3S_supply_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_Praga_V3S_supply_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_Prima_SOV is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_Prima_SOV
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_RCL_L6_Wombat_UK is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_RCL_L6_Wombat_UK
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_RM51_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_RM51_TCH
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_RM70_85_DDR is GhostVehicleDepictionDesc
@@ -4024,6 +4934,21 @@ GhostDepiction_RM70_85_DDR is GhostVehicleDepictionDesc
 GhostDepiction_RM70_85_POL is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_RM70_85_POL
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_RM70_85_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_RM70_85_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_RM70_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_RM70_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_Roland_2_ESP is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_Roland_2_ESP
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_Roland_2_FR is GhostVehicleDepictionDesc
@@ -4054,6 +4979,16 @@ GhostDepiction_Rover_101FC_supply_UK is GhostVehicleDepictionDesc
 GhostDepiction_SPW_152K_DDR is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_SPW_152K_DDR
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_SU_100_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_SU_100_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_SVO_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_SVO_TCH
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_Saxon_CMD_UK is GhostVehicleDepictionDesc
@@ -4121,6 +5056,11 @@ GhostDepiction_T34_85M_POL is GhostVehicleDepictionDesc
     Alternatives = Alternatives_T34_85M_POL
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_T34_85M_reco_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_T34_85M_reco_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_T54B_CMD_DDR is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_T54B_CMD_DDR
@@ -4129,6 +5069,11 @@ GhostDepiction_T54B_CMD_DDR is GhostVehicleDepictionDesc
 GhostDepiction_T54B_CMD_POL is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_T54B_CMD_POL
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_T54B_CMD_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_T54B_CMD_TCH
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_T54B_DDR is GhostVehicleDepictionDesc
@@ -4146,6 +5091,21 @@ GhostDepiction_T54B_SOV is GhostVehicleDepictionDesc
     Alternatives = Alternatives_T54B_SOV
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_T54B_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_T54B_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_T55AM1_CMD_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_T55AM1_CMD_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_T55AM1_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_T55AM1_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_T55AM2B_DDR is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_T55AM2B_DDR
@@ -4159,6 +5119,11 @@ GhostDepiction_T55AM2_CMD_DDR is GhostVehicleDepictionDesc
 GhostDepiction_T55AM2_DDR is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_T55AM2_DDR
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_T55AM2_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_T55AM2_TCH
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_T55AMS_Merida_POL is GhostVehicleDepictionDesc
@@ -4219,6 +5184,11 @@ GhostDepiction_T55A_POL is GhostVehicleDepictionDesc
 GhostDepiction_T55A_SOV is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_T55A_SOV
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_T55A_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_T55A_TCH
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_T55A_obr81_SOV is GhostVehicleDepictionDesc
@@ -4316,6 +5286,21 @@ GhostDepiction_T64B_SOV is GhostVehicleDepictionDesc
     Alternatives = Alternatives_T64B_SOV
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_T72B1_SOV is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_T72B1_SOV
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_T72B_CMD_SOV is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_T72B_CMD_SOV
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_T72B_SOV is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_T72B_SOV
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_T72M1_CMD_DDR is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_T72M1_CMD_DDR
@@ -4326,6 +5311,16 @@ GhostDepiction_T72M1_CMD_POL is GhostVehicleDepictionDesc
     Alternatives = Alternatives_T72M1_CMD_POL
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_T72M1_CMD_SOV is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_T72M1_CMD_SOV
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_T72M1_CMD_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_T72M1_CMD_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_T72M1_DDR is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_T72M1_DDR
@@ -4334,6 +5329,16 @@ GhostDepiction_T72M1_DDR is GhostVehicleDepictionDesc
 GhostDepiction_T72M1_POL is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_T72M1_POL
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_T72M1_SOV is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_T72M1_SOV
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_T72M1_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_T72M1_TCH
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_T72M1_Wilk_POL is GhostVehicleDepictionDesc
@@ -4356,6 +5361,21 @@ GhostDepiction_T72M_CMD_POL is GhostVehicleDepictionDesc
     Alternatives = Alternatives_T72M_CMD_POL
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_T72M_CMD_SOV is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_T72M_CMD_SOV
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_T72M_CMD_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_T72M_CMD_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_T72M_CMD_noSmoke_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_T72M_CMD_noSmoke_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_T72M_DDR is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_T72M_DDR
@@ -4366,9 +5386,29 @@ GhostDepiction_T72M_POL is GhostVehicleDepictionDesc
     Alternatives = Alternatives_T72M_POL
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_T72M_SOV is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_T72M_SOV
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_T72M_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_T72M_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_T72M_noSmoke_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_T72M_noSmoke_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_T72S_DDR is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_T72S_DDR
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_T72S_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_T72S_TCH
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_T72_CMD_DDR is GhostVehicleDepictionDesc
@@ -4426,9 +5466,24 @@ GhostDepiction_T813_DDR is GhostVehicleDepictionDesc
     Alternatives = Alternatives_T813_DDR
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_T813_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_T813_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_T813_trans_DDR is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_T813_trans_DDR
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_T813_trans_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_T813_trans_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_T815_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_T815_TCH
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_T815_supply_DDR is GhostVehicleDepictionDesc
@@ -4454,6 +5509,11 @@ GhostDepiction_TO_55_SOV is GhostVehicleDepictionDesc
 GhostDepiction_TPZ_Fuchs_1_RFA is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_TPZ_Fuchs_1_RFA
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_TPZ_Fuchs_1_reco_RFA is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_TPZ_Fuchs_1_reco_RFA
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_TPZ_Fuchs_CMD_RFA is GhostVehicleDepictionDesc
@@ -4486,9 +5546,19 @@ GhostDepiction_TRM_2000_20mm_FR is GhostVehicleDepictionDesc
     Alternatives = Alternatives_TRM_2000_20mm_FR
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_TRM_2000_20mm_Legion_FR is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_TRM_2000_20mm_Legion_FR
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_TRM_2000_FR is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_TRM_2000_FR
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_TRM_2000_Mistral_FR is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_TRM_2000_Mistral_FR
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_TRM_2000_supply_FR is GhostVehicleDepictionDesc
@@ -4499,6 +5569,11 @@ GhostDepiction_TRM_2000_supply_FR is GhostVehicleDepictionDesc
 GhostDepiction_TUTO_M1025_Humvee_US is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_TUTO_M1025_Humvee_US
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_Teruel_MLRS_ESP is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_Teruel_MLRS_ESP
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_Tor_SOV is GhostVehicleDepictionDesc
@@ -4514,6 +5589,11 @@ GhostDepiction_Tracked_Rapier_UK is GhostVehicleDepictionDesc
 GhostDepiction_Tunguska_2K22_SOV is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_Tunguska_2K22_SOV
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_UAZ_452_MP_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_UAZ_452_MP_TCH
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_UAZ_469_AGL_Grenzer_DDR is GhostVehicleDepictionDesc
@@ -4551,6 +5631,11 @@ GhostDepiction_UAZ_469_CMD_SOV is GhostVehicleDepictionDesc
     Alternatives = Alternatives_UAZ_469_CMD_SOV
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_UAZ_469_CMD_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_UAZ_469_CMD_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_UAZ_469_CMD_VDV_SOV is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_UAZ_469_CMD_VDV_SOV
@@ -4579,6 +5664,11 @@ GhostDepiction_UAZ_469_Konkurs_VDV_SOV is GhostVehicleDepictionDesc
 GhostDepiction_UAZ_469_MP_SOV is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_UAZ_469_MP_SOV
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_UAZ_469_MP_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_UAZ_469_MP_TCH
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_UAZ_469_Reco_DDR is GhostVehicleDepictionDesc
@@ -4649,6 +5739,16 @@ GhostDepiction_UAZ_469_trans_DDR is GhostVehicleDepictionDesc
 GhostDepiction_UAZ_469_trans_POL is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_UAZ_469_trans_POL
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_UAZ_469_trans_TCH is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_UAZ_469_trans_TCH
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_Unimog_S_404_FK20_RFA is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_Unimog_S_404_FK20_RFA
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_Unimog_S_404_RFA is GhostVehicleDepictionDesc
@@ -4731,14 +5831,34 @@ GhostDepiction_VAB_HOT_FR is GhostVehicleDepictionDesc
     Alternatives = Alternatives_VAB_HOT_FR
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_VAB_HOT_Legion_FR is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_VAB_HOT_Legion_FR
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_VAB_Legion_FR is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_VAB_Legion_FR
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_VAB_MILAN_FR is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_VAB_MILAN_FR
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_VAB_MILAN_Legion_FR is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_VAB_MILAN_Legion_FR
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_VAB_Mortar_81_FR is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_VAB_Mortar_81_FR
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_VAB_Mortar_81_Legion_FR is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_VAB_Mortar_81_Legion_FR
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_VAB_RASIT_FR is GhostVehicleDepictionDesc
@@ -4756,6 +5876,11 @@ GhostDepiction_VAB_T20_FR is GhostVehicleDepictionDesc
     Alternatives = Alternatives_VAB_T20_FR
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_VAB_reco_FR is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_VAB_reco_FR
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_VBL_MILAN_FR is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_VBL_MILAN_FR
@@ -4769,6 +5894,16 @@ GhostDepiction_VBL_PC_FR is GhostVehicleDepictionDesc
 GhostDepiction_VBL_Reco_FR is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_VBL_Reco_FR
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_VEC_90_ESP is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_VEC_90_ESP
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_VEC_ESP is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_VEC_ESP
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_VIB_FR is GhostVehicleDepictionDesc
@@ -4816,9 +5951,29 @@ GhostDepiction_VLTT_P4_FR is GhostVehicleDepictionDesc
     Alternatives = Alternatives_VLTT_P4_FR
     Selector = SpecificVehicleDepictionSelector
 )
+GhostDepiction_VLTT_P4_Gendarmerie_FR is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_VLTT_P4_Gendarmerie_FR
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_VLTT_P4_MG_FR is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_VLTT_P4_MG_FR
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_VLTT_P4_MG_Legion_FR is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_VLTT_P4_MG_Legion_FR
+    Selector = SpecificVehicleDepictionSelector
+)
 GhostDepiction_VLTT_P4_MILAN_FR is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_VLTT_P4_MILAN_FR
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_VLTT_P4_MILAN_Legion_FR is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_VLTT_P4_MILAN_Legion_FR
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_VLTT_P4_MILAN_para_FR is GhostVehicleDepictionDesc
@@ -4839,6 +5994,11 @@ GhostDepiction_VW_T2b_MP_BEL is GhostVehicleDepictionDesc
 GhostDepiction_VW_T2b_MP_NL is GhostVehicleDepictionDesc
 (
     Alternatives = Alternatives_VW_T2b_MP_NL
+    Selector = SpecificVehicleDepictionSelector
+)
+GhostDepiction_VW_T2b_MP_RFA is GhostVehicleDepictionDesc
+(
+    Alternatives = Alternatives_VW_T2b_MP_RFA
     Selector = SpecificVehicleDepictionSelector
 )
 GhostDepiction_Volvo_N10_supply_BEL is GhostVehicleDepictionDesc

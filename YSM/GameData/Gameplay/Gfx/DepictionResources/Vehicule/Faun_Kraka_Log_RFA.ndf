@@ -1,14 +1,14 @@
 export Modele_Faun_Kraka_Log_RFA is TResourceMesh
 (
-    Mesh="GameData:/Assets/3D/Units/RFA/Vehicule/Faun_kraka/Faun_kraka.fbx"
+    Mesh=ModelFile_Faun_kraka_RFA
 )
 
 export Modele_Faun_Kraka_Log_RFA_MID is TResourceMesh
 (
-    Mesh="GameData:/Assets/3D/Units/RFA/Vehicule/Faun_kraka_MID/Faun_kraka_MID.fbx"
+    Mesh=ModelFile_Faun_kraka_RFA_MID
 )
 
 export Modele_Faun_Kraka_Log_RFA_LOW is TResourceMesh
 (
-    Mesh="GameData:/Assets/3D/Units/RFA/Vehicule/Faun_kraka_LOW/Faun_kraka_LOW.fbx"
+    Mesh=ModelFile_Faun_kraka_RFA_LOW
 )

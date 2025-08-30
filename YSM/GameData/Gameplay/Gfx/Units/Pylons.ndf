@@ -199,6 +199,7 @@ DepictionPylonSet_NoPODx2_Default_Showroom is TMultiPylonSet
 PylonSet_SOVPodHelico is TPylonSet
 (
     Pylons = [
+        PylonDepictionCommon( ModelResource = $/GFX/DepictionResources/PodSOVModelPylon_4  ),
         PylonDepictionCommon( ModelResource = $/GFX/DepictionResources/PodSOVModelPylon_5  ),
         PylonDepictionCommon( ModelResource = $/GFX/DepictionResources/PodSOVModelPylon_16 ),
         PylonDepictionCommon( ModelResource = $/GFX/DepictionResources/PodSOVModelPylon_17 ),
@@ -235,6 +236,7 @@ PylonSet_SOVPodAirplaneShowroom is TPylonSet
 PylonSet_SOVPodHelicoShowroom is TPylonSet
 (
     Pylons = [
+        PylonDepictionShowroom( ModelResource = $/GFX/DepictionResources/PodSOVModelPylon_4 ),
         PylonDepictionShowroom( ModelResource = $/GFX/DepictionResources/PodSOVModelPylon_5 ),
         PylonDepictionShowroom( ModelResource = $/GFX/DepictionResources/PodSOVModelPylon_16 ),
         PylonDepictionShowroom( ModelResource = $/GFX/DepictionResources/PodSOVModelPylon_17 ),

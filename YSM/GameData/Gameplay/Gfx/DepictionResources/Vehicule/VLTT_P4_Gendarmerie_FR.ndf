@@ -1,0 +1,17 @@
+export Modele_VLTT_P4_Gendarmerie_FR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/VLTT_P4/VLTT_P4_Gendarmerie.fbx"
+    Textures="GameData:/Assets/3D/Units/FR/Vehicule/VLTT_P4_Gendarmerie"
+)
+
+export Modele_VLTT_P4_Gendarmerie_FR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/VLTT_P4_MID/VLTT_P4_Gendarmerie_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/FR/Vehicule/VLTT_P4_Gendarmerie_MID"
+)
+
+export Modele_VLTT_P4_Gendarmerie_FR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/VLTT_P4_LOW/VLTT_P4_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/FR/Vehicule/VLTT_P4_Gendarmerie_LOW"
+)

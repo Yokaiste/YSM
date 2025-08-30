@@ -1,0 +1,19 @@
+export Modele_F4F_Phantom_II_RKT1_RFA is TResourceMesh
+(
+    Mesh=ModelFile_F4F_Phantom_II_AA_RFA
+)
+
+export Modele_F4F_Phantom_II_RKT1_RFA_MID is TResourceMesh
+(
+    Mesh=ModelFile_F4F_Phantom_II_AA_RFA_MID
+)
+
+export Modele_F4F_Phantom_II_RKT1_RFA_LOW is TResourceMesh
+(
+    Mesh=ModelFile_F4F_Phantom_II_AA_RFA_LOW
+)
+
+export Modele_F4F_Phantom_II_RKT1_RFA_train is TResourceMesh
+(
+    Mesh=ModelFile_F4F_Phantom_II_AA_RFA_train
+)

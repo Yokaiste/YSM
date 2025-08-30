@@ -1,0 +1,3 @@
+export Modele_Howz_D30_122mm_TCH is TResourceMesh( Mesh="GameData:/Assets/3D/Units/URSS/Canon/Howz_D30_122mm/Howz_D30_122mm.fbx" Textures="GameData:/Assets/3D/Units/TCH/Canon/Howz_D30_122mm")
+export Modele_Howz_D30_122mm_TCH_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/URSS/Canon/Howz_D30_122mm_MID/Howz_D30_122mm_MID.fbx" Textures="GameData:/Assets/3D/Units/TCH/Canon/Howz_D30_122mm_MID")
+export Modele_Howz_D30_122mm_TCH_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/URSS/Canon/Howz_D30_122mm_LOW/Howz_D30_122mm_LOW.fbx" Textures="GameData:/Assets/3D/Units/TCH/Canon/Howz_D30_122mm_LOW")

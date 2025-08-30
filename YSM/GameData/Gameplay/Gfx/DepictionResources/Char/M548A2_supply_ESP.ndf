@@ -1,0 +1,17 @@
+export Modele_M548A2_supply_ESP is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/APC/M548A2_supply/M548A2_supply.fbx"
+    Textures="GameData:/Assets/3D/Units/ESP/APC/M548A2_supply"
+)
+
+export Modele_M548A2_supply_ESP_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/APC/M548A2_supply_MID/M548A2_supply_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/ESP/APC/M548A2_supply_MID"
+)
+
+export Modele_M548A2_supply_ESP_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/APC/M548A2_supply_LOW/M548A2_supply_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/ESP/APC/M548A2_supply_LOW"
+)

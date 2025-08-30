@@ -1,0 +1,3 @@
+export Modele_HMGteam_LAG40_ESP is TResourceMesh( Mesh="GameData:/Assets/3D/Units/ESP/Canon/LAG40/LAG40.fbx")
+export Modele_HMGteam_LAG40_ESP_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/ESP/Canon/LAG40_MID/LAG40_MID.fbx")
+export Modele_HMGteam_LAG40_ESP_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/ESP/Canon/LAG40_LOW/LAG40_LOW.fbx")

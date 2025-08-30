@@ -1,0 +1,19 @@
+export Modele_SilverStar_Mk3AT_RKT_CAN is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/CAN/Avion/SilverStar_Mk3AT/SilverStar_Mk3AT.fbx"
+)
+
+export Modele_SilverStar_Mk3AT_RKT_CAN_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/CAN/Avion/SilverStar_Mk3AT_MID/SilverStar_Mk3AT_MID.fbx"
+)
+
+export Modele_SilverStar_Mk3AT_RKT_CAN_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/CAN/Avion/SilverStar_Mk3AT_LOW/SilverStar_Mk3AT_LOW.fbx"
+)
+
+export Modele_SilverStar_Mk3AT_RKT_CAN_train is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/CAN/Avion/SilverStar_Mk3AT/SilverStar_Mk3AT_train.fbx"
+)

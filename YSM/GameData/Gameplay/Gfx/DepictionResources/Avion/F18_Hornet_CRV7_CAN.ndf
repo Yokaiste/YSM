@@ -1,0 +1,19 @@
+export Modele_F18_Hornet_CRV7_CAN is TResourceMesh
+(
+    Mesh=ModelFile_F18_Hornet_HE_CAN
+)
+
+export Modele_F18_Hornet_CRV7_CAN_MID is TResourceMesh
+(
+    Mesh=ModelFile_F18_Hornet_HE_CAN_MID
+)
+
+export Modele_F18_Hornet_CRV7_CAN_LOW is TResourceMesh
+(
+    Mesh=ModelFile_F18_Hornet_HE_CAN_LOW
+)
+
+export Modele_F18_Hornet_CRV7_CAN_train is TResourceMesh
+(
+    Mesh=ModelFile_F18_Hornet_AA_CAN_train
+)

@@ -1,0 +1,19 @@
+export Modele_Tu_143_TCH is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/Avion/Tu_143/Tu_143.fbx"
+)
+
+export Modele_Tu_143_TCH_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/Avion/Tu_143_MID/Tu_143_MID.fbx"
+)
+
+export Modele_Tu_143_TCH_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/Avion/Tu_143_LOW/Tu_143_LOW.fbx"
+)
+
+export Modele_Tu_143_TCH_train is TResourceMesh
+(
+    Mesh=ModelFile_Support_Drones
+)

@@ -1,13 +1,6 @@
 // Autres paramètres avions : DEMANDER AUX DEVS AVANT DE MODIFIER //
 PitchSpeedDegreePerSecond is 30
 MaxAltitudeGRU is 3534
-MinAltitudeForRollGRU is 707
-MinRollSpeedDegreePerSecond is 65
-
-//Paramètrage visuels des avions
-ElevatorRotationMax is 18
-AileronRotationMax is 18
-RudderRotationMax is 20
 
 BombAttackStrategyDescriptor is TBombAttackStrategyDescriptor()
 

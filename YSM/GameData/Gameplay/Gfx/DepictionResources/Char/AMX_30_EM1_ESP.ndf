@@ -1,0 +1,4 @@
+export Modele_AMX_30_EM1_ESP     is TResourceMesh( Mesh='GameData:/Assets/3D/Units/ESP/Char/AMX_30_EM1/AMX_30_EM1.fbx' )
+export Modele_AMX_30_EM1_ESP_MID is TResourceMesh( Mesh='GameData:/Assets/3D/Units/ESP/Char/AMX_30_EM1_MID/AMX_30_EM1_MID.fbx' )
+export Modele_AMX_30_EM1_ESP_LOW is TResourceMesh( Mesh='GameData:/Assets/3D/Units/ESP/Char/AMX_30_EM1_LOW/AMX_30_EM1_LOW.fbx' )
+export Modele_AMX_30_EM1_ESP_Tourelle_02 is TResourceMesh( Mesh=ModelFile_MG3_t2 )

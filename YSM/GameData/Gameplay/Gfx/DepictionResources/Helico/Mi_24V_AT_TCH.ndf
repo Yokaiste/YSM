@@ -1,0 +1,14 @@
+export Modele_Mi_24V_AT_TCH is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/Helico/Mi_24V/Mi_24V_ATGM.fbx"
+)
+
+export Modele_Mi_24V_AT_TCH_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/Helico/Mi_24V_MID/Mi_24V_ATGM_MID.fbx"
+)
+
+export Modele_Mi_24V_AT_TCH_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/Helico/Mi_24V_LOW/Mi_24V_ATGM_LOW.fbx"
+)

@@ -33,9 +33,6 @@ Tactic_Descriptor_Unit_FakeTarget is TEntityDescriptor
         TLinkTeamModuleDescriptor
         (
         ),
-        TPackSignauxModuleDescriptor
-        (
-        ),
         TTagsModuleDescriptor
         (
             TagSet = [

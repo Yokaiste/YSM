@@ -1,0 +1,22 @@
+export Modele_VLTT_P4_MG_Legion_FR is TResourceMesh
+(
+    Mesh=ModelFile_VLTT_P4_MG_FR
+    Textures="GameData:/Assets/3D/Units/FR/Vehicule/VLTT_P4_Legion"
+)
+
+export Modele_VLTT_P4_MG_Legion_FR_MID is TResourceMesh
+(
+    Mesh=ModelFile_VLTT_P4_MG_FR_MID
+    Textures="GameData:/Assets/3D/Units/FR/Vehicule/VLTT_P4_Legion_MID"
+)
+
+export Modele_VLTT_P4_MG_Legion_FR_LOW is TResourceMesh
+(
+    Mesh=ModelFile_VLTT_P4_MG_FR_LOW
+    Textures="GameData:/Assets/3D/Units/FR/Vehicule/VLTT_P4_Legion_LOW"
+)
+
+export Modele_VLTT_P4_MG_Legion_FR_Tourelle_01 is TResourceMesh
+(
+    Mesh=ModelFile_AANF1_t1
+)

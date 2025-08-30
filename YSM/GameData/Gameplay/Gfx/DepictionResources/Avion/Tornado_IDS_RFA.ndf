@@ -1,0 +1,4 @@
+export Modele_Tornado_IDS_RFA       is TResourceMesh ( Mesh=ModelFile_Tornado_IDS_RFA )
+export Modele_Tornado_IDS_RFA_MID   is TResourceMesh ( Mesh=ModelFile_Tornado_IDS_RFA_MID )
+export Modele_Tornado_IDS_RFA_LOW   is TResourceMesh ( Mesh=ModelFile_Tornado_IDS_RFA_LOW )
+export Modele_Tornado_IDS_RFA_train is TResourceMesh ( Mesh=ModelFile_Tornado_IDS_RFA_train )

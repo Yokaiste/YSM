@@ -1,0 +1,17 @@
+export Modele_MAN_Kat_6x6_supply_CAN is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Vehicule/MAN_Kat_6x6/MAN_Kat_6x6.fbx"
+    Textures="GameData:/Assets/3D/Units/CAN/Vehicule/MAN_Kat_6x6"
+)
+
+export Modele_MAN_Kat_6x6_supply_CAN_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Vehicule/MAN_Kat_6x6_MID/MAN_Kat_6x6_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/CAN/Vehicule/MAN_Kat_6x6_MID"
+)
+
+export Modele_MAN_Kat_6x6_supply_CAN_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Vehicule/MAN_Kat_6x6_LOW/MAN_Kat_6x6_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/CAN/Vehicule/MAN_Kat_6x6_LOW"
+)

@@ -1,0 +1,22 @@
+export Modele_F18_Hornet_AA_ESP is TResourceMesh
+(
+    Mesh=ModelFile_F18_Hornet_AA_CAN
+    Textures="GameData:/Assets/3D/Units/ESP/Avion/F18_HORNET_AA"
+)
+
+export Modele_F18_Hornet_AA_ESP_MID is TResourceMesh
+(
+    Mesh=ModelFile_F18_Hornet_AA_CAN_MID
+    Textures="GameData:/Assets/3D/Units/ESP/Avion/F18_HORNET_AA_MID"
+)
+
+export Modele_F18_Hornet_AA_ESP_LOW is TResourceMesh
+(
+    Mesh=ModelFile_F18_Hornet_AA_CAN_LOW
+    Textures="GameData:/Assets/3D/Units/ESP/Avion/F18_HORNET_AA_LOW"
+)
+
+export Modele_F18_Hornet_AA_ESP_train is TResourceMesh
+(
+    Mesh=ModelFile_F18_Hornet_AT_ESP_train
+)

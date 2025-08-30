@@ -1,0 +1,36 @@
+// ****************************************************************************************************************************************
+// ***** Animation des unités tractables **************************************************************************************************
+// ****************************************************************************************************************************************
+
+template DepictionOperator_AnimationDeployable
+[
+    DeployAnimation = nil,
+    FoldAnimation = nil,
+    MoveFrontAnimation = nil,
+    MoveBackAnimation = nil,
+    IdleAnimation = nil,
+
+    DeployFromMoveTime : float,
+    DeployFromTurnTime : float,
+    FoldForMoveTime    : float,
+    FoldForTurnTime    : float,
+
+    FilterTurretBoneForAllAnimation = false,
+]
+is TCosmeticSkeletalAnimationDeployableOperatorDesc
+(
+    OperatorId = 'AnimationDeployable'
+    DeployAnimation = <DeployAnimation>
+    FoldAnimation = <FoldAnimation>
+    MoveFrontAnimation = <MoveFrontAnimation>
+    MoveBackAnimation = <MoveBackAnimation>
+    IdleAnimation = <IdleAnimation>
+
+    DeployFromMoveTime = <DeployFromMoveTime>
+    DeployFromTurnTime = <DeployFromTurnTime>
+    FoldForMoveTime = <FoldForMoveTime>
+    FoldForTurnTime = <FoldForTurnTime>
+
+    FilterTurretBoneForAllAnimation = <FilterTurretBoneForAllAnimation>
+)
+

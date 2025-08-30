@@ -1,3 +1,6 @@
-export Modele_DCA_I_Hawk_US is TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/DCA/DCA_I_Hawk/DCA_I_Hawk.fbx")
-export Modele_DCA_I_Hawk_US_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/DCA/DCA_I_Hawk_MID/DCA_I_Hawk_MID.fbx")
-export Modele_DCA_I_Hawk_US_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/DCA/DCA_I_Hawk_LOW/DCA_I_Hawk_LOW.fbx")
+export ModelFile_DCA_I_Hawk_US is "GameData:/Assets/3D/Units/US/DCA/DCA_I_Hawk/DCA_I_Hawk.fbx"
+export ModelFile_DCA_I_Hawk_US_MID is "GameData:/Assets/3D/Units/US/DCA/DCA_I_Hawk_MID/DCA_I_Hawk_MID.fbx"
+export ModelFile_DCA_I_Hawk_US_LOW is "GameData:/Assets/3D/Units/US/DCA/DCA_I_Hawk_LOW/DCA_I_Hawk_LOW.fbx"
+export Modele_DCA_I_Hawk_US is TResourceMesh( Mesh=ModelFile_DCA_I_Hawk_US)
+export Modele_DCA_I_Hawk_US_MID is TResourceMesh( Mesh=ModelFile_DCA_I_Hawk_US_MID)
+export Modele_DCA_I_Hawk_US_LOW is TResourceMesh( Mesh=ModelFile_DCA_I_Hawk_US_LOW)

@@ -1,0 +1,14 @@
+export Modele_UH1N_TwinHuey_CRV7_CAN is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/CAN/Helico/UH1N_TwinHuey_CRV7/UH1N_TwinHuey_CRV7.fbx"
+)
+
+export Modele_UH1N_TwinHuey_CRV7_CAN_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/CAN/Helico/UH1N_TwinHuey_CRV7_MID/UH1N_TwinHuey_CRV7_MID.fbx"
+)
+
+export Modele_UH1N_TwinHuey_CRV7_CAN_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/CAN/Helico/UH1N_TwinHuey_CRV7_LOW/UH1N_TwinHuey_CRV7_LOW.fbx"
+)

@@ -1,0 +1,18 @@
+export Modele_M125_HOWZ_ESP is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Artillerie/M125/M125.fbx"
+    Textures="GameData:/Assets/3D/Units/ESP/Artillerie/M125"
+)
+
+export Modele_M125_HOWZ_ESP_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Artillerie/M125_MID/M125_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/ESP/Artillerie/M125_MID"
+)
+
+export Modele_M125_HOWZ_ESP_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Artillerie/M125_LOW/M125_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/ESP/Artillerie/M125_LOW"
+)
+

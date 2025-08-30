@@ -1,0 +1,18 @@
+export Modele_AMX_10_RCR_tank_FR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Char/AMX_10RC_Surblinde/AMX_10RC_Surblinde.fbx"
+    Textures="GameData:/Assets/3D/Units/FR/Char/AMX_10RC_Surblinde_Legion"
+)
+
+export Modele_AMX_10_RCR_tank_FR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Char/AMX_10RC_Surblinde_MID/AMX_10RC_Surblinde_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/FR/Char/AMX_10RC_Surblinde_Legion_MID"
+)
+
+export Modele_AMX_10_RCR_tank_FR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Char/AMX_10RC_Surblinde_LOW/AMX_10RC_Surblinde_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/FR/Char/AMX_10RC_Surblinde_Legion_LOW"
+)
+

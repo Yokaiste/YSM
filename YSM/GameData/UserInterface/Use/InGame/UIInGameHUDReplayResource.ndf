@@ -112,24 +112,6 @@ private ReplayPanel is BUCKListDescriptor
 
                                             HasBackground = true
                                             BackgroundBlockColorToken = "SliderBasic/SliderBar"
-
-                                            Components =
-                                            [
-                                                BUCKContainerDescriptor
-                                                (
-                                                    ComponentFrame = TUIFramePropertyRTTI
-                                                    (
-                                                        RelativeWidthHeight = [0.0, 1.0]
-                                                        MagnifiableWidthHeight = [8.0, 0.0]
-                                                        RelativeOffset = [1.0, 0.0]
-                                                        AlignementToAnchor = [0.0, 0.5]
-                                                        AlignementToFather = [0.0, 0.5]
-                                                    )
-
-                                                    HasBackground = true
-                                                    BackgroundBlockColorToken = 'SliderBasic/ThumbColor'
-                                                )
-                                            ]
                                         )
                                     ]
                                 )

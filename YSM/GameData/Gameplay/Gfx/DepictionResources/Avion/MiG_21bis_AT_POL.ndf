@@ -1,0 +1,19 @@
+export Modele_MiG_21bis_AT_POL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Avion/MiG_21_PFM/MiG_21_PFM.fbx"
+)
+
+export Modele_MiG_21bis_AT_POL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Avion/MiG_21_PFM_MID/MiG_21_PFM_MID.fbx"
+)
+
+export Modele_MiG_21bis_AT_POL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Avion/MiG_21_PFM_LOW/MiG_21_PFM_LOW.fbx"
+)
+
+export Modele_MiG_21bis_AT_POL_train is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Avion/MiG_21_PFM/MiG_21_PFM_train.fbx"
+)

@@ -1,0 +1,3 @@
+export Modele_AT_vz59_RCL_Vysadkar_TCH is TResourceMesh( Mesh="GameData:/Assets/3D/Units/TCH/Canon/VZ59_RR/VZ59_RR.fbx")
+export Modele_AT_vz59_RCL_Vysadkar_TCH_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/TCH/Canon/VZ59_RR_MID/VZ59_RR_MID.fbx")
+export Modele_AT_vz59_RCL_Vysadkar_TCH_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/TCH/Canon/VZ59_RR_LOW/VZ59_RR_LOW.fbx")

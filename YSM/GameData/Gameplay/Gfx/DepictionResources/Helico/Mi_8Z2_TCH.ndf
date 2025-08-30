@@ -1,0 +1,14 @@
+export Modele_Mi_8Z2_TCH is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/Helico/Mi_8Z2/Mi_8Z2.fbx"
+)
+
+export Modele_Mi_8Z2_TCH_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/Helico/Mi_8Z2_MID/Mi_8Z2_MID.fbx"
+)
+
+export Modele_Mi_8Z2_TCH_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/Helico/Mi_8Z2_LOW/Mi_8Z2_LOW.fbx"
+)

@@ -1,0 +1,17 @@
+export Modele_OT_62_TOPAS_2D_TCH is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/APC/OT_62_TOPAS_2D/OT_62_TOPAS_2D.fbx"
+)
+
+export Modele_OT_62_TOPAS_2D_TCH_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/APC/OT_62_TOPAS_2D_MID/OT_62_TOPAS_2D_MID.fbx"
+)
+
+export Modele_OT_62_TOPAS_2D_TCH_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/APC/OT_62_TOPAS_2D_LOW/OT_62_TOPAS_2D_LOW.fbx"
+)
+
+
+

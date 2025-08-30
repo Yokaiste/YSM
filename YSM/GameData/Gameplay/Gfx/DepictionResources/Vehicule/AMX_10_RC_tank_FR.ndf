@@ -1,0 +1,4 @@
+export Modele_AMX_10_RC_tank_FR             is TResourceMesh( Mesh=ModelFile_AMX_10_RC_FR )
+export Modele_AMX_10_RC_tank_FR_MID         is TResourceMesh( Mesh=ModelFile_AMX_10_RC_FR_MID )
+export Modele_AMX_10_RC_tank_FR_LOW         is TResourceMesh( Mesh=ModelFile_AMX_10_RC_FR_LOW )
+export Modele_AMX_10_RC_tank_FR_Tourelle_02 is TResourceMesh( Mesh=ModelFile_AMX_10_RC_FR_Tourelle_02 )

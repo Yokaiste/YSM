@@ -1,0 +1,20 @@
+export Modele_VAB_HOT_Legion_FR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Antichar/VAB_HOT/VAB_HOT.fbx"
+    Textures="GameData:/Assets/3D/Units/FR/Antichar/VAB_HOT_Legion"
+)
+
+export Modele_VAB_HOT_Legion_FR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Antichar/VAB_HOT_MID/VAB_HOT_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/FR/Antichar/VAB_HOT_Legion_MID"
+)
+
+export Modele_VAB_HOT_Legion_FR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Antichar/VAB_HOT_LOW/VAB_HOT_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/FR/Antichar/VAB_HOT_Legion_LOW"
+)
+
+
+

@@ -1,0 +1,22 @@
+export Modele_VAB_MILAN_Legion_FR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Antichar/VAB_MILAN/VAB_MILAN.fbx"
+    Textures="GameData:/Assets/3D/Units/FR/Antichar/VAB_MILAN_Legion"
+)
+
+export Modele_VAB_MILAN_Legion_FR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Antichar/VAB_MILAN_MID/VAB_MILAN_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/FR/Antichar/VAB_MILAN_Legion_MID"
+)
+
+export Modele_VAB_MILAN_Legion_FR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Antichar/VAB_MILAN_LOW/VAB_MILAN_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/FR/Antichar/VAB_MILAN_Legion_LOW"
+)
+
+export Modele_VAB_MILAN_Legion_FR_Tourelle_02 is TResourceMesh
+(
+    Mesh=ModelFile_M2HB_12_7mm_t2
+)

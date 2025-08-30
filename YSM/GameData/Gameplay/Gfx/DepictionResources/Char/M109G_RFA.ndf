@@ -1,0 +1,19 @@
+export Modele_M109G_RFA is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Artillerie/M109G/M109G.fbx"
+)
+
+export Modele_M109G_RFA_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Artillerie/M109G_MID/M109G_MID.fbx"
+)
+
+export Modele_M109G_RFA_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Artillerie/M109G_LOW/M109G_LOW.fbx"
+)
+
+export Modele_M109G_RFA_Tourelle_02 is TResourceMesh
+(
+    Mesh=ModelFile_MG3_t2_no_ammo
+)

@@ -1,0 +1,17 @@
+export Modele_Osa_9K33M3_TCH is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/DCA/Osa_9K33M3/Osa_9K33M3.fbx"
+    Textures="GameData:/Assets/3D/Units/TCH/DCA/Osa_9K33M3"
+)
+
+export Modele_Osa_9K33M3_TCH_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/DCA/Osa_9K33M3_MID/Osa_9K33M3_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/TCH/DCA/Osa_9K33M3_MID"
+)
+
+export Modele_Osa_9K33M3_TCH_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/DCA/Osa_9K33M3_LOW/Osa_9K33M3_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/TCH/DCA/Osa_9K33M3_LOW"
+)

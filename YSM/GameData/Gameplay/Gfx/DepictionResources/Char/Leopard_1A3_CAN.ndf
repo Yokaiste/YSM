@@ -1,0 +1,19 @@
+export Modele_Leopard_1A3_CAN is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/CAN/Char/Leopard_1A3/Leopard_1A3.fbx"
+)
+
+export Modele_Leopard_1A3_CAN_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/CAN/Char/Leopard_1A3_MID/Leopard_1A3_MID.fbx"
+)
+
+export Modele_Leopard_1A3_CAN_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/CAN/Char/Leopard_1A3_LOW/Leopard_1A3_LOW.fbx"
+)
+
+export Modele_Leopard_1A3_CAN_Tourelle_02 is TResourceMesh
+(
+    Mesh=ModelFile_MG3_t2
+)

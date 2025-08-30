@@ -1,0 +1,15 @@
+ModelFile_Bo_105_CB_ESP is "GameData:/Assets/3D/Units/ESP/Helico/Bo_105_CB/Bo_105_CB.fbx"
+export Modele_Bo_105_CB_ESP is TResourceMesh
+(
+    Mesh=ModelFile_Bo_105_CB_ESP
+)
+ModelFile_Bo_105_CB_ESP_MID is "GameData:/Assets/3D/Units/ESP/Helico/Bo_105_CB_MID/Bo_105_CB_MID.fbx"
+export Modele_Bo_105_CB_ESP_MID is TResourceMesh
+(
+    Mesh=ModelFile_Bo_105_CB_ESP_MID
+)
+ModelFile_Bo_105_CB_ESP_LOW is "GameData:/Assets/3D/Units/ESP/Helico/Bo_105_CB_LOW/Bo_105_CB_LOW.fbx"
+export Modele_Bo_105_CB_ESP_LOW is TResourceMesh
+(
+    Mesh=ModelFile_Bo_105_CB_ESP_LOW
+)

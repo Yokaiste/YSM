@@ -1,0 +1,17 @@
+export Modele_MTLB_BMAN_SOV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/DCA/MTLB_BMAN/MTLB_BMAN.fbx"
+)
+
+export Modele_MTLB_BMAN_SOV_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/DCA/MTLB_BMAN_MID/MTLB_BMAN_MID.fbx"
+)
+
+export Modele_MTLB_BMAN_SOV_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/DCA/MTLB_BMAN_LOW/MTLB_BMAN_LOW.fbx"
+)
+
+
+

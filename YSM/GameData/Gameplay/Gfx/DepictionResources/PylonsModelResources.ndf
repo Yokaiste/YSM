@@ -14,6 +14,7 @@ export PodModelPylon6 is  TResourceMesh( Mesh="GameData:/Assets/3D/Units/UK/Heli
 export PodModelPylon7 is  TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/Helico/AH_6C_Little_Bird/Pod_Rockets_7_Little_Bird.fbx" )
 export PodModelPylon19 is TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/Helico/Cobra_AH_1F/Pod_Rockets_19.fbx" )
 
+export PodSOVModelPylon_4  is TResourceMesh( Mesh="GameData:/Assets/3D/Units/Ammo/Pylones/SOV/JROF_130mm/JROF_130mm_x4.fbx" )
 export PodSOVModelPylon_5  is TResourceMesh( Mesh="GameData:/Assets/3D/Units/Ammo/Pylones/SOV/B_13L_rocket_pod/B_13L_rocket_pod_x5.fbx" )
 export PodSOVModelPylon_16 is TResourceMesh( Mesh="GameData:/Assets/3D/Units/Ammo/Pylones/SOV/UB_32_rocket_pod/UB_16_rocket_pod_x16.fbx" )
 export PodSOVModelPylon_17 is TResourceMesh( Mesh="GameData:/Assets/3D/Units/Ammo/Pylones/SOV/Pod_Rockets_SOV_17/Pod_Rockets_SOV_17.fbx" )

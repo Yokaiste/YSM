@@ -1,0 +1,14 @@
+export Modele_DaimlerBenz_Typ1017_supply_RFA is TResourceMesh
+(
+    Mesh=ModelFile_DaimlerBenz_Typ1017_trans_RFA
+)
+
+export Modele_DaimlerBenz_Typ1017_supply_RFA_MID is TResourceMesh
+(
+    Mesh=ModelFile_DaimlerBenz_Typ1017_trans_RFA_MID
+)
+
+export Modele_DaimlerBenz_Typ1017_supply_RFA_LOW is TResourceMesh
+(
+    Mesh=ModelFile_DaimlerBenz_Typ1017_trans_RFA_LOW
+)

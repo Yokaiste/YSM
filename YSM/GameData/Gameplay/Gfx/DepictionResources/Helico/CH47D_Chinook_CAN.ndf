@@ -1,0 +1,17 @@
+export Modele_CH47D_Chinook_CAN is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Helico/CH_47D_Chinook/CH_47D_Chinook.fbx"
+    Textures="GameData:/Assets/3D/Units/CAN/Helico/CH_47D_Chinook"
+)
+
+export Modele_CH47D_Chinook_CAN_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Helico/CH_47D_Chinook_MID/CH_47D_Chinook_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/CAN/Helico/CH_47D_Chinook_MID"
+)
+
+export Modele_CH47D_Chinook_CAN_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Helico/CH_47D_Chinook_LOW/CH_47D_Chinook_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/CAN/Helico/CH_47D_Chinook_LOW"
+)

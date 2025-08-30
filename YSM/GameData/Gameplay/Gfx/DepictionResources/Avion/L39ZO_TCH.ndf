@@ -1,0 +1,20 @@
+export ModelFile_L39ZO_TCH is "GameData:/Assets/3D/Units/TCH/Avion/L39ZO/L39ZO.fbx"
+export Modele_L39ZO_TCH is TResourceMesh
+(
+    Mesh=ModelFile_L39ZO_TCH
+)
+export ModelFile_L39ZO_TCH_MID is "GameData:/Assets/3D/Units/TCH/Avion/L39ZO_MID/L39ZO_MID.fbx"
+export Modele_L39ZO_TCH_MID is TResourceMesh
+(
+    Mesh=ModelFile_L39ZO_TCH_MID
+)
+export ModelFile_L39ZO_TCH_LOW is "GameData:/Assets/3D/Units/TCH/Avion/L39ZO_LOW/L39ZO_LOW.fbx"
+export Modele_L39ZO_TCH_LOW is TResourceMesh
+(
+    Mesh=ModelFile_L39ZO_TCH_LOW
+)
+export ModelFile_L39ZO_TCH_train is "GameData:/Assets/3D/Units/TCH/Avion/L39ZO/L39ZO_train.fbx"
+export Modele_L39ZO_TCH_train is TResourceMesh
+(
+    Mesh=ModelFile_L39ZO_TCH_train
+)

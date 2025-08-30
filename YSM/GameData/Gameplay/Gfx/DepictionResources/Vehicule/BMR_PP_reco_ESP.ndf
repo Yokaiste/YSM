@@ -1,0 +1,4 @@
+export Modele_BMR_PP_reco_ESP is TResourceMesh( Mesh=ModelFile_BMR_PP_ESP )
+export Modele_BMR_PP_reco_ESP_MID is TResourceMesh( Mesh=ModelFile_BMR_PP_ESP_MID )
+export Modele_BMR_PP_reco_ESP_LOW is TResourceMesh( Mesh=ModelFile_BMR_PP_ESP_LOW )
+export Modele_BMR_PP_reco_ESP_Tourelle_01 is TResourceMesh ( Mesh=ModelFile_M2HB_12_7mm_t1 )

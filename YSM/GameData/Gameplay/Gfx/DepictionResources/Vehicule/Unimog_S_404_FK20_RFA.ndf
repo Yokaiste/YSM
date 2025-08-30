@@ -1,0 +1,14 @@
+export Modele_Unimog_S_404_FK20_RFA is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/DCA/Unimog_FK20/Unimog_FK20.fbx"
+)
+
+export Modele_Unimog_S_404_FK20_RFA_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/DCA/Unimog_FK20_MID/Unimog_FK20_MID.fbx"
+)
+
+export Modele_Unimog_S_404_FK20_RFA_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/DCA/Unimog_FK20_LOW/Unimog_FK20_LOW.fbx"
+)

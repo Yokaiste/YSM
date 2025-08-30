@@ -1844,6 +1844,103 @@ export DepictionOperator_MovementSound_SM_Helico_Mi26 is TCosmeticFlyMovementSou
         ),
     ]
 )
+export DepictionOperator_MovementSound_SM_Helico_Mi4 is TCosmeticFlyMovementSoundOperatorDesc
+(
+    CrashSounds = 
+    [
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SoundSettings_Moteur_Helico
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sounds/SFX/Helicopteres/Fall/Helicopter_Falling_01.wav"
+            )
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SoundSettings_Moteur_Helico
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sounds/SFX/Helicopteres/Fall/Helicopter_Falling_02.wav"
+            )
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SoundSettings_Moteur_Helico
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sounds/SFX/Helicopteres/Fall/Helicopter_Falling_03.wav"
+            )
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SoundSettings_Moteur_Helico
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sounds/SFX/Helicopteres/Fall/Helicopter_Falling_04.wav"
+            )
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SoundSettings_Moteur_Helico
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sounds/SFX/Helicopteres/Fall/Helicopter_Falling_05.wav"
+            )
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SoundSettings_Moteur_Helico
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sounds/SFX/Helicopteres/Fall/Helicopter_Falling_06.wav"
+            )
+        ),
+    ]
+    IdleFadeInDuration = 0.1
+    IdleFadeOutDuration = 10
+    MaxVolume = 1
+    MaxVolumeSpeed = 80
+    MinVolume = 0.6
+    OperatorId = "flySound"
+    RunFadeInDuration = 0.3
+    RunFadeOutDuration = 2
+    RunOutPitchToGo = 0
+    RunOutPitchVelocity = 0.4
+    RunSounds = 
+    [
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SoundSettings_Moteur_Helico
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sounds/SFX/Helicopteres/Idle/Mi26_Helicopter_LoopIdle.wav"
+            )
+        ),
+    ]
+    StartSounds = 
+    [
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SoundSettings_Moteur_Helico
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sounds/SFX/Helicopteres/Start/Helicopter_MI4_Start.wav"
+            )
+        ),
+    ]
+    StopSounds = 
+    [
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SoundSettings_Moteur_Helico
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sounds/SFX/Helicopteres/Stop/Helicopter_Mi4_Stop.wav"
+            )
+        ),
+    ]
+)
 export DepictionOperator_MovementSound_SM_Helico_Puma is TCosmeticFlyMovementSoundOperatorDesc
 (
     CrashSounds = 

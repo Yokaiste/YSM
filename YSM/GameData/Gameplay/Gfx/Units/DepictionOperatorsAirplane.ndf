@@ -1,4 +1,15 @@
 //Notation : prefix (DepictionOperator), feature (Chassis, ...), classe (small, heavy, etc)
-DepictionOperator_AirplaneParts is TCosmeticAirplanePartsOperatorDesc( OperatorId   = 'airplane_parts' )
+
+//Paramètrage visuels des avions
+ElevatorRotationMax is 18
+AileronRotationMax is 18
+RudderRotationMax is 20
+
+DepictionOperator_AirplaneParts is TCosmeticAirplanePartsOperatorDesc(
+    OperatorId   = 'airplane_parts'
+    ElevatorRotationMax = ~/ElevatorRotationMax
+    AileronRotationMax = ~/AileronRotationMax
+    RudderRotationMax = ~/RudderRotationMax
+)
 DepictionOperator_Airplane is TCosmeticMovementAirplaneOperatorDesc( OperatorId = 'AirplaneOperator')
 DepictionOperator_AirplaneShadow is TCosmeticAirplaneShadowOperatorDesc( OperatorId = 'AirplaneShadow' )

@@ -1,0 +1,3 @@
+export Modele_HMGteam_AANF1_Legion_FR is TResourceMesh( Mesh="GameData:/Assets/3D/Units/Ammo/Armes/HMG_trepied/AANF1.fbx")
+export Modele_HMGteam_AANF1_Legion_FR_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/Ammo/Armes/HMG_trepied/AANF1.fbx")
+export Modele_HMGteam_AANF1_Legion_FR_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/Ammo/Armes/HMG_trepied/AANF1.fbx")

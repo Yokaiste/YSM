@@ -1,0 +1,3 @@
+export Modele_Howz_M56_Pack_FJ_RFA is TResourceMesh( Mesh=ModelFile_Howz_M56_Pack_Geb_RFA)
+export Modele_Howz_M56_Pack_FJ_RFA_MID is TResourceMesh( Mesh=ModelFile_Howz_M56_Pack_Geb_RFA_MID)
+export Modele_Howz_M56_Pack_FJ_RFA_LOW is TResourceMesh( Mesh=ModelFile_Howz_M56_Pack_Geb_RFA_LOW)

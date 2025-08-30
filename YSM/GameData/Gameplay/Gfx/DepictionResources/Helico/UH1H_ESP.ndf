@@ -1,0 +1,26 @@
+export Modele_UH1H_ESP is TResourceMesh
+(
+    Mesh=ModelFile_UH1H_Huey_US
+    Textures="GameData:/Assets/3D/Units/ESP/Helico/UH_1H_Huey"
+)
+
+export Modele_UH1H_ESP_MID is TResourceMesh
+(
+    Mesh=ModelFile_UH1H_Huey_US_MID
+    Textures="GameData:/Assets/3D/Units/ESP/Helico/UH_1H_Huey_MID"
+)
+
+export Modele_UH1H_ESP_LOW is TResourceMesh
+(
+    Mesh=ModelFile_UH1H_Huey_US_LOW
+    Textures="GameData:/Assets/3D/Units/ESP/Helico/UH_1H_Huey_LOW"
+)
+
+export Modele_UH1H_ESP_Tourelle_01 is TResourceMesh
+(
+    Mesh=ModelFile_MG3_t1
+)
+export Modele_UH1H_ESP_Tourelle_02 is TResourceMesh
+(
+    Mesh=ModelFile_MG3_t2
+)

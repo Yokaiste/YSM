@@ -1,0 +1,19 @@
+export Modele_EF_101B_Electric_Voodoo_CAN is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/CAN/Avion/EF_101B_Electric_Voodoo/EF_101B_Electric_Voodoo.fbx"
+)
+
+export Modele_EF_101B_Electric_Voodoo_CAN_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/CAN/Avion/EF_101B_Electric_Voodoo/EF_101B_Electric_Voodoo.fbx"
+)
+
+export Modele_EF_101B_Electric_Voodoo_CAN_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/CAN/Avion/EF_101B_Electric_Voodoo/EF_101B_Electric_Voodoo.fbx"
+)
+
+export Modele_EF_101B_Electric_Voodoo_CAN_train is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/CAN/Avion/EF_101B_Electric_Voodoo/EF_101B_Electric_Voodoo_train.fbx"
+)

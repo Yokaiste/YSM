@@ -1,0 +1,17 @@
+export Modele_T813_trans_TCH is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Vehicule/T813/T813.fbx"
+    Textures="GameData:/Assets/3D/Units/TCH/Vehicule/T813"
+)
+
+export Modele_T813_trans_TCH_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Vehicule/T813/T813.fbx"
+    Textures="GameData:/Assets/3D/Units/TCH/Vehicule/T813"
+)
+
+export Modele_T813_trans_TCH_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Vehicule/T813/T813.fbx"
+    Textures="GameData:/Assets/3D/Units/TCH/Vehicule/T813"
+)

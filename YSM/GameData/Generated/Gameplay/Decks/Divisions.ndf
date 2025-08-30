@@ -37,6 +37,42 @@ export Descriptor_Deck_Division_BEL_Division_Mobilisation_multi is TDeckDivision
     TypeTexture       = "Texture_Division_Type_infantryReg"
     CountryId = "BEL"
 )
+export Descriptor_Deck_Division_CAN_1st_Canadian_multi is TDeckDivisionDescriptor
+(
+    DescriptorId = GUID:{66e7d6ef-7eae-48b0-8928-b84cb0867b33}
+    CfgName = 'CAN_1st_Canadian_multi'
+    DivisionName = 'PUHREDFXOM'
+    InterfaceOrder = 31.0
+    DivisionPowerClassification = 'DC_PWR2'
+    DivisionCoalition = ECoalition/NATO
+    DivisionTags = ['DEFAULT', 'CAN', 'NATO', 'infantryReg', 'DC_PWR2']
+    DescriptionHintTitleToken = 'NDLCSJEWBC'
+    MaxActivationPoints = 50
+    DivisionRule = Descriptor_Deck_Division_CAN_1st_Canadian_multi_Rule
+    CostMatrix = MatrixCostName_CAN_1st_Canadian_multi
+    EmblemTexture     = "Texture_Division_Emblem_CAN_1st_division"
+    PortraitTexture   = "Texture_Division_Portrait_default"
+    TypeTexture       = "Texture_Division_Type_infantryReg"
+    CountryId = "CAN"
+)
+export Descriptor_Deck_Division_ESP_Division_Brunete_multi is TDeckDivisionDescriptor
+(
+    DescriptorId = GUID:{06544c5f-b76f-4518-a435-674250af63ca}
+    CfgName = 'ESP_Division_Brunete_multi'
+    DivisionName = 'SUBZCHCRXV'
+    InterfaceOrder = 32.0
+    DivisionPowerClassification = 'DC_PWR2'
+    DivisionCoalition = ECoalition/NATO
+    DivisionTags = ['DEFAULT', 'ESP', 'NATO', 'armored', 'DC_PWR2']
+    DescriptionHintTitleToken = 'ZXRBOEEYUK'
+    MaxActivationPoints = 50
+    DivisionRule = Descriptor_Deck_Division_ESP_Division_Brunete_multi_Rule
+    CostMatrix = MatrixCostName_ESP_Division_Brunete_multi
+    EmblemTexture     = "Texture_Division_Emblem_ESP_Brunete"
+    PortraitTexture   = "Texture_Division_Portrait_default"
+    TypeTexture       = "Texture_Division_Type_armored"
+    CountryId = "ESP"
+)
 export Descriptor_Deck_Division_FR_11e_Para_multi is TDeckDivisionDescriptor
 (
     DescriptorId = GUID:{beaeddc6-2819-4025-b72f-9448e16b39ec}
@@ -87,6 +123,24 @@ export Descriptor_Deck_Division_FR_5e_Blindee_multi is TDeckDivisionDescriptor
     DivisionRule = Descriptor_Deck_Division_FR_5e_Blindee_multi_Rule
     CostMatrix = MatrixCostName_FR_5e_Blindee_multi
     EmblemTexture     = "Texture_Division_Emblem_FR_5eDB"
+    PortraitTexture   = "Texture_Division_Portrait_default"
+    TypeTexture       = "Texture_Division_Type_armored"
+    CountryId = "FR"
+)
+export Descriptor_Deck_Division_FR_6e_Blindee_Legere_multi is TDeckDivisionDescriptor
+(
+    DescriptorId = GUID:{b80a36f6-2ec9-4785-848b-4840e54bbb3c}
+    CfgName = 'FR_6e_Blindee_Legere_multi'
+    DivisionName = 'SDQTSPQMIQ'
+    InterfaceOrder = 23.0
+    DivisionPowerClassification = 'DC_PWR1'
+    DivisionCoalition = ECoalition/NATO
+    DivisionTags = ['DEFAULT', 'FR', 'NATO', 'armored', 'DC_PWR1']
+    DescriptionHintTitleToken = 'YCQRBQVSTK'
+    MaxActivationPoints = 50
+    DivisionRule = Descriptor_Deck_Division_FR_6e_Blindee_Legere_multi_Rule
+    CostMatrix = MatrixCostName_FR_6e_Blindee_Legere_multi
+    EmblemTexture     = "Texture_Division_Emblem_FR_6e_DBL"
     PortraitTexture   = "Texture_Division_Portrait_default"
     TypeTexture       = "Texture_Division_Type_armored"
     CountryId = "FR"
@@ -289,6 +343,24 @@ export Descriptor_Deck_Division_RDA_Rugen_Gruppierung is TDeckDivisionDescriptor
     TypeTexture       = "Texture_Division_Type_infantryReg"
     CountryId = "DDR"
 )
+export Descriptor_Deck_Division_RFA_1_Luftlande_multi is TDeckDivisionDescriptor
+(
+    DescriptorId = GUID:{0675f4cb-245d-45ca-8727-e9b3a509fbfd}
+    CfgName = 'RFA_1_Luftlande_multi'
+    DivisionName = 'DHPCXIPJOW'
+    InterfaceOrder = 11.0
+    DivisionPowerClassification = 'DC_PWR2'
+    DivisionCoalition = ECoalition/NATO
+    DivisionTags = ['DEFAULT', 'RFA', 'NATO', 'infantryReg', 'DC_PWR2']
+    DescriptionHintTitleToken = 'RISEYHTMGA'
+    MaxActivationPoints = 50
+    DivisionRule = Descriptor_Deck_Division_RFA_1_Luftlande_multi_Rule
+    CostMatrix = MatrixCostName_RFA_1_Luftlande_multi
+    EmblemTexture     = "Texture_Division_Emblem_RFA_1LLDiv"
+    PortraitTexture   = "Texture_Division_Portrait_default"
+    TypeTexture       = "Texture_Division_Type_infantryReg"
+    CountryId = "RFA"
+)
 export Descriptor_Deck_Division_RFA_2_PzGrenadier_multi is TDeckDivisionDescriptor
 (
     DescriptorId = GUID:{15fa50e1-7534-4f5c-ae1c-afd4098c6ce2}
@@ -415,6 +487,24 @@ export Descriptor_Deck_Division_SOV_27_Gds_Rifle_multi is TDeckDivisionDescripto
     TypeTexture       = "Texture_Division_Type_infantryReg"
     CountryId = "SOV"
 )
+export Descriptor_Deck_Division_SOV_31_Tank_multi is TDeckDivisionDescriptor
+(
+    DescriptorId = GUID:{f163af7e-73f9-42ee-a607-e1b50e104c98}
+    CfgName = 'SOV_31_Tank_multi'
+    DivisionName = 'ZIJBGPJKVX'
+    InterfaceOrder = 8.0
+    DivisionPowerClassification = 'DC_PWR1'
+    DivisionCoalition = ECoalition/PACT
+    DivisionTags = ['DEFAULT', 'SOV', 'PACT', 'armored', 'DC_PWR1']
+    DescriptionHintTitleToken = 'FBKUZZVVQQ'
+    MaxActivationPoints = 50
+    DivisionRule = Descriptor_Deck_Division_SOV_31_Tank_multi_Rule
+    CostMatrix = MatrixCostName_SOV_31_Tank_multi
+    EmblemTexture     = "Texture_Division_Emblem_SOV_31TD"
+    PortraitTexture   = "Texture_Division_Portrait_default"
+    TypeTexture       = "Texture_Division_Type_armored"
+    CountryId = "SOV"
+)
 export Descriptor_Deck_Division_SOV_35_AirAslt_Brig_multi is TDeckDivisionDescriptor
 (
     DescriptorId = GUID:{7076e442-e50d-4f50-8b1d-7e8c2ad404e3}
@@ -522,6 +612,60 @@ export Descriptor_Deck_Division_SOV_79_Gds_Tank_multi is TDeckDivisionDescriptor
     PortraitTexture   = "Texture_Division_Portrait_default"
     TypeTexture       = "Texture_Division_Type_armored"
     CountryId = "SOV"
+)
+export Descriptor_Deck_Division_TCH_19_MSD_multi is TDeckDivisionDescriptor
+(
+    DescriptorId = GUID:{be946b20-a4b4-4f2f-9d1a-9c664bd1a426}
+    CfgName = 'TCH_19_MSD_multi'
+    DivisionName = 'SVEHBMUYZL'
+    InterfaceOrder = 30.0
+    DivisionPowerClassification = 'DC_PWR2'
+    DivisionCoalition = ECoalition/PACT
+    DivisionTags = ['DEFAULT', 'TCH', 'PACT', 'infantryReg', 'DC_PWR2']
+    DescriptionHintTitleToken = 'JKMLTNCXVK'
+    MaxActivationPoints = 50
+    DivisionRule = Descriptor_Deck_Division_TCH_19_MSD_multi_Rule
+    CostMatrix = MatrixCostName_TCH_19_MSD_multi
+    EmblemTexture     = "Texture_Division_Emblem_TCH_19_MSD"
+    PortraitTexture   = "Texture_Division_Portrait_default"
+    TypeTexture       = "Texture_Division_Type_infantryReg"
+    CountryId = "TCH"
+)
+export Descriptor_Deck_Division_TCH_1_Tank_multi is TDeckDivisionDescriptor
+(
+    DescriptorId = GUID:{3bd652d3-2c21-4a2d-b0f9-bbefc71802c2}
+    CfgName = 'TCH_1_Tank_multi'
+    DivisionName = 'XKRAHADQAE'
+    InterfaceOrder = 29.0
+    DivisionPowerClassification = 'DC_PWR1'
+    DivisionCoalition = ECoalition/PACT
+    DivisionTags = ['DEFAULT', 'TCH', 'PACT', 'armored', 'DC_PWR1']
+    DescriptionHintTitleToken = 'UEAGAZCLDQ'
+    MaxActivationPoints = 50
+    DivisionRule = Descriptor_Deck_Division_TCH_1_Tank_multi_Rule
+    CostMatrix = MatrixCostName_TCH_1_Tank_multi
+    EmblemTexture     = "Texture_Division_Emblem_TCH_1_Tank"
+    PortraitTexture   = "Texture_Division_Portrait_default"
+    TypeTexture       = "Texture_Division_Type_armored"
+    CountryId = "TCH"
+)
+export Descriptor_Deck_Division_TCH_303_Tank_multi is TDeckDivisionDescriptor
+(
+    DescriptorId = GUID:{d0cc9b9f-1f00-49e7-8f28-610dbbb5574b}
+    CfgName = 'TCH_303_Tank_multi'
+    DivisionName = 'CUVYCAIFIX'
+    InterfaceOrder = 31.0
+    DivisionPowerClassification = 'DC_PWR3'
+    DivisionCoalition = ECoalition/PACT
+    DivisionTags = ['DEFAULT', 'TCH', 'PACT', 'armored', 'DC_PWR3']
+    DescriptionHintTitleToken = 'YAOHQBWUVR'
+    MaxActivationPoints = 50
+    DivisionRule = Descriptor_Deck_Division_TCH_303_Tank_multi_Rule
+    CostMatrix = MatrixCostName_TCH_303_Tank_multi
+    EmblemTexture     = "Texture_Division_Emblem_TCH_303_Tank"
+    PortraitTexture   = "Texture_Division_Portrait_default"
+    TypeTexture       = "Texture_Division_Type_armored"
+    CountryId = "TCH"
 )
 export Descriptor_Deck_Division_UK_1st_Armoured_multi is TDeckDivisionDescriptor
 (
@@ -3704,6 +3848,21 @@ export Descriptor_Deck_Division_BEL_1BEC_challenge is TDeckDivisionDescriptor
     PortraitTexture   = "Texture_Division_Portrait_default"
     TypeTexture       = ""
 )
+export Descriptor_Deck_Division_CAN_1st_Canadian_challenge is TDeckDivisionDescriptor
+(
+    DescriptorId = GUID:{75ae9691-e7c3-45da-9707-e80a2ced205d}
+    CfgName = 'CAN_1st_Canadian_challenge'
+    DivisionName = 'NDAGDIMWPK'
+    InterfaceOrder = -1.0
+    DivisionCoalition = ECoalition/NATO
+    DivisionTags = ['HB', 'NATO']
+    MaxActivationPoints = 9999
+    DivisionRule = nil
+    CostMatrix = MatrixCostName_Challenge
+    EmblemTexture     = "Texture_Division_Emblem_CAN_1st_division"
+    PortraitTexture   = "Texture_Division_Portrait_default"
+    TypeTexture       = ""
+)
 export Descriptor_Deck_Division_DDR_20MSD_challenge is TDeckDivisionDescriptor
 (
     DescriptorId = GUID:{ec4e6c8f-03d3-43a9-96cc-7749caea3fa8}
@@ -3761,6 +3920,21 @@ export Descriptor_Deck_Division_FR_5e_Blindee_challenge is TDeckDivisionDescript
     DivisionRule = nil
     CostMatrix = MatrixCostName_Challenge
     EmblemTexture     = "Texture_Division_Emblem_FR_5eDB"
+    PortraitTexture   = "Texture_Division_Portrait_default"
+    TypeTexture       = ""
+)
+export Descriptor_Deck_Division_FR_6e_Blindee_Legere_challenge is TDeckDivisionDescriptor
+(
+    DescriptorId = GUID:{308add77-1faf-4e1b-a548-17cd79375168}
+    CfgName = 'FR_6e_Blindee_Legere_challenge'
+    DivisionName = 'YKMNOPTYHE'
+    InterfaceOrder = -1.0
+    DivisionCoalition = ECoalition/NATO
+    DivisionTags = ['HB', 'NATO']
+    MaxActivationPoints = 9999
+    DivisionRule = nil
+    CostMatrix = MatrixCostName_Challenge
+    EmblemTexture     = "Texture_Division_Emblem_FR_6e_DBL"
     PortraitTexture   = "Texture_Division_Portrait_default"
     TypeTexture       = ""
 )
@@ -3884,6 +4058,21 @@ export Descriptor_Deck_Division_RFA_12_Panzer_challenge is TDeckDivisionDescript
     PortraitTexture   = "Texture_Division_Portrait_default"
     TypeTexture       = ""
 )
+export Descriptor_Deck_Division_RFA_1_Luftlande_challenge is TDeckDivisionDescriptor
+(
+    DescriptorId = GUID:{090104e3-bce2-431c-aeb2-83f4ac4644e5}
+    CfgName = 'RFA_1_Luftlande_challenge'
+    DivisionName = 'MUUGHLYRWV'
+    InterfaceOrder = -1.0
+    DivisionCoalition = ECoalition/NATO
+    DivisionTags = ['HB', 'NATO']
+    MaxActivationPoints = 9999
+    DivisionRule = nil
+    CostMatrix = MatrixCostName_Challenge
+    EmblemTexture     = "Texture_Division_Emblem_RFA_1LLDiv"
+    PortraitTexture   = "Texture_Division_Portrait_default"
+    TypeTexture       = ""
+)
 export Descriptor_Deck_Division_RFA_2_PzGrenadier_challenge is TDeckDivisionDescriptor
 (
     DescriptorId = GUID:{d95a18f7-36c7-428b-b51c-aadb14bdc145}
@@ -3896,6 +4085,21 @@ export Descriptor_Deck_Division_RFA_2_PzGrenadier_challenge is TDeckDivisionDesc
     DivisionRule = nil
     CostMatrix = MatrixCostName_Challenge
     EmblemTexture     = "Texture_Division_Emblem_RFA_TerrKdo_Nord"
+    PortraitTexture   = "Texture_Division_Portrait_default"
+    TypeTexture       = ""
+)
+export Descriptor_Deck_Division_RFA_4PzGrD_challenge is TDeckDivisionDescriptor
+(
+    DescriptorId = GUID:{a7efd5e3-f327-46ea-a4ad-2ec2fdd9136f}
+    CfgName = 'RFA_4PzGrD_challenge'
+    DivisionName = 'OWQLCXWSLP'
+    InterfaceOrder = -1.0
+    DivisionCoalition = ECoalition/NATO
+    DivisionTags = ['HB', 'NATO']
+    MaxActivationPoints = 9999
+    DivisionRule = nil
+    CostMatrix = MatrixCostName_Challenge
+    EmblemTexture     = "Texture_Division_Emblem_2_PzGrenDivision_RFA"
     PortraitTexture   = "Texture_Division_Portrait_default"
     TypeTexture       = ""
 )
@@ -4031,6 +4235,36 @@ export Descriptor_Deck_Division_SOV_9_Gds_Tank_challenge is TDeckDivisionDescrip
     DivisionRule = nil
     CostMatrix = MatrixCostName_Challenge
     EmblemTexture     = "Texture_Division_Emblem_SOV_9TD"
+    PortraitTexture   = "Texture_Division_Portrait_default"
+    TypeTexture       = ""
+)
+export Descriptor_Deck_Division_TCH_19_MSD_challenge is TDeckDivisionDescriptor
+(
+    DescriptorId = GUID:{d5e119fc-d9c9-4bd1-8c0c-74d7f1b58ed9}
+    CfgName = 'TCH_19_MSD_challenge'
+    DivisionName = 'CMEODGSPXG'
+    InterfaceOrder = -1.0
+    DivisionCoalition = ECoalition/PACT
+    DivisionTags = ['HB', 'PACT']
+    MaxActivationPoints = 9999
+    DivisionRule = nil
+    CostMatrix = MatrixCostName_Challenge
+    EmblemTexture     = "Texture_Division_Emblem_TCH_19_MSD"
+    PortraitTexture   = "Texture_Division_Portrait_default"
+    TypeTexture       = ""
+)
+export Descriptor_Deck_Division_TCH_1_Tank_challenge is TDeckDivisionDescriptor
+(
+    DescriptorId = GUID:{d08d22b7-56ce-40f3-b2cb-8bb66fc34e1a}
+    CfgName = 'TCH_1_Tank_challenge'
+    DivisionName = 'YPEMXPWDPL'
+    InterfaceOrder = -1.0
+    DivisionCoalition = ECoalition/PACT
+    DivisionTags = ['HB', 'PACT']
+    MaxActivationPoints = 9999
+    DivisionRule = nil
+    CostMatrix = MatrixCostName_Challenge
+    EmblemTexture     = "Texture_Division_Emblem_TCH_1_Tank"
     PortraitTexture   = "Texture_Division_Portrait_default"
     TypeTexture       = ""
 )

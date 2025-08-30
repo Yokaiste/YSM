@@ -1,0 +1,20 @@
+export Modele_AMX_30_EM2_CMD_ESP     is TResourceMesh
+(
+    Mesh=ModelFile_AMX_30_EM2_ESP
+    Textures="GameData:/Assets/3D/Units/ESP/Char/AMX_30_EM2_CMD"
+)
+
+export Modele_AMX_30_EM2_CMD_ESP_MID is TResourceMesh
+(
+    Mesh=ModelFile_AMX_30_EM2_ESP_MID
+    Textures="GameData:/Assets/3D/Units/ESP/Char/AMX_30_EM2_CMD_MID"
+)
+
+export Modele_AMX_30_EM2_CMD_ESP_LOW is TResourceMesh
+(
+    Mesh=ModelFile_AMX_30_EM2_ESP_LOW
+    Textures="GameData:/Assets/3D/Units/ESP/Char/AMX_30_EM2_CMD_LOW"
+)
+
+export Modele_AMX_30_EM2_CMD_ESP_Tourelle_02 is TResourceMesh( Mesh=ModelFile_MG3_t2_no_ammo )
+export Modele_AMX_30_EM2_CMD_ESP_Tourelle_03 is TResourceMesh( Mesh=ModelFile_M2HB_12_7mm_t3 )

@@ -1,0 +1,14 @@
+export Modele_SVO_TCH is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/Artillerie/SVO/SVO.fbx"
+)
+
+export Modele_SVO_TCH_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/Artillerie/SVO_MID/SVO_MID.fbx"
+)
+
+export Modele_SVO_TCH_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/Artillerie/SVO_LOW/SVO_LOW.fbx"
+)

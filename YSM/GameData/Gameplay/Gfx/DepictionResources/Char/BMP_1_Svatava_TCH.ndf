@@ -1,0 +1,17 @@
+export Modele_BMP_1_Svatava_TCH is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/APC/BMP_1_SVATAVA/BMP_1_SVATAVA.fbx"
+)
+
+export Modele_BMP_1_Svatava_TCH_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/APC/BMP_1_SVATAVA_MID/BMP_1_SVATAVA_MID.fbx"
+)
+
+export Modele_BMP_1_Svatava_TCH_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/APC/BMP_1_SVATAVA_LOW/BMP_1_SVATAVA_LOW.fbx"
+)
+
+
+

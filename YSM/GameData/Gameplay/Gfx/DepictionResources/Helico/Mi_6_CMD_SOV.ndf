@@ -1,0 +1,13 @@
+export Modele_Mi_6_CMD_SOV is TResourceMesh
+(
+    Mesh='GameData:/Assets/3D/Units/URSS/Helico/Mi_22M/Mi_22M.fbx'
+)
+export Modele_Mi_6_CMD_SOV_MID is TResourceMesh
+(
+    Mesh='GameData:/Assets/3D/Units/URSS/Helico/Mi_22M_MID/Mi_22M_MID.fbx'
+)
+export Modele_Mi_6_CMD_SOV_LOW is TResourceMesh
+(
+    Mesh='GameData:/Assets/3D/Units/URSS/Helico/Mi_22M_LOW/Mi_22M_LOW.fbx'
+)
+

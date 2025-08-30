@@ -118,6 +118,17 @@ export CaptureOneZoneObjectif_OnlyTestAuto is TMacroActionDescriptor_CaptureComm
 )
 
 //-------------------------------------------------------------------------
+export CaptureOneZoneObjectifTransportedCommander_OnlyTestAuto is TMacroActionDescriptor_CaptureCommandZone_Specific
+(
+    ParametresDeMission =
+    [
+        TGenerationSettingHolder(GenerationType = TGenerationType_FixedSize NumberLaunchBasedOnGenerationType = 1),
+        TMacroActionProductionSettingHolder(ProdProperties = [TProdProperty_LaunchAsSoonAsPossible] PoolModelList = [~/Pool_CommandantTransported_TestAuto] DisableReinforcement = true),
+        TForcedPlacementSettingHolder(OrderedPrioritaryZoneWeightList = [~/CommandZoneCustomWeighForIAStrat])
+    ]
+)
+
+//-------------------------------------------------------------------------
 export Pool_Commandant_TestAuto is TPoolModel
 (
     ModelList = [
@@ -129,6 +140,33 @@ export Pool_Commandant_TestAuto is TPoolModel
             PriceComparisonMethod = EPriceComparatorType/Cheapest
             TagsPriority = [
                 "InfmapCommander",
+            ]
+        ),
+    ]
+)
+
+//-------------------------------------------------------------------------
+export Pool_CommandantTransported_TestAuto is TPoolModel
+(
+    ModelList = [
+        TPoolElement(
+            DescriptorId = GUID:{cb7672e3-5a81-449c-b6f3-6bb843df288a}
+            Required = true
+            Nb = 1
+            IndexPriorityOverPrice = true
+            PriceComparisonMethod = EPriceComparatorType/Cheapest
+            TagsPriority = [
+                "InfmapCommander",
+            ]
+        ),
+        TPoolElement(
+            DescriptorId = GUID:{cb7672e3-5a81-449c-b6f3-6bb843df288b}
+            Required = true
+            Nb = 1
+            IndexPriorityOverPrice = true
+            PriceComparisonMethod = EPriceComparatorType/Cheapest
+            TagsPriority = [
+                "Vehicule_Transport_Arme",
             ]
         ),
     ]
@@ -218,7 +256,7 @@ export Artillery_OnlyTestAuto is TMacroActionDescriptor_Artillery_Specific
             ]
         ),
 
-        TMacroActionProductionSettingHolder(PoolModelList = [~/Pool_Artillery_TestAuto] DistanceToOptimumStartDuringDeploymentGRU = 1060),
+        TMacroActionProductionSettingHolder(PoolModelList = [~/Pool_Artillery_TestAuto]),
         TForcedPlacementSettingHolder(ForcedCorridor = [5]),
     ]
 )

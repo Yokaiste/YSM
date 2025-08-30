@@ -1,0 +1,19 @@
+export Modele_F18_Hornet_CLUS_CAN is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/CAN/Avion/F18_HORNET_CRV7/F18_HORNET_CLU.fbx"
+)
+
+export Modele_F18_Hornet_CLUS_CAN_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/CAN/Avion/F18_HORNET_CRV7_MID/F18_HORNET_CLU_MID.fbx"
+)
+
+export Modele_F18_Hornet_CLUS_CAN_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/CAN/Avion/F18_HORNET_CRV7_LOW/F18_HORNET_CLU_LOW.fbx"
+)
+
+export Modele_F18_Hornet_CLUS_CAN_train is TResourceMesh
+(
+    Mesh=ModelFile_F18_Hornet_AA_CAN_train
+)

@@ -1,0 +1,17 @@
+export Modele_F4C_Phantom_II_HE_ESP is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/ESP/Avion/F4C_Phantom_II/F4C_Phantom_II_HE.fbx"
+)
+export Modele_F4C_Phantom_II_HE_ESP_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/ESP/Avion/F4C_Phantom_II_MID/F4C_Phantom_II_HE_MID.fbx"
+)
+export Modele_F4C_Phantom_II_HE_ESP_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/ESP/Avion/F4C_Phantom_II_LOW/F4C_Phantom_II_HE_LOW.fbx"
+)
+
+export Modele_F4C_Phantom_II_HE_ESP_train is TResourceMesh
+(
+    Mesh=ModelFile_F4C_Phantom_II_ESP_train
+)

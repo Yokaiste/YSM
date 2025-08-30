@@ -1,0 +1,22 @@
+export Modele_MiG_29_AA_TCH is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Avion/MiG_29_9_12/MiG_29_9_12_AA.fbx"
+    Textures="GameData:/Assets/3D/Units/TCH/Avion/MiG_29_9_12"
+)
+
+export Modele_MiG_29_AA_TCH_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Avion/MiG_29_9_12_MID/MiG_29_9_12_AA_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/TCH/Avion/MiG_29_9_12_MID"
+)
+
+export Modele_MiG_29_AA_TCH_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Avion/MiG_29_9_12_LOW/MiG_29_9_12_AA_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/TCH/Avion/MiG_29_9_12_LOW"
+)
+
+export Modele_MiG_29_AA_TCH_train is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Avion/MiG_29_9_12/MiG_29_9_12_Train.fbx"
+)

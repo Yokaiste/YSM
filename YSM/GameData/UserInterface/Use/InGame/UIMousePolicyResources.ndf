@@ -1023,7 +1023,7 @@ MouseWidget_Inefficient is Template_SoftwareMouseWidgetResource_Targeting
 private PathAndArrowSizeMultiplierHelper is TPathAndArrowSizeMultiplierHelper
 (
     Camera = $/M3D/Misc/CameraPrincipale
-    LineSizeMultiplierParam = $/M3D/Shader/LineSizeMultiplierParamVector
+    LineSizeMultiplierParam = float3[0.3,7,16000]
 )
 
 //--------------------------------------------------------

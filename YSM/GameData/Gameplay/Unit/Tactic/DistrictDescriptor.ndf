@@ -68,7 +68,6 @@ template DistrictDescriptor
             Texture = "Texture_Minimap_Unit_inf"
             FollowUnitOrientation = True
         ),
-        ~/PackSignauxModuleDescriptor,
         ~/TargetDataModuleDescriptor,
     ]
 )

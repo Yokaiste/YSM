@@ -1,0 +1,18 @@
+export Modele_Iltis_trans_CAN is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Vehicule/Iltis/Iltis_trans.fbx"
+    Textures="GameData:/Assets/3D/Units/CAN/Vehicule/Iltis"
+
+)
+
+export Modele_Iltis_trans_CAN_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Vehicule/Iltis_MID/Iltis_trans_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/CAN/Vehicule/Iltis_MID"
+)
+
+export Modele_Iltis_trans_CAN_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Vehicule/Iltis_LOW/Iltis_trans_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/CAN/Vehicule/Iltis_LOW"
+)

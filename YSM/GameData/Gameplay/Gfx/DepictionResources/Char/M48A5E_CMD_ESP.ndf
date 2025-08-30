@@ -1,0 +1,17 @@
+export Modele_M48A5E_CMD_ESP is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/ESP/Char/M48A5E2/M48A5E2.fbx"
+    Textures="GameData:/Assets/3D/Units/ESP/Char/M48A5E2_CMD"
+    )
+
+export Modele_M48A5E_CMD_ESP_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/ESP/Char/M48A5E2_MID/M48A5E2_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/ESP/Char/M48A5E2_MID"
+    )
+
+export Modele_M48A5E_CMD_ESP_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/ESP/Char/M48A5E2_LOW/M48A5E2_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/ESP/Char/M48A5E2_LOW"
+    )

@@ -573,6 +573,41 @@ ListeDesParties_BoutonLigne is BUCKButtonDescriptor
         ~/ListDesParties_SeparateurHorizontal
     ]
 )
+
+//-------------------------------------------------------------------------------------
+
+DLCTextureIcon is BUCKTextureDescriptor
+(
+    ElementName = "GameDLCTexture"
+
+    ComponentFrame = TUIFramePropertyRTTI
+    (
+        MagnifiableWidthHeight = [22.0, 22.0]
+        AlignementToAnchor = [0.0, 0.5]
+        AlignementToFather = [0.0, 0.5]
+    )
+
+    ResizeMode = ~/TextureResizeMode/FitToParentConservingRatio
+    TextureFrame = TUIFramePropertyRTTI
+    (
+        AlignementToAnchor = [0.5, 0.5]
+        AlignementToFather = [0.5, 0.5]
+    )
+    TextureToken = "Icon_ContentDLC"
+
+    Components =
+    [
+        BUCKSpecificHintableArea
+        (
+            ElementName = "HintDLC"
+            DicoToken = ~/LocalisationConstantes/dico_interface_outgame
+            HintTitleToken = "GRL_DLCT"
+            HintBodyToken = "GRL_DLCB"
+            HintExtendedToken = "GRL_DLCE"
+        ),
+    ]
+)
+
 //-------------------------------------------------------------------------------------
 ListeDesParties_ContentList is BUCKListDescriptor
 (
@@ -651,37 +686,7 @@ ListeDesParties_ContentList is BUCKListDescriptor
                         [
                             BUCKListElementDescriptor
                             (
-                                ComponentDescriptor = BUCKTextureDescriptor
-                                (
-                                    ElementName = "GameDLCTexture"
-
-                                    ComponentFrame = TUIFramePropertyRTTI
-                                    (
-                                        MagnifiableWidthHeight = [22.0, 22.0]
-                                        AlignementToAnchor = [0.0, 0.5]
-                                        AlignementToFather = [0.0, 0.5]
-                                    )
-
-                                    ResizeMode = ~/TextureResizeMode/FitToParentConservingRatio
-                                    TextureFrame = TUIFramePropertyRTTI
-                                    (
-                                        AlignementToAnchor = [0.5, 0.5]
-                                        AlignementToFather = [0.5, 0.5]
-                                    )
-                                    TextureToken = "Icon_ContentDLC"
-
-                                    Components =
-                                    [
-                                        BUCKSpecificHintableArea
-                                        (
-                                            ElementName = "HintDLC"
-                                            DicoToken = ~/LocalisationConstantes/dico_interface_outgame
-                                            HintTitleToken = "GRL_DLCT"
-                                            HintBodyToken = "GRL_DLCB"
-                                            HintExtendedToken = "GRL_DLCE"
-                                        ),
-                                    ]
-                                )
+                                ComponentDescriptor = ~/DLCTextureIcon
                             ),
                             BUCKListElementDescriptor
                             (

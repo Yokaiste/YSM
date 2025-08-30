@@ -1,0 +1,3 @@
+export Modele_DCA_PL_vz53_DShK_TCH is TResourceMesh( Mesh="GameData:/Assets/3D/Units/TCH/Canon/DCA_PL_vz53_DShK/DCA_PL_vz53_DShK.fbx")
+export Modele_DCA_PL_vz53_DShK_TCH_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/TCH/Canon/DCA_PL_vz53_DShK_MID/DCA_PL_vz53_DShK_MID.fbx")
+export Modele_DCA_PL_vz53_DShK_TCH_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/TCH/Canon/DCA_PL_vz53_DShK_LOW/DCA_PL_vz53_DShK_LOW.fbx")

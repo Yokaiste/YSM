@@ -1,0 +1,14 @@
+export Modele_M53_59_Praga_TCH is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/DCA/M53_59_Praga/M53_59_Praga.fbx"
+)
+
+export Modele_M53_59_Praga_TCH_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/DCA/M53_59_Praga_MID/M53_59_Praga_MID.fbx"
+)
+
+export Modele_M53_59_Praga_TCH_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/DCA/M53_59_Praga_LOW/M53_59_Praga_LOW.fbx"
+)

@@ -1,15 +1,18 @@
+export ModelFile_M60A1_RISE_Passive_US is 'GameData:/Assets/3D/Units/US/Char/M60A1_RISE_Passive/M60A1_RISE_Passive.fbx'
 export Modele_M60A1_RISE_Passive_reco_US is TResourceMesh
 (
     Mesh=ModelFile_M60A1_RISE_Passive_US
     Textures="GameData:/Assets/3D/Units/US/Char/M60A1_RISE_Passive_RECO"
 )
 
+export ModelFile_M60A1_RISE_Passive_US_MID is 'GameData:/Assets/3D/Units/US/Char/M60A1_RISE_Passive/M60A1_RISE_Passive.fbx'
 export Modele_M60A1_RISE_Passive_reco_US_MID is TResourceMesh
 (
     Mesh=ModelFile_M60A1_RISE_Passive_US_MID
     Textures="GameData:/Assets/3D/Units/US/Char/M60A1_RISE_Passive_RECO"
 )
 
+export ModelFile_M60A1_RISE_Passive_US_LOW is 'GameData:/Assets/3D/Units/US/Char/M60A1_RISE_Passive/M60A1_RISE_Passive.fbx'
 export Modele_M60A1_RISE_Passive_reco_US_LOW is TResourceMesh
 (
     Mesh=ModelFile_M60A1_RISE_Passive_US_LOW

@@ -1,8 +1,4 @@
-//----------------------------------------------------------------------------------
-// Feedback Dispatcher
-//----------------------------------------------------------------------------------
-
-FeedbackDispatcher is TFeedbackMessageDispatcher
+unnamed TFeedbackMessageDispatcher
 (
-    UnitAcknowDescriptor = ~/AcknowUnitContainer
+    UnitAcknowDescriptor = $/GFX/Sound/AcknowUnitContainer
 )

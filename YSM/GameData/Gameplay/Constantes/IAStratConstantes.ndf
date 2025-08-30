@@ -236,13 +236,17 @@ IAStratConstantes is TIAStratConstantesDescriptor_Specific
     MinFuelRatioForRetreat = 0.1
 
     //Smart Order Custom Zone Filler
-    ZoneFillerType = TCircleZoneFiller(Radius = 3)
+    ZoneFillerType = TCircleZoneFiller(Radius = 4)
 
     DefaultInMapArtilleryAmount = 1
     DefaultOutMapArtilleryAmount = 1
 
-    DefaultTransportSettings = [~/DefaultWargameTransport,]
-    DefaultTransportIsRequiredProduction = false
+    DefaultTransportTags = [
+        "Vehicule_Transport_Arme",
+        "Vehicule_Transport",
+        "Helo_Transport",
+        "Helo_Transport_Arme",
+    ]
 
     CommanderTagSet = ["InfmapCommander"]
     // constante de l'idle des helico
@@ -420,28 +424,7 @@ VisionConstantes is TIAStratVisionConstantes
 
 MapSlicingConstantes is TMapSlicingConstantes
 (
-    NbPositionsPerPolygon = 9
     MaxNbUnitsPerPolygon = 8
 
     ForestTerrainTypes = [~/ETerrainType/ForetLegere]
-)
-
-//--------------------------------------------------------------------------------------//
-//                                                                                      //
-//                                                                                      //
-//                                                                                      //
-//                                                                                      //
-//--------------------------------------------------------------------------------------//
-export DefaultWargameTransport is
-(
-    [
-        "AllUnits",
-    ]
-    ,
-    [
-        ("Vehicule_Transport_Arme", False),
-        ("Vehicule_Transport", True),
-        ("Helo_Transport", True),
-        ("Helo_Transport_Arme", False),
-    ]
 )

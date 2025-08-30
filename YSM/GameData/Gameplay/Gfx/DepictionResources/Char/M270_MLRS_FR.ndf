@@ -1,0 +1,18 @@
+export Modele_M270_MLRS_FR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Artillerie/M270/M270.fbx"
+    Textures="GameData:/Assets/3D/Units/FR/Artillerie/M270"
+)
+
+export Modele_M270_MLRS_FR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Artillerie/M270_MID/M270_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/FR/Artillerie/M270_MID"
+)
+
+export Modele_M270_MLRS_FR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Artillerie/M270_LOW/M270_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/FR/Artillerie/M270_LOW"
+)
+

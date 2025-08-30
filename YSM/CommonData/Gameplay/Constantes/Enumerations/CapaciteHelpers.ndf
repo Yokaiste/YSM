@@ -9,7 +9,6 @@ CapaciteTargetFilter_tout                      is 0
 CapaciteTargetFilter_ennemi                    is 1
 CapaciteTargetFilter_allie                     is 2
 CapaciteTargetFilter_joueur                    is 3
-CapaciteTargetFilter_allie_different_de_caster is 4
 
 CapaciteCumulEffect_oui             is 0
 CapaciteCumulEffect_jamais          is 1

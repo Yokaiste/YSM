@@ -1,0 +1,4 @@
+export Modele_BMR_CC_I_TOW_ESP is TResourceMesh( Mesh="GameData:/Assets/3D/Units/ESP/Vehicule/BMR_CC_TOW/BMR_CC_TOW.fbx" )
+export Modele_BMR_CC_I_TOW_ESP_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/ESP/Vehicule/BMR_CC_TOW_MID/BMR_CC_TOW_MID.fbx" )
+export Modele_BMR_CC_I_TOW_ESP_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/ESP/Vehicule/BMR_CC_TOW_LOW/BMR_CC_TOW_LOW.fbx" )
+export Modele_BMR_CC_I_TOW_ESP_Tourelle_01 is TResourceMesh ( Mesh=ModelFile_TOW_T1 )

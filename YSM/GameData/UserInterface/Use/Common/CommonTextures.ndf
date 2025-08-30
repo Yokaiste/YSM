@@ -107,6 +107,7 @@ CommonTexture_AdditionalTextureBank is TBUCKToolAdditionalTextureBank
         ("CommonTexture_division_RFA_10PZ",  MAP [(~/ComponentState/Normal, TUIResourceTexture_Common(FileName = "GameData:/Assets/2D/Interface/UseStrategic/Divisions/RFA_10pz.png"))]),
         ("CommonTexture_division_RFA_luft",  MAP [(~/ComponentState/Normal, TUIResourceTexture_Common(FileName = "GameData:/Assets/2D/Interface/UseStrategic/Divisions/RFA_luftland.png"))]),
         ("CommonTexture_division_RFA_4PzGren",  MAP [(~/ComponentState/Normal, TUIResourceTexture_Common(FileName = "GameData:/Assets/2D/Interface/UseStrategic/Divisions/RFA_4pzGren.png"))]),
+        ("CommonTexture_division_RFA_1Gebirgs",  MAP [(~/ComponentState/Normal, TUIResourceTexture_Common(FileName = "GameData:/Assets/2D/Interface/UseStrategic/Divisions/RFA_1Gebirgs.png"))]),
         ("CommonTexture_division_CAN_1",  MAP [(~/ComponentState/Normal, TUIResourceTexture_Common(FileName = "GameData:/Assets/2D/Interface/UseStrategic/Divisions/CAN_1_div.png"))]),
         ("CommonTexture_division_CZ_1tk",  MAP [(~/ComponentState/Normal, TUIResourceTexture_Common(FileName = "GameData:/Assets/2D/Interface/UseStrategic/Divisions/CZ_1tk.png"))]),
         ("CommonTexture_division_CZ_2mot",  MAP [(~/ComponentState/Normal, TUIResourceTexture_Common(FileName = "GameData:/Assets/2D/Interface/UseStrategic/Divisions/CZ_2mot.png"))]),

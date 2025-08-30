@@ -1,0 +1,17 @@
+export Modele_CUCV_Blowpipe_CAN is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Vehicule/CUCV_AGL/CUCV_Blowpipe.fbx"
+    Textures="GameData:/Assets/3D/Units/CAN/Vehicule/CUCV_AGL"
+)
+
+export Modele_CUCV_Blowpipe_CAN_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Vehicule/CUCV_AGL_MID/CUCV_Blowpipe_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/CAN/Vehicule/CUCV_AGL_MID"
+)
+
+export Modele_CUCV_Blowpipe_CAN_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Vehicule/CUCV_AGL_LOW/CUCV_Blowpipe_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/CAN/Vehicule/CUCV_AGL_LOW"
+)

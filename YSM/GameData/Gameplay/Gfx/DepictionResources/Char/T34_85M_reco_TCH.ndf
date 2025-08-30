@@ -1,0 +1,17 @@
+export Modele_T34_85M_reco_TCH is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Char/T34_85_obr_44/T34_85_obr_44.fbx"
+    Textures="GameData:/Assets/3D/Units/TCH/Char/T34_85_obr_44"
+)
+
+export Modele_T34_85M_reco_TCH_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Char/T34_85_obr_44_MID/T34_85_obr_44_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/TCH/Char/T34_85_obr_44_MID"
+)
+
+export Modele_T34_85M_reco_TCH_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/DDR/Char/T34_85_obr_44_LOW/T34_85_obr_44_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/TCH/Char/T34_85_obr_44_LOW"
+)

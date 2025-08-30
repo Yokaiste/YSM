@@ -634,7 +634,7 @@ OnUnitSold is TUIFeedbackDispatchedMessageDescriptor
     )
 )
 
-OnAutomaticBehavior is TUIFeedbackDispatchedMessageDescriptor
+OnAttackReaction is TUIFeedbackDispatchedMessageDescriptor
 (
     TimeBeforeRepeat = 10
     IsActiveForPlayer = true
@@ -661,7 +661,7 @@ OnAutomaticBehavior is TUIFeedbackDispatchedMessageDescriptor
             HorizontalFitStyle = ~/FitStyle/FitToContent
             TypefaceToken = "Eurostyle_Medium"
             TextDico = ~/LocalisationConstantes/dico_interface_ingame
-            TextColor = "Feedback/AutomaticBehavior"
+            TextColor = "Feedback/AttackReaction"
             TextSize = "16"
         )
 
@@ -884,7 +884,7 @@ IngameFeedbackMessageManagerDescriptor is TUISpecificInGameFeedbackMessageManage
         ( FeedbackMessage_OnShootOnPositionSmokeOrder, ~/OnSmoke ),
         ( FeedbackMessage_OnCriticEvacuate, ~/OnCriticEvacuate),
         ( FeedbackMessage_OnUnitSold, ~/OnUnitSold ),
-        ( FeedbackMessage_OnAutomaticBehavior, ~/OnAutomaticBehavior ),
+        ( FeedbackMessage_OnAttackReaction, ~/OnAttackReaction ),
         ( FeedbackMessage_OnCommandZoneSecuredByPlayer, ~/OnCommandZoneSecuredByPlayer ),
         ( FeedbackMessage_OnCommandZoneLost, ~/OnCommandZoneLost ),
         ( FeedbackMessage_OnCommandZoneSecuredByEnemy, ~/OnCommandZoneSecuredByEnemy ),

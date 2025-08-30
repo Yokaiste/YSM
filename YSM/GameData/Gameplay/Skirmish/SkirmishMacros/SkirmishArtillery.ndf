@@ -22,7 +22,7 @@ is TMacroActionDescriptor_Artillery_Specific
         TArtilleryStrikeThreatSettingHolder(DifficultyList = [IADifficulty/TresDifficile] MinimumThreatPerSplashForKill = 20 MinimumThreatForSupport = 100),
         TArtilleryMoveOutThreatSettingHolder(ThreatThresholdValue = 10 MoveOutThreatProbability = 0.1),
         TArtilleryMoveOutThreatSettingHolder(DifficultyList = [IADifficulty/TresDifficile] ThreatThresholdValue = 10 MoveOutThreatProbability = 1),
-        TMacroActionProductionSettingHolder(PoolModelList = <PoolModelList> DistanceToOptimumStartDuringDeploymentGRU = 1060),
+        TMacroActionProductionSettingHolder(PoolModelList = <PoolModelList>),
         TArtilleryStrikeSettingHolder(
             ArtilleryStrikeThreatBonusPerTags =
             [
@@ -64,7 +64,7 @@ export Artillery_Sniper is TMacroActionDescriptor_Artillery_Specific
         TArtilleryPositionningSettingHolder(SupportPointSafetyMargin = 1 SupportZoneMaxRangeGRU = 3029),
         TArtilleryStrikeThreatSettingHolder(MinimumThreatPerSplashForKill = 50 MinimumThreatForSupport = 750),
         TArtilleryMoveOutThreatSettingHolder(ThreatThresholdValue = 10 MoveOutThreatProbability = 0.03 ), // 50% à 17s
-        TMacroActionProductionSettingHolder(ProdProperties = [TProdProperty_LaunchAsSoonAsPossible] PoolModelList = [~/Pool_Artillery_Sniper] DistanceToOptimumStartDuringDeploymentGRU = 1060),
+        TMacroActionProductionSettingHolder(ProdProperties = [TProdProperty_LaunchAsSoonAsPossible] PoolModelList = [~/Pool_Artillery_Sniper]),
         TArtilleryStrikeSettingHolder(
             ArtilleryStrikeThreatBonusPerTags =
             [
@@ -121,7 +121,7 @@ export Artillery_Support is TMacroActionDescriptor_Artillery_Specific
             ]
         ),
 
-        TMacroActionProductionSettingHolder(PoolModelList = [~/Pool_Artillery_Support] DistanceToOptimumStartDuringDeploymentGRU = 1060),
+        TMacroActionProductionSettingHolder(PoolModelList = [~/Pool_Artillery_Support]),
     ]
 )
 //-------------------------------------------------------------------------
@@ -139,7 +139,7 @@ is TMacroActionDescriptor_Artillery_Specific
         TArtilleryMoveOutThreatSettingHolder(ThreatThresholdValue = 10 MoveOutThreatProbability = 0.1),
         TArtilleryMoveOutThreatSettingHolder(DifficultyList = [IADifficulty/TresDifficile] ThreatThresholdValue = 10 MoveOutThreatProbability = 1),
 
-        TMacroActionProductionSettingHolder(PoolModelList = [~/Pool_Artillery_Expensive] ProdProperties = [TProdProperty_LaunchAsSoonAsPossible]DistanceToOptimumStartDuringDeploymentGRU = 1060),
+        TMacroActionProductionSettingHolder(PoolModelList = [~/Pool_Artillery_Expensive] ProdProperties = [TProdProperty_LaunchAsSoonAsPossible]),
         TMacroActionLifetimeSettingHolder(MinimumResourceForLaunch = <MinimumResourceForLaunch>),
 
         TArtilleryStrikeSettingHolder(

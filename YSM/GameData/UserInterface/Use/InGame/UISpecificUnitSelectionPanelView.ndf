@@ -1036,7 +1036,6 @@ UISpecificUnitSelectionPanelViewDescriptor is TUISpecificUnitSelectionPanelViewD
 
     WeaponPanelExtendWeight = 1.0
     WeaponPanelMinSize = TRTTILength( Magnifiable = 132.0 )
-    MaxNbWeaponToShow = ~/MaxNbWeaponToShowInUI
 
     UnknownValueToken = "UK_VAL"
     UnknownValueDicoToken = ~/LocalisationConstantes/dico_interface_ingame

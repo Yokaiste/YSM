@@ -11,6 +11,14 @@ Texture_Division_Emblem_BEL_DivMob is TUIResourceTexture_Common
 (
     FileName = "GameData:/Assets/2D/Interface/UseOutGame/Division/Emblem/BEL_DivMob.png"
 )
+Texture_Division_Emblem_CAN_1st_division is TUIResourceTexture_Common
+(
+    FileName = "GameData:/Assets/2D/Interface/UseOutGame/Division/Emblem/CAN_1st_division.png"
+)
+Texture_Division_Emblem_ESP_Brunete is TUIResourceTexture_Common
+(
+    FileName = "GameData:/Assets/2D/Interface/UseOutGame/Division/Emblem/ESP_Brunete.png"
+)
 Texture_Division_Emblem_FR_11e_Para is TUIResourceTexture_Common
 (
     FileName = "GameData:/Assets/2D/Interface/UseOutGame/Division/Emblem/FR_11e_Para.png"
@@ -22,6 +30,10 @@ Texture_Division_Emblem_FR_152eID is TUIResourceTexture_Common
 Texture_Division_Emblem_FR_5eDB is TUIResourceTexture_Common
 (
     FileName = "GameData:/Assets/2D/Interface/UseOutGame/Division/Emblem/FR_5eDB.png"
+)
+Texture_Division_Emblem_FR_6e_DBL is TUIResourceTexture_Common
+(
+    FileName = "GameData:/Assets/2D/Interface/UseOutGame/Division/Emblem/FR_6e_DBL.png"
 )
 Texture_Division_Emblem_Berlin_Command is TUIResourceTexture_Common
 (
@@ -67,6 +79,10 @@ Texture_Division_Emblem_RDA_Rugen_Gruppierung is TUIResourceTexture_Common
 (
     FileName = "GameData:/Assets/2D/Interface/UseOutGame/Division/Emblem/RDA_Rugen_Gruppierung.png"
 )
+Texture_Division_Emblem_RFA_1LLDiv is TUIResourceTexture_Common
+(
+    FileName = "GameData:/Assets/2D/Interface/UseOutGame/Division/Emblem/RFA_1LLDiv.png"
+)
 Texture_Division_Emblem_2_PzGrenDivision_RFA is TUIResourceTexture_Common
 (
     FileName = "GameData:/Assets/2D/Interface/UseOutGame/Division/Emblem/2_PzGrenDivision_RFA.png"
@@ -95,6 +111,10 @@ Texture_Division_Emblem_SOV_27GvMSD is TUIResourceTexture_Common
 (
     FileName = "GameData:/Assets/2D/Interface/UseOutGame/Division/Emblem/SOV_27GvMSD.png"
 )
+Texture_Division_Emblem_SOV_31TD is TUIResourceTexture_Common
+(
+    FileName = "GameData:/Assets/2D/Interface/UseOutGame/Division/Emblem/SOV_31TD.png"
+)
 Texture_Division_Emblem_35th_VDV_Brigade is TUIResourceTexture_Common
 (
     FileName = "GameData:/Assets/2D/Interface/UseOutGame/Division/Emblem/35th_VDV_Brigade.png"
@@ -118,6 +138,18 @@ Texture_Division_Emblem_SOV_76th_VDV is TUIResourceTexture_Common
 Texture_Division_Emblem_79th_gtd is TUIResourceTexture_Common
 (
     FileName = "GameData:/Assets/2D/Interface/UseOutGame/Division/Emblem/79th_gtd.png"
+)
+Texture_Division_Emblem_TCH_19_MSD is TUIResourceTexture_Common
+(
+    FileName = "GameData:/Assets/2D/Interface/UseOutGame/Division/Emblem/TCH_19_MSD.png"
+)
+Texture_Division_Emblem_TCH_1_Tank is TUIResourceTexture_Common
+(
+    FileName = "GameData:/Assets/2D/Interface/UseOutGame/Division/Emblem/TCH_1_Tank.png"
+)
+Texture_Division_Emblem_TCH_303_Tank is TUIResourceTexture_Common
+(
+    FileName = "GameData:/Assets/2D/Interface/UseOutGame/Division/Emblem/TCH_303_Tank.png"
 )
 Texture_Division_Emblem_UK_1st_Armoured is TUIResourceTexture_Common
 (
@@ -356,9 +388,12 @@ DivisionAdditionalTextureBank is TBUCKToolAdditionalTextureBank
     [
         ("Texture_Division_Emblem_BEL_16e_Meca", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_BEL_16e_Meca)]),
         ("Texture_Division_Emblem_BEL_DivMob", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_BEL_DivMob)]),
+        ("Texture_Division_Emblem_CAN_1st_division", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_CAN_1st_division)]),
+        ("Texture_Division_Emblem_ESP_Brunete", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_ESP_Brunete)]),
         ("Texture_Division_Emblem_FR_11e_Para", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_FR_11e_Para)]),
         ("Texture_Division_Emblem_FR_152eID", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_FR_152eID)]),
         ("Texture_Division_Emblem_FR_5eDB", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_FR_5eDB)]),
+        ("Texture_Division_Emblem_FR_6e_DBL", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_FR_6e_DBL)]),
         ("Texture_Division_Emblem_Berlin_Command", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_Berlin_Command)]),
         ("Texture_Division_Emblem_NL_4e_Divisie", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_NL_4e_Divisie)]),
         ("Texture_Division_Emblem_NL_CLKA", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_NL_CLKA)]),
@@ -370,6 +405,7 @@ DivisionAdditionalTextureBank is TBUCKToolAdditionalTextureBank
         ("Texture_Division_Emblem_RDA__9_Panzer", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_RDA__9_Panzer)]),
         ("Texture_Division_Emblem_RDA_KDA_Erfurt", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_RDA_KDA_Erfurt)]),
         ("Texture_Division_Emblem_RDA_Rugen_Gruppierung", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_RDA_Rugen_Gruppierung)]),
+        ("Texture_Division_Emblem_RFA_1LLDiv", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_RFA_1LLDiv)]),
         ("Texture_Division_Emblem_2_PzGrenDivision_RFA", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_2_PzGrenDivision_RFA)]),
         ("Texture_Division_Emblem_5_Panzerdivision_RFA", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_5_Panzerdivision_RFA)]),
         ("Texture_Division_Emblem_RFA_TerrKdo_Sud", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_RFA_TerrKdo_Sud)]),
@@ -377,12 +413,16 @@ DivisionAdditionalTextureBank is TBUCKToolAdditionalTextureBank
         ("Texture_Division_Emblem_SOV_157MSD", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_SOV_157MSD)]),
         ("Texture_Division_Emblem_SOV_25th_TD", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_SOV_25th_TD)]),
         ("Texture_Division_Emblem_SOV_27GvMSD", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_SOV_27GvMSD)]),
+        ("Texture_Division_Emblem_SOV_31TD", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_SOV_31TD)]),
         ("Texture_Division_Emblem_35th_VDV_Brigade", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_35th_VDV_Brigade)]),
         ("Texture_Division_Emblem_39th_gmsd", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_39th_gmsd)]),
         ("Texture_Division_Emblem_SOV_56th_DSh_Brigade", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_SOV_56th_DSh_Brigade)]),
         ("Texture_Division_Emblem_SOV_6OdtMSB", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_SOV_6OdtMSB)]),
         ("Texture_Division_Emblem_SOV_76th_VDV", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_SOV_76th_VDV)]),
         ("Texture_Division_Emblem_79th_gtd", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_79th_gtd)]),
+        ("Texture_Division_Emblem_TCH_19_MSD", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_TCH_19_MSD)]),
+        ("Texture_Division_Emblem_TCH_1_Tank", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_TCH_1_Tank)]),
+        ("Texture_Division_Emblem_TCH_303_Tank", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_TCH_303_Tank)]),
         ("Texture_Division_Emblem_UK_1st_Armoured", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_UK_1st_Armoured)]),
         ("Texture_Division_Emblem_UK_2nd_Infantry", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_UK_2nd_Infantry)]),
         ("Texture_Division_Emblem_UK_4th_Armoured", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_UK_4th_Armoured)]),

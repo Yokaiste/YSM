@@ -1,0 +1,19 @@
+export Modele_M113A1_TUA_CAN is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/CAN/APC/M113_TUA/M113_TUA.fbx"
+)
+
+export Modele_M113A1_TUA_CAN_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/CAN/APC/M113_TUA_MID/M113_TUA_MID.fbx"
+)
+
+export Modele_M113A1_TUA_CAN_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/CAN/APC/M113_TUA_LOW/M113_TUA_LOW.fbx"
+)
+
+export Modele_M113A1_TUA_CAN_Tourelle_04 is TResourceMesh
+(
+    Mesh=ModelFile_MAG_t4
+)

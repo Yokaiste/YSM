@@ -1,0 +1,22 @@
+export Modele_AMX_10_RC_Legion_FR is TResourceMesh
+(
+    Mesh=ModelFile_AMX_10_RC_FR
+    Textures="GameData:/Assets/3D/Units/FR/Char/AMX_10RC_Legion"
+)
+
+export Modele_AMX_10_RC_Legion_FR_MID is TResourceMesh
+(
+    Mesh=ModelFile_AMX_10_RC_FR_MID
+    Textures="GameData:/Assets/3D/Units/FR/Char/AMX_10RC_Legion_MID"
+)
+
+export Modele_AMX_10_RC_Legion_FR_LOW is TResourceMesh
+(
+    Mesh=ModelFile_AMX_10_RC_FR_LOW
+    Textures="GameData:/Assets/3D/Units/FR/Char/AMX_10RC_Legion_LOW"
+)
+
+export Modele_AMX_10_RC_Legion_FR_Tourelle_02 is TResourceMesh
+(
+    Mesh=ModelFile_AMX_10_RC_FR_Tourelle_02
+)

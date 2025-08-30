@@ -1,0 +1,14 @@
+export Modele_OT_64_SKOT_CMD_TCH is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/CMD/OT_64_SKOT_CMD/OT_64_SKOT_CMD.fbx"
+)
+
+export Modele_OT_64_SKOT_CMD_TCH_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/CMD/OT_64_SKOT_CMD_MID/OT_64_SKOT_CMD_MID.fbx"
+)
+
+export Modele_OT_64_SKOT_CMD_TCH_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/CMD/OT_64_SKOT_CMD_LOW/OT_64_SKOT_CMD_LOW.fbx"
+)

@@ -1,0 +1,17 @@
+export Modele_M48A2GA2_nonHeimat_RFA is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Char/M48A2GA2/M48A2GA2.fbx"
+    Textures="GameData:/Assets/3D/Units/RFA/Char/M48A2GA2_nonHeimat"
+)
+
+export Modele_M48A2GA2_nonHeimat_RFA_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Char/M48A2GA2_MID/M48A2GA2_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/RFA/Char/M48A2GA2_nonHeimat_MID"
+)
+
+export Modele_M48A2GA2_nonHeimat_RFA_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/Char/M48A2GA2_LOW/M48A2GA2_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/RFA/Char/M48A2GA2_nonHeimat_LOW"
+)

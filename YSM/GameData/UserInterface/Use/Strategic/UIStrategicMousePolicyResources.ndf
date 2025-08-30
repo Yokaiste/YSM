@@ -4,13 +4,10 @@ private MouseCurseur_AssaultPossible is TMouseCursorAnimation
     HotSpotX           = 16
     HotSpotY           = 16
     AnimationCycleTime = 1
-    TextureList = TResourceDescriptorTextureAnimation
-    (
-        FileNameList =
-        [
-            "GameData:/Assets/2D/Interface/Common/Cursors/OrderCursorGreen.png",
-        ]
-    )
+    ResourceTextureList =
+    [
+        TResourceTextureFromFile( FileName = "GameData:/Assets/2D/Interface/Common/Cursors/OrderCursorGreen.png" ),
+    ]
 )
 
 private MouseCurseur_AssaultImpossible is TMouseCursorAnimation
@@ -18,13 +15,10 @@ private MouseCurseur_AssaultImpossible is TMouseCursorAnimation
     HotSpotX           = 16
     HotSpotY           = 16
     AnimationCycleTime = 1
-    TextureList = TResourceDescriptorTextureAnimation
-    (
-        FileNameList =
-        [
-            "GameData:/Assets/2D/Interface/Common/Cursors/OrderCursorRed.png",
-        ]
-    )
+    ResourceTextureList =
+    [
+        TResourceTextureFromFile( FileName = "GameData:/Assets/2D/Interface/Common/Cursors/OrderCursorRed.png" ),
+    ]
 )
 
 private MouseCurseur_MultiselectionStrategic is TMouseCursorAnimation
@@ -32,13 +26,10 @@ private MouseCurseur_MultiselectionStrategic is TMouseCursorAnimation
     HotSpotX           = 0
     HotSpotY           = 0
     AnimationCycleTime = 1
-    TextureList = TResourceDescriptorTextureAnimation
-    (
-        FileNameList =
-        [
-            "GameData:/Assets/2D/Interface/Common/Cursors/CursorDefault.png",
-        ]
-    )
+    ResourceTextureList =
+    [
+        TResourceTextureFromFile( FileName = "GameData:/Assets/2D/Interface/Common/Cursors/CursorDefault.png" ),
+    ]
 )
 
 private MouseWidget_AssaultPossible is Template_HardwareMouseWidgetResource

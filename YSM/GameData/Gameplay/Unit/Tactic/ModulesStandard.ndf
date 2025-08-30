@@ -35,8 +35,6 @@ template AirplaneMovementDescriptor
     AltitudeGRU = <AltitudeGRU>
     AltitudeMaxGRU = ~/MaxAltitudeGRU
     AltitudeMinGRU = <AltitudeMinGRU>
-    AltitudeMinForRollGRU = ~/MinAltitudeForRollGRU
-    MinRollSpeedDegreePerSecond = ~/MinRollSpeedDegreePerSecond
     SpeedInKmph = <SpeedInKmph>
     AgilityRadiusGRU = <AgilityRadiusGRU>
     PitchAngleDegree = <PitchAngleDegree>
@@ -45,9 +43,6 @@ template AirplaneMovementDescriptor
     RollSpeedDegreePerSecond = <RollSpeedDegreePerSecond>
     EvacAngleDegree = <EvacAngleDegree>
     EvacToStartingPoint = <EvacToStartingPoint>
-    ElevatorRotationMax = ~/ElevatorRotationMax
-    AileronRotationMax = ~/AileronRotationMax
-    RudderRotationMax = ~/RudderRotationMax
     AttackStrategiesDescriptorsSortedByPriority = <AttackStrategiesDescriptorsSortedByPriority>
 )
 
@@ -72,17 +67,17 @@ DistrictApparenceModuleDescriptor is TApparenceModuleDescriptor
 )
 
 template InfantryApparenceModuleDescriptor [
-    Depiction,
+    MimeticName
 ] is TApparenceModuleDescriptor
 (
     UseFollowCam = True
     PickableObject = False
-    Depiction = <Depiction>
+    Depiction = TTimelyDepictionReceiverFactory( MimeticName = <MimeticName> )
     ReferenceMesh = $/GFX/DepictionResources/Rien
 )
 
 template VehicleApparenceModuleDescriptor [
-    Depiction,
+    MimeticName,
     BlackHoleIdentifier,
     GameplayBBoxBoneName = "",
     ReferenceMesh,
@@ -90,7 +85,7 @@ template VehicleApparenceModuleDescriptor [
 (
     UseFollowCam = True
     PickableObject = True
-    Depiction = <Depiction>
+    Depiction = TTimelyDepictionReceiverFactory( MimeticName = <MimeticName> )
     ReferenceMesh = <ReferenceMesh>
     BlackHoleIdentifier = <BlackHoleIdentifier>
     GameplayBBoxBoneName = <GameplayBBoxBoneName>

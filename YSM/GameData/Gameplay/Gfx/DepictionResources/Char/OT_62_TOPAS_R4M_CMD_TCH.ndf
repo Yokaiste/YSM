@@ -1,0 +1,14 @@
+export Modele_OT_62_TOPAS_R4M_CMD_TCH is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/CMD/OT_62_TOPAS_CMD_R4M/OT_62_TOPAS_CMD_R4M.fbx"
+)
+
+export Modele_OT_62_TOPAS_R4M_CMD_TCH_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/CMD/OT_62_TOPAS_CMD_R4M_MID/OT_62_TOPAS_CMD_R4M_MID.fbx"
+)
+
+export Modele_OT_62_TOPAS_R4M_CMD_TCH_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/CMD/OT_62_TOPAS_CMD_R4M_LOW/OT_62_TOPAS_CMD_R4M_LOW.fbx"
+)

@@ -1,0 +1,19 @@
+export Modele_L39ZA_TCH is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/Avion/L39ZA/L39ZA.fbx"
+)
+
+export Modele_L39ZA_TCH_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/Avion/L39ZA_MID/L39ZA_MID.fbx"
+)
+
+export Modele_L39ZA_TCH_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/Avion/L39ZA_LOW/L39ZA_LOW.fbx"
+)
+
+export Modele_L39ZA_TCH_train is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/Avion/L39ZA/L39ZA_train.fbx"
+)

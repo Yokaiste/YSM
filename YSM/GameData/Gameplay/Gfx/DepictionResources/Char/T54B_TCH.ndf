@@ -1,0 +1,22 @@
+export Modele_T54B_TCH is TResourceMesh
+(
+    Mesh=ModelFile_T54B_DDR
+    Textures="GameData:/Assets/3D/Units/TCH/Char/T54B"
+)
+
+export Modele_T54B_TCH_MID is TResourceMesh
+(
+    Mesh=ModelFile_T54B_DDR_MID
+    Textures="GameData:/Assets/3D/Units/TCH/Char/T54B_MID"
+)
+
+export Modele_T54B_TCH_LOW is TResourceMesh
+(
+    Mesh=ModelFile_T54B_DDR_LOW
+    Textures="GameData:/Assets/3D/Units/TCH/Char/T54B_LOW"
+)
+
+export Modele_T54B_TCH_Tourelle_02 is TResourceMesh
+(
+    Mesh=ModelFile_DShK_127mm_no_ammo
+)

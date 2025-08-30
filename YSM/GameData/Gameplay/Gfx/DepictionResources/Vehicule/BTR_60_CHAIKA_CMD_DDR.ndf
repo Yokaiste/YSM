@@ -1,3 +1,4 @@
+export ModelFile_BTR_60_CHAIKA_CMD_SOV is 'GameData:/Assets/3D/Units/URSS/CMD/BTR_60_CHAIKA_CMD/BTR_60_CHAIKA_CMD.fbx'
 export Modele_BTR_60_CHAIKA_CMD_DDR is TResourceMesh
 (
     Mesh=ModelFile_BTR_60_CHAIKA_CMD_SOV
@@ -5,12 +6,14 @@ export Modele_BTR_60_CHAIKA_CMD_DDR is TResourceMesh
 
 )
 
+export ModelFile_BTR_60_CHAIKA_CMD_SOV_MID is 'GameData:/Assets/3D/Units/URSS/CMD/BTR_60_CHAIKA_CMD_MID/BTR_60_CHAIKA_CMD_MID.fbx'
 export Modele_BTR_60_CHAIKA_CMD_DDR_MID is TResourceMesh
 (
     Mesh=ModelFile_BTR_60_CHAIKA_CMD_SOV_MID
     Textures="GameData:/Assets/3D/Units/DDR/CMD/BTR_60_CHAIKA_CMD_MID"
 )
 
+export ModelFile_BTR_60_CHAIKA_CMD_SOV_LOW is 'GameData:/Assets/3D/Units/URSS/CMD/BTR_60_CHAIKA_CMD_LOW/BTR_60_CHAIKA_CMD_LOW.fbx'
 export Modele_BTR_60_CHAIKA_CMD_DDR_LOW is TResourceMesh
 (
     Mesh=ModelFile_BTR_60_CHAIKA_CMD_SOV_LOW

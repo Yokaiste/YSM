@@ -1,0 +1,22 @@
+export Modele_F4F_Phantom_II_LGB_RFA is TResourceMesh
+(
+    Mesh=ModelFile_F4F_Phantom_II_AT_RFA
+    Textures="GameData:/Assets/3D/Units/RFA/Avion/F4E_Phantom_II_WTD61"
+)
+
+export Modele_F4F_Phantom_II_LGB_RFA_MID is TResourceMesh
+(
+    Mesh=ModelFile_F4F_Phantom_II_AT_RFA_MID
+    Textures="GameData:/Assets/3D/Units/RFA/Avion/F4E_Phantom_II_WTD61_MID"
+)
+
+export Modele_F4F_Phantom_II_LGB_RFA_LOW is TResourceMesh
+(
+    Mesh=ModelFile_F4F_Phantom_II_AT_RFA_LOW
+    Textures="GameData:/Assets/3D/Units/RFA/Avion/F4E_Phantom_II_WTD61_LOW"
+)
+
+export Modele_F4F_Phantom_II_LGB_RFA_train is TResourceMesh
+(
+    Mesh=ModelFile_F4F_Phantom_II_AA_RFA_train
+)

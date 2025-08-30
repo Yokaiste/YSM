@@ -1,18 +1,18 @@
 export Modele_BTR_70_MP_SOV is TResourceMesh
 (
-    Mesh=ModelFile_BTR_70_SOV
+    Mesh=~/ModelFile_BTR_70_SOV
     Textures="GameData:/Assets/3D/Units/URSS/APC/BTR70_MP_Komendatura"
 )
 
 export Modele_BTR_70_MP_SOV_MID is TResourceMesh
 (
-    Mesh=ModelFile_BTR_70_SOV_MID
+    Mesh=~/ModelFile_BTR_70_SOV_MID
     Textures="GameData:/Assets/3D/Units/URSS/APC/BTR70_MP_Komendatura_MID"
 )
 
 export Modele_BTR_70_MP_SOV_LOW is TResourceMesh
 (
-    Mesh=ModelFile_BTR_70_SOV_LOW
+    Mesh=~/ModelFile_BTR_70_SOV_LOW
     Textures="GameData:/Assets/3D/Units/URSS/APC/BTR70_MP_Komendatura_LOW"
 )
 

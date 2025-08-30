@@ -80,9 +80,6 @@ Constantes is TTunableConstante
     SuddenDeathTime = 5 * 60
     MinimumNumberOfUnitToStayInGameWithoutCmdOrProductionInDestructionMode = 5
 
-    DureeDeploiementControleZone = 0.2
-    DureeRetraitControleZone = 0.2
-
     TacticVictoryLevelConstantes = ~/TacticVictoryLevelConstantes
 
 //------------------------- Constantes GestionFormation -----------------------------------//
@@ -183,11 +180,6 @@ Constantes is TTunableConstante
     AllowMixedSelection = false // Selection d'unités ET bâtiments en même temps ?
     AllowMultipleBuildingSelection = false // Selection multiple de bâtiments (et quartiers)
 
-//----------------------------- Constantes Supply -----------------------------------------//
-
-    DeploymentDuration = 0.0
-    WithdrawalDuration = 0.0
-
 //------------------------- Constantes Unités hors carte ----------------------------------//
 
     OutmapShootPositionPitch = 69.0
@@ -284,10 +276,6 @@ ModernWarfareConstantes is TModernWarfareTunableConstante
     TandemModifierValue = 2.0
     TandemModifierType = ModifierType_Additionnel
 
-//----------------------------- Constantes Supply -----------------------------------------//
-
-    RatioSupplyAmmoAndFuel = 0.0 // En dessous ce ce ratio de munition OU de fuel, l'unité entrera dans la boucle de ravitaillement // Ouai mais ca ne fonctionne plus
-
 //----------------------------- Constantes Weapons ----------------------------------------//
 
     AdditionalSuppressDamagePerLostPhysicalDamage = 25 // c'est un multiplicateur des degats physiques qu'on va appliquer en stress.
@@ -301,12 +289,9 @@ ModernWarfareConstantes is TModernWarfareTunableConstante
 
     IgnoreTirPenetrantSiAucunBlindage = true
 
-    // Attention, le parametre OneSalveDesignatedShot n'est plus specifique a l'artillerie
-    NbSalveDesignatedShot = -1 // -1 -> tir jusqu'a epuisement des munitions. 0 est indéfini, prévenir si il y en a besoin
-
     ShootingAdjustmentAngleMax = 0.4 //20°
-    SplashRatioDamage = [0.35, 0.35, 0.25] // Stress, Suppress, Physical damages (entre 0 et 1). ratio des dégâts en périphérie du cercle de splash
-    SplashRatioDistance = [0.35, 0.35, 0.30] // Stress, Suppress, Physical damages (entre 0 et 1). Ratio du rayon de splash où les dégâts commencent à être amoindris. Ex: 0.25 si DistanceImpact / SplashRadius > 0.25
+    SplashRatioDamage = [0.35, 0.35, 0.25] // Enum EDamageType damages (entre 0 et 1). ratio des dégâts en périphérie du cercle de splash
+    SplashRatioDistance = [0.35, 0.35, 0.30] // Enum EDamageType damages (entre 0 et 1). Ratio du rayon de splash où les dégâts commencent à être amoindris. Ex: 0.25 si DistanceImpact / SplashRadius > 0.25
 
     TagAllowedForMissileRoE = "AllowedForMissileRoE"
     TagNonRadarTargetable = "Non_Radar_Targetable"
@@ -526,11 +511,6 @@ WargameConstantes is TWargameTunableConstante
         (IADifficulty/PlusDifficile, 0.5),
     ]
 
-//------------------------ Constantes IAStratWargame ------------------------------------//
-
-    // Surrender de l'IA Strat
-    UnitValueLimitForSurrender = 400    // Valeur d'unité sur la map en-dessous de laquelle l'IA va surrender (0 = pas de surrender)
-
 //-------------------- Constantes InterfaceSpecific -------------------------------//
 
     FactoriesWhichNeverCloseProductionMenuAfterValidation = [
@@ -587,22 +567,9 @@ WargameConstantes is TWargameTunableConstante
         (10, 'Value_3'),
     ]
 
-    PaliersDeVitesse = MAP
-    [
-        (800, 'UISP_VLOW'),
-        (900, 'UISP_LOW'),
-        (1000, 'UISP_MED'),
-        (1300, 'UISP_HIGH'),
-        (4000, 'UISP_VHIGH'),
-    ]
-
     TagDInfanteriePinned = "Infanterie_Cowering"
-    TempsAttenteAffichageIconeConflitQuartier = 0.5 // Permet de temporiser l'affichage de l'icône de conflit dans un quartier le temps que les étiquettes se placent
     ValeurMinAffichageBarMoralLabel = 0 // compris entre 0 et 1
     ValeurMaxBarMoralLabel = 1 // compris entre 0 et 1
-    ValeurMinimumCoverLeger = 4 // Terrain concealment bonus
-    ValeurMinimumCoverMoyen = 7.5 // Terrain concealment bonus
-    ValeurMinimumCoverTresLeger = 10 // Unit concealment bonus
 
     ValeurOptionTailleNewLabelMinimal = 0.63
     ValeurOptionTailleNewLabelVerySmall = 0.77
@@ -818,7 +785,6 @@ WargameConstantes is TWargameTunableConstante
 //---------------------------- Constantes Mouvement -------------------------------------//
 
     AmphibiousSpawnLandSeaRatio = 1.5 // >=0, ponderation arbitraire pour determiner si une amphibie spawne au spawn marin ou terrestre (=1:elle prendra le plus proche a vol d'oiseau ; <1:elle preferera le marin, >1:elle preferera le terrestre)
-    InfantryTrenchDepthGRU = 2
 
 //------------------------------ Constantes Tactic --------------------------------------//
 

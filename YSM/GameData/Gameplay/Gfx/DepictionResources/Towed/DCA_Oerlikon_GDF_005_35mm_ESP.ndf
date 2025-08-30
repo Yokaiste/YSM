@@ -1,0 +1,3 @@
+export Modele_DCA_Oerlikon_GDF_005_35mm_ESP is TResourceMesh (Mesh=DCA_Oerlikon_GDF_005_35mm_ESP)
+export Modele_DCA_Oerlikon_GDF_005_35mm_ESP_MID is TResourceMesh (Mesh=DCA_Oerlikon_GDF_005_35mm_ESP_MID)
+export Modele_DCA_Oerlikon_GDF_005_35mm_ESP_LOW is TResourceMesh (Mesh=DCA_Oerlikon_GDF_005_35mm_ESP_LOW)DCA_Oerlikon_GDF_005_35mm_ESP is 'GameData:/Assets/3D/Units/ESP/DCA/DCA_OERLIKON_GDF_005_35mm/DCA_OERLIKON_GDF_005_35mm.fbx'DCA_Oerlikon_GDF_005_35mm_ESP_MID is 'GameData:/Assets/3D/Units/ESP/DCA/DCA_OERLIKON_GDF_005_35mm_MID/DCA_OERLIKON_GDF_005_35mm_MID.fbx'DCA_Oerlikon_GDF_005_35mm_ESP_LOW is 'GameData:/Assets/3D/Units/ESP/DCA/DCA_OERLIKON_GDF_005_35mm_LOW/DCA_OERLIKON_GDF_005_35mm_LOW.fbx'

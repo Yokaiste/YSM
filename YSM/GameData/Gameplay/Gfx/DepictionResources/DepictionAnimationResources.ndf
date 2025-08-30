@@ -32,42 +32,6 @@ template SkeletalServantATGMAnimationTemplate
     PlayInLoop = <PlayInLoop>
 )
 
-// ****************************************************************************************************************************************
-// ***** Animation des unités tractables **************************************************************************************************
-// ****************************************************************************************************************************************
-
-template DepictionOperator_AnimationDeployable
-[
-    DeployAnimation = nil,
-    FoldAnimation = nil,
-    MoveFrontAnimation = nil,
-    MoveBackAnimation = nil,
-    IdleAnimation = nil,
-
-    DeployFromMoveTime : float,
-    DeployFromTurnTime : float,
-    FoldForMoveTime    : float,
-    FoldForTurnTime    : float,
-
-    FilterTurretBoneForAllAnimation = false,
-]
-is TCosmeticSkeletalAnimationDeployableOperatorDesc
-(
-    OperatorId = 'AnimationDeployable'
-    DeployAnimation = <DeployAnimation>
-    FoldAnimation = <FoldAnimation>
-    MoveFrontAnimation = <MoveFrontAnimation>
-    MoveBackAnimation = <MoveBackAnimation>
-    IdleAnimation = <IdleAnimation>
-
-    DeployFromMoveTime = <DeployFromMoveTime>
-    DeployFromTurnTime = <DeployFromTurnTime>
-    FoldForMoveTime = <FoldForMoveTime>
-    FoldForTurnTime = <FoldForTurnTime>
-
-    FilterTurretBoneForAllAnimation = <FilterTurretBoneForAllAnimation>
-)
-
 //Anims pour nouveau squelette Fulda
 export FusilierAiming is SkeletalAnimationTemplate( FileName = 'Rifleman_Aim.fbx' PlayInLoop = false)
 export FusilierAimingMMG is SkeletalAnimationTemplate( FileName = 'Rifleman_Aim_MMG.fbx' PlayInLoop = false)

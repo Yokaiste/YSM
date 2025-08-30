@@ -1,0 +1,15 @@
+export ModelFile_M113_Lynx_CAN is "GameData:/Assets/3D/Units/CAN/APC/M113_LYNX/M113_LYNX.fbx"
+export Modele_M113_Lynx_CAN is TResourceMesh
+(
+    Mesh=ModelFile_M113_Lynx_CAN
+)
+export ModelFile_M113_Lynx_CAN_MID is "GameData:/Assets/3D/Units/CAN/APC/M113_LYNX_MID/M113_LYNX_MID.fbx"
+export Modele_M113_Lynx_CAN_MID is TResourceMesh
+(
+    Mesh=ModelFile_M113_Lynx_CAN_MID
+)
+export ModelFile_M113_Lynx_CAN_LOW is "GameData:/Assets/3D/Units/CAN/APC/M113_LYNX_LOW/M113_LYNX_LOW.fbx"
+export Modele_M113_Lynx_CAN_LOW is TResourceMesh
+(
+    Mesh=ModelFile_M113_Lynx_CAN_LOW
+)

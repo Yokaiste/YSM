@@ -1,0 +1,14 @@
+export Modele_M201_RASURA_FR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/M201_RASURA/M201_RASURA.fbx"
+)
+
+export Modele_M201_RASURA_FR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/M201_RASURA_MID/M201_RASURA_MID.fbx"
+)
+
+export Modele_M201_RASURA_FR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/M201_RASURA_LOW/M201_RASURA_LOW.fbx"
+)

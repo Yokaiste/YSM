@@ -1,0 +1,17 @@
+export Modele_AMX_13_mod56_CMD_FR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/CMD/AMX_13_mod56_CMD/AMX_13_mod56_CMD.fbx"
+    Textures="GameData:/Assets/3D/Units/FR/CMD/AMX_13_mod56_CMD"
+)
+
+export Modele_AMX_13_mod56_CMD_FR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/CMD/AMX_13_mod56_CMD_MID/AMX_13_mod56_CMD_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/FR/CMD/AMX_13_mod56_CMD_MID"
+)
+
+export Modele_AMX_13_mod56_CMD_FR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/BEL/CMD/AMX_13_mod56_CMD_LOW/AMX_13_mod56_CMD_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/FR/CMD/AMX_13_mod56_CMD_LOW"
+)

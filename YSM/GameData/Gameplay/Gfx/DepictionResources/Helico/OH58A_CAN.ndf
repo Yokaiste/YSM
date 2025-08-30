@@ -1,0 +1,17 @@
+export Modele_OH58A_CAN is TResourceMesh
+(
+    Mesh=ModelFile_OH58C_CMD_US
+    Textures="GameData:/Assets/3D/Units/CAN/Helico/OH_58D_Combat_Scout"
+)
+
+export Modele_OH58A_CAN_MID is TResourceMesh
+(
+    Mesh=ModelFile_OH58C_CMD_US_MID
+    Textures="GameData:/Assets/3D/Units/CAN/Helico/OH_58D_Combat_Scout_MID"
+)
+
+export Modele_OH58A_CAN_LOW is TResourceMesh
+(
+    Mesh=ModelFile_OH58C_CMD_US_LOW
+    Textures="GameData:/Assets/3D/Units/CAN/Helico/OH_58D_Combat_Scout_LOW"
+)

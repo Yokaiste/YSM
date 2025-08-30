@@ -1,0 +1,5 @@
+export Modele_BMR_PP_VCZ_ESP     is TResourceMesh( Mesh="GameData:/Assets/3D/Units/ESP/Vehicule/BMR_PP_VCZ/BMR_PP_VCZ.fbx" )
+export Modele_BMR_PP_VCZ_ESP_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/ESP/Vehicule/BMR_PP_VCZ_MID/BMR_PP_VCZ_MID.fbx" )
+export Modele_BMR_PP_VCZ_ESP_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/ESP/Vehicule/BMR_PP_VCZ_LOW/BMR_PP_VCZ_LOW.fbx" )
+
+export Modele_BMR_PP_VCZ_ESP_Tourelle_01 is TResourceMesh ( Mesh=ModelFile_M2HB_12_7mm_t1 )

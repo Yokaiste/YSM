@@ -1,0 +1,18 @@
+export Modele_BAV_485_Supply_TCH is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Vehicule/BAV_485/BAV_485_Supply.fbx"
+    Textures="GameData:/Assets/3D/Units/TCH/Vehicule/BAV_485"
+
+)
+
+export Modele_BAV_485_Supply_TCH_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Vehicule/BAV_485_MID/BAV_485_Supply_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/TCH/Vehicule/BAV_485_MID"
+)
+
+export Modele_BAV_485_Supply_TCH_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Vehicule/BAV_485_LOW/BAV_485_Supply_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/TCH/Vehicule/BAV_485_LOW"
+)

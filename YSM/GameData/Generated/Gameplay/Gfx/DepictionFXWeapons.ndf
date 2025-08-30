@@ -9208,6 +9208,22 @@ FXWeapon_Howz_Canon_D20_towed_152mm_Direct is FiringAndProjectile
     ]
 )
 
+FXWeapon_Howz_Canon_D20_towed_152mm_Direct_HE is FiringAndProjectile
+(
+    Happenings = [
+        FXFiring_3( Action = $/GFX/GameFx/fx_tir_obus_155mm_douille ),
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXProjectile_4( Action = $/GFX/GameFx/fx_traine_obus_155mm_1 ),
+                FXProjectile_4( Action = $/GFX/GameFx/fx_traine_obus_155mm_2 ),
+                FXProjectile_4( Action = $/GFX/GameFx/fx_traine_obus_155mm_3 ),
+            ]
+        ),
+    ]
+)
+
 FXWeapon_Howz_Canon_D20_towed_152mm_SMOKE is FiringAndProjectile
 (
     Happenings = [
@@ -15246,6 +15262,27 @@ FXWeapon_RocketAir_S5_57mm is FiringAndProjectile
     ]
 )
 
+FXWeapon_RocketAir_S5_57mm_x128 is FiringAndProjectile
+(
+    Happenings = [
+        FXFiring_2( Action = $/GFX/GameFx/fx_tir_roquette_S5_air ),
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXProjectile_2( Action = $/GFX/GameFx/fx_traine_roquette_S5_1 ),
+                FXProjectile_2( Action = $/GFX/GameFx/fx_traine_roquette_S5_2 ),
+                FXProjectile_2( Action = $/GFX/GameFx/fx_traine_roquette_S5_3 ),
+                FXProjectile_2( Action = $/GFX/GameFx/fx_traine_roquette_S5_4 ),
+                FXProjectile_2( Action = $/GFX/GameFx/fx_traine_roquette_S5_5 ),
+                FXProjectile_2( Action = $/GFX/GameFx/fx_traine_roquette_S5_6 ),
+                FXProjectile_2( Action = $/GFX/GameFx/fx_traine_roquette_S5_7 ),
+                FXProjectile_2( Action = $/GFX/GameFx/fx_traine_roquette_S5_8 ),
+            ]
+        ),
+    ]
+)
+
 FXWeapon_RocketAir_S5_57mm_x16 is FiringAndProjectile
 (
     Happenings = [
@@ -15577,6 +15614,22 @@ FXWeapon_RocketAir_m151_70mm is FiringAndProjectile
     ]
 )
 
+FXWeapon_RocketArt_9F53_122mm_SMOKE_x50 is FiringAndProjectile
+(
+    Happenings = [
+        FXFiring_3( Action = $/GFX/GameFx/fx_tir_obus_122mm_douille ),
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXProjectile_4( Action = $/GFX/GameFx/fx_traine_obus_122mm_1 ),
+                FXProjectile_4( Action = $/GFX/GameFx/fx_traine_obus_122mm_2 ),
+                FXProjectile_4( Action = $/GFX/GameFx/fx_traine_obus_122mm_3 ),
+            ]
+        ),
+    ]
+)
+
 FXWeapon_RocketArt_9F53_122mm_cluster_x50 is FiringAndProjectile
 (
     Happenings = [
@@ -15687,6 +15740,28 @@ FXWeapon_RocketArt_9M55K5_300mm is FiringAndProjectile
             ]
         ),
         FXProjectile_14( Action = $/GFX/GameFx/fx_traine_roquette_BM30_300mm ),
+    ]
+)
+
+FXWeapon_RocketArt_BKP_B812_90mm_SMOKE_x8 is FiringAndProjectile
+(
+    Happenings = [
+        FXFiring_1( Action = $/GFX/GameFx/fx_tir_roquette_M261_Hydras_air ),
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXProjectile_1( Action = $/GFX/GameFx/fx_traine_roquette_M261_Hydras_1 ),
+                FXProjectile_1( Action = $/GFX/GameFx/fx_traine_roquette_M261_Hydras_2 ),
+                FXProjectile_1( Action = $/GFX/GameFx/fx_traine_roquette_M261_Hydras_3 ),
+                FXProjectile_1( Action = $/GFX/GameFx/fx_traine_roquette_M261_Hydras_4 ),
+                FXProjectile_1( Action = $/GFX/GameFx/fx_traine_roquette_M261_Hydras_5 ),
+                FXProjectile_1( Action = $/GFX/GameFx/fx_traine_roquette_M261_Hydras_6 ),
+                FXProjectile_1( Action = $/GFX/GameFx/fx_traine_roquette_M261_Hydras_7 ),
+                FXProjectile_1( Action = $/GFX/GameFx/fx_traine_roquette_M261_Hydras_8 ),
+                FXProjectile_1( Action = $/GFX/GameFx/fx_traine_roquette_M261_Hydras_9 ),
+            ]
+        ),
     ]
 )
 
@@ -16235,22 +16310,7 @@ FXWeapon_RocketArt_thermobaric_220mm_x30 is FiringAndProjectile
     ]
 )
 
-FXWeapon_RocketArt_thermobaric_247mm_x24 is FiringAndProjectile
-(
-    Happenings = [
-        TRandomHappening
-        (
-            Alternatives =
-            [
-                FXFiring_3( Action = $/GFX/GameFx/fx_tir_roquette_Buratino_1 ),
-                FXFiring_3( Action = $/GFX/GameFx/fx_tir_roquette_Buratino_2 ),
-                FXFiring_3( Action = $/GFX/GameFx/fx_tir_roquette_Buratino_3 ),
-                FXFiring_3( Action = $/GFX/GameFx/fx_tir_roquette_Buratino_4 ),
-            ]
-        ),
-        FXProjectile_4( Action = $/GFX/GameFx/fx_traine_roquette_Buratino_220mm ),
-    ]
-)
+FXWeapon_RocketArt_thermobaric_247mm_x24 is TIntroduceMobileHappening( Happening = FXProjectile_4( Action = $/GFX/GameFx/fx_traine_bombe_ODAB ) )
 
 FXWeapon_RocketAvion_S13_122mm is FiringAndProjectile
 (
@@ -16414,23 +16474,6 @@ FXWeapon_RocketInf_C90CR is FiringAndProjectile
 )
 
 FXWeapon_RocketInf_Carl_Gustav is FiringAndProjectile
-(
-    Happenings = [
-        FXFiring_3( Action = $/GFX/GameFx/fx_tir_LAW ),
-        TRandomHappening
-        (
-            Alternatives =
-            [
-                FXProjectile_4( Action = $/GFX/GameFx/fx_traine_LAW_1 ),
-                FXProjectile_4( Action = $/GFX/GameFx/fx_traine_LAW_2 ),
-                FXProjectile_4( Action = $/GFX/GameFx/fx_traine_LAW_3 ),
-                FXProjectile_4( Action = $/GFX/GameFx/fx_traine_LAW_4 ),
-            ]
-        ),
-    ]
-)
-
-FXWeapon_RocketInf_Carl_Gustav_SMAW is FiringAndProjectile
 (
     Happenings = [
         FXFiring_3( Action = $/GFX/GameFx/fx_tir_LAW ),
@@ -18084,7 +18127,7 @@ template FXFiring_21  [ Action ] is FXWeaponFiringHappeningSingle
 template FXProjectile_0  [ Action ] is FXWeaponProjectileHappeningSingle
 (
     Action          = <Action>
-    WithoutPhysics  = False
+    WithPhysics     = True
     InitialSpeed    = 0.0
     FluidFriction   = 0.0
     DirectFire      = False
@@ -18094,7 +18137,7 @@ template FXProjectile_0  [ Action ] is FXWeaponProjectileHappeningSingle
 template FXProjectile_1  [ Action ] is FXWeaponProjectileHappeningSingle
 (
     Action          = <Action>
-    WithoutPhysics  = False
+    WithPhysics     = True
     InitialSpeed    = 0.0
     FluidFriction   = 0.0
     DirectFire      = False
@@ -18104,7 +18147,7 @@ template FXProjectile_1  [ Action ] is FXWeaponProjectileHappeningSingle
 template FXProjectile_2  [ Action ] is FXWeaponProjectileHappeningSingle
 (
     Action          = <Action>
-    WithoutPhysics  = False
+    WithPhysics     = True
     InitialSpeed    = 0.0
     FluidFriction   = 0.0
     DirectFire      = False
@@ -18114,7 +18157,7 @@ template FXProjectile_2  [ Action ] is FXWeaponProjectileHappeningSingle
 template FXProjectile_3  [ Action ] is FXWeaponProjectileHappeningSingle
 (
     Action          = <Action>
-    WithoutPhysics  = False
+    WithPhysics     = True
     InitialSpeed    = 0.0
     FluidFriction   = 0.4
     DirectFire      = False
@@ -18124,7 +18167,7 @@ template FXProjectile_3  [ Action ] is FXWeaponProjectileHappeningSingle
 template FXProjectile_4  [ Action ] is FXWeaponProjectileHappeningSingle
 (
     Action          = <Action>
-    WithoutPhysics  = False
+    WithPhysics     = True
     InitialSpeed    = 0.0
     FluidFriction   = 0.0
     DirectFire      = False
@@ -18134,7 +18177,7 @@ template FXProjectile_4  [ Action ] is FXWeaponProjectileHappeningSingle
 template FXProjectile_5  [ Action ] is FXWeaponProjectileHappeningSingle
 (
     Action          = <Action>
-    WithoutPhysics  = False
+    WithPhysics     = True
     InitialSpeed    = 0.0
     FluidFriction   = 0.0
     DirectFire      = False
@@ -18144,7 +18187,7 @@ template FXProjectile_5  [ Action ] is FXWeaponProjectileHappeningSingle
 template FXProjectile_6  [ Action ] is FXWeaponProjectileHappeningInfinite
 (
     Action          = <Action>
-    WithoutPhysics  = False
+    WithPhysics     = True
     InitialSpeed    = 0.0
     FluidFriction   = 0.0
     DirectFire      = False
@@ -18154,7 +18197,7 @@ template FXProjectile_6  [ Action ] is FXWeaponProjectileHappeningInfinite
 template FXProjectile_7  [ Action ] is FXWeaponProjectileHappeningSingle
 (
     Action          = <Action>
-    WithoutPhysics  = False
+    WithPhysics     = True
     InitialSpeed    = 0.0
     FluidFriction   = 0.0
     DirectFire      = False
@@ -18164,7 +18207,7 @@ template FXProjectile_7  [ Action ] is FXWeaponProjectileHappeningSingle
 template FXProjectile_8  [ Action ] is FXWeaponProjectileHappeningSingle
 (
     Action          = <Action>
-    WithoutPhysics  = False
+    WithPhysics     = True
     InitialSpeed    = 0.0
     FluidFriction   = 0.0
     DirectFire      = False
@@ -18174,7 +18217,7 @@ template FXProjectile_8  [ Action ] is FXWeaponProjectileHappeningSingle
 template FXProjectile_9  [ Action ] is FXWeaponProjectileHappeningSingle
 (
     Action          = <Action>
-    WithoutPhysics  = False
+    WithPhysics     = True
     InitialSpeed    = 0.0
     FluidFriction   = 0.0
     DirectFire      = False
@@ -18184,7 +18227,7 @@ template FXProjectile_9  [ Action ] is FXWeaponProjectileHappeningSingle
 template FXProjectile_10  [ Action ] is FXWeaponProjectileHappeningSingle
 (
     Action          = <Action>
-    WithoutPhysics  = False
+    WithPhysics     = True
     InitialSpeed    = 0.0
     FluidFriction   = 0.0
     DirectFire      = False
@@ -18194,7 +18237,7 @@ template FXProjectile_10  [ Action ] is FXWeaponProjectileHappeningSingle
 template FXProjectile_11  [ Action ] is FXWeaponProjectileHappeningInfinite
 (
     Action          = <Action>
-    WithoutPhysics  = False
+    WithPhysics     = True
     InitialSpeed    = 0.0
     FluidFriction   = 0.0
     DirectFire      = False
@@ -18204,7 +18247,7 @@ template FXProjectile_11  [ Action ] is FXWeaponProjectileHappeningInfinite
 template FXProjectile_12  [ Action ] is FXWeaponProjectileHappeningInfinite
 (
     Action          = <Action>
-    WithoutPhysics  = True
+    WithPhysics     = False
     InitialSpeed    = 2039
     FluidFriction   = 0.0
     DirectFire      = False
@@ -18214,7 +18257,7 @@ template FXProjectile_12  [ Action ] is FXWeaponProjectileHappeningInfinite
 template FXProjectile_13  [ Action ] is FXWeaponProjectileHappeningInfinite
 (
     Action          = <Action>
-    WithoutPhysics  = True
+    WithPhysics     = False
     InitialSpeed    = 2039
     FluidFriction   = 0.0
     DirectFire      = False
@@ -18224,7 +18267,7 @@ template FXProjectile_13  [ Action ] is FXWeaponProjectileHappeningInfinite
 template FXProjectile_14  [ Action ] is FXWeaponProjectileHappeningSingle
 (
     Action          = <Action>
-    WithoutPhysics  = False
+    WithPhysics     = True
     InitialSpeed    = 0.0
     FluidFriction   = 0.0
     DirectFire      = False
@@ -18234,7 +18277,7 @@ template FXProjectile_14  [ Action ] is FXWeaponProjectileHappeningSingle
 template FXProjectile_15  [ Action ] is FXWeaponProjectileHappeningSingle
 (
     Action          = <Action>
-    WithoutPhysics  = False
+    WithPhysics     = True
     InitialSpeed    = 0.0
     FluidFriction   = 0.0
     DirectFire      = False
@@ -18244,7 +18287,7 @@ template FXProjectile_15  [ Action ] is FXWeaponProjectileHappeningSingle
 template FXProjectile_16  [ Action ] is FXWeaponProjectileHappeningInfinite
 (
     Action          = <Action>
-    WithoutPhysics  = False
+    WithPhysics     = True
     InitialSpeed    = 0.0
     FluidFriction   = 0.0
     DirectFire      = False
@@ -18254,7 +18297,7 @@ template FXProjectile_16  [ Action ] is FXWeaponProjectileHappeningInfinite
 template FXProjectile_17  [ Action ] is FXWeaponProjectileHappeningSingle
 (
     Action          = <Action>
-    WithoutPhysics  = False
+    WithPhysics     = True
     InitialSpeed    = 0.0
     FluidFriction   = 0.0
     DirectFire      = False
@@ -18264,7 +18307,7 @@ template FXProjectile_17  [ Action ] is FXWeaponProjectileHappeningSingle
 template FXProjectile_18  [ Action ] is FXWeaponProjectileHappeningSingle
 (
     Action          = <Action>
-    WithoutPhysics  = False
+    WithPhysics     = True
     InitialSpeed    = 0.0
     FluidFriction   = 0.0
     DirectFire      = False
@@ -18274,7 +18317,7 @@ template FXProjectile_18  [ Action ] is FXWeaponProjectileHappeningSingle
 template FXProjectile_19  [ Action ] is FXWeaponProjectileHappeningSingle
 (
     Action          = <Action>
-    WithoutPhysics  = False
+    WithPhysics     = True
     InitialSpeed    = 0.0
     FluidFriction   = 0.1
     DirectFire      = False
@@ -18284,7 +18327,7 @@ template FXProjectile_19  [ Action ] is FXWeaponProjectileHappeningSingle
 template FXProjectile_20  [ Action ] is FXWeaponProjectileHappeningSingle
 (
     Action          = <Action>
-    WithoutPhysics  = False
+    WithPhysics     = True
     InitialSpeed    = 0.0
     FluidFriction   = 0.0
     DirectFire      = False
@@ -18294,7 +18337,7 @@ template FXProjectile_20  [ Action ] is FXWeaponProjectileHappeningSingle
 template FXProjectile_21  [ Action ] is FXWeaponProjectileHappeningSingle
 (
     Action          = <Action>
-    WithoutPhysics  = False
+    WithPhysics     = True
     InitialSpeed    = 0.0
     FluidFriction   = 0.0
     DirectFire      = False
@@ -18304,7 +18347,7 @@ template FXProjectile_21  [ Action ] is FXWeaponProjectileHappeningSingle
 template FXProjectile_22  [ Action ] is FXWeaponProjectileHappeningInfinite
 (
     Action          = <Action>
-    WithoutPhysics  = False
+    WithPhysics     = True
     InitialSpeed    = 0.0
     FluidFriction   = 0.0
     DirectFire      = False
@@ -18314,7 +18357,7 @@ template FXProjectile_22  [ Action ] is FXWeaponProjectileHappeningInfinite
 template FXProjectile_23  [ Action ] is FXWeaponProjectileHappeningSingle
 (
     Action          = <Action>
-    WithoutPhysics  = False
+    WithPhysics     = True
     InitialSpeed    = 0.0
     FluidFriction   = 0.0
     DirectFire      = False
@@ -18324,7 +18367,7 @@ template FXProjectile_23  [ Action ] is FXWeaponProjectileHappeningSingle
 template FXProjectile_24  [ Action ] is FXWeaponProjectileHappeningSingle
 (
     Action          = <Action>
-    WithoutPhysics  = False
+    WithPhysics     = True
     InitialSpeed    = 0.0
     FluidFriction   = 0.0
     DirectFire      = False
@@ -18334,7 +18377,7 @@ template FXProjectile_24  [ Action ] is FXWeaponProjectileHappeningSingle
 template FXProjectile_25  [ Action ] is FXWeaponProjectileHappeningSingle
 (
     Action          = <Action>
-    WithoutPhysics  = False
+    WithPhysics     = True
     InitialSpeed    = 0.0
     FluidFriction   = 0.0
     DirectFire      = False

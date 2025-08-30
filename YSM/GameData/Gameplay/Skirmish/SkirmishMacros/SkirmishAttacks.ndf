@@ -57,7 +57,7 @@ is TMacroActionDescriptor_ObjectiveAttack_Specific
     [
         TGenerationSettingHolder(GenerationType = TGenerationType_FixedSize NumberLaunchBasedOnGenerationType = 1),
         TMacroActionProductionSettingHolder(ProdProperties = [TProdProperty_LaunchAsSoonAsPossible] PoolModelList = [Pool_Objective_Attack]),
-        TAttackRatioSettingHolder(RatioMinimumPourAttaquer = 0.825),
+        TAttackRatioSettingHolder(RatioMinimumPourAttaquer = 0.7),
         TAttackRatioSettingHolder(DifficultyList = [IADifficulty/TresFacile] RatioMinimumPourAttaquer = 100.0),
         TMacroActionLifetimeSettingHolder(MinimumResourceForLaunch = <MinimumResourceForLaunch>),
     ]
@@ -95,7 +95,7 @@ private template Template_Main_Attack
     SupportingStatus = ESupportingStatus/NeedSupport,
     PoolModel_Generic = ~/Pool_Main_Attack,
     PoolModel_Easy = ~/Pool_Main_Attack_Easy,
-    RatioMinimumPourAttaquer = 0.875,
+    RatioMinimumPourAttaquer = 0.7,
     ProdProperties = [TProdProperty_LaunchAsSoonAsPossible],
 ]
 is TMacroActionDescriptor_CorridorAttack_Specific
@@ -162,7 +162,7 @@ export Attack_Filler is TMacroActionDescriptor_CorridorAttack_Specific
 private template Template_Attack_Corridor
 [
     MinimumResourceForLaunch = MAP[],
-    RatioMinimumPourAttaquer:float = 0.875,
+    RatioMinimumPourAttaquer:float = 0.7,
     AdditionnalParameter = [],
 ]
 is TMacroActionDescriptor_CorridorAttack_Specific
@@ -206,7 +206,7 @@ export Attack_Adaptive is Template_Attack_Corridor
 private template Template_Attack_Helo
 [
     MinimumResourceForLaunch = MAP[],
-    RatioMinimumPourAttaquer:float = 0.875,
+    RatioMinimumPourAttaquer:float = 0.7,
     AdditionnalParameter = [],
 ]
 is TMacroActionDescriptor_CorridorAttack_Specific
@@ -245,7 +245,7 @@ export Attack_Helo_Autogen is Template_Attack_Helo
 export Attack_Adaptive_Autogen is Template_Attack_Corridor
 (
     MinimumResourceForLaunch = ~/MinimumResourceForLaunch_Stage_1
-    RatioMinimumPourAttaquer = 0.875
+    RatioMinimumPourAttaquer = 0.7
 )
 //-------------------------------------------------------------------------
 // Budgets

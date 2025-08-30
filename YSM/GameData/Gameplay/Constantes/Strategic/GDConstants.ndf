@@ -92,7 +92,7 @@ StrategicConstantes is TStrategicTunableConstante
 
     SteelmanCombatFX = $/GFX/GameFx/FX_Steelman_Combat_Binder
     SteelmanFxDuration = 1
-    SteelmanCombatSound = $/SoundDescriptors/Sound_Steelman_NATO_Combat
+    SteelmanCombatSound = $/GFX/Sound/Sound_Steelman_NATO_Combat
     SteelmanAirCombatFX = $/GFX/GameFx/FX_Steelman_Combat_Interception_Binder
     SteelmanAirCombatFxDuration = 2.5 // seconds
     SteelmanAirCombatSound = $/VFX_Bank/SFX_Steelman_Combat_Air_Air_Sound

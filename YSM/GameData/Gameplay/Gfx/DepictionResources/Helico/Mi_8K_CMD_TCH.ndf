@@ -1,0 +1,17 @@
+export Modele_Mi_8K_CMD_TCH is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Helico/Mi_8K/Mi_8K.fbx"
+    Textures="GameData:/Assets/3D/Units/TCH/Helico/Mi_8K"
+)
+
+export Modele_Mi_8K_CMD_TCH_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Helico/Mi_8K_MID/Mi_8K_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/TCH/Helico/Mi_8K_MID"
+)
+
+export Modele_Mi_8K_CMD_TCH_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Helico/Mi_8K_LOW/Mi_8K_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/TCH/Helico/Mi_8K_LOW"
+)

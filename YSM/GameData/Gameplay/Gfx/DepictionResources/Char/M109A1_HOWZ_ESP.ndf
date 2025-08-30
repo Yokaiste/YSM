@@ -1,0 +1,22 @@
+export Modele_M109A1_HOWZ_ESP is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Artillerie/M109_A2/M109_A2.fbx"
+    Textures="GameData:/Assets/3D/Units/ESP/Artillerie/M109_A2"
+)
+
+export Modele_M109A1_HOWZ_ESP_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Artillerie/M109_A2_MID/M109_A2_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/ESP/Artillerie/M109_A2_MID"
+)
+
+export Modele_M109A1_HOWZ_ESP_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Artillerie/M109_A2_LOW/M109_A2_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/ESP/Artillerie/M109_A2_LOW"
+)
+
+export Modele_M109A1_HOWZ_ESP_Tourelle_02 is TResourceMesh
+(
+    Mesh=ModelFile_M2HB_12_7mm_t2
+)

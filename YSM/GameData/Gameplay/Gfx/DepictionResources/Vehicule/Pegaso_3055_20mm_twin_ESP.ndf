@@ -1,0 +1,14 @@
+export Modele_Pegaso_3055_20mm_twin_ESP is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/ESP/DCA/Pegaso_3055_20mm_twin/Pegaso_3055_20mm_twin.fbx"
+)
+
+export Modele_Pegaso_3055_20mm_twin_ESP_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/ESP/DCA/Pegaso_3055_20mm_twin_MID/Pegaso_3055_20mm_twin_MID.fbx"
+)
+
+export Modele_Pegaso_3055_20mm_twin_ESP_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/ESP/DCA/Pegaso_3055_20mm_twin_LOW/Pegaso_3055_20mm_twin_LOW.fbx"
+)

@@ -1,0 +1,14 @@
+export Modele_PRAM_S_TCH is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/APC/PRAM_S/PRAM_S.fbx"
+)
+
+export Modele_PRAM_S_TCH_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/APC/PRAM_S_MID/PRAM_S_MID.fbx"
+)
+
+export Modele_PRAM_S_TCH_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/APC/PRAM_S_LOW/PRAM_S_LOW.fbx"
+)

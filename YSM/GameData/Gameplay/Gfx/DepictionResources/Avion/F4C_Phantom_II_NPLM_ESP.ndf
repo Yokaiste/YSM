@@ -1,0 +1,19 @@
+export Modele_F4C_Phantom_II_NPLM_ESP is TResourceMesh
+(
+    Mesh=ModelFile_F4C_Phantom_II_CLU_ESP
+)
+
+export Modele_F4C_Phantom_II_NPLM_ESP_MID is TResourceMesh
+(
+    Mesh=ModelFile_F4C_Phantom_II_CLU_ESP_MID
+)
+
+export Modele_F4C_Phantom_II_NPLM_ESP_LOW is TResourceMesh
+(
+    Mesh=ModelFile_F4C_Phantom_II_CLU_ESP_LOW
+)
+
+export Modele_F4C_Phantom_II_NPLM_ESP_train is TResourceMesh
+(
+    Mesh=ModelFile_F4C_Phantom_II_ESP_train
+)

@@ -7,17 +7,23 @@ private SavedGamesCopyPanelButton is boutonAvecSeparateur
     TextToken = 'SGP_COPY'
 )
 
+//-------------------------------------------------------------------------------------
+
 private SavedGamesDeletePanelButton is boutonAvecSeparateur
 (
     ElementName = "DeleteButton"
     TextToken = 'SGP_DELETE'
 )
 
+//-------------------------------------------------------------------------------------
+
 private SavedGamesRenamePanelButton is boutonAvecSeparateur
 (
     ElementName = "RenameButton"
     TextToken = 'SGP_RENAME'
 )
+
+//-------------------------------------------------------------------------------------
 
 private SavedGamesLaunchPanelButton is boutonAvecSeparateur
 (
@@ -26,11 +32,15 @@ private SavedGamesLaunchPanelButton is boutonAvecSeparateur
     TextToken = 'SGP_LAUNCH'
 )
 
+//-------------------------------------------------------------------------------------
+
 private SavedGamesNewSavePanelButton is boutonAvecSeparateur
 (
     ElementName = "NewSaveButton"
     TextToken = 'AB_NSAVE'
 )
+
+//-------------------------------------------------------------------------------------
 
 private SavedGamesOverwriteSavePanelButton is boutonAvecSeparateur
 (
@@ -38,11 +48,54 @@ private SavedGamesOverwriteSavePanelButton is boutonAvecSeparateur
     TextToken = 'AB_SAVE'
 )
 
+//-------------------------------------------------------------------------------------
+
 private SavedGamesPanelCloseButton is boutonAvecSeparateur
 (
     ElementName = "BackButton"
     TextToken = 'BTN_CLOSE'
     Mapping = TEugBMutablePBaseClass( Value = TUserInputMapping( KeyboardEventID = UserInputKeyboard/KEY_ESCAPE ) )
+)
+
+//-------------------------------------------------------------------------------------
+
+template SaveLoadCellText
+[
+    ElementName : string,
+    TextSize : string = "14",
+    TextFormatScript : TTextFormatScriptRTTI,
+] is BUCKSpecificTextWithHint
+(
+    ElementName = <ElementName>
+    ComponentFrame = TUIFramePropertyRTTI
+    (
+        RelativeWidthHeight = [1.0, 0.0]
+    )
+
+    AutoHintElementName = <ElementName> + "AutoHint"
+
+    ParagraphStyle = TParagraphStyle
+    (
+        Alignment = UIText_Left
+        VerticalAlignment = UIText_VerticalCenter
+        BigWordAction = ~/BigWordAction/BigWordNewLine
+    )
+
+    VerticalFitStyle = ~/FitStyle/FitToContent
+    ChildFitToContent = true
+
+    BigLineAction = ~/BigLineAction/MultiLine
+    TextPadding = TRTTILength4(Magnifiable = [0.0, 4.0, 0.0, 4.0])
+
+    TextStyle = "Default"
+    TypefaceToken = "Eurostyle"
+
+    TextDico = ~/LocalisationConstantes/dico_interface_outgame
+
+    TextColor = "loadTexte"
+    TextSize = <TextSize>
+
+    TextFormatScript = <TextFormatScript>
 )
 
 //-------------------------------------------------------------------------------------
@@ -56,6 +109,7 @@ template CelluleSaveAndLoad
     ExtendWeight : float = 0.0,
     RelativeWidth : float = 0.0,
     TextSize : string = '14',
+    CanShowDLCIcon : bool = false,
 ]
 is BUCKListElementDescriptor
 (
@@ -74,42 +128,42 @@ is BUCKListElementDescriptor
 
         FitStyle = ~/ContainerFitStyle/FitToContentVertically
 
-        Components =
+        Components = (<CanShowDLCIcon> ?
         [
-            BUCKSpecificTextWithHint
+            BUCKListDescriptor
+            (
+                ComponentFrame = TUIFramePropertyRTTI()
+                Axis = ~/ListAxis/Horizontal
+                BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
+                InterItemMargin = TRTTILength(Magnifiable = 4.0)
+
+                Elements =
+                [
+                    BUCKListElementDescriptor
+                    (
+                        ComponentDescriptor = ~/DLCTextureIcon
+                    ),
+                    BUCKListElementDescriptor
+                    (
+                        ExtendWeight = 1.0
+                        ComponentDescriptor = SaveLoadCellText
+                        (
+                            ElementName = <TextElementName>
+                            TextSize = <TextSize>
+                            TextFormatScript = <TextFormatScript>
+                        )
+                    ),
+                ]
+            )
+        ] :
+        [
+            SaveLoadCellText
             (
                 ElementName = <TextElementName>
-                ComponentFrame = TUIFramePropertyRTTI
-                (
-                    RelativeWidthHeight = [1.0, 0.0]
-                )
-
-                AutoHintElementName = <TextElementName> + "AutoHint"
-
-                ParagraphStyle = TParagraphStyle
-                (
-                    Alignment = UIText_Left
-                    VerticalAlignment = UIText_VerticalCenter
-                    BigWordAction = ~/BigWordAction/BigWordNewLine
-                )
-
-                VerticalFitStyle = ~/FitStyle/FitToContent
-
-                BigLineAction = ~/BigLineAction/MultiLine
-                TextPadding = TRTTILength4(Magnifiable = [0.0, 4.0, 0.0, 4.0])
-
-                TextStyle = "Default"
-                // TypefaceToken = "Courrier"
-                TypefaceToken = "Eurostyle"
-
-                TextDico = ~/LocalisationConstantes/dico_interface_outgame
-
-                TextColor = "loadTexte"
                 TextSize = <TextSize>
-
                 TextFormatScript = <TextFormatScript>
             )
-        ]
+        ])
     )
 )
 
@@ -239,6 +293,7 @@ private template SaveLoadMultiListContent
             Category = <Category>
             TextElementName = "SaveLoadName"
             TailleColonne = 0.0
+            CanShowDLCIcon = true
         ),
 
         // Mode

@@ -1,0 +1,17 @@
+export Modele_Mi_2_trans_TCH is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Helico/Mi_2_trans/Mi_2_trans.fbx"
+    Textures="GameData:/Assets/3D/Units/TCH/Helico/Mi_2_trans"
+)
+
+export Modele_Mi_2_trans_TCH_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Helico/Mi_2_trans/Mi_2_trans.fbx"
+    Textures="GameData:/Assets/3D/Units/TCH/Helico/Mi_2_trans"
+)
+
+export Modele_Mi_2_trans_TCH_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Helico/Mi_2_trans/Mi_2_trans.fbx"
+    Textures="GameData:/Assets/3D/Units/TCH/Helico/Mi_2_trans"
+)

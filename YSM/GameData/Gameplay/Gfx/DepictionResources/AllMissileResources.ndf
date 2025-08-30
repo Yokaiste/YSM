@@ -83,6 +83,7 @@ export Modele_Missile_Bomb_Matra_250Kg is    TResourceMesh( Mesh="GameData:/Asse
 export Modele_Missile_Bomb_Matra_400Kg is    TResourceMesh( Mesh="GameData:/Assets/3D/Units/Ammo/Bombes/FR/Bomb_Matra_400Kg.fbx" )
 export Modele_Missile_SS_11 is    TResourceMesh( Mesh="GameData:/Assets/3D/Units/Ammo/Missiles/FR/SS_11/SS_11.fbx" )
 export Modele_Missile_PW_LWD is TResourceMesh( Mesh="GameData:/Assets/3D/Units/Ammo/Roquettes/SOV/PW_LWD/PW_LWD_cable.fbx")
+export Modele_Missile_SVO_247mm is TResourceMesh( Mesh="GameData:/Assets/3D/Units/Ammo/Roquettes/SOV/SVO_247mm/SVO_247mm.fbx")
 export Modele_Missile_R440 is    TResourceMesh( Mesh="GameData:/Assets/3D/Units/Ammo/Missiles/FR/R440/R440.fbx" )
 
 //--emports UK-----------------------------------------------------------------------------------------------

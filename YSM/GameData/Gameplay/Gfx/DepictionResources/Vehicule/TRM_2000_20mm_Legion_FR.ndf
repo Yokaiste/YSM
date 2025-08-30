@@ -1,0 +1,17 @@
+export Modele_TRM_2000_20mm_Legion_FR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/TRM_2000_20mm/TRM_2000_20mm.fbx"
+    Textures="GameData:/Assets/3D/Units/FR/Vehicule/TRM_2000_20mm_Legion_FR"
+)
+
+export Modele_TRM_2000_20mm_Legion_FR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/TRM_2000_20mm_MID/TRM_2000_20mm_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/FR/Vehicule/TRM_2000_20mm_Legion_FR_MID"
+)
+
+export Modele_TRM_2000_20mm_Legion_FR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/TRM_2000_20mm_LOW/TRM_2000_20mm_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/FR/Vehicule/TRM_2000_20mm_Legion_FR_LOW"
+)

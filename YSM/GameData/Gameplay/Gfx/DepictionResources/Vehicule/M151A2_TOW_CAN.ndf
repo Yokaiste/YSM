@@ -1,0 +1,22 @@
+export Modele_M151A2_TOW_CAN is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Vehicule/M151A2_Scout/M151A2_TOW.fbx"
+    Textures="GameData:/Assets/3D/Units/CAN/Vehicule/M151A2_Scout"
+)
+
+export Modele_M151A2_TOW_CAN_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Vehicule/M151A2_Scout_MID/M151A2_TOW_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/CAN/Vehicule/M151A2_Scout_MID"
+)
+
+export Modele_M151A2_TOW_CAN_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Vehicule/M151A2_Scout_LOW/M151A2_TOW_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/CAN/Vehicule/M151A2_Scout_LOW"
+)
+
+export Modele_M151A2_TOW_CAN_Tourelle_01 is TResourceMesh
+(
+    Mesh=ModelFile_TOW_T1
+)

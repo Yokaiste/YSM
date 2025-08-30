@@ -1,0 +1,5 @@
+export Modele_BMR_PP_AGL_ESP     is TResourceMesh( Mesh="GameData:/Assets/3D/Units/ESP/Vehicule/BMR_PP_AGL/BMR_PP_AGL.fbx" )
+export Modele_BMR_PP_AGL_ESP_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/ESP/Vehicule/BMR_PP_AGL_MID/BMR_PP_AGL_MID.fbx" )
+export Modele_BMR_PP_AGL_ESP_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/ESP/Vehicule/BMR_PP_AGL_LOW/BMR_PP_AGL_LOW.fbx" )
+
+export Modele_BMR_PP_AGL_ESP_Tourelle_01 is TResourceMesh ( Mesh=ModelFile_LAG40_t1)

@@ -1,0 +1,18 @@
+export Modele_AMX_10_RC_CMD_FR      is TResourceMesh
+(
+    Mesh= "GameData:/Assets/3D/Units/FR/Char/AMX_10RC/AMX_10RC.fbx"
+    Textures="GameData:/Assets/3D/Units/FR/Char/AMX_CMD_10RC"
+)
+
+export Modele_AMX_10_RC_CMD_FR_MID  is TResourceMesh
+(
+    Mesh= "GameData:/Assets/3D/Units/FR/Char/AMX_10RC_MID/AMX_10RC_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/FR/Char/AMX_CMD_10RC_MID"
+)
+export Modele_AMX_10_RC_CMD_FR_LOW  is TResourceMesh
+(
+    Mesh= "GameData:/Assets/3D/Units/FR/Char/AMX_10RC_LOW/AMX_10RC_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/FR/Char/AMX_CMD_10RC_LOW"
+)
+
+export Modele_AMX_10_RC_CMD_FR_Tourelle_02 is TResourceMesh( Mesh=ModelFile_AMX_10_RC_FR_Tourelle_02 )

@@ -1,0 +1,2 @@
+export Modele_AT_M53_100mm_TCH is TResourceMesh ( Mesh="GameData:/Assets/3D/Units/TCH/Canon/AT_M53_100mm/AT_M53_100mm.fbx")
+export Modele_AT_M53_100mm_TCH_MID is TResourceMesh ( Mesh="GameData:/Assets/3D/Units/TCH/Canon/AT_M53_100mm_MID/AT_M53_100mm_MID.fbx") export Modele_AT_M53_100mm_TCH_LOW is TResourceMesh ( Mesh="GameData:/Assets/3D/Units/TCH/Canon/AT_M53_100mm_LOW/AT_M53_100mm_LOW.fbx")

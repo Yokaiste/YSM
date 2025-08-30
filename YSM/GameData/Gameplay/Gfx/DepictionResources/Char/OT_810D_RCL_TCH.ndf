@@ -1,0 +1,19 @@
+export Modele_OT_810D_RCL_TCH is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/Vehicule/OT_810D_RCL/OT_810D_RCL.fbx"
+)
+
+export Modele_OT_810D_RCL_TCH_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/Vehicule/OT_810D_RCL_MID/OT_810D_RCL_MID.fbx"
+)
+
+export Modele_OT_810D_RCL_TCH_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/Vehicule/OT_810D_RCL_LOW/OT_810D_RCL_LOW.fbx"
+)
+
+export Modele_OT_810D_RCL_TCH_Tourelle_02 is TResourceMesh
+(
+    Mesh=ModelFile_TOW_T2
+)

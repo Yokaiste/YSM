@@ -15,3 +15,8 @@ export Modele_M75_AIV_BEL_LOW is TResourceMesh
     Mesh="GameData:/Assets/3D/Units/BEL/APC/M75_CMD_LOW/M75_CMD_LOW.fbx"
     Textures="GameData:/Assets/3D/Units/BEL/APC/M75_LOW"
 )
+
+export Modele_M75_AIV_BEL_Tourelle_01 is TResourceMesh
+(
+    Mesh=ModelFile_M2HB_12_7mm_no_ammo
+)

@@ -313,3 +313,12 @@ unnamed TCoatingRecipe
         Faun_Kraka_20mm_RFA_offset_coating_ingredient,
     ]
 )
+
+unnamed TCoatingRecipe
+(
+    Cookbook = $/DepictionCore/CoatingCookbook
+    CoatingName = 'Faun_Kraka_M40A1_RFA_turret1'
+    Ingredients = [
+        Faun_Kraka_M40A1_RFA_offset_coating_ingredient,
+    ]
+)

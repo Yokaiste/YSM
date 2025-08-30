@@ -1,0 +1,3 @@
+export Modele_DCA_Bofors_ESP is TResourceMesh( Mesh="GameData:/Assets/3D/Units/ESP/DCA/DCA_Bofors/DCA_Bofors.fbx")
+export Modele_DCA_Bofors_ESP_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/ESP/DCA/DCA_Bofors_MID/DCA_Bofors_MID.fbx")
+export Modele_DCA_Bofors_ESP_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/ESP/DCA/DCA_Bofors_LOW/DCA_Bofors_LOW.fbx")

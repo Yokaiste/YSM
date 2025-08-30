@@ -42,6 +42,7 @@ SpecificOutGameLoadingPanelResource is TUISpecificOutGameLoadingPanelResource
         "HintEd_01",
         "HintEd_02",
         "HintEd_03",
+        "HintEd_04",
     ]
 
     DevHints = [

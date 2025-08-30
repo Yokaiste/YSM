@@ -1,0 +1,14 @@
+export Modele_RM51_TCH is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/Artillerie/RM51/RM51.fbx"
+)
+
+export Modele_RM51_TCH_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/Artillerie/RM51_MID/RM51_MID.fbx"
+)
+
+export Modele_RM51_TCH_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/Artillerie/RM51_LOW/RM51_LOW.fbx"
+)

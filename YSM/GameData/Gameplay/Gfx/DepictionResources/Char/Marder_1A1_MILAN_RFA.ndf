@@ -1,0 +1,19 @@
+export Modele_Marder_1A1_MILAN_RFA is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/APC/Marder_1A1_MILAN/Marder_1A1_MILAN.fbx"
+)
+
+export Modele_Marder_1A1_MILAN_RFA_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/APC/Marder_1A1_MILAN_MID/Marder_1A1_MILAN_MID.fbx"
+)
+
+export Modele_Marder_1A1_MILAN_RFA_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/RFA/APC/Marder_1A1_MILAN_LOW/Marder_1A1_MILAN_LOW.fbx"
+)
+
+export Modele_Marder_1A1_MILAN_RFA_Tourelle_02 is TResourceMesh
+(
+    Mesh=ModelFile_Milan_F1_t2
+)

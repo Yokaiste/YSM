@@ -1,0 +1,17 @@
+export Modele_Roland_2_ESP is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/DCA/Roland_2/Roland_2.fbx"
+    Textures="GameData:/Assets/3D/Units/ESP/DCA/Roland_2"
+)
+
+export Modele_Roland_2_ESP_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/DCA/Roland_2_MID/Roland_2_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/ESP/DCA/Roland_2_MID"
+)
+
+export Modele_Roland_2_ESP_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/DCA/Roland_2_LOW/Roland_2_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/ESP/DCA/Roland_2_LOW"
+)

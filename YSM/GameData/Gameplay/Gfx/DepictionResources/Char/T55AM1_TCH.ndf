@@ -1,0 +1,19 @@
+export Modele_T55AM1_TCH is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/Char/T55AM1/T55AM1.fbx"
+)
+
+export Modele_T55AM1_TCH_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/Char/T55AM1/T55AM1.fbx"
+)
+
+export Modele_T55AM1_TCH_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/Char/T55AM1/T55AM1.fbx"
+)
+
+export Modele_T55AM1_TCH_Tourelle_02 is TResourceMesh
+(
+    Mesh=ModelFile_DShK_127mm_t2
+)

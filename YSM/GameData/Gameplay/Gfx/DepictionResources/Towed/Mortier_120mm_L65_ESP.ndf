@@ -1,0 +1,3 @@
+export Modele_Mortier_120mm_L65_ESP is TResourceMesh( Mesh="GameData:/Assets/3D/Units/ESP/Canon/MORTIER_120mm_L65/MORTIER_120mm_L65.fbx")
+export Modele_Mortier_120mm_L65_ESP_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/ESP/Canon/MORTIER_120mm_L65_MID/MORTIER_120mm_L65_MID.fbx")
+export Modele_Mortier_120mm_L65_ESP_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/ESP/Canon/MORTIER_120mm_L65_LOW/MORTIER_120mm_L65_LOW.fbx")

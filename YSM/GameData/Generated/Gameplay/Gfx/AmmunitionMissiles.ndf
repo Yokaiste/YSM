@@ -39,7 +39,7 @@ Ammo_AA_AIM120A_AMRAAM is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 4946
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -116,7 +116,7 @@ Ammo_AA_AIM132_ASRAAM is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 4946
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -153,6 +153,83 @@ Ammo_AA_AIM132_ASRAAM is TAmmunitionDescriptor
     DamageTypeEvolutionOverRangeDescriptor  = nil
     MissileTimeBetweenCorrections     = 1.0
     MissileDescriptor                 = ~/Descriptor_Missile_AA_AIM132_ASRAAM
+)
+Ammo_AA_AIM54_Phoenix is TAmmunitionDescriptor
+(
+    DescriptorId                      = GUID:{1d738c50-c917-4d15-81f0-bcf5359bf123}
+    Name                              = 'GSXXTTUETX'
+    TypeCategoryName                  = 'UYJALNLOYI'
+    Caliber                           = 'EVYIVPZVOJ'
+    WeaponDescriptionToken            = 'UYIYEYCCSG'
+    TraitsToken                       = [ 'MOTION', 'semiAuto', ]
+    WeaponCursorType                  = Weapon_Cursor_AirMissile
+    MinMaxCategory                    = MinMax_AAM
+    Arme                              = TDamageTypeRTTI(Family=DamageFamily_missile_he Index=1)
+    ProjectileType                    = EProjectileType/GuidedMissile
+    ImpactHappening                   = 'MIssileAASPARROW'
+    FxPower                           = EFXPower/UltraLourd
+    TimeBetweenTwoShots               = 0.2
+    TimeBetweenTwoFx                  = 0.2
+    MinimumRangeGRU                   = 0
+    MaximumRangeGRU                   = 0
+    MinimumRangeHelicopterGRU         = 0
+    MaximumRangeHelicopterGRU         = 0
+    MinimumRangeAirplaneGRU           = 0
+    MaximumRangeAirplaneGRU           = 12725
+    MinimumRangeProjectileGRU         = 0
+    MaximumRangeProjectileGRU         = 0
+    AngleDispersion                   = 0.0020001473227855013
+    SalvoShotsSorted                  = True
+    RadiusSplashPhysicalDamagesGRU    = 93
+    PhysicalDamages                   = 6.0
+    ShowDamageInUI                    = True
+    RadiusSplashSuppressDamagesGRU    = 153
+    SuppressDamages                   = 640.0
+    AllowSuppressDamageWhenNoImpact   = True
+    DisplaySalveAccuracy              = False
+    TirIndirect                       = False
+    TirReflexe                        = True
+    ReflexShotDisabledIfPriorityTarget = True
+    MaximalSpeedGRU                   = 4240
+    MaxAccelerationGRU                = 2120
+    ShotWithPhysics                   = False
+    FluidFriction                     = 0.0
+    NoiseDissimulationMalus           = 2.0
+    ShotsBeforeMaxNoise               = 2
+    TargetOnlyOneUnitInDistrict       = False
+    HitRollRuleDescriptor = TDiceHitRollRuleDescriptor
+    (
+        DescriptorId          = GUID:{5b574a84-21f4-43f1-98b9-da536081654e}
+        BaseCriticModifier = 25
+        BaseHitValueModifiers =
+        [
+            (EBaseHitValueModifier/Base, 0),
+            (EBaseHitValueModifier/Idling, 50),
+            (EBaseHitValueModifier/Moving, 50),
+            (EBaseHitValueModifier/Targeted, 0.0),
+        ]
+        DistanceToTarget = True
+    )
+    AimingTime                        = 0.0
+    TimeBetweenTwoSalvos              = 2.0
+    TimeBetweenTwoSalvos_Min          = -1.0
+    TimeBetweenTwoSalvos_Max          = -1.0
+    NbTirParSalves                    = 1
+    SupplyCost                        = 30
+    CanShootOnPosition                = False
+    CanShootWhileMoving               = True
+    NbrProjectilesSimultanes          = 1
+    AffichageMunitionParSalve         = 1
+    InterfaceWeaponTexture            = "Texture_Interface_Weapon_sparrow"
+    SmokeDescriptor                   = nil
+    FireDescriptor                    = nil
+    CanHarmAirplanes                  = True
+    IsHarmlessForAllies               = False
+    PiercingWeapon                    = False
+    TandemCharge                      = False
+    DamageTypeEvolutionOverRangeDescriptor  = nil
+    MissileTimeBetweenCorrections     = 1.0
+    MissileDescriptor                 = ~/Descriptor_Missile_AA_AIM54_Phoenix
 )
 Ammo_AA_AIM7F_Sparrow is TAmmunitionDescriptor
 (
@@ -192,7 +269,7 @@ Ammo_AA_AIM7F_Sparrow is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 4240
     MaxAccelerationGRU                = 2120
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -269,7 +346,7 @@ Ammo_AA_AIM7M_Sparrow is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 4240
     MaxAccelerationGRU                = 2120
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -346,7 +423,7 @@ Ammo_AA_AIM9J_Sidewinder is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 3533
     MaxAccelerationGRU                = 1413
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -423,7 +500,7 @@ Ammo_AA_AIM9L_Sidewinder is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 4240
     MaxAccelerationGRU                = 2120
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -500,7 +577,7 @@ Ammo_AA_AIM9L_Sidewinder_upgrade is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 4240
     MaxAccelerationGRU                = 2120
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -577,7 +654,7 @@ Ammo_AA_AIM9M_Sidewinder is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 4946
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -654,7 +731,7 @@ Ammo_AA_AIM9P_Sidewinder is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 4946
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -731,7 +808,7 @@ Ammo_AA_AIM9P_Sidewinder_x2 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 4946
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -808,7 +885,7 @@ Ammo_AA_Matra_R530 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 3533
     MaxAccelerationGRU                = 1413
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -885,7 +962,7 @@ Ammo_AA_Matra_Super_530D is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 4946
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -962,7 +1039,7 @@ Ammo_AA_Matra_Super_530F is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 4240
     MaxAccelerationGRU                = 2120
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -1039,7 +1116,7 @@ Ammo_AA_R13M is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 3533
     MaxAccelerationGRU                = 1413
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -1067,7 +1144,7 @@ Ammo_AA_R13M is TAmmunitionDescriptor
     CanShootWhileMoving               = True
     NbrProjectilesSimultanes          = 1
     AffichageMunitionParSalve         = 1
-    InterfaceWeaponTexture            = "Texture_Interface_Weapon_R60_Vympel"
+    InterfaceWeaponTexture            = "Texture_Interface_Weapon_AA_R13M"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
     CanHarmAirplanes                  = True
@@ -1116,7 +1193,7 @@ Ammo_AA_R23R_Vympel is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 4240
     MaxAccelerationGRU                = 2120
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -1144,7 +1221,7 @@ Ammo_AA_R23R_Vympel is TAmmunitionDescriptor
     CanShootWhileMoving               = True
     NbrProjectilesSimultanes          = 1
     AffichageMunitionParSalve         = 1
-    InterfaceWeaponTexture            = "Texture_Interface_Weapon_R27_Vympel"
+    InterfaceWeaponTexture            = "Texture_Interface_Weapon_AA_R23R_Vympel"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
     CanHarmAirplanes                  = True
@@ -1193,7 +1270,7 @@ Ammo_AA_R24MR_Vympel is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 4240
     MaxAccelerationGRU                = 2120
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -1270,7 +1347,7 @@ Ammo_AA_R24R_Vympel is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 4240
     MaxAccelerationGRU                = 2120
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -1298,7 +1375,7 @@ Ammo_AA_R24R_Vympel is TAmmunitionDescriptor
     CanShootWhileMoving               = True
     NbrProjectilesSimultanes          = 1
     AffichageMunitionParSalve         = 1
-    InterfaceWeaponTexture            = "Texture_Interface_Weapon_R27_Vympel"
+    InterfaceWeaponTexture            = "Texture_Interface_Weapon_AA_R24R_Vympel"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
     CanHarmAirplanes                  = True
@@ -1347,7 +1424,7 @@ Ammo_AA_R27ER_Vympel is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 4240
     MaxAccelerationGRU                = 2120
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -1424,7 +1501,7 @@ Ammo_AA_R27R_Vympel is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 4240
     MaxAccelerationGRU                = 2120
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -1501,7 +1578,7 @@ Ammo_AA_R27T_Vympel is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 4240
     MaxAccelerationGRU                = 2120
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -1578,7 +1655,7 @@ Ammo_AA_R33_Vympel is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 4240
     MaxAccelerationGRU                = 2120
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -1655,7 +1732,7 @@ Ammo_AA_R37_Vympel is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 4946
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -1732,7 +1809,7 @@ Ammo_AA_R3R is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 4946
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -1809,7 +1886,7 @@ Ammo_AA_R40RD1 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 4240
     MaxAccelerationGRU                = 2120
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -1886,7 +1963,7 @@ Ammo_AA_R40TD1 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 4240
     MaxAccelerationGRU                = 2120
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -1963,7 +2040,7 @@ Ammo_AA_R550_Magic is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 3533
     MaxAccelerationGRU                = 1413
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -2040,7 +2117,7 @@ Ammo_AA_R550_Magic_II is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 4240
     MaxAccelerationGRU                = 2120
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -2117,7 +2194,7 @@ Ammo_AA_R60_Vympel is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 3533
     MaxAccelerationGRU                = 1413
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -2194,7 +2271,7 @@ Ammo_AA_R60_Vympel_helo is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 3533
     MaxAccelerationGRU                = 1413
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -2271,7 +2348,7 @@ Ammo_AA_R60M_Vympel is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 3533
     MaxAccelerationGRU                = 1413
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -2348,7 +2425,7 @@ Ammo_AA_R60M_Vympel_x2 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 3533
     MaxAccelerationGRU                = 1413
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -2425,7 +2502,7 @@ Ammo_AA_R60M_Vympel_helo is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 3533
     MaxAccelerationGRU                = 1413
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -2502,7 +2579,7 @@ Ammo_AA_R73_Vympel is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 4946
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -2579,7 +2656,7 @@ Ammo_AA_R77_Vympel is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 4946
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -2656,7 +2733,7 @@ Ammo_AA_R98MR is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 4946
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -2733,7 +2810,7 @@ Ammo_AA_R98MT is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 4240
     MaxAccelerationGRU                = 2120
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -2810,7 +2887,7 @@ Ammo_AA_Skyflash is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 4240
     MaxAccelerationGRU                = 2120
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -2887,7 +2964,7 @@ Ammo_AA_Skyflash_SuperTEMP is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 4946
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -2966,7 +3043,7 @@ Ammo_AGM_9K121_Vikhr is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 777
     MaxAccelerationGRU                = 353
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -3045,7 +3122,7 @@ Ammo_AGM_9K121_Vikhr_x12 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 777
     MaxAccelerationGRU                = 353
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -3124,7 +3201,7 @@ Ammo_AGM_9K121_Vikhr_x16 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 777
     MaxAccelerationGRU                = 353
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -3203,7 +3280,7 @@ Ammo_AGM_9K121_Vikhr_x16_avion is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 777
     MaxAccelerationGRU                = 353
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -3282,7 +3359,7 @@ Ammo_AGM_9M114M_Ataka_x4 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 777
     MaxAccelerationGRU                = 353
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -3362,7 +3439,7 @@ Ammo_AGM_9M114M_Ataka_x8 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 777
     MaxAccelerationGRU                = 353
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -3442,7 +3519,7 @@ Ammo_AGM_9M114M_KokonM is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 777
     MaxAccelerationGRU                = 353
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -3522,7 +3599,7 @@ Ammo_AGM_9M114M_KokonM_x16 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 777
     MaxAccelerationGRU                = 353
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -3602,7 +3679,7 @@ Ammo_AGM_9M114M_KokonM_x2 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 777
     MaxAccelerationGRU                = 353
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -3682,7 +3759,7 @@ Ammo_AGM_9M114M_KokonM_x4 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 777
     MaxAccelerationGRU                = 353
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -3762,7 +3839,7 @@ Ammo_AGM_9M114M_KokonM_x6 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 777
     MaxAccelerationGRU                = 353
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -3842,7 +3919,7 @@ Ammo_AGM_9M114M_KokonM_x8 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 777
     MaxAccelerationGRU                = 353
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -3922,7 +3999,7 @@ Ammo_AGM_9M14_MalyutkaP_x4 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 310
     MaxAccelerationGRU                = 176
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -4002,7 +4079,7 @@ Ammo_AGM_9M14_MalyutkaP_x6 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 310
     MaxAccelerationGRU                = 176
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -4082,7 +4159,7 @@ Ammo_AGM_9M17P_FalangaP is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 310
     MaxAccelerationGRU                = 176
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -4161,7 +4238,7 @@ Ammo_AGM_9M17P_FalangaP_x2 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 310
     MaxAccelerationGRU                = 176
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -4241,7 +4318,7 @@ Ammo_AGM_9M17P_FalangaP_x4 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 310
     MaxAccelerationGRU                = 176
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -4321,7 +4398,7 @@ Ammo_AGM_9M17P_FalangaP_x6 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 310
     MaxAccelerationGRU                = 176
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -4401,7 +4478,7 @@ Ammo_AGM_AGM114A is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 1060
     MaxAccelerationGRU                = 353
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -4480,7 +4557,7 @@ Ammo_AGM_AGM114A_x16 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 1060
     MaxAccelerationGRU                = 353
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -4559,7 +4636,7 @@ Ammo_AGM_AGM114A_x2_salve is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 1060
     MaxAccelerationGRU                = 353
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -4638,7 +4715,7 @@ Ammo_AGM_AGM114A_x2_sol is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 1060
     MaxAccelerationGRU                = 353
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -4718,7 +4795,7 @@ Ammo_AGM_AGM114A_x4 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 1060
     MaxAccelerationGRU                = 353
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -4797,7 +4874,7 @@ Ammo_AGM_AGM114A_x8 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 1060
     MaxAccelerationGRU                = 353
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -4876,7 +4953,7 @@ Ammo_AGM_AGM45_Shrike is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 2120
     MaxAccelerationGRU                = 706
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -4956,7 +5033,7 @@ Ammo_AGM_AGM65B_Maverick is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 2120
     MaxAccelerationGRU                = 706
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -5036,7 +5113,7 @@ Ammo_AGM_AGM65D_Maverick is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 2826
     MaxAccelerationGRU                = 1413
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -5116,7 +5193,7 @@ Ammo_AGM_AGM65E_Maverick is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 2826
     MaxAccelerationGRU                = 1413
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -5196,7 +5273,7 @@ Ammo_AGM_AGM88_HARM is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 3533
     MaxAccelerationGRU                = 2120
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -5276,7 +5353,7 @@ Ammo_AGM_AJ_168_x2 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 1413
     MaxAccelerationGRU                = 353
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -5355,7 +5432,7 @@ Ammo_AGM_ALARM is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 3533
     MaxAccelerationGRU                = 2120
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -5435,7 +5512,7 @@ Ammo_AGM_ARMAT is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 2120
     MaxAccelerationGRU                = 706
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -5515,7 +5592,7 @@ Ammo_AGM_AS11_x2 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 1413
     MaxAccelerationGRU                = 353
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -5594,7 +5671,7 @@ Ammo_AGM_AS11_x2_air is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 1413
     MaxAccelerationGRU                = 353
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -5673,7 +5750,7 @@ Ammo_AGM_AS11_x4 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 1413
     MaxAccelerationGRU                = 353
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -5752,7 +5829,7 @@ Ammo_AGM_AS30 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 1413
     MaxAccelerationGRU                = 353
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -5831,7 +5908,7 @@ Ammo_AGM_AS30L is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 2120
     MaxAccelerationGRU                = 706
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -5910,7 +5987,7 @@ Ammo_AGM_AS37_Martel is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 2120
     MaxAccelerationGRU                = 706
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -5990,7 +6067,7 @@ Ammo_AGM_AS37_Martel_x2 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 2120
     MaxAccelerationGRU                = 706
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -6070,7 +6147,7 @@ Ammo_AGM_BGM71_TOW_x8 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -6151,7 +6228,7 @@ Ammo_AGM_BGM71C_FITOW_x8 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -6231,7 +6308,7 @@ Ammo_AGM_BGM71C_ITOW_x8 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -6311,7 +6388,7 @@ Ammo_AGM_BGM71D_TOW_2_x4 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -6391,7 +6468,7 @@ Ammo_AGM_BGM71D_TOW_2_x8 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -6471,7 +6548,7 @@ Ammo_AGM_HOT1 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -6551,7 +6628,7 @@ Ammo_AGM_HOT1_x4 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -6631,7 +6708,7 @@ Ammo_AGM_HOT1_x6 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -6711,7 +6788,7 @@ Ammo_AGM_HOT2 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -6791,7 +6868,7 @@ Ammo_AGM_HOT2_x4 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -6871,7 +6948,7 @@ Ammo_AGM_HOT2_x6 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -6951,7 +7028,7 @@ Ammo_AGM_Kh23M is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 1413
     MaxAccelerationGRU                = 353
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -7030,7 +7107,7 @@ Ammo_AGM_Kh23M_helo is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 1413
     MaxAccelerationGRU                = 353
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -7109,7 +7186,7 @@ Ammo_AGM_Kh25ML is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 2826
     MaxAccelerationGRU                = 1413
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -7188,7 +7265,7 @@ Ammo_AGM_Kh25MP is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 2826
     MaxAccelerationGRU                = 1413
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -7268,7 +7345,7 @@ Ammo_AGM_Kh25MPU is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 2826
     MaxAccelerationGRU                = 1413
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -7347,7 +7424,7 @@ Ammo_AGM_Kh28_X28 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 2826
     MaxAccelerationGRU                = 1413
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -7427,7 +7504,7 @@ Ammo_AGM_Kh29D is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 2826
     MaxAccelerationGRU                = 1413
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -7506,7 +7583,7 @@ Ammo_AGM_Kh29L is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 2826
     MaxAccelerationGRU                = 1413
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -7585,7 +7662,7 @@ Ammo_AGM_Kh29T is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 2826
     MaxAccelerationGRU                = 1413
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -7665,7 +7742,7 @@ Ammo_AGM_Kh31P is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 3533
     MaxAccelerationGRU                = 2120
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -7744,7 +7821,7 @@ Ammo_AGM_Kh58U is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 3533
     MaxAccelerationGRU                = 2120
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -7824,7 +7901,7 @@ Ammo_AGM_Kh66 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 1413
     MaxAccelerationGRU                = 353
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -7903,7 +7980,7 @@ Ammo_AGM_SS11_TCA_x4 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -7983,7 +8060,7 @@ Ammo_AGM_SS11_x4 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -8063,7 +8140,7 @@ Ammo_ATGM_9K111_Fagot is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -8143,7 +8220,7 @@ Ammo_ATGM_9K111M_Fagot_M is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -8223,7 +8300,7 @@ Ammo_ATGM_9K111M_Fagot_M_IFV is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -8303,7 +8380,7 @@ Ammo_ATGM_9K121_Vikhr is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 777
     MaxAccelerationGRU                = 353
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -8382,7 +8459,7 @@ Ammo_ATGM_9M112_1_Kobra is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -8462,7 +8539,7 @@ Ammo_ATGM_9M113_Konkurs_BMP2 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -8542,7 +8619,7 @@ Ammo_ATGM_9M113_Konkurs_x3 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -8570,7 +8647,7 @@ Ammo_ATGM_9M113_Konkurs_x3 is TAmmunitionDescriptor
     CanShootOnPosition                = False
     CanShootWhileMoving               = False
     NbrProjectilesSimultanes          = 1
-    AffichageMunitionParSalve         = 5
+    AffichageMunitionParSalve         = 3
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Konkurs"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
@@ -8622,7 +8699,7 @@ Ammo_ATGM_9M113_Konkurs_x5 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -8702,7 +8779,7 @@ Ammo_ATGM_9M113_KonkursM is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -8782,7 +8859,7 @@ Ammo_ATGM_9M113_KonkursM_late is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -8862,7 +8939,7 @@ Ammo_ATGM_9M113_KonkursM_late_x5 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -8942,7 +9019,7 @@ Ammo_ATGM_9M114_Shturm_MTLB is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -9022,7 +9099,7 @@ Ammo_ATGM_9M114M_Ataka is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 777
     MaxAccelerationGRU                = 353
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -9102,7 +9179,7 @@ Ammo_ATGM_9M114M_KokonM is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 777
     MaxAccelerationGRU                = 353
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -9182,7 +9259,7 @@ Ammo_ATGM_9M117_Bastion is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 777
     MaxAccelerationGRU                = 353
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -9262,7 +9339,7 @@ Ammo_ATGM_9M117_Bastion_IFV is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 777
     MaxAccelerationGRU                = 353
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -9342,7 +9419,7 @@ Ammo_ATGM_9M117M_Arkan is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 777
     MaxAccelerationGRU                = 353
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -9422,7 +9499,7 @@ Ammo_ATGM_9M119M_Refleks is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 777
     MaxAccelerationGRU                = 353
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -9502,7 +9579,7 @@ Ammo_ATGM_9M119M_Svir is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 777
     MaxAccelerationGRU                = 353
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -9582,7 +9659,7 @@ Ammo_ATGM_9M128_Agona is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -9662,7 +9739,7 @@ Ammo_ATGM_9M14_MalyutkaP is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 310
     MaxAccelerationGRU                = 176
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -9742,7 +9819,7 @@ Ammo_ATGM_9M14_MalyutkaP_x2 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 310
     MaxAccelerationGRU                = 176
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -9822,7 +9899,7 @@ Ammo_ATGM_9M14_MalyutkaP_x4 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 310
     MaxAccelerationGRU                = 176
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -9902,7 +9979,7 @@ Ammo_ATGM_9M14_MalyutkaP_x6 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 310
     MaxAccelerationGRU                = 176
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -9982,7 +10059,7 @@ Ammo_ATGM_9M14_MalyutkaP_IFV is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 310
     MaxAccelerationGRU                = 176
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -10062,7 +10139,7 @@ Ammo_ATGM_9k111M_Faktoriya is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -10142,7 +10219,7 @@ Ammo_ATGM_ADATS is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 1000
     MaxAccelerationGRU                = 500
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -10222,7 +10299,7 @@ Ammo_ATGM_AS11_x4 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 310
     MaxAccelerationGRU                = 176
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -10302,7 +10379,7 @@ Ammo_ATGM_BGM71_TOW is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -10382,7 +10459,7 @@ Ammo_ATGM_BGM71_TOW_x2 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -10462,7 +10539,7 @@ Ammo_ATGM_BGM71_TOW_x4 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -10542,7 +10619,7 @@ Ammo_ATGM_BGM71_TOW_x8 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -10622,7 +10699,7 @@ Ammo_ATGM_BGM71C_ITOW is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -10702,7 +10779,7 @@ Ammo_ATGM_BGM71C_ITOW_x2 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -10782,7 +10859,7 @@ Ammo_ATGM_BGM71C_ITOW_x2_IFV is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -10862,7 +10939,7 @@ Ammo_ATGM_BGM71C_ITOW_x4 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -10942,7 +11019,7 @@ Ammo_ATGM_BGM71C_ITOW_x8 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -11022,7 +11099,7 @@ Ammo_ATGM_BGM71D_TOW_2 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -11102,7 +11179,7 @@ Ammo_ATGM_BGM71D_TOW_2_x2 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -11182,7 +11259,7 @@ Ammo_ATGM_BGM71D_TOW_2_x2_IFV is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -11262,7 +11339,7 @@ Ammo_ATGM_BGM71D_TOW_2_x4 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -11342,7 +11419,7 @@ Ammo_ATGM_BGM71D_TOW_2_x8 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -11422,7 +11499,7 @@ Ammo_ATGM_BGM71D_TOW_2A is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -11502,7 +11579,7 @@ Ammo_ATGM_BGM71D_TOW_2A_x2 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -11582,7 +11659,7 @@ Ammo_ATGM_BGM71D_TOW_2A_x2_IFV is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -11662,7 +11739,7 @@ Ammo_ATGM_HOT1 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -11742,7 +11819,7 @@ Ammo_ATGM_HOT1_x4 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -11822,7 +11899,7 @@ Ammo_ATGM_HOT1_x6 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -11902,7 +11979,7 @@ Ammo_ATGM_HOT2 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -11982,7 +12059,7 @@ Ammo_ATGM_HOT2_x2 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -12062,7 +12139,7 @@ Ammo_ATGM_HOT2_x3 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -12142,7 +12219,7 @@ Ammo_ATGM_HOT2_x4 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -12222,7 +12299,7 @@ Ammo_ATGM_HOT2_x6 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -12302,7 +12379,7 @@ Ammo_ATGM_MGM551C_Shillelagh is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -12382,7 +12459,7 @@ Ammo_ATGM_MILAN is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -12462,7 +12539,7 @@ Ammo_ATGM_MILAN_2 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -12542,7 +12619,7 @@ Ammo_ATGM_MILAN_2_x2 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -12622,7 +12699,7 @@ Ammo_ATGM_MILAN_2_IFV is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -12702,7 +12779,7 @@ Ammo_ATGM_MILAN_IFV is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -12782,7 +12859,7 @@ Ammo_ATGM_Swingfire is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -12862,7 +12939,7 @@ Ammo_ATGM_Swingfire_x2 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -12942,7 +13019,7 @@ Ammo_ATGM_Swingfire_x4 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -13022,7 +13099,7 @@ Ammo_ATGM_Swingfire_x5 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -13102,7 +13179,7 @@ Ammo_ATGM_9K115_Metis_M is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -13182,7 +13259,7 @@ Ammo_ATGM_Eryx is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 427
     MaxAccelerationGRU                = 265
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -13262,7 +13339,7 @@ Ammo_Bomb_BGL_400_x1 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = False
     MaximalSpeedGRU                   = 706
     MaxAccelerationGRU                = 353
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.4
     NoiseDissimulationMalus           = 1.0
     ShotsBeforeMaxNoise               = 3
@@ -13342,7 +13419,7 @@ Ammo_Bomb_BGL_400_x2 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = False
     MaximalSpeedGRU                   = 706
     MaxAccelerationGRU                = 353
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.4
     NoiseDissimulationMalus           = 1.0
     ShotsBeforeMaxNoise               = 3
@@ -13422,7 +13499,7 @@ Ammo_Bomb_CPU_123_x1 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = False
     MaximalSpeedGRU                   = 706
     MaxAccelerationGRU                = 353
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.4
     NoiseDissimulationMalus           = 1.0
     ShotsBeforeMaxNoise               = 3
@@ -13502,7 +13579,7 @@ Ammo_Bomb_CPU_123_x2 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = False
     MaximalSpeedGRU                   = 706
     MaxAccelerationGRU                = 353
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.4
     NoiseDissimulationMalus           = 1.0
     ShotsBeforeMaxNoise               = 3
@@ -13582,7 +13659,7 @@ Ammo_Bomb_GBU_10_x1 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = False
     MaximalSpeedGRU                   = 706
     MaxAccelerationGRU                = 353
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.4
     NoiseDissimulationMalus           = 1.0
     ShotsBeforeMaxNoise               = 3
@@ -13662,7 +13739,7 @@ Ammo_Bomb_GBU_10_x2 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = False
     MaximalSpeedGRU                   = 706
     MaxAccelerationGRU                = 353
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.4
     NoiseDissimulationMalus           = 1.0
     ShotsBeforeMaxNoise               = 3
@@ -13742,7 +13819,7 @@ Ammo_Bomb_GBU_12_x1 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = False
     MaximalSpeedGRU                   = 706
     MaxAccelerationGRU                = 353
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.4
     NoiseDissimulationMalus           = 1.0
     ShotsBeforeMaxNoise               = 3
@@ -13822,7 +13899,7 @@ Ammo_Bomb_GBU_12_x2 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = False
     MaximalSpeedGRU                   = 706
     MaxAccelerationGRU                = 353
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.4
     NoiseDissimulationMalus           = 1.0
     ShotsBeforeMaxNoise               = 3
@@ -13902,7 +13979,7 @@ Ammo_Bomb_GBU_27_x1 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = False
     MaximalSpeedGRU                   = 706
     MaxAccelerationGRU                = 353
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.4
     NoiseDissimulationMalus           = 1.0
     ShotsBeforeMaxNoise               = 3
@@ -13982,7 +14059,7 @@ Ammo_Bomb_GBU_27_x2 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = False
     MaximalSpeedGRU                   = 706
     MaxAccelerationGRU                = 353
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.4
     NoiseDissimulationMalus           = 1.0
     ShotsBeforeMaxNoise               = 3
@@ -14062,7 +14139,7 @@ Ammo_Bomb_KAB_1500Kr_x1 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = False
     MaximalSpeedGRU                   = 706
     MaxAccelerationGRU                = 353
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.4
     NoiseDissimulationMalus           = 1.0
     ShotsBeforeMaxNoise               = 3
@@ -14142,7 +14219,7 @@ Ammo_Bomb_KAB_1500Kr_x2 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = False
     MaximalSpeedGRU                   = 706
     MaxAccelerationGRU                = 353
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.4
     NoiseDissimulationMalus           = 1.0
     ShotsBeforeMaxNoise               = 3
@@ -14222,7 +14299,7 @@ Ammo_Bomb_KAB_1500L_x1 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = False
     MaximalSpeedGRU                   = 706
     MaxAccelerationGRU                = 353
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.4
     NoiseDissimulationMalus           = 1.0
     ShotsBeforeMaxNoise               = 3
@@ -14302,7 +14379,7 @@ Ammo_Bomb_KAB_1500L_x2 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = False
     MaximalSpeedGRU                   = 706
     MaxAccelerationGRU                = 353
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.4
     NoiseDissimulationMalus           = 1.0
     ShotsBeforeMaxNoise               = 3
@@ -14382,7 +14459,7 @@ Ammo_Bomb_KAB_1500L_x3 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = False
     MaximalSpeedGRU                   = 706
     MaxAccelerationGRU                = 353
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.4
     NoiseDissimulationMalus           = 1.0
     ShotsBeforeMaxNoise               = 3
@@ -14462,7 +14539,7 @@ Ammo_Bomb_KAB_500Kr_x1 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = False
     MaximalSpeedGRU                   = 706
     MaxAccelerationGRU                = 353
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.4
     NoiseDissimulationMalus           = 1.0
     ShotsBeforeMaxNoise               = 3
@@ -14542,7 +14619,7 @@ Ammo_Bomb_KAB_500Kr_x2 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = False
     MaximalSpeedGRU                   = 706
     MaxAccelerationGRU                = 353
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.4
     NoiseDissimulationMalus           = 1.0
     ShotsBeforeMaxNoise               = 3
@@ -14622,7 +14699,7 @@ Ammo_Bomb_KAB_500L_x1 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = False
     MaximalSpeedGRU                   = 706
     MaxAccelerationGRU                = 353
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.4
     NoiseDissimulationMalus           = 1.0
     ShotsBeforeMaxNoise               = 3
@@ -14702,7 +14779,7 @@ Ammo_Bomb_KAB_500L_x2 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = False
     MaximalSpeedGRU                   = 706
     MaxAccelerationGRU                = 353
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.4
     NoiseDissimulationMalus           = 1.0
     ShotsBeforeMaxNoise               = 3
@@ -14782,7 +14859,7 @@ Ammo_Bomb_KAB_500L_x4 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = False
     MaximalSpeedGRU                   = 706
     MaxAccelerationGRU                = 353
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.4
     NoiseDissimulationMalus           = 1.0
     ShotsBeforeMaxNoise               = 3
@@ -14861,7 +14938,7 @@ Ammo_FakeRoquette_S_24 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 2473
     MaxAccelerationGRU                = 2473
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -14941,7 +15018,7 @@ Ammo_FakeRoquette_S_24_helo is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 2473
     MaxAccelerationGRU                = 2473
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -15020,7 +15097,7 @@ Ammo_Javelin is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -15098,7 +15175,7 @@ Ammo_Javelin_LML is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -15178,7 +15255,7 @@ Ammo_M47_DRAGON is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 310
     MaxAccelerationGRU                = 176
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -15258,7 +15335,7 @@ Ammo_M47_DRAGON_Bipied is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 310
     MaxAccelerationGRU                = 176
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -15338,7 +15415,7 @@ Ammo_M47_DRAGON_II is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 310
     MaxAccelerationGRU                = 176
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -15416,7 +15493,7 @@ Ammo_MANPAD_Blowpipe is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -15494,7 +15571,7 @@ Ammo_MANPAD_FIM43 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -15573,7 +15650,7 @@ Ammo_MANPAD_FIM92 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -15652,7 +15729,7 @@ Ammo_MANPAD_FIM92_A is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -15731,7 +15808,7 @@ Ammo_MANPAD_Javelin is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -15809,7 +15886,7 @@ Ammo_MANPAD_Strela2M is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -15888,7 +15965,7 @@ Ammo_MANPAD_Strela3 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -15967,7 +16044,7 @@ Ammo_MANPAD_igla is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -16046,7 +16123,7 @@ Ammo_Mistral is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -16125,7 +16202,7 @@ Ammo_Mistral_Celtic_x4 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -16203,7 +16280,7 @@ Ammo_SAM_9M311_Tunguska_x8 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -16281,7 +16358,7 @@ Ammo_SAM_9M33 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -16358,7 +16435,7 @@ Ammo_SAM_9M330_Tor_x8 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 10600
     MaxAccelerationGRU                = 1413
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -16437,7 +16514,7 @@ Ammo_SAM_9M336_x3 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -16516,7 +16593,7 @@ Ammo_SAM_9M33M2_x6 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -16595,7 +16672,7 @@ Ammo_SAM_9M38M1_x4 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -16674,7 +16751,7 @@ Ammo_SAM_9M8M3_x2 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -16753,7 +16830,7 @@ Ammo_SAM_ADATS is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5000
     MaxAccelerationGRU                = 1000
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -16832,7 +16909,7 @@ Ammo_SAM_Aspide_1A_x4 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -16911,7 +16988,7 @@ Ammo_SAM_BLOODHOUND_x1 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -16990,7 +17067,7 @@ Ammo_SAM_FASTA_Strela2M_x4 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -17069,7 +17146,7 @@ Ammo_SAM_FASTA_Strela2M_x4_TOWED is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -17148,7 +17225,7 @@ Ammo_SAM_FIM92_Stinger_CS is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -17226,7 +17303,7 @@ Ammo_SAM_FIM92_Stinger_CS_x4 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -17304,7 +17381,7 @@ Ammo_SAM_FIM92_Stinger_x4 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -17382,7 +17459,7 @@ Ammo_SAM_FIM92_Stinger_x8 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -17460,7 +17537,7 @@ Ammo_SAM_FIM92C is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -17538,7 +17615,7 @@ Ammo_SAM_I_Hawk is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -17616,7 +17693,7 @@ Ammo_SAM_I_Hawk_x3 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -17695,7 +17772,7 @@ Ammo_SAM_Igla is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -17774,7 +17851,7 @@ Ammo_SAM_IglaN is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -17853,7 +17930,7 @@ Ammo_SAM_IglaN_1M is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -17932,7 +18009,7 @@ Ammo_SAM_IglaV is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -18010,7 +18087,7 @@ Ammo_SAM_IglaV_x4 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -18088,7 +18165,7 @@ Ammo_SAM_MIM72A is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -18167,7 +18244,7 @@ Ammo_SAM_MIM72F is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -18246,7 +18323,7 @@ Ammo_SAM_MIM72G is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -18325,7 +18402,7 @@ Ammo_SAM_Mistral is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -18404,7 +18481,7 @@ Ammo_SAM_R440_x4 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -18483,7 +18560,7 @@ Ammo_SAM_RAPIER is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -18561,7 +18638,7 @@ Ammo_SAM_RAPIER_DARKFIRE_x6 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -18640,7 +18717,7 @@ Ammo_SAM_RAPIER_FSA_x4 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -18719,7 +18796,7 @@ Ammo_SAM_RAPIER_x4 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -18797,7 +18874,7 @@ Ammo_SAM_RAPIER_x8 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -18875,7 +18952,7 @@ Ammo_SAM_ROLAND is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -18953,7 +19030,7 @@ Ammo_SAM_ROLAND_1 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -19031,7 +19108,7 @@ Ammo_SAM_ROLAND_1_x2 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -19109,7 +19186,7 @@ Ammo_SAM_ROLAND_2 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -19187,7 +19264,7 @@ Ammo_SAM_ROLAND_2_x2 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -19265,7 +19342,7 @@ Ammo_SAM_ROLAND_3 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -19344,7 +19421,7 @@ Ammo_SAM_ROLAND_3_x2 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -19423,7 +19500,7 @@ Ammo_SAM_Strela1_x4 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -19502,7 +19579,7 @@ Ammo_SAM_Strela10_x4 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -19581,7 +19658,7 @@ Ammo_SAM_Strela10M3_x4 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -19660,7 +19737,7 @@ Ammo_SAM_Strela2_x12 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -19738,7 +19815,7 @@ Ammo_SAM_Strela2_x2 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -19816,7 +19893,7 @@ Ammo_SAM_Strela2_x4 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -19894,7 +19971,7 @@ Ammo_SAM_Strela2M_x2 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -19973,7 +20050,7 @@ Ammo_SAM_Strela2M_x2_Static is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 5300
     MaxAccelerationGRU                = 2826
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
@@ -20052,7 +20129,7 @@ Ammo_Starstreak_x3 is TAmmunitionDescriptor
     ReflexShotDisabledIfPriorityTarget = True
     MaximalSpeedGRU                   = 6360
     MaxAccelerationGRU                = 2900
-    ShotWithoutPhysics                = True
+    ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2

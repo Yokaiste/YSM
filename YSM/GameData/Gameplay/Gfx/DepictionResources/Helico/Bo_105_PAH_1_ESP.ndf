@@ -1,0 +1,14 @@
+export Modele_Bo_105_PAH_1_ESP is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/ESP/Helico/Bo_105_PAH1/Bo_105_PAH1.fbx"
+)
+
+export Modele_Bo_105_PAH_1_ESP_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/ESP/Helico/Bo_105_PAH1_MID/Bo_105_PAH1_MID.fbx"
+)
+
+export Modele_Bo_105_PAH_1_ESP_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/ESP/Helico/Bo_105_PAH1_LOW/Bo_105_PAH1_LOW.fbx"
+)

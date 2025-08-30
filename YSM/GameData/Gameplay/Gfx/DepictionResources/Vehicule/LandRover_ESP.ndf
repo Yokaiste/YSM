@@ -1,0 +1,14 @@
+export Modele_LandRover_ESP is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/ESP/Vehicule/LandRover/LandRover.fbx"
+)
+
+export Modele_LandRover_ESP_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/ESP/Vehicule/LandRover_MID/LandRover_MID.fbx"
+)
+
+export Modele_LandRover_ESP_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/ESP/Vehicule/LandRover_LOW/LandRover_LOW.fbx"
+)

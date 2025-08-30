@@ -1,0 +1,22 @@
+export Modele_2S4_Tyulpan_TCH is TResourceMesh
+(
+    Mesh=ModelFile_2S4_Tyulpan_SOV
+    Textures="GameData:/Assets/3D/Units/TCH/Artillerie/2S4_Tyulpan/"
+)
+
+export Modele_2S4_Tyulpan_TCH_MID is TResourceMesh
+(
+    Mesh=ModelFile_2S4_Tyulpan_SOV_MID
+    Textures="GameData:/Assets/3D/Units/TCH/Artillerie/2S4_Tyulpan_MID/"
+)
+
+export Modele_2S4_Tyulpan_TCH_LOW is TResourceMesh
+(
+    Mesh=ModelFile_2S4_Tyulpan_SOV_LOW
+    Textures="GameData:/Assets/3D/Units/TCH/Artillerie/2S4_Tyulpan_LOW/"
+)
+
+export Modele_2S4_Tyulpan_TCH_Tourelle_02 is TResourceMesh
+(
+    Mesh=ModelFile_PKT_no_ammo
+)
