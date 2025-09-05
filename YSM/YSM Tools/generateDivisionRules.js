@@ -1,7 +1,7 @@
 import fs from 'fs';
 
 console.log('\n\n\nThis script will process all units and buildings in the game and create DivisionRules for YSM');
-console.log('\n\n\nUpdated: July 17, 2025');
+console.log('\n\n\nUpdated: September 5, 2025');
 console.log('\n\n\n');
 
 console.log('Looking for files...');
@@ -148,7 +148,7 @@ function addRule([name, tags]) {
         transportLine +
         '\n        MaxPackNumber = 10' +
         '\n        NumberOfUnitInPack = 10' +
-        '\n        NumberOfUnitInPackXPMultiplier = [1.0, 0.7, 0.4, 0.1]' +
+        '\n        NumberOfUnitInPackXPMultiplier = [1.0, 0.6, 0.4, 0.1]' +
         '\n    )';
 
     unlimitedRules.push(unlimitedRule);
