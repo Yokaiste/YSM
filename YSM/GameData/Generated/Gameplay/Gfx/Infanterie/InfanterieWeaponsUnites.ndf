@@ -3328,7 +3328,7 @@ InfantryWeapon_RocketInf_M20_SuperBaz is TIntroduceMobileHappening
                     fx_traine_LAW_4_2_True_00_00,
                 ]
             ),
-            $/GFX/Sound/SoundHappening_FULDA_RPG7_Firing,
+            $/GFX/Sound/SoundHappening_FULDA_SuperBaz_Firing,
         ]
     )
 )

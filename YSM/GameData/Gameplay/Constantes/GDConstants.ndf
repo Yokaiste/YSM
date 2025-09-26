@@ -789,9 +789,9 @@ WargameConstantes is TWargameTunableConstante
 //------------------------------ Constantes Tactic --------------------------------------//
 
     //Order Token bloqué lorsque que l'unité est sans essence
-    OrderBlockedWhenOutOfFuel = ["Move", "SmartMove", "QuickMove", "FastMoveAndAttack", "Reverse", "ChangeAltitude",
-        "AirplaneEvacuate", "AirplaneMoveAndEngage"]
-    OrdersAcceptedByTransporterIfTransportedUnitsCanDo = ["AIAttack", "AIDefend"]
+    OrderBlockedWhenOutOfFuel = [EOrderType/Move, EOrderType/SmartMove, EOrderType/QuickMove, EOrderType/FastMoveAndAttack, EOrderType/Reverse, EOrderType/ChangeAltitude,
+        EOrderType/AirplaneEvacuate, EOrderType/AirplaneMoveAndEngage]
+    OrdersAcceptedByTransporterIfTransportedUnitsCanDo = [EOrderType/AIAttack, EOrderType/AIDefend]
 
 //------------------------------ Constantes Vision --------------------------------------//
     DissimulationEnumToValue = MAP

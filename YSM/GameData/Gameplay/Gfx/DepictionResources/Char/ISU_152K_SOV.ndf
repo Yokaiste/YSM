@@ -1,0 +1,19 @@
+export Modele_ISU_152K_SOV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Char/ISU_152K/ISU_152K.fbx"
+)
+
+export Modele_ISU_152K_SOV_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Char/ISU_152K_MID/ISU_152K_MID.fbx"
+)
+
+export Modele_ISU_152K_SOV_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Char/ISU_152K_LOW/ISU_152K_LOW.fbx"
+)
+
+export Modele_ISU_152K_SOV_Tourelle_02 is TResourceMesh
+(
+    Mesh=ModelFile_DShK_127mm_no_ammo
+)

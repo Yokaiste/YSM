@@ -73,6 +73,7 @@ unnamed TAcknowUnitType
         "TAcknowUnitType_Officer",
         "TAcknowUnitType_Reco",
         "TAcknowUnitType_RecoVehicle",
+        "TAcknowUnitType_Reco_Legion",
         "TAcknowUnitType_Reco_QUE",
         "TAcknowUnitType_Reco_SK",
         "TAcknowUnitType_ReconInfantry",

@@ -185,8 +185,8 @@ StrategicConstantes is TStrategicTunableConstante
 
     // Ordres
     ActionPointCostPerOrder = MAP [
-        ("FortifyAntiAir",          4.0), // FortifyAntiAir - action de defense Anti aerienne des unites au sol
-        ("Move",                    0.0), // Le cout du move est calculé en fonction de la distance parcourue
+        (EOrderType/FortifyAntiAir,          4.0), // FortifyAntiAir - action de defense Anti aerienne des unites au sol
+        (EOrderType/Move,                    0.0), // Le cout du move est calculé en fonction de la distance parcourue
     ]
 
     //IA steelman

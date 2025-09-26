@@ -4,7 +4,7 @@ export CubeAction_Strategic_FortifyAntiAir is Template_CubeActionOrderButtonInfo
     DebugName               = "InGameCubeAction_Strategic_FortifyAntiAir"
     SpotlightUniqueName = "SpotLight_Deploy_AA"
 
-    OrderToken = 'FortifyAntiAir'
+    OrderType = EOrderType/FortifyAntiAir
     ValidationTargetToken = 'HNT_WARN'
 
     LeftClickSound = InterfaceSound( FileName = "GameData:/Assets/Sounds/SFX/Steelman/Steelman_SAM_Radar_1.wav")

@@ -17440,6 +17440,186 @@ export AcknowUnitContainer is TAcknowUnitContainerDescriptor
         TAcknowDescriptor
         (
             MotherCountry = 'FR'
+            TypeSpecific  = TAcknowUnitType_Reco_Legion
+            Action        = TAcknowUnitAction_Attack
+            Sounds        =
+            [
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/FR/Reco_Legion/DE_Reco_Attack_A_l_attaque.ogg' Filter = TSoundFilter_RadioVehicule ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/FR/Reco_Legion/DE_Reco_Attack_Feu_a_volonte.ogg' Filter = TSoundFilter_RadioVehicule ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/FR/Reco_Legion/DE_Reco_Attack_Feu.ogg' Filter = TSoundFilter_RadioVehicule ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/FR/Reco_Legion/DE_Reco_Attack_On_va_se_les_faire.ogg' Filter = TSoundFilter_RadioVehicule ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/FR/Reco_Legion/DE_Reco_Attack_Ouvrez_le_feu_a_mon_ordre.ogg' Filter = TSoundFilter_RadioVehicule ),
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'FR'
+            TypeSpecific  = TAcknowUnitType_Reco_Legion
+            Action        = TAcknowUnitAction_DamageReceived
+            Sounds        =
+            [
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/FR/Reco_Legion/DE_Reco_DamageReceived_Ils_nous_ont_repere.ogg' Filter = TSoundFilter_RadioVehicule ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/FR/Reco_Legion/DE_Reco_DamageReceived_Le_sergent_est_touche.ogg' Filter = TSoundFilter_RadioVehicule ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/FR/Reco_Legion/DE_Reco_DamageReceived_Wir_haben_Verluste_On_est_touche.ogg' Filter = TSoundFilter_RadioVehicule ),
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'FR'
+            TypeSpecific  = TAcknowUnitType_Reco_Legion
+            Action        = TAcknowUnitAction_EnemyUnitContact
+            Sounds        =
+            [
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/FR/Reco_Legion/DE_Reco_Enemy_Contact_A_toutes_les_sections_ennemis_repere.ogg' Filter = TSoundFilter_RadioVehicule ),
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'FR'
+            TypeSpecific  = TAcknowUnitType_Reco_Legion
+            Action        = TAcknowUnitAction_Move
+            Sounds        =
+            [
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/FR/Reco_Legion/DE_Reco_Move_Attrapez_les_jumelles_caporal_.ogg' Filter = TSoundFilter_RadioVehicule ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/FR/Reco_Legion/DE_Reco_Move_Bien_compris.ogg' Filter = TSoundFilter_RadioVehicule ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/FR/Reco_Legion/DE_Reco_Move_Fast_Allons-y_vite.ogg' Filter = TSoundFilter_RadioVehicule ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/FR/Reco_Legion/DE_Reco_Move_Fast_En_avant_et_mort_aux_cons.ogg' Filter = TSoundFilter_RadioVehicule ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/FR/Reco_Legion/DE_Reco_Move_Fast_En_avant.ogg' Filter = TSoundFilter_RadioVehicule ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/FR/Reco_Legion/DE_Reco_Move_Fast_On_bouge_termine.ogg' Filter = TSoundFilter_RadioVehicule ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/FR/Reco_Legion/DE_Reco_Move_Fast_Vite.ogg' Filter = TSoundFilter_RadioVehicule ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/FR/Reco_Legion/DE_Reco_Move_J_y_vais.ogg' Filter = TSoundFilter_RadioVehicule ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/FR/Reco_Legion/DE_Reco_Move_Je_n_ai_rien_prevu_d_autre_aujourd_hui.ogg' Filter = TSoundFilter_RadioVehicule ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/FR/Reco_Legion/DE_Reco_Move_Soyons_aussi_discrets_que_possible.ogg' Filter = TSoundFilter_RadioVehicule ),
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'FR'
+            TypeSpecific  = TAcknowUnitType_Reco_Legion
+            Action        = TAcknowUnitAction_MoveAndAttackOrder
+            Sounds        =
+            [
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/FR/Reco_Legion/DE_Reco_Move_Attack_Attention_aux_rouges.ogg' Filter = TSoundFilter_RadioVehicule ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/FR/Reco_Legion/DE_Reco_Move_Attack_Bien_recu.ogg' Filter = TSoundFilter_RadioVehicule ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/FR/Reco_Legion/DE_Reco_Move_Attack_On_se_magne.ogg' Filter = TSoundFilter_RadioVehicule ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/FR/Reco_Legion/DE_Reco_Move_Attack_On_y_va_termine.ogg' Filter = TSoundFilter_RadioVehicule ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/FR/Reco_Legion/DE_Reco_Move_Attack_Tirez_a_vue.ogg' Filter = TSoundFilter_RadioVehicule ),
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'FR'
+            TypeSpecific  = TAcknowUnitType_Reco_Legion
+            Action        = TAcknowUnitAction_OutOfAmmo
+            Sounds        =
+            [
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/FR/Reco_Legion/DE_Reco_No_Ammo_Plus_de_munitions.ogg' Filter = TSoundFilter_RadioVehicule ),
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'FR'
+            TypeSpecific  = TAcknowUnitType_Reco_Legion
+            Action        = TAcknowUnitAction_Panicking
+            Sounds        =
+            [
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/FR/Reco_Legion/DE_Reco_Panicking_A_terre.ogg' Filter = TSoundFilter_RadioVehicule ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/FR/Reco_Legion/DE_Reco_Panicking_on_en_prend_plein_la_gueule.ogg' Filter = TSoundFilter_RadioVehicule ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/FR/Reco_Legion/DE_Reco_Panicking_Wir_werden_beschossen.ogg' Filter = TSoundFilter_RadioVehicule ),
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'FR'
+            TypeSpecific  = TAcknowUnitType_Reco_Legion
+            Action        = TAcknowUnitAction_PositionForbidden
+            Sounds        =
+            [
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/FR/Reco_Legion/DE_Reco_Impossible_Impossible.ogg' Filter = TSoundFilter_RadioVehicule ),
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'FR'
+            TypeSpecific  = TAcknowUnitType_Reco_Legion
+            Action        = TAcknowUnitAction_Reverse
+            Sounds        =
+            [
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/FR/Reco_Legion/DE_Reco_Reverse_En_arriere.ogg' Filter = TSoundFilter_RadioVehicule ),
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'FR'
+            TypeSpecific  = TAcknowUnitType_Reco_Legion
+            Action        = TAcknowUnitAction_Select
+            Sounds        =
+            [
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/FR/Reco_Legion/DE_Reco_Select_A_vos_ordres.ogg' Filter = TSoundFilter_RadioVehicule ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/FR/Reco_Legion/DE_Reco_Select_Besoin_d_un_coup_d_oil_mon_commandant_.ogg' Filter = TSoundFilter_RadioVehicule ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/FR/Reco_Legion/DE_Reco_Select_Je_vous_ecoute.ogg' Filter = TSoundFilter_RadioVehicule ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/FR/Reco_Legion/DE_Reco_Select_Nous_serons_vos_yeux_mon_commandant.ogg' Filter = TSoundFilter_RadioVehicule ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/FR/Reco_Legion/DE_Reco_Select_On_attend_les_ordres.ogg' Filter = TSoundFilter_RadioVehicule ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/FR/Reco_Legion/DE_Reco_Select_Oui_.ogg' Filter = TSoundFilter_RadioVehicule ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/FR/Reco_Legion/DE_Reco_Select_Oui_mon_commandant_.ogg' Filter = TSoundFilter_RadioVehicule ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/FR/Reco_Legion/DE_Reco_Select_Section_reco_prete.ogg' Filter = TSoundFilter_RadioVehicule ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/FR/Reco_Legion/DE_Reco_Select_Vous_avez_repere_quelque_chose_.ogg' Filter = TSoundFilter_RadioVehicule ),
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'FR'
+            TypeSpecific  = TAcknowUnitType_Reco_Legion
+            Action        = TAcknowUnitAction_ShootOnPosition
+            Sounds        =
+            [
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/FR/Reco_Legion/DE_Reco_Attack_Position_Essayons_pour_voir.ogg' Filter = TSoundFilter_RadioVehicule ),
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'FR'
+            TypeSpecific  = TAcknowUnitType_Reco_Legion
+            Action        = TAcknowUnitAction_Stop
+            Sounds        =
+            [
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/FR/Reco_Legion/DE_Reco_Stop_Stop.ogg' Filter = TSoundFilter_RadioVehicule ),
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'FR'
+            TypeSpecific  = TAcknowUnitType_Reco_Legion
+            Action        = TAcknowUnitAction_Surrender
+            Sounds        =
+            [
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/FR/Reco_Legion/DE_Reco_Surrender_On_se_rend.ogg' Filter = TSoundFilter_RadioVehicule ),
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'FR'
+            TypeSpecific  = TAcknowUnitType_Reco_Legion
+            Action        = TAcknowUnitAction_TargetDestroyed
+            Sounds        =
+            [
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/FR/Reco_Legion/DE_Reco_Target_Destroyed_Il_est_mort.ogg' Filter = TSoundFilter_RadioVehicule ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/FR/Reco_Legion/DE_Reco_Target_Destroyed_Je_l_ai_eu.ogg' Filter = TSoundFilter_RadioVehicule ),
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'FR'
+            TypeSpecific  = TAcknowUnitType_Reco_Legion
+            Action        = TAcknowUnitAction_WithdrawOrder
+            Sounds        =
+            [
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/FR/Reco_Legion/DE_Reco_Withdraw_Repliez-vous.ogg' Filter = TSoundFilter_RadioVehicule ),
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'FR'
             TypeSpecific  = TAcknowUnitType_Reco
             Action        = TAcknowUnitAction_LoadIntoTransport
             Sounds        =

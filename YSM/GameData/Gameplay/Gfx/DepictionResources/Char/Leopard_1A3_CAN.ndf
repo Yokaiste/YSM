@@ -15,5 +15,5 @@ export Modele_Leopard_1A3_CAN_LOW is TResourceMesh
 
 export Modele_Leopard_1A3_CAN_Tourelle_02 is TResourceMesh
 (
-    Mesh=ModelFile_MG3_t2
+    Mesh=ModelFile_MAG_t2
 )

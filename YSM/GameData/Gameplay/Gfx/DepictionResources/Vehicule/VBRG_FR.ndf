@@ -1,0 +1,3 @@
+export Modele_VBRG_FR     is TResourceMesh( Mesh="GameData:/Assets/3D/Units/FR/Vehicule/VBRG/VBRG.fbx" )
+export Modele_VBRG_FR_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/FR/Vehicule/VBRG_MID/VBRG_MID.fbx" )
+export Modele_VBRG_FR_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/FR/Vehicule/VBRG_LOW/VBRG_LOW.fbx" )

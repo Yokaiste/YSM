@@ -2236,7 +2236,7 @@ export UnitEffect_Malus_ciblage_UAV is TEffectsPackDescriptor
         TUnitEffectBonusPrecisionWhenTargetedDescriptor
         (
             ModifierType       = ~/ModifierType_Pourcentage
-            BonusPrecisionWhenTargeted = -50
+            BonusPrecisionWhenTargeted = -40
         ),
         TUnitEffectRaiseTagDescriptor
         (

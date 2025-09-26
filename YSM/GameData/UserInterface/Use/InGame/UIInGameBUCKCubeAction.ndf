@@ -624,7 +624,7 @@ private PanelCubeAction_SmartOrders is BUCKListDescriptor
 )
 
 //-------------------------------------------------------------------------------------
-private UISpecificTacticCubeActionViewDescriptor is TUISpecificCubeActionViewDescriptor
+private UISpecificTacticCubeActionViewDescriptor is TUICommonCubeActionViewDescriptor
 (
     MainComponentDescriptor = ~/InGameCubeActionWargame
     MainComponentContainerUniqueName = "UISpecificTacticCubeActionViewMainContainer"

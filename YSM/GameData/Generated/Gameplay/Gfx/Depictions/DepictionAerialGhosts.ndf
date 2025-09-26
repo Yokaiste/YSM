@@ -1,2458 +1,2979 @@
 // Ne pas éditer, ce fichier est généré par DepictionAerialGhostsFileWriter
 
 
-GhostDepiction_A109BA_BEL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_A109BA_BEL
+    MimeticName = "A109BA_BEL"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_A109BA_TOW_BEL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_A109BA_TOW_BEL
+    MimeticName = "A109BA_TOW_BEL"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_A109BA_TOW_twin_BEL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_A109BA_TOW_twin_BEL
+    MimeticName = "A109BA_TOW_twin_BEL"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_A10_Thunderbolt_II_ATGM_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_A10_Thunderbolt_II_ATGM_US
+    MimeticName = "A10_Thunderbolt_II_ATGM_US"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_A10_Thunderbolt_II_Rkt_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_A10_Thunderbolt_II_Rkt_US
+    MimeticName = "A10_Thunderbolt_II_Rkt_US"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_A10_Thunderbolt_II_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_A10_Thunderbolt_II_US
+    MimeticName = "A10_Thunderbolt_II_US"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_A37B_Dragonfly_HE_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_A37B_Dragonfly_HE_US
+    MimeticName = "A37B_Dragonfly_HE_US"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_A37B_Dragonfly_NPLM_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_A37B_Dragonfly_NPLM_US
+    MimeticName = "A37B_Dragonfly_NPLM_US"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_A37B_Dragonfly_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_A37B_Dragonfly_US
+    MimeticName = "A37B_Dragonfly_US"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_A6E_Intruder_SEAD_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_A6E_Intruder_SEAD_US
+    MimeticName = "A6E_Intruder_SEAD_US"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_A6E_Intruder_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_A6E_Intruder_US
+    MimeticName = "A6E_Intruder_US"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_A7D_Corsair_II_AT_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_A7D_Corsair_II_AT_US
+    MimeticName = "A7D_Corsair_II_AT_US"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_A7D_Corsair_II_CLU_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_A7D_Corsair_II_CLU_US
+    MimeticName = "A7D_Corsair_II_CLU_US"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_A7D_Corsair_II_RKT_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_A7D_Corsair_II_RKT_US
+    MimeticName = "A7D_Corsair_II_RKT_US"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_A7D_Corsair_II_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_A7D_Corsair_II_US
+    MimeticName = "A7D_Corsair_II_US"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_AH1E_Cobra_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_AH1E_Cobra_US
+    MimeticName = "AH1E_Cobra_US"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_AH1F_ATAS_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_AH1F_ATAS_US
+    MimeticName = "AH1F_ATAS_US"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_AH1F_CNITE_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_AH1F_CNITE_US
+    MimeticName = "AH1F_CNITE_US"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_AH1F_Cobra_NG_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_AH1F_Cobra_NG_US
+    MimeticName = "AH1F_Cobra_NG_US"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_AH1F_Cobra_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_AH1F_Cobra_US
+    MimeticName = "AH1F_Cobra_US"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_AH1F_HeavyHog_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_AH1F_HeavyHog_US
+    MimeticName = "AH1F_HeavyHog_US"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_AH1F_Hog_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_AH1F_Hog_US
+    MimeticName = "AH1F_Hog_US"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_AH1S_Cobra_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_AH1S_Cobra_US
+    MimeticName = "AH1S_Cobra_US"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_AH64_Apache_ATAS_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_AH64_Apache_ATAS_US
+    MimeticName = "AH64_Apache_ATAS_US"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_AH64_Apache_NG_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_AH64_Apache_NG_US
+    MimeticName = "AH64_Apache_NG_US"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_AH64_Apache_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_AH64_Apache_US
+    MimeticName = "AH64_Apache_US"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_AH64_Apache_emp1_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_AH64_Apache_emp1_US
+    MimeticName = "AH64_Apache_emp1_US"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_AH64_Apache_emp2_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_AH64_Apache_emp2_US
+    MimeticName = "AH64_Apache_emp2_US"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_AH6C_Little_Bird_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_AH6C_Little_Bird_US
+    MimeticName = "AH6C_Little_Bird_US"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_AH6G_Little_Bird_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_AH6G_Little_Bird_US
+    MimeticName = "AH6G_Little_Bird_US"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Alouette_III_FR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Alouette_III_FR
+    MimeticName = "Alouette_III_FR"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Alouette_III_NL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Alouette_III_NL
+    MimeticName = "Alouette_III_NL"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Alouette_III_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Alouette_III_SOV
+    MimeticName = "Alouette_III_SOV"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Alouette_III_SS11_FR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Alouette_III_SS11_FR
+    MimeticName = "Alouette_III_SS11_FR"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Alouette_III_reco_FR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Alouette_III_reco_FR
+    MimeticName = "Alouette_III_reco_FR"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Alouette_III_trans_NL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Alouette_III_trans_NL
+    MimeticName = "Alouette_III_trans_NL"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Alouette_II_CMD_FR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Alouette_II_CMD_FR
+    MimeticName = "Alouette_II_CMD_FR"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Alouette_II_CMD_RFA is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Alouette_II_CMD_RFA
+    MimeticName = "Alouette_II_CMD_RFA"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Alouette_II_reco_BEL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Alouette_II_reco_BEL
+    MimeticName = "Alouette_II_reco_BEL"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Alouette_II_reco_RFA is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Alouette_II_reco_RFA
+    MimeticName = "Alouette_II_reco_RFA"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Alouette_II_trans_BEL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Alouette_II_trans_BEL
+    MimeticName = "Alouette_II_trans_BEL"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Alouette_II_trans_FR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Alouette_II_trans_FR
+    MimeticName = "Alouette_II_trans_FR"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Alpha_Jet_A_KWS_RFA is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Alpha_Jet_A_KWS_RFA
+    MimeticName = "Alpha_Jet_A_KWS_RFA"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Alpha_Jet_A_clu_RFA is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Alpha_Jet_A_clu_RFA
+    MimeticName = "Alpha_Jet_A_clu_RFA"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Alpha_Jet_A_he_RFA is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Alpha_Jet_A_he_RFA
+    MimeticName = "Alpha_Jet_A_he_RFA"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Alpha_Jet_A_nplm_RFA is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Alpha_Jet_A_nplm_RFA
+    MimeticName = "Alpha_Jet_A_nplm_RFA"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Alpha_Jet_A_rkt_RFA is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Alpha_Jet_A_rkt_RFA
+    MimeticName = "Alpha_Jet_A_rkt_RFA"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Alpha_Jet_BEL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Alpha_Jet_BEL
+    MimeticName = "Alpha_Jet_BEL"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Alpha_Jet_E_FR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
+(
+    Alternatives = Alternatives_Alpha_Jet_E_CLU_FR
+    MimeticName = "Alpha_Jet_E_CLU_FR"
+    Selector = SpecificAirplaneDepictionSelector
+)
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Alpha_Jet_E_FR
+    MimeticName = "Alpha_Jet_E_FR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Alpha_Jet_E_NPLM_FR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Alpha_Jet_E_NPLM_FR
+    MimeticName = "Alpha_Jet_E_NPLM_FR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Alpha_Jet_HE2_BEL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Alpha_Jet_HE2_BEL
+    MimeticName = "Alpha_Jet_HE2_BEL"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Bo_105_CB_20mm_ESP is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Bo_105_CB_20mm_ESP
+    MimeticName = "Bo_105_CB_20mm_ESP"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Bo_105_CB_ESP is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Bo_105_CB_ESP
+    MimeticName = "Bo_105_CB_ESP"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Bo_105_CB_NL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Bo_105_CB_NL
+    MimeticName = "Bo_105_CB_NL"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Bo_105_CMD_RFA is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Bo_105_CMD_RFA
+    MimeticName = "Bo_105_CMD_RFA"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Bo_105_Minigun_NL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Bo_105_Minigun_NL
+    MimeticName = "Bo_105_Minigun_NL"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Bo_105_PAH_1A1_RFA is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Bo_105_PAH_1A1_RFA
+    MimeticName = "Bo_105_PAH_1A1_RFA"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Bo_105_PAH_1_ESP is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Bo_105_PAH_1_ESP
+    MimeticName = "Bo_105_PAH_1_ESP"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Bo_105_PAH_1_RFA is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Bo_105_PAH_1_RFA
+    MimeticName = "Bo_105_PAH_1_RFA"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Bo_105_reco_RFA is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Bo_105_reco_RFA
+    MimeticName = "Bo_105_reco_RFA"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Bo_105_trans_RFA is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Bo_105_trans_RFA
+    MimeticName = "Bo_105_trans_RFA"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Buccaneer_S2B_ATGM_UK is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Buccaneer_S2B_ATGM_UK
+    MimeticName = "Buccaneer_S2B_ATGM_UK"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Buccaneer_S2B_GBU_UK is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Buccaneer_S2B_GBU_UK
+    MimeticName = "Buccaneer_S2B_GBU_UK"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Buccaneer_S2B_HE_UK is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Buccaneer_S2B_HE_UK
+    MimeticName = "Buccaneer_S2B_HE_UK"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Buccaneer_S2B_SEAD_UK is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Buccaneer_S2B_SEAD_UK
+    MimeticName = "Buccaneer_S2B_SEAD_UK"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_CH47D_Chinook_CAN is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_CH47D_Chinook_CAN
+    MimeticName = "CH47D_Chinook_CAN"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_CH47D_Chinook_supply_UK is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_CH47D_Chinook_supply_UK
+    MimeticName = "CH47D_Chinook_supply_UK"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_CH47_Chinook_UK is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_CH47_Chinook_UK
+    MimeticName = "CH47_Chinook_UK"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_CH47_Chinook_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_CH47_Chinook_US
+    MimeticName = "CH47_Chinook_US"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_CH47_Super_Chinook_ESP is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_CH47_Super_Chinook_ESP
+    MimeticName = "CH47_Super_Chinook_ESP"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_CH47_Super_Chinook_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_CH47_Super_Chinook_US
+    MimeticName = "CH47_Super_Chinook_US"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_CH53G_RFA is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_CH53G_RFA
+    MimeticName = "CH53G_RFA"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_CH53G_trans_RFA is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_CH53G_trans_RFA
+    MimeticName = "CH53G_trans_RFA"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_CH54B_Tarhe_supply_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_CH54B_Tarhe_supply_US
+    MimeticName = "CH54B_Tarhe_supply_US"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_CH54B_Tarhe_trans_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_CH54B_Tarhe_trans_US
+    MimeticName = "CH54B_Tarhe_trans_US"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_CL_289_RFA is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_CL_289_RFA
+    MimeticName = "CL_289_RFA"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_CL_89_CAN is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_CL_89_CAN
+    MimeticName = "CL_89_CAN"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_CL_89_FR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_CL_89_FR
+    MimeticName = "CL_89_FR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_CM170_Magister_BEL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_CM170_Magister_BEL
+    MimeticName = "CM170_Magister_BEL"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_CM170_Magister_FR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_CM170_Magister_FR
+    MimeticName = "CM170_Magister_FR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_CM170_Magister_SS11_FR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_CM170_Magister_SS11_FR
+    MimeticName = "CM170_Magister_SS11_FR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_EA6B_Prowler_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_EA6B_Prowler_US
+    MimeticName = "EA6B_Prowler_US"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_EF111_Raven_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_EF111_Raven_US
+    MimeticName = "EF111_Raven_US"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_EF_101B_Electric_Voodoo_CAN is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_EF_101B_Electric_Voodoo_CAN
+    MimeticName = "EF_101B_Electric_Voodoo_CAN"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_EH60A_EW_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_EH60A_EW_US
+    MimeticName = "EH60A_EW_US"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Ecureuil_20mm_FR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Ecureuil_20mm_FR
+    MimeticName = "Ecureuil_20mm_FR"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Ecureuil_reco_FR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Ecureuil_reco_FR
+    MimeticName = "Ecureuil_reco_FR"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Epervier_BEL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Epervier_BEL
+    MimeticName = "Epervier_BEL"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F104G_Starfighter_AT_RFA is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F104G_Starfighter_AT_RFA
+    MimeticName = "F104G_Starfighter_AT_RFA"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F104G_Starfighter_HE_RFA is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F104G_Starfighter_HE_RFA
+    MimeticName = "F104G_Starfighter_HE_RFA"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F104G_Starfighter_RFA is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F104G_Starfighter_RFA
+    MimeticName = "F104G_Starfighter_RFA"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F111E_Aardvark_CBU_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F111E_Aardvark_CBU_US
+    MimeticName = "F111E_Aardvark_CBU_US"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F111E_Aardvark_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F111E_Aardvark_US
+    MimeticName = "F111E_Aardvark_US"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F111E_Aardvark_napalm_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F111E_Aardvark_napalm_US
+    MimeticName = "F111E_Aardvark_napalm_US"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F111F_Aardvark_CBU_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F111F_Aardvark_CBU_US
+    MimeticName = "F111F_Aardvark_CBU_US"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F111F_Aardvark_LGB2_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F111F_Aardvark_LGB2_US
+    MimeticName = "F111F_Aardvark_LGB2_US"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F111F_Aardvark_LGB_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F111F_Aardvark_LGB_US
+    MimeticName = "F111F_Aardvark_LGB_US"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F111F_Aardvark_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F111F_Aardvark_US
+    MimeticName = "F111F_Aardvark_US"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F111F_Aardvark_napalm_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F111F_Aardvark_napalm_US
+    MimeticName = "F111F_Aardvark_napalm_US"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F117_Nighthawk_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F117_Nighthawk_US
+    MimeticName = "F117_Nighthawk_US"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F15C_Eagle_AA2_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F15C_Eagle_AA2_US
+    MimeticName = "F15C_Eagle_AA2_US"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F15C_Eagle_AA_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F15C_Eagle_AA_US
+    MimeticName = "F15C_Eagle_AA_US"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F15E_StrikeEagle_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F15E_StrikeEagle_US
+    MimeticName = "F15E_StrikeEagle_US"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F16A_AA2_NL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F16A_AA2_NL
+    MimeticName = "F16A_AA2_NL"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F16A_AA_BEL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F16A_AA_BEL
+    MimeticName = "F16A_AA_BEL"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F16A_AA_NL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F16A_AA_NL
+    MimeticName = "F16A_AA_NL"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F16A_CBU_BEL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F16A_CBU_BEL
+    MimeticName = "F16A_CBU_BEL"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F16A_CLU_NL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F16A_CLU_NL
+    MimeticName = "F16A_CLU_NL"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F16A_HE_NL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F16A_HE_NL
+    MimeticName = "F16A_HE_NL"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F16C_LGB_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F16C_LGB_US
+    MimeticName = "F16C_LGB_US"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F16E_AA2_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F16E_AA2_US
+    MimeticName = "F16E_AA2_US"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F16E_AA_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F16E_AA_US
+    MimeticName = "F16E_AA_US"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F16E_AGM_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F16E_AGM_US
+    MimeticName = "F16E_AGM_US"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F16E_CBU_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F16E_CBU_US
+    MimeticName = "F16E_CBU_US"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F16E_HE_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F16E_HE_US
+    MimeticName = "F16E_HE_US"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F16E_SEAD_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F16E_SEAD_US
+    MimeticName = "F16E_SEAD_US"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F16E_TER_CLU_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F16E_TER_CLU_US
+    MimeticName = "F16E_TER_CLU_US"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F16E_TER_HE_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F16E_TER_HE_US
+    MimeticName = "F16E_TER_HE_US"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F16E_napalm_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F16E_napalm_US
+    MimeticName = "F16E_napalm_US"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F18_Hornet_AA_CAN is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F18_Hornet_AA_CAN
+    MimeticName = "F18_Hornet_AA_CAN"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F18_Hornet_AA_ESP is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F18_Hornet_AA_ESP
+    MimeticName = "F18_Hornet_AA_ESP"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F18_Hornet_AT_ESP is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F18_Hornet_AT_ESP
+    MimeticName = "F18_Hornet_AT_ESP"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F18_Hornet_CLUS_CAN is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F18_Hornet_CLUS_CAN
+    MimeticName = "F18_Hornet_CLUS_CAN"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F18_Hornet_CRV7_CAN is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F18_Hornet_CRV7_CAN
+    MimeticName = "F18_Hornet_CRV7_CAN"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F18_Hornet_HE_CAN is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F18_Hornet_HE_CAN
+    MimeticName = "F18_Hornet_HE_CAN"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F4C_Phantom_II_CLU_ESP is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F4C_Phantom_II_CLU_ESP
+    MimeticName = "F4C_Phantom_II_CLU_ESP"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F4C_Phantom_II_ESP is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F4C_Phantom_II_ESP
+    MimeticName = "F4C_Phantom_II_ESP"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F4C_Phantom_II_HE_ESP is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F4C_Phantom_II_HE_ESP
+    MimeticName = "F4C_Phantom_II_HE_ESP"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F4C_Phantom_II_NPLM_ESP is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F4C_Phantom_II_NPLM_ESP
+    MimeticName = "F4C_Phantom_II_NPLM_ESP"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F4C_Phantom_II_RKT_ESP is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F4C_Phantom_II_RKT_ESP
+    MimeticName = "F4C_Phantom_II_RKT_ESP"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F4E_Phantom_II_AA_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F4E_Phantom_II_AA_US
+    MimeticName = "F4E_Phantom_II_AA_US"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F4E_Phantom_II_AT_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F4E_Phantom_II_AT_US
+    MimeticName = "F4E_Phantom_II_AT_US"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F4E_Phantom_II_CBU_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F4E_Phantom_II_CBU_US
+    MimeticName = "F4E_Phantom_II_CBU_US"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F4E_Phantom_II_HE_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F4E_Phantom_II_HE_US
+    MimeticName = "F4E_Phantom_II_HE_US"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F4E_Phantom_II_napalm_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F4E_Phantom_II_napalm_US
+    MimeticName = "F4E_Phantom_II_napalm_US"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F4F_Phantom_II_AA2_RFA is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F4F_Phantom_II_AA2_RFA
+    MimeticName = "F4F_Phantom_II_AA2_RFA"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F4F_Phantom_II_AA_RFA is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F4F_Phantom_II_AA_RFA
+    MimeticName = "F4F_Phantom_II_AA_RFA"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F4F_Phantom_II_AT_RFA is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F4F_Phantom_II_AT_RFA
+    MimeticName = "F4F_Phantom_II_AT_RFA"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F4F_Phantom_II_HE1_RFA is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F4F_Phantom_II_HE1_RFA
+    MimeticName = "F4F_Phantom_II_HE1_RFA"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F4F_Phantom_II_HE2_RFA is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F4F_Phantom_II_HE2_RFA
+    MimeticName = "F4F_Phantom_II_HE2_RFA"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F4F_Phantom_II_LGB_RFA is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F4F_Phantom_II_LGB_RFA
+    MimeticName = "F4F_Phantom_II_LGB_RFA"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F4F_Phantom_II_RKT1_RFA is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F4F_Phantom_II_RKT1_RFA
+    MimeticName = "F4F_Phantom_II_RKT1_RFA"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F4F_Phantom_II_RKT2_RFA is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F4F_Phantom_II_RKT2_RFA
+    MimeticName = "F4F_Phantom_II_RKT2_RFA"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F4_Phantom_AA_F3_UK is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F4_Phantom_AA_F3_UK
+    MimeticName = "F4_Phantom_AA_F3_UK"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F4_Phantom_GR2_HE_UK is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F4_Phantom_GR2_HE_UK
+    MimeticName = "F4_Phantom_GR2_HE_UK"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F4_Phantom_GR2_NPLM_UK is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F4_Phantom_GR2_NPLM_UK
+    MimeticName = "F4_Phantom_GR2_NPLM_UK"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F4_Phantom_GR2_UK is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F4_Phantom_GR2_UK
+    MimeticName = "F4_Phantom_GR2_UK"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F4_Wild_Weasel_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F4_Wild_Weasel_US
+    MimeticName = "F4_Wild_Weasel_US"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F5A_FreedomFighter_AA_NL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F5A_FreedomFighter_AA_NL
+    MimeticName = "F5A_FreedomFighter_AA_NL"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F5A_FreedomFighter_CAN is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F5A_FreedomFighter_CAN
+    MimeticName = "F5A_FreedomFighter_CAN"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F5A_FreedomFighter_CLU_CAN is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F5A_FreedomFighter_CLU_CAN
+    MimeticName = "F5A_FreedomFighter_CLU_CAN"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F5A_FreedomFighter_CLU_NL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F5A_FreedomFighter_CLU_NL
+    MimeticName = "F5A_FreedomFighter_CLU_NL"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F5A_FreedomFighter_NL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F5A_FreedomFighter_NL
+    MimeticName = "F5A_FreedomFighter_NL"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F5A_FreedomFighter_NPLM_NL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F5A_FreedomFighter_NPLM_NL
+    MimeticName = "F5A_FreedomFighter_NPLM_NL"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F5A_FreedomFighter_RKT_NL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F5A_FreedomFighter_RKT_NL
+    MimeticName = "F5A_FreedomFighter_RKT_NL"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F8P_Crusader_AA2_FR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F8P_Crusader_AA2_FR
+    MimeticName = "F8P_Crusader_AA2_FR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_F8P_Crusader_FR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_F8P_Crusader_FR
+    MimeticName = "F8P_Crusader_FR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_FA16_CAS_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_FA16_CAS_US
+    MimeticName = "FA16_CAS_US"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_G91_R3_Gina_HE_RFA is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_G91_R3_Gina_HE_RFA
+    MimeticName = "G91_R3_Gina_HE_RFA"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_G91_R3_Gina_NPL_RFA is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_G91_R3_Gina_NPL_RFA
+    MimeticName = "G91_R3_Gina_NPL_RFA"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_G91_R3_Gina_RKT_RFA is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_G91_R3_Gina_RKT_RFA
+    MimeticName = "G91_R3_Gina_RKT_RFA"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Gazelle_20mm_FR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Gazelle_20mm_FR
+    MimeticName = "Gazelle_20mm_FR"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Gazelle_20mm_reco_FR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Gazelle_20mm_reco_FR
+    MimeticName = "Gazelle_20mm_reco_FR"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Gazelle_CMD_FR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Gazelle_CMD_FR
+    MimeticName = "Gazelle_CMD_FR"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Gazelle_CMD_UK is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Gazelle_CMD_UK
+    MimeticName = "Gazelle_CMD_UK"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Gazelle_HOT_2_FR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Gazelle_HOT_2_FR
+    MimeticName = "Gazelle_HOT_2_FR"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Gazelle_HOT_FR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Gazelle_HOT_FR
+    MimeticName = "Gazelle_HOT_FR"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Gazelle_Mistral_FR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Gazelle_Mistral_FR
+    MimeticName = "Gazelle_Mistral_FR"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Gazelle_SNEB_UK is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Gazelle_SNEB_UK
+    MimeticName = "Gazelle_SNEB_UK"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Gazelle_SNEB_reco_UK is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Gazelle_SNEB_reco_UK
+    MimeticName = "Gazelle_SNEB_reco_UK"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Gazelle_UK is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Gazelle_UK
+    MimeticName = "Gazelle_UK"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Gazelle_reco_FR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Gazelle_reco_FR
+    MimeticName = "Gazelle_reco_FR"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Gazelle_trans_UK is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Gazelle_trans_UK
+    MimeticName = "Gazelle_trans_UK"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_HFB_320_ECM_RFA is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_HFB_320_ECM_RFA
+    MimeticName = "HFB_320_ECM_RFA"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Harrier_CLU_UK is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Harrier_CLU_UK
+    MimeticName = "Harrier_CLU_UK"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Harrier_GR5_UK is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Harrier_GR5_UK
+    MimeticName = "Harrier_GR5_UK"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Harrier_HE1_UK is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Harrier_HE1_UK
+    MimeticName = "Harrier_HE1_UK"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Harrier_HE2_UK is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Harrier_HE2_UK
+    MimeticName = "Harrier_HE2_UK"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Harrier_RKT1_UK is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Harrier_RKT1_UK
+    MimeticName = "Harrier_RKT1_UK"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Harrier_RKT2_UK is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Harrier_RKT2_UK
+    MimeticName = "Harrier_RKT2_UK"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Harrier_UK is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Harrier_UK
+    MimeticName = "Harrier_UK"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_JOH_58C_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_JOH_58C_US
+    MimeticName = "JOH_58C_US"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Jaguar_ATGM_FR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Jaguar_ATGM_FR
+    MimeticName = "Jaguar_ATGM_FR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Jaguar_CLU_UK is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Jaguar_CLU_UK
+    MimeticName = "Jaguar_CLU_UK"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Jaguar_HE1_UK is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Jaguar_HE1_UK
+    MimeticName = "Jaguar_HE1_UK"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Jaguar_HE2_UK is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Jaguar_HE2_UK
+    MimeticName = "Jaguar_HE2_UK"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Jaguar_HE_FR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Jaguar_HE_FR
+    MimeticName = "Jaguar_HE_FR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Jaguar_LGB_FR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Jaguar_LGB_FR
+    MimeticName = "Jaguar_LGB_FR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Jaguar_RKT2_FR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Jaguar_RKT2_FR
+    MimeticName = "Jaguar_RKT2_FR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Jaguar_RKT_FR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Jaguar_RKT_FR
+    MimeticName = "Jaguar_RKT_FR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Jaguar_RKT_UK is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Jaguar_RKT_UK
+    MimeticName = "Jaguar_RKT_UK"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Jaguar_SEAD2_FR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Jaguar_SEAD2_FR
+    MimeticName = "Jaguar_SEAD2_FR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Jaguar_SEAD_FR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Jaguar_SEAD_FR
+    MimeticName = "Jaguar_SEAD_FR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Jaguar_clu_FR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Jaguar_clu_FR
+    MimeticName = "Jaguar_clu_FR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Jaguar_nplm_FR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Jaguar_nplm_FR
+    MimeticName = "Jaguar_nplm_FR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Jaguar_overwing_UK is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Jaguar_overwing_UK
+    MimeticName = "Jaguar_overwing_UK"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Ka_50_AA_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Ka_50_AA_SOV
+    MimeticName = "Ka_50_AA_SOV"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Ka_50_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Ka_50_SOV
+    MimeticName = "Ka_50_SOV"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_L39ZA_TCH is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_L39ZA_TCH
+    MimeticName = "L39ZA_TCH"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_L39ZO_CLU_DDR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_L39ZO_CLU_DDR
+    MimeticName = "L39ZO_CLU_DDR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_L39ZO_DDR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_L39ZO_DDR
+    MimeticName = "L39ZO_DDR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_L39ZO_HE1_DDR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_L39ZO_HE1_DDR
+    MimeticName = "L39ZO_HE1_DDR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_L39ZO_HE1_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_L39ZO_HE1_SOV
+    MimeticName = "L39ZO_HE1_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_L39ZO_HE_TCH is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_L39ZO_HE_TCH
+    MimeticName = "L39ZO_HE_TCH"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_L39ZO_NPLM_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_L39ZO_NPLM_SOV
+    MimeticName = "L39ZO_NPLM_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_L39ZO_TCH is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_L39ZO_TCH
+    MimeticName = "L39ZO_TCH"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Lynx_AH_Mk1_LBH_UK is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Lynx_AH_Mk1_LBH_UK
+    MimeticName = "Lynx_AH_Mk1_LBH_UK"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Lynx_AH_Mk1_TOW_UK is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Lynx_AH_Mk1_TOW_UK
+    MimeticName = "Lynx_AH_Mk1_TOW_UK"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Lynx_AH_Mk1_UK is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Lynx_AH_Mk1_UK
+    MimeticName = "Lynx_AH_Mk1_UK"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Lynx_AH_Mk7_Chancellor_UK is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Lynx_AH_Mk7_Chancellor_UK
+    MimeticName = "Lynx_AH_Mk7_Chancellor_UK"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Lynx_AH_Mk7_I_TOW2_UK is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Lynx_AH_Mk7_I_TOW2_UK
+    MimeticName = "Lynx_AH_Mk7_I_TOW2_UK"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Lynx_AH_Mk7_I_TOW_UK is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Lynx_AH_Mk7_I_TOW_UK
+    MimeticName = "Lynx_AH_Mk7_I_TOW_UK"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Lynx_AH_Mk7_SNEB_UK is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Lynx_AH_Mk7_SNEB_UK
+    MimeticName = "Lynx_AH_Mk7_SNEB_UK"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_MH47D_Super_Chinook_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MH47D_Super_Chinook_US
+    MimeticName = "MH47D_Super_Chinook_US"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_MH_60A_DAP_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MH_60A_DAP_US
+    MimeticName = "MH_60A_DAP_US"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_MQM_105_Aquila_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MQM_105_Aquila_US
+    MimeticName = "MQM_105_Aquila_US"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_17PF_POL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_17PF_POL
+    MimeticName = "MiG_17PF_POL"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_21MA_TCH is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_21MA_TCH
+    MimeticName = "MiG_21MA_TCH"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_21PFM_AA_DDR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_21PFM_AA_DDR
+    MimeticName = "MiG_21PFM_AA_DDR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_21PFM_DDR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_21PFM_DDR
+    MimeticName = "MiG_21PFM_DDR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_21bis_AA2_DDR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_21bis_AA2_DDR
+    MimeticName = "MiG_21bis_AA2_DDR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_21bis_AA2_TCH is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_21bis_AA2_TCH
+    MimeticName = "MiG_21bis_AA2_TCH"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_21bis_AA3_DDR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_21bis_AA3_DDR
+    MimeticName = "MiG_21bis_AA3_DDR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_21bis_AA_POL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_21bis_AA_POL
+    MimeticName = "MiG_21bis_AA_POL"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_21bis_AA_TCH is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_21bis_AA_TCH
+    MimeticName = "MiG_21bis_AA_TCH"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_21bis_AT_POL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_21bis_AT_POL
+    MimeticName = "MiG_21bis_AT_POL"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_21bis_CLU_DDR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_21bis_CLU_DDR
+    MimeticName = "MiG_21bis_CLU_DDR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_21bis_CLU_TCH is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_21bis_CLU_TCH
+    MimeticName = "MiG_21bis_CLU_TCH"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_21bis_HE_DDR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_21bis_HE_DDR
+    MimeticName = "MiG_21bis_HE_DDR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_21bis_HE_POL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_21bis_HE_POL
+    MimeticName = "MiG_21bis_HE_POL"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_21bis_HE_TCH is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_21bis_HE_TCH
+    MimeticName = "MiG_21bis_HE_TCH"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_21bis_NPLM_DDR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_21bis_NPLM_DDR
+    MimeticName = "MiG_21bis_NPLM_DDR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_21bis_NPLM_TCH is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_21bis_NPLM_TCH
+    MimeticName = "MiG_21bis_NPLM_TCH"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_21bis_POL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_21bis_POL
+    MimeticName = "MiG_21bis_POL"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_21bis_RKT2_DDR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_21bis_RKT2_DDR
+    MimeticName = "MiG_21bis_RKT2_DDR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_21bis_RKT2_POL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_21bis_RKT2_POL
+    MimeticName = "MiG_21bis_RKT2_POL"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_21bis_RKT2_TCH is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_21bis_RKT2_TCH
+    MimeticName = "MiG_21bis_RKT2_TCH"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_23BN_AT2_DDR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_23BN_AT2_DDR
+    MimeticName = "MiG_23BN_AT2_DDR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_23BN_AT_DDR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_23BN_AT_DDR
+    MimeticName = "MiG_23BN_AT_DDR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_23BN_CLU_DDR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_23BN_CLU_DDR
+    MimeticName = "MiG_23BN_CLU_DDR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_23BN_CLU_TCH is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_23BN_CLU_TCH
+    MimeticName = "MiG_23BN_CLU_TCH"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_23BN_DDR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_23BN_DDR
+    MimeticName = "MiG_23BN_DDR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_23BN_KMGU_DDR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_23BN_KMGU_DDR
+    MimeticName = "MiG_23BN_KMGU_DDR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_23BN_RKT_DDR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_23BN_RKT_DDR
+    MimeticName = "MiG_23BN_RKT_DDR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_23BN_RKT_TCH is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_23BN_RKT_TCH
+    MimeticName = "MiG_23BN_RKT_TCH"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_23BN_TCH is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_23BN_TCH
+    MimeticName = "MiG_23BN_TCH"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_23BN_nplm_DDR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_23BN_nplm_DDR
+    MimeticName = "MiG_23BN_nplm_DDR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_23BN_nplm_TCH is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_23BN_nplm_TCH
+    MimeticName = "MiG_23BN_nplm_TCH"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_23MF_AA2_POL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_23MF_AA2_POL
+    MimeticName = "MiG_23MF_AA2_POL"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_23MF_AA_DDR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_23MF_AA_DDR
+    MimeticName = "MiG_23MF_AA_DDR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_23MF_AA_POL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_23MF_AA_POL
+    MimeticName = "MiG_23MF_AA_POL"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_23MF_DDR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_23MF_DDR
+    MimeticName = "MiG_23MF_DDR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_23MLA_AA_TCH is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
+(
+    Alternatives = Alternatives_MiG_23MLA_AA_SOV
+    MimeticName = "MiG_23MLA_AA_SOV"
+    Selector = SpecificAirplaneDepictionSelector
+)
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_23MLA_AA_TCH
+    MimeticName = "MiG_23MLA_AA_TCH"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_23MLD_AA1_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_23MLD_AA1_SOV
+    MimeticName = "MiG_23MLD_AA1_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_23MLD_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_23MLD_SOV
+    MimeticName = "MiG_23MLD_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_23ML_DDR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_23ML_DDR
+    MimeticName = "MiG_23ML_DDR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_23ML_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_23ML_SOV
+    MimeticName = "MiG_23ML_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_23P_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_23P_SOV
+    MimeticName = "MiG_23P_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_25BM_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_25BM_SOV
+    MimeticName = "MiG_25BM_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_25RBF_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_25RBF_SOV
+    MimeticName = "MiG_25RBF_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_27K_AT1_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_27K_AT1_SOV
+    MimeticName = "MiG_27K_AT1_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_27K_AT2_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_27K_AT2_SOV
+    MimeticName = "MiG_27K_AT2_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_27K_LGB_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_27K_LGB_SOV
+    MimeticName = "MiG_27K_LGB_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_27K_SEAD_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_27K_SEAD_SOV
+    MimeticName = "MiG_27K_SEAD_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_27M_CLU_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_27M_CLU_SOV
+    MimeticName = "MiG_27M_CLU_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_27M_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_27M_SOV
+    MimeticName = "MiG_27M_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_27M_bombe_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_27M_bombe_SOV
+    MimeticName = "MiG_27M_bombe_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_27M_napalm_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_27M_napalm_SOV
+    MimeticName = "MiG_27M_napalm_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_27M_rkt_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_27M_rkt_SOV
+    MimeticName = "MiG_27M_rkt_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_27M_sead_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_27M_sead_SOV
+    MimeticName = "MiG_27M_sead_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_29_AA2_POL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_29_AA2_POL
+    MimeticName = "MiG_29_AA2_POL"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_29_AA2_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_29_AA2_SOV
+    MimeticName = "MiG_29_AA2_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_29_AA3_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_29_AA3_SOV
+    MimeticName = "MiG_29_AA3_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_29_AA_DDR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_29_AA_DDR
+    MimeticName = "MiG_29_AA_DDR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_29_AA_POL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_29_AA_POL
+    MimeticName = "MiG_29_AA_POL"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_29_AA_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_29_AA_SOV
+    MimeticName = "MiG_29_AA_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_29_AA_TCH is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_29_AA_TCH
+    MimeticName = "MiG_29_AA_TCH"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_31M_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_31M_SOV
+    MimeticName = "MiG_31M_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_31_AA1_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_31_AA1_SOV
+    MimeticName = "MiG_31_AA1_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_MiG_31_AA2_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_31_AA2_SOV
+    MimeticName = "MiG_31_AA2_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Mi_14PL_AT_DDR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_14PL_AT_DDR
+    MimeticName = "Mi_14PL_AT_DDR"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_14PL_recon_DDR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_14PL_recon_DDR
+    MimeticName = "Mi_14PL_recon_DDR"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_24D_AA_DDR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_24D_AA_DDR
+    MimeticName = "Mi_24D_AA_DDR"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_24D_Desant_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_24D_Desant_SOV
+    MimeticName = "Mi_24D_Desant_SOV"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_24D_POL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_24D_POL
+    MimeticName = "Mi_24D_POL"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_24D_s5_AT_DDR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_24D_s5_AT_DDR
+    MimeticName = "Mi_24D_s5_AT_DDR"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_24D_s5_AT_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_24D_s5_AT_SOV
+    MimeticName = "Mi_24D_s5_AT_SOV"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_24D_s5_AT_TCH is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_24D_s5_AT_TCH
+    MimeticName = "Mi_24D_s5_AT_TCH"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_24D_s8_AT_DDR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_24D_s8_AT_DDR
+    MimeticName = "Mi_24D_s8_AT_DDR"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_24D_s8_AT_POL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_24D_s8_AT_POL
+    MimeticName = "Mi_24D_s8_AT_POL"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_24D_s8_AT_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_24D_s8_AT_SOV
+    MimeticName = "Mi_24D_s8_AT_SOV"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_24K_reco_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_24K_reco_SOV
+    MimeticName = "Mi_24K_reco_SOV"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_24P_AA_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_24P_AA_SOV
+    MimeticName = "Mi_24P_AA_SOV"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_24P_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_24P_SOV
+    MimeticName = "Mi_24P_SOV"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_24P_TCH is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_24P_TCH
+    MimeticName = "Mi_24P_TCH"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_24P_s8_AT2_DDR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_24P_s8_AT2_DDR
+    MimeticName = "Mi_24P_s8_AT2_DDR"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_24P_s8_AT_DDR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_24P_s8_AT_DDR
+    MimeticName = "Mi_24P_s8_AT_DDR"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_24VP_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_24VP_SOV
+    MimeticName = "Mi_24VP_SOV"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_24V_AA_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_24V_AA_SOV
+    MimeticName = "Mi_24V_AA_SOV"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_24V_AT_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_24V_AT_SOV
+    MimeticName = "Mi_24V_AT_SOV"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_24V_AT_TCH is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_24V_AT_TCH
+    MimeticName = "Mi_24V_AT_TCH"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_24V_POL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_24V_POL
+    MimeticName = "Mi_24V_POL"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_24V_RKT2_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_24V_RKT2_SOV
+    MimeticName = "Mi_24V_RKT2_SOV"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_24V_RKT2_TCH is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_24V_RKT2_TCH
+    MimeticName = "Mi_24V_RKT2_TCH"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_24V_RKT_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_24V_RKT_SOV
+    MimeticName = "Mi_24V_RKT_SOV"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_24V_RKT_TCH is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_24V_RKT_TCH
+    MimeticName = "Mi_24V_RKT_TCH"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_24V_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_24V_SOV
+    MimeticName = "Mi_24V_SOV"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_26_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_26_SOV
+    MimeticName = "Mi_26_SOV"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_2Ro_reco_POL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_2Ro_reco_POL
+    MimeticName = "Mi_2Ro_reco_POL"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_2_AA_POL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_2_AA_POL
+    MimeticName = "Mi_2_AA_POL"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_2_ATGM_POL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_2_ATGM_POL
+    MimeticName = "Mi_2_ATGM_POL"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_2_ATGM_TCH is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_2_ATGM_TCH
+    MimeticName = "Mi_2_ATGM_TCH"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_2_CMD_DDR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_2_CMD_DDR
+    MimeticName = "Mi_2_CMD_DDR"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_2_CMD_POL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_2_CMD_POL
+    MimeticName = "Mi_2_CMD_POL"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_2_gunship_DDR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_2_gunship_DDR
+    MimeticName = "Mi_2_gunship_DDR"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_2_gunship_POL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_2_gunship_POL
+    MimeticName = "Mi_2_gunship_POL"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_2_reco_DDR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_2_reco_DDR
+    MimeticName = "Mi_2_reco_DDR"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_2_reco_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_2_reco_SOV
+    MimeticName = "Mi_2_reco_SOV"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_2_reco_TCH is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_2_reco_TCH
+    MimeticName = "Mi_2_reco_TCH"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_2_rocket_DDR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_2_rocket_DDR
+    MimeticName = "Mi_2_rocket_DDR"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_2_rocket_POL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_2_rocket_POL
+    MimeticName = "Mi_2_rocket_POL"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_2_trans_DDR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_2_trans_DDR
+    MimeticName = "Mi_2_trans_DDR"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_2_trans_POL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_2_trans_POL
+    MimeticName = "Mi_2_trans_POL"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_2_trans_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_2_trans_SOV
+    MimeticName = "Mi_2_trans_SOV"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_2_trans_TCH is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_2_trans_TCH
+    MimeticName = "Mi_2_trans_TCH"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_4AV_130mm_TCH is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_4AV_130mm_TCH
+    MimeticName = "Mi_4AV_130mm_TCH"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_4AV_57mm_TCH is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_4AV_57mm_TCH
+    MimeticName = "Mi_4AV_57mm_TCH"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_4A_trans_TCH is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_4A_trans_TCH
+    MimeticName = "Mi_4A_trans_TCH"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_6_CMD_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_6_CMD_SOV
+    MimeticName = "Mi_6_CMD_SOV"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_6_POL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_6_POL
+    MimeticName = "Mi_6_POL"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_6_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_6_SOV
+    MimeticName = "Mi_6_SOV"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_8K_CMD_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_8K_CMD_SOV
+    MimeticName = "Mi_8K_CMD_SOV"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_8K_CMD_TCH is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_8K_CMD_TCH
+    MimeticName = "Mi_8K_CMD_TCH"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_8MTPI_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_8MTPI_SOV
+    MimeticName = "Mi_8MTPI_SOV"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_8MTV_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_8MTV_SOV
+    MimeticName = "Mi_8MTV_SOV"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_8MT_POL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_8MT_POL
+    MimeticName = "Mi_8MT_POL"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_8PPA_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_8PPA_SOV
+    MimeticName = "Mi_8PPA_SOV"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_8R_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_8R_SOV
+    MimeticName = "Mi_8R_SOV"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_8R_TCH is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_8R_TCH
+    MimeticName = "Mi_8R_TCH"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_8TB_DDR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_8TB_DDR
+    MimeticName = "Mi_8TB_DDR"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_8TB_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_8TB_SOV
+    MimeticName = "Mi_8TB_SOV"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_8TB_reco_Marine_DDR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_8TB_reco_Marine_DDR
+    MimeticName = "Mi_8TB_reco_Marine_DDR"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_8TV_DDR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_8TV_DDR
+    MimeticName = "Mi_8TV_DDR"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_8TV_Gunship_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_8TV_Gunship_SOV
+    MimeticName = "Mi_8TV_Gunship_SOV"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_8TV_PodGatling_DDR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_8TV_PodGatling_DDR
+    MimeticName = "Mi_8TV_PodGatling_DDR"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_8TV_PodGatling_PodAGL_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_8TV_PodGatling_PodAGL_SOV
+    MimeticName = "Mi_8TV_PodGatling_PodAGL_SOV"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_8TV_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_8TV_SOV
+    MimeticName = "Mi_8TV_SOV"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_8TV_TCH is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_8TV_TCH
+    MimeticName = "Mi_8TV_TCH"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_8TV_UPK_DDR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_8TV_UPK_DDR
+    MimeticName = "Mi_8TV_UPK_DDR"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_8TV_non_arme_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_8TV_non_arme_SOV
+    MimeticName = "Mi_8TV_non_arme_SOV"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_8TV_s57_16_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_8TV_s57_16_SOV
+    MimeticName = "Mi_8TV_s57_16_SOV"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_8TV_s57_16_TCH is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_8TV_s57_16_TCH
+    MimeticName = "Mi_8TV_s57_16_TCH"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_8TV_s57_32_DDR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_8TV_s57_32_DDR
+    MimeticName = "Mi_8TV_s57_32_DDR"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_8TV_s57_32_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_8TV_s57_32_SOV
+    MimeticName = "Mi_8TV_s57_32_SOV"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_8TV_s57_32_TCH is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_8TV_s57_32_TCH
+    MimeticName = "Mi_8TV_s57_32_TCH"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_8TV_s80_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_8TV_s80_SOV
+    MimeticName = "Mi_8TV_s80_SOV"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_8TV_s80_TCH is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_8TV_s80_TCH
+    MimeticName = "Mi_8TV_s80_TCH"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_8TZ_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_8TZ_SOV
+    MimeticName = "Mi_8TZ_SOV"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_8T_DDR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_8T_DDR
+    MimeticName = "Mi_8T_DDR"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_8T_POL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_8T_POL
+    MimeticName = "Mi_8T_POL"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_8T_non_arme_DDR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_8T_non_arme_DDR
+    MimeticName = "Mi_8T_non_arme_DDR"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_8T_non_arme_POL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_8T_non_arme_POL
+    MimeticName = "Mi_8T_non_arme_POL"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_8T_non_arme_TCH is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_8T_non_arme_TCH
+    MimeticName = "Mi_8T_non_arme_TCH"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_8Z2_TCH is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_8Z2_TCH
+    MimeticName = "Mi_8Z2_TCH"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_8_supply_DDR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_8_supply_DDR
+    MimeticName = "Mi_8_supply_DDR"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_8_supply_POL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_8_supply_POL
+    MimeticName = "Mi_8_supply_POL"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_8_supply_TCH is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_8_supply_TCH
+    MimeticName = "Mi_8_supply_TCH"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mi_9_DDR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mi_9_DDR
+    MimeticName = "Mi_9_DDR"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Mirage_2000_C_FR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mirage_2000_C_FR
+    MimeticName = "Mirage_2000_C_FR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Mirage_5_BA_BEL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
+(
+    Alternatives = Alternatives_Mirage_2000_C_RDM_AA1_FR
+    MimeticName = "Mirage_2000_C_RDM_AA1_FR"
+    Selector = SpecificAirplaneDepictionSelector
+)
+unnamed GhostAerialDepictionRegistration
+(
+    Alternatives = Alternatives_Mirage_2000_C_RDM_AA2_FR
+    MimeticName = "Mirage_2000_C_RDM_AA2_FR"
+    Selector = SpecificAirplaneDepictionSelector
+)
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mirage_5_BA_BEL
+    MimeticName = "Mirage_5_BA_BEL"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Mirage_5_BA_CLU_BEL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mirage_5_BA_CLU_BEL
+    MimeticName = "Mirage_5_BA_CLU_BEL"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Mirage_5_BA_MIRSIP_BEL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mirage_5_BA_MIRSIP_BEL
+    MimeticName = "Mirage_5_BA_MIRSIP_BEL"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Mirage_5_BA_NPLM_BEL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mirage_5_BA_NPLM_BEL
+    MimeticName = "Mirage_5_BA_NPLM_BEL"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Mirage_5_BA_RKT_BEL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mirage_5_BA_RKT_BEL
+    MimeticName = "Mirage_5_BA_RKT_BEL"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Mirage_5_F_FR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mirage_5_F_FR
+    MimeticName = "Mirage_5_F_FR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Mirage_5_F_clu_FR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mirage_5_F_clu_FR
+    MimeticName = "Mirage_5_F_clu_FR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Mirage_5_F_nplm_FR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mirage_5_F_nplm_FR
+    MimeticName = "Mirage_5_F_nplm_FR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Mirage_F1_CT_FR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mirage_F1_CT_FR
+    MimeticName = "Mirage_F1_CT_FR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Mirage_F1_C_FR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mirage_F1_C_FR
+    MimeticName = "Mirage_F1_C_FR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Mirage_III_E_FR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
+(
+    Alternatives = Alternatives_Mirage_III_E_ATGM_FR
+    MimeticName = "Mirage_III_E_ATGM_FR"
+    Selector = SpecificAirplaneDepictionSelector
+)
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mirage_III_E_FR
+    MimeticName = "Mirage_III_E_FR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Mirage_III_E_SEAD_FR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mirage_III_E_SEAD_FR
+    MimeticName = "Mirage_III_E_SEAD_FR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Mirage_IV_FR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mirage_IV_FR
+    MimeticName = "Mirage_IV_FR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Mirage_IV_SEAD_FR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Mirage_IV_SEAD_FR
+    MimeticName = "Mirage_IV_SEAD_FR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_OA10A_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_OA10A_US
+    MimeticName = "OA10A_US"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_OH58A_CAN is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_OH58A_CAN
+    MimeticName = "OH58A_CAN"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_OH58A_CMD_CAN is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_OH58A_CMD_CAN
+    MimeticName = "OH58A_CMD_CAN"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_OH58A_Gatling_CAN is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_OH58A_Gatling_CAN
+    MimeticName = "OH58A_Gatling_CAN"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_OH58A_reco_NG_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_OH58A_reco_NG_US
+    MimeticName = "OH58A_reco_NG_US"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_OH58A_trans_CAN is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_OH58A_trans_CAN
+    MimeticName = "OH58A_trans_CAN"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_OH58C_CMD_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_OH58C_CMD_US
+    MimeticName = "OH58C_CMD_US"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_OH58C_Scout_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_OH58C_Scout_US
+    MimeticName = "OH58C_Scout_US"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_OH58D_Combat_Scout_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_OH58D_Combat_Scout_US
+    MimeticName = "OH58D_Combat_Scout_US"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_OH58D_Kiowa_Warrior_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_OH58D_Kiowa_Warrior_US
+    MimeticName = "OH58D_Kiowa_Warrior_US"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_OH58_CS_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_OH58_CS_US
+    MimeticName = "OH58_CS_US"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Pchela_1T_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Pchela_1T_SOV
+    MimeticName = "Pchela_1T_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Puma_FR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Puma_FR
+    MimeticName = "Puma_FR"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Puma_HET_FR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Puma_HET_FR
+    MimeticName = "Puma_HET_FR"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Puma_Orchidee_FR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Puma_Orchidee_FR
+    MimeticName = "Puma_Orchidee_FR"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Puma_PC_FR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Puma_PC_FR
+    MimeticName = "Puma_PC_FR"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Puma_Pirate_FR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Puma_Pirate_FR
+    MimeticName = "Puma_Pirate_FR"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Puma_UK is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Puma_UK
+    MimeticName = "Puma_UK"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_SeaKing_Mk48_BEL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_SeaKing_Mk48_BEL
+    MimeticName = "SeaKing_Mk48_BEL"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_SilverStar_Mk3AT_RKT_CAN is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_SilverStar_Mk3AT_RKT_CAN
+    MimeticName = "SilverStar_Mk3AT_RKT_CAN"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Su_15TM_AA2_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_15TM_AA2_SOV
+    MimeticName = "Su_15TM_AA2_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Su_15TM_AA_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_15TM_AA_SOV
+    MimeticName = "Su_15TM_AA_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Su_17M4_HE1_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_17M4_HE1_SOV
+    MimeticName = "Su_17M4_HE1_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Su_17M4_HE2_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_17M4_HE2_SOV
+    MimeticName = "Su_17M4_HE2_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Su_17M4_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_17M4_SOV
+    MimeticName = "Su_17M4_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Su_17M4_thermo_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_17M4_thermo_SOV
+    MimeticName = "Su_17M4_thermo_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Su_17_cluster_POL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_17_cluster_POL
+    MimeticName = "Su_17_cluster_POL"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Su_22_AT2_DDR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_22_AT2_DDR
+    MimeticName = "Su_22_AT2_DDR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Su_22_AT_DDR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_22_AT_DDR
+    MimeticName = "Su_22_AT_DDR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Su_22_AT_POL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_22_AT_POL
+    MimeticName = "Su_22_AT_POL"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Su_22_AT_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_22_AT_SOV
+    MimeticName = "Su_22_AT_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Su_22_AT_TCH is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_22_AT_TCH
+    MimeticName = "Su_22_AT_TCH"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Su_22_DDR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_22_DDR
+    MimeticName = "Su_22_DDR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Su_22_HE2_DDR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_22_HE2_DDR
+    MimeticName = "Su_22_HE2_DDR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Su_22_POL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_22_POL
+    MimeticName = "Su_22_POL"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Su_22_RKT2_POL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_22_RKT2_POL
+    MimeticName = "Su_22_RKT2_POL"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Su_22_RKT2_TCH is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_22_RKT2_TCH
+    MimeticName = "Su_22_RKT2_TCH"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Su_22_RKT_DDR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_22_RKT_DDR
+    MimeticName = "Su_22_RKT_DDR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Su_22_RKT_POL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_22_RKT_POL
+    MimeticName = "Su_22_RKT_POL"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Su_22_SEAD_DDR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_22_SEAD_DDR
+    MimeticName = "Su_22_SEAD_DDR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Su_22_SEAD_POL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_22_SEAD_POL
+    MimeticName = "Su_22_SEAD_POL"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Su_22_SEAD_TCH is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_22_SEAD_TCH
+    MimeticName = "Su_22_SEAD_TCH"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Su_22_UPK_DDR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_22_UPK_DDR
+    MimeticName = "Su_22_UPK_DDR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Su_22_clu_DDR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_22_clu_DDR
+    MimeticName = "Su_22_clu_DDR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Su_22_clu_POL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_22_clu_POL
+    MimeticName = "Su_22_clu_POL"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Su_22_nplm_DDR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_22_nplm_DDR
+    MimeticName = "Su_22_nplm_DDR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Su_22_nplm_POL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_22_nplm_POL
+    MimeticName = "Su_22_nplm_POL"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Su_24MP_EW_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_24MP_EW_SOV
+    MimeticName = "Su_24MP_EW_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Su_24MP_SEAD2_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_24MP_SEAD2_SOV
+    MimeticName = "Su_24MP_SEAD2_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Su_24MP_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_24MP_SOV
+    MimeticName = "Su_24MP_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Su_24M_AT1_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_24M_AT1_SOV
+    MimeticName = "Su_24M_AT1_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Su_24M_AT2_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_24M_AT2_SOV
+    MimeticName = "Su_24M_AT2_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Su_24M_LGB2_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_24M_LGB2_SOV
+    MimeticName = "Su_24M_LGB2_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Su_24M_LGB_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_24M_LGB_SOV
+    MimeticName = "Su_24M_LGB_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Su_24M_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_24M_SOV
+    MimeticName = "Su_24M_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Su_24M_clu2_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_24M_clu2_SOV
+    MimeticName = "Su_24M_clu2_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Su_24M_clu_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_24M_clu_SOV
+    MimeticName = "Su_24M_clu_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Su_24M_nplm_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_24M_nplm_SOV
+    MimeticName = "Su_24M_nplm_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Su_24M_thermo_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_24M_thermo_SOV
+    MimeticName = "Su_24M_thermo_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Su_25T_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_25T_SOV
+    MimeticName = "Su_25T_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Su_25_CLU_TCH is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_25_CLU_TCH
+    MimeticName = "Su_25_CLU_TCH"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Su_25_HE_TCH is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_25_HE_TCH
+    MimeticName = "Su_25_HE_TCH"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Su_25_NPLM_TCH is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_25_NPLM_TCH
+    MimeticName = "Su_25_NPLM_TCH"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Su_25_RKT_TCH is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_25_RKT_TCH
+    MimeticName = "Su_25_RKT_TCH"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Su_25_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_25_SOV
+    MimeticName = "Su_25_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Su_25_TCH is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_25_TCH
+    MimeticName = "Su_25_TCH"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Su_25_clu_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_25_clu_SOV
+    MimeticName = "Su_25_clu_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Su_25_he_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_25_he_SOV
+    MimeticName = "Su_25_he_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Su_25_nplm_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_25_nplm_SOV
+    MimeticName = "Su_25_nplm_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Su_25_rkt2_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_25_rkt2_SOV
+    MimeticName = "Su_25_rkt2_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Su_25_rkt_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_25_rkt_SOV
+    MimeticName = "Su_25_rkt_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Su_27K_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_27K_SOV
+    MimeticName = "Su_27K_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Su_27S_SOV is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_27S_SOV
+    MimeticName = "Su_27S_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Super_Etendard_AT_FR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Super_Etendard_AT_FR
+    MimeticName = "Super_Etendard_AT_FR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Super_Etendard_CLU_FR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Super_Etendard_CLU_FR
+    MimeticName = "Super_Etendard_CLU_FR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Super_Etendard_FR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Super_Etendard_FR
+    MimeticName = "Super_Etendard_FR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Super_Etendard_HE_FR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Super_Etendard_HE_FR
+    MimeticName = "Super_Etendard_HE_FR"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Super_Puma_FR is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Super_Puma_FR
+    MimeticName = "Super_Puma_FR"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Tornado_ADV_HE_UK is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Tornado_ADV_HE_UK
+    MimeticName = "Tornado_ADV_HE_UK"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Tornado_ADV_SEAD_UK is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Tornado_ADV_SEAD_UK
+    MimeticName = "Tornado_ADV_SEAD_UK"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Tornado_ADV_UK is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Tornado_ADV_UK
+    MimeticName = "Tornado_ADV_UK"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Tornado_ADV_clu_UK is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Tornado_ADV_clu_UK
+    MimeticName = "Tornado_ADV_clu_UK"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Tornado_IDS_AT1_RFA is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Tornado_IDS_AT1_RFA
+    MimeticName = "Tornado_IDS_AT1_RFA"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Tornado_IDS_CLUS_RFA is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Tornado_IDS_CLUS_RFA
+    MimeticName = "Tornado_IDS_CLUS_RFA"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Tornado_IDS_HE1_RFA is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Tornado_IDS_HE1_RFA
+    MimeticName = "Tornado_IDS_HE1_RFA"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Tornado_IDS_MW1_RFA is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Tornado_IDS_MW1_RFA
+    MimeticName = "Tornado_IDS_MW1_RFA"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Tornado_IDS_RFA is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Tornado_IDS_RFA
+    MimeticName = "Tornado_IDS_RFA"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Tornado_IDS_SEAD_RFA is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Tornado_IDS_SEAD_RFA
+    MimeticName = "Tornado_IDS_SEAD_RFA"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_Tu_143_TCH is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Tu_143_TCH
+    MimeticName = "Tu_143_TCH"
     Selector = SpecificAirplaneDepictionSelector
 )
-GhostDepiction_UH1A_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_UH1A_US
+    MimeticName = "UH1A_US"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_UH1D_NL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_UH1D_NL
+    MimeticName = "UH1D_NL"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_UH1D_RFA is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_UH1D_RFA
+    MimeticName = "UH1D_RFA"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_UH1D_Supply_RFA is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_UH1D_Supply_RFA
+    MimeticName = "UH1D_Supply_RFA"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_UH1H_CMD_ESP is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_UH1H_CMD_ESP
+    MimeticName = "UH1H_CMD_ESP"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_UH1H_ESP is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_UH1H_ESP
+    MimeticName = "UH1H_ESP"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_UH1H_Huey_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_UH1H_Huey_US
+    MimeticName = "UH1H_Huey_US"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_UH1H_supply_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_UH1H_supply_US
+    MimeticName = "UH1H_supply_US"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_UH1M_gunship_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_UH1M_gunship_US
+    MimeticName = "UH1M_gunship_US"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_UH1N_TwinHuey_CAN is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_UH1N_TwinHuey_CAN
+    MimeticName = "UH1N_TwinHuey_CAN"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_UH1N_TwinHuey_CRV7_CAN is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_UH1N_TwinHuey_CRV7_CAN
+    MimeticName = "UH1N_TwinHuey_CRV7_CAN"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_UH60A_Black_Hawk_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_UH60A_Black_Hawk_US
+    MimeticName = "UH60A_Black_Hawk_US"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_UH60A_CO_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_UH60A_CO_US
+    MimeticName = "UH60A_CO_US"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_UH60A_Supply_US is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_UH60A_Supply_US
+    MimeticName = "UH60A_Supply_US"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_W3RR_Procjon_POL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_W3RR_Procjon_POL
+    MimeticName = "W3RR_Procjon_POL"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_W3W_Sokol_AA_POL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_W3W_Sokol_AA_POL
+    MimeticName = "W3W_Sokol_AA_POL"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_W3W_Sokol_RKT_POL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_W3W_Sokol_RKT_POL
+    MimeticName = "W3W_Sokol_RKT_POL"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_W3_Sokol_POL is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_W3_Sokol_POL
+    MimeticName = "W3_Sokol_POL"
     Selector = SpecificHelicoDepictionSelector
 )
-GhostDepiction_Westland_Scout_SS11_UK is GhostAerialDepictionDesc
+unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Westland_Scout_SS11_UK
+    MimeticName = "Westland_Scout_SS11_UK"
     Selector = SpecificHelicoDepictionSelector
 )

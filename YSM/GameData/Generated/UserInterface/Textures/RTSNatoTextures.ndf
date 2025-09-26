@@ -220,6 +220,16 @@ Texture_RTS_H_RECO_inf_sf is TUIResourceTexture_Common
     FileName      = 'GameData:/Assets/2D/Interface/UseInGame/LabelIcons/RTS/RECO_inf_sf.png'
 )
 
+Texture_transport_small is TUIResourceTexture_Common
+(
+    FileName      = 'GameData:/Assets/2D/Interface/UseInGame/LabelIcons/NATO/transport_small.png'
+)
+
+Texture_RTS_H_transport_small is TUIResourceTexture_Common
+(
+    FileName      = 'GameData:/Assets/2D/Interface/UseInGame/LabelIcons/RTS/transport_small.png'
+)
+
 Texture_transport_noweapon is TUIResourceTexture_Common
 (
     FileName      = 'GameData:/Assets/2D/Interface/UseInGame/LabelIcons/NATO/transport_noweapon.png'
@@ -238,16 +248,6 @@ Texture_mlrs is TUIResourceTexture_Common
 Texture_RTS_H_mlrs is TUIResourceTexture_Common
 (
     FileName      = 'GameData:/Assets/2D/Interface/UseInGame/LabelIcons/RTS/mlrs.png'
-)
-
-Texture_transport_small is TUIResourceTexture_Common
-(
-    FileName      = 'GameData:/Assets/2D/Interface/UseInGame/LabelIcons/NATO/transport_small.png'
-)
-
-Texture_RTS_H_transport_small is TUIResourceTexture_Common
-(
-    FileName      = 'GameData:/Assets/2D/Interface/UseInGame/LabelIcons/RTS/transport_small.png'
 )
 
 Texture_RTS_H_Armor_heavy is TUIResourceTexture_Common
@@ -479,12 +479,12 @@ NATORTSAdditionalTextureBank is TBUCKToolAdditionalTextureBank
         ("Texture_RTS_H_RECO_inf", MAP [(~/ComponentState/Normal, ~/Texture_RTS_H_RECO_inf)]),
         ("Texture_sf", MAP [(~/ComponentState/Normal, ~/Texture_sf)]),
         ("Texture_RTS_H_RECO_inf_sf", MAP [(~/ComponentState/Normal, ~/Texture_RTS_H_RECO_inf_sf)]),
+        ("Texture_transport_small", MAP [(~/ComponentState/Normal, ~/Texture_transport_small)]),
+        ("Texture_RTS_H_transport_small", MAP [(~/ComponentState/Normal, ~/Texture_RTS_H_transport_small)]),
         ("Texture_transport_noweapon", MAP [(~/ComponentState/Normal, ~/Texture_transport_noweapon)]),
         ("Texture_RTS_H_transport_noweapon", MAP [(~/ComponentState/Normal, ~/Texture_RTS_H_transport_noweapon)]),
         ("Texture_mlrs", MAP [(~/ComponentState/Normal, ~/Texture_mlrs)]),
         ("Texture_RTS_H_mlrs", MAP [(~/ComponentState/Normal, ~/Texture_RTS_H_mlrs)]),
-        ("Texture_transport_small", MAP [(~/ComponentState/Normal, ~/Texture_transport_small)]),
-        ("Texture_RTS_H_transport_small", MAP [(~/ComponentState/Normal, ~/Texture_RTS_H_transport_small)]),
         ("Texture_RTS_H_Armor_heavy", MAP [(~/ComponentState/Normal, ~/Texture_RTS_H_Armor_heavy)]),
         ("Texture_RTS_H_CMD_inf_sf", MAP [(~/ComponentState/Normal, ~/Texture_RTS_H_CMD_inf_sf)]),
         ("Texture_RTS_H_Infantry_sf", MAP [(~/ComponentState/Normal, ~/Texture_RTS_H_Infantry_sf)]),

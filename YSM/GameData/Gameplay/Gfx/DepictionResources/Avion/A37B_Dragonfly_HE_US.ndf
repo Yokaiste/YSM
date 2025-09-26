@@ -16,6 +16,7 @@ export Modele_A37B_Dragonfly_HE_US_LOW is TResourceMesh
     Mesh=ModelFile_A37B_Dragonfly_US_LOW
 )
 
+export ModelFile_A37B_Dragonfly_US_train is 'GameData:/Assets/3D/Units/US/Avion/A37B_Dragonfly_Reco/A37B_Dragonfly_train.fbx'
 export Modele_A37B_Dragonfly_HE_US_train is TResourceMesh
 (
     Mesh=ModelFile_A37B_Dragonfly_US_train

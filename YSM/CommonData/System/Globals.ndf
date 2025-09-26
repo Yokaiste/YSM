@@ -303,7 +303,6 @@ CommandName is TBaseClass
 (
     GameApplicationResetMode      is "GameApplication::ChangeModeUsingDefaultValue"
     GameApplicationToggle         is "GameApplicationToggler::Toggle"
-    GameApplicationPerformPendingToggle is 'GameApplicationToggler::PerformPendingToggle'
     ResetDeviceType is 'TClusterInitGameApplication::ResetDeviceType'
     GraphicsModeRefresh             is "GraphicDependentObjectHandler::GraphicsModeRefreshCallback"
     IncGraphicsDeviceVariability    is "IncGraphicsDeviceVariability"

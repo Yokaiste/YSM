@@ -147,9 +147,7 @@ private StrategicBottomScreen is BUCKListDescriptor
 
 private StrategicMainContainerResource is TUICommonMainContainerResource
 (
-    ContentRefSize = [ 2134 , 1440 ]
-    SafeBoxMin     = [  107 ,   80 ]
-    SafeBoxSize    = ~/FullScreenSafeBoxSize
+    SafeBoxSize    = [ 1920 , 1080 ]
 
     ForegroundComponents = BUCKContainerDescriptor
     (
@@ -405,7 +403,7 @@ private StrategicOrderDisplayDrawer is TStrategicOrderDisplayDrawer
 
                     //-------------------------------------------------------------------------------------
 
-private UISpecificStrategicCubeActionViewDescriptor is TUISpecificCubeActionViewDescriptor
+private UISpecificStrategicCubeActionViewDescriptor is TUICommonCubeActionViewDescriptor
 (
     MainComponentDescriptor = ~/StrategicCubeAction
     MainComponentContainerUniqueName = "SpecificStrategicCubeActionViewMainContainer"

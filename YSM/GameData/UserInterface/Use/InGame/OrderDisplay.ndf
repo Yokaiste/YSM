@@ -60,7 +60,7 @@ export OrderDisplayDrawer is TOrderDisplayDrawer
 //------------------------------------------------------------------------------
 export OrderDisplayNotFound is TOrderDisplayDrawInfo
 (
-    OrderToken                  = ""
+    OrderType                   = EOrderType/None
     ColorLineStart              = [127, 0, 255, 50]
     ColorLineEnd                = [127, 0, 255, alpha]
     MaxDistanceBetweenColorsGRU = MaxMeter
@@ -73,7 +73,7 @@ export OrderDisplayNotFound is TOrderDisplayDrawInfo
 
 export OrderDisplaySell is TOrderDisplayDrawInfo
 (
-    OrderToken                  = "Sell"
+    OrderType                   = EOrderType/Sell
     ColorLineStart              = [240, 0, 0, 50]
     ColorLineEnd                = [240, 0, 0, alpha]
     MaxDistanceBetweenColorsGRU = MaxMeter
@@ -88,7 +88,7 @@ export OrderDisplaySell is TOrderDisplayDrawInfo
 
 export OrderDisplayMove is TOrderDisplayDrawInfo
 (
-    OrderToken                  = "Move"
+    OrderType                   = EOrderType/Move
     ColorLineStart              = [128, 187, 255, 50]
     ColorLineEnd                = [128, 187, 255, alpha] //Light blue
     MaxDistanceBetweenColorsGRU = MaxMeter
@@ -108,7 +108,7 @@ export OrderDisplayMove is TOrderDisplayDrawInfo
 
 export OrderDisplayFollow is TOrderDisplayDrawInfo
 (
-    OrderToken                  = "FollowUnit"
+    OrderType                   = EOrderType/FollowUnit
     ColorLineStart              = [128, 187, 255, 50]
     ColorLineEnd                = [128, 187, 255, alpha] //Light blue
     MaxDistanceBetweenColorsGRU = MaxMeter
@@ -128,7 +128,7 @@ export OrderDisplayFollow is TOrderDisplayDrawInfo
 
 export OrderDisplayAirplanePatrol is TOrderDisplayDrawInfo
 (
-    OrderToken                  = "AirplanePatrol"
+    OrderType                   = EOrderType/AirplanePatrol
     ColorLineStart              = [128, 187, 255, 50]
     ColorLineEnd                = [128, 187, 255, alpha] //Light blue
     MaxDistanceBetweenColorsGRU = MaxMeter
@@ -148,7 +148,7 @@ export OrderDisplayAirplanePatrol is TOrderDisplayDrawInfo
 
 export OrderDisplayAirplaneMoveAndEngage is TOrderDisplayDrawInfo
 (
-    OrderToken                  = "AirplaneMoveAndEngage"
+    OrderType                   = EOrderType/AirplaneMoveAndEngage
     ColorLineStart              = [128, 187, 255, 0]
     ColorLineEnd                = [128, 187, 255, alpha] //Light blue
     MaxDistanceBetweenColorsGRU = 0
@@ -161,7 +161,7 @@ export OrderDisplayAirplaneMoveAndEngage is TOrderDisplayDrawInfo
 
 export OrderDisplayQuickMove is TOrderDisplayDrawInfo //Move Fast
 (
-    OrderToken                  = "QuickMove"
+    OrderType                   = EOrderType/QuickMove
     ColorLineStart              = [0, 119, 255, 50]
     ColorLineEnd                = [0, 119, 255, alpha] //Dark blue
     MaxDistanceBetweenColorsGRU = MaxMeter
@@ -174,7 +174,7 @@ export OrderDisplayQuickMove is TOrderDisplayDrawInfo //Move Fast
 
 export OrderDisplayReverse is TOrderDisplayDrawInfo //Reverse
 (
-    OrderToken                  = "Reverse"
+    OrderType                   = EOrderType/Reverse
     ColorLineStart              = [204, 228, 255, 50]
     ColorLineEnd                = [204, 228, 255, alpha] //Very light blue
     MaxDistanceBetweenColorsGRU = MaxMeter
@@ -192,7 +192,7 @@ export OrderDisplayReverse is TOrderDisplayDrawInfo //Reverse
 
 export OrderDisplayAirplaneEvacuate is TOrderDisplayDrawInfo
 (
-    OrderToken                  = "AirplaneEvacuate"
+    OrderType                   = EOrderType/AirplaneEvacuate
     LineThickness               = 2000.0
     ColorCircleDestination      = [255, 204, 0, alpha] //Gold
     CircleDestinationThickness  = 1000.0
@@ -207,7 +207,7 @@ export OrderDisplayAirplaneEvacuate is TOrderDisplayDrawInfo
 
 export OrderDisplayMoveAndAttack is TOrderDisplayDrawInfo //Hunt
 (
-    OrderToken                  = "MoveAndAttack"
+    OrderType                   = EOrderType/MoveAndAttack
     ColorLineStart              = [255, 153, 51, 50]
     ColorLineEnd                = [255, 153, 51, alpha] //Orange
     MaxDistanceBetweenColorsGRU = MaxMeter
@@ -232,7 +232,7 @@ export OrderDisplayMoveAndAttack is TOrderDisplayDrawInfo //Hunt
 
 export OrderDisplayEnterDistrict is TOrderDisplayDrawInfo //Move on a district
 (
-    OrderToken                  = "EnterDistrict"
+    OrderType                   = EOrderType/EnterDistrict
     ColorLineStart              = [128, 187, 255, 50]
     ColorLineEnd                = [128, 187, 255, alpha] //Light blue
     MaxDistanceBetweenColorsGRU = MaxMeter
@@ -245,7 +245,7 @@ export OrderDisplayEnterDistrict is TOrderDisplayDrawInfo //Move on a district
 
 export OrderDisplayFastMoveAndAttack is TOrderDisplayDrawInfo //Quick Hunt
 (
-    OrderToken                  = "FastMoveAndAttack"
+    OrderType                   = EOrderType/FastMoveAndAttack
     ColorLineStart              = [255, 102, 0, 50]
     ColorLineEnd                = [255, 102, 0, alpha] //Dark Orange
     MaxDistanceBetweenColorsGRU = MaxMeter
@@ -265,7 +265,7 @@ export OrderDisplayFastMoveAndAttack is TOrderDisplayDrawInfo //Quick Hunt
 
 export OrderDisplayAttack is TOrderDisplayDrawInfo
 (
-    OrderToken                  = "Attack"
+    OrderType                   = EOrderType/Attack
     ColorLineStart              = [240, 0, 0, 50]
     ColorLineEnd                = [240, 0, 0, alpha] //Red
     MaxDistanceBetweenColorsGRU = MaxMeter
@@ -282,7 +282,7 @@ export OrderDisplayAttack is TOrderDisplayDrawInfo
 
 export OrderDisplayAssaultDistrict is TOrderDisplayDrawInfo
 (
-    OrderToken                  = "AssaultDistrict"
+    OrderType                   = EOrderType/AssaultDistrict
     ColorLineStart              = [240, 0, 0, 50]
     ColorLineEnd                = [240, 0, 0, alpha] //Red
     MaxDistanceBetweenColorsGRU = MaxMeter
@@ -295,7 +295,7 @@ export OrderDisplayAssaultDistrict is TOrderDisplayDrawInfo
 
 export OrderDisplayAirplaneAttack is TOrderDisplayDrawInfo
 (
-    OrderToken                  = "AirplaneAttack"
+    OrderType                   = EOrderType/AirplaneAttack
     ColorLineStart              = [240, 0, 0, 0]
     ColorLineEnd                = [240, 0, 0, alpha] //Red
     MaxDistanceBetweenColorsGRU = 0
@@ -312,7 +312,7 @@ export OrderDisplayAirplaneAttack is TOrderDisplayDrawInfo
 
 export OrderDisplayShoot is TOrderDisplayDrawInfo //Fire Pos Direct Fire
 (
-    OrderToken                  = "Shoot"
+    OrderType                   = EOrderType/Shoot
     ColorLineStart              = [240, 0, 0, 50]
     ColorLineEnd                = [240, 0, 0, alpha] //Red
     MaxDistanceBetweenColorsGRU = MaxMeter
@@ -329,7 +329,7 @@ export OrderDisplayShoot is TOrderDisplayDrawInfo //Fire Pos Direct Fire
 
 export OrderDisplayShootOnPosition is TOrderDisplayDrawInfo //Fire Pos Indirect Fire
 (
-    OrderToken                  = "ShootOnPosition"
+    OrderType                   = EOrderType/ShootOnPosition
     ColorLineStart              = [240, 0, 0, 0]
     ColorLineEnd                = [240, 0, 0, alpha]
     MaxDistanceBetweenColorsGRU = MaxMeter
@@ -346,7 +346,7 @@ export OrderDisplayShootOnPosition is TOrderDisplayDrawInfo //Fire Pos Indirect 
 
 export OrderDisplayShootOnPositionSmoke is TOrderDisplayDrawInfo //Fire Pos Indirect Fire
 (
-    OrderToken                  = "ShootOnPositionSmoke"
+    OrderType                   = EOrderType/ShootOnPositionSmoke
     ColorLineStart              = [255, 255, 255, 50]
     ColorLineEnd                = [255, 255, 255, alpha]
     MaxDistanceBetweenColorsGRU = MaxMeter
@@ -363,8 +363,7 @@ export OrderDisplayShootOnPositionSmoke is TOrderDisplayDrawInfo //Fire Pos Indi
 
 export OrderDisplayShootDefensiveSmoke is TOrderDisplayDrawInfo //Fire Pos Indirect Fire
 (
-    OrderToken                  = "ShootDefensiveSmoke"
-
+    OrderType                   = EOrderType/ShootDefensiveSmoke
     LineThickness               = 2000.0
     ColorCircleDestination      = [255, 255, 255, 200]
     CircleDestinationThickness  = 1000.0
@@ -378,7 +377,7 @@ export OrderDisplayShootDefensiveSmoke is TOrderDisplayDrawInfo //Fire Pos Indir
 
 export OrderDisplayAirplaneShoot is TOrderDisplayDrawInfo //Fire Pos Direct Fire
 (
-    OrderToken                  = "AirplaneShoot"
+    OrderType                   = EOrderType/AirplaneShoot
     ColorLineStart              = [240, 0, 0, 50]
     ColorLineEnd                = [240, 0, 0, alpha] //Red
     MaxDistanceBetweenColorsGRU = 0
@@ -397,7 +396,7 @@ export OrderDisplayAirplaneShoot is TOrderDisplayDrawInfo //Fire Pos Direct Fire
 
 export OrderDisplayUnload is TOrderDisplayDrawInfo
 (
-    OrderToken                  = "UnloadFromTransport"
+    OrderType                   = EOrderType/UnloadFromTransport
     LineThickness               = 2000.0
     ColorCircleDestination      = [150, 209, 79, alpha] //Green
     CircleDestinationThickness  = 1000.0
@@ -410,7 +409,7 @@ export OrderDisplayUnload is TOrderDisplayDrawInfo
 
 export OrderDisplayUnloadAtPosition is TOrderDisplayDrawInfo
 (
-    OrderToken                  = "UnloadAtPosition"
+    OrderType                   = EOrderType/UnloadAtPosition
     ColorLineStart              = [150, 209, 79, 50]
     ColorLineEnd                = [150, 209, 79, alpha] //Green
     MaxDistanceBetweenColorsGRU = MaxMeter
@@ -426,7 +425,7 @@ export OrderDisplayUnloadAtPosition is TOrderDisplayDrawInfo
 
 export OrderDisplayLoadIntoTransport is TOrderDisplayDrawInfo
 (
-    OrderToken                  = "LoadIntoTransport"
+    OrderType                   = EOrderType/LoadIntoTransport
     ColorLineStart              = [204, 255, 153, 50]
     ColorLineEnd                = [204, 255, 153, alpha] //Light Green
     MaxDistanceBetweenColorsGRU = MaxMeter
@@ -446,7 +445,7 @@ export OrderDisplayLoadIntoTransport is TOrderDisplayDrawInfo
 
 export OrderDisplayLoadUnit is TOrderDisplayDrawInfo
 (
-    OrderToken                  = "LoadUnit"
+    OrderType                   = EOrderType/LoadUnit
     ColorLineStart              = [204, 255, 153, 50]
     ColorLineEnd                = [204, 255, 153, alpha] //Light Green
     MaxDistanceBetweenColorsGRU = MaxMeter
@@ -468,7 +467,7 @@ export OrderDisplayLoadUnit is TOrderDisplayDrawInfo
 
 export OrderDisplayUseCapacite is TOrderDisplayDrawInfo
 (
-    OrderToken                  = "UseCapacite"
+    OrderType                   = EOrderType/UseCapacite
     ColorLineStart              = [0, 0, 0, 0]
     ColorLineEnd                = [0, 0, 0, 0]
     MaxDistanceBetweenColorsGRU = 0
@@ -487,7 +486,7 @@ export OrderDisplayUseCapacite is TOrderDisplayDrawInfo
 
 export OrderDisplayLand is TOrderDisplayDrawInfo
 (
-    OrderToken                  = "Land"
+    OrderType                   = EOrderType/Land
     ColorLineStart              = [128, 187, 255, 50]
     ColorLineEnd                = [128, 187, 255, alpha] //Light blue
     MaxDistanceBetweenColorsGRU = MaxMeter
@@ -503,7 +502,7 @@ export OrderDisplayLand is TOrderDisplayDrawInfo
 
 export OrderDisplayGoDown is TOrderDisplayDrawInfo
 (
-    OrderToken                  = "GoDown"
+    OrderType                   = EOrderType/GoDown
     ColorLineStart              = [128, 187, 255, 50]
     ColorLineEnd                = [128, 187, 255, alpha] //Light blue
     MaxDistanceBetweenColorsGRU = MaxMeter
@@ -519,7 +518,7 @@ export OrderDisplayGoDown is TOrderDisplayDrawInfo
 
 export OrderDisplayGoUp is TOrderDisplayDrawInfo
 (
-    OrderToken                  = "GoUp"
+    OrderType                   = EOrderType/GoUp
     ColorLineStart              = [128, 187, 255, 50]
     ColorLineEnd                = [128, 187, 255, alpha] //Light blue
     MaxDistanceBetweenColorsGRU = MaxMeter
@@ -535,7 +534,7 @@ export OrderDisplayGoUp is TOrderDisplayDrawInfo
 
 export OrderDisplayAIAttack is TOrderDisplayDrawInfo
 (
-    OrderToken                  = "AIAttack"
+    OrderType                   = EOrderType/AIAttack
     ColorLineStart              = [240, 0, 0, 50]
     ColorLineEnd                = [240, 0, 0, alpha]
     MaxDistanceBetweenColorsGRU = MaxMeter
@@ -553,7 +552,7 @@ export OrderDisplayAIAttack is TOrderDisplayDrawInfo
 
 export OrderDisplayAIDefend is TOrderDisplayDrawInfo
 (
-    OrderToken                  = "AIDefend"
+    OrderType                   = EOrderType/AIDefend
     LineThickness               = 2000.0
     ColorCircleDestination      = [30, 30, 222, 180]
     CircleDestinationThickness  = 1000.0
@@ -566,7 +565,7 @@ export OrderDisplayAIDefend is TOrderDisplayDrawInfo
 
 export OrderDisplayAIManageArtillery_Focus is TOrderDisplayDrawInfo
 (
-    OrderToken                  = "AIManageArtillery_Focus"
+    OrderType                   = EOrderType/AIManageArtillery_Focus
     ColorLineStart              = [240, 0, 0, 0]
     ColorLineEnd                = [240, 0, 0, alpha]
     MaxDistanceBetweenColorsGRU = MaxMeter
@@ -583,7 +582,7 @@ export OrderDisplayAIManageArtillery_Focus is TOrderDisplayDrawInfo
 
 export OrderDisplayAIManageArtillery_CounterBattery is TOrderDisplayDrawInfo
 (
-    OrderToken                  = "AIManageArtillery_CounterBattery"
+    OrderType                   = EOrderType/AIManageArtillery_CounterBattery
     LineThickness               = 2000.0
     ColorCircleDestination      = [240, 0, 0, alpha]
     CircleDestinationThickness  = 1000.0
@@ -596,7 +595,7 @@ export OrderDisplayAIManageArtillery_CounterBattery is TOrderDisplayDrawInfo
 
 export OrderDisplayAIManageArtillery_Auto is TOrderDisplayDrawInfo
 (
-    OrderToken                  = "AIManageArtillery_Auto"
+    OrderType                   = EOrderType/AIManageArtillery_Auto
     LineThickness               = 2000.0
     ColorCircleDestination      = [240, 0, 0, alpha]
     CircleDestinationThickness  = 1000.0
@@ -609,7 +608,7 @@ export OrderDisplayAIManageArtillery_Auto is TOrderDisplayDrawInfo
 
 export OrderDisplayAIAirplaneAutoManage is TOrderDisplayDrawInfo
 (
-    OrderToken                  = "AIAirplaneAutoManage"
+    OrderType                   = EOrderType/AIAirplaneAutoManage
     LineThickness               = 2000.0
     ColorCircleDestination      = [240, 0, 0, alpha]
     CircleDestinationThickness  = 1000.0
@@ -622,7 +621,7 @@ export OrderDisplayAIAirplaneAutoManage is TOrderDisplayDrawInfo
 
 export OrderDisplayAISupply is TOrderDisplayDrawInfo
 (
-    OrderToken                  = "AISupply"
+    OrderType                   = EOrderType/AISupply
     LineThickness               = 2000.0
     ColorCircleDestination      = [244, 187, 50, alpha]
     CircleDestinationThickness  = 1000.0

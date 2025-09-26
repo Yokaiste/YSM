@@ -1,0 +1,17 @@
+export Modele_BM14M_SOV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Artillerie/BM14M/BM14M.fbx"
+    Textures="GameData:/Assets/3D/Units/URSS/Artillerie/BM14M"
+)
+
+export Modele_BM14M_SOV_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Artillerie/BM14M_MID/BM14M_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/URSS/Artillerie/BM14M_MID"
+)
+
+export Modele_BM14M_SOV_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Artillerie/BM14M_LOW/BM14M_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/URSS/Artillerie/BM14M_LOW"
+)

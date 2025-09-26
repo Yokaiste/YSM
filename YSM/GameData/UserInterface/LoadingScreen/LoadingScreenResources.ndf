@@ -1,7 +1,6 @@
-
-SpecificOutGameLoadingPanelResource is TUISpecificOutGameLoadingPanelResource
+LoadingPanelResource is TUISpecificOutGameLoadingPanelResource
 (
-    LoadingText = BUCKTypingTextDescriptor
+    LoadingText = TBUCKTypingTextDescriptor
     (
         ElementName = "SpecificOutGameLoadingPanelTypingText"
 
@@ -19,13 +18,16 @@ SpecificOutGameLoadingPanelResource is TUISpecificOutGameLoadingPanelResource
         )
 
         TextStyle = "DefaultSubtitle"
+        IsClippable = true
 
+        ColorMode = ~/ColorMode/Override
+        BigLineAction = ~/BigLineAction/MultiLine
         HorizontalFitStyle = ~/FitStyle/FitToContent
         VerticalFitStyle = ~/FitStyle/UserDefined
 
         TypefaceToken = "Subtitles"
-        BigLineAction = ~/BigLineAction/MultiLine
 
+        UniformDrawer = $/UserInterface/UIUniformDrawer
 
         TextColor = "SD2_BleuVariable"
         TextSize = "18"
@@ -115,17 +117,21 @@ SpecificOutGameLoadingPanelResource is TUISpecificOutGameLoadingPanelResource
         "Hint050",
     ]
 
-    LoadingComponents = BUCKContainerDescriptor
+    LoadingComponents = TBUCKContainerDescriptor
     (
         Components =
         [
-            BUCKRandomVideoContainerDescriptor
+            TBUCKRandomVideoContainerDescriptor
             (
                 ElementName = "OutGameLoadingRandomContainer"
 
                 ComponentFrame = TUIFramePropertyRTTI( RelativeWidthHeight = [1.0, 1.0] )
 
-                VideoDescriptor = BUCKVideoDescriptor
+                IsClippable = true
+
+                UniformDrawer = $/UserInterface/UIUniformDrawer
+
+                VideoDescriptor = TBUCKVideoDescriptor
                 (
                     ComponentFrame = TUIFramePropertyRTTI
                     (
@@ -193,10 +199,28 @@ SpecificOutGameLoadingPanelResource is TUISpecificOutGameLoadingPanelResource
                     TResourceVideo ( VideoFile =  "GameData:/Assets/Videos/loading_screen_animated/Video_Loading_Screen_52_.webm" ),
                     TResourceVideo ( VideoFile =  "GameData:/Assets/Videos/loading_screen_animated/Video_Loading_Screen_53_.webm" ),
                     TResourceVideo ( VideoFile =  "GameData:/Assets/Videos/loading_screen_animated/Video_Loading_Screen_54_.webm" ),
+                    TResourceVideo ( VideoFile =  "GameData:/Assets/Videos/loading_screen_animated/Video_Loading_Screen_55_.webm" ),
+                    TResourceVideo ( VideoFile =  "GameData:/Assets/Videos/loading_screen_animated/Video_Loading_Screen_56_.webm" ),
+                    TResourceVideo ( VideoFile =  "GameData:/Assets/Videos/loading_screen_animated/Video_Loading_Screen_57_.webm" ),
+                    TResourceVideo ( VideoFile =  "GameData:/Assets/Videos/loading_screen_animated/Video_Loading_Screen_58_.webm" ),
+                    TResourceVideo ( VideoFile =  "GameData:/Assets/Videos/loading_screen_animated/Video_Loading_Screen_59_.webm" ),
+                    TResourceVideo ( VideoFile =  "GameData:/Assets/Videos/loading_screen_animated/Video_Loading_Screen_60_.webm" ),
+                    TResourceVideo ( VideoFile =  "GameData:/Assets/Videos/loading_screen_animated/Video_Loading_Screen_61_.webm" ),
+                    TResourceVideo ( VideoFile =  "GameData:/Assets/Videos/loading_screen_animated/Video_Loading_Screen_62_.webm" ),
+                    TResourceVideo ( VideoFile =  "GameData:/Assets/Videos/loading_screen_animated/Video_Loading_Screen_63_.webm" ),
+                    TResourceVideo ( VideoFile =  "GameData:/Assets/Videos/loading_screen_animated/Video_Loading_Screen_64_.webm" ),
+                    TResourceVideo ( VideoFile =  "GameData:/Assets/Videos/loading_screen_animated/Video_Loading_Screen_65_.webm" ),
+                    TResourceVideo ( VideoFile =  "GameData:/Assets/Videos/loading_screen_animated/Video_Loading_Screen_66_.webm" ),
+                    TResourceVideo ( VideoFile =  "GameData:/Assets/Videos/loading_screen_animated/Video_Loading_Screen_67_.webm" ),
+                    TResourceVideo ( VideoFile =  "GameData:/Assets/Videos/loading_screen_animated/Video_Loading_Screen_68_.webm" ),
+                    TResourceVideo ( VideoFile =  "GameData:/Assets/Videos/loading_screen_animated/Video_Loading_Screen_69_.webm" ),
+                    TResourceVideo ( VideoFile =  "GameData:/Assets/Videos/loading_screen_animated/Video_Loading_Screen_70_.webm" ),
+                    TResourceVideo ( VideoFile =  "GameData:/Assets/Videos/loading_screen_animated/Video_Loading_Screen_71_.webm" ),
+                    TResourceVideo ( VideoFile =  "GameData:/Assets/Videos/loading_screen_animated/Video_Loading_Screen_72_.webm" ),
                 ]
             ),
 
-            BUCKTextDescriptor
+            TBUCKTextDescriptor
             (
                 ElementName = "OutGameLoadingHint"
                 ComponentFrame = TUIFramePropertyRTTI
@@ -213,9 +237,13 @@ SpecificOutGameLoadingPanelResource is TUISpecificOutGameLoadingPanelResource
                     InterLine = 0.1
                 )
 
+                IsClippable = true
+
                 TextStyle = "DefaultSubtitle"
 
+                ColorMode = ~/ColorMode/Override
                 BigLineAction = ~/BigLineAction/MultiLine
+                HorizontalFitStyle = ~/FitStyle/UserDefined
                 VerticalFitStyle = ~/FitStyle/MaxBetweenUserDefinedAndContent
 
                 TextColor = "Subtitle/Text"
@@ -228,6 +256,16 @@ SpecificOutGameLoadingPanelResource is TUISpecificOutGameLoadingPanelResource
             ),
         ]
         ComponentFrame = TUIFramePropertyRTTI( RelativeWidthHeight = [1,1] )
+
+        IsClippable = true
+        UniformDrawer = $/UserInterface/UIUniformDrawer
     )
+
+    UniformDrawer = $/UserInterface/UIUniformDrawer
 )
 
+export LoadingPanelHandler is TUISpecificOutGameLoadingPanelHandler
+(
+    HUBContainerHandler = $/UI/HUBContainer/OutGameHUBContainerHandler
+    LoadingResource = ~/LoadingPanelResource
+)

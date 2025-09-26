@@ -1,0 +1,22 @@
+export Modele_Mirage_2000_C_RDM_AA2_FR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Avion/Mirage_2000_C/Mirage_2000_C.fbx"
+    Textures="GameData:/Assets/3D/Units/FR/Avion/Mirage_2000_C_RDM"
+)
+
+export Modele_Mirage_2000_C_RDM_AA2_FR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Avion/Mirage_2000_C_MID/Mirage_2000_C_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/FR/Avion/Mirage_2000_C_RDM_MID"
+)
+
+export Modele_Mirage_2000_C_RDM_AA2_FR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Avion/Mirage_2000_C_LOW/Mirage_2000_C_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/FR/Avion/Mirage_2000_C_RDM_LOW"
+)
+
+export Modele_Mirage_2000_C_RDM_AA2_FR_train is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Avion/Mirage_2000_C/Mirage_2000_C_train.fbx"
+)

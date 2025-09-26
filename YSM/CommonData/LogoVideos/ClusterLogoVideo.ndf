@@ -1,10 +1,10 @@
 
-export ClusterCreateComponents is TClusterCreateUIComponents
+export ClusterCreateComponent is TClusterCreateUIComponent
 (
     UILayer = $/UserInterface/UILayer_Calque_CutScene_Video
-    Components = [ ~/CurrentVideoLogo ]
+    Component = ~/CurrentVideoLogo
     StyleGuide = ~/StyleGuideLogo
-    SafeBoxSize = ~/FullScreenSafeBoxSize
+    SafeBoxSize = [ 1920 , 1200 ]
 )
 
 TextStyleSubtitles is TTextStyle

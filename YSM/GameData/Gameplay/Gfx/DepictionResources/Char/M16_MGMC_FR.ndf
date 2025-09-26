@@ -1,0 +1,19 @@
+export Modele_M16_MGMC_FR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/DCA/M16_MGMC/M16_MGMC.fbx"
+)
+
+export Modele_M16_MGMC_FR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/DCA/M16_MGMC_MID/M16_MGMC_MID.fbx"
+)
+
+export Modele_M16_MGMC_FR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/DCA/M16_MGMC_LOW/M16_MGMC_LOW.fbx"
+)
+
+export Modele_M16_MGMC_FR_Tourelle_01 is TResourceMesh
+(
+    Mesh=ModelFile_M2HB_12_7mm_no_ammo_x4
+)

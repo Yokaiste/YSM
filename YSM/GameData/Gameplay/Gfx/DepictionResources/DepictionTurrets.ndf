@@ -35,4 +35,5 @@ export ModelFile_M40_RCL_t1 is 'GameData:/Assets/3D/Units/Ammo/Tourelles/USA/M40
 export ModelFile_AANF1_t1 is 'GameData:/Assets/3D/Units/Ammo/Tourelles/FR/AANF1/AANF1_t1.fbx'
 export ModelFile_AANF1_no_ammo is 'GameData:/Assets/3D/Units/Ammo/Tourelles/FR/AANF1/AANF1_no_ammo.fbx'
 export ModelFile_VZ59_t1 is 'GameData:/Assets/3D/Units/Ammo/Tourelles/UK/VZ59/VZ59_t1.fbx'
+export ModelFile_VZ59_t2 is 'GameData:/Assets/3D/Units/Ammo/Tourelles/UK/VZ59/VZ59_t2.fbx'
 export ModelFile_A_127mm_t1 is 'GameData:/Assets/3D/Units/Ammo/Tourelles/SOV/A_127mm/A_127mm_t1.fbx'

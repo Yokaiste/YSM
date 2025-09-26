@@ -1,0 +1,15 @@
+export Modele_Automoteur_Au50_105mm_FR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Artillerie/Automoteur_Au50_105mm/Automoteur_Au50_105mm.fbx"
+)
+
+export Modele_Automoteur_Au50_105mm_FR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Artillerie/Automoteur_Au50_105mm_MID/Automoteur_Au50_105mm_MID.fbx"
+)
+
+export Modele_Automoteur_Au50_105mm_FR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Artillerie/Automoteur_Au50_105mm_LOW/Automoteur_Au50_105mm_LOW.fbx"
+)
+

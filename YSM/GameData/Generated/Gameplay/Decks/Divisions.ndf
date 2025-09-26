@@ -145,6 +145,24 @@ export Descriptor_Deck_Division_FR_6e_Blindee_Legere_multi is TDeckDivisionDescr
     TypeTexture       = "Texture_Division_Type_armored"
     CountryId = "FR"
 )
+export Descriptor_Deck_Division_FR_Division_du_Rhin_multi is TDeckDivisionDescriptor
+(
+    DescriptorId = GUID:{efbbd29f-2296-47f7-bc21-a04309edc987}
+    CfgName = 'FR_Division_du_Rhin_multi'
+    DivisionName = 'KIKUPFXIKH'
+    InterfaceOrder = 26.0
+    DivisionPowerClassification = 'DC_PWR2'
+    DivisionCoalition = ECoalition/NATO
+    DivisionTags = ['DEFAULT', 'FR', 'NATO', 'infantryReg', 'DC_PWR2']
+    DescriptionHintTitleToken = 'KIKUPFXIKH'
+    MaxActivationPoints = 50
+    DivisionRule = Descriptor_Deck_Division_FR_Division_du_Rhin_multi_Rule
+    CostMatrix = MatrixCostName_FR_Division_du_Rhin_multi
+    EmblemTexture     = "Texture_Division_Emblem_FR_Div_Rhin"
+    PortraitTexture   = "Texture_Division_Portrait_default"
+    TypeTexture       = "Texture_Division_Type_infantryReg"
+    CountryId = "FR"
+)
 export Descriptor_Deck_Division_NATO_Garnison_Berlin_multi is TDeckDivisionDescriptor
 (
     DescriptorId = GUID:{9ab11079-b134-4ec3-beba-48cf4e885757}
@@ -451,6 +469,24 @@ export Descriptor_Deck_Division_SOV_157_Rifle_multi is TDeckDivisionDescriptor
     TypeTexture       = "Texture_Division_Type_infantryReg"
     CountryId = "SOV"
 )
+export Descriptor_Deck_Division_SOV_17_Gds_Tank_multi is TDeckDivisionDescriptor
+(
+    DescriptorId = GUID:{bab0e8e7-c721-4c68-a08e-80ba5aea447a}
+    CfgName = 'SOV_17_Gds_Tank_multi'
+    DivisionName = 'RRWLDBAEUA'
+    InterfaceOrder = 2.0
+    DivisionPowerClassification = 'DC_PWR1'
+    DivisionCoalition = ECoalition/PACT
+    DivisionTags = ['DEFAULT', 'SOV', 'PACT', 'armored', 'DC_PWR1']
+    DescriptionHintTitleToken = 'LQBTRUSZSA'
+    MaxActivationPoints = 50
+    DivisionRule = Descriptor_Deck_Division_SOV_17_Gds_Tank_multi_Rule
+    CostMatrix = MatrixCostName_SOV_17_Gds_Tank_multi
+    EmblemTexture     = "Texture_Division_Emblem_SOV_17gvTD"
+    PortraitTexture   = "Texture_Division_Portrait_default"
+    TypeTexture       = "Texture_Division_Type_armored"
+    CountryId = "SOV"
+)
 export Descriptor_Deck_Division_SOV_25_Tank_multi is TDeckDivisionDescriptor
 (
     DescriptorId = GUID:{d82bb5a9-6360-4e01-ba86-d1f14a051ca6}
@@ -618,7 +654,7 @@ export Descriptor_Deck_Division_TCH_19_MSD_multi is TDeckDivisionDescriptor
     DescriptorId = GUID:{be946b20-a4b4-4f2f-9d1a-9c664bd1a426}
     CfgName = 'TCH_19_MSD_multi'
     DivisionName = 'SVEHBMUYZL'
-    InterfaceOrder = 30.0
+    InterfaceOrder = 31.0
     DivisionPowerClassification = 'DC_PWR2'
     DivisionCoalition = ECoalition/PACT
     DivisionTags = ['DEFAULT', 'TCH', 'PACT', 'infantryReg', 'DC_PWR2']
@@ -654,7 +690,7 @@ export Descriptor_Deck_Division_TCH_303_Tank_multi is TDeckDivisionDescriptor
     DescriptorId = GUID:{d0cc9b9f-1f00-49e7-8f28-610dbbb5574b}
     CfgName = 'TCH_303_Tank_multi'
     DivisionName = 'CUVYCAIFIX'
-    InterfaceOrder = 31.0
+    InterfaceOrder = 32.0
     DivisionPowerClassification = 'DC_PWR3'
     DivisionCoalition = ECoalition/PACT
     DivisionTags = ['DEFAULT', 'TCH', 'PACT', 'armored', 'DC_PWR3']
@@ -1895,7 +1931,7 @@ export Descriptor_Deck_Division_RFA_1PzD_solo is TDeckDivisionDescriptor
     DivisionCoalition = ECoalition/NATO
     DivisionTags = ['STRAT', 'NATO']
     DivisionRule = nil
-    EmblemTexture     = "Texture_Division_Emblem__vide"
+    EmblemTexture     = "Texture_Division_Emblem_RFA_1_Panzerdivision"
     StrategicLabelColor     = "division_RFA_2"
     PortraitTexture   = "Texture_Division_Portrait_default"
     TypeTexture       = ""
@@ -2007,7 +2043,7 @@ export Descriptor_Deck_Division_RFA_3PzD_solo is TDeckDivisionDescriptor
     DivisionCoalition = ECoalition/NATO
     DivisionTags = ['STRAT', 'NATO']
     DivisionRule = nil
-    EmblemTexture     = "Texture_Division_Emblem__vide"
+    EmblemTexture     = "Texture_Division_Emblem_RFA_3_Panzerdivision"
     StrategicLabelColor     = "division_RFA_2"
     PortraitTexture   = "Texture_Division_Portrait_default"
     TypeTexture       = ""
@@ -2077,7 +2113,7 @@ export Descriptor_Deck_Division_RFA_7PzD_solo is TDeckDivisionDescriptor
     DivisionCoalition = ECoalition/NATO
     DivisionTags = ['STRAT', 'NATO']
     DivisionRule = nil
-    EmblemTexture     = "Texture_Division_Emblem__vide"
+    EmblemTexture     = "Texture_Division_Emblem_RFA_default"
     StrategicLabelColor     = "division_RFA_2"
     PortraitTexture   = "Texture_Division_Portrait_default"
     TypeTexture       = ""

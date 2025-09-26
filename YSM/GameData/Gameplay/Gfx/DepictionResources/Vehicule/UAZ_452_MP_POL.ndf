@@ -1,0 +1,14 @@
+export Modele_UAZ_452_MP_POL is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Vehicule/UAZ_452_MP/UAZ_452_MP.fbx"
+)
+
+export Modele_UAZ_452_MP_POL_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Vehicule/UAZ_452_MP_MID/UAZ_452_MP_MID.fbx"
+)
+
+export Modele_UAZ_452_MP_POL_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Vehicule/UAZ_452_MP_LOW/UAZ_452_MP_LOW.fbx"
+)

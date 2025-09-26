@@ -70,7 +70,6 @@ Ammo_AA_AIM120A_AMRAAM is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_aim120_amraam"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -146,7 +145,6 @@ Ammo_AA_AIM132_ASRAAM is TAmmunitionDescriptor
     AffichageMunitionParSalve         = 1
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -159,17 +157,17 @@ Ammo_AA_AIM54_Phoenix is TAmmunitionDescriptor
     DescriptorId                      = GUID:{1d738c50-c917-4d15-81f0-bcf5359bf123}
     Name                              = 'GSXXTTUETX'
     TypeCategoryName                  = 'UYJALNLOYI'
-    Caliber                           = 'EVYIVPZVOJ'
+    Caliber                           = 'CCYZVFZIEZ'
     WeaponDescriptionToken            = 'UYIYEYCCSG'
-    TraitsToken                       = [ 'MOTION', 'semiAuto', ]
+    TraitsToken                       = [ 'MOTION', 'F&F', ]
     WeaponCursorType                  = Weapon_Cursor_AirMissile
     MinMaxCategory                    = MinMax_AAM
     Arme                              = TDamageTypeRTTI(Family=DamageFamily_missile_he Index=1)
     ProjectileType                    = EProjectileType/GuidedMissile
     ImpactHappening                   = 'MIssileAASPARROW'
     FxPower                           = EFXPower/UltraLourd
-    TimeBetweenTwoShots               = 0.2
-    TimeBetweenTwoFx                  = 0.2
+    TimeBetweenTwoShots               = 2.0
+    TimeBetweenTwoFx                  = 2.0
     MinimumRangeGRU                   = 0
     MaximumRangeGRU                   = 0
     MinimumRangeHelicopterGRU         = 0
@@ -180,22 +178,23 @@ Ammo_AA_AIM54_Phoenix is TAmmunitionDescriptor
     MaximumRangeProjectileGRU         = 0
     AngleDispersion                   = 0.0020001473227855013
     SalvoShotsSorted                  = True
-    RadiusSplashPhysicalDamagesGRU    = 93
-    PhysicalDamages                   = 6.0
+    RadiusSplashPhysicalDamagesGRU    = 104
+    PhysicalDamages                   = 8.0
     ShowDamageInUI                    = True
-    RadiusSplashSuppressDamagesGRU    = 153
-    SuppressDamages                   = 640.0
+    RadiusSplashSuppressDamagesGRU    = 170
+    SuppressDamages                   = 712.0
     AllowSuppressDamageWhenNoImpact   = True
     DisplaySalveAccuracy              = False
     TirIndirect                       = False
     TirReflexe                        = True
     ReflexShotDisabledIfPriorityTarget = True
-    MaximalSpeedGRU                   = 4240
-    MaxAccelerationGRU                = 2120
+    MaximalSpeedGRU                   = 4946
+    MaxAccelerationGRU                = 2826
     ShotWithPhysics                   = False
     FluidFriction                     = 0.0
     NoiseDissimulationMalus           = 2.0
     ShotsBeforeMaxNoise               = 2
+    IsFireAndForget                   = True
     TargetOnlyOneUnitInDistrict       = False
     HitRollRuleDescriptor = TDiceHitRollRuleDescriptor
     (
@@ -204,11 +203,10 @@ Ammo_AA_AIM54_Phoenix is TAmmunitionDescriptor
         BaseHitValueModifiers =
         [
             (EBaseHitValueModifier/Base, 0),
-            (EBaseHitValueModifier/Idling, 50),
-            (EBaseHitValueModifier/Moving, 50),
+            (EBaseHitValueModifier/Idling, 40),
+            (EBaseHitValueModifier/Moving, 40),
             (EBaseHitValueModifier/Targeted, 0.0),
         ]
-        DistanceToTarget = True
     )
     AimingTime                        = 0.0
     TimeBetweenTwoSalvos              = 2.0
@@ -223,7 +221,6 @@ Ammo_AA_AIM54_Phoenix is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_sparrow"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -300,7 +297,6 @@ Ammo_AA_AIM7F_Sparrow is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_sparrow"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -377,7 +373,6 @@ Ammo_AA_AIM7M_Sparrow is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_sparrow"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -454,7 +449,6 @@ Ammo_AA_AIM9J_Sidewinder is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_aim9_sidewinder"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -531,7 +525,6 @@ Ammo_AA_AIM9L_Sidewinder is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_aim9_sidewinder"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -608,7 +601,6 @@ Ammo_AA_AIM9L_Sidewinder_upgrade is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_aim9_sidewinder"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -685,7 +677,6 @@ Ammo_AA_AIM9M_Sidewinder is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_aim9_sidewinder"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -762,7 +753,6 @@ Ammo_AA_AIM9P_Sidewinder is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_aim9_sidewinder"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -839,7 +829,6 @@ Ammo_AA_AIM9P_Sidewinder_x2 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_aim9_sidewinder"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -916,7 +905,6 @@ Ammo_AA_Matra_R530 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Super_530D"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -993,7 +981,6 @@ Ammo_AA_Matra_Super_530D is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Super_530D"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -1070,7 +1057,6 @@ Ammo_AA_Matra_Super_530F is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Super_530D"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -1147,13 +1133,88 @@ Ammo_AA_R13M is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_AA_R13M"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
     DamageTypeEvolutionOverRangeDescriptor  = nil
     MissileTimeBetweenCorrections     = 1.0
     MissileDescriptor                 = ~/Descriptor_Missile_AA_R13M
+)
+Ammo_AA_R13M1 is TAmmunitionDescriptor
+(
+    DescriptorId                      = GUID:{aae25e47-362c-4e7f-b363-3888333afeb6}
+    Name                              = 'TUAUFUMNKN'
+    TypeCategoryName                  = 'UYJALNLOYI'
+    Caliber                           = 'AFUPSCGVHW'
+    WeaponDescriptionToken            = 'UYIYEYCCSG'
+    TraitsToken                       = [ 'MOTION', 'F&F', ]
+    WeaponCursorType                  = Weapon_Cursor_AirMissile
+    MinMaxCategory                    = MinMax_AAM
+    Arme                              = TDamageTypeRTTI(Family=DamageFamily_missile_he Index=1)
+    ProjectileType                    = EProjectileType/GuidedMissile
+    ImpactHappening                   = 'MIssileAASIDEWINDER'
+    FxPower                           = EFXPower/UltraLourd
+    TimeBetweenTwoShots               = 2.0
+    TimeBetweenTwoFx                  = 2.0
+    MinimumRangeGRU                   = 0
+    MaximumRangeGRU                   = 0
+    MinimumRangeHelicopterGRU         = 0
+    MaximumRangeHelicopterGRU         = 2125
+    MinimumRangeAirplaneGRU           = 0
+    MaximumRangeAirplaneGRU           = 3525
+    MinimumRangeProjectileGRU         = 0
+    MaximumRangeProjectileGRU         = 0
+    AngleDispersion                   = 0.0020001473227855013
+    SalvoShotsSorted                  = True
+    RadiusSplashPhysicalDamagesGRU    = 51
+    PhysicalDamages                   = 5.0
+    ShowDamageInUI                    = True
+    RadiusSplashSuppressDamagesGRU    = 84
+    SuppressDamages                   = 352.0
+    AllowSuppressDamageWhenNoImpact   = True
+    DisplaySalveAccuracy              = False
+    TirIndirect                       = False
+    TirReflexe                        = True
+    ReflexShotDisabledIfPriorityTarget = True
+    MaximalSpeedGRU                   = 3533
+    MaxAccelerationGRU                = 1413
+    ShotWithPhysics                   = False
+    FluidFriction                     = 0.0
+    NoiseDissimulationMalus           = 2.0
+    ShotsBeforeMaxNoise               = 2
+    IsFireAndForget                   = True
+    TargetOnlyOneUnitInDistrict       = False
+    HitRollRuleDescriptor = TDiceHitRollRuleDescriptor
+    (
+        DescriptorId          = GUID:{77ef2ded-3b9d-49a3-bc3b-12887dded2f6}
+        BaseCriticModifier = 25
+        BaseHitValueModifiers =
+        [
+            (EBaseHitValueModifier/Base, 0),
+            (EBaseHitValueModifier/Idling, 50),
+            (EBaseHitValueModifier/Moving, 50),
+            (EBaseHitValueModifier/Targeted, 0.0),
+        ]
+    )
+    AimingTime                        = 0.0
+    TimeBetweenTwoSalvos              = 2.0
+    TimeBetweenTwoSalvos_Min          = -1.0
+    TimeBetweenTwoSalvos_Max          = -1.0
+    NbTirParSalves                    = 1
+    SupplyCost                        = 20
+    CanShootOnPosition                = False
+    CanShootWhileMoving               = True
+    NbrProjectilesSimultanes          = 1
+    AffichageMunitionParSalve         = 1
+    InterfaceWeaponTexture            = "Texture_Interface_Weapon_AA_R13M"
+    SmokeDescriptor                   = nil
+    FireDescriptor                    = nil
+    IsHarmlessForAllies               = False
+    PiercingWeapon                    = False
+    TandemCharge                      = False
+    DamageTypeEvolutionOverRangeDescriptor  = nil
+    MissileTimeBetweenCorrections     = 1.0
+    MissileDescriptor                 = ~/Descriptor_Missile_AA_R13M1
 )
 Ammo_AA_R23R_Vympel is TAmmunitionDescriptor
 (
@@ -1224,7 +1285,6 @@ Ammo_AA_R23R_Vympel is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_AA_R23R_Vympel"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -1301,7 +1361,6 @@ Ammo_AA_R24MR_Vympel is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_R27_Vympel"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -1378,7 +1437,6 @@ Ammo_AA_R24R_Vympel is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_AA_R24R_Vympel"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -1455,7 +1513,6 @@ Ammo_AA_R27ER_Vympel is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_R27_Vympel"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -1532,7 +1589,6 @@ Ammo_AA_R27R_Vympel is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_R27_Vympel"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -1609,7 +1665,6 @@ Ammo_AA_R27T_Vympel is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_R27T_Vympel"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -1686,7 +1741,6 @@ Ammo_AA_R33_Vympel is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_R37_Vympel"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -1763,7 +1817,6 @@ Ammo_AA_R37_Vympel is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_R37_Vympel"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -1840,7 +1893,6 @@ Ammo_AA_R3R is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_aim9_sidewinder"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -1917,7 +1969,6 @@ Ammo_AA_R40RD1 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_sparrow"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -1994,7 +2045,6 @@ Ammo_AA_R40TD1 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_sparrow"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -2071,7 +2121,6 @@ Ammo_AA_R550_Magic is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_R550_Magic"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -2148,7 +2197,6 @@ Ammo_AA_R550_Magic_II is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_R550_Magic_II"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -2225,7 +2273,6 @@ Ammo_AA_R60_Vympel is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_R60_Vympel"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -2302,7 +2349,6 @@ Ammo_AA_R60_Vympel_helo is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_R60_Vympel"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -2379,7 +2425,6 @@ Ammo_AA_R60M_Vympel is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_R60_Vympel"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -2456,7 +2501,6 @@ Ammo_AA_R60M_Vympel_x2 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_R60_Vympel"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -2533,7 +2577,6 @@ Ammo_AA_R60M_Vympel_helo is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_R60_Vympel"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -2610,7 +2653,6 @@ Ammo_AA_R73_Vympel is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_R73_Vympel"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -2687,7 +2729,6 @@ Ammo_AA_R77_Vympel is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Kh_58"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -2764,7 +2805,6 @@ Ammo_AA_R98MR is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_R98MR"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -2841,7 +2881,6 @@ Ammo_AA_R98MT is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_R98MT"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -2918,7 +2957,6 @@ Ammo_AA_Skyflash is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_skyflash"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -2995,7 +3033,6 @@ Ammo_AA_Skyflash_SuperTEMP is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_skyflash"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -3074,7 +3111,6 @@ Ammo_AGM_9K121_Vikhr is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_kokon"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = True
@@ -3153,7 +3189,6 @@ Ammo_AGM_9K121_Vikhr_x12 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_kokon"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = True
@@ -3232,7 +3267,6 @@ Ammo_AGM_9K121_Vikhr_x16 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_kokon"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = True
@@ -3311,7 +3345,6 @@ Ammo_AGM_9K121_Vikhr_x16_avion is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_kokon"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = True
@@ -3391,7 +3424,6 @@ Ammo_AGM_9M114M_Ataka_x4 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_kokon"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -3471,7 +3503,6 @@ Ammo_AGM_9M114M_Ataka_x8 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_kokon"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -3551,7 +3582,6 @@ Ammo_AGM_9M114M_KokonM is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_kokon"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -3631,7 +3661,6 @@ Ammo_AGM_9M114M_KokonM_x16 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_kokon"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -3711,7 +3740,6 @@ Ammo_AGM_9M114M_KokonM_x2 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_kokon"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -3791,7 +3819,6 @@ Ammo_AGM_9M114M_KokonM_x4 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_kokon"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -3871,7 +3898,6 @@ Ammo_AGM_9M114M_KokonM_x6 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_kokon"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -3951,7 +3977,6 @@ Ammo_AGM_9M114M_KokonM_x8 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_kokon"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -4031,7 +4056,6 @@ Ammo_AGM_9M14_MalyutkaP_x4 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Malyutka"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -4111,7 +4135,6 @@ Ammo_AGM_9M14_MalyutkaP_x6 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Malyutka"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -4190,7 +4213,6 @@ Ammo_AGM_9M17P_FalangaP is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Konkurs"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -4270,7 +4292,6 @@ Ammo_AGM_9M17P_FalangaP_x2 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Konkurs"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -4350,7 +4371,6 @@ Ammo_AGM_9M17P_FalangaP_x4 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Konkurs"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -4430,7 +4450,6 @@ Ammo_AGM_9M17P_FalangaP_x6 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Konkurs"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -4509,7 +4528,6 @@ Ammo_AGM_AGM114A is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_agm114"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -4588,7 +4606,6 @@ Ammo_AGM_AGM114A_x16 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_agm114"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -4667,7 +4684,6 @@ Ammo_AGM_AGM114A_x2_salve is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_agm114"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -4747,7 +4763,6 @@ Ammo_AGM_AGM114A_x2_sol is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_agm114"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -4826,7 +4841,6 @@ Ammo_AGM_AGM114A_x4 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_agm114"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -4905,13 +4919,91 @@ Ammo_AGM_AGM114A_x8 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_agm114"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
     DamageTypeEvolutionOverRangeDescriptor  = nil
     MissileTimeBetweenCorrections     = 1.0
     MissileDescriptor                 = ~/Descriptor_Missile_AGM_AGM114A_x8
+)
+Ammo_AGM_AGM122_Sidearm is TAmmunitionDescriptor
+(
+    DescriptorId                      = GUID:{55aeecc0-8c67-431f-b675-eb0d900feb0c}
+    Name                              = 'DWLFAVMKGH'
+    TypeCategoryName                  = 'NIAUDOXOXR'
+    Caliber                           = 'PAXDOARDFT'
+    WeaponDescriptionToken            = 'PLUDJLKIDH'
+    TraitsToken                       = [ 'MOTION', 'sead', ]
+    WeaponCursorType                  = Weapon_Cursor_GroundMissile
+    MinMaxCategory                    = MinMax_SEAD
+    Arme                              = TDamageTypeRTTI(Family=DamageFamily_ap_missile Index=15)
+    ProjectileType                    = EProjectileType/GuidedMissile
+    ImpactHappening                   = 'MissileAGMGros'
+    FxPower                           = EFXPower/UltraLourd
+    TimeBetweenTwoShots               = 2.0
+    TimeBetweenTwoFx                  = 2.0
+    MinimumRangeGRU                   = 707
+    MaximumRangeGRU                   = 4400
+    MinimumRangeHelicopterGRU         = 0
+    MaximumRangeHelicopterGRU         = 0
+    MinimumRangeAirplaneGRU           = 0
+    MaximumRangeAirplaneGRU           = 0
+    MinimumRangeProjectileGRU         = 0
+    MaximumRangeProjectileGRU         = 0
+    AngleDispersion                   = 0.020001473227855015
+    DispersionAtMaxRangeGRU           = 88
+    DispersionAtMinRangeGRU           = 9
+    SalvoShotsSorted                  = True
+    RadiusSplashPhysicalDamagesGRU    = 11
+    PhysicalDamages                   = 1.0
+    ShowDamageInUI                    = True
+    RadiusSplashSuppressDamagesGRU    = 41
+    SuppressDamages                   = 367.0
+    AllowSuppressDamageWhenNoImpact   = True
+    DisplaySalveAccuracy              = False
+    TirIndirect                       = False
+    TirReflexe                        = True
+    ReflexShotDisabledIfPriorityTarget = True
+    MaximalSpeedGRU                   = 3533
+    MaxAccelerationGRU                = 2120
+    ShotWithPhysics                   = False
+    FluidFriction                     = 0.0
+    NoiseDissimulationMalus           = 2.0
+    ShotsBeforeMaxNoise               = 2
+    IsFireAndForget                   = True
+    TargetOnlyOneUnitInDistrict       = False
+    HitRollRuleDescriptor = TDiceHitRollRuleDescriptor
+    (
+        DescriptorId          = GUID:{cd845c43-90bb-42b1-bbb8-e2d42835ed19}
+        BaseCriticModifier = 0
+        BaseHitValueModifiers =
+        [
+            (EBaseHitValueModifier/Base, 0),
+            (EBaseHitValueModifier/Idling, 55),
+            (EBaseHitValueModifier/Moving, 55),
+            (EBaseHitValueModifier/Targeted, 0.0),
+        ]
+    )
+    Guidance                          = Guidance_AntiRadar
+    AimingTime                        = 0.0
+    TimeBetweenTwoSalvos              = 2.0
+    TimeBetweenTwoSalvos_Min          = -1.0
+    TimeBetweenTwoSalvos_Max          = -1.0
+    NbTirParSalves                    = 1
+    SupplyCost                        = 15
+    CanShootOnPosition                = False
+    CanShootWhileMoving               = True
+    NbrProjectilesSimultanes          = 1
+    AffichageMunitionParSalve         = 1
+    InterfaceWeaponTexture            = "Texture_Interface_Weapon_agm88_harm"
+    SmokeDescriptor                   = nil
+    FireDescriptor                    = nil
+    IsHarmlessForAllies               = False
+    PiercingWeapon                    = True
+    TandemCharge                      = False
+    DamageTypeEvolutionOverRangeDescriptor  = nil
+    MissileTimeBetweenCorrections     = 1.0
+    MissileDescriptor                 = ~/Descriptor_Missile_AGM_AGM122_Sidearm
 )
 Ammo_AGM_AGM45_Shrike is TAmmunitionDescriptor
 (
@@ -4985,7 +5077,6 @@ Ammo_AGM_AGM45_Shrike is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_agm45_shrike"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -5065,7 +5156,6 @@ Ammo_AGM_AGM65B_Maverick is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_agm65_maverick"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -5145,7 +5235,6 @@ Ammo_AGM_AGM65D_Maverick is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_agm65_maverick"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -5225,7 +5314,6 @@ Ammo_AGM_AGM65E_Maverick is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_agm65_maverick"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -5305,7 +5393,6 @@ Ammo_AGM_AGM88_HARM is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_agm88_harm"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -5384,7 +5471,6 @@ Ammo_AGM_AJ_168_x2 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_AS37_Martel"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -5464,7 +5550,6 @@ Ammo_AGM_ALARM is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_agm_alarm"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -5544,7 +5629,6 @@ Ammo_AGM_ARMAT is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_ARMAT"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -5623,7 +5707,6 @@ Ammo_AGM_AS11_x2 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_AGM_SS11_x2"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -5702,7 +5785,6 @@ Ammo_AGM_AS11_x2_air is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_AGM_SS11_x2"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -5781,7 +5863,6 @@ Ammo_AGM_AS11_x4 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_AGM_SS11_x2"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -5860,7 +5941,6 @@ Ammo_AGM_AS30 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_as30"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -5939,7 +6019,6 @@ Ammo_AGM_AS30L is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_as30"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -6019,7 +6098,6 @@ Ammo_AGM_AS37_Martel is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_AS37_Martel"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -6099,7 +6177,6 @@ Ammo_AGM_AS37_Martel_x2 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_AS37_Martel"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -6179,7 +6256,6 @@ Ammo_AGM_BGM71_TOW_x8 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_TOW"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -6260,7 +6336,6 @@ Ammo_AGM_BGM71C_FITOW_x8 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_ITOW"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -6340,7 +6415,6 @@ Ammo_AGM_BGM71C_ITOW_x8 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_ITOW"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -6420,7 +6494,6 @@ Ammo_AGM_BGM71D_TOW_2_x4 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_TOW2"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -6500,7 +6573,6 @@ Ammo_AGM_BGM71D_TOW_2_x8 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_TOW2"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -6580,7 +6652,6 @@ Ammo_AGM_HOT1 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_hot"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -6660,7 +6731,6 @@ Ammo_AGM_HOT1_x4 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_hot"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -6740,7 +6810,6 @@ Ammo_AGM_HOT1_x6 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_hot"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -6820,7 +6889,6 @@ Ammo_AGM_HOT2 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_hot"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -6900,7 +6968,6 @@ Ammo_AGM_HOT2_x4 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_hot"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -6980,7 +7047,6 @@ Ammo_AGM_HOT2_x6 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_hot"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -7059,7 +7125,6 @@ Ammo_AGM_Kh23M is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Kh_23M"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -7138,7 +7203,6 @@ Ammo_AGM_Kh23M_helo is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Kh_23M"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -7217,7 +7281,6 @@ Ammo_AGM_Kh25ML is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Kh_25ML"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -7297,7 +7360,6 @@ Ammo_AGM_Kh25MP is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_AGM_Kh25MP"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -7376,7 +7438,6 @@ Ammo_AGM_Kh25MPU is TAmmunitionDescriptor
     AffichageMunitionParSalve         = 1
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -7456,7 +7517,6 @@ Ammo_AGM_Kh28_X28 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Kh_28"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -7535,7 +7595,6 @@ Ammo_AGM_Kh29D is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Kh_29"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -7614,7 +7673,6 @@ Ammo_AGM_Kh29L is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_AGM_Kh29L"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -7694,7 +7752,6 @@ Ammo_AGM_Kh29T is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Kh_29"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -7773,7 +7830,6 @@ Ammo_AGM_Kh31P is TAmmunitionDescriptor
     AffichageMunitionParSalve         = 1
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -7853,7 +7909,6 @@ Ammo_AGM_Kh58U is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_R33_Vympel"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -7932,7 +7987,6 @@ Ammo_AGM_Kh66 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Kh_23M"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -8012,7 +8066,6 @@ Ammo_AGM_SS11_TCA_x4 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_AGM_SS11_x2"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -8092,7 +8145,6 @@ Ammo_AGM_SS11_x4 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_AGM_SS11_x2"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -8172,7 +8224,6 @@ Ammo_ATGM_9K111_Fagot is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_9k111"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -8252,7 +8303,6 @@ Ammo_ATGM_9K111M_Fagot_M is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_9k111"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -8332,7 +8382,6 @@ Ammo_ATGM_9K111M_Fagot_M_IFV is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_9k111"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -8411,7 +8460,6 @@ Ammo_ATGM_9K121_Vikhr is TAmmunitionDescriptor
     AffichageMunitionParSalve         = 1
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = True
@@ -8491,7 +8539,6 @@ Ammo_ATGM_9M112_1_Kobra is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Kobra"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -8571,7 +8618,6 @@ Ammo_ATGM_9M113_Konkurs_BMP2 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Konkurs"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -8651,7 +8697,6 @@ Ammo_ATGM_9M113_Konkurs_x3 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Konkurs"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -8731,7 +8776,6 @@ Ammo_ATGM_9M113_Konkurs_x5 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Konkurs"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -8811,7 +8855,6 @@ Ammo_ATGM_9M113_KonkursM is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Konkurs"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -8891,7 +8934,6 @@ Ammo_ATGM_9M113_KonkursM_late is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_KonkursM_late"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = True
@@ -8971,7 +9013,6 @@ Ammo_ATGM_9M113_KonkursM_late_x5 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_KonkursM_late"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = True
@@ -9051,7 +9092,6 @@ Ammo_ATGM_9M114_Shturm_MTLB is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_sturm"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -9131,7 +9171,6 @@ Ammo_ATGM_9M114M_Ataka is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_kokon"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -9211,7 +9250,6 @@ Ammo_ATGM_9M114M_KokonM is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_kokon"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -9291,7 +9329,6 @@ Ammo_ATGM_9M117_Bastion is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Arkan"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -9371,7 +9408,6 @@ Ammo_ATGM_9M117_Bastion_IFV is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Arkan"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -9451,7 +9487,6 @@ Ammo_ATGM_9M117M_Arkan is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Arkan"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -9531,7 +9566,6 @@ Ammo_ATGM_9M119M_Refleks is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_refleks"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -9611,7 +9645,6 @@ Ammo_ATGM_9M119M_Svir is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_refleks"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -9691,7 +9724,6 @@ Ammo_ATGM_9M128_Agona is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Kobra"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = True
@@ -9771,7 +9803,6 @@ Ammo_ATGM_9M14_MalyutkaP is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Malyutka"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -9851,7 +9882,6 @@ Ammo_ATGM_9M14_MalyutkaP_x2 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Malyutka"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -9931,7 +9961,6 @@ Ammo_ATGM_9M14_MalyutkaP_x4 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Malyutka"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -10011,7 +10040,6 @@ Ammo_ATGM_9M14_MalyutkaP_x6 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Malyutka"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -10091,7 +10119,6 @@ Ammo_ATGM_9M14_MalyutkaP_IFV is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Malyutka"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -10171,7 +10198,6 @@ Ammo_ATGM_9k111M_Faktoriya is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_9k111"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -10251,7 +10277,6 @@ Ammo_ATGM_ADATS is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_ATGM_ADATS"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -10331,7 +10356,6 @@ Ammo_ATGM_AS11_x4 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_AGM_SS11_x2"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -10411,7 +10435,6 @@ Ammo_ATGM_BGM71_TOW is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_TOW"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -10491,7 +10514,6 @@ Ammo_ATGM_BGM71_TOW_x2 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_TOW"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -10571,7 +10593,6 @@ Ammo_ATGM_BGM71_TOW_x4 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_TOW"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -10651,7 +10672,6 @@ Ammo_ATGM_BGM71_TOW_x8 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_TOW"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -10731,7 +10751,6 @@ Ammo_ATGM_BGM71C_ITOW is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_ITOW"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -10811,7 +10830,6 @@ Ammo_ATGM_BGM71C_ITOW_x2 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_ITOW"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -10891,7 +10909,6 @@ Ammo_ATGM_BGM71C_ITOW_x2_IFV is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_ITOW"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -10971,7 +10988,6 @@ Ammo_ATGM_BGM71C_ITOW_x4 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_ITOW"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -11051,7 +11067,6 @@ Ammo_ATGM_BGM71C_ITOW_x8 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_ITOW"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -11131,7 +11146,6 @@ Ammo_ATGM_BGM71D_TOW_2 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_TOW2"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -11211,7 +11225,6 @@ Ammo_ATGM_BGM71D_TOW_2_x2 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_TOW2"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -11291,7 +11304,6 @@ Ammo_ATGM_BGM71D_TOW_2_x2_IFV is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_TOW2"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -11371,7 +11383,6 @@ Ammo_ATGM_BGM71D_TOW_2_x4 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_TOW2"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -11451,7 +11462,6 @@ Ammo_ATGM_BGM71D_TOW_2_x8 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_TOW2"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -11531,7 +11541,6 @@ Ammo_ATGM_BGM71D_TOW_2A is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_TOW2"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = True
@@ -11611,7 +11620,6 @@ Ammo_ATGM_BGM71D_TOW_2A_x2 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_TOW2"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = True
@@ -11691,7 +11699,6 @@ Ammo_ATGM_BGM71D_TOW_2A_x2_IFV is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_TOW2"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = True
@@ -11771,7 +11778,6 @@ Ammo_ATGM_HOT1 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_hot"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -11851,7 +11857,6 @@ Ammo_ATGM_HOT1_x4 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_hot"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -11931,7 +11936,6 @@ Ammo_ATGM_HOT1_x6 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_hot"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -12011,7 +12015,6 @@ Ammo_ATGM_HOT2 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_hot"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -12091,7 +12094,6 @@ Ammo_ATGM_HOT2_x2 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_hot"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -12171,7 +12173,6 @@ Ammo_ATGM_HOT2_x3 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_hot"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -12251,7 +12252,6 @@ Ammo_ATGM_HOT2_x4 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_hot"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -12331,7 +12331,6 @@ Ammo_ATGM_HOT2_x6 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_hot"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -12411,7 +12410,6 @@ Ammo_ATGM_MGM551C_Shillelagh is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_shilelagh"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -12491,7 +12489,6 @@ Ammo_ATGM_MILAN is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Milan"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -12571,7 +12568,6 @@ Ammo_ATGM_MILAN_2 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Milan"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -12651,7 +12647,6 @@ Ammo_ATGM_MILAN_2_x2 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Milan"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -12731,7 +12726,6 @@ Ammo_ATGM_MILAN_2_IFV is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Milan"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -12811,7 +12805,6 @@ Ammo_ATGM_MILAN_IFV is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Milan"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -12891,7 +12884,6 @@ Ammo_ATGM_Swingfire is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_swingfire"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -12971,7 +12963,6 @@ Ammo_ATGM_Swingfire_x2 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_swingfire"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -13051,7 +13042,6 @@ Ammo_ATGM_Swingfire_x4 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_swingfire"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -13131,7 +13121,6 @@ Ammo_ATGM_Swingfire_x5 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_swingfire"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -13211,7 +13200,6 @@ Ammo_ATGM_9K115_Metis_M is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Metis"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -13224,7 +13212,7 @@ Ammo_ATGM_Eryx is TAmmunitionDescriptor
     DescriptorId                      = GUID:{044fc602-515c-4957-8a47-020086c6ca6d}
     Name                              = 'LQLCGKARXU'
     TypeCategoryName                  = 'JTOYRAARTS'
-    Caliber                           = '136mm'
+    Caliber                           = '136mmHEAT'
     WeaponDescriptionToken            = 'CRYXRQVTBJ'
     TraitsToken                       = [ 'STAT', 'manual', 'TANDEM', ]
     WeaponCursorType                  = Weapon_Cursor_GroundMissile
@@ -13291,7 +13279,6 @@ Ammo_ATGM_Eryx is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Eryx"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = True
@@ -13371,7 +13358,6 @@ Ammo_Bomb_BGL_400_x1 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_CPU123"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -13451,7 +13437,6 @@ Ammo_Bomb_BGL_400_x2 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_CPU123"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -13531,7 +13516,6 @@ Ammo_Bomb_CPU_123_x1 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_CPU123"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -13611,7 +13595,6 @@ Ammo_Bomb_CPU_123_x2 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_CPU123"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -13691,7 +13674,6 @@ Ammo_Bomb_GBU_10_x1 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_GBU_10"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -13771,7 +13753,6 @@ Ammo_Bomb_GBU_10_x2 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_GBU_10"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -13851,7 +13832,6 @@ Ammo_Bomb_GBU_12_x1 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_GBU_10"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -13931,7 +13911,6 @@ Ammo_Bomb_GBU_12_x2 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_GBU_10"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -14011,7 +13990,6 @@ Ammo_Bomb_GBU_27_x1 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_GBU_27"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -14091,7 +14069,6 @@ Ammo_Bomb_GBU_27_x2 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_GBU_27"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -14171,7 +14148,6 @@ Ammo_Bomb_KAB_1500Kr_x1 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_KAB_1500Kr"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -14251,7 +14227,6 @@ Ammo_Bomb_KAB_1500Kr_x2 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_KAB_1500Kr"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -14331,7 +14306,6 @@ Ammo_Bomb_KAB_1500L_x1 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_KAB_1500Kr"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -14411,7 +14385,6 @@ Ammo_Bomb_KAB_1500L_x2 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_KAB_1500Kr"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -14491,7 +14464,6 @@ Ammo_Bomb_KAB_1500L_x3 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_KAB_1500Kr"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -14571,7 +14543,6 @@ Ammo_Bomb_KAB_500Kr_x1 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_KAB_500Kr"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -14651,7 +14622,6 @@ Ammo_Bomb_KAB_500Kr_x2 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_KAB_500Kr"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -14731,7 +14701,6 @@ Ammo_Bomb_KAB_500L_x1 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_KAB_500Kr"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -14811,7 +14780,6 @@ Ammo_Bomb_KAB_500L_x2 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_KAB_500Kr"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -14891,7 +14859,6 @@ Ammo_Bomb_KAB_500L_x4 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_KAB_500Kr"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -14971,7 +14938,6 @@ Ammo_FakeRoquette_S_24 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_s_24"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -15051,7 +15017,6 @@ Ammo_FakeRoquette_S_24_helo is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_s_24"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -15129,7 +15094,6 @@ Ammo_Javelin is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Javelin"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -15207,7 +15171,6 @@ Ammo_Javelin_LML is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Javelin"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -15287,7 +15250,6 @@ Ammo_M47_DRAGON is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_M47_dragon"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -15367,7 +15329,6 @@ Ammo_M47_DRAGON_Bipied is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_M47_dragon"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -15447,7 +15408,6 @@ Ammo_M47_DRAGON_II is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_M47_dragon"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = True
     TandemCharge                      = False
@@ -15525,7 +15485,6 @@ Ammo_MANPAD_Blowpipe is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Javelin"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -15604,7 +15563,6 @@ Ammo_MANPAD_FIM43 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_fim92"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -15683,7 +15641,6 @@ Ammo_MANPAD_FIM92 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_fim92"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -15762,7 +15719,6 @@ Ammo_MANPAD_FIM92_A is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_fim92"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -15840,7 +15796,6 @@ Ammo_MANPAD_Javelin is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Javelin"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -15919,7 +15874,6 @@ Ammo_MANPAD_Strela2M is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_grail"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -15998,7 +15952,6 @@ Ammo_MANPAD_Strela3 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_grail"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -16077,7 +16030,6 @@ Ammo_MANPAD_igla is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_grail"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -16156,7 +16108,6 @@ Ammo_Mistral is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Mistral"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -16234,7 +16185,6 @@ Ammo_Mistral_Celtic_x4 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Mistral"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -16312,7 +16262,6 @@ Ammo_SAM_9M311_Tunguska_x8 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_9M311_Tunguska"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -16389,7 +16338,6 @@ Ammo_SAM_9M33 is TAmmunitionDescriptor
     AffichageMunitionParSalve         = 1
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -16468,7 +16416,6 @@ Ammo_SAM_9M330_Tor_x8 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_9M33_Osa"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -16547,7 +16494,6 @@ Ammo_SAM_9M336_x3 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_9M38M1_Kub"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -16626,7 +16572,6 @@ Ammo_SAM_9M33M2_x6 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_9M33_Osa"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -16705,7 +16650,6 @@ Ammo_SAM_9M38M1_x4 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_9M38M1_Kub"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -16784,7 +16728,6 @@ Ammo_SAM_9M8M3_x2 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_SAM_9M8M3_x2"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -16863,7 +16806,6 @@ Ammo_SAM_ADATS is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_ATGM_ADATS"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -16942,7 +16884,6 @@ Ammo_SAM_Aspide_1A_x4 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_sparrow"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -17021,7 +16962,6 @@ Ammo_SAM_BLOODHOUND_x1 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_SAM_9M8M3_x2"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -17100,7 +17040,6 @@ Ammo_SAM_FASTA_Strela2M_x4 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_SAM_FASTA_Strela2M_x4"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -17179,7 +17118,6 @@ Ammo_SAM_FASTA_Strela2M_x4_TOWED is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_SAM_FASTA_Strela2M_x4"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -17257,7 +17195,6 @@ Ammo_SAM_FIM92_Stinger_CS is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_aim92"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -17335,7 +17272,6 @@ Ammo_SAM_FIM92_Stinger_CS_x4 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_aim92"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -17413,7 +17349,6 @@ Ammo_SAM_FIM92_Stinger_x4 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_aim92"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -17491,7 +17426,6 @@ Ammo_SAM_FIM92_Stinger_x8 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_aim92"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -17569,7 +17503,6 @@ Ammo_SAM_FIM92C is TAmmunitionDescriptor
     AffichageMunitionParSalve         = 1
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -17647,7 +17580,6 @@ Ammo_SAM_I_Hawk is TAmmunitionDescriptor
     AffichageMunitionParSalve         = 1
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -17726,7 +17658,6 @@ Ammo_SAM_I_Hawk_x3 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_hawk"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -17805,7 +17736,6 @@ Ammo_SAM_Igla is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_grail"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -17884,7 +17814,6 @@ Ammo_SAM_IglaN is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Igla"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -17963,7 +17892,6 @@ Ammo_SAM_IglaN_1M is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Igla"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -18041,7 +17969,6 @@ Ammo_SAM_IglaV is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Igla"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -18119,7 +18046,6 @@ Ammo_SAM_IglaV_x4 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Igla"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -18198,7 +18124,6 @@ Ammo_SAM_MIM72A is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_mim72"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -18277,7 +18202,6 @@ Ammo_SAM_MIM72F is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_mim72"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -18356,7 +18280,6 @@ Ammo_SAM_MIM72G is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_mim72"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -18435,7 +18358,6 @@ Ammo_SAM_Mistral is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Mistral"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -18514,7 +18436,6 @@ Ammo_SAM_R440_x4 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_R440"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -18592,7 +18513,6 @@ Ammo_SAM_RAPIER is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Rapier"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -18671,7 +18591,6 @@ Ammo_SAM_RAPIER_DARKFIRE_x6 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Rapier"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -18750,7 +18669,6 @@ Ammo_SAM_RAPIER_FSA_x4 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Rapier"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -18828,7 +18746,6 @@ Ammo_SAM_RAPIER_x4 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Rapier"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -18906,7 +18823,6 @@ Ammo_SAM_RAPIER_x8 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Rapier"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -18984,7 +18900,6 @@ Ammo_SAM_ROLAND is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_roland"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -19062,7 +18977,6 @@ Ammo_SAM_ROLAND_1 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_roland"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -19140,7 +19054,6 @@ Ammo_SAM_ROLAND_1_x2 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_roland"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -19218,7 +19131,6 @@ Ammo_SAM_ROLAND_2 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_roland"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -19296,7 +19208,6 @@ Ammo_SAM_ROLAND_2_x2 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_roland"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -19375,7 +19286,6 @@ Ammo_SAM_ROLAND_3 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_roland"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -19454,7 +19364,6 @@ Ammo_SAM_ROLAND_3_x2 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_roland"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -19533,7 +19442,6 @@ Ammo_SAM_Strela1_x4 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_9K31_Strela"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -19612,7 +19520,6 @@ Ammo_SAM_Strela10_x4 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Strela_10"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -19691,7 +19598,6 @@ Ammo_SAM_Strela10M3_x4 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Strela_10"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -19769,7 +19675,6 @@ Ammo_SAM_Strela2_x12 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Igla"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -19847,7 +19752,6 @@ Ammo_SAM_Strela2_x2 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Igla"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -19925,7 +19829,6 @@ Ammo_SAM_Strela2_x4 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Igla"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -20004,7 +19907,6 @@ Ammo_SAM_Strela2M_x2 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_SAM_FASTA_Strela2M_x4"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -20083,7 +19985,6 @@ Ammo_SAM_Strela2M_x2_Static is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_SAM_FASTA_Strela2M_x4"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False
@@ -20161,7 +20062,6 @@ Ammo_Starstreak_x3 is TAmmunitionDescriptor
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_Javelin"
     SmokeDescriptor                   = nil
     FireDescriptor                    = nil
-    CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
     TandemCharge                      = False

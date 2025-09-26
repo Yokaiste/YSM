@@ -11,5 +11,4 @@ optionsResources is TUISpecificInGameOptionsResources
     ProdMenuBehavior                    = $/GUIOption/ProdMenuBehavior
     LabelTacticAggregationType          = $/GUIOption/TacticLabelAggregation
     DisplayAutoDeploy                   = $/GUIOption/ShowAutoDeploy
-    CurrentComparator                   = $/GUIOption/UnitComparisonDisplayMode
 )

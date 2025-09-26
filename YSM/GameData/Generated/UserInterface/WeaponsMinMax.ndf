@@ -1081,7 +1081,7 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                // PhysicalDamages x weapon_count_ (Number of weapons)
                PhysicalDamages = TMinMaxValue (
                        Min = 0.12
-                       Max = 5.0
+                       Max = 6.776
                )
                // SuppressDamages x weapon_count_ (Number of weapons)
                SuppressDamages = TMinMaxValue (
@@ -1090,7 +1090,7 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                )
                SplashDamageRadiusGRU = TMinMaxValue (
                        Min = 2
-                       Max = 184
+                       Max = 175
                )
                MaxRangeGRU = TMinMaxValue (
                        Min = 325

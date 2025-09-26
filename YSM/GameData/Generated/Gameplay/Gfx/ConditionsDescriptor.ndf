@@ -168,8 +168,14 @@ ConditionTagRaisedInUnit_xp_veteran is TConditionTagRaisedInUnit
     Tag = "xp_veteran"
 )
 
-ConditionNotInMovement is TConditionNotInMovement
+ConditionInMovement is TConditionInMovement
 (
+    DescriptorId = GUID:{91ef51ae-d041-4e75-ae33-40e444f90eab}
+)
+
+ConditionNotInMovement is TConditionNot
+(
+    ConditionToInverse = ConditionInMovement
     DescriptorId = GUID:{959966e6-de27-4d31-b6de-4bd51244d355}
 )
 

@@ -2,19 +2,32 @@
 PitchSpeedDegreePerSecond is 30
 MaxAltitudeGRU is 3534
 
-BombAttackStrategyDescriptor is TBombAttackStrategyDescriptor()
+BombAttackStrategyDescriptor is TBombAttackStrategyDescriptor
+(
+    DescriptorId                     = GUID:{1AC55F2F-BDC0-420A-A89D-A101BEA10EF7}
+)
 
-DiveAttackStrategyDescriptor is TDiveAttackStrategyDescriptor()
+DiveAttackStrategyDescriptor is TDiveAttackStrategyDescriptor
+(
+    DescriptorId                     = GUID:{1AC55F2F-BDC0-420A-A89D-A101BEA10EF8}
+)
 
-DiveMissileAttackStrategyDescriptor is TDiveMissileAttackStrategyDescriptor()
+DiveMissileAttackStrategyDescriptor is TDiveMissileAttackStrategyDescriptor
+(
+    DescriptorId                     = GUID:{9AC55E2F-BDC0-520A-A89D-A102BEA10EB7}
+)
 
 DiveBombAttackStrategyDescriptor is TDiveBombAttackStrategyDescriptor
 (
+    DescriptorId                     = GUID:{1AC55F2F-BDC0-420A-A89D-A101BEA10EF9}
+
     DiveBombRecoveryDuration = 10 // Temps en secondes pendant lequel l'avion vol à basse altitude après avoir largué ses bombes
 )
 
 DogfightAttackStrategyDescriptor is TDogfightAttackStrategyDescriptor
 (
+    DescriptorId                     = GUID:{1AC55F2F-BDC0-420A-A89D-A101BEA10EFA}
+
     MinDistanceBetweenFighterAndTargetForAttackOnSlowAirplaneStrategy = 0.20 // en ratio de l'agility radius
     MaxDistanceBetweenFighterAndTargetForLateralMoveOnSlowAirplaneStrategy = 0.27 // en ratio de l'agility radius
     SpeedRatioForAttackOnSlowAirplaneStrategy = 0.85
@@ -26,9 +39,14 @@ DogfightAttackStrategyDescriptor is TDogfightAttackStrategyDescriptor
 
 StukaNosediveAttackStrategyDescriptor is TStukaNosediveAttackStrategyDescriptor
 (
+    DescriptorId                     = GUID:{1AC55F2F-BDC0-420A-A89D-A101BEA10EFB}
+
     DistanceNosediveGRU = 477
     WaypointDistanceFromTargetGRU = 283
     AgilityMultiplicator = 2.5
 )
 
-AirGroundMissileAttackStrategyDescriptor is TAirGroundMissileAttackStrategyDescriptor()
+AirGroundMissileAttackStrategyDescriptor is TAirGroundMissileAttackStrategyDescriptor
+(
+    DescriptorId                     = GUID:{1AC55F2F-BDC0-420A-A89D-A101BEA10EFC}
+)

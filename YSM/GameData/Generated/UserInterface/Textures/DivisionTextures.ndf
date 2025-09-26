@@ -35,6 +35,10 @@ Texture_Division_Emblem_FR_6e_DBL is TUIResourceTexture_Common
 (
     FileName = "GameData:/Assets/2D/Interface/UseOutGame/Division/Emblem/FR_6e_DBL.png"
 )
+Texture_Division_Emblem_FR_Div_Rhin is TUIResourceTexture_Common
+(
+    FileName = "GameData:/Assets/2D/Interface/UseOutGame/Division/Emblem/FR_Div_Rhin.png"
+)
 Texture_Division_Emblem_Berlin_Command is TUIResourceTexture_Common
 (
     FileName = "GameData:/Assets/2D/Interface/UseOutGame/Division/Emblem/Berlin_Command.png"
@@ -102,6 +106,10 @@ Texture_Division_Emblem_SOV_119OdtTP is TUIResourceTexture_Common
 Texture_Division_Emblem_SOV_157MSD is TUIResourceTexture_Common
 (
     FileName = "GameData:/Assets/2D/Interface/UseOutGame/Division/Emblem/SOV_157MSD.png"
+)
+Texture_Division_Emblem_SOV_17gvTD is TUIResourceTexture_Common
+(
+    FileName = "GameData:/Assets/2D/Interface/UseOutGame/Division/Emblem/SOV_17gvTD.png"
 )
 Texture_Division_Emblem_SOV_25th_TD is TUIResourceTexture_Common
 (
@@ -251,9 +259,9 @@ Texture_Division_Emblem_RFA_12_Panzer is TUIResourceTexture_Common
 (
     FileName = "GameData:/Assets/2D/Interface/UseOutGame/Division/Emblem/RFA_12_Panzer.png"
 )
-Texture_Division_Emblem__vide is TUIResourceTexture_Common
+Texture_Division_Emblem_RFA_1_Panzerdivision is TUIResourceTexture_Common
 (
-    FileName = "GameData:/Assets/2D/Interface/UseOutGame/Division/Emblem/_vide.png"
+    FileName = "GameData:/Assets/2D/Interface/UseOutGame/Division/Emblem/RFA_1_Panzerdivision.png"
 )
 Texture_Division_Emblem_RFA_26LLB is TUIResourceTexture_Common
 (
@@ -266,6 +274,10 @@ Texture_Division_Emblem_RFA_Luftwaffe is TUIResourceTexture_Common
 Texture_Division_Emblem_RFA_III_Korps is TUIResourceTexture_Common
 (
     FileName = "GameData:/Assets/2D/Interface/UseOutGame/Division/Emblem/RFA_III_Korps.png"
+)
+Texture_Division_Emblem_RFA_3_Panzerdivision is TUIResourceTexture_Common
+(
+    FileName = "GameData:/Assets/2D/Interface/UseOutGame/Division/Emblem/RFA_3_Panzerdivision.png"
 )
 Texture_Division_Emblem_RFA_default is TUIResourceTexture_Common
 (
@@ -394,6 +406,7 @@ DivisionAdditionalTextureBank is TBUCKToolAdditionalTextureBank
         ("Texture_Division_Emblem_FR_152eID", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_FR_152eID)]),
         ("Texture_Division_Emblem_FR_5eDB", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_FR_5eDB)]),
         ("Texture_Division_Emblem_FR_6e_DBL", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_FR_6e_DBL)]),
+        ("Texture_Division_Emblem_FR_Div_Rhin", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_FR_Div_Rhin)]),
         ("Texture_Division_Emblem_Berlin_Command", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_Berlin_Command)]),
         ("Texture_Division_Emblem_NL_4e_Divisie", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_NL_4e_Divisie)]),
         ("Texture_Division_Emblem_NL_CLKA", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_NL_CLKA)]),
@@ -411,6 +424,7 @@ DivisionAdditionalTextureBank is TBUCKToolAdditionalTextureBank
         ("Texture_Division_Emblem_RFA_TerrKdo_Sud", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_RFA_TerrKdo_Sud)]),
         ("Texture_Division_Emblem_SOV_119OdtTP", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_SOV_119OdtTP)]),
         ("Texture_Division_Emblem_SOV_157MSD", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_SOV_157MSD)]),
+        ("Texture_Division_Emblem_SOV_17gvTD", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_SOV_17gvTD)]),
         ("Texture_Division_Emblem_SOV_25th_TD", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_SOV_25th_TD)]),
         ("Texture_Division_Emblem_SOV_27GvMSD", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_SOV_27GvMSD)]),
         ("Texture_Division_Emblem_SOV_31TD", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_SOV_31TD)]),
@@ -448,10 +462,11 @@ DivisionAdditionalTextureBank is TBUCKToolAdditionalTextureBank
         ("Texture_Division_Emblem_RDA_MB_III", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_RDA_MB_III)]),
         ("Texture_Division_Emblem_RDA_LStR40", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_RDA_LStR40)]),
         ("Texture_Division_Emblem_RFA_12_Panzer", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_RFA_12_Panzer)]),
-        ("Texture_Division_Emblem__vide", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem__vide)]),
+        ("Texture_Division_Emblem_RFA_1_Panzerdivision", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_RFA_1_Panzerdivision)]),
         ("Texture_Division_Emblem_RFA_26LLB", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_RFA_26LLB)]),
         ("Texture_Division_Emblem_RFA_Luftwaffe", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_RFA_Luftwaffe)]),
         ("Texture_Division_Emblem_RFA_III_Korps", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_RFA_III_Korps)]),
+        ("Texture_Division_Emblem_RFA_3_Panzerdivision", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_RFA_3_Panzerdivision)]),
         ("Texture_Division_Emblem_RFA_default", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_RFA_default)]),
         ("Texture_Division_Emblem_SOV_AirForce", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_SOV_AirForce)]),
         ("Texture_Division_Emblem_SOV_defaut", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_SOV_defaut)]),

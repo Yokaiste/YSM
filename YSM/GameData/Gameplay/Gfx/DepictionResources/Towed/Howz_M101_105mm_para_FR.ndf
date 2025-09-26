@@ -1,0 +1,3 @@
+export Modele_Howz_M101_105mm_para_FR is TResourceMesh( Mesh="GameData:/Assets/3D/Units/FR/Canon/Howz_M101_105mm_L22/Howz_M101_105mm_L22.fbx")
+export Modele_Howz_M101_105mm_para_FR_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/FR/Canon/Howz_M101_105mm_L22_MID/Howz_M101_105mm_L22_MID.fbx")
+export Modele_Howz_M101_105mm_para_FR_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/FR/Canon/Howz_M101_105mm_L22_LOW/Howz_M101_105mm_L22_LOW.fbx")

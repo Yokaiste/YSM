@@ -1,13 +1,12 @@
-
-outGameHUBContainerResource is TUISpecificOutGameHUBContainerResource
+export OutGameHUBContainerResource is TUISpecificOutGameHUBContainerResource
 (
     ContentRefSize = [ 1920 , 1080 ]
-    SafeBoxMin     = [    0 ,    0 ]
     SafeBoxSize    = [ 1920 , 1080 ]
     //En partant du bas
     ScreenMinY     = (154. + 18.)
     ScreenMaxY     = (154. + 699. - 40.)
     EventInterceptorLayer = $/M3D/Input/UserInputLayerHandler/InputLayer_EscapeMenuInterceptor
+    UniformDrawer = $/UserInterface/UIUniformDrawer
 
     ForegroundContent = BUCKContainerDescriptor
     (
@@ -36,4 +35,11 @@ outGameHUBContainerResource is TUISpecificOutGameHUBContainerResource
             ),
         ]
     )
+)
+
+export OutGameHUBContainerHandler is TUISpecificOutGameHUBContainerHandler
+(
+    MainStyleGuide = ~/DefaultStyleGuide
+    UILayer = $/UserInterface/UILayer_2DInterface_OutGame
+    HUBContainerResource = ~/OutGameHUBContainerResource
 )

@@ -1033,8 +1033,6 @@ private AirplaneMissionArrowDescriptor is TUIPathDescriptor
 (
     Color                 = RGBA[255, 255, 255, 255]
     World                 = $/M3D/Scene/DefaultWorld
-    RenderLayerSelector = TRenderLayerSelector(RenderLayerName='Calque_Fleche_GD')
-    Material              = $/M3D/Shader/MaterialBezierLine_Bichrome
     Width                 = 1500
     ArrowLength           = 2500
     ArrowWidth            = 2500
@@ -1047,8 +1045,6 @@ private SpawnUnitArrowDescriptor is TUIPathDescriptor
 (
     Color                 = RGBA[255, 255, 255, 255]
     World                 = $/M3D/Scene/DefaultWorld
-    RenderLayerSelector = TRenderLayerSelector(RenderLayerName='Calque_Fleche_GD')
-    Material              = $/M3D/Shader/MaterialBezierLine_Bichrome
     Width                 = 1500
     ArrowLength           = 2500
     ArrowWidth            = 2500

@@ -38,7 +38,7 @@ template Template_CubeActionOrderButtonInformationsDescriptor_WithSound
     HintExtendedToken,
     HintDico,
 
-    OrderToken,
+    OrderType,
     ActionType,
     ValidationTargetToken = '',
 
@@ -65,7 +65,7 @@ is TCubeActionOrderButtonInformationsDescriptor
 
     SpotlightUniqueName      = <SpotlightUniqueName>
 
-    OrderToken               = <OrderToken>
+    OrderType                = <OrderType>
     ActionType               = <ActionType>
     ValidationTargetToken    = <ValidationTargetToken>
 )
@@ -129,7 +129,7 @@ export CubeAction_Order_Attack is Template_CubeActionOrderButtonInformationsDesc
     HintExtendedToken        = ''
     HintDico                 = ~/LocalisationConstantes/dico_interface_ingame
 
-    OrderToken               = "MoveAndAttack"
+    OrderType                = EOrderType/MoveAndAttack
     ActionType               = OrderWithClickValidation
     ValidationTargetToken    = 'CA_VALTAR'
     Mapping                  = $/KeyboardOption/Mapping_Attack
@@ -148,7 +148,7 @@ export CubeAction_Order_FastMoveAndAttack is Template_CubeActionOrderButtonInfor
     HintExtendedToken        = ''
     HintDico                 = ~/LocalisationConstantes/dico_interface_ingame
 
-    OrderToken               = "FastMoveAndAttack"
+    OrderType                = EOrderType/FastMoveAndAttack
     ActionType               = OrderWithClickValidation
     ValidationTargetToken    = 'CA_VALTAR'
     Mapping                  = $/KeyboardOption/Mapping_FastMoveAndAttack
@@ -167,7 +167,7 @@ export CubeAction_Order_Stop is Template_CubeActionOrderButtonInformationsDescri
     HintExtendedToken        = ''
     HintDico                 = ~/LocalisationConstantes/dico_interface_ingame
 
-    OrderToken               = "Stop"
+    OrderType                = EOrderType/Stop
     ActionType               = OrderInstant
     Mapping                  = $/KeyboardOption/Mapping_Stop
 )
@@ -185,7 +185,7 @@ export CubeAction_Order_AIDefend is Template_CubeActionOrderButtonInformationsDe
     HintExtendedToken        = ''
     HintDico                 = ~/LocalisationConstantes/dico_interface_ingame
 
-    OrderToken               = "AIDefend"
+    OrderType                = EOrderType/AIDefend
     ActionType               = OrderInstant
     Mapping                  = $/KeyboardOption/Mapping_AIDefense
 )
@@ -203,7 +203,7 @@ export CubeAction_Order_AIManageArtillery_Focus is Template_CubeActionOrderButto
     HintExtendedToken        = ''
     HintDico                 = ~/LocalisationConstantes/dico_interface_ingame
 
-    OrderToken               = "AIManageArtillery_Focus"
+    OrderType                = EOrderType/AIManageArtillery_Focus
     ActionType               = OrderInstant
     Mapping                  = $/KeyboardOption/Mapping_AIManageArtillery_Focus
 )
@@ -223,7 +223,7 @@ export CubeAction_Order_AIManageArtillery_CounterBattery is Template_CubeActionO
 
     SpotlightUniqueName      = "Spotlight_CB"
 
-    OrderToken               = "AIManageArtillery_CounterBattery"
+    OrderType                = EOrderType/AIManageArtillery_CounterBattery
     ActionType               = OrderInstant
     Mapping                  = $/KeyboardOption/Mapping_AIManageArtillery_CounterBattery
 )
@@ -241,7 +241,7 @@ export CubeAction_Order_AIManageArtillery_Auto is Template_CubeActionOrderButton
     HintExtendedToken        = ''
     HintDico                 = ~/LocalisationConstantes/dico_interface_ingame
 
-    OrderToken               = "AIManageArtillery_Auto"
+    OrderType                = EOrderType/AIManageArtillery_Auto
     ActionType               = OrderInstant
     Mapping                  = $/KeyboardOption/Mapping_AIManageArtillery_Auto
 )
@@ -259,7 +259,7 @@ export CubeAction_Order_AIAirplaneAutoManage is Template_CubeActionOrderButtonIn
     HintExtendedToken        = ''
     HintDico                 = ~/LocalisationConstantes/dico_interface_ingame
 
-    OrderToken               = "AIAirplaneAutoManage"
+    OrderType                = EOrderType/AIAirplaneAutoManage
     ActionType               = OrderInstant
     Mapping                  = $/KeyboardOption/Mapping_AIAirplaneAutoManage
 )
@@ -277,7 +277,7 @@ export CubeAction_Order_AISupply is Template_CubeActionOrderButtonInformationsDe
     HintExtendedToken        = ''
     HintDico                 = ~/LocalisationConstantes/dico_interface_ingame
 
-    OrderToken               = "AISupply"
+    OrderType                = EOrderType/AISupply
     ActionType               = OrderInstant
     Mapping                  = $/KeyboardOption/Mapping_AISupply
 )
@@ -295,7 +295,7 @@ export CubeAction_Order_AIStop is Template_CubeActionOrderButtonInformationsDesc
     HintExtendedToken        = ''
     HintDico                 = ~/LocalisationConstantes/dico_interface_ingame
 
-    OrderToken               = "AIStop"
+    OrderType                = EOrderType/AIStop
     ActionType               = OrderInstant
     Mapping                  = $/KeyboardOption/Mapping_AIStop
 )
@@ -313,7 +313,7 @@ export CubeAction_Order_AIAttack is Template_CubeActionOrderButtonInformationsDe
     HintExtendedToken        = ''
     HintDico                 = ~/LocalisationConstantes/dico_interface_ingame
 
-    OrderToken               = "AIAttack"
+    OrderType                = EOrderType/AIAttack
     ActionType               = OrderWithClickValidation
     ValidationTargetToken    = 'CA_VALTAR'
     Mapping                  = $/KeyboardOption/Mapping_AIAttack
@@ -334,7 +334,7 @@ export CubeAction_Order_ShootOnPosition is Template_CubeActionOrderButtonInforma
 
     SpotlightUniqueName      = "Spotlight_FirePos"
 
-    OrderToken               = "ShootOnPosition"
+    OrderType                = EOrderType/ShootOnPosition
     ActionType               = OrderWithClickValidation
     ValidationTargetToken    = 'CA_VALPOS'
     Mapping                  = $/KeyboardOption/Mapping_ShootOnPosition
@@ -355,7 +355,7 @@ export CubeAction_Order_ShootOnPositionSmoke is Template_CubeActionOrderButtonIn
 
     SpotlightUniqueName      = "Spotlight_SmokePos"
 
-    OrderToken               = "ShootOnPositionSmoke"
+    OrderType                = EOrderType/ShootOnPositionSmoke
     ActionType               = OrderWithClickValidation
     ValidationTargetToken    = 'CA_VALPOS'
     Mapping                  = $/KeyboardOption/Mapping_Smoke
@@ -374,7 +374,7 @@ export CubeAction_Order_ShootDefensiveSmoke is Template_CubeActionOrderButtonInf
     HintExtendedToken        = ''
     HintDico                 = ~/LocalisationConstantes/dico_interface_ingame
 
-    OrderToken               = "ShootDefensiveSmoke"
+    OrderType                = EOrderType/ShootDefensiveSmoke
     ActionType               = OrderInstant
     ValidationTargetToken    = 'CA_VALPOS'
     Mapping                  = $/KeyboardOption/Mapping_Smoke
@@ -395,7 +395,7 @@ export CubeAction_Order_Move is Template_CubeActionOrderButtonInformationsDescri
 
     SpotlightUniqueName      = "Spotlight_move"
 
-    OrderToken               = "Move"
+    OrderType                = EOrderType/Move
     ActionType               = OrderWithClickValidation
     ValidationTargetToken    = 'CA_VALPOS'
     Mapping                  = $/KeyboardOption/Mapping_Move
@@ -416,7 +416,7 @@ export CubeAction_Order_QuickMove is Template_CubeActionOrderButtonInformationsD
 
     SpotlightUniqueName      = "Spotlight_movefast"
 
-    OrderToken               = "QuickMove"
+    OrderType                = EOrderType/QuickMove
     ActionType               = OrderWithClickValidation
     ValidationTargetToken    = 'CA_VALPOS'
     Mapping                  = $/KeyboardOption/Mapping_QuickMove
@@ -435,7 +435,7 @@ export CubeAction_Order_SmartMove is Template_CubeActionOrderButtonInformationsD
     HintExtendedToken        = ''
     HintDico                 = ~/LocalisationConstantes/dico_interface_ingame
 
-    OrderToken               = "SmartMove"
+    OrderType                = EOrderType/SmartMove
     ActionType               = OrderWithClickValidation
     ValidationTargetToken    = 'CA_VALPOS'
     Mapping                  = $/KeyboardOption/Mapping_SmartMove
@@ -454,7 +454,7 @@ export CubeAction_Order_UnloadFromTransport is Template_CubeActionOrderButtonInf
     HintExtendedToken        = ''
     HintDico                 = ~/LocalisationConstantes/dico_interface_ingame
 
-    OrderToken               = "UnloadFromTransport"
+    OrderType                = EOrderType/UnloadFromTransport
     ActionType               = OrderInstant
     ValidationTargetToken    = 'CA_VALBOT'
     Mapping                  = $/KeyboardOption/Mapping_UnloadFromTransport
@@ -473,7 +473,7 @@ export CubeAction_Order_UnloadAtPosition is Template_CubeActionOrderButtonInform
     HintExtendedToken        = ''
     HintDico                 = ~/LocalisationConstantes/dico_interface_ingame
 
-    OrderToken               = "UnloadAtPosition"
+    OrderType                = EOrderType/UnloadAtPosition
     ActionType               = OrderWithClickValidation
     ValidationTargetToken    = 'CA_VALBOT'
     Mapping                  = $/KeyboardOption/Mapping_UnloadAtPosition
@@ -492,7 +492,7 @@ export CubeAction_Order_Evacuate is Template_CubeActionOrderButtonInformationsDe
     HintExtendedToken        = ''
     HintDico                 = ~/LocalisationConstantes/dico_interface_ingame
 
-    OrderToken               = "AirplaneEvacuate"
+    OrderType                = EOrderType/AirplaneEvacuate
     ActionType               = OrderInstant
     Mapping                  = $/KeyboardOption/Mapping_Evacuate
 )
@@ -510,7 +510,7 @@ export CubeAction_Order_Land is Template_CubeActionOrderButtonInformationsDescri
     HintExtendedToken        = ''
     HintDico                 = ~/LocalisationConstantes/dico_interface_ingame
 
-    OrderToken               = "Land"
+    OrderType                = EOrderType/Land
     ActionType               = OrderInstant
     Mapping                  = $/KeyboardOption/Mapping_Land
 )
@@ -528,7 +528,7 @@ export CubeAction_Order_ChangeAltitude is Template_CubeActionOrderButtonInformat
     HintExtendedToken        = ''
     HintDico                 = ~/LocalisationConstantes/dico_interface_ingame
 
-    OrderToken               = "ChangeAltitude"
+    OrderType                = EOrderType/ChangeAltitude
     ActionType               = OrderInstant
     Mapping                  = $/KeyboardOption/Mapping_ChangeAltitude
 )
@@ -548,7 +548,7 @@ export CubeAction_Order_Sell is Template_CubeActionOrderButtonInformationsDescri
 
     SpotlightUniqueName      = "Spotlight_sellButton"
 
-    OrderToken               = "Sell"
+    OrderType                = EOrderType/Sell
     ActionType               = OrderInstant
     Mapping                  = $/KeyboardOption/Mapping_Sell
 )
@@ -566,7 +566,7 @@ export CubeAction_Order_Reverse is Template_CubeActionOrderButtonInformationsDes
     HintExtendedToken        = ''
     HintDico                 = ~/LocalisationConstantes/dico_interface_ingame
 
-    OrderToken               = "Reverse"
+    OrderType                = EOrderType/Reverse
     ActionType               = OrderWithClickValidation
     ValidationTargetToken    = 'CA_VALPOS'
     Mapping                  = $/KeyboardOption/Mapping_Reverse
@@ -575,7 +575,6 @@ export CubeAction_Order_Reverse is Template_CubeActionOrderButtonInformationsDes
 
 // Synchro avec enum Functionalities cf CubeActionModuleDescriptor.h
 Functionality_RiposteStance    is 9
-Functionality_AutoCover        is 10
 
 export CubeAction_Functionality_RiposteStance is Template_CubeActionFunctionalityButtonInformationsDescriptor_WithSound
 (

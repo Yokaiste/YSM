@@ -1,3 +1,6 @@
-export Modele_Mortier_81mm_BEL is TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/Canon/Mortar_81mm/Mortar_81mm.fbx")
-export Modele_Mortier_81mm_BEL_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/Canon/Mortar_81mm_MID/Mortar_81mm_MID.fbx")
-export Modele_Mortier_81mm_BEL_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/Canon/Mortar_81mm_LOW/Mortar_81mm_LOW.fbx")
+export ModelFile_Mortier_81mm_BEL is 'GameData:/Assets/3D/Units/US/Canon/Mortier_M1_81mm/Mortier_M1_81mm.fbx'
+export ModelFile_Mortier_81mm_BEL_MID is 'GameData:/Assets/3D/Units/US/Canon/Mortier_M1_81mm/Mortier_M1_81mm.fbx'
+export ModelFile_Mortier_81mm_BEL_LOW is 'GameData:/Assets/3D/Units/US/Canon/Mortier_M1_81mm/Mortier_M1_81mm.fbx'
+export Modele_Mortier_81mm_BEL is TResourceMesh( Mesh=ModelFile_Mortier_81mm_BEL)
+export Modele_Mortier_81mm_BEL_MID is TResourceMesh( Mesh=ModelFile_Mortier_81mm_BEL_MID)
+export Modele_Mortier_81mm_BEL_LOW is TResourceMesh( Mesh=ModelFile_Mortier_81mm_BEL_LOW)

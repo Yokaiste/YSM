@@ -224,14 +224,14 @@ export Descriptor_Missile_AA_AIM54_Phoenix is TEntityDescriptor
         (
             DefaultConfig = TGuidedMissileMovementConfigDescriptor
             (
-                MaxSpeedGRU        = 4240
-                MaxAccelerationGRU = 2120
-                AutoGyr            = 1.5707963267948966
+                MaxSpeedGRU        = 4946
+                MaxAccelerationGRU = 2826
+                AutoGyr            = 1.9198621771937625
             )
             UncontrollableConfig = TGuidedMissileMovementConfigDescriptor
             (
-                MaxSpeedGRU        = 4240
-                MaxAccelerationGRU = 2120
+                MaxSpeedGRU        = 4946
+                MaxAccelerationGRU = 2826
                 AutoGyr            = 1.3962634015954636
             )
             AscendantPhaseConfig = nil
@@ -240,7 +240,7 @@ export Descriptor_Missile_AA_AIM54_Phoenix is TEntityDescriptor
             TimeMaxBetweenRandomMoveWhenUncontrollable = 2
             TimeMinBetweenRandomMoveWhenUncontrollable = 1.0
             TimeBetweenChaosUpdates = 0.1
-            RangeChaos = 8000
+            RangeChaos = 6000
             AngleMaxForRandomMouvUncontrollable = 6.0
             RotationSpeedWhenUncontrollable = 30
         ),
@@ -271,7 +271,7 @@ export Descriptor_Missile_AA_AIM54_Phoenix is TEntityDescriptor
         TCapaciteModuleDescriptor
         (
             DefaultSkillList = [
-                $/GFX/EffectCapacity/Capacite_StressOnMiss_mid,
+                $/GFX/EffectCapacity/Capacite_StressOnMiss_high,
             ]
         ),
         ~/TargetDataModuleDescriptor,
@@ -1292,6 +1292,100 @@ export Descriptor_Missile_AA_R13M is TEntityDescriptor
             TagSet = [
                 "MISSILE",
                 "MISSILE_AA_R13M",
+            ]
+        ),
+        ~/MissileFlagsModuleDescriptor,
+        ~/MissilePositionModuleDescriptor,
+        ~/LinkTeamModuleDescriptor,
+        TApparenceModuleDescriptor
+        (
+            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_Vympel_R13M
+            Depiction     = Template_DescriptorMissileBase
+            (
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Vympel_R13M
+                Actions = MAP[
+                    ( "fx_propulsion_on", TRandomHappening(
+                            Alternatives = [
+                                template_PropulsionActionHappening( Action = $/GFX/GameFx/fx_propulsion_missile_AA_moyen_1 ),
+                                template_PropulsionActionHappening( Action = $/GFX/GameFx/fx_propulsion_missile_AA_moyen_2 ),
+                                template_PropulsionActionHappening( Action = $/GFX/GameFx/fx_propulsion_missile_AA_moyen_3 ),
+                            ]
+                        )),
+                    ( "fx_propulsion_off", template_PropulsionActionHappening( Action = $/GFX/GameFx/fx_arret_missile_AA_moyen )),
+                ]
+            )
+        ),
+        TGuidedMissileModuleDescriptor
+        (
+        ),
+        TGuidedMissileMovementModuleDescriptor
+        (
+            DefaultConfig = TGuidedMissileMovementConfigDescriptor
+            (
+                MaxSpeedGRU        = 3533
+                MaxAccelerationGRU = 1413
+                AutoGyr            = 1.0471975511965976
+            )
+            UncontrollableConfig = TGuidedMissileMovementConfigDescriptor
+            (
+                MaxSpeedGRU        = 3533
+                MaxAccelerationGRU = 1413
+                AutoGyr            = 1.0471975511965976
+            )
+            AscendantPhaseConfig = nil
+            TerminalPhaseConfig = nil
+            CruiseAltitudeGRU = 0.0
+            TimeMaxBetweenRandomMoveWhenUncontrollable = 2
+            TimeMinBetweenRandomMoveWhenUncontrollable = 1.0
+            TimeBetweenChaosUpdates = 0.1
+            RangeChaos = 10000
+            AngleMaxForRandomMouvUncontrollable = 6.0
+            RotationSpeedWhenUncontrollable = 30
+        ),
+        TBaseDamageModuleDescriptor
+        (
+            MaxPhysicalDamages = 2
+            MaxSuppressionDamages = ~/Missile_MaxSuppressionDamages
+            MaxStunDamages = ~/Missile_MaxStunDamages
+        ),
+        TDamageModuleDescriptor
+        (
+            SuppressDamagesRegenRatio = ~/Missile_SuppressDamagesRegenRatioList
+            StunDamagesRegen = ~/Missile_StunDamagesRegen
+            BlindageProperties = TBlindageProperties
+            (
+                ResistanceFront = TResistanceTypeRTTI(Family=ResistanceFamily_vehicule Index=1)
+                ResistanceSides = TResistanceTypeRTTI(Family=ResistanceFamily_vehicule Index=1)
+                ResistanceRear = TResistanceTypeRTTI(Family=ResistanceFamily_vehicule Index=1)
+                ResistanceTop = TResistanceTypeRTTI(Family=ResistanceFamily_vehicule Index=1)
+                ExplosiveReactiveArmor = False
+            )
+            KillWhenDamagesReachMax = True
+            HitRollECM = 0.0
+            AutoOrientation = False
+            UseTopArmorAgainstFire = False
+        ),
+        TDangerousnessModuleDescriptor(Dangerousness  = 200),
+        TCapaciteModuleDescriptor
+        (
+            DefaultSkillList = [
+                $/GFX/EffectCapacity/Capacite_StressOnMiss_mid,
+            ]
+        ),
+        ~/TargetDataModuleDescriptor,
+    ]
+)
+export Descriptor_Missile_AA_R13M1 is TEntityDescriptor
+(
+    DescriptorId       = GUID:{70c43595-141d-4b53-a7d7-bb209affeb13}
+    ClassNameForDebug  = 'Missile_AA_R13M1'
+    ModulesDescriptors = [
+        ~/SimpleTypeUnitModuleDescriptor,
+        TTagsModuleDescriptor
+        (
+            TagSet = [
+                "MISSILE",
+                "MISSILE_AA_R13M1",
             ]
         ),
         ~/MissileFlagsModuleDescriptor,
@@ -5535,6 +5629,87 @@ export Descriptor_Missile_AGM_AGM114A_x8 is TEntityDescriptor
             RangeChaos = 750
             AngleMaxForRandomMouvUncontrollable = 5.0
             RotationSpeedWhenUncontrollable = 5
+        ),
+        TBaseDamageModuleDescriptor
+        (
+            MaxPhysicalDamages = 2
+            MaxSuppressionDamages = ~/Missile_MaxSuppressionDamages
+            MaxStunDamages = ~/Missile_MaxStunDamages
+        ),
+        TDamageModuleDescriptor
+        (
+            SuppressDamagesRegenRatio = ~/Missile_SuppressDamagesRegenRatioList
+            StunDamagesRegen = ~/Missile_StunDamagesRegen
+            BlindageProperties = TBlindageProperties
+            (
+                ResistanceFront = TResistanceTypeRTTI(Family=ResistanceFamily_vehicule Index=1)
+                ResistanceSides = TResistanceTypeRTTI(Family=ResistanceFamily_vehicule Index=1)
+                ResistanceRear = TResistanceTypeRTTI(Family=ResistanceFamily_vehicule Index=1)
+                ResistanceTop = TResistanceTypeRTTI(Family=ResistanceFamily_vehicule Index=1)
+                ExplosiveReactiveArmor = False
+            )
+            KillWhenDamagesReachMax = True
+            HitRollECM = 0.0
+            AutoOrientation = False
+            UseTopArmorAgainstFire = False
+        ),
+        TDangerousnessModuleDescriptor(Dangerousness  = 200),
+        ~/TargetDataModuleDescriptor,
+    ]
+)
+export Descriptor_Missile_AGM_AGM122_Sidearm is TEntityDescriptor
+(
+    DescriptorId       = GUID:{73c850ab-db37-499e-a3c5-01e762b4999e}
+    ClassNameForDebug  = 'Missile_AGM_AGM122_Sidearm'
+    ModulesDescriptors = [
+        ~/SimpleTypeUnitModuleDescriptor,
+        TTagsModuleDescriptor
+        (
+            TagSet = [
+                "MISSILE",
+                "MISSILE_AGM_AGM122_Sidearm",
+            ]
+        ),
+        ~/MissileFlagsModuleDescriptor,
+        ~/MissilePositionModuleDescriptor,
+        ~/LinkTeamModuleDescriptor,
+        TApparenceModuleDescriptor
+        (
+            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_AGM88_Harm
+            Depiction     = Template_DescriptorMissileBase
+            (
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_AGM88_Harm
+                Actions = MAP[
+                    ( "fx_propulsion_on", template_PropulsionActionHappening( Action = $/GFX/GameFx/fx_propulsion_AGM_gros )),
+                ]
+            )
+        ),
+        TGuidedMissileModuleDescriptor
+        (
+        ),
+        TGuidedMissileMovementModuleDescriptor
+        (
+            DefaultConfig = TGuidedMissileMovementConfigDescriptor
+            (
+                MaxSpeedGRU        = 3533
+                MaxAccelerationGRU = 2120
+                AutoGyr            = 0.6981317007977318
+            )
+            UncontrollableConfig = TGuidedMissileMovementConfigDescriptor
+            (
+                MaxSpeedGRU        = 3533
+                MaxAccelerationGRU = 2120
+                AutoGyr            = 0.08726646259971647
+            )
+            AscendantPhaseConfig = nil
+            TerminalPhaseConfig = nil
+            CruiseAltitudeGRU = 0.0
+            TimeMaxBetweenRandomMoveWhenUncontrollable = 2
+            TimeMinBetweenRandomMoveWhenUncontrollable = 1.0
+            TimeBetweenChaosUpdates = 0.1
+            RangeChaos = 800
+            AngleMaxForRandomMouvUncontrollable = 0.0
+            RotationSpeedWhenUncontrollable = 0
         ),
         TBaseDamageModuleDescriptor
         (
@@ -18110,10 +18285,10 @@ export Descriptor_Missile_SAM_BLOODHOUND_x1 is TEntityDescriptor
         ~/LinkTeamModuleDescriptor,
         TApparenceModuleDescriptor
         (
-            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_3M8M
+            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_Bloodhound
             Depiction     = Template_DescriptorMissileBase
             (
-                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_3M8M
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Bloodhound
                 Actions = MAP[
                     ( "fx_propulsion_on", template_PropulsionActionHappening( Action = $/GFX/GameFx/fx_propulsion_missile_AA_tres_gros_KRUG_1 )),
                     ( "fx_propulsion_off", template_PropulsionActionHappening( Action = $/GFX/GameFx/fx_arret_missile_AA_gros )),

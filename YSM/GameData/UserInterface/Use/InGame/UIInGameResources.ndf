@@ -88,9 +88,7 @@ IngameHUDRightFramesWidth is 320.0
 
 InGameMainContainerResource is TUICommonMainContainerResource
 (
-    ContentRefSize = [ 2134 , 1440 ]
-    SafeBoxMin     = [  107 ,   80 ]
-    SafeBoxSize    = ~/FullScreenSafeBoxSize
+    SafeBoxSize    = [ 1920 , 1080 ]
 
     ForegroundComponents = BUCKContainerDescriptor
     (

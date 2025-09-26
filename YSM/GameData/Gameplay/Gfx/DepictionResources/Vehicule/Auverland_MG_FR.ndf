@@ -1,0 +1,19 @@
+export Modele_Auverland_MG_FR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/Auverland_MG/Auverland_MG.fbx"
+)
+
+export Modele_Auverland_MG_FR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/Auverland_MG_MID/Auverland_MG_MID.fbx"
+)
+
+export Modele_Auverland_MG_FR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/Auverland_MG_LOW/Auverland_MG_LOW.fbx"
+)
+
+export Modele_Auverland_MG_FR_Tourelle_01 is TResourceMesh
+(
+    Mesh=ModelFile_AANF1_no_ammo
+)

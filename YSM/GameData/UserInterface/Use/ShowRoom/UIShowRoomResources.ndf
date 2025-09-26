@@ -70,10 +70,6 @@ ShowRoomResource is TUISpecificShowRoomResources
 
 ShowRoomMainContainerResource is TUICommonMainContainerResource
 (
-    ContentRefSize = [ 2134 , 1440 ]
-    SafeBoxMin     = [  107 ,   80 ]
-    SafeBoxSize    = ~/FullScreenSafeBoxSize
-
     ForegroundComponents = BUCKContainerDescriptor
     (
         ComponentFrame = TUIFramePropertyRTTI( RelativeWidthHeight = [1,1] )
@@ -89,4 +85,5 @@ ShowRoomMainContainerResource is TUICommonMainContainerResource
             ),
         ]
     )
+    SafeBoxSize    = [ 1920 , 1080 ]
 )

@@ -1,0 +1,17 @@
+export Modele_M201_RCL_FR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/M201_RCL/M201_RCL.fbx"
+)
+
+export Modele_M201_RCL_FR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/M201_RCL_MID/M201_RCL_MID.fbx"
+)
+
+export Modele_M201_RCL_FR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/M201_RCL_LOW/M201_RCL_LOW.fbx"
+)
+
+
+

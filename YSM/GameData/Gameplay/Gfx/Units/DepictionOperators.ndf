@@ -694,6 +694,17 @@ DepictionOperator_Carriable_Canon_Arms35_NoPitch is template_DepictionOperator_C
     ChassisMovementDeltaFrames = [0.75, 1.0]
 )
 
+DepictionOperator_Carriable_Canon_Arms40 is template_DepictionOperator_Carriable
+(
+    ArmsSpreadAngleInDegrees = 40
+    ChassisMovingAngleInDegrees = 7
+    ChassisAltitudeTranslationInMeters = 0
+    StartingAnimationDuration = 1.4
+    StoppingAnimationDuration = 1.6
+    ArmsMovementDeltaFrames = [0.5, 0.7]
+    ChassisMovementDeltaFrames = [0.75, 1.0]
+)
+
 DepictionOperator_Carriable_Canon_Arms47 is template_DepictionOperator_Carriable
 (
     ArmsSpreadAngleInDegrees = 47

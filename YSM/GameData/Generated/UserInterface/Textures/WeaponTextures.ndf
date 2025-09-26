@@ -1366,6 +1366,10 @@ Texture_Interface_Weapon_agm114 is TUIResourceTexture_Common
 (
     FileName = "GameData:/Assets/2D/Interface/Common/UnitsIcons/Armes/Panel_Info/agm114.png"
 )
+Texture_Interface_Weapon_agm88_harm is TUIResourceTexture_Common
+(
+    FileName = "GameData:/Assets/2D/Interface/Common/UnitsIcons/Armes/Panel_Info/agm88_harm.png"
+)
 Texture_Interface_Weapon_agm45_shrike is TUIResourceTexture_Common
 (
     FileName = "GameData:/Assets/2D/Interface/Common/UnitsIcons/Armes/Panel_Info/agm45_shrike.png"
@@ -1373,10 +1377,6 @@ Texture_Interface_Weapon_agm45_shrike is TUIResourceTexture_Common
 Texture_Interface_Weapon_agm65_maverick is TUIResourceTexture_Common
 (
     FileName = "GameData:/Assets/2D/Interface/Common/UnitsIcons/Armes/Panel_Info/agm65_maverick.png"
-)
-Texture_Interface_Weapon_agm88_harm is TUIResourceTexture_Common
-(
-    FileName = "GameData:/Assets/2D/Interface/Common/UnitsIcons/Armes/Panel_Info/agm88_harm.png"
 )
 Texture_Interface_Weapon_AS37_Martel is TUIResourceTexture_Common
 (
@@ -1936,9 +1936,9 @@ WeaponAdditionalTextureBank is TBUCKToolAdditionalTextureBank
         ("Texture_Interface_Weapon_Malyutka", MAP [(~/ComponentState/Normal, ~/Texture_Interface_Weapon_Malyutka)]),
         ("Texture_Interface_Weapon_Konkurs", MAP [(~/ComponentState/Normal, ~/Texture_Interface_Weapon_Konkurs)]),
         ("Texture_Interface_Weapon_agm114", MAP [(~/ComponentState/Normal, ~/Texture_Interface_Weapon_agm114)]),
+        ("Texture_Interface_Weapon_agm88_harm", MAP [(~/ComponentState/Normal, ~/Texture_Interface_Weapon_agm88_harm)]),
         ("Texture_Interface_Weapon_agm45_shrike", MAP [(~/ComponentState/Normal, ~/Texture_Interface_Weapon_agm45_shrike)]),
         ("Texture_Interface_Weapon_agm65_maverick", MAP [(~/ComponentState/Normal, ~/Texture_Interface_Weapon_agm65_maverick)]),
-        ("Texture_Interface_Weapon_agm88_harm", MAP [(~/ComponentState/Normal, ~/Texture_Interface_Weapon_agm88_harm)]),
         ("Texture_Interface_Weapon_AS37_Martel", MAP [(~/ComponentState/Normal, ~/Texture_Interface_Weapon_AS37_Martel)]),
         ("Texture_Interface_Weapon_agm_alarm", MAP [(~/ComponentState/Normal, ~/Texture_Interface_Weapon_agm_alarm)]),
         ("Texture_Interface_Weapon_ARMAT", MAP [(~/ComponentState/Normal, ~/Texture_Interface_Weapon_ARMAT)]),

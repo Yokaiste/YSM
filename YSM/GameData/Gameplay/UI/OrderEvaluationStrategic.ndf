@@ -1,25 +1,25 @@
 public orderEvaluatorCollectionStrategic is TOrderEvaluatorCollectionDescriptor(
     GameplayLogicManagerHandler = $/UI/LogicManagers/StrategicLogicManagerHandler
     DirectOrdersHandler = [
-        TOrderEvaluatorAny( OrderToken = "Shoot" IsTargetAuthorized = false),
-        TOrderEvaluatorFortifyAntiAir( OrderToken = "FortifyAntiAir" TerminalIfSelected = true),
-        TOrderEvaluatorStrategicMove( OrderToken = "Move"),
+        TOrderEvaluatorAny( OrderType = EOrderType/Shoot IsTargetAuthorized = false),
+        TOrderEvaluatorFortifyAntiAir( OrderType = EOrderType/FortifyAntiAir TerminalIfSelected = true),
+        TOrderEvaluatorStrategicMove( OrderType = EOrderType/Move),
         // /!\ Attention, l'evaluator de move valide quasiment tout (c'est une sorte de default case). Bien reflechir/tester avant de rajouter des trucs en dessous : on ne va peut-etre jamais passer dedans !
     ]
 
     ContextualOrdersHandler = [
-        TOrderEvaluatorStrategicMove( OrderToken = "Move"),
+        TOrderEvaluatorStrategicMove( OrderType = EOrderType/Move),
         // /!\ Attention, l'evaluator de move valide quasiment tout (c'est une sorte de default case). Bien reflechir/tester avant de rajouter des trucs en dessous : on ne va peut-etre jamais passer dedans !
     ]
 
     OrderFeedbacksMap = MAP [
-        ("Shoot", TOrderFeedback(
+        (EOrderType/Shoot, TOrderFeedback(
             FXFeedback = $/GFX/GameFx/FX_Feedback_Attack
             MouseWidgetSelector = "MouseWidgetSelector_DenyOrder"
             PlayFXFeedbackWithoutTargets = true
         )),
-        ("FortifyAntiAir", TOrderFeedback()),
-        ("Move", TOrderFeedback(
+        (EOrderType/FortifyAntiAir, TOrderFeedback()),
+        (EOrderType/Move, TOrderFeedback(
             FXFeedback = $/GFX/GameFx/FX_Feedback_Move
             MouseWidgetSelector = "MouseWidgetSelector_DefaultOrder"
             PlayFXFeedbackWithoutTargets = true

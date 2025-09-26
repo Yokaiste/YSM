@@ -1,0 +1,3 @@
+export Modele_Howz_M30_122mm_SOV is TResourceMesh( Mesh="GameData:/Assets/3D/Units/POL/Canon/Howz_122mm_M30/Howz_122mm_M30.fbx")
+export Modele_Howz_M30_122mm_SOV_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/POL/Canon/Howz_122mm_M30/Howz_122mm_M30.fbx")
+export Modele_Howz_M30_122mm_SOV_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/POL/Canon/Howz_122mm_M30/Howz_122mm_M30.fbx")

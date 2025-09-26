@@ -356,30 +356,6 @@ HumanSubDepictionsShowroom_AT_M53_100mm_TCH is
         MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_vz85_TCH
     ),
 ]
-HumanSubDepictions_AT_T12R_Ruta_SOV is 
-[
-    SubDepiction_ServantLeft
-    (
-        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_G_SOV
-        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_G_SOV_LOW
-    ),
-    SubDepiction_ServantRight
-    (
-        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_D_SOV
-        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_D_SOV_LOW
-    ),
-]
-HumanSubDepictionsShowroom_AT_T12R_Ruta_SOV is 
-[
-    ShowroomSubDepiction_ServantLeft
-    (
-        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_SOV
-    ),
-    ShowroomSubDepiction_ServantRight
-    (
-        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_SOV
-    ),
-]
 HumanSubDepictions_AT_T12_Rapira_DDR is 
 [
     SubDepiction_ServantLeft
@@ -2045,6 +2021,42 @@ HumanSubDepictionsShowroom_Atteam_TOW_CAN is
         MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_CAN
     ),
 ]
+HumanSubDepictions_Auverland_FR is 
+[
+    SubDepiction_Driver
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Driver_FR
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Driver_FR_LOW
+    ),
+]
+HumanSubDepictionsShowroom_Auverland_FR is []
+HumanSubDepictions_Auverland_MG_FR is 
+[
+    SubDepiction_Driver
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Driver_FR
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Driver_FR_LOW
+    ),
+]
+HumanSubDepictionsShowroom_Auverland_MG_FR is []
+HumanSubDepictions_Auverland_MILAN_FR is 
+[
+    SubDepiction_Driver
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Driver_FR
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Driver_FR_LOW
+    ),
+]
+HumanSubDepictionsShowroom_Auverland_MILAN_FR is []
+HumanSubDepictions_Auverland_PC_FR is 
+[
+    SubDepiction_Driver
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Driver_FR
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Driver_FR_LOW
+    ),
+]
+HumanSubDepictionsShowroom_Auverland_PC_FR is []
 HumanSubDepictions_BAV_485_POL is 
 [
     SubDepiction_Driver
@@ -2090,6 +2102,15 @@ HumanSubDepictions_BM14M_POL is
     ),
 ]
 HumanSubDepictionsShowroom_BM14M_POL is []
+HumanSubDepictions_BM14M_SOV is 
+[
+    SubDepiction_Driver
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Driver_POL
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Driver_POL_LOW
+    ),
+]
+HumanSubDepictionsShowroom_BM14M_SOV is []
 HumanSubDepictions_BM21V_GradV_SOV is 
 [
     SubDepiction_Driver
@@ -3080,6 +3101,35 @@ HumanSubDepictionsShowroom_DCA_GAI_BO1_20mm_ESP is
         MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_ESP
     ),
 ]
+HumanSubDepictions_DCA_HS831_30mm_FR is 
+[
+    SubDepiction_ServantWalkOnlyRight
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_D_FR
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_D_FR_LOW
+    ),
+    SubDepiction_GunnerIdleOnlyRight
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_D_FR
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_D_FR_LOW
+    ),
+    SubDepiction_ServantLeft
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_G_FR
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_G_FR_LOW
+    ),
+]
+HumanSubDepictionsShowroom_DCA_HS831_30mm_FR is 
+[
+    ShowroomSubDepiction_GunnerRight
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_FR
+    ),
+    ShowroomSubDepiction_ServantLeft
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_FR
+    ),
+]
 HumanSubDepictions_DCA_HSS630_triple_20mm_BEL is 
 [
     SubDepiction_ServantLeft
@@ -3575,6 +3625,35 @@ HumanSubDepictionsShowroom_DCA_M55_BEL is
     ShowroomSubDepiction_ServantRight
     (
         MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_BEL
+    ),
+]
+HumanSubDepictions_DCA_M55_FR is 
+[
+    SubDepiction_ServantWalkOnlyLeft
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_G_FR
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_G_FR_LOW
+    ),
+    SubDepiction_GunnerIdleOnlyLeft
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_G_FR
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_G_FR_LOW
+    ),
+    SubDepiction_ServantRight
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_D_FR
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_D_FR_LOW
+    ),
+]
+HumanSubDepictionsShowroom_DCA_M55_FR is 
+[
+    ShowroomSubDepiction_GunnerLeft
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_FR
+    ),
+    ShowroomSubDepiction_ServantRight
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_FR
     ),
 ]
 HumanSubDepictions_DCA_M55_NL is 
@@ -6158,30 +6237,6 @@ HumanSubDepictionsShowroom_Howz_2A36_Giatsint_B_SOV is
         MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_SOV
     ),
 ]
-HumanSubDepictions_Howz_A19_122mm_ESP is 
-[
-    SubDepiction_ServantLeft
-    (
-        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_D_ESP
-        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_D_ESP_LOW
-    ),
-    SubDepiction_ServantRight
-    (
-        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_G_ESP
-        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_G_ESP_LOW
-    ),
-]
-HumanSubDepictionsShowroom_Howz_A19_122mm_ESP is 
-[
-    ShowroomSubDepiction_ServantLeft
-    (
-        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_ESP
-    ),
-    ShowroomSubDepiction_ServantRight
-    (
-        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_ESP
-    ),
-]
 HumanSubDepictions_Howz_A19_122mm_POL is 
 [
     SubDepiction_ServantLeft
@@ -6638,6 +6693,30 @@ HumanSubDepictionsShowroom_Howz_M101_105mm_para_BEL is
         MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_ParaCmdo_BEL
     ),
 ]
+HumanSubDepictions_Howz_M101_105mm_para_FR is 
+[
+    SubDepiction_ServantLeft
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_Para_Sep_G_FR
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_Para_Sep_G_FR_LOW
+    ),
+    SubDepiction_ServantRight
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_Para_NCO_D_FR
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_Para_NCO_D_FR_LOW
+    ),
+]
+HumanSubDepictionsShowroom_Howz_M101_105mm_para_FR is 
+[
+    ShowroomSubDepiction_ServantLeft
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_Para_Sep_G_FR
+    ),
+    ShowroomSubDepiction_ServantRight
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_Para_NCO_D_FR
+    ),
+]
 HumanSubDepictions_Howz_M102_105mm_US is 
 [
     SubDepiction_ServantLeft
@@ -6878,6 +6957,30 @@ HumanSubDepictionsShowroom_Howz_M30_122mm_POL is
         MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_POL
     ),
 ]
+HumanSubDepictions_Howz_M30_122mm_SOV is 
+[
+    SubDepiction_ServantLeft
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_G_SOV
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_G_SOV_LOW
+    ),
+    SubDepiction_ServantRight
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_D_SOV
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_D_SOV_LOW
+    ),
+]
+HumanSubDepictionsShowroom_Howz_M30_122mm_SOV is 
+[
+    ShowroomSubDepiction_ServantLeft
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_SOV
+    ),
+    ShowroomSubDepiction_ServantRight
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_SOV
+    ),
+]
 HumanSubDepictions_Howz_M30_122mm_TCH is 
 [
     SubDepiction_ServantLeft
@@ -7044,6 +7147,30 @@ HumanSubDepictionsShowroom_Howz_ML20_152mm_POL is
     ShowroomSubDepiction_ServantRight
     (
         MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_POL
+    ),
+]
+HumanSubDepictions_Howz_ML20_152mm_SOV is 
+[
+    SubDepiction_ServantLeft
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_G_SOV
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_G_SOV_LOW
+    ),
+    SubDepiction_ServantRight
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_D_SOV
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_D_SOV_LOW
+    ),
+]
+HumanSubDepictionsShowroom_Howz_ML20_152mm_SOV is 
+[
+    ShowroomSubDepiction_ServantLeft
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_SOV
+    ),
+    ShowroomSubDepiction_ServantRight
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_SOV
     ),
 ]
 HumanSubDepictions_Howz_MstaB_150mm_SOV is 
@@ -7805,6 +7932,20 @@ HumanSubDepictions_M151_MUTT_trans_US is
     ),
 ]
 HumanSubDepictionsShowroom_M151_MUTT_trans_US is []
+HumanSubDepictions_M16_MGMC_FR is 
+[
+    SubDepiction_Driver
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Driver_FR
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Driver_FR_LOW
+    ),
+    SubDepiction_GunnerRight
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_D_FR
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_D_FR_LOW
+    ),
+]
+HumanSubDepictionsShowroom_M16_MGMC_FR is []
 HumanSubDepictions_M201_CMD_FR is 
 [
     SubDepiction_Driver
@@ -7850,6 +7991,15 @@ HumanSubDepictions_M201_RASURA_FR is
     ),
 ]
 HumanSubDepictionsShowroom_M201_RASURA_FR is []
+HumanSubDepictions_M201_RCL_FR is 
+[
+    SubDepiction_Driver
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Driver_FR
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Driver_FR_LOW
+    ),
+]
+HumanSubDepictionsShowroom_M201_RCL_FR is []
 HumanSubDepictions_M274_Mule_ITOW_US is 
 [
     SubDepiction_Driver
@@ -9173,6 +9323,30 @@ HumanSubDepictionsShowroom_Mortier_M43_82mm_Para_POL is
         MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_POL
     ),
 ]
+HumanSubDepictions_Mortier_M43_82mm_SOV is 
+[
+    SubDepiction_ServantLeft
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_G_SOV
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_G_SOV_LOW
+    ),
+    SubDepiction_ATGMServantRight
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_D_SOV
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_D_SOV_LOW
+    ),
+]
+HumanSubDepictionsShowroom_Mortier_M43_82mm_SOV is 
+[
+    ShowroomSubDepiction_ServantLeft
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_SOV
+    ),
+    ShowroomSubDepiction_ATGMServantRight
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_SOV
+    ),
+]
 HumanSubDepictions_Mortier_MORT61_120mm_FR is 
 [
     SubDepiction_ATGMServantLeft
@@ -9496,6 +9670,15 @@ HumanSubDepictions_Pegaso_3055_20mm_twin_ESP is
     ),
 ]
 HumanSubDepictionsShowroom_Pegaso_3055_20mm_twin_ESP is []
+HumanSubDepictions_Pegaso_3055_ESP is 
+[
+    SubDepiction_Driver
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Driver_ESP
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Driver_ESP_LOW
+    ),
+]
+HumanSubDepictionsShowroom_Pegaso_3055_ESP is []
 HumanSubDepictions_Pegaso_3055_GAI_BO1_ESP is 
 [
     SubDepiction_Driver
@@ -9904,6 +10087,33 @@ HumanSubDepictions_Tracked_Rapier_UK is
     ),
 ]
 HumanSubDepictionsShowroom_Tracked_Rapier_UK is []
+HumanSubDepictions_Trafic_Gendarmerie_FR is 
+[
+    SubDepiction_Driver
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Driver_FR
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Driver_FR_LOW
+    ),
+]
+HumanSubDepictionsShowroom_Trafic_Gendarmerie_FR is []
+HumanSubDepictions_UAZ_452_MP_POL is 
+[
+    SubDepiction_Driver
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Driver_POL
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Driver_POL_LOW
+    ),
+]
+HumanSubDepictionsShowroom_UAZ_452_MP_POL is []
+HumanSubDepictions_UAZ_452_MP_SOV is 
+[
+    SubDepiction_Driver
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Driver_SOV
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Driver_SOV_LOW
+    ),
+]
+HumanSubDepictionsShowroom_UAZ_452_MP_SOV is []
 HumanSubDepictions_UAZ_452_MP_TCH is 
 [
     SubDepiction_Driver
@@ -10822,17 +11032,6 @@ unnamed TTransportedInfantryCatalogEntries
         TTransportedInfantryEntry
         (
             Count = 2
-            Identifier = "AT_T12R_Ruta_SOV"
-            Meshes = 
-            [
-                $/GFX/DepictionResources/MeshDescriptor_Servant_G_SOV,
-                $/GFX/DepictionResources/MeshDescriptor_Servant_D_SOV,
-            ]
-            UniqueCount = 2
-        ),
-        TTransportedInfantryEntry
-        (
-            Count = 2
             Identifier = "AT_T12_Rapira_DDR"
             Meshes = 
             [
@@ -11602,6 +11801,46 @@ unnamed TTransportedInfantryCatalogEntries
         TTransportedInfantryEntry
         (
             Count = 1
+            Identifier = "Auverland_FR"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Driver_FR,
+            ]
+            UniqueCount = 1
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 1
+            Identifier = "Auverland_MG_FR"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Driver_FR,
+            ]
+            UniqueCount = 1
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 1
+            Identifier = "Auverland_MILAN_FR"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Driver_FR,
+            ]
+            UniqueCount = 1
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 1
+            Identifier = "Auverland_PC_FR"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Driver_FR,
+            ]
+            UniqueCount = 1
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 1
             Identifier = "BAV_485_POL"
             Meshes = 
             [
@@ -11643,6 +11882,16 @@ unnamed TTransportedInfantryCatalogEntries
         (
             Count = 1
             Identifier = "BM14M_POL"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Driver_POL,
+            ]
+            UniqueCount = 1
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 1
+            Identifier = "BM14M_SOV"
             Meshes = 
             [
                 $/GFX/DepictionResources/MeshDescriptor_Driver_POL,
@@ -12276,6 +12525,17 @@ unnamed TTransportedInfantryCatalogEntries
         TTransportedInfantryEntry
         (
             Count = 2
+            Identifier = "DCA_HS831_30mm_FR"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Servant_D_FR,
+                $/GFX/DepictionResources/MeshDescriptor_Servant_G_FR,
+            ]
+            UniqueCount = 2
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 2
             Identifier = "DCA_HSS630_triple_20mm_BEL"
             Meshes = 
             [
@@ -12468,6 +12728,17 @@ unnamed TTransportedInfantryCatalogEntries
             [
                 $/GFX/DepictionResources/MeshDescriptor_Servant_G_BEL,
                 $/GFX/DepictionResources/MeshDescriptor_Servant_D_BEL,
+            ]
+            UniqueCount = 2
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 2
+            Identifier = "DCA_M55_FR"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Servant_G_FR,
+                $/GFX/DepictionResources/MeshDescriptor_Servant_D_FR,
             ]
             UniqueCount = 2
         ),
@@ -13787,17 +14058,6 @@ unnamed TTransportedInfantryCatalogEntries
         TTransportedInfantryEntry
         (
             Count = 2
-            Identifier = "Howz_A19_122mm_ESP"
-            Meshes = 
-            [
-                $/GFX/DepictionResources/MeshDescriptor_Servant_D_ESP,
-                $/GFX/DepictionResources/MeshDescriptor_Servant_G_ESP,
-            ]
-            UniqueCount = 2
-        ),
-        TTransportedInfantryEntry
-        (
-            Count = 2
             Identifier = "Howz_A19_122mm_POL"
             Meshes = 
             [
@@ -14007,6 +14267,17 @@ unnamed TTransportedInfantryCatalogEntries
         TTransportedInfantryEntry
         (
             Count = 2
+            Identifier = "Howz_M101_105mm_para_FR"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Servant_Para_Sep_G_FR,
+                $/GFX/DepictionResources/MeshDescriptor_Servant_Para_NCO_D_FR,
+            ]
+            UniqueCount = 2
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 2
             Identifier = "Howz_M102_105mm_US"
             Meshes = 
             [
@@ -14117,6 +14388,17 @@ unnamed TTransportedInfantryCatalogEntries
         TTransportedInfantryEntry
         (
             Count = 2
+            Identifier = "Howz_M30_122mm_SOV"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Servant_G_SOV,
+                $/GFX/DepictionResources/MeshDescriptor_Servant_D_SOV,
+            ]
+            UniqueCount = 2
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 2
             Identifier = "Howz_M30_122mm_TCH"
             Meshes = 
             [
@@ -14188,6 +14470,17 @@ unnamed TTransportedInfantryCatalogEntries
             [
                 $/GFX/DepictionResources/MeshDescriptor_Servant_G_POL,
                 $/GFX/DepictionResources/MeshDescriptor_Servant_D_POL,
+            ]
+            UniqueCount = 2
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 2
+            Identifier = "Howz_ML20_152mm_SOV"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Servant_G_SOV,
+                $/GFX/DepictionResources/MeshDescriptor_Servant_D_SOV,
             ]
             UniqueCount = 2
         ),
@@ -14959,6 +15252,17 @@ unnamed TTransportedInfantryCatalogEntries
         ),
         TTransportedInfantryEntry
         (
+            Count = 2
+            Identifier = "M16_MGMC_FR"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Driver_FR,
+                $/GFX/DepictionResources/MeshDescriptor_Servant_D_FR,
+            ]
+            UniqueCount = 2
+        ),
+        TTransportedInfantryEntry
+        (
             Count = 1
             Identifier = "M201_CMD_FR"
             Meshes = 
@@ -15001,6 +15305,16 @@ unnamed TTransportedInfantryCatalogEntries
         (
             Count = 1
             Identifier = "M201_RASURA_FR"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Driver_FR,
+            ]
+            UniqueCount = 1
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 1
+            Identifier = "M201_RCL_FR"
             Meshes = 
             [
                 $/GFX/DepictionResources/MeshDescriptor_Driver_FR,
@@ -15826,6 +16140,17 @@ unnamed TTransportedInfantryCatalogEntries
         TTransportedInfantryEntry
         (
             Count = 2
+            Identifier = "Mortier_M43_82mm_SOV"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Servant_G_SOV,
+                $/GFX/DepictionResources/MeshDescriptor_Servant_D_SOV,
+            ]
+            UniqueCount = 2
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 2
             Identifier = "Mortier_MORT61_120mm_FR"
             Meshes = 
             [
@@ -16004,6 +16329,16 @@ unnamed TTransportedInfantryCatalogEntries
                 $/GFX/DepictionResources/MeshDescriptor_Servant_D_ESP,
             ]
             UniqueCount = 2
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 1
+            Identifier = "Pegaso_3055_ESP"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Driver_ESP,
+            ]
+            UniqueCount = 1
         ),
         TTransportedInfantryEntry
         (
@@ -16426,6 +16761,36 @@ unnamed TTransportedInfantryCatalogEntries
             Meshes = 
             [
                 $/GFX/DepictionResources/MeshDescriptor_Driver_UK,
+            ]
+            UniqueCount = 1
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 1
+            Identifier = "Trafic_Gendarmerie_FR"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Driver_FR,
+            ]
+            UniqueCount = 1
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 1
+            Identifier = "UAZ_452_MP_POL"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Driver_POL,
+            ]
+            UniqueCount = 1
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 1
+            Identifier = "UAZ_452_MP_SOV"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Driver_SOV,
             ]
             UniqueCount = 1
         ),

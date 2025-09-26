@@ -699,6 +699,7 @@ private PanelInfoDivision is BUCKListDescriptor
     ComponentFrame = TUIFramePropertyRTTI
     (
         RelativeWidthHeight = [1.0, 0.0]
+        MagnifiableOffset = [-10.0, 0.0]
     )
 
     Axis = ~/ListAxis/Vertical
@@ -711,7 +712,7 @@ private PanelInfoDivision is BUCKListDescriptor
         (
             ComponentDescriptor = BUCKGridDescriptor
             (
-                ElementName = 'DivisionEmblemTextureGrid'
+                ElementName = "DivisionEmblemTextureGrid"
 
                 ComponentFrame = TUIFramePropertyRTTI
                 (
@@ -723,7 +724,7 @@ private PanelInfoDivision is BUCKListDescriptor
                 InterElementMargin = TRTTILength2( Magnifiable = [2.0, 5.0] )
                 LastElementMargin = TRTTILength2( Magnifiable = [5.0, 5.0] )
 
-                MaxElementsPerDimension = [10, 0]
+                MaxElementsPerDimension = [15, 0]
             )
         )
     ]
@@ -839,13 +840,6 @@ is BUCKContainerDescriptor
 
     MagnifierMultiplication = <Scale>
     HidePointerEvents = true
-
-    // Radius = 30
-    // NbOfPoints = 7
-    // BackgroundBlockColorToken = 'Transparent'
-    // BorderLineColorToken = 'Transparent'
-    // BorderThicknessToken = '2'
-    // RoundedVertexes = [false,false,true,true]
 
     FitStyle = ~/ContainerFitStyle/FitToContentHorizontally
 
@@ -1167,6 +1161,68 @@ private UnitInfoPanelSubSpecialtiesDescriptor is BUCKListDescriptor
 )
 
 // -------------------------------------------------------------------------------------------------
+
+template DivisionEmblemButton
+[
+    Scale : float,
+] is BUCKButtonDescriptor
+(
+    ElementName = "DivisionEmblemButton"
+
+    ComponentFrame = TUIFramePropertyRTTI
+    (
+        MagnifiableWidthHeight = [36.0*<Scale>, 36.0*<Scale>]
+    )
+
+    Components =
+    [
+        BUCKTextureDescriptor
+        (
+            ElementName = "DivisionEmblemTexture"
+
+            ComponentFrame = TUIFramePropertyRTTI
+            (
+                RelativeWidthHeight = [1.0, 1.0]
+            )
+
+            TextureFrame = TUIFramePropertyRTTI
+            (
+                RelativeWidthHeight = [1.0, 1.0]
+                AlignementToAnchor = [0.5, 0.5]
+                AlignementToFather = [0.5, 0.5]
+            )
+
+            ResizeMode = ~/TextureResizeMode/UserDefined
+            ClipTextureToComponent = true
+        ),
+        BUCKSpecificHintableArea
+        (
+            ElementName = "DivisionEmblemHint"
+            DicoToken = ~/LocalisationConstantes/dico_units
+        ),
+        BUCKTextureDescriptor
+        (
+            ElementName = "DivisionEmblemDlcLock"
+            TextureToken = "OutgameTexture_Division_Dlc_Corner"
+
+            ComponentFrame = TUIFramePropertyRTTI
+            (
+                RelativeWidthHeight = [1.0, 1.0]
+            )
+
+            TextureFrame = TUIFramePropertyRTTI
+            (
+                RelativeWidthHeight = [1.0, 1.0]
+                AlignementToAnchor = [0.5, 0.5]
+                AlignementToFather = [0.5, 0.5]
+            )
+
+            ResizeMode = ~/TextureResizeMode/UserDefined
+        ),
+    ]
+)
+
+// -------------------------------------------------------------------------------------------------
 // UISpecificUnitInfoPanelViewDescriptor
 // -------------------------------------------------------------------------------------------------
 
@@ -1186,6 +1242,9 @@ is TUISpecificUnitInfoPanelViewDescriptor
 
     WeaponViewDescriptor = UISpecificUnitInfoSingleWeaponPanelViewDescriptor( Scale = Scale)
     UnitSpecialtiesContainer = ~/UnitSpecialties
+    DivisionEmblemDescriptor = DivisionEmblemButton( Scale = Scale )
+    SmallDivisionEmblemDescriptor = DivisionEmblemButton( Scale = 0.65 * Scale )
+    DivisionNumberForSmallerDisplay = 10 // If a unit is included in more divisions than this number, division icons are displayed smaller
 
     VehiculeToken = "UIP_VEHIC"
     WeakTopToken = "UIP_RFWK"
@@ -1244,80 +1303,15 @@ is TUISpecificUnitInfoPanelViewDescriptor
     AttributeTypeConfiguration = MAP
     [
         ("Default", listeAffichageInfoUnit_Default),
-
         ("avion", listeAffichageInfoUnit_Air),
-
         ("VehiculeTransporter", listeAffichageInfoUnit_VehiculeTransport),
-
         ("Infantry",listeAffichageInfoUnit_Infanterie),
-
         ("VehiculeSupplier", listeAffichageInfoUnit_Supply),
-
         ("FOB", listeAffichageInfoUnit_FOB),
-
         ("HelicoDefault", listeAffichageInfoUnit_HelicoDefault),
-
         ("HelicoTransporter", listeAffichageInfoUnit_HelicoTransport),
-
         ("HelicoSupplier", listeAffichageInfoUnit_HelicoSupply),
     ]
-
-    DivisionEmblemDescriptor = BUCKButtonDescriptor
-    (
-        ElementName = 'DivisionEmblemButton'
-
-        ComponentFrame = TUIFramePropertyRTTI
-        (
-            MagnifiableWidthHeight = [36.0, 36.0]
-        )
-
-        Components =
-        [
-            BUCKTextureDescriptor
-            (
-                ElementName = "DivisionEmblemTexture"
-
-                ComponentFrame = TUIFramePropertyRTTI
-                (
-                    RelativeWidthHeight = [1.0, 1.0]
-                )
-
-                TextureFrame = TUIFramePropertyRTTI
-                (
-                    RelativeWidthHeight = [1.0*Scale, 1.0*Scale]
-                    AlignementToAnchor = [0.5, 0.5]
-                    AlignementToFather = [0.5, 0.5]
-                )
-
-                ResizeMode = ~/TextureResizeMode/UserDefined
-                ClipTextureToComponent = true
-            ),
-            BUCKSpecificHintableArea
-            (
-                ElementName = "DivisionEmblemHint"
-                DicoToken = ~/LocalisationConstantes/dico_units
-            ),
-            BUCKTextureDescriptor
-            (
-                ElementName = "DivisionEmblemDlcLock"
-                TextureToken = "OutgameTexture_Division_Dlc_Corner"
-
-                ComponentFrame = TUIFramePropertyRTTI
-                (
-                    RelativeWidthHeight = [1.0, 1.0]
-                )
-
-                TextureFrame = TUIFramePropertyRTTI
-                (
-                    RelativeWidthHeight = [1.0*Scale, 1.0*Scale]
-                    AlignementToAnchor = [0.5, 0.5]
-                    AlignementToFather = [0.5, 0.5]
-                )
-
-                ResizeMode = ~/TextureResizeMode/UserDefined
-            ),
-        ]
-    )
 
     HidePlatingPanelForResistance =
     [

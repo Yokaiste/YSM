@@ -25,14 +25,15 @@ export OutGameResourceSpecific is TUISpecificOutGameResources
 
     MainStyleGuide              = ~/DefaultStyleGuide
 
-    HUBContainerResource       = ~/outGameHUBContainerResource
+    HUBContainerResource        = $/UI/HUBContainer/OutGameHUBContainerResource
+    HUBContainerHandler         = $/UI/HUBContainer/OutGameHUBContainerHandler
     ActionScreensContainerResource = ~/outGameActionScreensContainerResource
 
     UserInputBinder             = $/GameOptionsInterface/UserInputBinder
     UIOffscreenSceneFactory     = $/M3D/Scene/SceneFactory_UIOffscreen
     LevelUpAnimResource         = ~/LevelUpAnimResourceWg2
     WaitAnimResource            = ~/WaitAnimResource
-    LoadingResource             = ~/SpecificOutGameLoadingPanelResource
+    LoadingPanelHandler         = $/UI/LoadingScreen/LoadingPanelHandler
     LoginResource               = ~/LoginResource
     EscapePanelResources        = ~/EscapePanelResource
 

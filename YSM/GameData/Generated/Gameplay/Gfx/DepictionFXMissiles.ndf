@@ -16,6 +16,7 @@ FXWeapon_AA_Matra_R530 is FXWeapon_0
 FXWeapon_AA_Matra_Super_530D is FXWeapon_0
 FXWeapon_AA_Matra_Super_530F is FXWeapon_0
 FXWeapon_AA_R13M is FXWeapon_1
+FXWeapon_AA_R13M1 is FXWeapon_1
 FXWeapon_AA_R23R_Vympel is FXWeapon_0
 FXWeapon_AA_R24MR_Vympel is FXWeapon_0
 FXWeapon_AA_R24R_Vympel is FXWeapon_0
@@ -64,6 +65,7 @@ FXWeapon_AGM_AGM114A_x2_salve is FXWeapon_5
 FXWeapon_AGM_AGM114A_x2_sol is FXWeapon_5
 FXWeapon_AGM_AGM114A_x4 is FXWeapon_5
 FXWeapon_AGM_AGM114A_x8 is FXWeapon_5
+FXWeapon_AGM_AGM122_Sidearm is FXWeapon_6
 FXWeapon_AGM_AGM45_Shrike is FXWeapon_6
 FXWeapon_AGM_AGM65B_Maverick is FXWeapon_6
 FXWeapon_AGM_AGM65D_Maverick is FXWeapon_6

@@ -15,7 +15,7 @@ TargetManagerModuleDescriptor is TTargetManagerModuleDescriptor()
 
 BuildingOrderConfigModuleDescriptor is TOrderableModuleDescriptor
 (
-    UnlockableOrders = [ 'Stop', 'SupplyUnit', 'AskForSupply', 'AIDefend', 'AIAttack', 'AIStop' ]
+    UnlockableOrders = [ EOrderType/Stop, EOrderType/SupplyUnit, EOrderType/AskForSupply, EOrderType/AIDefend, EOrderType/AIAttack, EOrderType/AIStop ]
 )
 
 template AirplaneMovementDescriptor

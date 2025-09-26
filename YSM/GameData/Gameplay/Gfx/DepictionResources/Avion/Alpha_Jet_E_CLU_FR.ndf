@@ -1,0 +1,19 @@
+export Modele_Alpha_Jet_E_CLU_FR is TResourceMesh
+(
+    Mesh=ModelFile_Alpha_Jet_E_FR
+)
+
+export Modele_Alpha_Jet_E_CLU_FR_MID is TResourceMesh
+(
+    Mesh=ModelFile_Alpha_Jet_E_FR_MID
+)
+
+export Modele_Alpha_Jet_E_CLU_FR_LOW is TResourceMesh
+(
+    Mesh=ModelFile_Alpha_Jet_E_FR_LOW
+)
+
+export Modele_Alpha_Jet_E_CLU_FR_train is TResourceMesh
+(
+    Mesh=ModelFile_Alpha_Jet_E_FR_train
+)

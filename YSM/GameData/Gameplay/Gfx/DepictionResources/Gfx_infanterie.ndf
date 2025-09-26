@@ -3979,6 +3979,8 @@ export Modele_MANPAD_Mistral_Legion_FR_LOW is TResourceMesh( Mesh=FR_Legion_1_LO
 // 'GameData:/Assets/3D/Units/UK/Infanterie/SAS/SAS_NCO.fbx'
 // 'GameData:/Assets/3D/Units/UK/Infanterie/Territorial/Territorial_1.fbx'
 // 'GameData:/Assets/3D/Units/UK/Infanterie/Territorial/Territorial_2.fbx'
+// 'GameData:/Assets/3D/Units/UK/Infanterie/Rifleman/Guard_spe.fbx'
+// 'GameData:/Assets/3D/Units/UK/Infanterie/Rifleman/Guard_NCO.fbx'
 
 UK_Para_1 is 'GameData:/Assets/3D/Units/UK/Infanterie/Paratroopers/Para_1.fbx'
 UK_Para_2 is 'GameData:/Assets/3D/Units/UK/Infanterie/Paratroopers/Para_2.fbx'
@@ -4011,6 +4013,9 @@ UK_Territorial_1_LOW is 'GameData:/Assets/3D/Units/UK/Infanterie/Territorial/Ter
 
 UK_Ghillie is 'GameData:/Assets/3D/Units/UK/Infanterie/Ghillie/Ghillie.fbx'
 UK_Ghillie_LOW is 'GameData:/Assets/3D/Units/UK/Infanterie/Ghillie/Ghillie_LOW.fbx'
+
+UK_Guard_spe is 'GameData:/Assets/3D/Units/UK/Infanterie/Rifleman/Guard_spe.fbx'
+UK_Guard_NCO is 'GameData:/Assets/3D/Units/UK/Infanterie/Rifleman/Guard_NCO.fbx'
 //------------------------------------------------------------------------------
 UK_Gurkhas_1 is 'GameData:/Assets/3D/Units/UK/Infanterie/Gurkhas/Gurkhas_1.fbx'
 UK_Gurkhas_2 is 'GameData:/Assets/3D/Units/UK/Infanterie/Gurkhas/Gurkhas_2.fbx'
@@ -4326,15 +4331,27 @@ export Modele_Rifles_UK_05 is TResourceMesh( Mesh=UK_Rifleman_spe )
 export Modele_Rifles_UK_LOW is TResourceMesh( Mesh=UK_Rifleman_1_LOW )
 
 //Guards_UK
-export Modele_Guards_UK is TResourceMesh( Mesh=UK_Rifleman_NCO )
+export Modele_Guards_UK is TResourceMesh( Mesh=UK_Guard_NCO )
+export Modele_Guards_UK_02 is TResourceMesh( Mesh=UK_Rifleman_Sniper )
+export Modele_Guards_UK_03 is TResourceMesh( Mesh=UK_Rifleman_1 )
+export Modele_Guards_UK_04 is TResourceMesh( Mesh=UK_Rifleman_2 )
+export Modele_Guards_UK_05 is TResourceMesh( Mesh=UK_Guard_spe )
 export Modele_Guards_UK_LOW is TResourceMesh( Mesh=UK_Rifleman_1_LOW )
 
 //Guards_CarlG_UK
-export Modele_Guards_CarlG_UK is TResourceMesh( Mesh=UK_Rifleman_NCO )
+export Modele_Guards_CarlG_UK is TResourceMesh( Mesh=UK_Guard_NCO )
+export Modele_Guards_CarlG_UK_02 is TResourceMesh( Mesh=UK_Rifleman_Sniper )
+export Modele_Guards_CarlG_UK_03 is TResourceMesh( Mesh=UK_Rifleman_1 )
+export Modele_Guards_CarlG_UK_04 is TResourceMesh( Mesh=UK_Rifleman_2 )
+export Modele_Guards_CarlG_UK_05 is TResourceMesh( Mesh=UK_Guard_spe )
 export Modele_Guards_CarlG_UK_LOW is TResourceMesh( Mesh=UK_Rifleman_1_LOW )
 
 //Guards_CMD_UK
-export Modele_Guards_CMD_UK is TResourceMesh( Mesh=UK_Rifleman_NCO )
+export Modele_Guards_CMD_UK is TResourceMesh( Mesh=UK_Guard_NCO )
+export Modele_Guards_CMD_UK_02 is TResourceMesh( Mesh=UK_Guard_NCO )
+export Modele_Guards_CMD_UK_03 is TResourceMesh( Mesh=UK_Rifleman_1 )
+export Modele_Guards_CMD_UK_04 is TResourceMesh( Mesh=UK_Rifleman_2 )
+export Modele_Guards_CMD_UK_05 is TResourceMesh( Mesh=UK_Guard_spe )
 export Modele_Guards_CMD_UK_LOW is TResourceMesh( Mesh=UK_Rifleman_1_LOW )
 
 //Rifles_Patrol_UK

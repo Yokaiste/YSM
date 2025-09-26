@@ -11350,6 +11350,38 @@ export SoundHappening_FULDA_Strela_Manpad_Firing is TSoundHappening
 )
 
 
+export Sound_FULDA_SuperBaz_Firing is TSoundSet
+(
+    Items = 
+    [
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SoundSettings_Tir_Missile_Moyen
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sounds/SFX/Missiles/Tir_SuperBaz_1.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SoundSettings_Tir_Missile_Moyen
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sounds/SFX/Missiles/Tir_SuperBaz_2.wav"
+            )
+            UseSpecialLoop = False
+        ),
+    ]
+)
+
+export SoundHappening_FULDA_SuperBaz_Firing is TSoundHappening
+(
+    SoundDescList = Sound_FULDA_SuperBaz_Firing
+    Volume = 2
+)
+
+
 export Sound_FULDA_TOR_Firing is TSoundSet
 (
     Items = 

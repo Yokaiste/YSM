@@ -1,0 +1,19 @@
+export Modele_Auverland_MILAN_FR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/Auverland_MILAN/Auverland_MILAN.fbx"
+)
+
+export Modele_Auverland_MILAN_FR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/Auverland_MILAN_MID/Auverland_MILAN_MID.fbx"
+)
+
+export Modele_Auverland_MILAN_FR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/Auverland_MILAN_LOW/Auverland_MILAN_LOW.fbx"
+)
+
+export Modele_Auverland_MILAN_FR_Tourelle_01 is TResourceMesh
+(
+    Mesh=ModelFile_Milan_F1_t1
+)

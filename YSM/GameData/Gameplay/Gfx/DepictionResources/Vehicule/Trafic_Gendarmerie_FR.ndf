@@ -1,0 +1,14 @@
+export Modele_Trafic_Gendarmerie_FR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/Trafic_Gendarmerie/Trafic_Gendarmerie.fbx"
+)
+
+export Modele_Trafic_Gendarmerie_FR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/Trafic_Gendarmerie_MID/Trafic_Gendarmerie_MID.fbx"
+)
+
+export Modele_Trafic_Gendarmerie_FR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/Trafic_Gendarmerie_LOW/Trafic_Gendarmerie_LOW.fbx"
+)

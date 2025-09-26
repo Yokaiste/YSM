@@ -1,3 +1,0 @@
-export Modele_Howz_A19_122mm_ESP is TResourceMesh( Mesh="GameData:/Assets/3D/Units/POL/Canon/Howz_122mm_A19/Howz_122mm_A19.fbx")
-export Modele_Howz_A19_122mm_ESP_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/POL/Canon/Howz_122mm_A19/Howz_122mm_A19.fbx")
-export Modele_Howz_A19_122mm_ESP_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/POL/Canon/Howz_122mm_A19/Howz_122mm_A19.fbx")

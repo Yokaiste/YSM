@@ -1,0 +1,27 @@
+export Modele_T10M_CMD_SOV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Char/T10M/T10M_CMD.fbx"
+    Textures="GameData:/Assets/3D/Units/URSS/Char/T10M_CMD"
+)
+
+export Modele_T10M_CMD_SOV_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Char/T10M_MID/T10M_CMD_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/URSS/Char/T10M_CMD_MID"
+)
+
+export Modele_T10M_CMD_SOV_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Char/T10M_LOW/T10M_CMD_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/URSS/Char/T10M_CMD_LOW"
+)
+
+export Modele_T10M_CMD_SOV_Tourelle_02 is TResourceMesh
+(
+    Mesh=ModelFile_KPVT_t2
+)
+
+export Modele_T10M_CMD_SOV_Tourelle_04 is TResourceMesh
+(
+    Mesh=ModelFile_KPVT_coax
+)

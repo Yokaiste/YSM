@@ -1,0 +1,19 @@
+export Modele_M47_Patton_Dozer_FR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Char/M47_Patton_Dozer/M47_Patton_Dozer.fbx"
+)
+
+export Modele_M47_Patton_Dozer_FR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Char/M47_Patton_Dozer_MID/M47_Patton_Dozer_MID.fbx"
+)
+
+export Modele_M47_Patton_Dozer_FR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Char/M47_Patton_Dozer_LOW/M47_Patton_Dozer_LOW.fbx"
+)
+
+export Modele_M47_Patton_Dozer_FR_Tourelle_02 is TResourceMesh
+(
+    Mesh=ModelFile_M2HB_12_7mm_t2
+)

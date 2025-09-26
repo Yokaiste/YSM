@@ -54,7 +54,7 @@ template DepictionVisual_LOD_Low
 [
     MeshDescriptor : TResourceMesh,
     SelectorId = LOD_Low,
-    DisabledOperators = []
+    DisabledOperators : LIST<string> = []
 ]
 is TDepictionVisual
 (
@@ -94,8 +94,8 @@ is TDepictionVisual
 
 template TemplateAllSubWeaponDepiction
 [
-    Alternatives,
-    Operators,
+    Alternatives : LIST<IDepictionVisual>,
+    Operators : LIST<TAbstractCosmeticMvtOperatorDesc>,
 ] is TSubDepiction
 (
     Anchors = ['arme_1']
@@ -109,7 +109,7 @@ template TemplateAllSubWeaponDepiction
 
 template TemplateAllSubBackpackWeaponDepiction
 [
-    Alternatives,
+    Alternatives : LIST<IDepictionVisual>,
 ] is TSubDepiction
 (
     Anchors = ['arme_2']
@@ -122,8 +122,8 @@ template TemplateAllSubBackpackWeaponDepiction
 
 template TemplateWeaponAccessorySubDepiction
 [
-    MeshDescriptor,
-    EnabledValue,
+    MeshDescriptor : TResourceMesh,
+    EnabledValue : string,
 ] is TSubDepiction
 (
     Anchors = ['bip01 spine1']
@@ -156,7 +156,7 @@ TacticDepiction_10_Surrogates is TacticDepiction_09_Surrogates + [[LOD_High, '10
 
 template TemplateInfantrySelectorTactic
 [
-    UniqueCount,
+    UniqueCount : int,
     Surrogates
 ] is TInfantryLodSelector
 (
@@ -170,10 +170,10 @@ template TemplateInfantrySelectorTactic
 
 template TemplateInfantryDepictionFactoryTactic
 [
-    Alternatives,
-    SubDepictions = [],
-    Operators,
-    Selector
+    Alternatives : LIST<IDepictionVisual>,
+    SubDepictions : LIST<TSubDepiction> = [],
+    Operators : LIST<TAbstractCosmeticMvtOperatorDesc>,
+    Selector : TAbstractDepictionSelector,
 ] is TDepictionDescriptor
 (
         Scaler = CommonInfantryScaler
@@ -185,8 +185,8 @@ template TemplateInfantryDepictionFactoryTactic
 
 template TemplateInfantryDepictionFactoryGhost
 [
-    Alternatives,
-    Selector
+    Alternatives : LIST<IDepictionVisual>,
+    Selector : TAbstractDepictionSelector,
 ] is TDepictionDescriptor
 (
     ResidentMaterialTags = [ MaterialTagGhost ]
@@ -198,7 +198,7 @@ template TemplateInfantryDepictionFactoryGhost
 
 template TemplateInfantryDepictionSquad
 [
-    SoundOperator
+    SoundOperator : TAbstractCosmeticMvtOperatorDesc
 ] is TDepictionDescriptor
 (
     Selector = OnlyHighDepictionSelector
@@ -209,7 +209,11 @@ template TemplateInfantryDepictionSquad
 )
 
 template GhostUnitDepictionDesc
-[ Selector, Scaler, Alternatives ]
+[
+    Selector : TAbstractDepictionSelector,
+    Scaler : TAbstractDepictionScaler,
+    Alternatives : LIST<IDepictionVisual>,
+]
 is TDepictionDescriptor
 (
     ResidentMaterialTags = [ MaterialTagGhost ]
@@ -219,106 +223,164 @@ is TDepictionDescriptor
     Operators = [ DepictionOperator_Shader_Ghost ]
 )
 
-template GhostVehicleDepictionDesc
-[ Selector, Alternatives ]
-is GhostUnitDepictionDesc
-(
-    Selector = <Selector>
-    Alternatives = <Alternatives>
-    Scaler = CommonVehicleScaler
-)
-
-template GhostAerialDepictionDesc
-[ Selector, Alternatives ]
-is GhostUnitDepictionDesc
-(
-    Selector = <Selector>
-    Alternatives = <Alternatives>
-    Scaler = SpecificFlyingScaler
-)
-
-template TacticVehicleDepictionDesc
+template GhostDepictionRegistration
 [
-    CoatingName,
-    Selector,
-    Alternatives,
-    Operators,
-    Actions,
-    SubDepictions = [],
-    SubDepictionGenerators = []
+    MimeticName : string,
+    DepictionDescriptor : TDepictionDescriptor,
 ]
-is TDepictionDescriptor
+is TMimeticGhostRegistration
 (
-    ResidentMaterialTags = [ MaterialTagMech ]
-    PossibleCullingSubBBoxes = ['tourelle_01']
-    AdditionalTextures = $/M3D/Shader/VehicleDestTextures
-    CoatingName = <CoatingName>
-    Scaler = CommonVehicleScaler
-    Selector = <Selector>
-    DepictionAlternatives = <Alternatives>
-    Operators = CommonTacticOperators + <Operators>
-    Actions = <Actions>
-    SubDepictions = <SubDepictions>
-    SubDepictionGenerators = <SubDepictionGenerators>
-)
-
-template TacticAerialDepictionDesc
-[
-    Deviator = nil,
-    AdditionalTextures,
-    CoatingName,
-    Selector,
-    Alternatives,
-    Operators,
-    Actions,
-    SubDepictions = [],
-    SubDepictionGenerators = [],
-]
-is TDepictionDescriptor
-(
-    Deviator = <Deviator>
-    AdditionalTextures = <AdditionalTextures>
-    ResidentMaterialTags = [ MaterialTagMech ]
-    PossibleCullingSubBBoxes =
+    GfxProperties = $/DepictionCore/GfxProperties
+    MimeticGhost = MAP
     [
-        'aile_droite',
-        'aile_gauche',
-        'reacteur_droite',
-        'reacteur_gauche',
-        'queue',
+        ( <MimeticName>, <DepictionDescriptor> ),
     ]
-    CoatingName = <CoatingName>
-    Scaler = SpecificFlyingScaler
-    Selector = <Selector>
-    DepictionAlternatives = <Alternatives>
-    Operators = CommonTacticOperators + [ DepictionOperator_CadaverCrashing ] + <Operators>
-    Actions = <Actions>
-    SubDepictions = <SubDepictions>
-    SubDepictionGenerators = <SubDepictionGenerators>
 )
 
-template ShowroomVehicleDepictionDesc
+template GhostVehicleDepictionRegistration
 [
-    Alternatives,
-    Selector,
-    SubDepictions = [],
-    SubDepictionGenerators = []
+    MimeticName : string,
+    Selector : TAbstractDepictionSelector,
+    Alternatives : LIST<IDepictionVisual>,
 ]
-is TDepictionDescriptor
+is GhostDepictionRegistration
 (
-    Selector = <Selector>
-    Operators = [ DepictionOperator_ShadowPointCloudProvider ]
-    DepictionAlternatives = <Alternatives>
-    SubDepictions = <SubDepictions>
-    SubDepictionGenerators = <SubDepictionGenerators>
+    MimeticName = <MimeticName>
+    DepictionDescriptor = GhostUnitDepictionDesc
+    (
+        Selector = <Selector>
+        Alternatives = <Alternatives>
+        Scaler = CommonVehicleScaler
+    )
+)
+
+template GhostAerialDepictionRegistration
+[
+    MimeticName : string,
+    Selector : TAbstractDepictionSelector,
+    Alternatives : LIST<IDepictionVisual>,
+]
+is GhostDepictionRegistration
+(
+    MimeticName = <MimeticName>
+    DepictionDescriptor = GhostUnitDepictionDesc
+    (
+        Selector = <Selector>
+        Alternatives = <Alternatives>
+        Scaler = SpecificFlyingScaler
+    )
+)
+
+
+template UnitDepictionRegistration
+[
+    MimeticName : string,
+    DepictionDescriptor : TDepictionDescriptor,
+]
+is TMimeticUnitRegistration
+(
+    GfxProperties = $/DepictionCore/GfxProperties
+    MimeticUnit = MAP
+    [
+        ( <MimeticName>, <DepictionDescriptor> ),
+    ]
+)
+
+template TacticVehicleDepictionRegistration
+[
+    CoatingName : string,
+    Selector : TAbstractDepictionSelector,
+    Alternatives : LIST<IDepictionVisual>,
+    Operators : LIST<TAbstractCosmeticMvtOperatorDesc>,
+    Actions : MAP<string, TAbstractHappening>,
+    SubDepictions : LIST<TSubDepiction> = [],
+    SubDepictionGenerators : LIST<TAbstractSubDepictionGenerator> = []
+]
+is UnitDepictionRegistration
+(
+    MimeticName = <CoatingName>
+    DepictionDescriptor = TDepictionDescriptor
+    (
+        ResidentMaterialTags = [ MaterialTagMech ]
+        PossibleCullingSubBBoxes = ['tourelle_01']
+        AdditionalTextures = $/M3D/Shader/VehicleDestTextures
+        CoatingName = <CoatingName>
+        Scaler = CommonVehicleScaler
+        Selector = <Selector>
+        DepictionAlternatives = <Alternatives>
+        Operators = CommonTacticOperators + <Operators>
+        Actions = <Actions>
+        SubDepictions = <SubDepictions>
+        SubDepictionGenerators = <SubDepictionGenerators>
+    )
+)
+
+template TacticAerialDepictionRegistration
+[
+    Deviator : TAbstractDeviatorDesc = nil,
+    AdditionalTextures : TDepictionAdditionalTextures,
+    CoatingName : string,
+    Selector : TAbstractDepictionSelector,
+    Alternatives : LIST<IDepictionVisual>,
+    Operators : LIST<TAbstractCosmeticMvtOperatorDesc>,
+    Actions : MAP<string, TAbstractHappening>,
+    SubDepictions : LIST<TSubDepiction> = [],
+    SubDepictionGenerators : LIST<TAbstractSubDepictionGenerator> = [],
+]
+is UnitDepictionRegistration
+(
+    MimeticName = <CoatingName>
+    DepictionDescriptor = TDepictionDescriptor
+    (
+        Deviator = <Deviator>
+        AdditionalTextures = <AdditionalTextures>
+        ResidentMaterialTags = [ MaterialTagMech ]
+        PossibleCullingSubBBoxes =
+        [
+            'aile_droite',
+            'aile_gauche',
+            'reacteur_droite',
+            'reacteur_gauche',
+            'queue',
+        ]
+        CoatingName = <CoatingName>
+        Scaler = SpecificFlyingScaler
+        Selector = <Selector>
+        DepictionAlternatives = <Alternatives>
+        Operators = CommonTacticOperators + [ DepictionOperator_CadaverCrashing ] + <Operators>
+        Actions = <Actions>
+        SubDepictions = <SubDepictions>
+        SubDepictionGenerators = <SubDepictionGenerators>
+    )
+)
+
+template ShowroomVehicleDepictionRegistration
+[
+    MimeticName : string,
+    Alternatives : LIST<IDepictionVisual>,
+    Selector : TAbstractDepictionSelector,
+    SubDepictions : LIST<TSubDepiction> = [],
+    SubDepictionGenerators : LIST<TAbstractSubDepictionGenerator> = [],
+]
+is UnitDepictionRegistration
+(
+    MimeticName = <MimeticName>
+    DepictionDescriptor = TDepictionDescriptor
+    (
+        Selector = <Selector>
+        Operators = [ DepictionOperator_ShadowPointCloudProvider ]
+        DepictionAlternatives = <Alternatives>
+        SubDepictions = <SubDepictions>
+        SubDepictionGenerators = <SubDepictionGenerators>
+    )
 )
 
 template ShowroomDepictionDescInternal
 [
-    MeshDescriptor,
-    Operators = [],
-    SubDepictions = [],
-    SubDepictionGenerators = []
+    MeshDescriptor : TResourceMesh,
+    Operators : LIST<TAbstractCosmeticMvtOperatorDesc> = [],
+    SubDepictions : LIST<TSubDepiction> = [],
+    SubDepictionGenerators : LIST<TAbstractSubDepictionGenerator> = [],
 ]
 is TDepictionDescriptor
 (
@@ -330,24 +392,29 @@ is TDepictionDescriptor
     SubDepictionGenerators = <SubDepictionGenerators>
 )
 
-template ShowroomAerialDepictionDesc
+template ShowroomAerialDepictionRegistration
 [
-    MeshDescriptor,
-    Operators = [],
-    SubDepictions = [],
-    SubDepictionGenerators = []
+    MimeticName : string,
+    MeshDescriptor : TResourceMesh,
+    Operators : LIST<TAbstractCosmeticMvtOperatorDesc> = [],
+    SubDepictions : LIST<TSubDepiction> = [],
+    SubDepictionGenerators : LIST<TAbstractSubDepictionGenerator> = [],
 ]
-is ShowroomDepictionDescInternal
+is UnitDepictionRegistration
 (
-    MeshDescriptor = <MeshDescriptor>
-    Operators = <Operators> + [ DepictionOperator_ShadowPointCloudProvider ]
-    SubDepictions = <SubDepictions>
-    SubDepictionGenerators = <SubDepictionGenerators>
+    MimeticName = <MimeticName>
+    DepictionDescriptor = ShowroomDepictionDescInternal
+    (
+        MeshDescriptor = <MeshDescriptor>
+        Operators = <Operators> + [ DepictionOperator_ShadowPointCloudProvider ]
+        SubDepictions = <SubDepictions>
+        SubDepictionGenerators = <SubDepictionGenerators>
+    )
 )
 
 template ShowroomLandingGear
 [
-    MeshDescriptor,
+    MeshDescriptor : TResourceMesh,
 ]
 is TSubDepiction
 (
@@ -362,7 +429,7 @@ is TSubDepiction
 
 template TransportedInfantryDepiction
 [
-    Index,
+    Index : int,
 ] is TDepictionDescriptor
 (
     Selector = TTransportedInfantrySelector
@@ -380,7 +447,7 @@ template TransportedInfantryDepiction
 )
 template TransportedInfantrySubGenerator
 [
-    Mesh,
+    Mesh : TResourceMesh,
 ] is TTransportedInfantrySubDepictionGenerator
 (
     TransportedInfantryCatalog = $/DepictionCore/TransportedInfantryCatalog
@@ -408,7 +475,7 @@ AlternativeTowedNone is TMeshlessDepictionDescriptor
 
 template TowedUnitSubDepictionGenerator
 [
-    Mesh,
+    Mesh : TResourceMesh,
 ]
 is TTowedUnitSubDepictionGenerator
 (
@@ -419,13 +486,13 @@ is TTowedUnitSubDepictionGenerator
 template RocketSubDepictionDesc
 [
     PylonConnoisseur = nil,
-    UnitMeshDescriptor,
-    RocketMeshDescriptor,
-    RocketCount,
-    WeaponIndex,
-    PhysicalProperty,
-    AirStartGroupIndex = 0,
-    GroundStartGroupIndex = 0,
+    UnitMeshDescriptor : TResourceMesh,
+    RocketMeshDescriptor : TResourceMesh,
+    RocketCount : int,
+    WeaponIndex : int,
+    PhysicalProperty : string,
+    AirStartGroupIndex : int = 0,
+    GroundStartGroupIndex : int = 0,
 ] is TRocketSubDepictionGenerator
 (
     PylonConnoisseur = <PylonConnoisseur>
@@ -466,12 +533,12 @@ template RocketSubDepictionDesc
 template ShowroomRocketSubDepictionDesc
 [
     PylonConnoisseur = nil,
-    UnitMeshDescriptor,
-    RocketMeshDescriptor,
-    RocketCount,
-    WeaponIndex = 1,
-    AirStartGroupIndex = 0,
-    GroundStartGroupIndex = 0,
+    UnitMeshDescriptor : TResourceMesh,
+    RocketMeshDescriptor : TResourceMesh,
+    RocketCount : int,
+    WeaponIndex : int = 1,
+    AirStartGroupIndex : int = 0,
+    GroundStartGroupIndex : int = 0,
 ] is TStaticMissileCarriageSubDepictionGenerator
 (
     PylonConnoisseur = <PylonConnoisseur>
@@ -510,8 +577,8 @@ template ShowroomRocketSubDepictionDesc
 
 template ObjectSubDepiction
 [
-    Anchor,
-    MeshDescriptor,
+    Anchor : string,
+    MeshDescriptor : TResourceMesh,
 ] is TSubDepiction
 (
     Anchors =[ <Anchor> ]

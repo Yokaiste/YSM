@@ -1,0 +1,22 @@
+export Modele_Mirage_III_E_ATGM_FR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Avion/Mirage_III_E/Mirage_III_E.fbx"
+    Textures="GameData:/Assets/3D/Units/FR/Avion/Mirage_III_E_SEAD"
+)
+
+export Modele_Mirage_III_E_ATGM_FR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Avion/Mirage_III_E_MID/Mirage_III_E_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/FR/Avion/Mirage_III_E_SEAD_MID"
+)
+
+export Modele_Mirage_III_E_ATGM_FR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Avion/Mirage_III_E_LOW/Mirage_III_E_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/FR/Avion/Mirage_III_E_SEAD_LOW"
+)
+
+export Modele_Mirage_III_E_ATGM_FR_train is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Avion/Mirage_III_E/Mirage_III_E_train.fbx"
+)

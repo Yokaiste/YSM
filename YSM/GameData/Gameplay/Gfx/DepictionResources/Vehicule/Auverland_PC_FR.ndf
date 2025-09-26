@@ -1,0 +1,14 @@
+export Modele_Auverland_PC_FR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/Auverland_PC/Auverland_PC.fbx"
+)
+
+export Modele_Auverland_PC_FR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/Auverland_PC_MID/Auverland_PC_MID.fbx"
+)
+
+export Modele_Auverland_PC_FR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/Auverland_PC_LOW/Auverland_PC_LOW.fbx"
+)
