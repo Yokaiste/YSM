@@ -31,8 +31,7 @@ export OrderDisplayDrawer is TOrderDisplayDrawer
                                 //UNLOAD
                                 OrderDisplayUnload,
                                 OrderDisplayUnloadAtPosition,
-                                OrderDisplayLoadUnit,
-                                OrderDisplayLoadIntoTransport,
+                                OrderDisplayLoad,
                                 //???
                                 OrderDisplayUseCapacite,
                                 //HELICOPTERS
@@ -423,29 +422,9 @@ export OrderDisplayUnloadAtPosition is TOrderDisplayDrawInfo
     MustDrawArrow               = false
 )
 
-export OrderDisplayLoadIntoTransport is TOrderDisplayDrawInfo
+export OrderDisplayLoad is TOrderDisplayDrawInfo
 (
-    OrderType                   = EOrderType/LoadIntoTransport
-    ColorLineStart              = [204, 255, 153, 50]
-    ColorLineEnd                = [204, 255, 153, alpha] //Light Green
-    MaxDistanceBetweenColorsGRU = MaxMeter
-    LineThickness               = 2000.0
-    ColorCircleDestination      = [204, 255, 153, 225]
-    CircleDestinationThickness  = 1000.0
-    CircleDestinationRadius     = 2000.0
-    ColorCircleStart            = [204, 255, 153, 225]
-    CircleStartThickness        = 1000.0
-    DashLengthInMeters          = 0
-    DisplayWaypoints            = true
-    HideNextOrders              = false
-    MustDrawCircle              = true
-    MustDrawCircleStart         = true
-    MustDrawArrow               = false
-)
-
-export OrderDisplayLoadUnit is TOrderDisplayDrawInfo
-(
-    OrderType                   = EOrderType/LoadUnit
+    OrderType                   = EOrderType/Load
     ColorLineStart              = [204, 255, 153, 50]
     ColorLineEnd                = [204, 255, 153, alpha] //Light Green
     MaxDistanceBetweenColorsGRU = MaxMeter

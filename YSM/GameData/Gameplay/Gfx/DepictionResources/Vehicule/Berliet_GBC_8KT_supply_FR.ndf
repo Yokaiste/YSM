@@ -1,0 +1,14 @@
+export Modele_Berliet_GBC_8KT_supply_FR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/TRM_2000/TRM_2000.fbx"
+)
+
+export Modele_Berliet_GBC_8KT_supply_FR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/TRM_2000_MID/TRM_2000_MID.fbx"
+)
+
+export Modele_Berliet_GBC_8KT_supply_FR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/TRM_2000_LOW/TRM_2000_LOW.fbx"
+)

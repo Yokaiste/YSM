@@ -3176,6 +3176,22 @@ unnamed ShowroomAerialDepictionRegistration
 )
 unnamed ShowroomAerialDepictionRegistration
 (
+    MeshDescriptor = $/GFX/DepictionResources/Modele_Harrier_GR5_CLU_UK
+    MimeticName = "showroom_Harrier_GR5_CLU_UK"
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Harrier_GR5_CLU_UK,
+    ]
+    SubDepictions = 
+    [
+        ShowroomLandingGear
+        (
+            MeshDescriptor = $/GFX/DepictionResources/Modele_Harrier_GR5_CLU_UK_train
+        ),
+    ]
+)
+unnamed ShowroomAerialDepictionRegistration
+(
     MeshDescriptor = $/GFX/DepictionResources/Modele_Harrier_GR5_UK
     MimeticName = "showroom_Harrier_GR5_UK"
     SubDepictionGenerators = 
@@ -8266,6 +8282,38 @@ unnamed ShowroomAerialDepictionRegistration
 )
 unnamed ShowroomAerialDepictionRegistration
 (
+    MeshDescriptor = $/GFX/DepictionResources/Modele_Su_22_HE2_TCH
+    MimeticName = "showroom_Su_22_HE2_TCH"
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Su_22_HE2_TCH,
+    ]
+    SubDepictions = 
+    [
+        ShowroomLandingGear
+        (
+            MeshDescriptor = $/GFX/DepictionResources/Modele_Su_22_HE2_TCH_train
+        ),
+    ]
+)
+unnamed ShowroomAerialDepictionRegistration
+(
+    MeshDescriptor = $/GFX/DepictionResources/Modele_Su_22_HE_TCH
+    MimeticName = "showroom_Su_22_HE_TCH"
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Su_22_HE_TCH,
+    ]
+    SubDepictions = 
+    [
+        ShowroomLandingGear
+        (
+            MeshDescriptor = $/GFX/DepictionResources/Modele_Su_22_HE_TCH_train
+        ),
+    ]
+)
+unnamed ShowroomAerialDepictionRegistration
+(
     MeshDescriptor = $/GFX/DepictionResources/Modele_Su_22_POL
     MimeticName = "showroom_Su_22_POL"
     SubDepictionGenerators = 
@@ -8369,6 +8417,30 @@ unnamed ShowroomAerialDepictionRegistration
         ShowroomLandingGear
         (
             MeshDescriptor = $/GFX/DepictionResources/Modele_Su_22_RKT_POL_train
+        ),
+    ]
+)
+unnamed ShowroomAerialDepictionRegistration
+(
+    MeshDescriptor = $/GFX/DepictionResources/Modele_Su_22_RKT_TCH
+    MimeticName = "showroom_Su_22_RKT_TCH"
+    SubDepictionGenerators = 
+    [
+        ShowroomRocketSubDepictionDesc
+        (
+            AirStartGroupIndex = 0
+            GroundStartGroupIndex = 0
+            RocketCount = 4
+            RocketMeshDescriptor = $/GFX/DepictionResources/Modele_Missile_S_24_240mm
+            UnitMeshDescriptor = $/GFX/DepictionResources/Modele_Su_22_RKT_TCH
+            WeaponIndex = 2
+        ),
+    ]
+    SubDepictions = 
+    [
+        ShowroomLandingGear
+        (
+            MeshDescriptor = $/GFX/DepictionResources/Modele_Su_22_RKT_TCH_train
         ),
     ]
 )
@@ -8502,6 +8574,22 @@ unnamed ShowroomAerialDepictionRegistration
 )
 unnamed ShowroomAerialDepictionRegistration
 (
+    MeshDescriptor = $/GFX/DepictionResources/Modele_Su_22_clu_TCH
+    MimeticName = "showroom_Su_22_clu_TCH"
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Su_22_clu_TCH,
+    ]
+    SubDepictions = 
+    [
+        ShowroomLandingGear
+        (
+            MeshDescriptor = $/GFX/DepictionResources/Modele_Su_22_clu_TCH_train
+        ),
+    ]
+)
+unnamed ShowroomAerialDepictionRegistration
+(
     MeshDescriptor = $/GFX/DepictionResources/Modele_Su_22_nplm_DDR
     MimeticName = "showroom_Su_22_nplm_DDR"
     SubDepictionGenerators = 
@@ -8529,6 +8617,22 @@ unnamed ShowroomAerialDepictionRegistration
         ShowroomLandingGear
         (
             MeshDescriptor = $/GFX/DepictionResources/Modele_Su_22_nplm_POL_train
+        ),
+    ]
+)
+unnamed ShowroomAerialDepictionRegistration
+(
+    MeshDescriptor = $/GFX/DepictionResources/Modele_Su_22_nplm_TCH
+    MimeticName = "showroom_Su_22_nplm_TCH"
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Su_22_nplm_TCH,
+    ]
+    SubDepictions = 
+    [
+        ShowroomLandingGear
+        (
+            MeshDescriptor = $/GFX/DepictionResources/Modele_Su_22_nplm_TCH_train
         ),
     ]
 )
@@ -8781,6 +8885,22 @@ unnamed ShowroomAerialDepictionRegistration
         ShowroomLandingGear
         (
             MeshDescriptor = $/GFX/DepictionResources/Modele_Su_25_NPLM_TCH_train
+        ),
+    ]
+)
+unnamed ShowroomAerialDepictionRegistration
+(
+    MeshDescriptor = $/GFX/DepictionResources/Modele_Su_25_RKT2_TCH
+    MimeticName = "showroom_Su_25_RKT2_TCH"
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Su_25_RKT2_TCH,
+    ]
+    SubDepictions = 
+    [
+        ShowroomLandingGear
+        (
+            MeshDescriptor = $/GFX/DepictionResources/Modele_Su_25_RKT2_TCH_train
         ),
     ]
 )

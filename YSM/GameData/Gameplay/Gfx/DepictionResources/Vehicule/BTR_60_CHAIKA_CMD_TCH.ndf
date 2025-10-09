@@ -1,0 +1,17 @@
+export Modele_BTR_60_CHAIKA_CMD_TCH is TResourceMesh
+(
+    Mesh=ModelFile_BTR_60_CHAIKA_CMD_SOV
+    Textures="GameData:/Assets/3D/Units/TCH/CMD/BTR_60_CHAIKA_CMD"
+)
+
+export Modele_BTR_60_CHAIKA_CMD_TCH_MID is TResourceMesh
+(
+    Mesh=ModelFile_BTR_60_CHAIKA_CMD_SOV_MID
+    Textures="GameData:/Assets/3D/Units/TCH/CMD/BTR_60_CHAIKA_CMD_MID"
+)
+
+export Modele_BTR_60_CHAIKA_CMD_TCH_LOW is TResourceMesh
+(
+    Mesh=ModelFile_BTR_60_CHAIKA_CMD_SOV_LOW
+    Textures="GameData:/Assets/3D/Units/TCH/CMD/BTR_60_CHAIKA_CMD_LOW"
+)

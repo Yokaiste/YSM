@@ -30,7 +30,7 @@ Weapon_Howz_Canon_2A64_152mm_Direct is TCompositeHappening
     SubHappenings = 
     [
         FXWeapon_Howz_Canon_2A64_152mm_Direct,
-        $/GFX/Sound/SoundHappening_FULDA_155mm_GCT,
+        $/GFX/Sound/SoundHappening_FULDA_D20_152mm,
     ]
 )
 Weapon_HMG_12_7_mm_NSVT is TCompositeHappening
@@ -2758,7 +2758,7 @@ Weapon_Howz_Canon_M56_105mm is TCompositeHappening
     SubHappenings = 
     [
         FXWeapon_Howz_Canon_M56_105mm,
-        $/GFX/Sound/SoundHappening_FULDA_105mm_Abbot,
+        $/GFX/Sound/SoundHappening_FULDA_105mm_M56,
     ]
 )
 Weapon_Howz_Canon_M56_105mm_SMOKE is TCompositeHappening
@@ -2766,7 +2766,7 @@ Weapon_Howz_Canon_M56_105mm_SMOKE is TCompositeHappening
     SubHappenings = 
     [
         FXWeapon_Howz_Canon_M56_105mm_SMOKE,
-        $/GFX/Sound/SoundHappening_FULDA_105mm_Abbot,
+        $/GFX/Sound/SoundHappening_FULDA_105mm_M56,
     ]
 )
 Weapon_Howz_Canon_M56_105mm_Direct is TCompositeHappening
@@ -2774,7 +2774,7 @@ Weapon_Howz_Canon_M56_105mm_Direct is TCompositeHappening
     SubHappenings = 
     [
         FXWeapon_Howz_Canon_M56_105mm_Direct,
-        $/GFX/Sound/SoundHappening_FULDA_105mm_Abbot,
+        $/GFX/Sound/SoundHappening_FULDA_105mm_M56,
     ]
 )
 Weapon_Howz_Canon_LongTom_155mm is TCompositeHappening
@@ -3102,6 +3102,22 @@ Weapon_Canon_HE_105mm_L7A3_BE is TCompositeHappening
     SubHappenings = 
     [
         FXWeapon_Canon_HE_105mm_L7A3_BE,
+        $/GFX/Sound/SoundHappening_FULDA_105mm_Leo_A1,
+    ]
+)
+Weapon_Canon_AP_105mm_L7A3_Leo1A4 is TCompositeHappening
+(
+    SubHappenings = 
+    [
+        FXWeapon_Canon_AP_105mm_L7A3_Leo1A4,
+        $/GFX/Sound/SoundHappening_FULDA_105mm_Leo_A1,
+    ]
+)
+Weapon_Canon_HE_105mm_L7A3_Leo1A4 is TCompositeHappening
+(
+    SubHappenings = 
+    [
+        FXWeapon_Canon_HE_105mm_L7A3_Leo1A4,
         $/GFX/Sound/SoundHappening_FULDA_105mm_Leo_A1,
     ]
 )

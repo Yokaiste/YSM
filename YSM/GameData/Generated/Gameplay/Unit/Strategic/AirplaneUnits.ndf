@@ -1473,6 +1473,1772 @@ export Descriptor_Unit_pion_BEL_BAF_GROUPE is TEntityDescriptor
         ~/IAStratZoneIndexModuleDescriptor,
     ]
 )
+export Descriptor_Unit_pion_CAN_1AirDiv_GROUPE is TEntityDescriptor
+(
+    DescriptorId       = GUID:{def4efb7-d1b3-47a9-b445-ba71b8ff9a72}
+    ClassNameForDebug  = 'Pawn_pion_CAN_1AirDiv_GROUPE'
+    ModulesDescriptors = [
+        TTypeUnitModuleDescriptor
+        (
+            Coalition                        = ECoalition/NATO
+            MotherCountry                    = 'CAN'
+        ),
+        AirplaneFlagsModuleDescriptor,
+        ~/PawnPositionModuleDescriptor,
+        ~/LinkTeamModuleDescriptor,
+        TTagsModuleDescriptor
+        (
+            TagSet = [
+                "AllUnits",
+            ]
+        ),
+        ~/StrategicStateEngineModuleDescriptor,
+        ~/DebugModuleDescriptor,
+        ~/StrategicSelectionModuleDescriptor,
+        ~/EffectApplierModuleDescriptor,
+        TStrategicLabelModuleDescriptor
+        (
+            BackgroundTexture = TBUCKToolAlternativeValues_TUIValueTextureNameFromTEugBMutableInteger
+            (
+                CommandNameTrigger = ~/SpecificCommandName/UpdateGUIFromStrategicIconType
+                Alterator = $/GUIOption/StrategicIconType
+                Values =
+                [
+                    "Texture_STRATEGIC_RTS_H_division",
+                    "Texture_STRATEGIC_division",
+                ]
+            )
+        ),
+        ~/PawnAirplaneOrderConfigModuleDescriptor,
+        TDeckModuleDescriptor
+        (
+            DeckIdentifier = 'pion_CAN_1AirDiv_GROUPE'
+            RegimentName = 'None'
+            Score = 1
+            PictureForSelection = 'Texture_PawnPicture_Default'
+            MaxPackCount = 12
+        ),
+        TStrategicBattleModuleDescriptor
+        (
+            CanBeInitialTarget = False
+            HasZoneOfControl = False
+            BattleSupportRadiusInAPCase = -1.0
+            BattleRole = ~/EStrategicBattleRole/AirSupport
+        ),
+        TVisibilityModuleDescriptor
+        (
+            UnitConcealmentBonus = 1.0
+        ),
+        TReverseScannerWithIdentificationDescriptor
+        (
+            VisibilityRollRule = TModernWarfareVisibilityRollRule
+            (
+                IdentifyBaseProbability     = 0.0
+                TimeBetweenEachIdentifyRoll = 0.0
+                VisibilityRuleDescriptor    = $/GFX/VisionRules/StandardWargameVisibilityRollRule
+            )
+        ),
+        TActionPointsModuleDescriptor
+        (
+            InitialActionPoint = 4
+            ActionPointRecoveryPerTurn = 4
+            NbInitialActionsPointsForProducedPawn = 4
+        ),
+        ~/StrategicMovementDescriptor_aerial,
+        ~/StrategicAerialModuleDescriptor,
+        TCubeActionModuleDescriptor
+        (
+            CubeActionDescriptor = $/GFX/UI/CubeAction_Menu_Ordres_Pawn
+        ),
+        StrategicUIModuleDescriptor
+        (
+            NameToken ='UYFGNSBJAW'
+            ProdMenuTexture = 'Texture_Button_Pawn_pion_CAN_1AirDiv_GROUPE'
+        ),
+        TStrategicPositionModuleDescriptor( IsAirport = False ),
+        ~/StrategicSequenceModuleDescriptor,
+        StrategicFatigueModuleDescriptor( InitialFatigue  = 0 ),
+        ~/IAStratZoneIndexModuleDescriptor,
+    ]
+)
+export Descriptor_Unit_pion_CAN_409TFS is TEntityDescriptor
+(
+    DescriptorId       = GUID:{1280712d-1de0-4501-b1f4-9e1198e2fd1f}
+    ClassNameForDebug  = 'Pawn_pion_CAN_409TFS'
+    ModulesDescriptors = [
+        TTypeUnitModuleDescriptor
+        (
+            Coalition                        = ECoalition/NATO
+            MotherCountry                    = 'CAN'
+        ),
+        AirplaneFlagsModuleDescriptor,
+        ~/PawnPositionModuleDescriptor,
+        ~/LinkTeamModuleDescriptor,
+        TTagsModuleDescriptor
+        (
+            TagSet = [
+                "AllUnits",
+            ]
+        ),
+        TApparenceModuleDescriptor
+        (
+            PickableObject      = True
+            Depiction           = $/GFX/Depiction/Gfx_pion_CAN_409TFS
+            ReferenceMesh       = $/GFX/DepictionResources/MeshModele_Socle_US
+            BlackHoleIdentifier = "pion_CAN_409TFS"
+        ),
+        ~/StrategicStateEngineModuleDescriptor,
+        ~/DebugModuleDescriptor,
+        ~/StrategicSelectionModuleDescriptor,
+        ~/EffectApplierModuleDescriptor,
+        TStrategicLabelModuleDescriptor
+        (
+            BackgroundTexture = TBUCKToolAlternativeValues_TUIValueTextureNameFromTEugBMutableInteger
+            (
+                CommandNameTrigger = ~/SpecificCommandName/UpdateGUIFromStrategicIconType
+                Alterator = $/GUIOption/StrategicIconType
+                Values =
+                [
+                    "Texture_STRATEGIC_RTS_H_AA_air",
+                    "Texture_STRATEGIC_AA_air",
+                ]
+            )
+        ),
+        ~/PawnAirplaneOrderConfigModuleDescriptor,
+        TDeckModuleDescriptor
+        (
+            DeckIdentifier = 'pion_CAN_409TFS'
+            RegimentName = 'None'
+            Score = 1
+            PictureForSelection = 'Texture_PawnPicture_Default'
+            MaxPackCount = 12
+        ),
+        TStrategicBattleModuleDescriptor
+        (
+            CanBeInitialTarget = False
+            HasZoneOfControl = False
+            BattleSupportRadiusInAPCase = -1.0
+            BattleRole = ~/EStrategicBattleRole/AirSupport
+        ),
+        TVisibilityModuleDescriptor
+        (
+            UnitConcealmentBonus = 1.0
+        ),
+        TReverseScannerWithIdentificationDescriptor
+        (
+            VisibilityRollRule = TModernWarfareVisibilityRollRule
+            (
+                IdentifyBaseProbability     = 0.0
+                TimeBetweenEachIdentifyRoll = 0.0
+                VisibilityRuleDescriptor    = $/GFX/VisionRules/StandardWargameVisibilityRollRule
+            )
+        ),
+        TActionPointsModuleDescriptor
+        (
+            InitialActionPoint = 4
+            ActionPointRecoveryPerTurn = 4
+            NbInitialActionsPointsForProducedPawn = 4
+        ),
+        ~/StrategicMovementDescriptor_aerial,
+        ~/StrategicAerialModuleDescriptor,
+        TCubeActionModuleDescriptor
+        (
+            CubeActionDescriptor = $/GFX/UI/CubeAction_Menu_Ordres_Pawn
+        ),
+        StrategicUIModuleDescriptor
+        (
+            NameToken ='KKBNEMIDEX'
+            ProdMenuTexture = 'Texture_Button_Pawn_pion_CAN_409TFS'
+        ),
+        TStrategicPositionModuleDescriptor( IsAirport = False ),
+        ~/StrategicSequenceModuleDescriptor,
+        StrategicFatigueModuleDescriptor( InitialFatigue  = 0 ),
+        ~/IAStratZoneIndexModuleDescriptor,
+    ]
+)
+export Descriptor_Unit_pion_CAN_421TFS is TEntityDescriptor
+(
+    DescriptorId       = GUID:{b777c4b4-a24c-4034-8bb7-de4c7e040209}
+    ClassNameForDebug  = 'Pawn_pion_CAN_421TFS'
+    ModulesDescriptors = [
+        TTypeUnitModuleDescriptor
+        (
+            Coalition                        = ECoalition/NATO
+            MotherCountry                    = 'CAN'
+        ),
+        AirplaneFlagsModuleDescriptor,
+        ~/PawnPositionModuleDescriptor,
+        ~/LinkTeamModuleDescriptor,
+        TTagsModuleDescriptor
+        (
+            TagSet = [
+                "AllUnits",
+            ]
+        ),
+        TApparenceModuleDescriptor
+        (
+            PickableObject      = True
+            Depiction           = $/GFX/Depiction/Gfx_pion_CAN_421TFS
+            ReferenceMesh       = $/GFX/DepictionResources/MeshModele_Socle_US
+            BlackHoleIdentifier = "pion_CAN_421TFS"
+        ),
+        ~/StrategicStateEngineModuleDescriptor,
+        ~/DebugModuleDescriptor,
+        ~/StrategicSelectionModuleDescriptor,
+        ~/EffectApplierModuleDescriptor,
+        TStrategicLabelModuleDescriptor
+        (
+            BackgroundTexture = TBUCKToolAlternativeValues_TUIValueTextureNameFromTEugBMutableInteger
+            (
+                CommandNameTrigger = ~/SpecificCommandName/UpdateGUIFromStrategicIconType
+                Alterator = $/GUIOption/StrategicIconType
+                Values =
+                [
+                    "Texture_STRATEGIC_RTS_H_Support_air",
+                    "Texture_STRATEGIC_Support_air",
+                ]
+            )
+        ),
+        ~/PawnAirplaneOrderConfigModuleDescriptor,
+        TDeckModuleDescriptor
+        (
+            DeckIdentifier = 'pion_CAN_421TFS'
+            RegimentName = 'None'
+            Score = 1
+            PictureForSelection = 'Texture_PawnPicture_Default'
+            MaxPackCount = 12
+        ),
+        TStrategicBattleModuleDescriptor
+        (
+            CanBeInitialTarget = False
+            HasZoneOfControl = False
+            BattleSupportRadiusInAPCase = -1.0
+            BattleRole = ~/EStrategicBattleRole/AirSupport
+        ),
+        TVisibilityModuleDescriptor
+        (
+            UnitConcealmentBonus = 1.0
+        ),
+        TReverseScannerWithIdentificationDescriptor
+        (
+            VisibilityRollRule = TModernWarfareVisibilityRollRule
+            (
+                IdentifyBaseProbability     = 0.0
+                TimeBetweenEachIdentifyRoll = 0.0
+                VisibilityRuleDescriptor    = $/GFX/VisionRules/StandardWargameVisibilityRollRule
+            )
+        ),
+        TActionPointsModuleDescriptor
+        (
+            InitialActionPoint = 4
+            ActionPointRecoveryPerTurn = 4
+            NbInitialActionsPointsForProducedPawn = 4
+        ),
+        ~/StrategicMovementDescriptor_aerial,
+        ~/StrategicAerialModuleDescriptor,
+        TCubeActionModuleDescriptor
+        (
+            CubeActionDescriptor = $/GFX/UI/CubeAction_Menu_Ordres_Pawn
+        ),
+        StrategicUIModuleDescriptor
+        (
+            NameToken ='GKFLMOGKFQ'
+            ProdMenuTexture = 'Texture_Button_Pawn_pion_CAN_421TFS'
+        ),
+        TStrategicPositionModuleDescriptor( IsAirport = False ),
+        ~/StrategicSequenceModuleDescriptor,
+        StrategicFatigueModuleDescriptor( InitialFatigue  = 0 ),
+        ~/IAStratZoneIndexModuleDescriptor,
+    ]
+)
+export Descriptor_Unit_pion_CAN_439TFS is TEntityDescriptor
+(
+    DescriptorId       = GUID:{18d2cad9-4b42-450b-9a85-e195cec15e5a}
+    ClassNameForDebug  = 'Pawn_pion_CAN_439TFS'
+    ModulesDescriptors = [
+        TTypeUnitModuleDescriptor
+        (
+            Coalition                        = ECoalition/NATO
+            MotherCountry                    = 'CAN'
+        ),
+        AirplaneFlagsModuleDescriptor,
+        ~/PawnPositionModuleDescriptor,
+        ~/LinkTeamModuleDescriptor,
+        TTagsModuleDescriptor
+        (
+            TagSet = [
+                "AllUnits",
+            ]
+        ),
+        TApparenceModuleDescriptor
+        (
+            PickableObject      = True
+            Depiction           = $/GFX/Depiction/Gfx_pion_CAN_439TFS
+            ReferenceMesh       = $/GFX/DepictionResources/MeshModele_Socle_US
+            BlackHoleIdentifier = "pion_CAN_439TFS"
+        ),
+        ~/StrategicStateEngineModuleDescriptor,
+        ~/DebugModuleDescriptor,
+        ~/StrategicSelectionModuleDescriptor,
+        ~/EffectApplierModuleDescriptor,
+        TStrategicLabelModuleDescriptor
+        (
+            BackgroundTexture = TBUCKToolAlternativeValues_TUIValueTextureNameFromTEugBMutableInteger
+            (
+                CommandNameTrigger = ~/SpecificCommandName/UpdateGUIFromStrategicIconType
+                Alterator = $/GUIOption/StrategicIconType
+                Values =
+                [
+                    "Texture_STRATEGIC_RTS_H_Support_air",
+                    "Texture_STRATEGIC_Support_air",
+                ]
+            )
+        ),
+        ~/PawnAirplaneOrderConfigModuleDescriptor,
+        TDeckModuleDescriptor
+        (
+            DeckIdentifier = 'pion_CAN_439TFS'
+            RegimentName = 'None'
+            Score = 1
+            PictureForSelection = 'Texture_PawnPicture_Default'
+            MaxPackCount = 12
+        ),
+        TStrategicBattleModuleDescriptor
+        (
+            CanBeInitialTarget = False
+            HasZoneOfControl = False
+            BattleSupportRadiusInAPCase = -1.0
+            BattleRole = ~/EStrategicBattleRole/AirSupport
+        ),
+        TVisibilityModuleDescriptor
+        (
+            UnitConcealmentBonus = 1.0
+        ),
+        TReverseScannerWithIdentificationDescriptor
+        (
+            VisibilityRollRule = TModernWarfareVisibilityRollRule
+            (
+                IdentifyBaseProbability     = 0.0
+                TimeBetweenEachIdentifyRoll = 0.0
+                VisibilityRuleDescriptor    = $/GFX/VisionRules/StandardWargameVisibilityRollRule
+            )
+        ),
+        TActionPointsModuleDescriptor
+        (
+            InitialActionPoint = 4
+            ActionPointRecoveryPerTurn = 4
+            NbInitialActionsPointsForProducedPawn = 4
+        ),
+        ~/StrategicMovementDescriptor_aerial,
+        ~/StrategicAerialModuleDescriptor,
+        TCubeActionModuleDescriptor
+        (
+            CubeActionDescriptor = $/GFX/UI/CubeAction_Menu_Ordres_Pawn
+        ),
+        StrategicUIModuleDescriptor
+        (
+            NameToken ='USHXILZCQF'
+            ProdMenuTexture = 'Texture_Button_Pawn_pion_CAN_439TFS'
+        ),
+        TStrategicPositionModuleDescriptor( IsAirport = False ),
+        ~/StrategicSequenceModuleDescriptor,
+        StrategicFatigueModuleDescriptor( InitialFatigue  = 0 ),
+        ~/IAStratZoneIndexModuleDescriptor,
+    ]
+)
+export Descriptor_Unit_pion_FR_Alsace is TEntityDescriptor
+(
+    DescriptorId       = GUID:{9b9e4b07-3082-4244-bf94-6ac559d6f54b}
+    ClassNameForDebug  = 'Pawn_pion_FR_Alsace'
+    ModulesDescriptors = [
+        TTypeUnitModuleDescriptor
+        (
+            Coalition                        = ECoalition/NATO
+            MotherCountry                    = 'CAN'
+        ),
+        AirplaneFlagsModuleDescriptor,
+        ~/PawnPositionModuleDescriptor,
+        ~/LinkTeamModuleDescriptor,
+        TTagsModuleDescriptor
+        (
+            TagSet = [
+                "AllUnits",
+            ]
+        ),
+        TApparenceModuleDescriptor
+        (
+            PickableObject      = True
+            Depiction           = $/GFX/Depiction/Gfx_pion_FR_Alsace
+            ReferenceMesh       = $/GFX/DepictionResources/MeshModele_Socle_US
+            BlackHoleIdentifier = "pion_FR_Alsace"
+        ),
+        ~/StrategicStateEngineModuleDescriptor,
+        ~/DebugModuleDescriptor,
+        ~/StrategicSelectionModuleDescriptor,
+        ~/EffectApplierModuleDescriptor,
+        TStrategicLabelModuleDescriptor
+        (
+            BackgroundTexture = TBUCKToolAlternativeValues_TUIValueTextureNameFromTEugBMutableInteger
+            (
+                CommandNameTrigger = ~/SpecificCommandName/UpdateGUIFromStrategicIconType
+                Alterator = $/GUIOption/StrategicIconType
+                Values =
+                [
+                    "Texture_STRATEGIC_RTS_H_AA_air",
+                    "Texture_STRATEGIC_AA_air",
+                ]
+            )
+        ),
+        ~/PawnAirplaneOrderConfigModuleDescriptor,
+        TDeckModuleDescriptor
+        (
+            DeckIdentifier = 'pion_FR_Alsace'
+            RegimentName = 'None'
+            Score = 1
+            PictureForSelection = 'Texture_PawnPicture_Default'
+            MaxPackCount = 12
+        ),
+        TStrategicBattleModuleDescriptor
+        (
+            CanBeInitialTarget = False
+            HasZoneOfControl = False
+            BattleSupportRadiusInAPCase = -1.0
+            BattleRole = ~/EStrategicBattleRole/AirSupport
+        ),
+        TVisibilityModuleDescriptor
+        (
+            UnitConcealmentBonus = 1.0
+        ),
+        TReverseScannerWithIdentificationDescriptor
+        (
+            VisibilityRollRule = TModernWarfareVisibilityRollRule
+            (
+                IdentifyBaseProbability     = 0.0
+                TimeBetweenEachIdentifyRoll = 0.0
+                VisibilityRuleDescriptor    = $/GFX/VisionRules/StandardWargameVisibilityRollRule
+            )
+        ),
+        TActionPointsModuleDescriptor
+        (
+            InitialActionPoint = 4
+            ActionPointRecoveryPerTurn = 4
+            NbInitialActionsPointsForProducedPawn = 4
+        ),
+        ~/StrategicMovementDescriptor_aerial,
+        ~/StrategicAerialModuleDescriptor,
+        TCubeActionModuleDescriptor
+        (
+            CubeActionDescriptor = $/GFX/UI/CubeAction_Menu_Ordres_Pawn
+        ),
+        StrategicUIModuleDescriptor
+        (
+            NameToken ='AVXRSEIXOD'
+            ProdMenuTexture = 'Texture_Button_Pawn_pion_FR_Alsace'
+        ),
+        TStrategicPositionModuleDescriptor( IsAirport = False ),
+        ~/StrategicSequenceModuleDescriptor,
+        StrategicFatigueModuleDescriptor( InitialFatigue  = 0 ),
+        ~/IAStratZoneIndexModuleDescriptor,
+    ]
+)
+export Descriptor_Unit_pion_FR_Ardennes is TEntityDescriptor
+(
+    DescriptorId       = GUID:{46e8d48a-23b2-4b43-900a-e6f4c65facf4}
+    ClassNameForDebug  = 'Pawn_pion_FR_Ardennes'
+    ModulesDescriptors = [
+        TTypeUnitModuleDescriptor
+        (
+            Coalition                        = ECoalition/NATO
+            MotherCountry                    = 'CAN'
+        ),
+        AirplaneFlagsModuleDescriptor,
+        ~/PawnPositionModuleDescriptor,
+        ~/LinkTeamModuleDescriptor,
+        TTagsModuleDescriptor
+        (
+            TagSet = [
+                "AllUnits",
+            ]
+        ),
+        TApparenceModuleDescriptor
+        (
+            PickableObject      = True
+            Depiction           = $/GFX/Depiction/Gfx_pion_FR_Ardennes
+            ReferenceMesh       = $/GFX/DepictionResources/MeshModele_Socle_US
+            BlackHoleIdentifier = "pion_FR_Ardennes"
+        ),
+        ~/StrategicStateEngineModuleDescriptor,
+        ~/DebugModuleDescriptor,
+        ~/StrategicSelectionModuleDescriptor,
+        ~/EffectApplierModuleDescriptor,
+        TStrategicLabelModuleDescriptor
+        (
+            BackgroundTexture = TBUCKToolAlternativeValues_TUIValueTextureNameFromTEugBMutableInteger
+            (
+                CommandNameTrigger = ~/SpecificCommandName/UpdateGUIFromStrategicIconType
+                Alterator = $/GUIOption/StrategicIconType
+                Values =
+                [
+                    "Texture_STRATEGIC_RTS_H_AA_air",
+                    "Texture_STRATEGIC_AA_air",
+                ]
+            )
+        ),
+        ~/PawnAirplaneOrderConfigModuleDescriptor,
+        TDeckModuleDescriptor
+        (
+            DeckIdentifier = 'pion_FR_Ardennes'
+            RegimentName = 'None'
+            Score = 1
+            PictureForSelection = 'Texture_PawnPicture_Default'
+            MaxPackCount = 12
+        ),
+        TStrategicBattleModuleDescriptor
+        (
+            CanBeInitialTarget = False
+            HasZoneOfControl = False
+            BattleSupportRadiusInAPCase = -1.0
+            BattleRole = ~/EStrategicBattleRole/AirSupport
+        ),
+        TVisibilityModuleDescriptor
+        (
+            UnitConcealmentBonus = 1.0
+        ),
+        TReverseScannerWithIdentificationDescriptor
+        (
+            VisibilityRollRule = TModernWarfareVisibilityRollRule
+            (
+                IdentifyBaseProbability     = 0.0
+                TimeBetweenEachIdentifyRoll = 0.0
+                VisibilityRuleDescriptor    = $/GFX/VisionRules/StandardWargameVisibilityRollRule
+            )
+        ),
+        TActionPointsModuleDescriptor
+        (
+            InitialActionPoint = 4
+            ActionPointRecoveryPerTurn = 4
+            NbInitialActionsPointsForProducedPawn = 4
+        ),
+        ~/StrategicMovementDescriptor_aerial,
+        ~/StrategicAerialModuleDescriptor,
+        TCubeActionModuleDescriptor
+        (
+            CubeActionDescriptor = $/GFX/UI/CubeAction_Menu_Ordres_Pawn
+        ),
+        StrategicUIModuleDescriptor
+        (
+            NameToken ='TJMQDBXFVX'
+            ProdMenuTexture = 'Texture_Button_Pawn_pion_FR_Ardennes'
+        ),
+        TStrategicPositionModuleDescriptor( IsAirport = False ),
+        ~/StrategicSequenceModuleDescriptor,
+        StrategicFatigueModuleDescriptor( InitialFatigue  = 0 ),
+        ~/IAStratZoneIndexModuleDescriptor,
+    ]
+)
+export Descriptor_Unit_pion_FR_Champagne is TEntityDescriptor
+(
+    DescriptorId       = GUID:{f1373f7b-152b-4267-b405-7d983f1cea50}
+    ClassNameForDebug  = 'Pawn_pion_FR_Champagne'
+    ModulesDescriptors = [
+        TTypeUnitModuleDescriptor
+        (
+            Coalition                        = ECoalition/NATO
+            MotherCountry                    = 'CAN'
+        ),
+        AirplaneFlagsModuleDescriptor,
+        ~/PawnPositionModuleDescriptor,
+        ~/LinkTeamModuleDescriptor,
+        TTagsModuleDescriptor
+        (
+            TagSet = [
+                "AllUnits",
+            ]
+        ),
+        TApparenceModuleDescriptor
+        (
+            PickableObject      = True
+            Depiction           = $/GFX/Depiction/Gfx_pion_FR_Champagne
+            ReferenceMesh       = $/GFX/DepictionResources/MeshModele_Socle_US
+            BlackHoleIdentifier = "pion_FR_Champagne"
+        ),
+        ~/StrategicStateEngineModuleDescriptor,
+        ~/DebugModuleDescriptor,
+        ~/StrategicSelectionModuleDescriptor,
+        ~/EffectApplierModuleDescriptor,
+        TStrategicLabelModuleDescriptor
+        (
+            BackgroundTexture = TBUCKToolAlternativeValues_TUIValueTextureNameFromTEugBMutableInteger
+            (
+                CommandNameTrigger = ~/SpecificCommandName/UpdateGUIFromStrategicIconType
+                Alterator = $/GUIOption/StrategicIconType
+                Values =
+                [
+                    "Texture_STRATEGIC_RTS_H_AA_air",
+                    "Texture_STRATEGIC_AA_air",
+                ]
+            )
+        ),
+        ~/PawnAirplaneOrderConfigModuleDescriptor,
+        TDeckModuleDescriptor
+        (
+            DeckIdentifier = 'pion_FR_Champagne'
+            RegimentName = 'None'
+            Score = 1
+            PictureForSelection = 'Texture_PawnPicture_Default'
+            MaxPackCount = 12
+        ),
+        TStrategicBattleModuleDescriptor
+        (
+            CanBeInitialTarget = False
+            HasZoneOfControl = False
+            BattleSupportRadiusInAPCase = -1.0
+            BattleRole = ~/EStrategicBattleRole/AirSupport
+        ),
+        TVisibilityModuleDescriptor
+        (
+            UnitConcealmentBonus = 1.0
+        ),
+        TReverseScannerWithIdentificationDescriptor
+        (
+            VisibilityRollRule = TModernWarfareVisibilityRollRule
+            (
+                IdentifyBaseProbability     = 0.0
+                TimeBetweenEachIdentifyRoll = 0.0
+                VisibilityRuleDescriptor    = $/GFX/VisionRules/StandardWargameVisibilityRollRule
+            )
+        ),
+        TActionPointsModuleDescriptor
+        (
+            InitialActionPoint = 4
+            ActionPointRecoveryPerTurn = 4
+            NbInitialActionsPointsForProducedPawn = 4
+        ),
+        ~/StrategicMovementDescriptor_aerial,
+        ~/StrategicAerialModuleDescriptor,
+        TCubeActionModuleDescriptor
+        (
+            CubeActionDescriptor = $/GFX/UI/CubeAction_Menu_Ordres_Pawn
+        ),
+        StrategicUIModuleDescriptor
+        (
+            NameToken ='AIKNEWCKVN'
+            ProdMenuTexture = 'Texture_Button_Pawn_pion_FR_Champagne'
+        ),
+        TStrategicPositionModuleDescriptor( IsAirport = False ),
+        ~/StrategicSequenceModuleDescriptor,
+        StrategicFatigueModuleDescriptor( InitialFatigue  = 0 ),
+        ~/IAStratZoneIndexModuleDescriptor,
+    ]
+)
+export Descriptor_Unit_pion_FR_Chasse11_GROUPE is TEntityDescriptor
+(
+    DescriptorId       = GUID:{9bed2380-72a3-4184-9604-9d08898acee6}
+    ClassNameForDebug  = 'Pawn_pion_FR_Chasse11_GROUPE'
+    ModulesDescriptors = [
+        TTypeUnitModuleDescriptor
+        (
+            Coalition                        = ECoalition/NATO
+        ),
+        AirplaneFlagsModuleDescriptor,
+        ~/PawnPositionModuleDescriptor,
+        ~/LinkTeamModuleDescriptor,
+        TTagsModuleDescriptor
+        (
+            TagSet = [
+                "AllUnits",
+            ]
+        ),
+        ~/StrategicStateEngineModuleDescriptor,
+        ~/DebugModuleDescriptor,
+        ~/StrategicSelectionModuleDescriptor,
+        ~/EffectApplierModuleDescriptor,
+        TStrategicLabelModuleDescriptor
+        (
+            BackgroundTexture = TBUCKToolAlternativeValues_TUIValueTextureNameFromTEugBMutableInteger
+            (
+                CommandNameTrigger = ~/SpecificCommandName/UpdateGUIFromStrategicIconType
+                Alterator = $/GUIOption/StrategicIconType
+                Values =
+                [
+                    "Texture_STRATEGIC_RTS_H_corps",
+                    "Texture_STRATEGIC_corps",
+                ]
+            )
+        ),
+        ~/PawnAirplaneOrderConfigModuleDescriptor,
+        TDeckModuleDescriptor
+        (
+            DeckIdentifier = 'pion_FR_Chasse11_GROUPE'
+            RegimentName = 'None'
+            Score = 1
+            PictureForSelection = 'Texture_PawnPicture_Default'
+            MaxPackCount = 12
+        ),
+        TStrategicBattleModuleDescriptor
+        (
+            CanBeInitialTarget = False
+            HasZoneOfControl = False
+            BattleSupportRadiusInAPCase = -1.0
+            BattleRole = ~/EStrategicBattleRole/AirSupport
+        ),
+        TVisibilityModuleDescriptor
+        (
+            UnitConcealmentBonus = 1.0
+        ),
+        TReverseScannerWithIdentificationDescriptor
+        (
+            VisibilityRollRule = TModernWarfareVisibilityRollRule
+            (
+                IdentifyBaseProbability     = 0.0
+                TimeBetweenEachIdentifyRoll = 0.0
+                VisibilityRuleDescriptor    = $/GFX/VisionRules/StandardWargameVisibilityRollRule
+            )
+        ),
+        TActionPointsModuleDescriptor
+        (
+            InitialActionPoint = 4
+            ActionPointRecoveryPerTurn = 4
+            NbInitialActionsPointsForProducedPawn = 4
+        ),
+        ~/StrategicMovementDescriptor_aerial,
+        ~/StrategicAerialModuleDescriptor,
+        TCubeActionModuleDescriptor
+        (
+            CubeActionDescriptor = $/GFX/UI/CubeAction_Menu_Ordres_Pawn
+        ),
+        StrategicUIModuleDescriptor
+        (
+            NameToken ='NVZBOWGGNL'
+            ProdMenuTexture = 'Texture_Button_Pawn_pion_FR_Chasse11_GROUPE'
+        ),
+        TStrategicPositionModuleDescriptor( IsAirport = False ),
+        ~/StrategicSequenceModuleDescriptor,
+        StrategicFatigueModuleDescriptor( InitialFatigue  = 0 ),
+        ~/IAStratZoneIndexModuleDescriptor,
+    ]
+)
+export Descriptor_Unit_pion_FR_Chasse2_GROUPE is TEntityDescriptor
+(
+    DescriptorId       = GUID:{fd1a0b1f-e11f-4226-b645-e8a7762aa07b}
+    ClassNameForDebug  = 'Pawn_pion_FR_Chasse2_GROUPE'
+    ModulesDescriptors = [
+        TTypeUnitModuleDescriptor
+        (
+            Coalition                        = ECoalition/NATO
+        ),
+        AirplaneFlagsModuleDescriptor,
+        ~/PawnPositionModuleDescriptor,
+        ~/LinkTeamModuleDescriptor,
+        TTagsModuleDescriptor
+        (
+            TagSet = [
+                "AllUnits",
+            ]
+        ),
+        ~/StrategicStateEngineModuleDescriptor,
+        ~/DebugModuleDescriptor,
+        ~/StrategicSelectionModuleDescriptor,
+        ~/EffectApplierModuleDescriptor,
+        TStrategicLabelModuleDescriptor
+        (
+            BackgroundTexture = TBUCKToolAlternativeValues_TUIValueTextureNameFromTEugBMutableInteger
+            (
+                CommandNameTrigger = ~/SpecificCommandName/UpdateGUIFromStrategicIconType
+                Alterator = $/GUIOption/StrategicIconType
+                Values =
+                [
+                    "Texture_STRATEGIC_RTS_H_corps",
+                    "Texture_STRATEGIC_corps",
+                ]
+            )
+        ),
+        ~/PawnAirplaneOrderConfigModuleDescriptor,
+        TDeckModuleDescriptor
+        (
+            DeckIdentifier = 'pion_FR_Chasse2_GROUPE'
+            RegimentName = 'None'
+            Score = 1
+            PictureForSelection = 'Texture_PawnPicture_Default'
+            MaxPackCount = 12
+        ),
+        TStrategicBattleModuleDescriptor
+        (
+            CanBeInitialTarget = False
+            HasZoneOfControl = False
+            BattleSupportRadiusInAPCase = -1.0
+            BattleRole = ~/EStrategicBattleRole/AirSupport
+        ),
+        TVisibilityModuleDescriptor
+        (
+            UnitConcealmentBonus = 1.0
+        ),
+        TReverseScannerWithIdentificationDescriptor
+        (
+            VisibilityRollRule = TModernWarfareVisibilityRollRule
+            (
+                IdentifyBaseProbability     = 0.0
+                TimeBetweenEachIdentifyRoll = 0.0
+                VisibilityRuleDescriptor    = $/GFX/VisionRules/StandardWargameVisibilityRollRule
+            )
+        ),
+        TActionPointsModuleDescriptor
+        (
+            InitialActionPoint = 4
+            ActionPointRecoveryPerTurn = 4
+            NbInitialActionsPointsForProducedPawn = 4
+        ),
+        ~/StrategicMovementDescriptor_aerial,
+        ~/StrategicAerialModuleDescriptor,
+        TCubeActionModuleDescriptor
+        (
+            CubeActionDescriptor = $/GFX/UI/CubeAction_Menu_Ordres_Pawn
+        ),
+        StrategicUIModuleDescriptor
+        (
+            NameToken ='CYXTQJGAAQ'
+            ProdMenuTexture = 'Texture_Button_Pawn_pion_FR_Chasse2_GROUPE'
+        ),
+        TStrategicPositionModuleDescriptor( IsAirport = False ),
+        ~/StrategicSequenceModuleDescriptor,
+        StrategicFatigueModuleDescriptor( InitialFatigue  = 0 ),
+        ~/IAStratZoneIndexModuleDescriptor,
+    ]
+)
+export Descriptor_Unit_pion_FR_Chasse30_GROUPE is TEntityDescriptor
+(
+    DescriptorId       = GUID:{e4a8dd49-b8b4-49d1-90dd-39787d882b0a}
+    ClassNameForDebug  = 'Pawn_pion_FR_Chasse30_GROUPE'
+    ModulesDescriptors = [
+        TTypeUnitModuleDescriptor
+        (
+            Coalition                        = ECoalition/NATO
+        ),
+        AirplaneFlagsModuleDescriptor,
+        ~/PawnPositionModuleDescriptor,
+        ~/LinkTeamModuleDescriptor,
+        TTagsModuleDescriptor
+        (
+            TagSet = [
+                "AllUnits",
+            ]
+        ),
+        ~/StrategicStateEngineModuleDescriptor,
+        ~/DebugModuleDescriptor,
+        ~/StrategicSelectionModuleDescriptor,
+        ~/EffectApplierModuleDescriptor,
+        TStrategicLabelModuleDescriptor
+        (
+            BackgroundTexture = TBUCKToolAlternativeValues_TUIValueTextureNameFromTEugBMutableInteger
+            (
+                CommandNameTrigger = ~/SpecificCommandName/UpdateGUIFromStrategicIconType
+                Alterator = $/GUIOption/StrategicIconType
+                Values =
+                [
+                    "Texture_STRATEGIC_RTS_H_corps",
+                    "Texture_STRATEGIC_corps",
+                ]
+            )
+        ),
+        ~/PawnAirplaneOrderConfigModuleDescriptor,
+        TDeckModuleDescriptor
+        (
+            DeckIdentifier = 'pion_FR_Chasse30_GROUPE'
+            RegimentName = 'None'
+            Score = 1
+            PictureForSelection = 'Texture_PawnPicture_Default'
+            MaxPackCount = 12
+        ),
+        TStrategicBattleModuleDescriptor
+        (
+            CanBeInitialTarget = False
+            HasZoneOfControl = False
+            BattleSupportRadiusInAPCase = -1.0
+            BattleRole = ~/EStrategicBattleRole/AirSupport
+        ),
+        TVisibilityModuleDescriptor
+        (
+            UnitConcealmentBonus = 1.0
+        ),
+        TReverseScannerWithIdentificationDescriptor
+        (
+            VisibilityRollRule = TModernWarfareVisibilityRollRule
+            (
+                IdentifyBaseProbability     = 0.0
+                TimeBetweenEachIdentifyRoll = 0.0
+                VisibilityRuleDescriptor    = $/GFX/VisionRules/StandardWargameVisibilityRollRule
+            )
+        ),
+        TActionPointsModuleDescriptor
+        (
+            InitialActionPoint = 4
+            ActionPointRecoveryPerTurn = 4
+            NbInitialActionsPointsForProducedPawn = 4
+        ),
+        ~/StrategicMovementDescriptor_aerial,
+        ~/StrategicAerialModuleDescriptor,
+        TCubeActionModuleDescriptor
+        (
+            CubeActionDescriptor = $/GFX/UI/CubeAction_Menu_Ordres_Pawn
+        ),
+        StrategicUIModuleDescriptor
+        (
+            NameToken ='PINCMLVXVZ'
+            ProdMenuTexture = 'Texture_Button_Pawn_pion_FR_Chasse30_GROUPE'
+        ),
+        TStrategicPositionModuleDescriptor( IsAirport = False ),
+        ~/StrategicSequenceModuleDescriptor,
+        StrategicFatigueModuleDescriptor( InitialFatigue  = 0 ),
+        ~/IAStratZoneIndexModuleDescriptor,
+    ]
+)
+export Descriptor_Unit_pion_FR_Chasse3_GROUPE is TEntityDescriptor
+(
+    DescriptorId       = GUID:{1d1a1790-c13f-459c-9719-2b6cde58279a}
+    ClassNameForDebug  = 'Pawn_pion_FR_Chasse3_GROUPE'
+    ModulesDescriptors = [
+        TTypeUnitModuleDescriptor
+        (
+            Coalition                        = ECoalition/NATO
+        ),
+        AirplaneFlagsModuleDescriptor,
+        ~/PawnPositionModuleDescriptor,
+        ~/LinkTeamModuleDescriptor,
+        TTagsModuleDescriptor
+        (
+            TagSet = [
+                "AllUnits",
+            ]
+        ),
+        ~/StrategicStateEngineModuleDescriptor,
+        ~/DebugModuleDescriptor,
+        ~/StrategicSelectionModuleDescriptor,
+        ~/EffectApplierModuleDescriptor,
+        TStrategicLabelModuleDescriptor
+        (
+            BackgroundTexture = TBUCKToolAlternativeValues_TUIValueTextureNameFromTEugBMutableInteger
+            (
+                CommandNameTrigger = ~/SpecificCommandName/UpdateGUIFromStrategicIconType
+                Alterator = $/GUIOption/StrategicIconType
+                Values =
+                [
+                    "Texture_STRATEGIC_RTS_H_corps",
+                    "Texture_STRATEGIC_corps",
+                ]
+            )
+        ),
+        ~/PawnAirplaneOrderConfigModuleDescriptor,
+        TDeckModuleDescriptor
+        (
+            DeckIdentifier = 'pion_FR_Chasse3_GROUPE'
+            RegimentName = 'None'
+            Score = 1
+            PictureForSelection = 'Texture_PawnPicture_Default'
+            MaxPackCount = 12
+        ),
+        TStrategicBattleModuleDescriptor
+        (
+            CanBeInitialTarget = False
+            HasZoneOfControl = False
+            BattleSupportRadiusInAPCase = -1.0
+            BattleRole = ~/EStrategicBattleRole/AirSupport
+        ),
+        TVisibilityModuleDescriptor
+        (
+            UnitConcealmentBonus = 1.0
+        ),
+        TReverseScannerWithIdentificationDescriptor
+        (
+            VisibilityRollRule = TModernWarfareVisibilityRollRule
+            (
+                IdentifyBaseProbability     = 0.0
+                TimeBetweenEachIdentifyRoll = 0.0
+                VisibilityRuleDescriptor    = $/GFX/VisionRules/StandardWargameVisibilityRollRule
+            )
+        ),
+        TActionPointsModuleDescriptor
+        (
+            InitialActionPoint = 4
+            ActionPointRecoveryPerTurn = 4
+            NbInitialActionsPointsForProducedPawn = 4
+        ),
+        ~/StrategicMovementDescriptor_aerial,
+        ~/StrategicAerialModuleDescriptor,
+        TCubeActionModuleDescriptor
+        (
+            CubeActionDescriptor = $/GFX/UI/CubeAction_Menu_Ordres_Pawn
+        ),
+        StrategicUIModuleDescriptor
+        (
+            NameToken ='GFWNXDRICX'
+            ProdMenuTexture = 'Texture_Button_Pawn_pion_FR_Chasse3_GROUPE'
+        ),
+        TStrategicPositionModuleDescriptor( IsAirport = False ),
+        ~/StrategicSequenceModuleDescriptor,
+        StrategicFatigueModuleDescriptor( InitialFatigue  = 0 ),
+        ~/IAStratZoneIndexModuleDescriptor,
+    ]
+)
+export Descriptor_Unit_pion_FR_Cigognes is TEntityDescriptor
+(
+    DescriptorId       = GUID:{8a7e1444-e6b2-46ec-9985-3ce08f3184ee}
+    ClassNameForDebug  = 'Pawn_pion_FR_Cigognes'
+    ModulesDescriptors = [
+        TTypeUnitModuleDescriptor
+        (
+            Coalition                        = ECoalition/NATO
+            MotherCountry                    = 'CAN'
+        ),
+        AirplaneFlagsModuleDescriptor,
+        ~/PawnPositionModuleDescriptor,
+        ~/LinkTeamModuleDescriptor,
+        TTagsModuleDescriptor
+        (
+            TagSet = [
+                "AllUnits",
+            ]
+        ),
+        TApparenceModuleDescriptor
+        (
+            PickableObject      = True
+            Depiction           = $/GFX/Depiction/Gfx_pion_FR_Cigognes
+            ReferenceMesh       = $/GFX/DepictionResources/MeshModele_Socle_US
+            BlackHoleIdentifier = "pion_FR_Cigognes"
+        ),
+        ~/StrategicStateEngineModuleDescriptor,
+        ~/DebugModuleDescriptor,
+        ~/StrategicSelectionModuleDescriptor,
+        ~/EffectApplierModuleDescriptor,
+        TStrategicLabelModuleDescriptor
+        (
+            BackgroundTexture = TBUCKToolAlternativeValues_TUIValueTextureNameFromTEugBMutableInteger
+            (
+                CommandNameTrigger = ~/SpecificCommandName/UpdateGUIFromStrategicIconType
+                Alterator = $/GUIOption/StrategicIconType
+                Values =
+                [
+                    "Texture_STRATEGIC_RTS_H_AA_air",
+                    "Texture_STRATEGIC_AA_air",
+                ]
+            )
+        ),
+        ~/PawnAirplaneOrderConfigModuleDescriptor,
+        TDeckModuleDescriptor
+        (
+            DeckIdentifier = 'pion_FR_Cigognes'
+            RegimentName = 'None'
+            Score = 1
+            PictureForSelection = 'Texture_PawnPicture_Default'
+            MaxPackCount = 12
+        ),
+        TStrategicBattleModuleDescriptor
+        (
+            CanBeInitialTarget = False
+            HasZoneOfControl = False
+            BattleSupportRadiusInAPCase = -1.0
+            BattleRole = ~/EStrategicBattleRole/AirSupport
+        ),
+        TVisibilityModuleDescriptor
+        (
+            UnitConcealmentBonus = 1.0
+        ),
+        TReverseScannerWithIdentificationDescriptor
+        (
+            VisibilityRollRule = TModernWarfareVisibilityRollRule
+            (
+                IdentifyBaseProbability     = 0.0
+                TimeBetweenEachIdentifyRoll = 0.0
+                VisibilityRuleDescriptor    = $/GFX/VisionRules/StandardWargameVisibilityRollRule
+            )
+        ),
+        TActionPointsModuleDescriptor
+        (
+            InitialActionPoint = 4
+            ActionPointRecoveryPerTurn = 4
+            NbInitialActionsPointsForProducedPawn = 4
+        ),
+        ~/StrategicMovementDescriptor_aerial,
+        ~/StrategicAerialModuleDescriptor,
+        TCubeActionModuleDescriptor
+        (
+            CubeActionDescriptor = $/GFX/UI/CubeAction_Menu_Ordres_Pawn
+        ),
+        StrategicUIModuleDescriptor
+        (
+            NameToken ='BYUMZLIEVS'
+            ProdMenuTexture = 'Texture_Button_Pawn_pion_FR_Cigognes'
+        ),
+        TStrategicPositionModuleDescriptor( IsAirport = False ),
+        ~/StrategicSequenceModuleDescriptor,
+        StrategicFatigueModuleDescriptor( InitialFatigue  = 0 ),
+        ~/IAStratZoneIndexModuleDescriptor,
+    ]
+)
+export Descriptor_Unit_pion_FR_Corse is TEntityDescriptor
+(
+    DescriptorId       = GUID:{97bcb08a-63d3-4e72-a1e8-00082616d54f}
+    ClassNameForDebug  = 'Pawn_pion_FR_Corse'
+    ModulesDescriptors = [
+        TTypeUnitModuleDescriptor
+        (
+            Coalition                        = ECoalition/NATO
+            MotherCountry                    = 'CAN'
+        ),
+        AirplaneFlagsModuleDescriptor,
+        ~/PawnPositionModuleDescriptor,
+        ~/LinkTeamModuleDescriptor,
+        TTagsModuleDescriptor
+        (
+            TagSet = [
+                "AllUnits",
+            ]
+        ),
+        TApparenceModuleDescriptor
+        (
+            PickableObject      = True
+            Depiction           = $/GFX/Depiction/Gfx_pion_FR_Corse
+            ReferenceMesh       = $/GFX/DepictionResources/MeshModele_Socle_US
+            BlackHoleIdentifier = "pion_FR_Corse"
+        ),
+        ~/StrategicStateEngineModuleDescriptor,
+        ~/DebugModuleDescriptor,
+        ~/StrategicSelectionModuleDescriptor,
+        ~/EffectApplierModuleDescriptor,
+        TStrategicLabelModuleDescriptor
+        (
+            BackgroundTexture = TBUCKToolAlternativeValues_TUIValueTextureNameFromTEugBMutableInteger
+            (
+                CommandNameTrigger = ~/SpecificCommandName/UpdateGUIFromStrategicIconType
+                Alterator = $/GUIOption/StrategicIconType
+                Values =
+                [
+                    "Texture_STRATEGIC_RTS_H_Support_air",
+                    "Texture_STRATEGIC_Support_air",
+                ]
+            )
+        ),
+        ~/PawnAirplaneOrderConfigModuleDescriptor,
+        TDeckModuleDescriptor
+        (
+            DeckIdentifier = 'pion_FR_Corse'
+            RegimentName = 'None'
+            Score = 1
+            PictureForSelection = 'Texture_PawnPicture_Default'
+            MaxPackCount = 12
+        ),
+        TStrategicBattleModuleDescriptor
+        (
+            CanBeInitialTarget = False
+            HasZoneOfControl = False
+            BattleSupportRadiusInAPCase = -1.0
+            BattleRole = ~/EStrategicBattleRole/AirSupport
+        ),
+        TVisibilityModuleDescriptor
+        (
+            UnitConcealmentBonus = 1.0
+        ),
+        TReverseScannerWithIdentificationDescriptor
+        (
+            VisibilityRollRule = TModernWarfareVisibilityRollRule
+            (
+                IdentifyBaseProbability     = 0.0
+                TimeBetweenEachIdentifyRoll = 0.0
+                VisibilityRuleDescriptor    = $/GFX/VisionRules/StandardWargameVisibilityRollRule
+            )
+        ),
+        TActionPointsModuleDescriptor
+        (
+            InitialActionPoint = 4
+            ActionPointRecoveryPerTurn = 4
+            NbInitialActionsPointsForProducedPawn = 4
+        ),
+        ~/StrategicMovementDescriptor_aerial,
+        ~/StrategicAerialModuleDescriptor,
+        TCubeActionModuleDescriptor
+        (
+            CubeActionDescriptor = $/GFX/UI/CubeAction_Menu_Ordres_Pawn
+        ),
+        StrategicUIModuleDescriptor
+        (
+            NameToken ='GDTPDSKXCI'
+            ProdMenuTexture = 'Texture_Button_Pawn_pion_FR_Corse'
+        ),
+        TStrategicPositionModuleDescriptor( IsAirport = False ),
+        ~/StrategicSequenceModuleDescriptor,
+        StrategicFatigueModuleDescriptor( InitialFatigue  = 0 ),
+        ~/IAStratZoneIndexModuleDescriptor,
+    ]
+)
+export Descriptor_Unit_pion_FR_Cote_dOr is TEntityDescriptor
+(
+    DescriptorId       = GUID:{bbacc041-1e73-4693-a4a0-a9f099eb0753}
+    ClassNameForDebug  = 'Pawn_pion_FR_Cote_dOr'
+    ModulesDescriptors = [
+        TTypeUnitModuleDescriptor
+        (
+            Coalition                        = ECoalition/NATO
+            MotherCountry                    = 'CAN'
+        ),
+        AirplaneFlagsModuleDescriptor,
+        ~/PawnPositionModuleDescriptor,
+        ~/LinkTeamModuleDescriptor,
+        TTagsModuleDescriptor
+        (
+            TagSet = [
+                "AllUnits",
+            ]
+        ),
+        TApparenceModuleDescriptor
+        (
+            PickableObject      = True
+            Depiction           = $/GFX/Depiction/Gfx_pion_FR_Cote_dOr
+            ReferenceMesh       = $/GFX/DepictionResources/MeshModele_Socle_US
+            BlackHoleIdentifier = "pion_FR_Cote_dOr"
+        ),
+        ~/StrategicStateEngineModuleDescriptor,
+        ~/DebugModuleDescriptor,
+        ~/StrategicSelectionModuleDescriptor,
+        ~/EffectApplierModuleDescriptor,
+        TStrategicLabelModuleDescriptor
+        (
+            BackgroundTexture = TBUCKToolAlternativeValues_TUIValueTextureNameFromTEugBMutableInteger
+            (
+                CommandNameTrigger = ~/SpecificCommandName/UpdateGUIFromStrategicIconType
+                Alterator = $/GUIOption/StrategicIconType
+                Values =
+                [
+                    "Texture_STRATEGIC_RTS_H_AA_air",
+                    "Texture_STRATEGIC_AA_air",
+                ]
+            )
+        ),
+        ~/PawnAirplaneOrderConfigModuleDescriptor,
+        TDeckModuleDescriptor
+        (
+            DeckIdentifier = 'pion_FR_Cote_dOr'
+            RegimentName = 'None'
+            Score = 1
+            PictureForSelection = 'Texture_PawnPicture_Default'
+            MaxPackCount = 12
+        ),
+        TStrategicBattleModuleDescriptor
+        (
+            CanBeInitialTarget = False
+            HasZoneOfControl = False
+            BattleSupportRadiusInAPCase = -1.0
+            BattleRole = ~/EStrategicBattleRole/AirSupport
+        ),
+        TVisibilityModuleDescriptor
+        (
+            UnitConcealmentBonus = 1.0
+        ),
+        TReverseScannerWithIdentificationDescriptor
+        (
+            VisibilityRollRule = TModernWarfareVisibilityRollRule
+            (
+                IdentifyBaseProbability     = 0.0
+                TimeBetweenEachIdentifyRoll = 0.0
+                VisibilityRuleDescriptor    = $/GFX/VisionRules/StandardWargameVisibilityRollRule
+            )
+        ),
+        TActionPointsModuleDescriptor
+        (
+            InitialActionPoint = 4
+            ActionPointRecoveryPerTurn = 4
+            NbInitialActionsPointsForProducedPawn = 4
+        ),
+        ~/StrategicMovementDescriptor_aerial,
+        ~/StrategicAerialModuleDescriptor,
+        TCubeActionModuleDescriptor
+        (
+            CubeActionDescriptor = $/GFX/UI/CubeAction_Menu_Ordres_Pawn
+        ),
+        StrategicUIModuleDescriptor
+        (
+            NameToken ='NXODSXDXFM'
+            ProdMenuTexture = 'Texture_Button_Pawn_pion_FR_Cote_dOr'
+        ),
+        TStrategicPositionModuleDescriptor( IsAirport = False ),
+        ~/StrategicSequenceModuleDescriptor,
+        StrategicFatigueModuleDescriptor( InitialFatigue  = 0 ),
+        ~/IAStratZoneIndexModuleDescriptor,
+    ]
+)
+export Descriptor_Unit_pion_FR_Jura is TEntityDescriptor
+(
+    DescriptorId       = GUID:{67d29626-3794-45ea-825f-d6f07d5a536d}
+    ClassNameForDebug  = 'Pawn_pion_FR_Jura'
+    ModulesDescriptors = [
+        TTypeUnitModuleDescriptor
+        (
+            Coalition                        = ECoalition/NATO
+            MotherCountry                    = 'CAN'
+        ),
+        AirplaneFlagsModuleDescriptor,
+        ~/PawnPositionModuleDescriptor,
+        ~/LinkTeamModuleDescriptor,
+        TTagsModuleDescriptor
+        (
+            TagSet = [
+                "AllUnits",
+            ]
+        ),
+        TApparenceModuleDescriptor
+        (
+            PickableObject      = True
+            Depiction           = $/GFX/Depiction/Gfx_pion_FR_Jura
+            ReferenceMesh       = $/GFX/DepictionResources/MeshModele_Socle_US
+            BlackHoleIdentifier = "pion_FR_Jura"
+        ),
+        ~/StrategicStateEngineModuleDescriptor,
+        ~/DebugModuleDescriptor,
+        ~/StrategicSelectionModuleDescriptor,
+        ~/EffectApplierModuleDescriptor,
+        TStrategicLabelModuleDescriptor
+        (
+            BackgroundTexture = TBUCKToolAlternativeValues_TUIValueTextureNameFromTEugBMutableInteger
+            (
+                CommandNameTrigger = ~/SpecificCommandName/UpdateGUIFromStrategicIconType
+                Alterator = $/GUIOption/StrategicIconType
+                Values =
+                [
+                    "Texture_STRATEGIC_RTS_H_Support_air",
+                    "Texture_STRATEGIC_Support_air",
+                ]
+            )
+        ),
+        ~/PawnAirplaneOrderConfigModuleDescriptor,
+        TDeckModuleDescriptor
+        (
+            DeckIdentifier = 'pion_FR_Jura'
+            RegimentName = 'None'
+            Score = 1
+            PictureForSelection = 'Texture_PawnPicture_Default'
+            MaxPackCount = 12
+        ),
+        TStrategicBattleModuleDescriptor
+        (
+            CanBeInitialTarget = False
+            HasZoneOfControl = False
+            BattleSupportRadiusInAPCase = -1.0
+            BattleRole = ~/EStrategicBattleRole/AirSupport
+        ),
+        TVisibilityModuleDescriptor
+        (
+            UnitConcealmentBonus = 1.0
+        ),
+        TReverseScannerWithIdentificationDescriptor
+        (
+            VisibilityRollRule = TModernWarfareVisibilityRollRule
+            (
+                IdentifyBaseProbability     = 0.0
+                TimeBetweenEachIdentifyRoll = 0.0
+                VisibilityRuleDescriptor    = $/GFX/VisionRules/StandardWargameVisibilityRollRule
+            )
+        ),
+        TActionPointsModuleDescriptor
+        (
+            InitialActionPoint = 4
+            ActionPointRecoveryPerTurn = 4
+            NbInitialActionsPointsForProducedPawn = 4
+        ),
+        ~/StrategicMovementDescriptor_aerial,
+        ~/StrategicAerialModuleDescriptor,
+        TCubeActionModuleDescriptor
+        (
+            CubeActionDescriptor = $/GFX/UI/CubeAction_Menu_Ordres_Pawn
+        ),
+        StrategicUIModuleDescriptor
+        (
+            NameToken ='SXXCJMPXYU'
+            ProdMenuTexture = 'Texture_Button_Pawn_pion_FR_Jura'
+        ),
+        TStrategicPositionModuleDescriptor( IsAirport = False ),
+        ~/StrategicSequenceModuleDescriptor,
+        StrategicFatigueModuleDescriptor( InitialFatigue  = 0 ),
+        ~/IAStratZoneIndexModuleDescriptor,
+    ]
+)
+export Descriptor_Unit_pion_FR_Navarre is TEntityDescriptor
+(
+    DescriptorId       = GUID:{2b733f39-0d83-4ad1-ab38-71e1d9db6073}
+    ClassNameForDebug  = 'Pawn_pion_FR_Navarre'
+    ModulesDescriptors = [
+        TTypeUnitModuleDescriptor
+        (
+            Coalition                        = ECoalition/NATO
+            MotherCountry                    = 'CAN'
+        ),
+        AirplaneFlagsModuleDescriptor,
+        ~/PawnPositionModuleDescriptor,
+        ~/LinkTeamModuleDescriptor,
+        TTagsModuleDescriptor
+        (
+            TagSet = [
+                "AllUnits",
+            ]
+        ),
+        TApparenceModuleDescriptor
+        (
+            PickableObject      = True
+            Depiction           = $/GFX/Depiction/Gfx_pion_FR_Navarre
+            ReferenceMesh       = $/GFX/DepictionResources/MeshModele_Socle_US
+            BlackHoleIdentifier = "pion_FR_Navarre"
+        ),
+        ~/StrategicStateEngineModuleDescriptor,
+        ~/DebugModuleDescriptor,
+        ~/StrategicSelectionModuleDescriptor,
+        ~/EffectApplierModuleDescriptor,
+        TStrategicLabelModuleDescriptor
+        (
+            BackgroundTexture = TBUCKToolAlternativeValues_TUIValueTextureNameFromTEugBMutableInteger
+            (
+                CommandNameTrigger = ~/SpecificCommandName/UpdateGUIFromStrategicIconType
+                Alterator = $/GUIOption/StrategicIconType
+                Values =
+                [
+                    "Texture_STRATEGIC_RTS_H_AA_air",
+                    "Texture_STRATEGIC_AA_air",
+                ]
+            )
+        ),
+        ~/PawnAirplaneOrderConfigModuleDescriptor,
+        TDeckModuleDescriptor
+        (
+            DeckIdentifier = 'pion_FR_Navarre'
+            RegimentName = 'None'
+            Score = 1
+            PictureForSelection = 'Texture_PawnPicture_Default'
+            MaxPackCount = 12
+        ),
+        TStrategicBattleModuleDescriptor
+        (
+            CanBeInitialTarget = False
+            HasZoneOfControl = False
+            BattleSupportRadiusInAPCase = -1.0
+            BattleRole = ~/EStrategicBattleRole/AirSupport
+        ),
+        TVisibilityModuleDescriptor
+        (
+            UnitConcealmentBonus = 1.0
+        ),
+        TReverseScannerWithIdentificationDescriptor
+        (
+            VisibilityRollRule = TModernWarfareVisibilityRollRule
+            (
+                IdentifyBaseProbability     = 0.0
+                TimeBetweenEachIdentifyRoll = 0.0
+                VisibilityRuleDescriptor    = $/GFX/VisionRules/StandardWargameVisibilityRollRule
+            )
+        ),
+        TActionPointsModuleDescriptor
+        (
+            InitialActionPoint = 4
+            ActionPointRecoveryPerTurn = 4
+            NbInitialActionsPointsForProducedPawn = 4
+        ),
+        ~/StrategicMovementDescriptor_aerial,
+        ~/StrategicAerialModuleDescriptor,
+        TCubeActionModuleDescriptor
+        (
+            CubeActionDescriptor = $/GFX/UI/CubeAction_Menu_Ordres_Pawn
+        ),
+        StrategicUIModuleDescriptor
+        (
+            NameToken ='UUUZXXSGLH'
+            ProdMenuTexture = 'Texture_Button_Pawn_pion_FR_Navarre'
+        ),
+        TStrategicPositionModuleDescriptor( IsAirport = False ),
+        ~/StrategicSequenceModuleDescriptor,
+        StrategicFatigueModuleDescriptor( InitialFatigue  = 0 ),
+        ~/IAStratZoneIndexModuleDescriptor,
+    ]
+)
+export Descriptor_Unit_pion_FR_Roussillon is TEntityDescriptor
+(
+    DescriptorId       = GUID:{c2f66ad9-0bc1-47e9-86ad-20c9b3ed6eb9}
+    ClassNameForDebug  = 'Pawn_pion_FR_Roussillon'
+    ModulesDescriptors = [
+        TTypeUnitModuleDescriptor
+        (
+            Coalition                        = ECoalition/NATO
+            MotherCountry                    = 'CAN'
+        ),
+        AirplaneFlagsModuleDescriptor,
+        ~/PawnPositionModuleDescriptor,
+        ~/LinkTeamModuleDescriptor,
+        TTagsModuleDescriptor
+        (
+            TagSet = [
+                "AllUnits",
+            ]
+        ),
+        TApparenceModuleDescriptor
+        (
+            PickableObject      = True
+            Depiction           = $/GFX/Depiction/Gfx_pion_FR_Roussillon
+            ReferenceMesh       = $/GFX/DepictionResources/MeshModele_Socle_US
+            BlackHoleIdentifier = "pion_FR_Roussillon"
+        ),
+        ~/StrategicStateEngineModuleDescriptor,
+        ~/DebugModuleDescriptor,
+        ~/StrategicSelectionModuleDescriptor,
+        ~/EffectApplierModuleDescriptor,
+        TStrategicLabelModuleDescriptor
+        (
+            BackgroundTexture = TBUCKToolAlternativeValues_TUIValueTextureNameFromTEugBMutableInteger
+            (
+                CommandNameTrigger = ~/SpecificCommandName/UpdateGUIFromStrategicIconType
+                Alterator = $/GUIOption/StrategicIconType
+                Values =
+                [
+                    "Texture_STRATEGIC_RTS_H_Support_air",
+                    "Texture_STRATEGIC_Support_air",
+                ]
+            )
+        ),
+        ~/PawnAirplaneOrderConfigModuleDescriptor,
+        TDeckModuleDescriptor
+        (
+            DeckIdentifier = 'pion_FR_Roussillon'
+            RegimentName = 'None'
+            Score = 1
+            PictureForSelection = 'Texture_PawnPicture_Default'
+            MaxPackCount = 12
+        ),
+        TStrategicBattleModuleDescriptor
+        (
+            CanBeInitialTarget = False
+            HasZoneOfControl = False
+            BattleSupportRadiusInAPCase = -1.0
+            BattleRole = ~/EStrategicBattleRole/AirSupport
+        ),
+        TVisibilityModuleDescriptor
+        (
+            UnitConcealmentBonus = 1.0
+        ),
+        TReverseScannerWithIdentificationDescriptor
+        (
+            VisibilityRollRule = TModernWarfareVisibilityRollRule
+            (
+                IdentifyBaseProbability     = 0.0
+                TimeBetweenEachIdentifyRoll = 0.0
+                VisibilityRuleDescriptor    = $/GFX/VisionRules/StandardWargameVisibilityRollRule
+            )
+        ),
+        TActionPointsModuleDescriptor
+        (
+            InitialActionPoint = 4
+            ActionPointRecoveryPerTurn = 4
+            NbInitialActionsPointsForProducedPawn = 4
+        ),
+        ~/StrategicMovementDescriptor_aerial,
+        ~/StrategicAerialModuleDescriptor,
+        TCubeActionModuleDescriptor
+        (
+            CubeActionDescriptor = $/GFX/UI/CubeAction_Menu_Ordres_Pawn
+        ),
+        StrategicUIModuleDescriptor
+        (
+            NameToken ='QZBPQCXUHF'
+            ProdMenuTexture = 'Texture_Button_Pawn_pion_FR_Roussillon'
+        ),
+        TStrategicPositionModuleDescriptor( IsAirport = False ),
+        ~/StrategicSequenceModuleDescriptor,
+        StrategicFatigueModuleDescriptor( InitialFatigue  = 0 ),
+        ~/IAStratZoneIndexModuleDescriptor,
+    ]
+)
+export Descriptor_Unit_pion_FR_Valois is TEntityDescriptor
+(
+    DescriptorId       = GUID:{176849ac-8bc6-4d75-820c-fc62517b15c3}
+    ClassNameForDebug  = 'Pawn_pion_FR_Valois'
+    ModulesDescriptors = [
+        TTypeUnitModuleDescriptor
+        (
+            Coalition                        = ECoalition/NATO
+            MotherCountry                    = 'CAN'
+        ),
+        AirplaneFlagsModuleDescriptor,
+        ~/PawnPositionModuleDescriptor,
+        ~/LinkTeamModuleDescriptor,
+        TTagsModuleDescriptor
+        (
+            TagSet = [
+                "AllUnits",
+            ]
+        ),
+        TApparenceModuleDescriptor
+        (
+            PickableObject      = True
+            Depiction           = $/GFX/Depiction/Gfx_pion_FR_Valois
+            ReferenceMesh       = $/GFX/DepictionResources/MeshModele_Socle_US
+            BlackHoleIdentifier = "pion_FR_Valois"
+        ),
+        ~/StrategicStateEngineModuleDescriptor,
+        ~/DebugModuleDescriptor,
+        ~/StrategicSelectionModuleDescriptor,
+        ~/EffectApplierModuleDescriptor,
+        TStrategicLabelModuleDescriptor
+        (
+            BackgroundTexture = TBUCKToolAlternativeValues_TUIValueTextureNameFromTEugBMutableInteger
+            (
+                CommandNameTrigger = ~/SpecificCommandName/UpdateGUIFromStrategicIconType
+                Alterator = $/GUIOption/StrategicIconType
+                Values =
+                [
+                    "Texture_STRATEGIC_RTS_H_AA_air",
+                    "Texture_STRATEGIC_AA_air",
+                ]
+            )
+        ),
+        ~/PawnAirplaneOrderConfigModuleDescriptor,
+        TDeckModuleDescriptor
+        (
+            DeckIdentifier = 'pion_FR_Valois'
+            RegimentName = 'None'
+            Score = 1
+            PictureForSelection = 'Texture_PawnPicture_Default'
+            MaxPackCount = 12
+        ),
+        TStrategicBattleModuleDescriptor
+        (
+            CanBeInitialTarget = False
+            HasZoneOfControl = False
+            BattleSupportRadiusInAPCase = -1.0
+            BattleRole = ~/EStrategicBattleRole/AirSupport
+        ),
+        TVisibilityModuleDescriptor
+        (
+            UnitConcealmentBonus = 1.0
+        ),
+        TReverseScannerWithIdentificationDescriptor
+        (
+            VisibilityRollRule = TModernWarfareVisibilityRollRule
+            (
+                IdentifyBaseProbability     = 0.0
+                TimeBetweenEachIdentifyRoll = 0.0
+                VisibilityRuleDescriptor    = $/GFX/VisionRules/StandardWargameVisibilityRollRule
+            )
+        ),
+        TActionPointsModuleDescriptor
+        (
+            InitialActionPoint = 4
+            ActionPointRecoveryPerTurn = 4
+            NbInitialActionsPointsForProducedPawn = 4
+        ),
+        ~/StrategicMovementDescriptor_aerial,
+        ~/StrategicAerialModuleDescriptor,
+        TCubeActionModuleDescriptor
+        (
+            CubeActionDescriptor = $/GFX/UI/CubeAction_Menu_Ordres_Pawn
+        ),
+        StrategicUIModuleDescriptor
+        (
+            NameToken ='NNXPDJWAYV'
+            ProdMenuTexture = 'Texture_Button_Pawn_pion_FR_Valois'
+        ),
+        TStrategicPositionModuleDescriptor( IsAirport = False ),
+        ~/StrategicSequenceModuleDescriptor,
+        StrategicFatigueModuleDescriptor( InitialFatigue  = 0 ),
+        ~/IAStratZoneIndexModuleDescriptor,
+    ]
+)
+export Descriptor_Unit_pion_FR_Vosges is TEntityDescriptor
+(
+    DescriptorId       = GUID:{87be0e82-46d2-4ccf-9971-73904d235d60}
+    ClassNameForDebug  = 'Pawn_pion_FR_Vosges'
+    ModulesDescriptors = [
+        TTypeUnitModuleDescriptor
+        (
+            Coalition                        = ECoalition/NATO
+            MotherCountry                    = 'CAN'
+        ),
+        AirplaneFlagsModuleDescriptor,
+        ~/PawnPositionModuleDescriptor,
+        ~/LinkTeamModuleDescriptor,
+        TTagsModuleDescriptor
+        (
+            TagSet = [
+                "AllUnits",
+            ]
+        ),
+        TApparenceModuleDescriptor
+        (
+            PickableObject      = True
+            Depiction           = $/GFX/Depiction/Gfx_pion_FR_Vosges
+            ReferenceMesh       = $/GFX/DepictionResources/MeshModele_Socle_US
+            BlackHoleIdentifier = "pion_FR_Vosges"
+        ),
+        ~/StrategicStateEngineModuleDescriptor,
+        ~/DebugModuleDescriptor,
+        ~/StrategicSelectionModuleDescriptor,
+        ~/EffectApplierModuleDescriptor,
+        TStrategicLabelModuleDescriptor
+        (
+            BackgroundTexture = TBUCKToolAlternativeValues_TUIValueTextureNameFromTEugBMutableInteger
+            (
+                CommandNameTrigger = ~/SpecificCommandName/UpdateGUIFromStrategicIconType
+                Alterator = $/GUIOption/StrategicIconType
+                Values =
+                [
+                    "Texture_STRATEGIC_RTS_H_Support_air",
+                    "Texture_STRATEGIC_Support_air",
+                ]
+            )
+        ),
+        ~/PawnAirplaneOrderConfigModuleDescriptor,
+        TDeckModuleDescriptor
+        (
+            DeckIdentifier = 'pion_FR_Vosges'
+            RegimentName = 'None'
+            Score = 1
+            PictureForSelection = 'Texture_PawnPicture_Default'
+            MaxPackCount = 12
+        ),
+        TStrategicBattleModuleDescriptor
+        (
+            CanBeInitialTarget = False
+            HasZoneOfControl = False
+            BattleSupportRadiusInAPCase = -1.0
+            BattleRole = ~/EStrategicBattleRole/AirSupport
+        ),
+        TVisibilityModuleDescriptor
+        (
+            UnitConcealmentBonus = 1.0
+        ),
+        TReverseScannerWithIdentificationDescriptor
+        (
+            VisibilityRollRule = TModernWarfareVisibilityRollRule
+            (
+                IdentifyBaseProbability     = 0.0
+                TimeBetweenEachIdentifyRoll = 0.0
+                VisibilityRuleDescriptor    = $/GFX/VisionRules/StandardWargameVisibilityRollRule
+            )
+        ),
+        TActionPointsModuleDescriptor
+        (
+            InitialActionPoint = 4
+            ActionPointRecoveryPerTurn = 4
+            NbInitialActionsPointsForProducedPawn = 4
+        ),
+        ~/StrategicMovementDescriptor_aerial,
+        ~/StrategicAerialModuleDescriptor,
+        TCubeActionModuleDescriptor
+        (
+            CubeActionDescriptor = $/GFX/UI/CubeAction_Menu_Ordres_Pawn
+        ),
+        StrategicUIModuleDescriptor
+        (
+            NameToken ='PLYUBBOYNT'
+            ProdMenuTexture = 'Texture_Button_Pawn_pion_FR_Vosges'
+        ),
+        TStrategicPositionModuleDescriptor( IsAirport = False ),
+        ~/StrategicSequenceModuleDescriptor,
+        StrategicFatigueModuleDescriptor( InitialFatigue  = 0 ),
+        ~/IAStratZoneIndexModuleDescriptor,
+    ]
+)
 export Descriptor_Unit_pion_NL_Grp_Eindhoven is TEntityDescriptor
 (
     DescriptorId       = GUID:{f8a6403d-eecc-418d-982f-b68d99c83dfb}
@@ -6511,6 +8277,1027 @@ export Descriptor_Unit_pion_SOV_968IAP is TEntityDescriptor
         (
             NameToken ='FREDRXOMPL'
             ProdMenuTexture = 'Texture_Button_Pawn_pion_SOV_968IAP'
+        ),
+        TStrategicPositionModuleDescriptor( IsAirport = False ),
+        ~/StrategicSequenceModuleDescriptor,
+        StrategicFatigueModuleDescriptor( InitialFatigue  = 0 ),
+        ~/IAStratZoneIndexModuleDescriptor,
+    ]
+)
+export Descriptor_Unit_pion_TCH_11FighterRgt is TEntityDescriptor
+(
+    DescriptorId       = GUID:{8bc347cd-fe3f-43da-a271-d3a05dc619a0}
+    ClassNameForDebug  = 'Pawn_pion_TCH_11FighterRgt'
+    ModulesDescriptors = [
+        TTypeUnitModuleDescriptor
+        (
+            Coalition                        = ECoalition/PACT
+            MotherCountry                    = 'RFA'
+        ),
+        AirplaneFlagsModuleDescriptor,
+        ~/PawnPositionModuleDescriptor,
+        ~/LinkTeamModuleDescriptor,
+        TTagsModuleDescriptor
+        (
+            TagSet = [
+                "AllUnits",
+            ]
+        ),
+        TApparenceModuleDescriptor
+        (
+            PickableObject      = True
+            Depiction           = $/GFX/Depiction/Gfx_pion_TCH_11FighterRgt
+            ReferenceMesh       = $/GFX/DepictionResources/MeshModele_Socle_US
+            BlackHoleIdentifier = "pion_TCH_11FighterRgt"
+        ),
+        ~/StrategicStateEngineModuleDescriptor,
+        ~/DebugModuleDescriptor,
+        ~/StrategicSelectionModuleDescriptor,
+        ~/EffectApplierModuleDescriptor,
+        TStrategicLabelModuleDescriptor
+        (
+            BackgroundTexture = TBUCKToolAlternativeValues_TUIValueTextureNameFromTEugBMutableInteger
+            (
+                CommandNameTrigger = ~/SpecificCommandName/UpdateGUIFromStrategicIconType
+                Alterator = $/GUIOption/StrategicIconType
+                Values =
+                [
+                    "Texture_STRATEGIC_RTS_H_AA_air",
+                    "Texture_STRATEGIC_AA_air",
+                ]
+            )
+        ),
+        ~/PawnAirplaneOrderConfigModuleDescriptor,
+        TDeckModuleDescriptor
+        (
+            DeckIdentifier = 'pion_TCH_11FighterRgt'
+            RegimentName = 'None'
+            Score = 1
+            PictureForSelection = 'Texture_PawnPicture_Default'
+            MaxPackCount = 12
+        ),
+        TStrategicBattleModuleDescriptor
+        (
+            CanBeInitialTarget = False
+            HasZoneOfControl = False
+            BattleSupportRadiusInAPCase = -1.0
+            BattleRole = ~/EStrategicBattleRole/AirSupport
+        ),
+        TVisibilityModuleDescriptor
+        (
+            UnitConcealmentBonus = 1.0
+        ),
+        TReverseScannerWithIdentificationDescriptor
+        (
+            VisibilityRollRule = TModernWarfareVisibilityRollRule
+            (
+                IdentifyBaseProbability     = 0.0
+                TimeBetweenEachIdentifyRoll = 0.0
+                VisibilityRuleDescriptor    = $/GFX/VisionRules/StandardWargameVisibilityRollRule
+            )
+        ),
+        TActionPointsModuleDescriptor
+        (
+            InitialActionPoint = 4
+            ActionPointRecoveryPerTurn = 4
+            NbInitialActionsPointsForProducedPawn = 4
+        ),
+        ~/StrategicMovementDescriptor_aerial,
+        ~/StrategicAerialModuleDescriptor,
+        TCubeActionModuleDescriptor
+        (
+            CubeActionDescriptor = $/GFX/UI/CubeAction_Menu_Ordres_Pawn
+        ),
+        StrategicUIModuleDescriptor
+        (
+            NameToken ='FTRAHMBIVC'
+            ProdMenuTexture = 'Texture_Button_Pawn_pion_TCH_11FighterRgt'
+        ),
+        TStrategicPositionModuleDescriptor( IsAirport = False ),
+        ~/StrategicSequenceModuleDescriptor,
+        StrategicFatigueModuleDescriptor( InitialFatigue  = 0 ),
+        ~/IAStratZoneIndexModuleDescriptor,
+    ]
+)
+export Descriptor_Unit_pion_TCH_1FighterDivsion_GROUPE is TEntityDescriptor
+(
+    DescriptorId       = GUID:{1ef388a6-8e0b-4972-9e08-4a19d8979b70}
+    ClassNameForDebug  = 'Pawn_pion_TCH_1FighterDivsion_GROUPE'
+    ModulesDescriptors = [
+        TTypeUnitModuleDescriptor
+        (
+            Coalition                        = ECoalition/PACT
+        ),
+        AirplaneFlagsModuleDescriptor,
+        ~/PawnPositionModuleDescriptor,
+        ~/LinkTeamModuleDescriptor,
+        TTagsModuleDescriptor
+        (
+            TagSet = [
+                "AllUnits",
+            ]
+        ),
+        ~/StrategicStateEngineModuleDescriptor,
+        ~/DebugModuleDescriptor,
+        ~/StrategicSelectionModuleDescriptor,
+        ~/EffectApplierModuleDescriptor,
+        TStrategicLabelModuleDescriptor
+        (
+            BackgroundTexture = TBUCKToolAlternativeValues_TUIValueTextureNameFromTEugBMutableInteger
+            (
+                CommandNameTrigger = ~/SpecificCommandName/UpdateGUIFromStrategicIconType
+                Alterator = $/GUIOption/StrategicIconType
+                Values =
+                [
+                    "Texture_STRATEGIC_RTS_H_division",
+                    "Texture_STRATEGIC_division",
+                ]
+            )
+        ),
+        ~/PawnAirplaneOrderConfigModuleDescriptor,
+        TDeckModuleDescriptor
+        (
+            DeckIdentifier = 'pion_TCH_1FighterDivsion_GROUPE'
+            RegimentName = 'None'
+            Score = 1
+            PictureForSelection = 'Texture_PawnPicture_Default'
+            MaxPackCount = 12
+        ),
+        TStrategicBattleModuleDescriptor
+        (
+            CanBeInitialTarget = False
+            HasZoneOfControl = False
+            BattleSupportRadiusInAPCase = -1.0
+            BattleRole = ~/EStrategicBattleRole/AirSupport
+        ),
+        TVisibilityModuleDescriptor
+        (
+            UnitConcealmentBonus = 1.0
+        ),
+        TReverseScannerWithIdentificationDescriptor
+        (
+            VisibilityRollRule = TModernWarfareVisibilityRollRule
+            (
+                IdentifyBaseProbability     = 0.0
+                TimeBetweenEachIdentifyRoll = 0.0
+                VisibilityRuleDescriptor    = $/GFX/VisionRules/StandardWargameVisibilityRollRule
+            )
+        ),
+        TActionPointsModuleDescriptor
+        (
+            InitialActionPoint = 4
+            ActionPointRecoveryPerTurn = 4
+            NbInitialActionsPointsForProducedPawn = 4
+        ),
+        ~/StrategicMovementDescriptor_aerial,
+        ~/StrategicAerialModuleDescriptor,
+        TCubeActionModuleDescriptor
+        (
+            CubeActionDescriptor = $/GFX/UI/CubeAction_Menu_Ordres_Pawn
+        ),
+        StrategicUIModuleDescriptor
+        (
+            NameToken ='LXZCDGRBWL'
+            ProdMenuTexture = 'Texture_Button_Pawn_pion_TCH_1FighterDivsion_GROUPE'
+        ),
+        TStrategicPositionModuleDescriptor( IsAirport = False ),
+        ~/StrategicSequenceModuleDescriptor,
+        StrategicFatigueModuleDescriptor( InitialFatigue  = 0 ),
+        ~/IAStratZoneIndexModuleDescriptor,
+    ]
+)
+export Descriptor_Unit_pion_TCH_1FighterRgt is TEntityDescriptor
+(
+    DescriptorId       = GUID:{cdfa7857-e2c3-45a8-8fde-0e3235f504d7}
+    ClassNameForDebug  = 'Pawn_pion_TCH_1FighterRgt'
+    ModulesDescriptors = [
+        TTypeUnitModuleDescriptor
+        (
+            Coalition                        = ECoalition/PACT
+            MotherCountry                    = 'RFA'
+        ),
+        AirplaneFlagsModuleDescriptor,
+        ~/PawnPositionModuleDescriptor,
+        ~/LinkTeamModuleDescriptor,
+        TTagsModuleDescriptor
+        (
+            TagSet = [
+                "AllUnits",
+            ]
+        ),
+        TApparenceModuleDescriptor
+        (
+            PickableObject      = True
+            Depiction           = $/GFX/Depiction/Gfx_pion_TCH_1FighterRgt
+            ReferenceMesh       = $/GFX/DepictionResources/MeshModele_Socle_US
+            BlackHoleIdentifier = "pion_TCH_1FighterRgt"
+        ),
+        ~/StrategicStateEngineModuleDescriptor,
+        ~/DebugModuleDescriptor,
+        ~/StrategicSelectionModuleDescriptor,
+        ~/EffectApplierModuleDescriptor,
+        TStrategicLabelModuleDescriptor
+        (
+            BackgroundTexture = TBUCKToolAlternativeValues_TUIValueTextureNameFromTEugBMutableInteger
+            (
+                CommandNameTrigger = ~/SpecificCommandName/UpdateGUIFromStrategicIconType
+                Alterator = $/GUIOption/StrategicIconType
+                Values =
+                [
+                    "Texture_STRATEGIC_RTS_H_AA_air",
+                    "Texture_STRATEGIC_AA_air",
+                ]
+            )
+        ),
+        ~/PawnAirplaneOrderConfigModuleDescriptor,
+        TDeckModuleDescriptor
+        (
+            DeckIdentifier = 'pion_TCH_1FighterRgt'
+            RegimentName = 'None'
+            Score = 1
+            PictureForSelection = 'Texture_PawnPicture_Default'
+            MaxPackCount = 12
+        ),
+        TStrategicBattleModuleDescriptor
+        (
+            CanBeInitialTarget = False
+            HasZoneOfControl = False
+            BattleSupportRadiusInAPCase = -1.0
+            BattleRole = ~/EStrategicBattleRole/AirSupport
+        ),
+        TVisibilityModuleDescriptor
+        (
+            UnitConcealmentBonus = 1.0
+        ),
+        TReverseScannerWithIdentificationDescriptor
+        (
+            VisibilityRollRule = TModernWarfareVisibilityRollRule
+            (
+                IdentifyBaseProbability     = 0.0
+                TimeBetweenEachIdentifyRoll = 0.0
+                VisibilityRuleDescriptor    = $/GFX/VisionRules/StandardWargameVisibilityRollRule
+            )
+        ),
+        TActionPointsModuleDescriptor
+        (
+            InitialActionPoint = 4
+            ActionPointRecoveryPerTurn = 4
+            NbInitialActionsPointsForProducedPawn = 4
+        ),
+        ~/StrategicMovementDescriptor_aerial,
+        ~/StrategicAerialModuleDescriptor,
+        TCubeActionModuleDescriptor
+        (
+            CubeActionDescriptor = $/GFX/UI/CubeAction_Menu_Ordres_Pawn
+        ),
+        StrategicUIModuleDescriptor
+        (
+            NameToken ='FGFQAIUNMN'
+            ProdMenuTexture = 'Texture_Button_Pawn_pion_TCH_1FighterRgt'
+        ),
+        TStrategicPositionModuleDescriptor( IsAirport = False ),
+        ~/StrategicSequenceModuleDescriptor,
+        StrategicFatigueModuleDescriptor( InitialFatigue  = 0 ),
+        ~/IAStratZoneIndexModuleDescriptor,
+    ]
+)
+export Descriptor_Unit_pion_TCH_20FightBombRgt is TEntityDescriptor
+(
+    DescriptorId       = GUID:{f8a3ab67-7992-484d-88d8-c311c054700d}
+    ClassNameForDebug  = 'Pawn_pion_TCH_20FightBombRgt'
+    ModulesDescriptors = [
+        TTypeUnitModuleDescriptor
+        (
+            Coalition                        = ECoalition/PACT
+            MotherCountry                    = 'US'
+        ),
+        AirplaneFlagsModuleDescriptor,
+        ~/PawnPositionModuleDescriptor,
+        ~/LinkTeamModuleDescriptor,
+        TTagsModuleDescriptor
+        (
+            TagSet = [
+                "AllUnits",
+            ]
+        ),
+        TApparenceModuleDescriptor
+        (
+            PickableObject      = True
+            Depiction           = $/GFX/Depiction/Gfx_pion_TCH_20FightBombRgt
+            ReferenceMesh       = $/GFX/DepictionResources/MeshModele_Socle_US
+            BlackHoleIdentifier = "pion_TCH_20FightBombRgt"
+        ),
+        ~/StrategicStateEngineModuleDescriptor,
+        ~/DebugModuleDescriptor,
+        ~/StrategicSelectionModuleDescriptor,
+        ~/EffectApplierModuleDescriptor,
+        TStrategicLabelModuleDescriptor
+        (
+            BackgroundTexture = TBUCKToolAlternativeValues_TUIValueTextureNameFromTEugBMutableInteger
+            (
+                CommandNameTrigger = ~/SpecificCommandName/UpdateGUIFromStrategicIconType
+                Alterator = $/GUIOption/StrategicIconType
+                Values =
+                [
+                    "Texture_STRATEGIC_RTS_H_Support_air",
+                    "Texture_STRATEGIC_Support_air",
+                ]
+            )
+        ),
+        ~/PawnAirplaneOrderConfigModuleDescriptor,
+        TDeckModuleDescriptor
+        (
+            DeckIdentifier = 'pion_TCH_20FightBombRgt'
+            RegimentName = 'None'
+            Score = 1
+            PictureForSelection = 'Texture_PawnPicture_Default'
+            MaxPackCount = 12
+        ),
+        TStrategicBattleModuleDescriptor
+        (
+            CanBeInitialTarget = False
+            HasZoneOfControl = False
+            BattleSupportRadiusInAPCase = -1.0
+            BattleRole = ~/EStrategicBattleRole/AirSupport
+        ),
+        TVisibilityModuleDescriptor
+        (
+            UnitConcealmentBonus = 1.0
+        ),
+        TReverseScannerWithIdentificationDescriptor
+        (
+            VisibilityRollRule = TModernWarfareVisibilityRollRule
+            (
+                IdentifyBaseProbability     = 0.0
+                TimeBetweenEachIdentifyRoll = 0.0
+                VisibilityRuleDescriptor    = $/GFX/VisionRules/StandardWargameVisibilityRollRule
+            )
+        ),
+        TActionPointsModuleDescriptor
+        (
+            InitialActionPoint = 4
+            ActionPointRecoveryPerTurn = 4
+            NbInitialActionsPointsForProducedPawn = 4
+        ),
+        ~/StrategicMovementDescriptor_aerial,
+        ~/StrategicAerialModuleDescriptor,
+        TCubeActionModuleDescriptor
+        (
+            CubeActionDescriptor = $/GFX/UI/CubeAction_Menu_Ordres_Pawn
+        ),
+        StrategicUIModuleDescriptor
+        (
+            NameToken ='CLXMBITBAY'
+            ProdMenuTexture = 'Texture_Button_Pawn_pion_TCH_20FightBombRgt'
+        ),
+        TStrategicPositionModuleDescriptor( IsAirport = False ),
+        ~/StrategicSequenceModuleDescriptor,
+        StrategicFatigueModuleDescriptor( InitialFatigue  = 0 ),
+        ~/IAStratZoneIndexModuleDescriptor,
+    ]
+)
+export Descriptor_Unit_pion_TCH_28FightBombRgt is TEntityDescriptor
+(
+    DescriptorId       = GUID:{4dad08dd-417e-40fe-a321-919b23a200ce}
+    ClassNameForDebug  = 'Pawn_pion_TCH_28FightBombRgt'
+    ModulesDescriptors = [
+        TTypeUnitModuleDescriptor
+        (
+            Coalition                        = ECoalition/PACT
+            MotherCountry                    = 'US'
+        ),
+        AirplaneFlagsModuleDescriptor,
+        ~/PawnPositionModuleDescriptor,
+        ~/LinkTeamModuleDescriptor,
+        TTagsModuleDescriptor
+        (
+            TagSet = [
+                "AllUnits",
+            ]
+        ),
+        TApparenceModuleDescriptor
+        (
+            PickableObject      = True
+            Depiction           = $/GFX/Depiction/Gfx_pion_TCH_28FightBombRgt
+            ReferenceMesh       = $/GFX/DepictionResources/MeshModele_Socle_US
+            BlackHoleIdentifier = "pion_TCH_28FightBombRgt"
+        ),
+        ~/StrategicStateEngineModuleDescriptor,
+        ~/DebugModuleDescriptor,
+        ~/StrategicSelectionModuleDescriptor,
+        ~/EffectApplierModuleDescriptor,
+        TStrategicLabelModuleDescriptor
+        (
+            BackgroundTexture = TBUCKToolAlternativeValues_TUIValueTextureNameFromTEugBMutableInteger
+            (
+                CommandNameTrigger = ~/SpecificCommandName/UpdateGUIFromStrategicIconType
+                Alterator = $/GUIOption/StrategicIconType
+                Values =
+                [
+                    "Texture_STRATEGIC_RTS_H_Support_air",
+                    "Texture_STRATEGIC_Support_air",
+                ]
+            )
+        ),
+        ~/PawnAirplaneOrderConfigModuleDescriptor,
+        TDeckModuleDescriptor
+        (
+            DeckIdentifier = 'pion_TCH_28FightBombRgt'
+            RegimentName = 'None'
+            Score = 1
+            PictureForSelection = 'Texture_PawnPicture_Default'
+            MaxPackCount = 12
+        ),
+        TStrategicBattleModuleDescriptor
+        (
+            CanBeInitialTarget = False
+            HasZoneOfControl = False
+            BattleSupportRadiusInAPCase = -1.0
+            BattleRole = ~/EStrategicBattleRole/AirSupport
+        ),
+        TVisibilityModuleDescriptor
+        (
+            UnitConcealmentBonus = 1.0
+        ),
+        TReverseScannerWithIdentificationDescriptor
+        (
+            VisibilityRollRule = TModernWarfareVisibilityRollRule
+            (
+                IdentifyBaseProbability     = 0.0
+                TimeBetweenEachIdentifyRoll = 0.0
+                VisibilityRuleDescriptor    = $/GFX/VisionRules/StandardWargameVisibilityRollRule
+            )
+        ),
+        TActionPointsModuleDescriptor
+        (
+            InitialActionPoint = 4
+            ActionPointRecoveryPerTurn = 4
+            NbInitialActionsPointsForProducedPawn = 4
+        ),
+        ~/StrategicMovementDescriptor_aerial,
+        ~/StrategicAerialModuleDescriptor,
+        TCubeActionModuleDescriptor
+        (
+            CubeActionDescriptor = $/GFX/UI/CubeAction_Menu_Ordres_Pawn
+        ),
+        StrategicUIModuleDescriptor
+        (
+            NameToken ='HMRIHHWDWC'
+            ProdMenuTexture = 'Texture_Button_Pawn_pion_TCH_28FightBombRgt'
+        ),
+        TStrategicPositionModuleDescriptor( IsAirport = False ),
+        ~/StrategicSequenceModuleDescriptor,
+        StrategicFatigueModuleDescriptor( InitialFatigue  = 0 ),
+        ~/IAStratZoneIndexModuleDescriptor,
+    ]
+)
+export Descriptor_Unit_pion_TCH_30FightBombRgt is TEntityDescriptor
+(
+    DescriptorId       = GUID:{e7981cc0-baf1-4a06-b5e9-a17bad2bad46}
+    ClassNameForDebug  = 'Pawn_pion_TCH_30FightBombRgt'
+    ModulesDescriptors = [
+        TTypeUnitModuleDescriptor
+        (
+            Coalition                        = ECoalition/PACT
+            MotherCountry                    = 'US'
+        ),
+        AirplaneFlagsModuleDescriptor,
+        ~/PawnPositionModuleDescriptor,
+        ~/LinkTeamModuleDescriptor,
+        TTagsModuleDescriptor
+        (
+            TagSet = [
+                "AllUnits",
+            ]
+        ),
+        TApparenceModuleDescriptor
+        (
+            PickableObject      = True
+            Depiction           = $/GFX/Depiction/Gfx_pion_TCH_30FightBombRgt
+            ReferenceMesh       = $/GFX/DepictionResources/MeshModele_Socle_US
+            BlackHoleIdentifier = "pion_TCH_30FightBombRgt"
+        ),
+        ~/StrategicStateEngineModuleDescriptor,
+        ~/DebugModuleDescriptor,
+        ~/StrategicSelectionModuleDescriptor,
+        ~/EffectApplierModuleDescriptor,
+        TStrategicLabelModuleDescriptor
+        (
+            BackgroundTexture = TBUCKToolAlternativeValues_TUIValueTextureNameFromTEugBMutableInteger
+            (
+                CommandNameTrigger = ~/SpecificCommandName/UpdateGUIFromStrategicIconType
+                Alterator = $/GUIOption/StrategicIconType
+                Values =
+                [
+                    "Texture_STRATEGIC_RTS_H_Support_air",
+                    "Texture_STRATEGIC_Support_air",
+                ]
+            )
+        ),
+        ~/PawnAirplaneOrderConfigModuleDescriptor,
+        TDeckModuleDescriptor
+        (
+            DeckIdentifier = 'pion_TCH_30FightBombRgt'
+            RegimentName = 'None'
+            Score = 1
+            PictureForSelection = 'Texture_PawnPicture_Default'
+            MaxPackCount = 12
+        ),
+        TStrategicBattleModuleDescriptor
+        (
+            CanBeInitialTarget = False
+            HasZoneOfControl = False
+            BattleSupportRadiusInAPCase = -1.0
+            BattleRole = ~/EStrategicBattleRole/AirSupport
+        ),
+        TVisibilityModuleDescriptor
+        (
+            UnitConcealmentBonus = 1.0
+        ),
+        TReverseScannerWithIdentificationDescriptor
+        (
+            VisibilityRollRule = TModernWarfareVisibilityRollRule
+            (
+                IdentifyBaseProbability     = 0.0
+                TimeBetweenEachIdentifyRoll = 0.0
+                VisibilityRuleDescriptor    = $/GFX/VisionRules/StandardWargameVisibilityRollRule
+            )
+        ),
+        TActionPointsModuleDescriptor
+        (
+            InitialActionPoint = 4
+            ActionPointRecoveryPerTurn = 4
+            NbInitialActionsPointsForProducedPawn = 4
+        ),
+        ~/StrategicMovementDescriptor_aerial,
+        ~/StrategicAerialModuleDescriptor,
+        TCubeActionModuleDescriptor
+        (
+            CubeActionDescriptor = $/GFX/UI/CubeAction_Menu_Ordres_Pawn
+        ),
+        StrategicUIModuleDescriptor
+        (
+            NameToken ='OBUYRNPHXH'
+            ProdMenuTexture = 'Texture_Button_Pawn_pion_TCH_30FightBombRgt'
+        ),
+        TStrategicPositionModuleDescriptor( IsAirport = False ),
+        ~/StrategicSequenceModuleDescriptor,
+        StrategicFatigueModuleDescriptor( InitialFatigue  = 0 ),
+        ~/IAStratZoneIndexModuleDescriptor,
+    ]
+)
+export Descriptor_Unit_pion_TCH_34FightBombDivsion_GROUPE is TEntityDescriptor
+(
+    DescriptorId       = GUID:{3b0eadf0-5f00-4364-bd75-d22895c840f3}
+    ClassNameForDebug  = 'Pawn_pion_TCH_34FightBombDivsion_GROUPE'
+    ModulesDescriptors = [
+        TTypeUnitModuleDescriptor
+        (
+            Coalition                        = ECoalition/PACT
+        ),
+        AirplaneFlagsModuleDescriptor,
+        ~/PawnPositionModuleDescriptor,
+        ~/LinkTeamModuleDescriptor,
+        TTagsModuleDescriptor
+        (
+            TagSet = [
+                "AllUnits",
+            ]
+        ),
+        ~/StrategicStateEngineModuleDescriptor,
+        ~/DebugModuleDescriptor,
+        ~/StrategicSelectionModuleDescriptor,
+        ~/EffectApplierModuleDescriptor,
+        TStrategicLabelModuleDescriptor
+        (
+            BackgroundTexture = TBUCKToolAlternativeValues_TUIValueTextureNameFromTEugBMutableInteger
+            (
+                CommandNameTrigger = ~/SpecificCommandName/UpdateGUIFromStrategicIconType
+                Alterator = $/GUIOption/StrategicIconType
+                Values =
+                [
+                    "Texture_STRATEGIC_RTS_H_division",
+                    "Texture_STRATEGIC_division",
+                ]
+            )
+        ),
+        ~/PawnAirplaneOrderConfigModuleDescriptor,
+        TDeckModuleDescriptor
+        (
+            DeckIdentifier = 'pion_TCH_34FightBombDivsion_GROUPE'
+            RegimentName = 'None'
+            Score = 1
+            PictureForSelection = 'Texture_PawnPicture_Default'
+            MaxPackCount = 12
+        ),
+        TStrategicBattleModuleDescriptor
+        (
+            CanBeInitialTarget = False
+            HasZoneOfControl = False
+            BattleSupportRadiusInAPCase = -1.0
+            BattleRole = ~/EStrategicBattleRole/AirSupport
+        ),
+        TVisibilityModuleDescriptor
+        (
+            UnitConcealmentBonus = 1.0
+        ),
+        TReverseScannerWithIdentificationDescriptor
+        (
+            VisibilityRollRule = TModernWarfareVisibilityRollRule
+            (
+                IdentifyBaseProbability     = 0.0
+                TimeBetweenEachIdentifyRoll = 0.0
+                VisibilityRuleDescriptor    = $/GFX/VisionRules/StandardWargameVisibilityRollRule
+            )
+        ),
+        TActionPointsModuleDescriptor
+        (
+            InitialActionPoint = 4
+            ActionPointRecoveryPerTurn = 4
+            NbInitialActionsPointsForProducedPawn = 4
+        ),
+        ~/StrategicMovementDescriptor_aerial,
+        ~/StrategicAerialModuleDescriptor,
+        TCubeActionModuleDescriptor
+        (
+            CubeActionDescriptor = $/GFX/UI/CubeAction_Menu_Ordres_Pawn
+        ),
+        StrategicUIModuleDescriptor
+        (
+            NameToken ='FCYGQQXGDB'
+            ProdMenuTexture = 'Texture_Button_Pawn_pion_TCH_34FightBombDivsion_GROUPE'
+        ),
+        TStrategicPositionModuleDescriptor( IsAirport = False ),
+        ~/StrategicSequenceModuleDescriptor,
+        StrategicFatigueModuleDescriptor( InitialFatigue  = 0 ),
+        ~/IAStratZoneIndexModuleDescriptor,
+    ]
+)
+export Descriptor_Unit_pion_TCH_3AirDivsion_GROUPE is TEntityDescriptor
+(
+    DescriptorId       = GUID:{98378619-fb2e-4758-b554-2d0c8bfae24c}
+    ClassNameForDebug  = 'Pawn_pion_TCH_3AirDivsion_GROUPE'
+    ModulesDescriptors = [
+        TTypeUnitModuleDescriptor
+        (
+            Coalition                        = ECoalition/PACT
+        ),
+        AirplaneFlagsModuleDescriptor,
+        ~/PawnPositionModuleDescriptor,
+        ~/LinkTeamModuleDescriptor,
+        TTagsModuleDescriptor
+        (
+            TagSet = [
+                "AllUnits",
+            ]
+        ),
+        ~/StrategicStateEngineModuleDescriptor,
+        ~/DebugModuleDescriptor,
+        ~/StrategicSelectionModuleDescriptor,
+        ~/EffectApplierModuleDescriptor,
+        TStrategicLabelModuleDescriptor
+        (
+            BackgroundTexture = TBUCKToolAlternativeValues_TUIValueTextureNameFromTEugBMutableInteger
+            (
+                CommandNameTrigger = ~/SpecificCommandName/UpdateGUIFromStrategicIconType
+                Alterator = $/GUIOption/StrategicIconType
+                Values =
+                [
+                    "Texture_STRATEGIC_RTS_H_division",
+                    "Texture_STRATEGIC_division",
+                ]
+            )
+        ),
+        ~/PawnAirplaneOrderConfigModuleDescriptor,
+        TDeckModuleDescriptor
+        (
+            DeckIdentifier = 'pion_TCH_3AirDivsion_GROUPE'
+            RegimentName = 'None'
+            Score = 1
+            PictureForSelection = 'Texture_PawnPicture_Default'
+            MaxPackCount = 12
+        ),
+        TStrategicBattleModuleDescriptor
+        (
+            CanBeInitialTarget = False
+            HasZoneOfControl = False
+            BattleSupportRadiusInAPCase = -1.0
+            BattleRole = ~/EStrategicBattleRole/AirSupport
+        ),
+        TVisibilityModuleDescriptor
+        (
+            UnitConcealmentBonus = 1.0
+        ),
+        TReverseScannerWithIdentificationDescriptor
+        (
+            VisibilityRollRule = TModernWarfareVisibilityRollRule
+            (
+                IdentifyBaseProbability     = 0.0
+                TimeBetweenEachIdentifyRoll = 0.0
+                VisibilityRuleDescriptor    = $/GFX/VisionRules/StandardWargameVisibilityRollRule
+            )
+        ),
+        TActionPointsModuleDescriptor
+        (
+            InitialActionPoint = 4
+            ActionPointRecoveryPerTurn = 4
+            NbInitialActionsPointsForProducedPawn = 4
+        ),
+        ~/StrategicMovementDescriptor_aerial,
+        ~/StrategicAerialModuleDescriptor,
+        TCubeActionModuleDescriptor
+        (
+            CubeActionDescriptor = $/GFX/UI/CubeAction_Menu_Ordres_Pawn
+        ),
+        StrategicUIModuleDescriptor
+        (
+            NameToken ='WYRBDMBXJV'
+            ProdMenuTexture = 'Texture_Button_Pawn_pion_TCH_3AirDivsion_GROUPE'
+        ),
+        TStrategicPositionModuleDescriptor( IsAirport = False ),
+        ~/StrategicSequenceModuleDescriptor,
+        StrategicFatigueModuleDescriptor( InitialFatigue  = 0 ),
+        ~/IAStratZoneIndexModuleDescriptor,
+    ]
+)
+export Descriptor_Unit_pion_TCH_4FighterRgt is TEntityDescriptor
+(
+    DescriptorId       = GUID:{dee7ad99-1a1b-4793-a792-fa40001de406}
+    ClassNameForDebug  = 'Pawn_pion_TCH_4FighterRgt'
+    ModulesDescriptors = [
+        TTypeUnitModuleDescriptor
+        (
+            Coalition                        = ECoalition/PACT
+            MotherCountry                    = 'RFA'
+        ),
+        AirplaneFlagsModuleDescriptor,
+        ~/PawnPositionModuleDescriptor,
+        ~/LinkTeamModuleDescriptor,
+        TTagsModuleDescriptor
+        (
+            TagSet = [
+                "AllUnits",
+            ]
+        ),
+        TApparenceModuleDescriptor
+        (
+            PickableObject      = True
+            Depiction           = $/GFX/Depiction/Gfx_pion_TCH_4FighterRgt
+            ReferenceMesh       = $/GFX/DepictionResources/MeshModele_Socle_US
+            BlackHoleIdentifier = "pion_TCH_4FighterRgt"
+        ),
+        ~/StrategicStateEngineModuleDescriptor,
+        ~/DebugModuleDescriptor,
+        ~/StrategicSelectionModuleDescriptor,
+        ~/EffectApplierModuleDescriptor,
+        TStrategicLabelModuleDescriptor
+        (
+            BackgroundTexture = TBUCKToolAlternativeValues_TUIValueTextureNameFromTEugBMutableInteger
+            (
+                CommandNameTrigger = ~/SpecificCommandName/UpdateGUIFromStrategicIconType
+                Alterator = $/GUIOption/StrategicIconType
+                Values =
+                [
+                    "Texture_STRATEGIC_RTS_H_AA_air",
+                    "Texture_STRATEGIC_AA_air",
+                ]
+            )
+        ),
+        ~/PawnAirplaneOrderConfigModuleDescriptor,
+        TDeckModuleDescriptor
+        (
+            DeckIdentifier = 'pion_TCH_4FighterRgt'
+            RegimentName = 'None'
+            Score = 1
+            PictureForSelection = 'Texture_PawnPicture_Default'
+            MaxPackCount = 12
+        ),
+        TStrategicBattleModuleDescriptor
+        (
+            CanBeInitialTarget = False
+            HasZoneOfControl = False
+            BattleSupportRadiusInAPCase = -1.0
+            BattleRole = ~/EStrategicBattleRole/AirSupport
+        ),
+        TVisibilityModuleDescriptor
+        (
+            UnitConcealmentBonus = 1.0
+        ),
+        TReverseScannerWithIdentificationDescriptor
+        (
+            VisibilityRollRule = TModernWarfareVisibilityRollRule
+            (
+                IdentifyBaseProbability     = 0.0
+                TimeBetweenEachIdentifyRoll = 0.0
+                VisibilityRuleDescriptor    = $/GFX/VisionRules/StandardWargameVisibilityRollRule
+            )
+        ),
+        TActionPointsModuleDescriptor
+        (
+            InitialActionPoint = 4
+            ActionPointRecoveryPerTurn = 4
+            NbInitialActionsPointsForProducedPawn = 4
+        ),
+        ~/StrategicMovementDescriptor_aerial,
+        ~/StrategicAerialModuleDescriptor,
+        TCubeActionModuleDescriptor
+        (
+            CubeActionDescriptor = $/GFX/UI/CubeAction_Menu_Ordres_Pawn
+        ),
+        StrategicUIModuleDescriptor
+        (
+            NameToken ='ESAQKOKQAM'
+            ProdMenuTexture = 'Texture_Button_Pawn_pion_TCH_4FighterRgt'
+        ),
+        TStrategicPositionModuleDescriptor( IsAirport = False ),
+        ~/StrategicSequenceModuleDescriptor,
+        StrategicFatigueModuleDescriptor( InitialFatigue  = 0 ),
+        ~/IAStratZoneIndexModuleDescriptor,
+    ]
+)
+export Descriptor_Unit_pion_TCH_5FighterRgt is TEntityDescriptor
+(
+    DescriptorId       = GUID:{67ed7b04-d3a7-4848-848a-5ed6da36b757}
+    ClassNameForDebug  = 'Pawn_pion_TCH_5FighterRgt'
+    ModulesDescriptors = [
+        TTypeUnitModuleDescriptor
+        (
+            Coalition                        = ECoalition/PACT
+            MotherCountry                    = 'RFA'
+        ),
+        AirplaneFlagsModuleDescriptor,
+        ~/PawnPositionModuleDescriptor,
+        ~/LinkTeamModuleDescriptor,
+        TTagsModuleDescriptor
+        (
+            TagSet = [
+                "AllUnits",
+            ]
+        ),
+        TApparenceModuleDescriptor
+        (
+            PickableObject      = True
+            Depiction           = $/GFX/Depiction/Gfx_pion_TCH_5FighterRgt
+            ReferenceMesh       = $/GFX/DepictionResources/MeshModele_Socle_US
+            BlackHoleIdentifier = "pion_TCH_5FighterRgt"
+        ),
+        ~/StrategicStateEngineModuleDescriptor,
+        ~/DebugModuleDescriptor,
+        ~/StrategicSelectionModuleDescriptor,
+        ~/EffectApplierModuleDescriptor,
+        TStrategicLabelModuleDescriptor
+        (
+            BackgroundTexture = TBUCKToolAlternativeValues_TUIValueTextureNameFromTEugBMutableInteger
+            (
+                CommandNameTrigger = ~/SpecificCommandName/UpdateGUIFromStrategicIconType
+                Alterator = $/GUIOption/StrategicIconType
+                Values =
+                [
+                    "Texture_STRATEGIC_RTS_H_AA_air",
+                    "Texture_STRATEGIC_AA_air",
+                ]
+            )
+        ),
+        ~/PawnAirplaneOrderConfigModuleDescriptor,
+        TDeckModuleDescriptor
+        (
+            DeckIdentifier = 'pion_TCH_5FighterRgt'
+            RegimentName = 'None'
+            Score = 1
+            PictureForSelection = 'Texture_PawnPicture_Default'
+            MaxPackCount = 12
+        ),
+        TStrategicBattleModuleDescriptor
+        (
+            CanBeInitialTarget = False
+            HasZoneOfControl = False
+            BattleSupportRadiusInAPCase = -1.0
+            BattleRole = ~/EStrategicBattleRole/AirSupport
+        ),
+        TVisibilityModuleDescriptor
+        (
+            UnitConcealmentBonus = 1.0
+        ),
+        TReverseScannerWithIdentificationDescriptor
+        (
+            VisibilityRollRule = TModernWarfareVisibilityRollRule
+            (
+                IdentifyBaseProbability     = 0.0
+                TimeBetweenEachIdentifyRoll = 0.0
+                VisibilityRuleDescriptor    = $/GFX/VisionRules/StandardWargameVisibilityRollRule
+            )
+        ),
+        TActionPointsModuleDescriptor
+        (
+            InitialActionPoint = 4
+            ActionPointRecoveryPerTurn = 4
+            NbInitialActionsPointsForProducedPawn = 4
+        ),
+        ~/StrategicMovementDescriptor_aerial,
+        ~/StrategicAerialModuleDescriptor,
+        TCubeActionModuleDescriptor
+        (
+            CubeActionDescriptor = $/GFX/UI/CubeAction_Menu_Ordres_Pawn
+        ),
+        StrategicUIModuleDescriptor
+        (
+            NameToken ='AOEDPQJPAX'
+            ProdMenuTexture = 'Texture_Button_Pawn_pion_TCH_5FighterRgt'
+        ),
+        TStrategicPositionModuleDescriptor( IsAirport = False ),
+        ~/StrategicSequenceModuleDescriptor,
+        StrategicFatigueModuleDescriptor( InitialFatigue  = 0 ),
+        ~/IAStratZoneIndexModuleDescriptor,
+    ]
+)
+export Descriptor_Unit_pion_TCH_9FighterRgt is TEntityDescriptor
+(
+    DescriptorId       = GUID:{10c4b3f3-1b49-41f4-8e06-e970fcb78c7c}
+    ClassNameForDebug  = 'Pawn_pion_TCH_9FighterRgt'
+    ModulesDescriptors = [
+        TTypeUnitModuleDescriptor
+        (
+            Coalition                        = ECoalition/PACT
+            MotherCountry                    = 'RFA'
+        ),
+        AirplaneFlagsModuleDescriptor,
+        ~/PawnPositionModuleDescriptor,
+        ~/LinkTeamModuleDescriptor,
+        TTagsModuleDescriptor
+        (
+            TagSet = [
+                "AllUnits",
+            ]
+        ),
+        TApparenceModuleDescriptor
+        (
+            PickableObject      = True
+            Depiction           = $/GFX/Depiction/Gfx_pion_TCH_9FighterRgt
+            ReferenceMesh       = $/GFX/DepictionResources/MeshModele_Socle_US
+            BlackHoleIdentifier = "pion_TCH_9FighterRgt"
+        ),
+        ~/StrategicStateEngineModuleDescriptor,
+        ~/DebugModuleDescriptor,
+        ~/StrategicSelectionModuleDescriptor,
+        ~/EffectApplierModuleDescriptor,
+        TStrategicLabelModuleDescriptor
+        (
+            BackgroundTexture = TBUCKToolAlternativeValues_TUIValueTextureNameFromTEugBMutableInteger
+            (
+                CommandNameTrigger = ~/SpecificCommandName/UpdateGUIFromStrategicIconType
+                Alterator = $/GUIOption/StrategicIconType
+                Values =
+                [
+                    "Texture_STRATEGIC_RTS_H_AA_air",
+                    "Texture_STRATEGIC_AA_air",
+                ]
+            )
+        ),
+        ~/PawnAirplaneOrderConfigModuleDescriptor,
+        TDeckModuleDescriptor
+        (
+            DeckIdentifier = 'pion_TCH_9FighterRgt'
+            RegimentName = 'None'
+            Score = 1
+            PictureForSelection = 'Texture_PawnPicture_Default'
+            MaxPackCount = 12
+        ),
+        TStrategicBattleModuleDescriptor
+        (
+            CanBeInitialTarget = False
+            HasZoneOfControl = False
+            BattleSupportRadiusInAPCase = -1.0
+            BattleRole = ~/EStrategicBattleRole/AirSupport
+        ),
+        TVisibilityModuleDescriptor
+        (
+            UnitConcealmentBonus = 1.0
+        ),
+        TReverseScannerWithIdentificationDescriptor
+        (
+            VisibilityRollRule = TModernWarfareVisibilityRollRule
+            (
+                IdentifyBaseProbability     = 0.0
+                TimeBetweenEachIdentifyRoll = 0.0
+                VisibilityRuleDescriptor    = $/GFX/VisionRules/StandardWargameVisibilityRollRule
+            )
+        ),
+        TActionPointsModuleDescriptor
+        (
+            InitialActionPoint = 4
+            ActionPointRecoveryPerTurn = 4
+            NbInitialActionsPointsForProducedPawn = 4
+        ),
+        ~/StrategicMovementDescriptor_aerial,
+        ~/StrategicAerialModuleDescriptor,
+        TCubeActionModuleDescriptor
+        (
+            CubeActionDescriptor = $/GFX/UI/CubeAction_Menu_Ordres_Pawn
+        ),
+        StrategicUIModuleDescriptor
+        (
+            NameToken ='UVYYPMGYZR'
+            ProdMenuTexture = 'Texture_Button_Pawn_pion_TCH_9FighterRgt'
         ),
         TStrategicPositionModuleDescriptor( IsAirport = False ),
         ~/StrategicSequenceModuleDescriptor,

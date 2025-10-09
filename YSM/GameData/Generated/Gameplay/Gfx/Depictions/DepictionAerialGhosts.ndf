@@ -1059,6 +1059,12 @@ unnamed GhostAerialDepictionRegistration
 )
 unnamed GhostAerialDepictionRegistration
 (
+    Alternatives = Alternatives_Harrier_GR5_CLU_UK
+    MimeticName = "Harrier_GR5_CLU_UK"
+    Selector = SpecificAirplaneDepictionSelector
+)
+unnamed GhostAerialDepictionRegistration
+(
     Alternatives = Alternatives_Harrier_GR5_UK
     MimeticName = "Harrier_GR5_UK"
     Selector = SpecificAirplaneDepictionSelector
@@ -2535,6 +2541,18 @@ unnamed GhostAerialDepictionRegistration
 )
 unnamed GhostAerialDepictionRegistration
 (
+    Alternatives = Alternatives_Su_22_HE2_TCH
+    MimeticName = "Su_22_HE2_TCH"
+    Selector = SpecificAirplaneDepictionSelector
+)
+unnamed GhostAerialDepictionRegistration
+(
+    Alternatives = Alternatives_Su_22_HE_TCH
+    MimeticName = "Su_22_HE_TCH"
+    Selector = SpecificAirplaneDepictionSelector
+)
+unnamed GhostAerialDepictionRegistration
+(
     Alternatives = Alternatives_Su_22_POL
     MimeticName = "Su_22_POL"
     Selector = SpecificAirplaneDepictionSelector
@@ -2561,6 +2579,12 @@ unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_22_RKT_POL
     MimeticName = "Su_22_RKT_POL"
+    Selector = SpecificAirplaneDepictionSelector
+)
+unnamed GhostAerialDepictionRegistration
+(
+    Alternatives = Alternatives_Su_22_RKT_TCH
+    MimeticName = "Su_22_RKT_TCH"
     Selector = SpecificAirplaneDepictionSelector
 )
 unnamed GhostAerialDepictionRegistration
@@ -2601,6 +2625,12 @@ unnamed GhostAerialDepictionRegistration
 )
 unnamed GhostAerialDepictionRegistration
 (
+    Alternatives = Alternatives_Su_22_clu_TCH
+    MimeticName = "Su_22_clu_TCH"
+    Selector = SpecificAirplaneDepictionSelector
+)
+unnamed GhostAerialDepictionRegistration
+(
     Alternatives = Alternatives_Su_22_nplm_DDR
     MimeticName = "Su_22_nplm_DDR"
     Selector = SpecificAirplaneDepictionSelector
@@ -2609,6 +2639,12 @@ unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_22_nplm_POL
     MimeticName = "Su_22_nplm_POL"
+    Selector = SpecificAirplaneDepictionSelector
+)
+unnamed GhostAerialDepictionRegistration
+(
+    Alternatives = Alternatives_Su_22_nplm_TCH
+    MimeticName = "Su_22_nplm_TCH"
     Selector = SpecificAirplaneDepictionSelector
 )
 unnamed GhostAerialDepictionRegistration
@@ -2705,6 +2741,12 @@ unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Su_25_NPLM_TCH
     MimeticName = "Su_25_NPLM_TCH"
+    Selector = SpecificAirplaneDepictionSelector
+)
+unnamed GhostAerialDepictionRegistration
+(
+    Alternatives = Alternatives_Su_25_RKT2_TCH
+    MimeticName = "Su_25_RKT2_TCH"
     Selector = SpecificAirplaneDepictionSelector
 )
 unnamed GhostAerialDepictionRegistration

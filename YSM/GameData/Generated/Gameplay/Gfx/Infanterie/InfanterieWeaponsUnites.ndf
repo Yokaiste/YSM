@@ -1749,6 +1749,36 @@ InfantryWeapon_RocketInf_M65 is TIntroduceMobileHappening
     )
 )
 
+InfantryWeapon_MMG_inf__MG42_59_7_62mm is TIntroduceMobileHappening
+(
+    Happening = TCompositeHappening
+    (
+        SubHappenings = 
+        [
+            TRandomHappening
+            (
+                Alternatives = 
+                [
+                    fx_tir_mitrailleuse_M60_douilles_eject_1_2,
+                    fx_tir_mitrailleuse_M60_douilles_eject_2_2,
+                    fx_tir_mitrailleuse_M60_douilles_eject_3_2,
+                ]
+            ),
+            TRandomHappening
+            (
+                Alternatives = 
+                [
+                    fx_traine_Mg3_Inf_1_2_True_00_00,
+                    fx_traine_Mg3_Inf_2_2_True_00_00,
+                    fx_traine_Mg3_Inf_3_2_True_00_00,
+                    fx_traine_Mg3_Inf_4_2_True_00_00,
+                ]
+            ),
+            $/GFX/Sound/SoundHappening_FULDA_MG42_Firing,
+        ]
+    )
+)
+
 InfantryWeapon_FM_M16A2_C7A1 is TIntroduceMobileHappening
 (
     Happening = TCompositeHappening
@@ -2904,36 +2934,6 @@ InfantryWeapon_FM_CETME_C is TIntroduceMobileHappening
                 ]
             ),
             $/GFX/Sound/SoundHappening_FULDA_G3KA4_Burst_3_Rounds,
-        ]
-    )
-)
-
-InfantryWeapon_MMG_inf__MG42_59_7_62mm is TIntroduceMobileHappening
-(
-    Happening = TCompositeHappening
-    (
-        SubHappenings = 
-        [
-            TRandomHappening
-            (
-                Alternatives = 
-                [
-                    fx_tir_mitrailleuse_M60_douilles_eject_1_2,
-                    fx_tir_mitrailleuse_M60_douilles_eject_2_2,
-                    fx_tir_mitrailleuse_M60_douilles_eject_3_2,
-                ]
-            ),
-            TRandomHappening
-            (
-                Alternatives = 
-                [
-                    fx_traine_Mg3_Inf_1_2_True_00_00,
-                    fx_traine_Mg3_Inf_2_2_True_00_00,
-                    fx_traine_Mg3_Inf_3_2_True_00_00,
-                    fx_traine_Mg3_Inf_4_2_True_00_00,
-                ]
-            ),
-            $/GFX/Sound/SoundHappening_FULDA_MG42_Firing,
         ]
     )
 )

@@ -1,4 +1,4 @@
-// A maintenir synchro avec EugIA_ModernWarfare/WargameCoalition.h
+// A maintenir synchro avec EugIA_Common/WargameCoalition.h
 ECoalition is TBaseClass
 (
     NATO is 0

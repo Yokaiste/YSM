@@ -1,10 +1,10 @@
 // Utiliser ce template pour les pions des unités stratégiques dans Steelman
 template StrategicPawnDepictionDesc
 [
-    MeshSocle,
-    MeshTige,
-    MeshDescriptorPawn,
-    SubDepictionGenerators = []
+    MeshSocle : TResourceMesh,
+    MeshTige : TResourceMesh,
+    MeshDescriptorPawn : TResourceMesh,
+    SubDepictionGenerators : LIST<TAbstractSubDepictionGenerator> = []
 ]
 is TDepictionDescriptor
 (
@@ -46,8 +46,8 @@ StrategicInfantryPoseOperator is TCosmeticFreezeSkeletalAnimationOperatorDesc
 
 template StrategicInfantryPawnDepictionDesc
 [
-    MeshSocle,
-    MeshDescriptorPawn,
+    MeshSocle : TResourceMesh,
+    MeshDescriptorPawn : TResourceMesh,
 ]
 is TDepictionDescriptor
 (
@@ -82,8 +82,8 @@ is TDepictionDescriptor
 
 template StrategicAirplanePawnDepictionDesc
 [
-    MeshSocle,
-    MeshDescriptorPawn,
+    MeshSocle : TResourceMesh,
+    MeshDescriptorPawn : TResourceMesh,
 ]
 is StrategicPawnDepictionDesc
 (
@@ -94,8 +94,8 @@ is StrategicPawnDepictionDesc
 
 template StrategicHelicopterPawnDepictionDesc
 [
-    MeshSocle,
-    MeshDescriptorPawn,
+    MeshSocle : TResourceMesh,
+    MeshDescriptorPawn : TResourceMesh,
 ]
 is StrategicPawnDepictionDesc
 (
@@ -106,9 +106,9 @@ is StrategicPawnDepictionDesc
 
 template StrategicGroundVehiclePawnDepictionDesc
 [
-    MeshSocle,
-    MeshDescriptorPawn,
-    SubDepictionGenerators = []
+    MeshSocle : TResourceMesh,
+    MeshDescriptorPawn : TResourceMesh,
+    SubDepictionGenerators : LIST<TAbstractSubDepictionGenerator> = []
 ]
 is StrategicPawnDepictionDesc
 (
@@ -120,7 +120,7 @@ is StrategicPawnDepictionDesc
 
 template StrategicMoveSound
 [
-    WavPath,
+    WavPath : string,
 ]
 is TSoundDescriptor
 (

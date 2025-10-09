@@ -18,6 +18,16 @@ export UnitEffect_AirUnit_Cohesion_Low is TEffectsPackDescriptor
             ModifierType  = ~/ModifierType_Multiplicatif
             ModifierValue = 1.20
         ),
+        TUnitEffectIncreaseWeaponPrecisionArretDescriptor
+        (
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -50
+        ),
+        TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
+        (
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -50
+        ),
     ]
 )
 export UnitEffect_AirUnit_Cohesion_Mediocre is TEffectsPackDescriptor
@@ -30,6 +40,16 @@ export UnitEffect_AirUnit_Cohesion_Mediocre is TEffectsPackDescriptor
             ModifierType  = ~/ModifierType_Multiplicatif
             ModifierValue = 1.15
         ),
+        TUnitEffectIncreaseWeaponPrecisionArretDescriptor
+        (
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -30
+        ),
+        TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
+        (
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -30
+        ),
     ]
 )
 export UnitEffect_AirUnit_Cohesion_Normal is TEffectsPackDescriptor
@@ -41,6 +61,16 @@ export UnitEffect_AirUnit_Cohesion_Normal is TEffectsPackDescriptor
         (
             ModifierType  = ~/ModifierType_Multiplicatif
             ModifierValue = 1.10
+        ),
+        TUnitEffectIncreaseWeaponPrecisionArretDescriptor
+        (
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -10
+        ),
+        TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
+        (
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -10
         ),
     ]
 )
@@ -230,6 +260,16 @@ export UnitEffect_ArtInf_Engaged is TEffectsPackDescriptor
             ModifierType       = ~/ModifierType_Pourcentage
             BonusDispersion  = 25
         ),
+        TUnitEffectIncreaseWeaponPrecisionArretDescriptor
+        (
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -10
+        ),
+        TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
+        (
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -10
+        ),
         TUnitEffectAlterWeaponTempsEntreDeuxSalvesDescriptor
         (
             ModifierType  = ~/ModifierType_Multiplicatif
@@ -257,6 +297,16 @@ export UnitEffect_ArtInf_Pinned is TEffectsPackDescriptor
         (
             ModifierType       = ~/ModifierType_Pourcentage
             BonusDispersion  = 150
+        ),
+        TUnitEffectIncreaseWeaponPrecisionArretDescriptor
+        (
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -70
+        ),
+        TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
+        (
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -70
         ),
         TUnitEffectAlterWeaponTempsEntreDeuxSalvesDescriptor
         (
@@ -289,6 +339,16 @@ export UnitEffect_ArtInf_Stressed is TEffectsPackDescriptor
             ModifierType       = ~/ModifierType_Pourcentage
             BonusDispersion  = 50
         ),
+        TUnitEffectIncreaseWeaponPrecisionArretDescriptor
+        (
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -25
+        ),
+        TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
+        (
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -25
+        ),
         TUnitEffectAlterWeaponTempsEntreDeuxSalvesDescriptor
         (
             ModifierType  = ~/ModifierType_Multiplicatif
@@ -317,6 +377,16 @@ export UnitEffect_ArtInf_Suppressed is TEffectsPackDescriptor
         (
             ModifierType       = ~/ModifierType_Pourcentage
             BonusDispersion  = 100
+        ),
+        TUnitEffectIncreaseWeaponPrecisionArretDescriptor
+        (
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -45
+        ),
+        TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
+        (
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -45
         ),
         TUnitEffectAlterWeaponTempsEntreDeuxSalvesDescriptor
         (
@@ -370,6 +440,16 @@ export UnitEffect_Artillerie_Engaged is TEffectsPackDescriptor
             ModifierType       = ~/ModifierType_Pourcentage
             BonusDispersion  = 25
         ),
+        TUnitEffectIncreaseWeaponPrecisionArretDescriptor
+        (
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -10
+        ),
+        TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
+        (
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -10
+        ),
         TUnitEffectAlterWeaponTempsEntreDeuxSalvesDescriptor
         (
             ModifierType  = ~/ModifierType_Multiplicatif
@@ -392,6 +472,16 @@ export UnitEffect_Artillerie_Pinned is TEffectsPackDescriptor
         (
             ModifierType       = ~/ModifierType_Pourcentage
             BonusDispersion  = 150
+        ),
+        TUnitEffectIncreaseWeaponPrecisionArretDescriptor
+        (
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -70
+        ),
+        TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
+        (
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -70
         ),
         TUnitEffectAlterWeaponTempsEntreDeuxSalvesDescriptor
         (
@@ -419,6 +509,16 @@ export UnitEffect_Artillerie_Stressed is TEffectsPackDescriptor
             ModifierType       = ~/ModifierType_Pourcentage
             BonusDispersion  = 50
         ),
+        TUnitEffectIncreaseWeaponPrecisionArretDescriptor
+        (
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -25
+        ),
+        TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
+        (
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -25
+        ),
         TUnitEffectAlterWeaponTempsEntreDeuxSalvesDescriptor
         (
             ModifierType  = ~/ModifierType_Multiplicatif
@@ -442,6 +542,16 @@ export UnitEffect_Artillerie_Suppressed is TEffectsPackDescriptor
         (
             ModifierType       = ~/ModifierType_Pourcentage
             BonusDispersion  = 100
+        ),
+        TUnitEffectIncreaseWeaponPrecisionArretDescriptor
+        (
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -45
+        ),
+        TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
+        (
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -45
         ),
         TUnitEffectAlterWeaponTempsEntreDeuxSalvesDescriptor
         (
@@ -501,6 +611,16 @@ export UnitEffect_ArtyUnit_Cohesion_Low is TEffectsPackDescriptor
             ModifierType  = ~/ModifierType_Multiplicatif
             ModifierValue = 2
         ),
+        TUnitEffectIncreaseWeaponPrecisionArretDescriptor
+        (
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -50
+        ),
+        TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
+        (
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -50
+        ),
         TUnitEffectAlterWeaponTempsEntreDeuxSalvesDescriptor
         (
             ModifierType  = ~/ModifierType_Multiplicatif
@@ -547,6 +667,16 @@ export UnitEffect_ArtyUnit_Cohesion_Mediocre is TEffectsPackDescriptor
             ModifierType  = ~/ModifierType_Multiplicatif
             ModifierValue = 1.40
         ),
+        TUnitEffectIncreaseWeaponPrecisionArretDescriptor
+        (
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -30
+        ),
+        TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
+        (
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -30
+        ),
         TUnitEffectAlterWeaponTempsEntreDeuxSalvesDescriptor
         (
             ModifierType  = ~/ModifierType_Multiplicatif
@@ -591,6 +721,16 @@ export UnitEffect_ArtyUnit_Cohesion_Normal is TEffectsPackDescriptor
         (
             ModifierType  = ~/ModifierType_Multiplicatif
             ModifierValue = 1.20
+        ),
+        TUnitEffectIncreaseWeaponPrecisionArretDescriptor
+        (
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -10
+        ),
+        TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
+        (
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -10
         ),
         TUnitEffectAlterWeaponTempsEntreDeuxSalvesDescriptor
         (
@@ -802,6 +942,16 @@ export UnitEffect_CanonAT_Engaged is TEffectsPackDescriptor
             ModifierType       = ~/ModifierType_Pourcentage
             BonusDispersion  = 25
         ),
+        TUnitEffectIncreaseWeaponPrecisionArretDescriptor
+        (
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -10
+        ),
+        TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
+        (
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -10
+        ),
         TUnitEffectAlterWeaponTempsEntreDeuxSalvesDescriptor
         (
             ModifierType  = ~/ModifierType_Multiplicatif
@@ -824,6 +974,16 @@ export UnitEffect_CanonAT_Pinned is TEffectsPackDescriptor
         (
             ModifierType       = ~/ModifierType_Pourcentage
             BonusDispersion  = 150
+        ),
+        TUnitEffectIncreaseWeaponPrecisionArretDescriptor
+        (
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -70
+        ),
+        TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
+        (
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -70
         ),
         TUnitEffectAlterWeaponTempsEntreDeuxSalvesDescriptor
         (
@@ -851,6 +1011,16 @@ export UnitEffect_CanonAT_Stressed is TEffectsPackDescriptor
             ModifierType       = ~/ModifierType_Pourcentage
             BonusDispersion  = 50
         ),
+        TUnitEffectIncreaseWeaponPrecisionArretDescriptor
+        (
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -25
+        ),
+        TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
+        (
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -25
+        ),
         TUnitEffectAlterWeaponTempsEntreDeuxSalvesDescriptor
         (
             ModifierType  = ~/ModifierType_Multiplicatif
@@ -874,6 +1044,16 @@ export UnitEffect_CanonAT_Suppressed is TEffectsPackDescriptor
         (
             ModifierType       = ~/ModifierType_Pourcentage
             BonusDispersion  = 100
+        ),
+        TUnitEffectIncreaseWeaponPrecisionArretDescriptor
+        (
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -45
+        ),
+        TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
+        (
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -45
         ),
         TUnitEffectAlterWeaponTempsEntreDeuxSalvesDescriptor
         (
@@ -1838,6 +2018,16 @@ export UnitEffect_GroundUnit_Cohesion_Low is TEffectsPackDescriptor
             ModifierType  = ~/ModifierType_Multiplicatif
             ModifierValue = 1.18
         ),
+        TUnitEffectIncreaseWeaponPrecisionArretDescriptor
+        (
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -50
+        ),
+        TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
+        (
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -50
+        ),
         TUnitEffectAlterWeaponTempsEntreDeuxSalvesDescriptor
         (
             ModifierType  = ~/ModifierType_Multiplicatif
@@ -1879,6 +2069,16 @@ export UnitEffect_GroundUnit_Cohesion_Mediocre is TEffectsPackDescriptor
             ModifierType  = ~/ModifierType_Multiplicatif
             ModifierValue = 1.12
         ),
+        TUnitEffectIncreaseWeaponPrecisionArretDescriptor
+        (
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -30
+        ),
+        TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
+        (
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -30
+        ),
         TUnitEffectAlterWeaponTempsEntreDeuxSalvesDescriptor
         (
             ModifierType  = ~/ModifierType_Multiplicatif
@@ -1918,6 +2118,16 @@ export UnitEffect_GroundUnit_Cohesion_Normal is TEffectsPackDescriptor
         (
             ModifierType  = ~/ModifierType_Multiplicatif
             ModifierValue = 1.08
+        ),
+        TUnitEffectIncreaseWeaponPrecisionArretDescriptor
+        (
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -10
+        ),
+        TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
+        (
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -10
         ),
         TUnitEffectAlterWeaponTempsEntreDeuxSalvesDescriptor
         (
@@ -2075,6 +2285,16 @@ export UnitEffect_Infanterie_Engaged is TEffectsPackDescriptor
             ModifierType       = ~/ModifierType_Pourcentage
             BonusDangerousness    = -1
         ),
+        TUnitEffectIncreaseWeaponPrecisionArretDescriptor
+        (
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -10
+        ),
+        TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
+        (
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -10
+        ),
         TUnitEffectAlterWeaponTempsEntreDeuxSalvesDescriptor
         (
             ModifierType  = ~/ModifierType_Multiplicatif
@@ -2102,6 +2322,16 @@ export UnitEffect_Infanterie_Pinned is TEffectsPackDescriptor
         (
             ModifierType       = ~/ModifierType_Pourcentage
             BonusDangerousness    = -4
+        ),
+        TUnitEffectIncreaseWeaponPrecisionArretDescriptor
+        (
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -70
+        ),
+        TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
+        (
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -70
         ),
         TUnitEffectAlterWeaponTempsEntreDeuxSalvesDescriptor
         (
@@ -2134,6 +2364,16 @@ export UnitEffect_Infanterie_Stressed is TEffectsPackDescriptor
             ModifierType       = ~/ModifierType_Pourcentage
             BonusDangerousness    = -2
         ),
+        TUnitEffectIncreaseWeaponPrecisionArretDescriptor
+        (
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -25
+        ),
+        TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
+        (
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -25
+        ),
         TUnitEffectAlterWeaponTempsEntreDeuxSalvesDescriptor
         (
             ModifierType  = ~/ModifierType_Multiplicatif
@@ -2162,6 +2402,16 @@ export UnitEffect_Infanterie_Suppressed is TEffectsPackDescriptor
         (
             ModifierType       = ~/ModifierType_Pourcentage
             BonusDangerousness    = -3
+        ),
+        TUnitEffectIncreaseWeaponPrecisionArretDescriptor
+        (
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -45
+        ),
+        TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
+        (
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -45
         ),
         TUnitEffectAlterWeaponTempsEntreDeuxSalvesDescriptor
         (
@@ -2377,30 +2627,13 @@ export UnitEffect_Precision_moins_10 is TEffectsPackDescriptor
     EffectsDescriptors = [
         TUnitEffectIncreaseWeaponPrecisionArretDescriptor
         (
-            ModifierType  = ~/ModifierType_Multiplicatif
-            ModifierValue = 0.9
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -10
         ),
         TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
         (
-            ModifierType  = ~/ModifierType_Multiplicatif
-            ModifierValue = 0.9
-        ),
-    ]
-)
-export UnitEffect_Precision_moins_15 is TEffectsPackDescriptor
-(
-    DescriptorId       = GUID:{69566404-db94-414f-8f3b-1fb644838207}
-    NameForDebug       = 'Precision_moins_15'
-    EffectsDescriptors = [
-        TUnitEffectIncreaseWeaponPrecisionArretDescriptor
-        (
-            ModifierType  = ~/ModifierType_Multiplicatif
-            ModifierValue = 0.85
-        ),
-        TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
-        (
-            ModifierType  = ~/ModifierType_Multiplicatif
-            ModifierValue = 0.85
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -10
         ),
     ]
 )
@@ -2411,13 +2644,13 @@ export UnitEffect_Precision_moins_20 is TEffectsPackDescriptor
     EffectsDescriptors = [
         TUnitEffectIncreaseWeaponPrecisionArretDescriptor
         (
-            ModifierType  = ~/ModifierType_Multiplicatif
-            ModifierValue = 0.8
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -20
         ),
         TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
         (
-            ModifierType  = ~/ModifierType_Multiplicatif
-            ModifierValue = 0.8
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -20
         ),
     ]
 )
@@ -2428,30 +2661,13 @@ export UnitEffect_Precision_moins_25 is TEffectsPackDescriptor
     EffectsDescriptors = [
         TUnitEffectIncreaseWeaponPrecisionArretDescriptor
         (
-            ModifierType  = ~/ModifierType_Multiplicatif
-            ModifierValue = 0.75
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -25
         ),
         TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
         (
-            ModifierType  = ~/ModifierType_Multiplicatif
-            ModifierValue = 0.75
-        ),
-    ]
-)
-export UnitEffect_Precision_moins_30 is TEffectsPackDescriptor
-(
-    DescriptorId       = GUID:{478c94df-f172-4899-905e-b57820f10911}
-    NameForDebug       = 'Precision_moins_30'
-    EffectsDescriptors = [
-        TUnitEffectIncreaseWeaponPrecisionArretDescriptor
-        (
-            ModifierType  = ~/ModifierType_Multiplicatif
-            ModifierValue = 0.7
-        ),
-        TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
-        (
-            ModifierType  = ~/ModifierType_Multiplicatif
-            ModifierValue = 0.7
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -25
         ),
     ]
 )
@@ -2462,47 +2678,13 @@ export UnitEffect_Precision_moins_45 is TEffectsPackDescriptor
     EffectsDescriptors = [
         TUnitEffectIncreaseWeaponPrecisionArretDescriptor
         (
-            ModifierType  = ~/ModifierType_Multiplicatif
-            ModifierValue = 0.65
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -45
         ),
         TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
         (
-            ModifierType  = ~/ModifierType_Multiplicatif
-            ModifierValue = 0.65
-        ),
-    ]
-)
-export UnitEffect_Precision_moins_5 is TEffectsPackDescriptor
-(
-    DescriptorId       = GUID:{a4e0a8b2-8cae-4101-a665-890c5163baf8}
-    NameForDebug       = 'Precision_moins_5'
-    EffectsDescriptors = [
-        TUnitEffectIncreaseWeaponPrecisionArretDescriptor
-        (
-            ModifierType  = ~/ModifierType_Multiplicatif
-            ModifierValue = 0.95
-        ),
-        TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
-        (
-            ModifierType  = ~/ModifierType_Multiplicatif
-            ModifierValue = 0.95
-        ),
-    ]
-)
-export UnitEffect_Precision_moins_50 is TEffectsPackDescriptor
-(
-    DescriptorId       = GUID:{29301a2a-5d30-4b86-a768-ad4fba6afd8f}
-    NameForDebug       = 'Precision_moins_50'
-    EffectsDescriptors = [
-        TUnitEffectIncreaseWeaponPrecisionArretDescriptor
-        (
-            ModifierType  = ~/ModifierType_Multiplicatif
-            ModifierValue = 0.5
-        ),
-        TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
-        (
-            ModifierType  = ~/ModifierType_Multiplicatif
-            ModifierValue = 0.5
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -45
         ),
     ]
 )
@@ -2513,149 +2695,13 @@ export UnitEffect_Precision_moins_70 is TEffectsPackDescriptor
     EffectsDescriptors = [
         TUnitEffectIncreaseWeaponPrecisionArretDescriptor
         (
-            ModifierType  = ~/ModifierType_Multiplicatif
-            ModifierValue = 0.7
-        ),
-        TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
-        (
-            ModifierType  = ~/ModifierType_Multiplicatif
-            ModifierValue = 0.7
-        ),
-    ]
-)
-export UnitEffect_Precision_moins_75 is TEffectsPackDescriptor
-(
-    DescriptorId       = GUID:{5f4cafdd-a087-4243-9afc-0e09cb53896b}
-    NameForDebug       = 'Precision_moins_75'
-    EffectsDescriptors = [
-        TUnitEffectIncreaseWeaponPrecisionArretDescriptor
-        (
-            ModifierType  = ~/ModifierType_Multiplicatif
-            ModifierValue = 0.75
-        ),
-        TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
-        (
-            ModifierType  = ~/ModifierType_Multiplicatif
-            ModifierValue = 0.75
-        ),
-    ]
-)
-export UnitEffect_Precision_plus_10 is TEffectsPackDescriptor
-(
-    DescriptorId       = GUID:{791c8f7f-ed5c-432e-8437-48c8001e8980}
-    NameForDebug       = 'Precision_plus_10'
-    EffectsDescriptors = [
-        TUnitEffectIncreaseWeaponPrecisionArretDescriptor
-        (
             ModifierType  = ~/ModifierType_Pourcentage
-            ModifierValue = 10
+            ModifierValue = -70
         ),
         TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
         (
             ModifierType  = ~/ModifierType_Pourcentage
-            ModifierValue = 10
-        ),
-    ]
-)
-export UnitEffect_Precision_plus_15 is TEffectsPackDescriptor
-(
-    DescriptorId       = GUID:{3e1b1472-397d-4d18-9331-a811264c7576}
-    NameForDebug       = 'Precision_plus_15'
-    EffectsDescriptors = [
-        TUnitEffectIncreaseWeaponPrecisionArretDescriptor
-        (
-            ModifierType  = ~/ModifierType_Pourcentage
-            ModifierValue = 15
-        ),
-        TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
-        (
-            ModifierType  = ~/ModifierType_Pourcentage
-            ModifierValue = 15
-        ),
-    ]
-)
-export UnitEffect_Precision_plus_20 is TEffectsPackDescriptor
-(
-    DescriptorId       = GUID:{70907401-52f6-4811-a309-c7bfb52fb9c9}
-    NameForDebug       = 'Precision_plus_20'
-    EffectsDescriptors = [
-        TUnitEffectIncreaseWeaponPrecisionArretDescriptor
-        (
-            ModifierType  = ~/ModifierType_Pourcentage
-            ModifierValue = 20
-        ),
-        TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
-        (
-            ModifierType  = ~/ModifierType_Pourcentage
-            ModifierValue = 20
-        ),
-    ]
-)
-export UnitEffect_Precision_plus_25 is TEffectsPackDescriptor
-(
-    DescriptorId       = GUID:{94a6bb92-c64e-4169-856f-9a6880bf7ff2}
-    NameForDebug       = 'Precision_plus_25'
-    EffectsDescriptors = [
-        TUnitEffectIncreaseWeaponPrecisionArretDescriptor
-        (
-            ModifierType  = ~/ModifierType_Pourcentage
-            ModifierValue = 25
-        ),
-        TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
-        (
-            ModifierType  = ~/ModifierType_Pourcentage
-            ModifierValue = 25
-        ),
-    ]
-)
-export UnitEffect_Precision_plus_33 is TEffectsPackDescriptor
-(
-    DescriptorId       = GUID:{0b434d9d-469f-48a6-8af0-d4625d0ef3d2}
-    NameForDebug       = 'Precision_plus_33'
-    EffectsDescriptors = [
-        TUnitEffectIncreaseWeaponPrecisionArretDescriptor
-        (
-            ModifierType  = ~/ModifierType_Pourcentage
-            ModifierValue = 33
-        ),
-        TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
-        (
-            ModifierType  = ~/ModifierType_Pourcentage
-            ModifierValue = 33
-        ),
-    ]
-)
-export UnitEffect_Precision_plus_5 is TEffectsPackDescriptor
-(
-    DescriptorId       = GUID:{b349ad22-b86d-43f9-b7e9-52672c5e4ac2}
-    NameForDebug       = 'Precision_plus_5'
-    EffectsDescriptors = [
-        TUnitEffectIncreaseWeaponPrecisionArretDescriptor
-        (
-            ModifierType  = ~/ModifierType_Pourcentage
-            ModifierValue = 5
-        ),
-        TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
-        (
-            ModifierType  = ~/ModifierType_Pourcentage
-            ModifierValue = 5
-        ),
-    ]
-)
-export UnitEffect_Precision_plus_50 is TEffectsPackDescriptor
-(
-    DescriptorId       = GUID:{8e5a719b-9b51-4a29-b54d-79d27f3901a8}
-    NameForDebug       = 'Precision_plus_50'
-    EffectsDescriptors = [
-        TUnitEffectIncreaseWeaponPrecisionArretDescriptor
-        (
-            ModifierType  = ~/ModifierType_Pourcentage
-            ModifierValue = 50
-        ),
-        TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
-        (
-            ModifierType  = ~/ModifierType_Pourcentage
-            ModifierValue = 50
+            ModifierValue = -70
         ),
     ]
 )

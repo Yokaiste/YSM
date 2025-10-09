@@ -1,0 +1,17 @@
+export Modele_AVGP_Grizzly_CMD_CAN is TResourceMesh
+(
+    Mesh=ModelFile_AVGP_Grizzly_CAN
+    Textures="GameData:/Assets/3D/Units/CAN/CMD/AVGP_GRIZZLY_CMD"
+)
+
+export Modele_AVGP_Grizzly_CMD_CAN_MID is TResourceMesh
+(
+    Mesh=ModelFile_AVGP_Grizzly_CAN_MID
+    Textures="GameData:/Assets/3D/Units/CAN/CMD/AVGP_GRIZZLY_CMD_MID"
+)
+
+export Modele_AVGP_Grizzly_CMD_CAN_LOW is TResourceMesh
+(
+    Mesh=ModelFile_AVGP_Grizzly_CAN_LOW
+    Textures="GameData:/Assets/3D/Units/CAN/CMD/AVGP_GRIZZLY_CMD_LOW"
+)

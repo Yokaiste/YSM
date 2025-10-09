@@ -483,6 +483,12 @@ unnamed GhostVehicleDepictionRegistration
 )
 unnamed GhostVehicleDepictionRegistration
 (
+    Alternatives = Alternatives_AMX_30_EM1_ESP
+    MimeticName = "AMX_30_EM1_ESP"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
     Alternatives = Alternatives_AMX_30_EM1_Reco_ESP
     MimeticName = "AMX_30_EM1_Reco_ESP"
     Selector = SpecificVehicleDepictionSelector
@@ -921,6 +927,12 @@ unnamed GhostVehicleDepictionRegistration
 )
 unnamed GhostVehicleDepictionRegistration
 (
+    Alternatives = Alternatives_AVGP_Grizzly_CMD_CAN
+    MimeticName = "AVGP_Grizzly_CMD_CAN"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
     Alternatives = Alternatives_Alvis_Stalwart_UK
     MimeticName = "Alvis_Stalwart_UK"
     Selector = SpecificVehicleDepictionSelector
@@ -959,6 +971,12 @@ unnamed GhostVehicleDepictionRegistration
 (
     Alternatives = Alternatives_Atteam_Fagot_VDV_SOV
     MimeticName = "Atteam_Fagot_VDV_SOV"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
+    Alternatives = Alternatives_Atteam_Fagot_Vysadkari_TCH
+    MimeticName = "Atteam_Fagot_Vysadkari_TCH"
     Selector = SpecificVehicleDepictionSelector
 )
 unnamed GhostVehicleDepictionRegistration
@@ -1593,6 +1611,12 @@ unnamed GhostVehicleDepictionRegistration
 )
 unnamed GhostVehicleDepictionRegistration
 (
+    Alternatives = Alternatives_BRDM_Strela_1_TCH
+    MimeticName = "BRDM_Strela_1_TCH"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
     Alternatives = Alternatives_BRM_1_DDR
     MimeticName = "BRM_1_DDR"
     Selector = SpecificVehicleDepictionSelector
@@ -1679,6 +1703,12 @@ unnamed GhostVehicleDepictionRegistration
 (
     Alternatives = Alternatives_BTR_60_CHAIKA_CMD_SOV
     MimeticName = "BTR_60_CHAIKA_CMD_SOV"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
+    Alternatives = Alternatives_BTR_60_CHAIKA_CMD_TCH
+    MimeticName = "BTR_60_CHAIKA_CMD_TCH"
     Selector = SpecificVehicleDepictionSelector
 )
 unnamed GhostVehicleDepictionRegistration
@@ -1823,6 +1853,12 @@ unnamed GhostVehicleDepictionRegistration
 (
     Alternatives = Alternatives_Berliet_GBC_8KT_HMG_FR
     MimeticName = "Berliet_GBC_8KT_HMG_FR"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
+    Alternatives = Alternatives_Berliet_GBC_8KT_supply_FR
+    MimeticName = "Berliet_GBC_8KT_supply_FR"
     Selector = SpecificVehicleDepictionSelector
 )
 unnamed GhostVehicleDepictionRegistration
@@ -1989,6 +2025,12 @@ unnamed GhostVehicleDepictionRegistration
 )
 unnamed GhostVehicleDepictionRegistration
 (
+    Alternatives = Alternatives_DANA_SOV
+    MimeticName = "DANA_SOV"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
     Alternatives = Alternatives_DANA_TCH
     MimeticName = "DANA_TCH"
     Selector = SpecificVehicleDepictionSelector
@@ -2015,6 +2057,12 @@ unnamed GhostVehicleDepictionRegistration
 (
     Alternatives = Alternatives_DCA_76T2_20mm_CPA_FR
     MimeticName = "DCA_76T2_20mm_CPA_FR"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
+    Alternatives = Alternatives_DCA_76T2_20mm_FR
+    MimeticName = "DCA_76T2_20mm_FR"
     Selector = SpecificVehicleDepictionSelector
 )
 unnamed GhostVehicleDepictionRegistration
@@ -2769,6 +2817,12 @@ unnamed GhostVehicleDepictionRegistration
 )
 unnamed GhostVehicleDepictionRegistration
 (
+    Alternatives = Alternatives_GAZ_66B_TCH
+    MimeticName = "GAZ_66B_TCH"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
     Alternatives = Alternatives_GAZ_66B_ZU_SOV
     MimeticName = "GAZ_66B_ZU_SOV"
     Selector = SpecificVehicleDepictionSelector
@@ -2937,6 +2991,12 @@ unnamed GhostVehicleDepictionRegistration
 )
 unnamed GhostVehicleDepictionRegistration
 (
+    Alternatives = Alternatives_HMGteam_AGS17_Vysadkari_TCH
+    MimeticName = "HMGteam_AGS17_Vysadkari_TCH"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
     Alternatives = Alternatives_HMGteam_DShK_AA_SOV
     MimeticName = "HMGteam_DShK_AA_SOV"
     Selector = SpecificVehicleDepictionSelector
@@ -2969,6 +3029,12 @@ unnamed GhostVehicleDepictionRegistration
 (
     Alternatives = Alternatives_HMGteam_M1919A4_NL
     MimeticName = "HMGteam_M1919A4_NL"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
+    Alternatives = Alternatives_HMGteam_M1919_Reserve_CAN
+    MimeticName = "HMGteam_M1919_Reserve_CAN"
     Selector = SpecificVehicleDepictionSelector
 )
 unnamed GhostVehicleDepictionRegistration
@@ -3083,6 +3149,12 @@ unnamed GhostVehicleDepictionRegistration
 (
     Alternatives = Alternatives_HMGteam_MAG_BEL
     MimeticName = "HMGteam_MAG_BEL"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
+    Alternatives = Alternatives_HMGteam_MAG_CAN
+    MimeticName = "HMGteam_MAG_CAN"
     Selector = SpecificVehicleDepictionSelector
 )
 unnamed GhostVehicleDepictionRegistration
@@ -3281,6 +3353,12 @@ unnamed GhostVehicleDepictionRegistration
 (
     Alternatives = Alternatives_Howz_2A36_Giatsint_B_SOV
     MimeticName = "Howz_2A36_Giatsint_B_SOV"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
+    Alternatives = Alternatives_Howz_A19_122mm_ESP
+    MimeticName = "Howz_A19_122mm_ESP"
     Selector = SpecificVehicleDepictionSelector
 )
 unnamed GhostVehicleDepictionRegistration
@@ -3489,6 +3567,12 @@ unnamed GhostVehicleDepictionRegistration
 )
 unnamed GhostVehicleDepictionRegistration
 (
+    Alternatives = Alternatives_Howz_M46_130mm_TCH
+    MimeticName = "Howz_M46_130mm_TCH"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
     Alternatives = Alternatives_Howz_M56_Pack_FJ_RFA
     MimeticName = "Howz_M56_Pack_FJ_RFA"
     Selector = SpecificVehicleDepictionSelector
@@ -3515,6 +3599,12 @@ unnamed GhostVehicleDepictionRegistration
 (
     Alternatives = Alternatives_Howz_ML20_152mm_SOV
     MimeticName = "Howz_ML20_152mm_SOV"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
+    Alternatives = Alternatives_Howz_ML20_152mm_TCH
+    MimeticName = "Howz_ML20_152mm_TCH"
     Selector = SpecificVehicleDepictionSelector
 )
 unnamed GhostVehicleDepictionRegistration
@@ -3599,6 +3689,12 @@ unnamed GhostVehicleDepictionRegistration
 (
     Alternatives = Alternatives_Iltis_para_CMD_RFA
     MimeticName = "Iltis_para_CMD_RFA"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
+    Alternatives = Alternatives_Iltis_reco_RFA
+    MimeticName = "Iltis_reco_RFA"
     Selector = SpecificVehicleDepictionSelector
 )
 unnamed GhostVehicleDepictionRegistration
@@ -3921,6 +4017,18 @@ unnamed GhostVehicleDepictionRegistration
 )
 unnamed GhostVehicleDepictionRegistration
 (
+    Alternatives = Alternatives_Leopard_1A4_CMD_RFA
+    MimeticName = "Leopard_1A4_CMD_RFA"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
+    Alternatives = Alternatives_Leopard_1A4_RFA
+    MimeticName = "Leopard_1A4_RFA"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
     Alternatives = Alternatives_Leopard_1A5_BEL
     MimeticName = "Leopard_1A5_BEL"
     Selector = SpecificVehicleDepictionSelector
@@ -4007,6 +4115,12 @@ unnamed GhostVehicleDepictionRegistration
 (
     Alternatives = Alternatives_Leopard_2A4_CMD_NL
     MimeticName = "Leopard_2A4_CMD_NL"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
+    Alternatives = Alternatives_Leopard_2A4_CMD_RFA
+    MimeticName = "Leopard_2A4_CMD_RFA"
     Selector = SpecificVehicleDepictionSelector
 )
 unnamed GhostVehicleDepictionRegistration
@@ -4541,6 +4655,12 @@ unnamed GhostVehicleDepictionRegistration
 (
     Alternatives = Alternatives_M151C_RCL_NG_US
     MimeticName = "M151C_RCL_NG_US"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
+    Alternatives = Alternatives_M151_MUTT_CMD_CAN
+    MimeticName = "M151_MUTT_CMD_CAN"
     Selector = SpecificVehicleDepictionSelector
 )
 unnamed GhostVehicleDepictionRegistration
@@ -5559,14 +5679,32 @@ unnamed GhostVehicleDepictionRegistration
 )
 unnamed GhostVehicleDepictionRegistration
 (
+    Alternatives = Alternatives_Mortier_81mm_Legion_FR
+    MimeticName = "Mortier_81mm_Legion_FR"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
     Alternatives = Alternatives_Mortier_81mm_para_BEL
     MimeticName = "Mortier_81mm_para_BEL"
     Selector = SpecificVehicleDepictionSelector
 )
 unnamed GhostVehicleDepictionRegistration
 (
+    Alternatives = Alternatives_Mortier_81mm_para_FR
+    MimeticName = "Mortier_81mm_para_FR"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
     Alternatives = Alternatives_Mortier_82mm_vz52_TCH
     MimeticName = "Mortier_82mm_vz52_TCH"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
+    Alternatives = Alternatives_Mortier_82mm_vz52_Vysadkari_TCH
+    MimeticName = "Mortier_82mm_vz52_Vysadkari_TCH"
     Selector = SpecificVehicleDepictionSelector
 )
 unnamed GhostVehicleDepictionRegistration
@@ -6255,8 +6393,20 @@ unnamed GhostVehicleDepictionRegistration
 )
 unnamed GhostVehicleDepictionRegistration
 (
+    Alternatives = Alternatives_T55AM2B_TCH
+    MimeticName = "T55AM2B_TCH"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
     Alternatives = Alternatives_T55AM2_CMD_DDR
     MimeticName = "T55AM2_CMD_DDR"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
+    Alternatives = Alternatives_T55AM2_CMD_TCH
+    MimeticName = "T55AM2_CMD_TCH"
     Selector = SpecificVehicleDepictionSelector
 )
 unnamed GhostVehicleDepictionRegistration
@@ -6323,6 +6473,12 @@ unnamed GhostVehicleDepictionRegistration
 (
     Alternatives = Alternatives_T55A_CMD_SOV
     MimeticName = "T55A_CMD_SOV"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
+    Alternatives = Alternatives_T55A_CMD_TCH
+    MimeticName = "T55A_CMD_TCH"
     Selector = SpecificVehicleDepictionSelector
 )
 unnamed GhostVehicleDepictionRegistration
@@ -6633,6 +6789,18 @@ unnamed GhostVehicleDepictionRegistration
 )
 unnamed GhostVehicleDepictionRegistration
 (
+    Alternatives = Alternatives_T72_SOV
+    MimeticName = "T72_SOV"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
+    Alternatives = Alternatives_T72_TCH
+    MimeticName = "T72_TCH"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
     Alternatives = Alternatives_T80BV_Beast_SOV
     MimeticName = "T80BV_Beast_SOV"
     Selector = SpecificVehicleDepictionSelector
@@ -6915,6 +7083,12 @@ unnamed GhostVehicleDepictionRegistration
 )
 unnamed GhostVehicleDepictionRegistration
 (
+    Alternatives = Alternatives_UAZ_469_CMD_Vysadkari_TCH
+    MimeticName = "UAZ_469_CMD_Vysadkari_TCH"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
     Alternatives = Alternatives_UAZ_469_Fagot_DDR
     MimeticName = "UAZ_469_Fagot_DDR"
     Selector = SpecificVehicleDepictionSelector
@@ -7001,6 +7175,12 @@ unnamed GhostVehicleDepictionRegistration
 (
     Alternatives = Alternatives_UAZ_469_SPG9_VDV_SOV
     MimeticName = "UAZ_469_SPG9_VDV_SOV"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
+    Alternatives = Alternatives_UAZ_469_Vysadkari_supply_TCH
+    MimeticName = "UAZ_469_Vysadkari_supply_TCH"
     Selector = SpecificVehicleDepictionSelector
 )
 unnamed GhostVehicleDepictionRegistration
@@ -7185,6 +7365,12 @@ unnamed GhostVehicleDepictionRegistration
 )
 unnamed GhostVehicleDepictionRegistration
 (
+    Alternatives = Alternatives_VAB_RASIT_Legion_FR
+    MimeticName = "VAB_RASIT_Legion_FR"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
     Alternatives = Alternatives_VAB_Reserve_FR
     MimeticName = "VAB_Reserve_FR"
     Selector = SpecificVehicleDepictionSelector
@@ -7331,6 +7517,12 @@ unnamed GhostVehicleDepictionRegistration
 (
     Alternatives = Alternatives_VLTT_P4_PC_FR
     MimeticName = "VLTT_P4_PC_FR"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
+    Alternatives = Alternatives_VLTT_P4_PC_Legion_FR
+    MimeticName = "VLTT_P4_PC_Legion_FR"
     Selector = SpecificVehicleDepictionSelector
 )
 unnamed GhostVehicleDepictionRegistration

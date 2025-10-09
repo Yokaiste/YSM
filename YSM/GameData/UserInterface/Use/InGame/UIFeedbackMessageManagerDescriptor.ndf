@@ -194,16 +194,10 @@ OnAttackOrder is TUIFeedbackDispatchedMessageDescriptor
      IsActiveForPlayer = true
 )
 
-OnLoadIntoTransportOrder is TUIFeedbackDispatchedMessageDescriptor
+OnLoadOrder is TUIFeedbackDispatchedMessageDescriptor
 (
     TimeBeforeRepeat = 10
     UnitAcknow = TAcknowUnitAction_LoadIntoTransport
-    IsActiveForPlayer = true
-)
-
-OnLoadUnitOrder is TUIFeedbackDispatchedMessageDescriptor
-(
-    TimeBeforeRepeat = 10
     IsActiveForPlayer = true
 )
 
@@ -840,8 +834,7 @@ IngameFeedbackMessageManagerDescriptor is TUISpecificInGameFeedbackMessageManage
         ( FeedbackMessage_OnPositionForbidden, ~/OnPositionForbidden ),
         ( FeedbackMessage_OnMoveOrder, ~/OnMoveOrder ),
         ( FeedbackMessage_OnAttackOrder, ~/OnAttackOrder ),
-        ( FeedbackMessage_OnLoadIntoTransportOrder, ~/OnLoadIntoTransportOrder ),
-        ( FeedbackMessage_OnLoadUnitOrder, ~/OnLoadUnitOrder ),
+        ( FeedbackMessage_OnLoadOrder, ~/OnLoadOrder ),
         ( FeedbackMessage_OnAirplaneOutOfFuel, ~/OnAirplaneOutOfFuel ),
         ( FeedbackMessage_OnAirplaneOutOfAmmo, ~/OnAirplaneOutOfAmmo ),
         ( FeedbackMessage_OnAssaultDistrictOrder, ~/OnAssaultOrder ),

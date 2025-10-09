@@ -58,9 +58,6 @@ export Strategic_TeamUnitDescriptor is TEntityDescriptor
         TFumigeneModuleDescriptor
         (
         ),
-        TStatisticsModuleDescriptor
-        (
-        ),
         TIATeamStrategyModuleDescriptor
         (
         ),

@@ -37256,12 +37256,11 @@ export AcknowUnitContainer is TAcknowUnitContainerDescriptor
             Action        = TAcknowUnitAction_Attack
             Sounds        =
             [
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_Attack_dobre_pane.ogg' Filter = TSoundFilter_RadioAirplane ),
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_Attack_palte.ogg' Filter = TSoundFilter_RadioAirplane ),
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_Attack_Position_neptejte_se_proste_strilejte.ogg' Filter = TSoundFilter_RadioAirplane ),
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_Attack_udelame_co_bude_v_nasich_silach_pane.ogg' Filter = TSoundFilter_RadioAirplane ),
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_Attack_zahajte_palbu.ogg' Filter = TSoundFilter_RadioAirplane ),
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_Attack_zbran_je_pripravena_pojdme_jim_to_nandat.ogg' Filter = TSoundFilter_RadioAirplane ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/HeliTransport/TCH_Helitransport_Attack_Dobre_Hotel_6.ogg' Filter = TSoundFilter_RadioAirplane ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/HeliTransport/TCH_Helitransport_Attack_Sundejte_je.ogg' Filter = TSoundFilter_RadioAirplane ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/HeliTransport/TCH_Helitransport_Attack_Udelame_co_bude_v_nasich_silach.ogg' Filter = TSoundFilter_RadioAirplane ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/HeliTransport/TCH_Helitransport_Attack_Zahajuji_palbu.ogg' Filter = TSoundFilter_RadioAirplane ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/HeliTransport/TCH_Helitransport_Attack_Zbran_pripravena_pojdme_jim_to_nandat.ogg' Filter = TSoundFilter_RadioAirplane ),
             ]
         ),
         TAcknowDescriptor
@@ -37271,8 +37270,8 @@ export AcknowUnitContainer is TAcknowUnitContainerDescriptor
             Action        = TAcknowUnitAction_DamageReceived
             Sounds        =
             [
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_DamageReceived_jeste_jeden_zasah_a_je_po_nas.ogg' Filter = TSoundFilter_RadioAirplane ),
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_DamageReceived_jsme_tezce_zasazeni.ogg' Filter = TSoundFilter_RadioAirplane ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/HeliTransport/TCH_Helitransport_DamageReceived_Dostali_jsme_to_.ogg' Filter = TSoundFilter_RadioAirplane ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/HeliTransport/TCH_Helitransport_DamageReceived_Kurva_strili_po_nas.ogg' Filter = TSoundFilter_RadioAirplane ),
             ]
         ),
         TAcknowDescriptor
@@ -37282,7 +37281,7 @@ export AcknowUnitContainer is TAcknowUnitContainerDescriptor
             Action        = TAcknowUnitAction_EnemyUnitContact
             Sounds        =
             [
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_Enemy_Contact_pozor_mame_tu_kontakt.ogg' Filter = TSoundFilter_RadioAirplane ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/HeliTransport/TCH_Helitransport_Enemy_Contact_Nepritel_spatren.ogg' Filter = TSoundFilter_RadioAirplane ),
             ]
         ),
         TAcknowDescriptor
@@ -37292,8 +37291,8 @@ export AcknowUnitContainer is TAcknowUnitContainerDescriptor
             Action        = TAcknowUnitAction_LoadIntoTransport
             Sounds        =
             [
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_Load_doufam_ze_se_vam_toto_pohodli_bude_libit.ogg' Filter = TSoundFilter_RadioAirplane ),
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_Load_vstupte_na_palubu.ogg' Filter = TSoundFilter_RadioAirplane ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/HeliTransport/TCH_Helitransport_Load_Doufam_ze_se_vam_toto_pohodli_bude_libit.ogg' Filter = TSoundFilter_RadioAirplane ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/HeliTransport/TCH_Helitransport_Load_Vstupte_na_palubu.ogg' Filter = TSoundFilter_RadioAirplane ),
             ]
         ),
         TAcknowDescriptor
@@ -37303,30 +37302,11 @@ export AcknowUnitContainer is TAcknowUnitContainerDescriptor
             Action        = TAcknowUnitAction_Move
             Sounds        =
             [
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_Move_Fast_jedeme_tam.ogg' Filter = TSoundFilter_RadioAirplane ),
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_Move_Fast_nemuzeme_jet_rychleji.ogg' Filter = TSoundFilter_RadioAirplane ),
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_Move_Fast_plnou_rychlosti.ogg' Filter = TSoundFilter_RadioAirplane ),
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_Move_Fast_rozumim_konec.ogg' Filter = TSoundFilter_RadioAirplane ),
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_Move_Fast_slysim_jasne_a_zretelne.ogg' Filter = TSoundFilter_RadioAirplane ),
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_Move_jedeme_tam.ogg' Filter = TSoundFilter_RadioAirplane ),
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_Move_jedu_tam.ogg' Filter = TSoundFilter_RadioAirplane ),
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_Move_jsem_rad_ze_nekdo_vi_kam_jedeme.ogg' Filter = TSoundFilter_RadioAirplane ),
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_Move_rozumim_pane.ogg' Filter = TSoundFilter_RadioAirplane ),
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_Move_uz_tam_jedeme.ogg' Filter = TSoundFilter_RadioAirplane ),
-            ]
-        ),
-        TAcknowDescriptor
-        (
-            MotherCountry = 'TCH'
-            TypeSpecific  = TAcknowUnitType_HeliTransport
-            Action        = TAcknowUnitAction_MoveAndAttackOrder
-            Sounds        =
-            [
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_Move_Attack_jdeme_si_pro_ne.ogg' Filter = TSoundFilter_RadioAirplane ),
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_Move_Attack_mam_spatny_pocit.ogg' Filter = TSoundFilter_RadioAirplane ),
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_Move_Attack_pozor_na_nepritele.ogg' Filter = TSoundFilter_RadioAirplane ),
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_Move_Attack_pripraven_k_boji.ogg' Filter = TSoundFilter_RadioAirplane ),
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_Move_Attack_strilejte_na_vsechno_co_se_hejbe.ogg' Filter = TSoundFilter_RadioAirplane ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/HeliTransport/TCH_Helitransport_Move_Jsem_rad_ze_nekdo_vi_kam_letime.ogg' Filter = TSoundFilter_RadioAirplane ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/HeliTransport/TCH_Helitransport_Move_Letim_tam.ogg' Filter = TSoundFilter_RadioAirplane ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/HeliTransport/TCH_Helitransport_Move_Letime.ogg' Filter = TSoundFilter_RadioAirplane ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/HeliTransport/TCH_Helitransport_Move_Rozumim_Hotel_6_letime_tam.ogg' Filter = TSoundFilter_RadioAirplane ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/HeliTransport/TCH_Helitransport_Move_Rozumim_hotel_6.ogg' Filter = TSoundFilter_RadioAirplane ),
             ]
         ),
         TAcknowDescriptor
@@ -37336,7 +37316,7 @@ export AcknowUnitContainer is TAcknowUnitContainerDescriptor
             Action        = TAcknowUnitAction_OutOfAmmo
             Sounds        =
             [
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_No_Ammo_potrebujeme_munici.ogg' Filter = TSoundFilter_RadioAirplane ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/HeliTransport/TCH_Helitransport_No_Ammo_Potrebujeme_munici.ogg' Filter = TSoundFilter_RadioAirplane ),
             ]
         ),
         TAcknowDescriptor
@@ -37346,8 +37326,8 @@ export AcknowUnitContainer is TAcknowUnitContainerDescriptor
             Action        = TAcknowUnitAction_Panicking
             Sounds        =
             [
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_Panicking_hod_tam_zpatecku_hned.ogg' Filter = TSoundFilter_RadioAirplane ),
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_Panicking_zpatky.ogg' Filter = TSoundFilter_RadioAirplane ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/HeliTransport/TCH_Helitransport_Panicking_Dostante_nas_odsud.ogg' Filter = TSoundFilter_RadioAirplane ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/HeliTransport/TCH_Helitransport_Panicking_Proste_me_odsud_dostante.ogg' Filter = TSoundFilter_RadioAirplane ),
             ]
         ),
         TAcknowDescriptor
@@ -37357,32 +37337,7 @@ export AcknowUnitContainer is TAcknowUnitContainerDescriptor
             Action        = TAcknowUnitAction_PositionForbidden
             Sounds        =
             [
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_Impossible_negativni.ogg' Filter = TSoundFilter_RadioAirplane ),
-            ]
-        ),
-        TAcknowDescriptor
-        (
-            MotherCountry = 'TCH'
-            TypeSpecific  = TAcknowUnitType_HeliTransport
-            Action        = TAcknowUnitAction_QuickMove
-            Sounds        =
-            [
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_Move_Fast_jedeme_tam.ogg' Filter = TSoundFilter_RadioAirplane ),
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_Move_Fast_nemuzeme_jet_rychleji.ogg' Filter = TSoundFilter_RadioAirplane ),
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_Move_Fast_plnou_rychlosti.ogg' Filter = TSoundFilter_RadioAirplane ),
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_Move_Fast_rozumim_konec.ogg' Filter = TSoundFilter_RadioAirplane ),
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_Move_Fast_slysim_jasne_a_zretelne.ogg' Filter = TSoundFilter_RadioAirplane ),
-            ]
-        ),
-        TAcknowDescriptor
-        (
-            MotherCountry = 'TCH'
-            TypeSpecific  = TAcknowUnitType_HeliTransport
-            Action        = TAcknowUnitAction_Reverse
-            Sounds        =
-            [
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_Reverse_hod_tam_zpatecku.ogg' Filter = TSoundFilter_RadioAirplane ),
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_Reverse_zpatecku_ridici.ogg' Filter = TSoundFilter_RadioAirplane ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/HeliTransport/TCH_Helitransport_Impossible_Negativni.ogg' Filter = TSoundFilter_RadioAirplane ),
             ]
         ),
         TAcknowDescriptor
@@ -37392,16 +37347,12 @@ export AcknowUnitContainer is TAcknowUnitContainerDescriptor
             Action        = TAcknowUnitAction_Select
             Sounds        =
             [
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_Select_ano_pane.ogg' Filter = TSoundFilter_RadioAirplane ),
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_Select_bez_chlastu_bych_tohle_neodridil.ogg' Filter = TSoundFilter_RadioAirplane ),
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_Select_cekame_na_vas_rozkaz.ogg' Filter = TSoundFilter_RadioAirplane ),
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_Select_je_mi_potesenim_pane.ogg' Filter = TSoundFilter_RadioAirplane ),
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_Select_jsme_pripraveni_nekoho_odvezt.ogg' Filter = TSoundFilter_RadioAirplane ),
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_Select_motor_jede_cekame_na_vas_rozkaz.ogg' Filter = TSoundFilter_RadioAirplane ),
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_Select_poslouchame.ogg' Filter = TSoundFilter_RadioAirplane ),
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_Select_potrebujete_svezt.ogg' Filter = TSoundFilter_RadioAirplane ),
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_Select_pripraven_k_preprave.ogg' Filter = TSoundFilter_RadioAirplane ),
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_Select_volal_si_tu_nekdo_odvoz.ogg' Filter = TSoundFilter_RadioAirplane ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/HeliTransport/TCH_Helitransport_Select_Ano_pane.ogg' Filter = TSoundFilter_RadioAirplane ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/HeliTransport/TCH_Helitransport_Select_K_vasim_sluzbam_hotel_6.ogg' Filter = TSoundFilter_RadioAirplane ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/HeliTransport/TCH_Helitransport_Select_Motor_bezi_cekame_na_vas_rozkaz.ogg' Filter = TSoundFilter_RadioAirplane ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/HeliTransport/TCH_Helitransport_Select_Potrebujete_svezt.ogg' Filter = TSoundFilter_RadioAirplane ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/HeliTransport/TCH_Helitransport_Select_Pripraven_k_preprave.ogg' Filter = TSoundFilter_RadioAirplane ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/HeliTransport/TCH_Helitransport_Select_Zavolal_si_tu_nekdo_odvoz.ogg' Filter = TSoundFilter_RadioAirplane ),
             ]
         ),
         TAcknowDescriptor
@@ -37411,7 +37362,7 @@ export AcknowUnitContainer is TAcknowUnitContainerDescriptor
             Action        = TAcknowUnitAction_ShootOnPosition
             Sounds        =
             [
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_Attack_Position_neptejte_se_proste_strilejte.ogg' Filter = TSoundFilter_RadioAirplane ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/HeliTransport/TCH_Helitransport_Attack_Position_Neptejte_se_proste_strilejte_.ogg' Filter = TSoundFilter_RadioAirplane ),
             ]
         ),
         TAcknowDescriptor
@@ -37421,17 +37372,7 @@ export AcknowUnitContainer is TAcknowUnitContainerDescriptor
             Action        = TAcknowUnitAction_Stop
             Sounds        =
             [
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_Stop_zastavte_zde.ogg' Filter = TSoundFilter_RadioAirplane ),
-            ]
-        ),
-        TAcknowDescriptor
-        (
-            MotherCountry = 'TCH'
-            TypeSpecific  = TAcknowUnitType_HeliTransport
-            Action        = TAcknowUnitAction_Surrender
-            Sounds        =
-            [
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_Surrender_opustte_vozidlo.ogg' Filter = TSoundFilter_RadioAirplane ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/HeliTransport/TCH_Helitransport_Stop_Zastavte_zde.ogg' Filter = TSoundFilter_RadioAirplane ),
             ]
         ),
         TAcknowDescriptor
@@ -37441,7 +37382,7 @@ export AcknowUnitContainer is TAcknowUnitContainerDescriptor
             Action        = TAcknowUnitAction_TargetDestroyed
             Sounds        =
             [
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_Target_Destroyed_o_jednoho_imperialistu_min.ogg' Filter = TSoundFilter_RadioAirplane ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/HeliTransport/TCH_Helitransport_Target_Destroyed_Dostal_jsem_ty_curaky.ogg' Filter = TSoundFilter_RadioAirplane ),
             ]
         ),
         TAcknowDescriptor
@@ -37451,8 +37392,7 @@ export AcknowUnitContainer is TAcknowUnitContainerDescriptor
             Action        = TAcknowUnitAction_Unload
             Sounds        =
             [
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_Unload_sup_ven_panove.ogg' Filter = TSoundFilter_RadioAirplane ),
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_Unload_vsichni_ven_hned.ogg' Filter = TSoundFilter_RadioAirplane ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/HeliTransport/TCH_Helitransport_Unload_Vypadnete_hned.ogg' Filter = TSoundFilter_RadioAirplane ),
             ]
         ),
         TAcknowDescriptor
@@ -37462,8 +37402,9 @@ export AcknowUnitContainer is TAcknowUnitContainerDescriptor
             Action        = TAcknowUnitAction_UnloadAtPosition
             Sounds        =
             [
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_UnloadAtPosition_na_teto_pozici_budeme_nasazovat.ogg' Filter = TSoundFilter_RadioAirplane ),
-                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/Transport/TCH_Transport_UnloadAtPosition_privezte_nas_tam.ogg' Filter = TSoundFilter_RadioAirplane ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/HeliTransport/TCH_Helitransport_UnloadAtPosition_Na_teto_pozici_budeme_vysazovat.ogg' Filter = TSoundFilter_RadioAirplane ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/HeliTransport/TCH_Helitransport_UnloadAtPosition_Privezte_nas_tam_taxi.ogg' Filter = TSoundFilter_RadioAirplane ),
+                Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/TCH/HeliTransport/TCH_Helitransport_UnloadAtPosition_Vsichni_ven.ogg' Filter = TSoundFilter_RadioAirplane ),
             ]
         ),
         TAcknowDescriptor

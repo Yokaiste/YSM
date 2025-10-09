@@ -16698,10 +16698,10 @@ export Descriptor_Missile_MANPAD_FIM92 is TEntityDescriptor
         ~/LinkTeamModuleDescriptor,
         TApparenceModuleDescriptor
         (
-            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_Blowpipe
+            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_Stinger
             Depiction     = Template_DescriptorMissileBase
             (
-                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Blowpipe
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Stinger
                 Actions = MAP[
                     ( "fx_propulsion_on", TRandomHappening(
                             Alternatives = [
@@ -16793,10 +16793,10 @@ export Descriptor_Missile_MANPAD_FIM92_A is TEntityDescriptor
         ~/LinkTeamModuleDescriptor,
         TApparenceModuleDescriptor
         (
-            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_Blowpipe
+            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_Stinger
             Depiction     = Template_DescriptorMissileBase
             (
-                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Blowpipe
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Stinger
                 Actions = MAP[
                     ( "fx_propulsion_on", TRandomHappening(
                             Alternatives = [
@@ -16983,10 +16983,10 @@ export Descriptor_Missile_MANPAD_Strela2M is TEntityDescriptor
         ~/LinkTeamModuleDescriptor,
         TApparenceModuleDescriptor
         (
-            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_Blowpipe
+            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_Strela
             Depiction     = Template_DescriptorMissileBase
             (
-                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Blowpipe
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Strela
                 Actions = MAP[
                     ( "fx_propulsion_on", TRandomHappening(
                             Alternatives = [
@@ -17078,10 +17078,10 @@ export Descriptor_Missile_MANPAD_Strela3 is TEntityDescriptor
         ~/LinkTeamModuleDescriptor,
         TApparenceModuleDescriptor
         (
-            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_Blowpipe
+            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_Strela
             Depiction     = Template_DescriptorMissileBase
             (
-                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Blowpipe
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Strela
                 Actions = MAP[
                     ( "fx_propulsion_on", TRandomHappening(
                             Alternatives = [
@@ -17250,6 +17250,101 @@ export Descriptor_Missile_MANPAD_igla is TEntityDescriptor
         ~/TargetDataModuleDescriptor,
     ]
 )
+export Descriptor_Missile_MissileAA_9K38_Igla_c is TEntityDescriptor
+(
+    DescriptorId       = GUID:{b283ffa6-1d62-4048-ba7d-302a04872e0d}
+    ClassNameForDebug  = 'Missile_MissileAA_9K38_Igla_c'
+    ModulesDescriptors = [
+        ~/SimpleTypeUnitModuleDescriptor,
+        TTagsModuleDescriptor
+        (
+            TagSet = [
+                "MISSILE",
+                "MISSILE_MissileAA_9K38_Igla_c",
+            ]
+        ),
+        ~/MissileFlagsModuleDescriptor,
+        ~/MissilePositionModuleDescriptor,
+        ~/LinkTeamModuleDescriptor,
+        TApparenceModuleDescriptor
+        (
+            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_Igla
+            Depiction     = Template_DescriptorMissileBase
+            (
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Igla
+                Actions = MAP[
+                    ( "fx_propulsion_on", TRandomHappening(
+                            Alternatives = [
+                                template_PropulsionActionHappening( Action = $/GFX/GameFx/fx_propulsion_missile_AA_petit_1 ),
+                                template_PropulsionActionHappening( Action = $/GFX/GameFx/fx_propulsion_missile_AA_petit_2 ),
+                                template_PropulsionActionHappening( Action = $/GFX/GameFx/fx_propulsion_missile_AA_petit_3 ),
+                                template_PropulsionActionHappening( Action = $/GFX/GameFx/fx_propulsion_missile_AA_petit_4 ),
+                            ]
+                        )),
+                    ( "fx_propulsion_off", template_PropulsionActionHappening( Action = $/GFX/GameFx/fx_arret_missile_AA_moyen )),
+                ]
+            )
+        ),
+        TGuidedMissileModuleDescriptor
+        (
+        ),
+        TGuidedMissileMovementModuleDescriptor
+        (
+            DefaultConfig = TGuidedMissileMovementConfigDescriptor
+            (
+                MaxSpeedGRU        = 5300
+                MaxAccelerationGRU = 2826
+                AutoGyr            = 1.7453292519943295
+            )
+            UncontrollableConfig = TGuidedMissileMovementConfigDescriptor
+            (
+                MaxSpeedGRU        = 5300
+                MaxAccelerationGRU = 2826
+                AutoGyr            = 0.17453292519943295
+            )
+            AscendantPhaseConfig = nil
+            TerminalPhaseConfig = nil
+            CruiseAltitudeGRU = 0.0
+            TimeMaxBetweenRandomMoveWhenUncontrollable = 2
+            TimeMinBetweenRandomMoveWhenUncontrollable = 1.0
+            TimeBetweenChaosUpdates = 0.1
+            RangeChaos = 1000
+            AngleMaxForRandomMouvUncontrollable = 2.0
+            RotationSpeedWhenUncontrollable = 5
+        ),
+        TBaseDamageModuleDescriptor
+        (
+            MaxPhysicalDamages = 2
+            MaxSuppressionDamages = ~/Missile_MaxSuppressionDamages
+            MaxStunDamages = ~/Missile_MaxStunDamages
+        ),
+        TDamageModuleDescriptor
+        (
+            SuppressDamagesRegenRatio = ~/Missile_SuppressDamagesRegenRatioList
+            StunDamagesRegen = ~/Missile_StunDamagesRegen
+            BlindageProperties = TBlindageProperties
+            (
+                ResistanceFront = TResistanceTypeRTTI(Family=ResistanceFamily_vehicule Index=1)
+                ResistanceSides = TResistanceTypeRTTI(Family=ResistanceFamily_vehicule Index=1)
+                ResistanceRear = TResistanceTypeRTTI(Family=ResistanceFamily_vehicule Index=1)
+                ResistanceTop = TResistanceTypeRTTI(Family=ResistanceFamily_vehicule Index=1)
+                ExplosiveReactiveArmor = False
+            )
+            KillWhenDamagesReachMax = True
+            HitRollECM = 0.0
+            AutoOrientation = False
+            UseTopArmorAgainstFire = False
+        ),
+        TDangerousnessModuleDescriptor(Dangerousness  = 200),
+        TCapaciteModuleDescriptor
+        (
+            DefaultSkillList = [
+                $/GFX/EffectCapacity/Capacite_StressOnMiss_low,
+            ]
+        ),
+        ~/TargetDataModuleDescriptor,
+    ]
+)
 export Descriptor_Missile_Mistral is TEntityDescriptor
 (
     DescriptorId       = GUID:{ba2c3243-2356-46de-b9cc-a2a6b12e1c2e}
@@ -17268,10 +17363,10 @@ export Descriptor_Missile_Mistral is TEntityDescriptor
         ~/LinkTeamModuleDescriptor,
         TApparenceModuleDescriptor
         (
-            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_Igla
+            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_Stinger
             Depiction     = Template_DescriptorMissileBase
             (
-                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Igla
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Stinger
                 Actions = MAP[
                     ( "fx_propulsion_on", TRandomHappening(
                             Alternatives = [
@@ -17363,10 +17458,10 @@ export Descriptor_Missile_Mistral_Celtic_x4 is TEntityDescriptor
         ~/LinkTeamModuleDescriptor,
         TApparenceModuleDescriptor
         (
-            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_Igla
+            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_Stinger
             Depiction     = Template_DescriptorMissileBase
             (
-                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Igla
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Stinger
                 Actions = MAP[
                     ( "fx_propulsion_on", TRandomHappening(
                             Alternatives = [
@@ -18373,10 +18468,10 @@ export Descriptor_Missile_SAM_FASTA_Strela2M_x4 is TEntityDescriptor
         ~/LinkTeamModuleDescriptor,
         TApparenceModuleDescriptor
         (
-            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_Blowpipe
+            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_Strela
             Depiction     = Template_DescriptorMissileBase
             (
-                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Blowpipe
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Strela
                 Actions = MAP[
                     ( "fx_propulsion_on", TRandomHappening(
                             Alternatives = [
@@ -18468,10 +18563,10 @@ export Descriptor_Missile_SAM_FASTA_Strela2M_x4_TOWED is TEntityDescriptor
         ~/LinkTeamModuleDescriptor,
         TApparenceModuleDescriptor
         (
-            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_Blowpipe
+            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_Strela
             Depiction     = Template_DescriptorMissileBase
             (
-                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Blowpipe
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Strela
                 Actions = MAP[
                     ( "fx_propulsion_on", TRandomHappening(
                             Alternatives = [
@@ -18563,10 +18658,10 @@ export Descriptor_Missile_SAM_FIM92_Stinger_CS is TEntityDescriptor
         ~/LinkTeamModuleDescriptor,
         TApparenceModuleDescriptor
         (
-            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_Blowpipe
+            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_Stinger
             Depiction     = Template_DescriptorMissileBase
             (
-                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Blowpipe
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Stinger
                 Actions = MAP[
                     ( "fx_propulsion_on", TRandomHappening(
                             Alternatives = [
@@ -18658,10 +18753,10 @@ export Descriptor_Missile_SAM_FIM92_Stinger_CS_x4 is TEntityDescriptor
         ~/LinkTeamModuleDescriptor,
         TApparenceModuleDescriptor
         (
-            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_Blowpipe
+            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_Stinger
             Depiction     = Template_DescriptorMissileBase
             (
-                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Blowpipe
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Stinger
                 Actions = MAP[
                     ( "fx_propulsion_on", TRandomHappening(
                             Alternatives = [
@@ -18753,10 +18848,10 @@ export Descriptor_Missile_SAM_FIM92_Stinger_x4 is TEntityDescriptor
         ~/LinkTeamModuleDescriptor,
         TApparenceModuleDescriptor
         (
-            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_Blowpipe
+            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_Stinger
             Depiction     = Template_DescriptorMissileBase
             (
-                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Blowpipe
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Stinger
                 Actions = MAP[
                     ( "fx_propulsion_on", TRandomHappening(
                             Alternatives = [
@@ -18848,10 +18943,10 @@ export Descriptor_Missile_SAM_FIM92_Stinger_x8 is TEntityDescriptor
         ~/LinkTeamModuleDescriptor,
         TApparenceModuleDescriptor
         (
-            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_Blowpipe
+            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_Stinger
             Depiction     = Template_DescriptorMissileBase
             (
-                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Blowpipe
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Stinger
                 Actions = MAP[
                     ( "fx_propulsion_on", TRandomHappening(
                             Alternatives = [
@@ -18943,10 +19038,10 @@ export Descriptor_Missile_SAM_FIM92C is TEntityDescriptor
         ~/LinkTeamModuleDescriptor,
         TApparenceModuleDescriptor
         (
-            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_Blowpipe
+            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_Stinger
             Depiction     = Template_DescriptorMissileBase
             (
-                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Blowpipe
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Stinger
                 Actions = MAP[
                     ( "fx_propulsion_on", TRandomHappening(
                             Alternatives = [
@@ -19983,10 +20078,10 @@ export Descriptor_Missile_SAM_Mistral is TEntityDescriptor
         ~/LinkTeamModuleDescriptor,
         TApparenceModuleDescriptor
         (
-            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_Blowpipe
+            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_Stinger
             Depiction     = Template_DescriptorMissileBase
             (
-                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Blowpipe
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Stinger
                 Actions = MAP[
                     ( "fx_propulsion_on", TRandomHappening(
                             Alternatives = [
@@ -21300,10 +21395,10 @@ export Descriptor_Missile_SAM_Strela1_x4 is TEntityDescriptor
         ~/LinkTeamModuleDescriptor,
         TApparenceModuleDescriptor
         (
-            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_Igla
+            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_Strela
             Depiction     = Template_DescriptorMissileBase
             (
-                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Igla
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Strela
                 Actions = MAP[
                     ( "fx_propulsion_on", TRandomHappening(
                             Alternatives = [
@@ -21395,10 +21490,10 @@ export Descriptor_Missile_SAM_Strela10_x4 is TEntityDescriptor
         ~/LinkTeamModuleDescriptor,
         TApparenceModuleDescriptor
         (
-            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_Igla
+            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_Strela
             Depiction     = Template_DescriptorMissileBase
             (
-                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Igla
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Strela
                 Actions = MAP[
                     ( "fx_propulsion_on", TRandomHappening(
                             Alternatives = [
@@ -21490,10 +21585,10 @@ export Descriptor_Missile_SAM_Strela10M3_x4 is TEntityDescriptor
         ~/LinkTeamModuleDescriptor,
         TApparenceModuleDescriptor
         (
-            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_Igla
+            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_Strela
             Depiction     = Template_DescriptorMissileBase
             (
-                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Igla
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Strela
                 Actions = MAP[
                     ( "fx_propulsion_on", TRandomHappening(
                             Alternatives = [
@@ -21585,10 +21680,10 @@ export Descriptor_Missile_SAM_Strela2_x12 is TEntityDescriptor
         ~/LinkTeamModuleDescriptor,
         TApparenceModuleDescriptor
         (
-            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_Igla
+            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_Strela
             Depiction     = Template_DescriptorMissileBase
             (
-                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Igla
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Strela
                 Actions = MAP[
                     ( "fx_propulsion_on", TRandomHappening(
                             Alternatives = [
@@ -21680,10 +21775,10 @@ export Descriptor_Missile_SAM_Strela2_x2 is TEntityDescriptor
         ~/LinkTeamModuleDescriptor,
         TApparenceModuleDescriptor
         (
-            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_Igla
+            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_Strela
             Depiction     = Template_DescriptorMissileBase
             (
-                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Igla
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Strela
                 Actions = MAP[
                     ( "fx_propulsion_on", TRandomHappening(
                             Alternatives = [
@@ -21775,10 +21870,10 @@ export Descriptor_Missile_SAM_Strela2_x4 is TEntityDescriptor
         ~/LinkTeamModuleDescriptor,
         TApparenceModuleDescriptor
         (
-            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_Igla
+            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_Strela
             Depiction     = Template_DescriptorMissileBase
             (
-                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Igla
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Strela
                 Actions = MAP[
                     ( "fx_propulsion_on", TRandomHappening(
                             Alternatives = [
@@ -21870,10 +21965,10 @@ export Descriptor_Missile_SAM_Strela2M_x2 is TEntityDescriptor
         ~/LinkTeamModuleDescriptor,
         TApparenceModuleDescriptor
         (
-            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_Blowpipe
+            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_Strela
             Depiction     = Template_DescriptorMissileBase
             (
-                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Blowpipe
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Strela
                 Actions = MAP[
                     ( "fx_propulsion_on", TRandomHappening(
                             Alternatives = [
@@ -21965,10 +22060,10 @@ export Descriptor_Missile_SAM_Strela2M_x2_Static is TEntityDescriptor
         ~/LinkTeamModuleDescriptor,
         TApparenceModuleDescriptor
         (
-            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_Blowpipe
+            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_Strela
             Depiction     = Template_DescriptorMissileBase
             (
-                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Blowpipe
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Strela
                 Actions = MAP[
                     ( "fx_propulsion_on", TRandomHappening(
                             Alternatives = [
@@ -22060,10 +22155,10 @@ export Descriptor_Missile_Starstreak_x3 is TEntityDescriptor
         ~/LinkTeamModuleDescriptor,
         TApparenceModuleDescriptor
         (
-            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_Blowpipe
+            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_Starstreak
             Depiction     = Template_DescriptorMissileBase
             (
-                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Blowpipe
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Starstreak
                 Actions = MAP[
                     ( "fx_propulsion_on", TRandomHappening(
                             Alternatives = [

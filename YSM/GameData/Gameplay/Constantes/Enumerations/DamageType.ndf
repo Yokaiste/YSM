@@ -1,4 +1,4 @@
-// Enum TModernWarfareDamageType // a maintenir synchro avec EugIA_ModernWarfare/ModernWarfareArmeArmure.h
+// Enum TModernWarfareDamageType // a maintenir synchro avec EugIA_Common/ModernWarfareArmeArmure.h
 EDamageType is TBaseClass
 (
     Suppress  is 0

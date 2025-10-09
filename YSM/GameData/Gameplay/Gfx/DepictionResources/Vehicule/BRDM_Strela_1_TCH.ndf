@@ -1,0 +1,20 @@
+export Modele_BRDM_Strela_1_TCH is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/DCA/BRDM_Strela_1/BRDM_Strela_1.fbx"
+    Textures="GameData:/Assets/3D/Units/TCH/DCA/BRDM_Strela_1"
+)
+
+export Modele_BRDM_Strela_1_TCH_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/DCA/BRDM_Strela_1_MID/BRDM_Strela_1_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/TCH/DCA/BRDM_Strela_1_MID"
+)
+
+export Modele_BRDM_Strela_1_TCH_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/DCA/BRDM_Strela_1_LOW/BRDM_Strela_1_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/TCH/DCA/BRDM_Strela_1_LOW"
+)
+
+
+

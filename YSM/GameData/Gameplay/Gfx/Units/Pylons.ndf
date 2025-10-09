@@ -320,6 +320,7 @@ PylonSet_FRPodAirplane is TPylonSet
 (
     Pylons = [
         PylonDepictionCommon( ModelResource = $/GFX/DepictionResources/PodFRModelPylon_4 ),
+        PylonDepictionCommon( ModelResource = $/GFX/DepictionResources/PodFRModelPylon_18 ),
         PylonDepictionCommon( ModelResource = $/GFX/DepictionResources/PodFRModelResource ),
     ]
 )
@@ -328,6 +329,7 @@ PylonSet_FRPodAirplaneShowroom is TPylonSet
 (
     Pylons = [
         PylonDepictionShowroom( ModelResource = $/GFX/DepictionResources/PodFRModelPylon_4 ),
+        PylonDepictionShowroom( ModelResource = $/GFX/DepictionResources/PodFRModelPylon_18 ),
         PylonDepictionShowroom( ModelResource = $/GFX/DepictionResources/PodFRModelResource ),
     ]
 )

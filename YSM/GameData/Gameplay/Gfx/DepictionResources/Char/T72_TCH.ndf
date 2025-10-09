@@ -1,0 +1,19 @@
+export Modele_T72_TCH is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/Char/T72/T72.fbx"
+)
+
+export Modele_T72_TCH_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/Char/T72_MID/T72_MID.fbx"
+)
+
+export Modele_T72_TCH_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/TCH/Char/T72_LOW/T72_LOW.fbx"
+)
+
+export Modele_T72_TCH_Tourelle_02 is TResourceMesh
+(
+    Mesh=ModelFile_NSVT_no_ammo
+)

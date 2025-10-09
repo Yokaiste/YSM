@@ -453,7 +453,7 @@ export Pool_Objective_Attack is TPoolModel
             Required = false
             IndexPriorityOverPrice = true
             Nb = 1
-            PriceComparisonMethod = EPriceComparatorType/MostExpensive
+            PriceComparisonMethod = EPriceComparatorType/Random
             TagsPriority = [
                 "Char_Standard",
                 "Char"

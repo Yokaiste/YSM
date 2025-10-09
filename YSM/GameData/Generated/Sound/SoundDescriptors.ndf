@@ -1792,6 +1792,47 @@ export SoundHappening_FULDA_105mm_M1_Abrams is TSoundHappening
 )
 
 
+export Sound_FULDA_105mm_M56 is TSoundSet
+(
+    Items = 
+    [
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SoundSettings_Tir_Canon_Gros
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sounds/SFX/Canon/105mm_tir_M56_1.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SoundSettings_Tir_Canon_Gros
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sounds/SFX/Canon/105mm_tir_M56_2.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SoundSettings_Tir_Canon_Gros
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sounds/SFX/Canon/105mm_tir_M56_3.wav"
+            )
+            UseSpecialLoop = False
+        ),
+    ]
+)
+
+export SoundHappening_FULDA_105mm_M56 is TSoundHappening
+(
+    SoundDescList = Sound_FULDA_105mm_M56
+    Volume = 2
+)
+
+
 export Sound_FULDA_105mm_M60_Patton is TSoundSet
 (
     Items = 
@@ -4330,6 +4371,38 @@ export Sound_FULDA_Bereg_130mm is TSoundSet
 export SoundHappening_FULDA_Bereg_130mm is TSoundHappening
 (
     SoundDescList = Sound_FULDA_Bereg_130mm
+    Volume = 2
+)
+
+
+export Sound_FULDA_BloodHound_Firing is TSoundSet
+(
+    Items = 
+    [
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SoundSettings_Tir_Missile_Gros
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sounds/SFX/Missiles/Tir_Bloodhound_1.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SoundSettings_Tir_Missile_Gros
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sounds/SFX/Missiles/Tir_Bloodhound_2.wav"
+            )
+            UseSpecialLoop = False
+        ),
+    ]
+)
+
+export SoundHappening_FULDA_BloodHound_Firing is TSoundHappening
+(
+    SoundDescList = Sound_FULDA_BloodHound_Firing
     Volume = 2
 )
 
@@ -9640,6 +9713,56 @@ export SoundHappening_FULDA_PzF_44 is TSoundHappening
 )
 
 
+export Sound_FULDA_QF_25pdr_87mm is TSoundSet
+(
+    Items = 
+    [
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SoundSettings_Tir_Canon_Gros
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sounds/SFX/Canon/87mm_tir_QF_25pdr_1.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SoundSettings_Tir_Canon_Gros
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sounds/SFX/Canon/87mm_tir_QF_25pdr_2.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SoundSettings_Tir_Canon_Gros
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sounds/SFX/Canon/87mm_tir_QF_25pdr_3.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SoundSettings_Tir_Canon_Gros
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sounds/SFX/Canon/87mm_tir_QF_25pdr_4.wav"
+            )
+            UseSpecialLoop = False
+        ),
+    ]
+)
+
+export SoundHappening_FULDA_QF_25pdr_87mm is TSoundHappening
+(
+    SoundDescList = Sound_FULDA_QF_25pdr_87mm
+    Volume = 2
+)
+
+
 export Sound_FULDA_R27_Vympel_Firing is TSoundSet
 (
     Items = 
@@ -11129,6 +11252,38 @@ export SoundHappening_FULDA_Sniper_VSS_Vintorez_1_Round is TSoundHappening
 (
     SoundDescList = Sound_FULDA_Sniper_VSS_Vintorez_1_Round
     Volume = 1
+)
+
+
+export Sound_FULDA_StarStreak_Firing is TSoundSet
+(
+    Items = 
+    [
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SoundSettings_Tir_Missile_Moyen
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sounds/SFX/Missiles/Tir_StarStreak_1.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SoundSettings_Tir_Missile_Moyen
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sounds/SFX/Missiles/Tir_StarStreak_2.wav"
+            )
+            UseSpecialLoop = False
+        ),
+    ]
+)
+
+export SoundHappening_FULDA_StarStreak_Firing is TSoundHappening
+(
+    SoundDescList = Sound_FULDA_StarStreak_Firing
+    Volume = 2
 )
 
 

@@ -212,7 +212,10 @@ SOV_Rezervisti_LOW is 'GameData:/Assets/3D/Units/URSS/Infanterie/Rezervisti/Reze
 
 SOV_Morskaya_1 is 'GameData:/Assets/3D/Units/URSS/Infanterie/Morskaya/Morskaya_1.fbx'
 SOV_Morskaya_2 is 'GameData:/Assets/3D/Units/URSS/Infanterie/Morskaya/Morskaya_2.fbx'
+SOV_Morskaya_3 is 'GameData:/Assets/3D/Units/URSS/Infanterie/Morskaya/Morskaya_3.fbx'
 SOV_Morskaya_NCO is 'GameData:/Assets/3D/Units/URSS/Infanterie/Morskaya/Morskaya_NCO.fbx'
+SOV_Morskaya_Officer is 'GameData:/Assets/3D/Units/URSS/Infanterie/Morskaya/Morskaya_Officer.fbx'
+SOV_Morskaya_Scout is 'GameData:/Assets/3D/Units/URSS/Infanterie/VDV/Morskaya_Scout.fbx'
 SOV_Morskaya_LOW is 'GameData:/Assets/3D/Units/URSS/Infanterie/Morskaya/Morskaya_1.fbx'
 
 SOV_KGB_1 is 'GameData:/Assets/3D/Units/URSS/Infanterie/KGB/KGB_1.fbx'
@@ -226,6 +229,33 @@ SOV_KGB_LOW is 'GameData:/Assets/3D/Units/DDR/Infanterie/Grenzer/Grenzer_1_LOW.f
 // export Modele_Motostrelki_sov is TResourceMesh( Mesh="GameData:/Assets/3D/Units/URSS/Infanterie/MotoStrelki/MotoStrelki_1.fbx" )
 // export Modele_Motostrelki_sov_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/URSS/Infanterie/MotoStrelki/MotoStrelki_1.fbx" )
 //------------------------------------------------------------------------------
+
+//MORSKAYA:
+
+//Security_Naval_SOV
+export Modele_Security_Naval_SOV is TResourceMesh( Mesh=SOV_Morskaya_NCO )
+export Modele_Security_Naval_SOV_02 is TResourceMesh( Mesh=SOV_Morskaya_3 )
+export Modele_Security_Naval_SOV_03 is TResourceMesh( Mesh=SOV_Morskaya_1 )
+export Modele_Security_Naval_SOV_04 is TResourceMesh( Mesh=SOV_Morskaya_2 )
+export Modele_Security_Naval_SOV_LOW is TResourceMesh( Mesh=SOV_Morskaya_LOW )
+
+//Engineers_CMD_Naval_SOV
+export Modele_Engineers_CMD_Naval_SOV is TResourceMesh( Mesh=SOV_Morskaya_Officer )
+export Modele_Engineers_CMD_Naval_SOV_02 is TResourceMesh( Mesh=SOV_Morskaya_NCO )
+export Modele_Engineers_CMD_Naval_SOV_03 is TResourceMesh( Mesh=SOV_Morskaya_1 )
+export Modele_Engineers_CMD_Naval_SOV_04 is TResourceMesh( Mesh=SOV_Morskaya_2 )
+export Modele_Engineers_CMD_Naval_SOV_05 is TResourceMesh( Mesh=SOV_Morskaya_3 )
+export Modele_Engineers_CMD_Naval_SOV_LOW is TResourceMesh( Mesh=SOV_Morskaya_LOW )
+
+//Scout_Naval_SOV
+export Modele_Scout_Naval_SOV is TResourceMesh( Mesh=SOV_Morskaya_NCO )
+export Modele_Scout_Naval_SOV_02 is TResourceMesh( Mesh=SOV_Morskaya_1 )
+export Modele_Scout_Naval_SOV_03 is TResourceMesh( Mesh=SOV_Morskaya_Scout )
+export Modele_Scout_Naval_SOV_LOW is TResourceMesh( Mesh=SOV_Morskaya_LOW )
+
+
+//------------------------------------------------------------------------------
+
 
 //KGB_BorderGuard_Aero_SOV
 export Modele_KGB_BorderGuard_Aero_SOV is TResourceMesh( Mesh=SOV_KGB_2 )
@@ -247,12 +277,6 @@ export Modele_Partisan_SOV_03 is TResourceMesh( Mesh=SOV_Rezervisti_2 )
 export Modele_Partisan_SOV_04 is TResourceMesh( Mesh=SOV_Rezervisti_3 )
 export Modele_Partisan_SOV_LOW is TResourceMesh( Mesh=SOV_Rezervisti_LOW )
 
-//Security_Naval_SOV
-export Modele_Security_Naval_SOV is TResourceMesh( Mesh=SOV_Morskaya_NCO )
-export Modele_Security_Naval_SOV_02 is TResourceMesh( Mesh=SOV_Morskaya_NCO )
-export Modele_Security_Naval_SOV_03 is TResourceMesh( Mesh=SOV_Morskaya_1 )
-export Modele_Security_Naval_SOV_04 is TResourceMesh( Mesh=SOV_Morskaya_2 )
-export Modele_Security_Naval_SOV_LOW is TResourceMesh( Mesh=SOV_Morskaya_LOW )
 
 //MP_Combat_SOV
 export Modele_MP_Combat_SOV is TResourceMesh( Mesh=SOV_MotoStrelki_Officer )
@@ -3043,6 +3067,10 @@ RFA_PzGrenadier_sniper is 'GameData:/Assets/3D/Units/RFA/Infanterie/PzGrenadier/
 RFA_PzGrenadier_spe is 'GameData:/Assets/3D/Units/RFA/Infanterie/PzGrenadier/PzGrenadier_spe.fbx'
 RFA_PzGrenadier_LOW is 'GameData:/Assets/3D/Units/RFA/Infanterie/PzGrenadier/PzGrenadier_1_LOW.fbx'
 
+RFA_Marinesicherung is 'GameData:/Assets/3D/Units/RFA/Infanterie/PzGrenadier/Marinesicherung.fbx'
+RFA_Strandmeister_1 is 'GameData:/Assets/3D/Units/RFA/Infanterie/PzGrenadier/Strandmeister_1.fbx'
+RFA_Strandmeister_NCO is 'GameData:/Assets/3D/Units/RFA/Infanterie/PzGrenadier/Strandmeister_NCO.fbx'
+
 Feldjager_2 is 'GameData:/Assets/3D/Units/RFA/Infanterie/PzGrenadier/Feldjager_2.fbx'
 Feldjager_NCO is 'GameData:/Assets/3D/Units/RFA/Infanterie/PzGrenadier/Feldjager_NCO.fbx'
 
@@ -3053,8 +3081,31 @@ SEK_1 is 'GameData:/Assets/3D/Units/RFA/Infanterie/BGS/SEK_1.fbx'
 SEK_2 is 'GameData:/Assets/3D/Units/RFA/Infanterie/BGS/SEK_2.fbx'
 SEK_3 is 'GameData:/Assets/3D/Units/RFA/Infanterie/BGS/SEK_3.fbx'
 
+RFA_KSM_1 is 'GameData:/Assets/3D/Units/US/Infanterie/Rangers/KSM_1.fbx'
+RFA_KSM_2 is 'GameData:/Assets/3D/Units/US/Infanterie/Rangers/KSM_2.fbx'
+
 //'GameData:/Assets/3D/Units/RFA/Infanterie/PzGrenadier/Feldjager_2.fbx'
 //'GameData:/Assets/3D/Units/RFA/Infanterie/PzGrenadier/Feldjager_NCO.fbx'
+
+//------------------------------------------------------------------------------
+//Strandmeister_RFA
+export Modele_Strandmeister_RFA is TResourceMesh( Mesh=RFA_Strandmeister_NCO )
+export Modele_Strandmeister_RFA_02 is TResourceMesh( Mesh=RFA_Strandmeister_NCO )
+export Modele_Strandmeister_RFA_03 is TResourceMesh( Mesh=RFA_Strandmeister_1 )
+export Modele_Strandmeister_RFA_LOW is TResourceMesh( Mesh=RFA_Jager_LOW )
+
+//KSM_RFA
+export Modele_KSM_RFA is TResourceMesh( Mesh=US_GI_Sniper )
+export Modele_KSM_RFA_02 is TResourceMesh( Mesh=RFA_KSM_1 )
+export Modele_KSM_RFA_03 is TResourceMesh( Mesh=RFA_KSM_2 )
+export Modele_KSM_RFA_04 is TResourceMesh( Mesh=US_Rangers_1 )
+export Modele_KSM_RFA_LOW is TResourceMesh( Mesh=RFA_KSM_1 )
+
+//Security_Marine_RFA
+export Modele_Security_Marine_RFA is TResourceMesh( Mesh=RFA_Jager_NCO )
+export Modele_Security_Marine_RFA_02 is TResourceMesh( Mesh=RFA_Jager_1 )
+export Modele_Security_Marine_RFA_03 is TResourceMesh( Mesh=RFA_Marinesicherung )
+export Modele_Security_Marine_RFA_LOW is TResourceMesh( Mesh=RFA_Jager_LOW )
 
 //------------------------------------------------------------------------------
 //SEK_RFA
@@ -3266,16 +3317,6 @@ export Modele_LRRP_RFA_04 is TResourceMesh( Mesh=RFA_Fernspaher_2 )
 export Modele_LRRP_RFA_05 is TResourceMesh( Mesh=RFA_Fernspaher_2 )
 export Modele_LRRP_RFA_06 is TResourceMesh( Mesh=RFA_Fernspaher_2 )
 export Modele_LRRP_RFA_LOW is TResourceMesh( Mesh=RFA_Fernspaher_LOW )
-
-
-//KSM_RFA
-export Modele_KSM_RFA is TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/Infanterie/GI/GI_1.fbx" )
-export Modele_KSM_RFA_02 is TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/Infanterie/GI/GI_1.fbx" )
-export Modele_KSM_RFA_03 is TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/Infanterie/GI/GI_1.fbx" )
-export Modele_KSM_RFA_04 is TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/Infanterie/GI/GI_1.fbx" )
-export Modele_KSM_RFA_05 is TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/Infanterie/GI/GI_1.fbx" )
-export Modele_KSM_RFA_06 is TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/Infanterie/GI/GI_1.fbx" )
-export Modele_KSM_RFA_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/US/Infanterie/GI/GI_1.fbx" )
 
 //Reserve_Polizei_RFA
 export Modele_Reserve_Polizei_RFA is TResourceMesh( Mesh=FRP_1 )
@@ -4022,6 +4063,18 @@ UK_Gurkhas_2 is 'GameData:/Assets/3D/Units/UK/Infanterie/Gurkhas/Gurkhas_2.fbx'
 UK_Gurkhas_sniper is 'GameData:/Assets/3D/Units/UK/Infanterie/Gurkhas/Gurkhas_sniper.fbx'
 UK_Gurkhas_spe is 'GameData:/Assets/3D/Units/UK/Infanterie/Gurkhas/Gurkhas_spe.fbx'
 UK_Gurkhas_1_LOW is 'GameData:/Assets/3D/Units/UK/Infanterie/Gurkhas/Gurkhas_1_LOW.fbx'
+//------------------------------------------------------------------------------
+UK_SAS_G_1 is 'GameData:/Assets/3D/Units/UK/Infanterie/SAS_G/SAS_G_1.fbx'
+UK_SAS_G_2 is 'GameData:/Assets/3D/Units/UK/Infanterie/SAS_G/SAS_G_2.fbx'
+//------------------------------------------------------------------------------
+UK_Ulster_1 is 'GameData:/Assets/3D/Units/UK/Infanterie/Ulster/Ulster_1.fbx'
+UK_Ulster_2 is 'GameData:/Assets/3D/Units/UK/Infanterie/Ulster/Ulster_2.fbx'
+UK_Ulster_NCO is 'GameData:/Assets/3D/Units/UK/Infanterie/Ulster/Ulster_NCO.fbx'
+//------------------------------------------------------------------------------
+UK_Guard_Officer is 'GameData:/Assets/3D/Units/UK/Infanterie/Royal_Guard_Officer/Guard_Officer.fbx'
+//------------------------------------------------------------------------------
+UK_HSF_1 is 'GameData:/Assets/3D/Units/UK/Infanterie/HSF/HSF_1.fbx'
+UK_HSF_NCO is 'GameData:/Assets/3D/Units/UK/Infanterie/HSF/HSF_NCO.fbx'
 
 //Pathfinders_UK
 export Modele_Pathfinders_UK is TResourceMesh( Mesh=UK_Para_2 )
@@ -4374,7 +4427,8 @@ export Modele_SAS_UK_03 is  TResourceMesh( Mesh=UK_SAS_NCO )
 export Modele_SAS_UK_LOW is TResourceMesh( Mesh=UK_SAS_1_LOW )
 
 //SAS_G_UK
-export Modele_SAS_G_UK is TResourceMesh( Mesh=UK_SAS_1 )
+export Modele_SAS_G_UK is TResourceMesh( Mesh=UK_SAS_G_1 )
+export Modele_SAS_G_UK_02 is TResourceMesh( Mesh=UK_SAS_G_2 )
 export Modele_SAS_G_UK_LOW is TResourceMesh( Mesh=UK_SAS_1_LOW )
 
 //RMP_UK

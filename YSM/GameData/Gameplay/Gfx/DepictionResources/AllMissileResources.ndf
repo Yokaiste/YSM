@@ -100,6 +100,7 @@ export Modele_Missile_M117_340Kg is    TResourceMesh( Mesh="GameData:/Assets/3D/
 export Modele_Missile_Swingfire is    TResourceMesh( Mesh="GameData:/Assets/3D/Units/Ammo/Missiles/UK/Swingfire/Swingfire.fbx" )
 export Modele_Missile_AJ168_TV_Martel is TResourceMesh( Mesh="GameData:/Assets/3D/Units/Ammo/Missiles/UK/AJ168_TV_Martel/AJ168_TV_Martel.fbx" )
 export Modele_Missile_Bloodhound is TResourceMesh( Mesh="GameData:/Assets/3D/Units/Ammo/Missiles/UK/Bloodhound/Bloodhound.fbx" )
+export Modele_Missile_Starstreak is  TResourceMesh( Mesh="GameData:/Assets/3D/Units/Ammo/Missiles/UK/Starstreak/Starstreak.fbx" )
 
 //--emports ITA-----------------------------------------------------------------------------------------------------
 export Modele_Missile_Aspide_1A is TResourceMesh( Mesh="GameData:/Assets/3D/Units/Ammo/Missiles/ITA/Aspide_1A/Aspide_1A.fbx" )

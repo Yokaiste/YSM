@@ -1,0 +1,19 @@
+export Modele_DANA_SOV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Artillerie/DANA/DANA.fbx"
+    Textures="GameData:/Assets/3D/Units/URSS/Artillerie/DANA"
+)
+
+export Modele_DANA_SOV_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Artillerie/DANA_MID/DANA_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/URSS/Artillerie/DANA_MID"
+
+)
+
+export Modele_DANA_SOV_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/POL/Artillerie/DANA_LOW/DANA_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/URSS/Artillerie/DANA_LOW"
+
+)

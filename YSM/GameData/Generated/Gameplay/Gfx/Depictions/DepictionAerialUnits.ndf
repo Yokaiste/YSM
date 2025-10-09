@@ -13983,6 +13983,77 @@ unnamed TacticAerialDepictionRegistration
 
         SubDepictionGenerators = [ SubGenerators_Harrier_CLU_UK ]
 )
+// Dépiction de l'unité Harrier_GR5_CLU_UK
+Op_Harrier_GR5_CLU_UK_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
+(
+    Connoisseur = MissileCarriage_Harrier_GR5_CLU_UK
+    FireEffectTag = "weapon_effet_tag2"
+    NbProj = 1
+    WeaponIndex = 2
+    WeaponShootDataPropertyName = 
+    [
+        "WeaponShootData_0_2",
+    ]
+)
+Op_Harrier_GR5_CLU_UK_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
+(
+    Connoisseur = MissileCarriage_Harrier_GR5_CLU_UK
+    FireEffectTag = "weapon_effet_tag3"
+    NbProj = 1
+    WeaponIndex = 3
+    WeaponShootDataPropertyName = 
+    [
+        "WeaponShootData_0_3",
+    ]
+)
+unnamed TacticAerialDepictionRegistration
+(
+    Deviator = DepictionDeviator_Airplane
+    AdditionalTextures = $/M3D/Shader/AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
+    CoatingName = 'Harrier_GR5_CLU_UK'
+    Alternatives = Alternatives_Harrier_GR5_CLU_UK
+
+    Operators = 
+        [
+            $/GFX/Sound/DepictionOperator_MovementSound_SM_SD_avion_bombardier_Harrier,
+            DepictionOperator_SoundProbe,
+            Op_Harrier_GR5_CLU_UK_Weapon2,
+            Op_Harrier_GR5_CLU_UK_Weapon3,
+            DepictionOperator_CriticalEffects,
+            DepictionOperator_AirplaneParts,
+            DepictionOperator_Airplane,
+            DepictionOperator_AirplaneShadow,
+            DepictionOperator_Feedback_Degat_Level1,
+            DepictionOperator_Feedback_Degat_Level2,
+            DepictionOperator_Heat,
+            DepictionOperator_EjectableProps_Plane,
+            DepictionOperator_Flares,
+        ]
+        Actions = MAP[
+                    ( "weapon_effet_tag2", Weapon_Bomb_BL755_cluster_264kg_x6 ),
+                    ( "weapon_effet_tag3", Weapon_AA_AIM9L_Sidewinder ),
+                ]
+                + DepictionAction_Stress_And_Wrecked_Avion
+                + DepictionAction_CriticalFX_Airplane
+                + DepictionAction_MovementFX_DoubleReactorAirplane_Smoky
+                + DepictionAction_Flare_Simple
+
+        SubDepictions = 
+
+        [
+            TSubDepiction
+            (
+                Anchors = 
+                [
+                    "pilot",
+                ]
+                Depiction = Pilot_Pilote_UK
+            ),
+        ]        
+
+        SubDepictionGenerators = [ SubGenerators_Harrier_GR5_CLU_UK ]
+)
 // Dépiction de l'unité Harrier_GR5_UK
 Op_Harrier_GR5_UK_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
 (
@@ -35931,6 +36002,178 @@ unnamed TacticAerialDepictionRegistration
 
         SubDepictionGenerators = [ SubGenerators_Su_22_HE2_DDR ]
 )
+// Dépiction de l'unité Su_22_HE2_TCH
+Op_Su_22_HE2_TCH_Weapon1 is DepictionOperator_WeaponContinuousFire
+(
+    Anchors = 
+    [
+        "fx_tourelle1_tir_01",
+        "fx_tourelle1_tir_02",
+    ]
+    FireEffectTag = "weapon_effet_tag1"
+    NbFX = 2
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_1"
+    WeaponShootDataPropertyName = "WeaponShootData_0_1"
+)
+Op_Su_22_HE2_TCH_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
+(
+    Connoisseur = MissileCarriage_Su_22_HE2_TCH
+    FireEffectTag = "weapon_effet_tag2"
+    NbProj = 1
+    WeaponIndex = 3
+    WeaponShootDataPropertyName = 
+    [
+        "WeaponShootData_0_2",
+    ]
+)
+Op_Su_22_HE2_TCH_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
+(
+    Connoisseur = MissileCarriage_Su_22_HE2_TCH
+    FireEffectTag = "weapon_effet_tag3"
+    NbProj = 1
+    WeaponIndex = 2
+    WeaponShootDataPropertyName = 
+    [
+        "WeaponShootData_0_3",
+    ]
+)
+unnamed TacticAerialDepictionRegistration
+(
+    Deviator = DepictionDeviator_Airplane
+    AdditionalTextures = $/M3D/Shader/AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
+    CoatingName = 'Su_22_HE2_TCH'
+    Alternatives = Alternatives_Su_22_HE2_TCH
+
+    Operators = 
+        [
+            $/GFX/Sound/DepictionOperator_MovementSound_SM_SD_avion_bombardier_SU22,
+            DepictionOperator_SoundProbe,
+            DepictionOperator_Turret_1_Aim,
+            Op_Su_22_HE2_TCH_Weapon1,
+            Op_Su_22_HE2_TCH_Weapon2,
+            Op_Su_22_HE2_TCH_Weapon3,
+            DepictionOperator_CriticalEffects,
+            DepictionOperator_AirplaneParts,
+            DepictionOperator_Airplane,
+            DepictionOperator_AirplaneShadow,
+            DepictionOperator_Feedback_Degat_Level1,
+            DepictionOperator_Feedback_Degat_Level2,
+            DepictionOperator_Heat,
+            DepictionOperator_EjectableProps_Plane,
+            DepictionOperator_Flares,
+        ]
+        Actions = MAP[
+                    ( "weapon_effet_tag1", Weapon_GatlingAir_NR30_30mm_x2 ),
+                    ( "weapon_effet_tag2", Weapon_AA_R60M_Vympel ),
+                    ( "weapon_effet_tag3", Weapon_Bomb_FAB_500kg_x6 ),
+                ]
+                + DepictionAction_Stress_And_Wrecked_Avion
+                + DepictionAction_CriticalFX_Airplane
+                + DepictionAction_MovementFX_SingleReactorAirplane_VerySmoky
+                + DepictionAction_Flare_Simple
+
+        SubDepictions = 
+
+        [
+            TSubDepiction
+            (
+                Anchors = 
+                [
+                    "pilot",
+                ]
+                Depiction = Pilot_Pilote_DDR
+            ),
+        ]        
+
+        SubDepictionGenerators = [ SubGenerators_Su_22_HE2_TCH ]
+)
+// Dépiction de l'unité Su_22_HE_TCH
+Op_Su_22_HE_TCH_Weapon1 is DepictionOperator_WeaponContinuousFire
+(
+    Anchors = 
+    [
+        "fx_tourelle1_tir_01",
+        "fx_tourelle1_tir_02",
+    ]
+    FireEffectTag = "weapon_effet_tag1"
+    NbFX = 2
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_1"
+    WeaponShootDataPropertyName = "WeaponShootData_0_1"
+)
+Op_Su_22_HE_TCH_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
+(
+    Connoisseur = MissileCarriage_Su_22_HE_TCH
+    FireEffectTag = "weapon_effet_tag2"
+    NbProj = 1
+    WeaponIndex = 3
+    WeaponShootDataPropertyName = 
+    [
+        "WeaponShootData_0_2",
+    ]
+)
+Op_Su_22_HE_TCH_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
+(
+    Connoisseur = MissileCarriage_Su_22_HE_TCH
+    FireEffectTag = "weapon_effet_tag3"
+    NbProj = 1
+    WeaponIndex = 2
+    WeaponShootDataPropertyName = 
+    [
+        "WeaponShootData_0_3",
+    ]
+)
+unnamed TacticAerialDepictionRegistration
+(
+    Deviator = DepictionDeviator_Airplane
+    AdditionalTextures = $/M3D/Shader/AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
+    CoatingName = 'Su_22_HE_TCH'
+    Alternatives = Alternatives_Su_22_HE_TCH
+
+    Operators = 
+        [
+            $/GFX/Sound/DepictionOperator_MovementSound_SM_SD_avion_bombardier_SU22,
+            DepictionOperator_SoundProbe,
+            DepictionOperator_Turret_1_Aim,
+            Op_Su_22_HE_TCH_Weapon1,
+            Op_Su_22_HE_TCH_Weapon2,
+            Op_Su_22_HE_TCH_Weapon3,
+            DepictionOperator_CriticalEffects,
+            DepictionOperator_AirplaneParts,
+            DepictionOperator_Airplane,
+            DepictionOperator_AirplaneShadow,
+            DepictionOperator_Feedback_Degat_Level1,
+            DepictionOperator_Feedback_Degat_Level2,
+            DepictionOperator_Heat,
+            DepictionOperator_EjectableProps_Plane,
+            DepictionOperator_Flares,
+        ]
+        Actions = MAP[
+                    ( "weapon_effet_tag1", Weapon_GatlingAir_NR30_30mm_x2 ),
+                    ( "weapon_effet_tag2", Weapon_AA_R60M_Vympel ),
+                    ( "weapon_effet_tag3", Weapon_Bomb_FAB_500kg_x4 ),
+                ]
+                + DepictionAction_Stress_And_Wrecked_Avion
+                + DepictionAction_CriticalFX_Airplane
+                + DepictionAction_MovementFX_SingleReactorAirplane_VerySmoky
+                + DepictionAction_Flare_Simple
+
+        SubDepictions = 
+
+        [
+            TSubDepiction
+            (
+                Anchors = 
+                [
+                    "pilot",
+                ]
+                Depiction = Pilot_Pilote_DDR
+            ),
+        ]        
+
+        SubDepictionGenerators = [ SubGenerators_Su_22_HE_TCH ]
+)
 // Dépiction de l'unité Su_22_POL
 Op_Su_22_POL_Weapon1 is DepictionOperator_WeaponContinuousFire
 (
@@ -36370,6 +36613,93 @@ unnamed TacticAerialDepictionRegistration
         SubDepictionGenerators = [ SubGenerators_Su_22_RKT_POL,RocketSubDepictionDesc(
                 PylonConnoisseur = MissileCarriage_Su_22_RKT_POL
                 UnitMeshDescriptor = $/GFX/DepictionResources/Modele_Su_22_RKT_POL
+                RocketMeshDescriptor = $/GFX/DepictionResources/Modele_Missile_S_24_240mm
+                RocketCount = 4
+                WeaponIndex = 2
+                PhysicalProperty = "Tourelle2_MissileCount"
+                AirStartGroupIndex = 0
+                GroundStartGroupIndex = 0
+            ) ]
+)
+// Dépiction de l'unité Su_22_RKT_TCH
+Op_Su_22_RKT_TCH_Weapon1 is DepictionOperator_WeaponContinuousFire
+(
+    Anchors = 
+    [
+        "fx_tourelle1_tir_01",
+        "fx_tourelle1_tir_02",
+    ]
+    FireEffectTag = "weapon_effet_tag1"
+    NbFX = 2
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_1"
+    WeaponShootDataPropertyName = "WeaponShootData_0_1"
+)
+Op_Su_22_RKT_TCH_Weapon2 is DepictionOperator_WeaponInstantFire
+(
+    Anchors = 
+    [
+        "fx_tourelle2_tir_01",
+        "fx_tourelle2_tir_02",
+        "fx_tourelle2_tir_03",
+        "fx_tourelle2_tir_04",
+    ]
+    FireEffectTag = "weapon_effet_tag2"
+    NbProj = 1
+    WeaponShootDataPropertyName = 
+    [
+        "WeaponShootData_0_2",
+    ]
+)
+unnamed TacticAerialDepictionRegistration
+(
+    Deviator = DepictionDeviator_Airplane
+    AdditionalTextures = $/M3D/Shader/AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
+    CoatingName = 'Su_22_RKT_TCH'
+    Alternatives = Alternatives_Su_22_RKT_TCH
+
+    Operators = 
+        [
+            $/GFX/Sound/DepictionOperator_MovementSound_SM_SD_avion_bombardier_SU22,
+            DepictionOperator_SoundProbe,
+            DepictionOperator_Turret_1_Aim,
+            Op_Su_22_RKT_TCH_Weapon1,
+            Op_Su_22_RKT_TCH_Weapon2,
+            DepictionOperator_CriticalEffects,
+            DepictionOperator_AirplaneParts,
+            DepictionOperator_Airplane,
+            DepictionOperator_AirplaneShadow,
+            DepictionOperator_Feedback_Degat_Level1,
+            DepictionOperator_Feedback_Degat_Level2,
+            DepictionOperator_Heat,
+            DepictionOperator_EjectableProps_Plane,
+            DepictionOperator_Flares,
+        ]
+        Actions = MAP[
+                    ( "weapon_effet_tag1", Weapon_GatlingAir_NR30_30mm_x2 ),
+                    ( "weapon_effet_tag2", Weapon_RocketAir_S24_240mm_x2 ),
+                ]
+                + DepictionAction_Stress_And_Wrecked_Avion
+                + DepictionAction_CriticalFX_Airplane
+                + DepictionAction_MovementFX_SingleReactorAirplane_VerySmoky
+                + DepictionAction_Flare_Simple
+
+        SubDepictions = 
+
+        [
+            TSubDepiction
+            (
+                Anchors = 
+                [
+                    "pilot",
+                ]
+                Depiction = Pilot_Pilote_DDR
+            ),
+        ]        
+
+        SubDepictionGenerators = [ RocketSubDepictionDesc(
+                PylonConnoisseur = nil
+                UnitMeshDescriptor = $/GFX/DepictionResources/Modele_Su_22_RKT_TCH
                 RocketMeshDescriptor = $/GFX/DepictionResources/Modele_Missile_S_24_240mm
                 RocketCount = 4
                 WeaponIndex = 2
@@ -36980,6 +37310,92 @@ unnamed TacticAerialDepictionRegistration
 
         SubDepictionGenerators = [ SubGenerators_Su_22_clu_POL ]
 )
+// Dépiction de l'unité Su_22_clu_TCH
+Op_Su_22_clu_TCH_Weapon1 is DepictionOperator_WeaponContinuousFire
+(
+    Anchors = 
+    [
+        "fx_tourelle1_tir_01",
+        "fx_tourelle1_tir_02",
+    ]
+    FireEffectTag = "weapon_effet_tag1"
+    NbFX = 2
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_1"
+    WeaponShootDataPropertyName = "WeaponShootData_0_1"
+)
+Op_Su_22_clu_TCH_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
+(
+    Connoisseur = MissileCarriage_Su_22_clu_TCH
+    FireEffectTag = "weapon_effet_tag2"
+    NbProj = 1
+    WeaponIndex = 3
+    WeaponShootDataPropertyName = 
+    [
+        "WeaponShootData_0_2",
+    ]
+)
+Op_Su_22_clu_TCH_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
+(
+    Connoisseur = MissileCarriage_Su_22_clu_TCH
+    FireEffectTag = "weapon_effet_tag3"
+    NbProj = 1
+    WeaponIndex = 2
+    WeaponShootDataPropertyName = 
+    [
+        "WeaponShootData_0_3",
+    ]
+)
+unnamed TacticAerialDepictionRegistration
+(
+    Deviator = DepictionDeviator_Airplane
+    AdditionalTextures = $/M3D/Shader/AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
+    CoatingName = 'Su_22_clu_TCH'
+    Alternatives = Alternatives_Su_22_clu_TCH
+
+    Operators = 
+        [
+            $/GFX/Sound/DepictionOperator_MovementSound_SM_SD_avion_bombardier_SU22,
+            DepictionOperator_SoundProbe,
+            DepictionOperator_Turret_1_Aim,
+            Op_Su_22_clu_TCH_Weapon1,
+            Op_Su_22_clu_TCH_Weapon2,
+            Op_Su_22_clu_TCH_Weapon3,
+            DepictionOperator_CriticalEffects,
+            DepictionOperator_AirplaneParts,
+            DepictionOperator_Airplane,
+            DepictionOperator_AirplaneShadow,
+            DepictionOperator_Feedback_Degat_Level1,
+            DepictionOperator_Feedback_Degat_Level2,
+            DepictionOperator_Heat,
+            DepictionOperator_EjectableProps_Plane,
+            DepictionOperator_Flares,
+        ]
+        Actions = MAP[
+                    ( "weapon_effet_tag1", Weapon_GatlingAir_NR30_30mm_x2 ),
+                    ( "weapon_effet_tag2", Weapon_AA_R60M_Vympel ),
+                    ( "weapon_effet_tag3", Weapon_Bomb_CLU_RBK_500kg_x2 ),
+                ]
+                + DepictionAction_Stress_And_Wrecked_Avion
+                + DepictionAction_CriticalFX_Airplane
+                + DepictionAction_MovementFX_SingleReactorAirplane_VerySmoky
+                + DepictionAction_Flare_Simple
+
+        SubDepictions = 
+
+        [
+            TSubDepiction
+            (
+                Anchors = 
+                [
+                    "pilot",
+                ]
+                Depiction = Pilot_Pilote_DDR
+            ),
+        ]        
+
+        SubDepictionGenerators = [ SubGenerators_Su_22_clu_TCH ]
+)
 // Dépiction de l'unité Su_22_nplm_DDR
 Op_Su_22_nplm_DDR_Weapon1 is DepictionOperator_WeaponContinuousFire
 (
@@ -37151,6 +37567,92 @@ unnamed TacticAerialDepictionRegistration
         ]        
 
         SubDepictionGenerators = [ SubGenerators_Su_22_nplm_POL ]
+)
+// Dépiction de l'unité Su_22_nplm_TCH
+Op_Su_22_nplm_TCH_Weapon1 is DepictionOperator_WeaponContinuousFire
+(
+    Anchors = 
+    [
+        "fx_tourelle1_tir_01",
+        "fx_tourelle1_tir_02",
+    ]
+    FireEffectTag = "weapon_effet_tag1"
+    NbFX = 2
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_1"
+    WeaponShootDataPropertyName = "WeaponShootData_0_1"
+)
+Op_Su_22_nplm_TCH_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
+(
+    Connoisseur = MissileCarriage_Su_22_nplm_TCH
+    FireEffectTag = "weapon_effet_tag2"
+    NbProj = 1
+    WeaponIndex = 3
+    WeaponShootDataPropertyName = 
+    [
+        "WeaponShootData_0_2",
+    ]
+)
+Op_Su_22_nplm_TCH_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
+(
+    Connoisseur = MissileCarriage_Su_22_nplm_TCH
+    FireEffectTag = "weapon_effet_tag3"
+    NbProj = 1
+    WeaponIndex = 2
+    WeaponShootDataPropertyName = 
+    [
+        "WeaponShootData_0_3",
+    ]
+)
+unnamed TacticAerialDepictionRegistration
+(
+    Deviator = DepictionDeviator_Airplane
+    AdditionalTextures = $/M3D/Shader/AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
+    CoatingName = 'Su_22_nplm_TCH'
+    Alternatives = Alternatives_Su_22_nplm_TCH
+
+    Operators = 
+        [
+            $/GFX/Sound/DepictionOperator_MovementSound_SM_SD_avion_bombardier_SU22,
+            DepictionOperator_SoundProbe,
+            DepictionOperator_Turret_1_Aim,
+            Op_Su_22_nplm_TCH_Weapon1,
+            Op_Su_22_nplm_TCH_Weapon2,
+            Op_Su_22_nplm_TCH_Weapon3,
+            DepictionOperator_CriticalEffects,
+            DepictionOperator_AirplaneParts,
+            DepictionOperator_Airplane,
+            DepictionOperator_AirplaneShadow,
+            DepictionOperator_Feedback_Degat_Level1,
+            DepictionOperator_Feedback_Degat_Level2,
+            DepictionOperator_Heat,
+            DepictionOperator_EjectableProps_Plane,
+            DepictionOperator_Flares,
+        ]
+        Actions = MAP[
+                    ( "weapon_effet_tag1", Weapon_GatlingAir_NR30_30mm_x2 ),
+                    ( "weapon_effet_tag2", Weapon_AA_R60M_Vympel ),
+                    ( "weapon_effet_tag3", Weapon_Bomb_ZB500_500kg_Napalm_x4 ),
+                ]
+                + DepictionAction_Stress_And_Wrecked_Avion
+                + DepictionAction_CriticalFX_Airplane
+                + DepictionAction_MovementFX_SingleReactorAirplane_VerySmoky
+                + DepictionAction_Flare_Simple
+
+        SubDepictions = 
+
+        [
+            TSubDepiction
+            (
+                Anchors = 
+                [
+                    "pilot",
+                ]
+                Depiction = Pilot_Pilote_DDR
+            ),
+        ]        
+
+        SubDepictionGenerators = [ SubGenerators_Su_22_nplm_TCH ]
 )
 // Dépiction de l'unité Su_24MP_EW_SOV
 unnamed TacticAerialDepictionRegistration
@@ -38392,6 +38894,91 @@ unnamed TacticAerialDepictionRegistration
         ]        
 
         SubDepictionGenerators = [ SubGenerators_Su_25_NPLM_TCH ]
+)
+// Dépiction de l'unité Su_25_RKT2_TCH
+Op_Su_25_RKT2_TCH_Weapon1 is DepictionOperator_WeaponContinuousFire
+(
+    Anchors = 
+    [
+        "fx_tourelle1_tir_01",
+    ]
+    FireEffectTag = "weapon_effet_tag1"
+    NbFX = 1
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_1"
+    WeaponShootDataPropertyName = "WeaponShootData_0_1"
+)
+Op_Su_25_RKT2_TCH_Weapon2 is DepictionOperator_WeaponContinuousFire
+(
+    Anchors = 
+    [
+        "fx_tourelle1_tir_01",
+    ]
+    FireEffectTag = "weapon_effet_tag2"
+    NbFX = 1
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_2"
+    WeaponShootDataPropertyName = "WeaponShootData_0_2"
+)
+Op_Su_25_RKT2_TCH_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
+(
+    Connoisseur = MissileCarriage_Su_25_RKT2_TCH
+    FireEffectTag = "weapon_effet_tag3"
+    NbProj = 1
+    WeaponIndex = 2
+    WeaponShootDataPropertyName = 
+    [
+        "WeaponShootData_0_3",
+    ]
+)
+unnamed TacticAerialDepictionRegistration
+(
+    Deviator = DepictionDeviator_Airplane
+    AdditionalTextures = $/M3D/Shader/AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
+    CoatingName = 'Su_25_RKT2_TCH'
+    Alternatives = Alternatives_Su_25_RKT2_TCH
+
+    Operators = 
+        [
+            $/GFX/Sound/DepictionOperator_MovementSound_SM_SD_avion_SU25,
+            DepictionOperator_SoundProbe,
+            DepictionOperator_Turret_1_Aim,
+            Op_Su_25_RKT2_TCH_Weapon1,
+            Op_Su_25_RKT2_TCH_Weapon2,
+            Op_Su_25_RKT2_TCH_Weapon3,
+            DepictionOperator_CriticalEffects,
+            DepictionOperator_AirplaneParts,
+            DepictionOperator_Airplane,
+            DepictionOperator_AirplaneShadow,
+            DepictionOperator_Feedback_Degat_Level1,
+            DepictionOperator_Feedback_Degat_Level2,
+            DepictionOperator_Heat,
+            DepictionOperator_EjectableProps_Plane,
+            DepictionOperator_Flares,
+        ]
+        Actions = MAP[
+                    ( "weapon_effet_tag1", Weapon_GatlingAir_Gsh_30_2_30mm_x2 ),
+                    ( "weapon_effet_tag2", Weapon_GatlingAir_AP_Gsh_30_2_30mm_x2 ),
+                    ( "weapon_effet_tag3", Weapon_RocketAir_122_JROF_L_122mm_x4 ),
+                ]
+                + DepictionAction_Stress_And_Wrecked_Avion
+                + DepictionAction_CriticalFX_Airplane
+                + DepictionAction_MovementFX_DoubleReactorAirplane_Smoky
+                + DepictionAction_Flare_Simple
+
+        SubDepictions = 
+
+        [
+            TSubDepiction
+            (
+                Anchors = 
+                [
+                    "pilot",
+                ]
+                Depiction = Pilot_Pilote_SOV
+            ),
+        ]        
+
+        SubDepictionGenerators = [ SubGenerators_Su_25_RKT2_TCH ]
 )
 // Dépiction de l'unité Su_25_RKT_TCH
 Op_Su_25_RKT_TCH_Weapon1 is DepictionOperator_WeaponContinuousFire

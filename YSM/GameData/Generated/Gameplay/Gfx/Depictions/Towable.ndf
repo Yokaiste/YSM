@@ -139,6 +139,15 @@ unnamed TTowedUnitCatalogEntry
 unnamed TTowedUnitCatalogEntry
 (
     Catalog = $/DepictionCore/TowedUnitCatalog
+    Identifier = "DCA_76T2_20mm_FR"
+    MeshHigh = $/GFX/DepictionResources/Modele_DCA_76T2_20mm_FR
+    MeshMid  = $/GFX/DepictionResources/Modele_DCA_76T2_20mm_FR_MID
+    MeshLow  = $/GFX/DepictionResources/Modele_DCA_76T2_20mm_FR_LOW
+    InitialPose = TInitialPoseAnimation( MeshDescriptor = $/GFX/DepictionResources/Modele_DCA_76T2_20mm_FR Animation = $/GFX/DepictionResources/DeployAnimation_DCA_76T2_20mm_FR )
+)
+unnamed TTowedUnitCatalogEntry
+(
+    Catalog = $/DepictionCore/TowedUnitCatalog
     Identifier = "DCA_AZP_S60_DDR"
     MeshHigh = $/GFX/DepictionResources/Modele_DCA_AZP_S60_DDR
     MeshMid  = $/GFX/DepictionResources/Modele_DCA_AZP_S60_DDR_MID
@@ -653,6 +662,15 @@ unnamed TTowedUnitCatalogEntry
 unnamed TTowedUnitCatalogEntry
 (
     Catalog = $/DepictionCore/TowedUnitCatalog
+    Identifier = "Howz_A19_122mm_ESP"
+    MeshHigh = $/GFX/DepictionResources/Modele_Howz_A19_122mm_ESP
+    MeshMid  = $/GFX/DepictionResources/Modele_Howz_A19_122mm_ESP_MID
+    MeshLow  = $/GFX/DepictionResources/Modele_Howz_A19_122mm_ESP_LOW
+    InitialPose = TInitialPoseAngle( MeshDescriptor = $/GFX/DepictionResources/Modele_Howz_A19_122mm_ESP Angle = 0.5235987755982988 )
+)
+unnamed TTowedUnitCatalogEntry
+(
+    Catalog = $/DepictionCore/TowedUnitCatalog
     Identifier = "Howz_A19_122mm_POL"
     MeshHigh = $/GFX/DepictionResources/Modele_Howz_A19_122mm_POL
     MeshMid  = $/GFX/DepictionResources/Modele_Howz_A19_122mm_POL_MID
@@ -959,6 +977,15 @@ unnamed TTowedUnitCatalogEntry
 unnamed TTowedUnitCatalogEntry
 (
     Catalog = $/DepictionCore/TowedUnitCatalog
+    Identifier = "Howz_M46_130mm_TCH"
+    MeshHigh = $/GFX/DepictionResources/Modele_Howz_M46_130mm_TCH
+    MeshMid  = $/GFX/DepictionResources/Modele_Howz_M46_130mm_TCH_MID
+    MeshLow  = $/GFX/DepictionResources/Modele_Howz_M46_130mm_TCH_LOW
+    InitialPose = TInitialPoseAngle( MeshDescriptor = $/GFX/DepictionResources/Modele_Howz_M46_130mm_TCH Angle = 0.4363323129985824 )
+)
+unnamed TTowedUnitCatalogEntry
+(
+    Catalog = $/DepictionCore/TowedUnitCatalog
     Identifier = "Howz_M56_Pack_FJ_RFA"
     MeshHigh = $/GFX/DepictionResources/Modele_Howz_M56_Pack_FJ_RFA
     MeshMid  = $/GFX/DepictionResources/Modele_Howz_M56_Pack_FJ_RFA_MID
@@ -1000,6 +1027,15 @@ unnamed TTowedUnitCatalogEntry
     MeshMid  = $/GFX/DepictionResources/Modele_Howz_ML20_152mm_SOV_MID
     MeshLow  = $/GFX/DepictionResources/Modele_Howz_ML20_152mm_SOV_LOW
     InitialPose = TInitialPoseAngle( MeshDescriptor = $/GFX/DepictionResources/Modele_Howz_ML20_152mm_SOV Angle = 0.5235987755982988 )
+)
+unnamed TTowedUnitCatalogEntry
+(
+    Catalog = $/DepictionCore/TowedUnitCatalog
+    Identifier = "Howz_ML20_152mm_TCH"
+    MeshHigh = $/GFX/DepictionResources/Modele_Howz_ML20_152mm_TCH
+    MeshMid  = $/GFX/DepictionResources/Modele_Howz_ML20_152mm_TCH_MID
+    MeshLow  = $/GFX/DepictionResources/Modele_Howz_ML20_152mm_TCH_LOW
+    InitialPose = TInitialPoseAngle( MeshDescriptor = $/GFX/DepictionResources/Modele_Howz_ML20_152mm_TCH Angle = 0.5235987755982988 )
 )
 unnamed TTowedUnitCatalogEntry
 (

@@ -160,6 +160,26 @@ Texture_STRATEGIC_RTS_H_assault is TUIResourceTexture_Common
     FileName      = 'GameData:/Assets/2D/Interface/UseStrategic/LabelIcons/RTS/assault.png'
 )
 
+Texture_STRATEGIC_hel is TUIResourceTexture_Common
+(
+    FileName      = 'GameData:/Assets/2D/Interface/UseStrategic/LabelIcons/NATO/hel.png'
+)
+
+Texture_STRATEGIC_RTS_H_hel is TUIResourceTexture_Common
+(
+    FileName      = 'GameData:/Assets/2D/Interface/UseStrategic/LabelIcons/RTS/hel.png'
+)
+
+Texture_STRATEGIC_front is TUIResourceTexture_Common
+(
+    FileName      = 'GameData:/Assets/2D/Interface/UseStrategic/LabelIcons/NATO/front.png'
+)
+
+Texture_STRATEGIC_RTS_H_front is TUIResourceTexture_Common
+(
+    FileName      = 'GameData:/Assets/2D/Interface/UseStrategic/LabelIcons/RTS/front.png'
+)
+
 Texture_STRATEGIC_regiment is TUIResourceTexture_Common
 (
     FileName      = 'GameData:/Assets/2D/Interface/UseStrategic/LabelIcons/NATO/regiment.png'
@@ -200,26 +220,6 @@ Texture_STRATEGIC_RTS_H_AT is TUIResourceTexture_Common
     FileName      = 'GameData:/Assets/2D/Interface/UseStrategic/LabelIcons/RTS/AT.png'
 )
 
-Texture_STRATEGIC_hel is TUIResourceTexture_Common
-(
-    FileName      = 'GameData:/Assets/2D/Interface/UseStrategic/LabelIcons/NATO/hel.png'
-)
-
-Texture_STRATEGIC_RTS_H_hel is TUIResourceTexture_Common
-(
-    FileName      = 'GameData:/Assets/2D/Interface/UseStrategic/LabelIcons/RTS/hel.png'
-)
-
-Texture_STRATEGIC_front is TUIResourceTexture_Common
-(
-    FileName      = 'GameData:/Assets/2D/Interface/UseStrategic/LabelIcons/NATO/front.png'
-)
-
-Texture_STRATEGIC_RTS_H_front is TUIResourceTexture_Common
-(
-    FileName      = 'GameData:/Assets/2D/Interface/UseStrategic/LabelIcons/RTS/front.png'
-)
-
 
 STRATEGIC_NATORTSAdditionalTextureBank is TBUCKToolAdditionalTextureBank
 (
@@ -257,6 +257,10 @@ STRATEGIC_NATORTSAdditionalTextureBank is TBUCKToolAdditionalTextureBank
         ("Texture_STRATEGIC_RTS_H_AA", MAP [(~/ComponentState/Normal, ~/Texture_STRATEGIC_RTS_H_AA)]),
         ("Texture_STRATEGIC_assault", MAP [(~/ComponentState/Normal, ~/Texture_STRATEGIC_assault)]),
         ("Texture_STRATEGIC_RTS_H_assault", MAP [(~/ComponentState/Normal, ~/Texture_STRATEGIC_RTS_H_assault)]),
+        ("Texture_STRATEGIC_hel", MAP [(~/ComponentState/Normal, ~/Texture_STRATEGIC_hel)]),
+        ("Texture_STRATEGIC_RTS_H_hel", MAP [(~/ComponentState/Normal, ~/Texture_STRATEGIC_RTS_H_hel)]),
+        ("Texture_STRATEGIC_front", MAP [(~/ComponentState/Normal, ~/Texture_STRATEGIC_front)]),
+        ("Texture_STRATEGIC_RTS_H_front", MAP [(~/ComponentState/Normal, ~/Texture_STRATEGIC_RTS_H_front)]),
         ("Texture_STRATEGIC_regiment", MAP [(~/ComponentState/Normal, ~/Texture_STRATEGIC_regiment)]),
         ("Texture_STRATEGIC_RTS_H_regiment", MAP [(~/ComponentState/Normal, ~/Texture_STRATEGIC_RTS_H_regiment)]),
         ("Texture_STRATEGIC_Infantry", MAP [(~/ComponentState/Normal, ~/Texture_STRATEGIC_Infantry)]),
@@ -265,10 +269,6 @@ STRATEGIC_NATORTSAdditionalTextureBank is TBUCKToolAdditionalTextureBank
         ("Texture_STRATEGIC_RTS_H_mlrs", MAP [(~/ComponentState/Normal, ~/Texture_STRATEGIC_RTS_H_mlrs)]),
         ("Texture_STRATEGIC_AT", MAP [(~/ComponentState/Normal, ~/Texture_STRATEGIC_AT)]),
         ("Texture_STRATEGIC_RTS_H_AT", MAP [(~/ComponentState/Normal, ~/Texture_STRATEGIC_RTS_H_AT)]),
-        ("Texture_STRATEGIC_hel", MAP [(~/ComponentState/Normal, ~/Texture_STRATEGIC_hel)]),
-        ("Texture_STRATEGIC_RTS_H_hel", MAP [(~/ComponentState/Normal, ~/Texture_STRATEGIC_RTS_H_hel)]),
-        ("Texture_STRATEGIC_front", MAP [(~/ComponentState/Normal, ~/Texture_STRATEGIC_front)]),
-        ("Texture_STRATEGIC_RTS_H_front", MAP [(~/ComponentState/Normal, ~/Texture_STRATEGIC_RTS_H_front)]),
     ]
 )
 

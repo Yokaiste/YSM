@@ -51,6 +51,76 @@ Depiction_pion_BEL_8Sq is StrategicAirplanePawnDepictionDesc
     MeshDescriptorPawn = $/GFX/DepictionResources/Modele_Mirage_5_BA_BEL
     MeshSocle = $/GFX/DepictionResources/MeshModele_Socle_BEL
 )
+Depiction_pion_CAN_409TFS is StrategicAirplanePawnDepictionDesc
+(
+    MeshDescriptorPawn = $/GFX/DepictionResources/Modele_F18_Hornet_AA_CAN
+    MeshSocle = $/GFX/DepictionResources/MeshModele_Socle_CAN
+)
+Depiction_pion_CAN_421TFS is StrategicAirplanePawnDepictionDesc
+(
+    MeshDescriptorPawn = $/GFX/DepictionResources/Modele_F18_Hornet_CLUS_CAN
+    MeshSocle = $/GFX/DepictionResources/MeshModele_Socle_CAN
+)
+Depiction_pion_CAN_439TFS is StrategicAirplanePawnDepictionDesc
+(
+    MeshDescriptorPawn = $/GFX/DepictionResources/Modele_F18_Hornet_CRV7_CAN
+    MeshSocle = $/GFX/DepictionResources/MeshModele_Socle_CAN
+)
+Depiction_pion_FR_Alsace is StrategicAirplanePawnDepictionDesc
+(
+    MeshDescriptorPawn = $/GFX/DepictionResources/Modele_Mirage_2000_C_FR
+    MeshSocle = $/GFX/DepictionResources/MeshModele_Socle_FR
+)
+Depiction_pion_FR_Ardennes is StrategicAirplanePawnDepictionDesc
+(
+    MeshDescriptorPawn = $/GFX/DepictionResources/Modele_Mirage_III_E_FR
+    MeshSocle = $/GFX/DepictionResources/MeshModele_Socle_FR
+)
+Depiction_pion_FR_Champagne is StrategicAirplanePawnDepictionDesc
+(
+    MeshDescriptorPawn = $/GFX/DepictionResources/Modele_Mirage_III_E_FR
+    MeshSocle = $/GFX/DepictionResources/MeshModele_Socle_FR
+)
+Depiction_pion_FR_Cigognes is StrategicAirplanePawnDepictionDesc
+(
+    MeshDescriptorPawn = $/GFX/DepictionResources/Modele_Mirage_2000_C_FR
+    MeshSocle = $/GFX/DepictionResources/MeshModele_Socle_FR
+)
+Depiction_pion_FR_Corse is StrategicAirplanePawnDepictionDesc
+(
+    MeshDescriptorPawn = $/GFX/DepictionResources/Modele_Jaguar_HE_FR
+    MeshSocle = $/GFX/DepictionResources/MeshModele_Socle_FR
+)
+Depiction_pion_FR_Cote_dOr is StrategicAirplanePawnDepictionDesc
+(
+    MeshDescriptorPawn = $/GFX/DepictionResources/Modele_Mirage_2000_C_FR
+    MeshSocle = $/GFX/DepictionResources/MeshModele_Socle_FR
+)
+Depiction_pion_FR_Jura is StrategicAirplanePawnDepictionDesc
+(
+    MeshDescriptorPawn = $/GFX/DepictionResources/Modele_Jaguar_HE_FR
+    MeshSocle = $/GFX/DepictionResources/MeshModele_Socle_FR
+)
+Depiction_pion_FR_Navarre is StrategicAirplanePawnDepictionDesc
+(
+    MeshDescriptorPawn = $/GFX/DepictionResources/Modele_Mirage_III_E_FR
+    MeshSocle = $/GFX/DepictionResources/MeshModele_Socle_FR
+)
+Depiction_pion_FR_Roussillon is StrategicAirplanePawnDepictionDesc
+(
+    MeshDescriptorPawn = $/GFX/DepictionResources/Modele_Jaguar_HE_FR
+    MeshSocle = $/GFX/DepictionResources/MeshModele_Socle_FR
+)
+Depiction_pion_FR_Valois is StrategicAirplanePawnDepictionDesc
+(
+    MeshDescriptorPawn = $/GFX/DepictionResources/Modele_Mirage_F1_C_FR
+    MeshSocle = $/GFX/DepictionResources/MeshModele_Socle_FR
+)
+Depiction_pion_FR_Vosges is StrategicAirplanePawnDepictionDesc
+(
+    MeshDescriptorPawn = $/GFX/DepictionResources/Modele_Jaguar_HE_FR
+    MeshSocle = $/GFX/DepictionResources/MeshModele_Socle_FR
+)
 Depiction_pion_NL_Grp_Eindhoven is StrategicAirplanePawnDepictionDesc
 (
     MeshDescriptorPawn = $/GFX/DepictionResources/Modele_F5A_FreedomFighter_RKT_NL
@@ -266,6 +336,46 @@ Depiction_pion_SOV_968IAP is StrategicAirplanePawnDepictionDesc
     MeshDescriptorPawn = $/GFX/DepictionResources/Modele_MiG_23ML_SOV
     MeshSocle = $/GFX/DepictionResources/MeshModele_Socle_SOV
 )
+Depiction_pion_TCH_11FighterRgt is StrategicAirplanePawnDepictionDesc
+(
+    MeshDescriptorPawn = $/GFX/DepictionResources/Modele_MiG_29_AA_TCH
+    MeshSocle = $/GFX/DepictionResources/MeshModele_Socle_TCH
+)
+Depiction_pion_TCH_1FighterRgt is StrategicAirplanePawnDepictionDesc
+(
+    MeshDescriptorPawn = $/GFX/DepictionResources/Modele_MiG_23MLA_AA_TCH
+    MeshSocle = $/GFX/DepictionResources/MeshModele_Socle_TCH
+)
+Depiction_pion_TCH_20FightBombRgt is StrategicAirplanePawnDepictionDesc
+(
+    MeshDescriptorPawn = $/GFX/DepictionResources/Modele_MiG_23BN_TCH
+    MeshSocle = $/GFX/DepictionResources/MeshModele_Socle_TCH
+)
+Depiction_pion_TCH_28FightBombRgt is StrategicAirplanePawnDepictionDesc
+(
+    MeshDescriptorPawn = $/GFX/DepictionResources/Modele_Su_22_AT_TCH
+    MeshSocle = $/GFX/DepictionResources/MeshModele_Socle_TCH
+)
+Depiction_pion_TCH_30FightBombRgt is StrategicAirplanePawnDepictionDesc
+(
+    MeshDescriptorPawn = $/GFX/DepictionResources/Modele_Su_25_RKT2_TCH
+    MeshSocle = $/GFX/DepictionResources/MeshModele_Socle_TCH
+)
+Depiction_pion_TCH_4FighterRgt is StrategicAirplanePawnDepictionDesc
+(
+    MeshDescriptorPawn = $/GFX/DepictionResources/Modele_MiG_21MA_TCH
+    MeshSocle = $/GFX/DepictionResources/MeshModele_Socle_TCH
+)
+Depiction_pion_TCH_5FighterRgt is StrategicAirplanePawnDepictionDesc
+(
+    MeshDescriptorPawn = $/GFX/DepictionResources/Modele_MiG_21MA_TCH
+    MeshSocle = $/GFX/DepictionResources/MeshModele_Socle_TCH
+)
+Depiction_pion_TCH_9FighterRgt is StrategicAirplanePawnDepictionDesc
+(
+    MeshDescriptorPawn = $/GFX/DepictionResources/Modele_MiG_21MA_TCH
+    MeshSocle = $/GFX/DepictionResources/MeshModele_Socle_TCH
+)
 Depiction_pion_UK_12Sq is StrategicAirplanePawnDepictionDesc
 (
     MeshDescriptorPawn = $/GFX/DepictionResources/Modele_Buccaneer_S2B_HE_UK
@@ -461,6 +571,20 @@ export Gfx_pion_BEL_350Sq is TTimelyDepictionReceiverFactory( DepictionDescripto
 export Gfx_pion_BEL_42Sq is TTimelyDepictionReceiverFactory( DepictionDescriptor = Depiction_pion_BEL_42Sq)
 export Gfx_pion_BEL_7Sq is TTimelyDepictionReceiverFactory( DepictionDescriptor = Depiction_pion_BEL_7Sq)
 export Gfx_pion_BEL_8Sq is TTimelyDepictionReceiverFactory( DepictionDescriptor = Depiction_pion_BEL_8Sq)
+export Gfx_pion_CAN_409TFS is TTimelyDepictionReceiverFactory( DepictionDescriptor = Depiction_pion_CAN_409TFS)
+export Gfx_pion_CAN_421TFS is TTimelyDepictionReceiverFactory( DepictionDescriptor = Depiction_pion_CAN_421TFS)
+export Gfx_pion_CAN_439TFS is TTimelyDepictionReceiverFactory( DepictionDescriptor = Depiction_pion_CAN_439TFS)
+export Gfx_pion_FR_Alsace is TTimelyDepictionReceiverFactory( DepictionDescriptor = Depiction_pion_FR_Alsace)
+export Gfx_pion_FR_Ardennes is TTimelyDepictionReceiverFactory( DepictionDescriptor = Depiction_pion_FR_Ardennes)
+export Gfx_pion_FR_Champagne is TTimelyDepictionReceiverFactory( DepictionDescriptor = Depiction_pion_FR_Champagne)
+export Gfx_pion_FR_Cigognes is TTimelyDepictionReceiverFactory( DepictionDescriptor = Depiction_pion_FR_Cigognes)
+export Gfx_pion_FR_Corse is TTimelyDepictionReceiverFactory( DepictionDescriptor = Depiction_pion_FR_Corse)
+export Gfx_pion_FR_Cote_dOr is TTimelyDepictionReceiverFactory( DepictionDescriptor = Depiction_pion_FR_Cote_dOr)
+export Gfx_pion_FR_Jura is TTimelyDepictionReceiverFactory( DepictionDescriptor = Depiction_pion_FR_Jura)
+export Gfx_pion_FR_Navarre is TTimelyDepictionReceiverFactory( DepictionDescriptor = Depiction_pion_FR_Navarre)
+export Gfx_pion_FR_Roussillon is TTimelyDepictionReceiverFactory( DepictionDescriptor = Depiction_pion_FR_Roussillon)
+export Gfx_pion_FR_Valois is TTimelyDepictionReceiverFactory( DepictionDescriptor = Depiction_pion_FR_Valois)
+export Gfx_pion_FR_Vosges is TTimelyDepictionReceiverFactory( DepictionDescriptor = Depiction_pion_FR_Vosges)
 export Gfx_pion_NL_Grp_Eindhoven is TTimelyDepictionReceiverFactory( DepictionDescriptor = Depiction_pion_NL_Grp_Eindhoven)
 export Gfx_pion_NL_Grp_Leeuwarden is TTimelyDepictionReceiverFactory( DepictionDescriptor = Depiction_pion_NL_Grp_Leeuwarden)
 export Gfx_pion_NL_Grp_Twenthe is TTimelyDepictionReceiverFactory( DepictionDescriptor = Depiction_pion_NL_Grp_Twenthe)
@@ -504,6 +628,14 @@ export Gfx_pion_SOV_85IGAP is TTimelyDepictionReceiverFactory( DepictionDescript
 export Gfx_pion_SOV_911APIB is TTimelyDepictionReceiverFactory( DepictionDescriptor = Depiction_pion_SOV_911APIB)
 export Gfx_pion_SOV_931ORAP is TTimelyDepictionReceiverFactory( DepictionDescriptor = Depiction_pion_SOV_931ORAP)
 export Gfx_pion_SOV_968IAP is TTimelyDepictionReceiverFactory( DepictionDescriptor = Depiction_pion_SOV_968IAP)
+export Gfx_pion_TCH_11FighterRgt is TTimelyDepictionReceiverFactory( DepictionDescriptor = Depiction_pion_TCH_11FighterRgt)
+export Gfx_pion_TCH_1FighterRgt is TTimelyDepictionReceiverFactory( DepictionDescriptor = Depiction_pion_TCH_1FighterRgt)
+export Gfx_pion_TCH_20FightBombRgt is TTimelyDepictionReceiverFactory( DepictionDescriptor = Depiction_pion_TCH_20FightBombRgt)
+export Gfx_pion_TCH_28FightBombRgt is TTimelyDepictionReceiverFactory( DepictionDescriptor = Depiction_pion_TCH_28FightBombRgt)
+export Gfx_pion_TCH_30FightBombRgt is TTimelyDepictionReceiverFactory( DepictionDescriptor = Depiction_pion_TCH_30FightBombRgt)
+export Gfx_pion_TCH_4FighterRgt is TTimelyDepictionReceiverFactory( DepictionDescriptor = Depiction_pion_TCH_4FighterRgt)
+export Gfx_pion_TCH_5FighterRgt is TTimelyDepictionReceiverFactory( DepictionDescriptor = Depiction_pion_TCH_5FighterRgt)
+export Gfx_pion_TCH_9FighterRgt is TTimelyDepictionReceiverFactory( DepictionDescriptor = Depiction_pion_TCH_9FighterRgt)
 export Gfx_pion_UK_12Sq is TTimelyDepictionReceiverFactory( DepictionDescriptor = Depiction_pion_UK_12Sq)
 export Gfx_pion_UK_16_20Sq is TTimelyDepictionReceiverFactory( DepictionDescriptor = Depiction_pion_UK_16_20Sq)
 export Gfx_pion_UK_17_31Sq is TTimelyDepictionReceiverFactory( DepictionDescriptor = Depiction_pion_UK_17_31Sq)
@@ -557,6 +689,20 @@ unnamed TMimeticGhostRegistration
         ( 'pion_BEL_42Sq', Depiction_pion_BEL_42Sq ),
         ( 'pion_BEL_7Sq', Depiction_pion_BEL_7Sq ),
         ( 'pion_BEL_8Sq', Depiction_pion_BEL_8Sq ),
+        ( 'pion_CAN_409TFS', Depiction_pion_CAN_409TFS ),
+        ( 'pion_CAN_421TFS', Depiction_pion_CAN_421TFS ),
+        ( 'pion_CAN_439TFS', Depiction_pion_CAN_439TFS ),
+        ( 'pion_FR_Alsace', Depiction_pion_FR_Alsace ),
+        ( 'pion_FR_Ardennes', Depiction_pion_FR_Ardennes ),
+        ( 'pion_FR_Champagne', Depiction_pion_FR_Champagne ),
+        ( 'pion_FR_Cigognes', Depiction_pion_FR_Cigognes ),
+        ( 'pion_FR_Corse', Depiction_pion_FR_Corse ),
+        ( 'pion_FR_Cote_dOr', Depiction_pion_FR_Cote_dOr ),
+        ( 'pion_FR_Jura', Depiction_pion_FR_Jura ),
+        ( 'pion_FR_Navarre', Depiction_pion_FR_Navarre ),
+        ( 'pion_FR_Roussillon', Depiction_pion_FR_Roussillon ),
+        ( 'pion_FR_Valois', Depiction_pion_FR_Valois ),
+        ( 'pion_FR_Vosges', Depiction_pion_FR_Vosges ),
         ( 'pion_NL_Grp_Eindhoven', Depiction_pion_NL_Grp_Eindhoven ),
         ( 'pion_NL_Grp_Leeuwarden', Depiction_pion_NL_Grp_Leeuwarden ),
         ( 'pion_NL_Grp_Twenthe', Depiction_pion_NL_Grp_Twenthe ),
@@ -600,6 +746,14 @@ unnamed TMimeticGhostRegistration
         ( 'pion_SOV_911APIB', Depiction_pion_SOV_911APIB ),
         ( 'pion_SOV_931ORAP', Depiction_pion_SOV_931ORAP ),
         ( 'pion_SOV_968IAP', Depiction_pion_SOV_968IAP ),
+        ( 'pion_TCH_11FighterRgt', Depiction_pion_TCH_11FighterRgt ),
+        ( 'pion_TCH_1FighterRgt', Depiction_pion_TCH_1FighterRgt ),
+        ( 'pion_TCH_20FightBombRgt', Depiction_pion_TCH_20FightBombRgt ),
+        ( 'pion_TCH_28FightBombRgt', Depiction_pion_TCH_28FightBombRgt ),
+        ( 'pion_TCH_30FightBombRgt', Depiction_pion_TCH_30FightBombRgt ),
+        ( 'pion_TCH_4FighterRgt', Depiction_pion_TCH_4FighterRgt ),
+        ( 'pion_TCH_5FighterRgt', Depiction_pion_TCH_5FighterRgt ),
+        ( 'pion_TCH_9FighterRgt', Depiction_pion_TCH_9FighterRgt ),
         ( 'pion_UK_12Sq', Depiction_pion_UK_12Sq ),
         ( 'pion_UK_16_20Sq', Depiction_pion_UK_16_20Sq ),
         ( 'pion_UK_17_31Sq', Depiction_pion_UK_17_31Sq ),

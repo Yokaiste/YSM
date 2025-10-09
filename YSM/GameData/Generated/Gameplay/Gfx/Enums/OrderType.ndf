@@ -23,8 +23,8 @@ EOrderType is TBaseClass
     Land is 18
     Deprecated_KeptForCompatibility is 19
     Load is 20
-    LoadIntoTransport is 21
-    LoadUnit is 22
+    Deprecated_KeptForCompatibility2 is 21
+    Deprecated_KeptForCompatibility3 is 22
     Move is 23
     MoveAndAttack is 24
     PositionInterdite is 25

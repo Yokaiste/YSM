@@ -210,6 +210,25 @@ export DepictionOperator_MovementSound_SM_SD_avion_HFB_320 is TCosmeticConstantM
         ),
     ]
 )
+export DepictionOperator_MovementSound_SM_SD_avion_Hawk_T1 is TCosmeticConstantMovementSoundOperatorDesc
+(
+    FadeInDuration = 0.5
+    MaxVolume = 1
+    MaxVolumeSpeed = 80
+    MinVolume = 0.1
+    OperatorId = "constantSound"
+    Sounds = 
+    [
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SoundSettings_Moteur_Avion
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sounds/SFX/Avions/Hawk_Engine.wav"
+            )
+        ),
+    ]
+)
 export DepictionOperator_MovementSound_SM_SD_avion_Mirage2000 is TCosmeticConstantMovementSoundOperatorDesc
 (
     FadeInDuration = 0.5
@@ -453,6 +472,25 @@ export DepictionOperator_MovementSound_SM_SD_avion_bombardier_Buccaneer is TCosm
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sounds/SFX/Avions/Buccaneer_Engine.wav"
+            )
+        ),
+    ]
+)
+export DepictionOperator_MovementSound_SM_SD_avion_bombardier_Canberra is TCosmeticConstantMovementSoundOperatorDesc
+(
+    FadeInDuration = 0.5
+    MaxVolume = 1
+    MaxVolumeSpeed = 80
+    MinVolume = 0.1
+    OperatorId = "constantSound"
+    Sounds = 
+    [
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SoundSettings_Moteur_Avion
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sounds/SFX/Avions/Canberra_Engine.wav"
             )
         ),
     ]

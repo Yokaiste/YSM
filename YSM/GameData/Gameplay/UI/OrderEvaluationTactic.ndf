@@ -16,8 +16,6 @@ public orderEvaluatorCollectionTactic is TOrderEvaluatorCollectionDescriptor(
         TOrderEvaluatorAny( OrderType = EOrderType/AISupply),
         TOrderEvaluatorAny( OrderType = EOrderType/AIAttack IsTargetAuthorized = true),
         TOrderEvaluatorAny( OrderType = EOrderType/AIManageArtillery_Focus IsTargetAuthorized = true),
-        TOrderEvaluatorLoadIntoTransport( OrderType = EOrderType/LoadIntoTransport TerminalIfSelected = true),
-        TOrderEvaluatorLoadUnit( OrderType = EOrderType/LoadUnit TerminalIfSelected = true),
         TOrderEvaluatorEnterDistrict( OrderType = EOrderType/EnterDistrict),
         TOrderEvaluatorAttack( OrderType = EOrderType/Attack TerminalIfSelected = true),
         TOrderEvaluatorAttack( OrderType = EOrderType/AirplaneAttack TerminalIfSelected = true),
@@ -40,8 +38,8 @@ public orderEvaluatorCollectionTactic is TOrderEvaluatorCollectionDescriptor(
 
     ContextualOrdersHandler =
     [
-        TOrderEvaluatorLoadIntoTransport( OrderType = EOrderType/LoadIntoTransport TerminalIfSelected = true),
-        TOrderEvaluatorLoadUnit( OrderType = EOrderType/LoadUnit TerminalIfSelected = true),
+        TOrderEvaluatorLoadIntoTransport( OrderType = EOrderType/Load TerminalIfSelected = true),
+        TOrderEvaluatorLoadUnit( OrderType = EOrderType/Load TerminalIfSelected = true),
         TOrderEvaluatorAssaultDistrict( OrderType = EOrderType/AssaultDistrict),
         TOrderEvaluatorEnterDistrict( OrderType = EOrderType/EnterDistrict),
         TOrderEvaluatorAttack( OrderType = EOrderType/Attack TerminalIfSelected = true),
@@ -118,11 +116,7 @@ public orderEvaluatorCollectionTactic is TOrderEvaluatorCollectionDescriptor(
             OrderInterpretationForOrderDisplayAndAcknows = EOrderType/MoveAndAttack
         )),
 
-        (EOrderType/LoadIntoTransport, TOrderFeedback(
-            FXFeedback = $/GFX/GameFx/FX_Feedback_Move
-            MouseWidgetSelector = "MouseWidgetSelector_DefaultOrder"
-        )),
-        (EOrderType/LoadUnit, TOrderFeedback(
+        (EOrderType/Load, TOrderFeedback(
             FXFeedback = $/GFX/GameFx/FX_Feedback_Move
             MouseWidgetSelector = "MouseWidgetSelector_DefaultOrder"
         )),

@@ -1,0 +1,17 @@
+export Modele_VAB_RASIT_Legion_FR is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/VAB_RASIT/VAB_RASIT.fbx"
+    Textures="GameData:/Assets/3D/Units/FR/Vehicule/VAB_RASIT_Legion_FR"
+)
+
+export Modele_VAB_RASIT_Legion_FR_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/VAB_RASIT_MID/VAB_RASIT_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/FR/Vehicule/VAB_RASIT_Legion_FR_MID"
+)
+
+export Modele_VAB_RASIT_Legion_FR_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/FR/Vehicule/VAB_RASIT_LOW/VAB_RASIT_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/FR/Vehicule/VAB_RASIT_Legion_FR_LOW"
+)

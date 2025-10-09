@@ -1,0 +1,17 @@
+export Modele_M151_MUTT_CMD_CAN is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Vehicule/M151_MUTT_CMD/M151_MUTT_CMD.fbx"
+    Textures="GameData:/Assets/3D/Units/CAN/Vehicule/M151_MUTT_CMD"
+)
+
+export Modele_M151_MUTT_CMD_CAN_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Vehicule/M151_MUTT_CMD_MID/M151_MUTT_CMD_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/CAN/Vehicule/M151_MUTT_CMD_MID"
+)
+
+export Modele_M151_MUTT_CMD_CAN_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/US/Vehicule/M151_MUTT_CMD_LOW/M151_MUTT_CMD_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/CAN/Vehicule/M151_MUTT_CMD_LOW"
+)

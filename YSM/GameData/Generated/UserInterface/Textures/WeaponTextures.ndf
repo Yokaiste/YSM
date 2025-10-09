@@ -1530,6 +1530,10 @@ Texture_Interface_Weapon_grail is TUIResourceTexture_Common
 (
     FileName = "GameData:/Assets/2D/Interface/Common/UnitsIcons/Armes/Panel_Info/grail.png"
 )
+Texture_Interface_Weapon_Igla is TUIResourceTexture_Common
+(
+    FileName = "GameData:/Assets/2D/Interface/Common/UnitsIcons/Armes/Panel_Info/Igla.png"
+)
 Texture_Interface_Weapon_Mistral is TUIResourceTexture_Common
 (
     FileName = "GameData:/Assets/2D/Interface/Common/UnitsIcons/Armes/Panel_Info/Mistral.png"
@@ -1561,10 +1565,6 @@ Texture_Interface_Weapon_aim92 is TUIResourceTexture_Common
 Texture_Interface_Weapon_hawk is TUIResourceTexture_Common
 (
     FileName = "GameData:/Assets/2D/Interface/Common/UnitsIcons/Armes/Panel_Info/hawk.png"
-)
-Texture_Interface_Weapon_Igla is TUIResourceTexture_Common
-(
-    FileName = "GameData:/Assets/2D/Interface/Common/UnitsIcons/Armes/Panel_Info/Igla.png"
 )
 Texture_Interface_Weapon_mim72 is TUIResourceTexture_Common
 (
@@ -1977,6 +1977,7 @@ WeaponAdditionalTextureBank is TBUCKToolAdditionalTextureBank
         ("Texture_Interface_Weapon_M47_dragon", MAP [(~/ComponentState/Normal, ~/Texture_Interface_Weapon_M47_dragon)]),
         ("Texture_Interface_Weapon_fim92", MAP [(~/ComponentState/Normal, ~/Texture_Interface_Weapon_fim92)]),
         ("Texture_Interface_Weapon_grail", MAP [(~/ComponentState/Normal, ~/Texture_Interface_Weapon_grail)]),
+        ("Texture_Interface_Weapon_Igla", MAP [(~/ComponentState/Normal, ~/Texture_Interface_Weapon_Igla)]),
         ("Texture_Interface_Weapon_Mistral", MAP [(~/ComponentState/Normal, ~/Texture_Interface_Weapon_Mistral)]),
         ("Texture_Interface_Weapon_9M311_Tunguska", MAP [(~/ComponentState/Normal, ~/Texture_Interface_Weapon_9M311_Tunguska)]),
         ("Texture_Interface_Weapon_9M33_Osa", MAP [(~/ComponentState/Normal, ~/Texture_Interface_Weapon_9M33_Osa)]),
@@ -1985,7 +1986,6 @@ WeaponAdditionalTextureBank is TBUCKToolAdditionalTextureBank
         ("Texture_Interface_Weapon_SAM_FASTA_Strela2M_x4", MAP [(~/ComponentState/Normal, ~/Texture_Interface_Weapon_SAM_FASTA_Strela2M_x4)]),
         ("Texture_Interface_Weapon_aim92", MAP [(~/ComponentState/Normal, ~/Texture_Interface_Weapon_aim92)]),
         ("Texture_Interface_Weapon_hawk", MAP [(~/ComponentState/Normal, ~/Texture_Interface_Weapon_hawk)]),
-        ("Texture_Interface_Weapon_Igla", MAP [(~/ComponentState/Normal, ~/Texture_Interface_Weapon_Igla)]),
         ("Texture_Interface_Weapon_mim72", MAP [(~/ComponentState/Normal, ~/Texture_Interface_Weapon_mim72)]),
         ("Texture_Interface_Weapon_R440", MAP [(~/ComponentState/Normal, ~/Texture_Interface_Weapon_R440)]),
         ("Texture_Interface_Weapon_Rapier", MAP [(~/ComponentState/Normal, ~/Texture_Interface_Weapon_Rapier)]),

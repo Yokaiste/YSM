@@ -310,7 +310,6 @@ UnitPowerInformation is TUnitPowerInformationConstante
     UnitPowerTerrainCoeff = 1.0
     UnitPowerBuildingMultiplier = 0.01
     UnitPowerUnarmedOrPinnedMultiplier = 0.1
-    DefaultDistanceToConsiderOtherUnitsPowerGRU = 707 // Les missions d'attaque prendront en compte ce rayon pour calculer leurs ratios
 )
 
 //--------------------------------------------------------------------------------------//

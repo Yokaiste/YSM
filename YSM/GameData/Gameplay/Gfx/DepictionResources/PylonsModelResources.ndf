@@ -24,6 +24,7 @@ export PodSOVModelPylon_32 is TResourceMesh( Mesh="GameData:/Assets/3D/Units/Amm
 export PodSOVModelPylon_33 is TResourceMesh( Mesh="GameData:/Assets/3D/Units/URSS/Helico/Mi_17/Pod_Rockets_SOV_33.fbx" )
 
 export PodFRModelPylon_4  is TResourceMesh( Mesh="GameData:/Assets/3D/Units/Ammo/Pylones/FR/Type_100_4.fbx" ) // ce pod a 4 boites
+export PodFRModelPylon_18  is TResourceMesh( Mesh="GameData:/Assets/3D/Units/Ammo/Pylones/FR/MATRA_TYPE_155_LAUNCHER/MATRA_TYPE_155_x18.fbx" ) // ce pod a 18 boites
 
 export PodFRModelResource is  TResourceMesh( Mesh="GameData:/Assets/3D/Units/Ammo/Pylones/FR/JL_100R.fbx" ) // ce pod a 19 boites
 export PodRFAModelResource is TResourceMesh( Mesh="GameData:/Assets/3D/Units/Ammo/Pylones/FR/JL_100R.fbx" ) // ce pod a 19 boites

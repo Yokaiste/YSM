@@ -1,0 +1,3 @@
+export Modele_HMGteam_AGS17_Vysadkari_TCH is TResourceMesh( Mesh=ModelFile_HMGteam_AGS17_SOV)
+export Modele_HMGteam_AGS17_Vysadkari_TCH_MID is TResourceMesh( Mesh=ModelFile_HMGteam_AGS17_SOV_MID)
+export Modele_HMGteam_AGS17_Vysadkari_TCH_LOW is TResourceMesh( Mesh=ModelFile_HMGteam_AGS17_SOV_LOW)

@@ -1,0 +1,22 @@
+export Modele_Su_22_RKT_TCH is TResourceMesh
+(
+    Mesh=ModelFile_Su_22_RKT_DDR
+    Textures="GameData:/Assets/3D/Units/TCH/Avion/Su_22"
+)
+
+export Modele_Su_22_RKT_TCH_MID is TResourceMesh
+(
+    Mesh=ModelFile_Su_22_RKT_DDR_MID
+    Textures="GameData:/Assets/3D/Units/TCH/Avion/Su_22_MID"
+)
+
+export Modele_Su_22_RKT_TCH_LOW is TResourceMesh
+(
+    Mesh=ModelFile_Su_22_RKT_DDR_LOW
+    Textures="GameData:/Assets/3D/Units/TCH/Avion/Su_22_LOW"
+)
+
+export Modele_Su_22_RKT_TCH_train is TResourceMesh
+(
+    Mesh=ModelFile_Su_22_RKT_DDR_train
+)

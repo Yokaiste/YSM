@@ -1805,6 +1805,30 @@ HumanSubDepictionsShowroom_Atteam_Fagot_VDV_SOV is
         MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_Spe_D_VDV
     ),
 ]
+HumanSubDepictions_Atteam_Fagot_Vysadkari_TCH is 
+[
+    SubDepiction_ATGMServantLeft
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_G_Vysadkar_TCH
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_G_Vysadkar_TCH_LOW
+    ),
+    SubDepiction_ATGMServantRight
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_D_Vysadkar_TCH
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_D_Vysadkar_TCH_LOW
+    ),
+]
+HumanSubDepictionsShowroom_Atteam_Fagot_Vysadkari_TCH is 
+[
+    ShowroomSubDepiction_ATGMServantLeft
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_Vysadkar_TCH
+    ),
+    ShowroomSubDepiction_ATGMServantRight
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_Vysadkar_TCH
+    ),
+]
 HumanSubDepictions_Atteam_ITOW_CAN is 
 [
     SubDepiction_ATGMServantLeft
@@ -2338,6 +2362,15 @@ HumanSubDepictions_Berliet_GBC_8KT_HMG_FR is
     ),
 ]
 HumanSubDepictionsShowroom_Berliet_GBC_8KT_HMG_FR is []
+HumanSubDepictions_Berliet_GBC_8KT_supply_FR is 
+[
+    SubDepiction_Driver
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Driver_FR
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Driver_FR_LOW
+    ),
+]
+HumanSubDepictionsShowroom_Berliet_GBC_8KT_supply_FR is []
 HumanSubDepictions_Berliet_GBU_15_FR is 
 [
     SubDepiction_Driver
@@ -2655,6 +2688,35 @@ HumanSubDepictions_DCA_76T2_20mm_CPA_FR is
     ),
 ]
 HumanSubDepictionsShowroom_DCA_76T2_20mm_CPA_FR is 
+[
+    ShowroomSubDepiction_GunnerLeft
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_FR
+    ),
+    ShowroomSubDepiction_ServantRight
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_FR
+    ),
+]
+HumanSubDepictions_DCA_76T2_20mm_FR is 
+[
+    SubDepiction_ServantWalkOnlyLeft
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_G_FR
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_G_FR_LOW
+    ),
+    SubDepiction_GunnerIdleOnlyLeft
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_G_FR
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_G_FR_LOW
+    ),
+    SubDepiction_ServantRight
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_D_FR
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_D_FR_LOW
+    ),
+]
+HumanSubDepictionsShowroom_DCA_76T2_20mm_FR is 
 [
     ShowroomSubDepiction_GunnerLeft
     (
@@ -4531,6 +4593,15 @@ HumanSubDepictions_GAZ_66B_SOV is
     ),
 ]
 HumanSubDepictionsShowroom_GAZ_66B_SOV is []
+HumanSubDepictions_GAZ_66B_TCH is 
+[
+    SubDepiction_Driver
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Driver_vz85_TCH
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Driver_vz85_TCH_LOW
+    ),
+]
+HumanSubDepictionsShowroom_GAZ_66B_TCH is []
 HumanSubDepictions_GAZ_66B_ZU_SOV is 
 [
     SubDepiction_Driver
@@ -4909,6 +4980,30 @@ HumanSubDepictionsShowroom_HMGteam_AGS17_VDV_SOV is
         MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_Spe_D_VDV
     ),
 ]
+HumanSubDepictions_HMGteam_AGS17_Vysadkari_TCH is 
+[
+    SubDepiction_ATGMServantLeft
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_G_Vysadkar_TCH
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_G_Vysadkar_TCH_LOW
+    ),
+    SubDepiction_ATGMServantRight
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_D_Vysadkar_TCH
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_D_Vysadkar_TCH_LOW
+    ),
+]
+HumanSubDepictionsShowroom_HMGteam_AGS17_Vysadkari_TCH is 
+[
+    ShowroomSubDepiction_ATGMServantLeft
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_Vysadkar_TCH
+    ),
+    ShowroomSubDepiction_ATGMServantRight
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_Vysadkar_TCH
+    ),
+]
 HumanSubDepictions_HMGteam_DShK_AA_SOV is 
 [
     SubDepiction_ATGMServantLeft
@@ -5051,6 +5146,30 @@ HumanSubDepictionsShowroom_HMGteam_M1919A4_NL is
     ShowroomSubDepiction_ATGMServantRight
     (
         MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_NL
+    ),
+]
+HumanSubDepictions_HMGteam_M1919_Reserve_CAN is 
+[
+    SubDepiction_ATGMServantLeft
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_G_CAN
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_G_CAN_LOW
+    ),
+    SubDepiction_ATGMServantRight
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_D_CAN
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_D_CAN_LOW
+    ),
+]
+HumanSubDepictionsShowroom_HMGteam_M1919_Reserve_CAN is 
+[
+    ShowroomSubDepiction_ATGMServantLeft
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_CAN
+    ),
+    ShowroomSubDepiction_ATGMServantRight
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_CAN
     ),
 ]
 HumanSubDepictions_HMGteam_M2HB_AB_US is 
@@ -5507,6 +5626,30 @@ HumanSubDepictionsShowroom_HMGteam_MAG_BEL is
     ShowroomSubDepiction_ATGMServantRight
     (
         MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_BEL
+    ),
+]
+HumanSubDepictions_HMGteam_MAG_CAN is 
+[
+    SubDepiction_ATGMServantLeft
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_G_CAN
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_G_CAN_LOW
+    ),
+    SubDepiction_ATGMServantRight
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_D_CAN
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_D_CAN_LOW
+    ),
+]
+HumanSubDepictionsShowroom_HMGteam_MAG_CAN is 
+[
+    ShowroomSubDepiction_ATGMServantLeft
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_CAN
+    ),
+    ShowroomSubDepiction_ATGMServantRight
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_CAN
     ),
 ]
 HumanSubDepictions_HMGteam_MAG_NL is 
@@ -6235,6 +6378,30 @@ HumanSubDepictionsShowroom_Howz_2A36_Giatsint_B_SOV is
     ShowroomSubDepiction_ServantRight
     (
         MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_SOV
+    ),
+]
+HumanSubDepictions_Howz_A19_122mm_ESP is 
+[
+    SubDepiction_ServantLeft
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_D_ESP
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_D_ESP_LOW
+    ),
+    SubDepiction_ServantRight
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_G_ESP
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_G_ESP_LOW
+    ),
+]
+HumanSubDepictionsShowroom_Howz_A19_122mm_ESP is 
+[
+    ShowroomSubDepiction_ServantLeft
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_ESP
+    ),
+    ShowroomSubDepiction_ServantRight
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_ESP
     ),
 ]
 HumanSubDepictions_Howz_A19_122mm_POL is 
@@ -7053,6 +7220,30 @@ HumanSubDepictionsShowroom_Howz_M46_130mm_POL is
         MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_POL
     ),
 ]
+HumanSubDepictions_Howz_M46_130mm_TCH is 
+[
+    SubDepiction_ServantLeft
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_G_vz85_TCH
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_G_vz85_TCH_LOW
+    ),
+    SubDepiction_ServantRight
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_D_vz85_TCH
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_D_vz85_TCH_LOW
+    ),
+]
+HumanSubDepictionsShowroom_Howz_M46_130mm_TCH is 
+[
+    ShowroomSubDepiction_ServantLeft
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_vz85_TCH
+    ),
+    ShowroomSubDepiction_ServantRight
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_vz85_TCH
+    ),
+]
 HumanSubDepictions_Howz_M56_Pack_FJ_RFA is 
 [
     SubDepiction_ServantLeft
@@ -7171,6 +7362,30 @@ HumanSubDepictionsShowroom_Howz_ML20_152mm_SOV is
     ShowroomSubDepiction_ServantRight
     (
         MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_SOV
+    ),
+]
+HumanSubDepictions_Howz_ML20_152mm_TCH is 
+[
+    SubDepiction_ServantLeft
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_G_vz85_TCH
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_G_vz85_TCH_LOW
+    ),
+    SubDepiction_ServantRight
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_D_vz85_TCH
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_D_vz85_TCH_LOW
+    ),
+]
+HumanSubDepictionsShowroom_Howz_ML20_152mm_TCH is 
+[
+    ShowroomSubDepiction_ServantLeft
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_vz85_TCH
+    ),
+    ShowroomSubDepiction_ServantRight
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_vz85_TCH
     ),
 ]
 HumanSubDepictions_Howz_MstaB_150mm_SOV is 
@@ -7346,6 +7561,15 @@ HumanSubDepictions_Iltis_para_CMD_RFA is
     ),
 ]
 HumanSubDepictionsShowroom_Iltis_para_CMD_RFA is []
+HumanSubDepictions_Iltis_reco_RFA is 
+[
+    SubDepiction_Driver
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Driver_RFA
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Driver_RFA_LOW
+    ),
+]
+HumanSubDepictionsShowroom_Iltis_reco_RFA is []
 HumanSubDepictions_Iltis_trans_BEL is 
 [
     SubDepiction_Driver
@@ -7896,6 +8120,15 @@ HumanSubDepictions_M151C_RCL_NG_US is
     ),
 ]
 HumanSubDepictionsShowroom_M151C_RCL_NG_US is []
+HumanSubDepictions_M151_MUTT_CMD_CAN is 
+[
+    SubDepiction_Driver
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Driver_CAN
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Driver_CAN_LOW
+    ),
+]
+HumanSubDepictionsShowroom_M151_MUTT_CMD_CAN is []
 HumanSubDepictions_M151_MUTT_CMD_US is 
 [
     SubDepiction_Driver
@@ -9083,6 +9316,30 @@ HumanSubDepictionsShowroom_Mortier_81mm_LUX is
         MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_LUX
     ),
 ]
+HumanSubDepictions_Mortier_81mm_Legion_FR is 
+[
+    SubDepiction_ServantLeft
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_G_Legion_2_FR
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_G_Legion_2_FR_LOW
+    ),
+    SubDepiction_ServantRight
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_D_Legion_2_FR
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_D_Legion_2_FR_LOW
+    ),
+]
+HumanSubDepictionsShowroom_Mortier_81mm_Legion_FR is 
+[
+    ShowroomSubDepiction_ServantLeft
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_Legion_2_FR
+    ),
+    ShowroomSubDepiction_ServantRight
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_Legion_2_FR
+    ),
+]
 HumanSubDepictions_Mortier_81mm_para_BEL is 
 [
     SubDepiction_ServantLeft
@@ -9107,6 +9364,30 @@ HumanSubDepictionsShowroom_Mortier_81mm_para_BEL is
         MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_ParaCmdo_BEL
     ),
 ]
+HumanSubDepictions_Mortier_81mm_para_FR is 
+[
+    SubDepiction_ServantLeft
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_Para_Sep_G_FR
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_Para_Sep_G_FR_LOW
+    ),
+    SubDepiction_ServantRight
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_Para_NCO_D_FR
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_Para_NCO_D_FR_LOW
+    ),
+]
+HumanSubDepictionsShowroom_Mortier_81mm_para_FR is 
+[
+    ShowroomSubDepiction_ServantLeft
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_Para_Sep_G_FR
+    ),
+    ShowroomSubDepiction_ServantRight
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_Para_NCO_D_FR
+    ),
+]
 HumanSubDepictions_Mortier_82mm_vz52_TCH is 
 [
     SubDepiction_ServantLeft
@@ -9129,6 +9410,30 @@ HumanSubDepictionsShowroom_Mortier_82mm_vz52_TCH is
     ShowroomSubDepiction_ServantRight
     (
         MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_vz85_TCH
+    ),
+]
+HumanSubDepictions_Mortier_82mm_vz52_Vysadkari_TCH is 
+[
+    SubDepiction_ServantLeft
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_G_Vysadkar_TCH
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_G_Vysadkar_TCH_LOW
+    ),
+    SubDepiction_ServantRight
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_D_Vysadkar_TCH
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_D_Vysadkar_TCH_LOW
+    ),
+]
+HumanSubDepictionsShowroom_Mortier_82mm_vz52_Vysadkari_TCH is 
+[
+    ShowroomSubDepiction_ServantLeft
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_Vysadkar_TCH
+    ),
+    ShowroomSubDepiction_ServantRight
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_Vysadkar_TCH
     ),
 ]
 HumanSubDepictions_Mortier_M29_81mm_Marines_NL is 
@@ -10204,6 +10509,15 @@ HumanSubDepictions_UAZ_469_CMD_VDV_SOV is
     ),
 ]
 HumanSubDepictionsShowroom_UAZ_469_CMD_VDV_SOV is []
+HumanSubDepictions_UAZ_469_CMD_Vysadkari_TCH is 
+[
+    SubDepiction_Driver
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Driver_Vysadkar_TCH
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Driver_Vysadkar_TCH_LOW
+    ),
+]
+HumanSubDepictionsShowroom_UAZ_469_CMD_Vysadkari_TCH is []
 HumanSubDepictions_UAZ_469_Fagot_DDR is 
 [
     SubDepiction_Driver
@@ -10339,6 +10653,15 @@ HumanSubDepictions_UAZ_469_SPG9_VDV_SOV is
     ),
 ]
 HumanSubDepictionsShowroom_UAZ_469_SPG9_VDV_SOV is []
+HumanSubDepictions_UAZ_469_Vysadkari_supply_TCH is 
+[
+    SubDepiction_Driver
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Driver_vz85_TCH
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Driver_vz85_TCH_LOW
+    ),
+]
+HumanSubDepictionsShowroom_UAZ_469_Vysadkari_supply_TCH is []
 HumanSubDepictions_UAZ_469_supply_Para_POL is 
 [
     SubDepiction_Driver
@@ -10593,6 +10916,15 @@ HumanSubDepictions_VAB_RASIT_FR is
     ),
 ]
 HumanSubDepictionsShowroom_VAB_RASIT_FR is []
+HumanSubDepictions_VAB_RASIT_Legion_FR is 
+[
+    SubDepiction_Driver
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Driver_FR
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Driver_FR_LOW
+    ),
+]
+HumanSubDepictionsShowroom_VAB_RASIT_Legion_FR is []
 HumanSubDepictions_VAB_Reserve_FR is 
 [
     SubDepiction_Driver
@@ -10778,6 +11110,15 @@ HumanSubDepictions_VLTT_P4_PC_FR is
     ),
 ]
 HumanSubDepictionsShowroom_VLTT_P4_PC_FR is []
+HumanSubDepictions_VLTT_P4_PC_Legion_FR is 
+[
+    SubDepiction_Driver
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Driver_Legion_2_FR
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Driver_Legion_2_FR_LOW
+    ),
+]
+HumanSubDepictionsShowroom_VLTT_P4_PC_Legion_FR is []
 HumanSubDepictions_VW_T2b_MP_BEL is 
 [
     SubDepiction_Driver
@@ -11702,6 +12043,17 @@ unnamed TTransportedInfantryCatalogEntries
         TTransportedInfantryEntry
         (
             Count = 2
+            Identifier = "Atteam_Fagot_Vysadkari_TCH"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Servant_G_Vysadkar_TCH,
+                $/GFX/DepictionResources/MeshDescriptor_Servant_D_Vysadkar_TCH,
+            ]
+            UniqueCount = 2
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 2
             Identifier = "Atteam_ITOW_CAN"
             Meshes = 
             [
@@ -12135,6 +12487,16 @@ unnamed TTransportedInfantryCatalogEntries
         TTransportedInfantryEntry
         (
             Count = 1
+            Identifier = "Berliet_GBC_8KT_supply_FR"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Driver_FR,
+            ]
+            UniqueCount = 1
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 1
             Identifier = "Berliet_GBU_15_FR"
             Meshes = 
             [
@@ -12361,6 +12723,17 @@ unnamed TTransportedInfantryCatalogEntries
         (
             Count = 2
             Identifier = "DCA_76T2_20mm_CPA_FR"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Servant_G_FR,
+                $/GFX/DepictionResources/MeshDescriptor_Servant_D_FR,
+            ]
+            UniqueCount = 2
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 2
+            Identifier = "DCA_76T2_20mm_FR"
             Meshes = 
             [
                 $/GFX/DepictionResources/MeshDescriptor_Servant_G_FR,
@@ -13197,6 +13570,16 @@ unnamed TTransportedInfantryCatalogEntries
         ),
         TTransportedInfantryEntry
         (
+            Count = 1
+            Identifier = "GAZ_66B_TCH"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Driver_vz85_TCH,
+            ]
+            UniqueCount = 1
+        ),
+        TTransportedInfantryEntry
+        (
             Count = 3
             Identifier = "GAZ_66B_ZU_SOV"
             Meshes = 
@@ -13432,6 +13815,17 @@ unnamed TTransportedInfantryCatalogEntries
         TTransportedInfantryEntry
         (
             Count = 2
+            Identifier = "HMGteam_AGS17_Vysadkari_TCH"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Servant_G_Vysadkar_TCH,
+                $/GFX/DepictionResources/MeshDescriptor_Servant_D_Vysadkar_TCH,
+            ]
+            UniqueCount = 2
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 2
             Identifier = "HMGteam_DShK_AA_SOV"
             Meshes = 
             [
@@ -13492,6 +13886,17 @@ unnamed TTransportedInfantryCatalogEntries
             [
                 $/GFX/DepictionResources/MeshDescriptor_Servant_G_NL,
                 $/GFX/DepictionResources/MeshDescriptor_Servant_D_NL,
+            ]
+            UniqueCount = 2
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 2
+            Identifier = "HMGteam_M1919_Reserve_CAN"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Servant_G_CAN,
+                $/GFX/DepictionResources/MeshDescriptor_Servant_D_CAN,
             ]
             UniqueCount = 2
         ),
@@ -13701,6 +14106,17 @@ unnamed TTransportedInfantryCatalogEntries
             [
                 $/GFX/DepictionResources/MeshDescriptor_Servant_G_BEL,
                 $/GFX/DepictionResources/MeshDescriptor_Servant_D_BEL,
+            ]
+            UniqueCount = 2
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 2
+            Identifier = "HMGteam_MAG_CAN"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Servant_G_CAN,
+                $/GFX/DepictionResources/MeshDescriptor_Servant_D_CAN,
             ]
             UniqueCount = 2
         ),
@@ -14052,6 +14468,17 @@ unnamed TTransportedInfantryCatalogEntries
             [
                 $/GFX/DepictionResources/MeshDescriptor_Servant_G_SOV,
                 $/GFX/DepictionResources/MeshDescriptor_Servant_D_SOV,
+            ]
+            UniqueCount = 2
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 2
+            Identifier = "Howz_A19_122mm_ESP"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Servant_D_ESP,
+                $/GFX/DepictionResources/MeshDescriptor_Servant_G_ESP,
             ]
             UniqueCount = 2
         ),
@@ -14432,6 +14859,17 @@ unnamed TTransportedInfantryCatalogEntries
         TTransportedInfantryEntry
         (
             Count = 2
+            Identifier = "Howz_M46_130mm_TCH"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Servant_G_vz85_TCH,
+                $/GFX/DepictionResources/MeshDescriptor_Servant_D_vz85_TCH,
+            ]
+            UniqueCount = 2
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 2
             Identifier = "Howz_M56_Pack_FJ_RFA"
             Meshes = 
             [
@@ -14481,6 +14919,17 @@ unnamed TTransportedInfantryCatalogEntries
             [
                 $/GFX/DepictionResources/MeshDescriptor_Servant_G_SOV,
                 $/GFX/DepictionResources/MeshDescriptor_Servant_D_SOV,
+            ]
+            UniqueCount = 2
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 2
+            Identifier = "Howz_ML20_152mm_TCH"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Servant_G_vz85_TCH,
+                $/GFX/DepictionResources/MeshDescriptor_Servant_D_vz85_TCH,
             ]
             UniqueCount = 2
         ),
@@ -14605,6 +15054,16 @@ unnamed TTransportedInfantryCatalogEntries
             Meshes = 
             [
                 $/GFX/DepictionResources/MeshDescriptor_Driver_FJ_RFA,
+            ]
+            UniqueCount = 1
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 1
+            Identifier = "Iltis_reco_RFA"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Driver_RFA,
             ]
             UniqueCount = 1
         ),
@@ -15207,6 +15666,16 @@ unnamed TTransportedInfantryCatalogEntries
             Meshes = 
             [
                 $/GFX/DepictionResources/MeshDescriptor_Driver_US,
+            ]
+            UniqueCount = 1
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 1
+            Identifier = "M151_MUTT_CMD_CAN"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Driver_CAN,
             ]
             UniqueCount = 1
         ),
@@ -16030,6 +16499,17 @@ unnamed TTransportedInfantryCatalogEntries
         TTransportedInfantryEntry
         (
             Count = 2
+            Identifier = "Mortier_81mm_Legion_FR"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Servant_G_Legion_2_FR,
+                $/GFX/DepictionResources/MeshDescriptor_Servant_D_Legion_2_FR,
+            ]
+            UniqueCount = 2
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 2
             Identifier = "Mortier_81mm_para_BEL"
             Meshes = 
             [
@@ -16041,11 +16521,33 @@ unnamed TTransportedInfantryCatalogEntries
         TTransportedInfantryEntry
         (
             Count = 2
+            Identifier = "Mortier_81mm_para_FR"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Servant_Para_Sep_G_FR,
+                $/GFX/DepictionResources/MeshDescriptor_Servant_Para_NCO_D_FR,
+            ]
+            UniqueCount = 2
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 2
             Identifier = "Mortier_82mm_vz52_TCH"
             Meshes = 
             [
                 $/GFX/DepictionResources/MeshDescriptor_Servant_G_vz85_TCH,
                 $/GFX/DepictionResources/MeshDescriptor_Servant_D_vz85_TCH,
+            ]
+            UniqueCount = 2
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 2
+            Identifier = "Mortier_82mm_vz52_Vysadkari_TCH"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Servant_G_Vysadkar_TCH,
+                $/GFX/DepictionResources/MeshDescriptor_Servant_D_Vysadkar_TCH,
             ]
             UniqueCount = 2
         ),
@@ -16897,6 +17399,16 @@ unnamed TTransportedInfantryCatalogEntries
         TTransportedInfantryEntry
         (
             Count = 1
+            Identifier = "UAZ_469_CMD_Vysadkari_TCH"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Driver_Vysadkar_TCH,
+            ]
+            UniqueCount = 1
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 1
             Identifier = "UAZ_469_Fagot_DDR"
             Meshes = 
             [
@@ -17041,6 +17553,16 @@ unnamed TTransportedInfantryCatalogEntries
             Meshes = 
             [
                 $/GFX/DepictionResources/MeshDescriptor_Driver_VdV_SOV,
+            ]
+            UniqueCount = 1
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 1
+            Identifier = "UAZ_469_Vysadkari_supply_TCH"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Driver_vz85_TCH,
             ]
             UniqueCount = 1
         ),
@@ -17311,6 +17833,16 @@ unnamed TTransportedInfantryCatalogEntries
         TTransportedInfantryEntry
         (
             Count = 1
+            Identifier = "VAB_RASIT_Legion_FR"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Driver_FR,
+            ]
+            UniqueCount = 1
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 1
             Identifier = "VAB_Reserve_FR"
             Meshes = 
             [
@@ -17506,6 +18038,16 @@ unnamed TTransportedInfantryCatalogEntries
             Meshes = 
             [
                 $/GFX/DepictionResources/MeshDescriptor_Driver_FR,
+            ]
+            UniqueCount = 1
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 1
+            Identifier = "VLTT_P4_PC_Legion_FR"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Driver_Legion_2_FR,
             ]
             UniqueCount = 1
         ),
