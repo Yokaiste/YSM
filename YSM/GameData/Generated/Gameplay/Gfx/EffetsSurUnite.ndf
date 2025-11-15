@@ -217,22 +217,22 @@ export UnitEffect_ArtInf_Cowering is TEffectsPackDescriptor
             ModifierType       = ~/ModifierType_Multiplicatif
             Bonus              = 0.66
         ),
-        TUnitEffectIncreaseWeaponPorteeMaxDescriptor
+        TUnitEffectIncreaseWeaponMaxRangeAirplaneDescriptor
         (
             ModifierType  = ~/ModifierType_Pourcentage
             ModifierValue = -100
         ),
-        TUnitEffectIncreaseWeaponPorteeMaxHADescriptor
+        TUnitEffectIncreaseWeaponMaxRangeDescriptor
         (
             ModifierType  = ~/ModifierType_Pourcentage
             ModifierValue = -100
         ),
-        TUnitEffectIncreaseWeaponPorteeMaxProjectileDescriptor
+        TUnitEffectIncreaseWeaponMaxRangeHelicopterDescriptor
         (
             ModifierType  = ~/ModifierType_Pourcentage
             ModifierValue = -100
         ),
-        TUnitEffectIncreaseWeaponPorteeMaxTBADescriptor
+        TUnitEffectIncreaseWeaponMaxRangeProjectileDescriptor
         (
             ModifierType  = ~/ModifierType_Pourcentage
             ModifierValue = -100
@@ -899,22 +899,22 @@ export UnitEffect_CanonAT_Cowering is TEffectsPackDescriptor
             ModifierType       = ~/ModifierType_Multiplicatif
             Bonus              = 0.66
         ),
-        TUnitEffectIncreaseWeaponPorteeMaxDescriptor
+        TUnitEffectIncreaseWeaponMaxRangeAirplaneDescriptor
         (
             ModifierType  = ~/ModifierType_Pourcentage
             ModifierValue = -100
         ),
-        TUnitEffectIncreaseWeaponPorteeMaxHADescriptor
+        TUnitEffectIncreaseWeaponMaxRangeDescriptor
         (
             ModifierType  = ~/ModifierType_Pourcentage
             ModifierValue = -100
         ),
-        TUnitEffectIncreaseWeaponPorteeMaxProjectileDescriptor
+        TUnitEffectIncreaseWeaponMaxRangeHelicopterDescriptor
         (
             ModifierType  = ~/ModifierType_Pourcentage
             ModifierValue = -100
         ),
-        TUnitEffectIncreaseWeaponPorteeMaxTBADescriptor
+        TUnitEffectIncreaseWeaponMaxRangeProjectileDescriptor
         (
             ModifierType  = ~/ModifierType_Pourcentage
             ModifierValue = -100
@@ -1165,22 +1165,22 @@ export UnitEffect_Critic_Bailed_Out is TEffectsPackDescriptor
             ModifierType       = ~/ModifierType_Multiplicatif
             BonusTurretRotationSpeed  = 0
         ),
-        TUnitEffectIncreaseWeaponPorteeMaxDescriptor
+        TUnitEffectIncreaseWeaponMaxRangeAirplaneDescriptor
         (
             ModifierType  = ~/ModifierType_Remplacement
             ModifierValueGRU = 0
         ),
-        TUnitEffectIncreaseWeaponPorteeMaxHADescriptor
+        TUnitEffectIncreaseWeaponMaxRangeDescriptor
         (
             ModifierType  = ~/ModifierType_Remplacement
             ModifierValueGRU = 0
         ),
-        TUnitEffectIncreaseWeaponPorteeMaxProjectileDescriptor
+        TUnitEffectIncreaseWeaponMaxRangeHelicopterDescriptor
         (
             ModifierType  = ~/ModifierType_Remplacement
             ModifierValueGRU = 0
         ),
-        TUnitEffectIncreaseWeaponPorteeMaxTBADescriptor
+        TUnitEffectIncreaseWeaponMaxRangeProjectileDescriptor
         (
             ModifierType  = ~/ModifierType_Remplacement
             ModifierValueGRU = 0
@@ -1222,22 +1222,22 @@ export UnitEffect_Critic_Deroute is TEffectsPackDescriptor
     DescriptorId       = GUID:{793b916c-3e0a-4c34-b638-12c1c9e136e4}
     NameForDebug       = 'Critic_Deroute'
     EffectsDescriptors = [
-        TUnitEffectIncreaseWeaponPorteeMaxDescriptor
+        TUnitEffectIncreaseWeaponMaxRangeAirplaneDescriptor
         (
             ModifierType  = ~/ModifierType_Pourcentage
             ModifierValue = -100
         ),
-        TUnitEffectIncreaseWeaponPorteeMaxHADescriptor
+        TUnitEffectIncreaseWeaponMaxRangeDescriptor
         (
             ModifierType  = ~/ModifierType_Pourcentage
             ModifierValue = -100
         ),
-        TUnitEffectIncreaseWeaponPorteeMaxProjectileDescriptor
+        TUnitEffectIncreaseWeaponMaxRangeHelicopterDescriptor
         (
             ModifierType  = ~/ModifierType_Pourcentage
             ModifierValue = -100
         ),
-        TUnitEffectIncreaseWeaponPorteeMaxTBADescriptor
+        TUnitEffectIncreaseWeaponMaxRangeProjectileDescriptor
         (
             ModifierType  = ~/ModifierType_Pourcentage
             ModifierValue = -100
@@ -1373,22 +1373,22 @@ export UnitEffect_Critic_Stop_Armes is TEffectsPackDescriptor
             ModifierType       = ~/ModifierType_Multiplicatif
             BonusTurretRotationSpeed  = 0
         ),
-        TUnitEffectIncreaseWeaponPorteeMaxDescriptor
+        TUnitEffectIncreaseWeaponMaxRangeAirplaneDescriptor
         (
             ModifierType  = ~/ModifierType_Remplacement
             ModifierValueGRU = 0
         ),
-        TUnitEffectIncreaseWeaponPorteeMaxHADescriptor
+        TUnitEffectIncreaseWeaponMaxRangeDescriptor
         (
             ModifierType  = ~/ModifierType_Remplacement
             ModifierValueGRU = 0
         ),
-        TUnitEffectIncreaseWeaponPorteeMaxProjectileDescriptor
+        TUnitEffectIncreaseWeaponMaxRangeHelicopterDescriptor
         (
             ModifierType  = ~/ModifierType_Remplacement
             ModifierValueGRU = 0
         ),
-        TUnitEffectIncreaseWeaponPorteeMaxTBADescriptor
+        TUnitEffectIncreaseWeaponMaxRangeProjectileDescriptor
         (
             ModifierType  = ~/ModifierType_Remplacement
             ModifierValueGRU = 0
@@ -2198,25 +2198,25 @@ export UnitEffect_Infanterie_Cowering is TEffectsPackDescriptor
             ModifierType       = ~/ModifierType_Multiplicatif
             Bonus              = 0.66
         ),
-        TUnitEffectIncreaseWeaponPorteeMaxIgnoreSmokeDescriptor
+        TUnitEffectIncreaseWeaponMaxRangeAirplaneDescriptor
+        (
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -100
+        ),
+        TUnitEffectIncreaseWeaponMaxRangeHelicopterDescriptor
+        (
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -100
+        ),
+        TUnitEffectIncreaseWeaponMaxRangeProjectileDescriptor
+        (
+            ModifierType  = ~/ModifierType_Pourcentage
+            ModifierValue = -100
+        ),
+        TUnitEffectIncreaseWeaponMaxRangeIgnoreSmokeDescriptor
         (
             ModifierType         = ~/ModifierType_Pourcentage
-            BonusWeaponPorteeMax = -100
-        ),
-        TUnitEffectIncreaseWeaponPorteeMaxHADescriptor
-        (
-            ModifierType  = ~/ModifierType_Pourcentage
-            ModifierValue = -100
-        ),
-        TUnitEffectIncreaseWeaponPorteeMaxProjectileDescriptor
-        (
-            ModifierType  = ~/ModifierType_Pourcentage
-            ModifierValue = -100
-        ),
-        TUnitEffectIncreaseWeaponPorteeMaxTBADescriptor
-        (
-            ModifierType  = ~/ModifierType_Pourcentage
-            ModifierValue = -100
+            BonusWeaponMaxRange  = -100
         ),
         TUnitEffectRaiseTagDescriptor
         (
@@ -3161,7 +3161,7 @@ export UnitEffect_Trepied is TEffectsPackDescriptor
             ModifierType       = ~/ModifierType_Additionnel
             BonusConcealmentBonus  = 0.5
         ),
-        TUnitEffectIncreaseWeaponPorteeMaxDescriptor
+        TUnitEffectIncreaseWeaponMaxRangeDescriptor
         (
             ModifierType  = ~/ModifierType_Multiplicatif
             ModifierValue = 1.25
@@ -3188,7 +3188,7 @@ export UnitEffect_Tutorial_MG42_RangeModification is TEffectsPackDescriptor
     DescriptorId       = GUID:{eeb70764-984c-4cc7-a70d-4c33240f3b2e}
     NameForDebug       = 'Tutorial_MG42_RangeModification'
     EffectsDescriptors = [
-        TUnitEffectIncreaseWeaponPorteeMaxDescriptor
+        TUnitEffectIncreaseWeaponMaxRangeDescriptor
         (
             ModifierType  = ~/ModifierType_Pourcentage
             ModifierValue = -25

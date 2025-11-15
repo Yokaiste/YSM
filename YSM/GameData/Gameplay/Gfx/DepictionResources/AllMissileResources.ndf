@@ -20,6 +20,7 @@ export Modele_Missile_ZB_500 is  TResourceMesh( Mesh="GameData:/Assets/3D/Units/
 export Modele_Missile_FAB_100 is    TResourceMesh( Mesh="GameData:/Assets/3D/Units/Ammo/Bombes/SOV/FAB_100/FAB_100.fbx" )
 export Modele_Missile_FAB_250 is    TResourceMesh( Mesh="GameData:/Assets/3D/Units/Ammo/Bombes/SOV/FAB_250/FAB_250.fbx" )
 export Modele_Missile_FAB_500 is    TResourceMesh( Mesh="GameData:/Assets/3D/Units/Ammo/Bombes/SOV/FAB_500/FAB_500.fbx" )
+export Modele_Missile_FAB_500_M54 is    TResourceMesh( Mesh="GameData:/Assets/3D/Units/Ammo/Bombes/SOV/FAB_500_M_54/FAB_500_M_54.fbx" )
 export Modele_Missile_RBK_500 is    TResourceMesh( Mesh="GameData:/Assets/3D/Units/Ammo/Bombes/RBK_500.fbx" )
 export Modele_Missile_Vympel_R23R is TResourceMesh( Mesh="GameData:/Assets/3D/Units/Ammo/Missiles/SOV/Vympel_R23R/Vympel_R23R.fbx" )
 export Modele_Missile_Vympel_R24R is TResourceMesh( Mesh="GameData:/Assets/3D/Units/Ammo/Missiles/SOV/Vympel_R23R/Vympel_R24R.fbx" )
@@ -130,6 +131,8 @@ export Modele_Missile_MIM23_I_Hawk       is TResourceMesh( Mesh="GameData:/Asset
 export Modele_Missile_BL755_Cluster      is TResourceMesh( Mesh="GameData:/Assets/3D/Units/Ammo/Bombes/BL755_Cluster.fbx" )
 export Modele_Missile_AIM_9J_SideWinder  is TResourceMesh( Mesh="GameData:/Assets/3D/Units/Ammo/Missiles/US/AIM_9J_SideWinder/AIM_9J_SideWinder.fbx" )
 export Modele_Missile_AGM_Alarm          is TResourceMesh( Mesh="GameData:/Assets/3D/Units/Ammo/Missiles/UK/AGM_Alarm/AGM_Alarm.fbx" )
+export Modele_Missile_AIM54_Phoenix      is TResourceMesh( Mesh="GameData:/Assets/3D/Units/Ammo/Missiles/US/AIM_54A_Phoenix/AIM_54A_Phoenix.fbx" )
+
 
 //--emports OTAN---------------------------------------------------------------------------------------------------
 export Modele_Missile_TestIA is TResourceMesh( Mesh="GameData:/Assets/3D/Units/Ammo/Missiles/US/AIM_9_Sidewinder.fbx" )
@@ -145,6 +148,7 @@ export Modele_Missile_BIN375_Napalm is TResourceMesh( Mesh="GameData:/Assets/3D/
 export Modele_Missile_BME330_Bomb is TResourceMesh( Mesh="GameData:/Assets/3D/Units/Ammo/Bombes/ESP/BME_330_Cluster_Bomb/BME_330_Cluster_Bomb.fbx" )
 export Modele_Missile_BRP_250 is TResourceMesh( Mesh="GameData:/Assets/3D/Units/Ammo/Bombes/ESP/BRP_250/BRP_250.fbx" )
 export Modele_Missile_HVAR is TResourceMesh( Mesh="GameData:/Assets/3D/Units/Ammo/Roquettes/US/HVAR/HVAR.fbx" )
+export Modele_Missile_BRF_1000 is TResourceMesh( Mesh="GameData:/Assets/3D/Units/Ammo/Bombes/ESP/BRF_1000/BRF_1000.fbx" )
 
 //--emports PACTE--------------------------------------------------------------------------------------------------
 export Modele_Missile_S13_122mm is TResourceMesh( Mesh="GameData:/Assets/3D/Units/Ammo/Roquettes/SOV/S13_122mm/S13_122mm.fbx" )

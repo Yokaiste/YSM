@@ -42169,6 +42169,114 @@ export AcknowUnitContainer is TAcknowUnitContainerDescriptor
         TAcknowDescriptor
         (
             MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_AirSup_Marine
+            Action        = TAcknowUnitAction_AirplaneOutOfFuel
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_AirSup_Marine
+            Action        = TAcknowUnitAction_Attack
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_AirSup_Marine
+            Action        = TAcknowUnitAction_DamageReceived
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_AirSup_Marine
+            Action        = TAcknowUnitAction_EnemyAirplaneContact
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_AirSup_Marine
+            Action        = TAcknowUnitAction_Evacuate
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_AirSup_Marine
+            Action        = TAcknowUnitAction_Move
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_AirSup_Marine
+            Action        = TAcknowUnitAction_OutOfAmmo
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_AirSup_Marine
+            Action        = TAcknowUnitAction_Panicking
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_AirSup_Marine
+            Action        = TAcknowUnitAction_PositionForbidden
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_AirSup_Marine
+            Action        = TAcknowUnitAction_Select
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_AirSup_Marine
+            Action        = TAcknowUnitAction_ShootOnPosition
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_AirSup_Marine
+            Action        = TAcknowUnitAction_TargetDestroyed
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
             TypeSpecific  = TAcknowUnitType_AirSup
             Action        = TAcknowUnitAction_Move
             Sounds        =
@@ -42289,6 +42397,159 @@ export AcknowUnitContainer is TAcknowUnitContainerDescriptor
             Sounds        =
             [
                 Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/US/US_ArtShell_Load_move_back_this_gun.ogg' Filter = TSoundFilter_RadioVehicule ),
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_ArtShell_Marine
+            Action        = TAcknowUnitAction_Attack
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_ArtShell_Marine
+            Action        = TAcknowUnitAction_DamageReceived
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_ArtShell_Marine
+            Action        = TAcknowUnitAction_EnemyUnitContact
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_ArtShell_Marine
+            Action        = TAcknowUnitAction_LoadIntoTransport
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_ArtShell_Marine
+            Action        = TAcknowUnitAction_Move
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_ArtShell_Marine
+            Action        = TAcknowUnitAction_MoveAndAttackOrder
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_ArtShell_Marine
+            Action        = TAcknowUnitAction_OutOfAmmo
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_ArtShell_Marine
+            Action        = TAcknowUnitAction_Panicking
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_ArtShell_Marine
+            Action        = TAcknowUnitAction_PositionForbidden
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_ArtShell_Marine
+            Action        = TAcknowUnitAction_Reverse
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_ArtShell_Marine
+            Action        = TAcknowUnitAction_Select
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_ArtShell_Marine
+            Action        = TAcknowUnitAction_ShootOnPosition
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_ArtShell_Marine
+            Action        = TAcknowUnitAction_Smoke
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_ArtShell_Marine
+            Action        = TAcknowUnitAction_Stop
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_ArtShell_Marine
+            Action        = TAcknowUnitAction_Surrender
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_ArtShell_Marine
+            Action        = TAcknowUnitAction_TargetDestroyed
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_ArtShell_Marine
+            Action        = TAcknowUnitAction_WithdrawOrder
+            Sounds        =
+            [
             ]
         ),
         TAcknowDescriptor
@@ -42495,6 +42756,150 @@ export AcknowUnitContainer is TAcknowUnitContainerDescriptor
         TAcknowDescriptor
         (
             MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_CanonAA_Marine
+            Action        = TAcknowUnitAction_Attack
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_CanonAA_Marine
+            Action        = TAcknowUnitAction_DamageReceived
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_CanonAA_Marine
+            Action        = TAcknowUnitAction_EnemyUnitContact
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_CanonAA_Marine
+            Action        = TAcknowUnitAction_LoadIntoTransport
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_CanonAA_Marine
+            Action        = TAcknowUnitAction_Move
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_CanonAA_Marine
+            Action        = TAcknowUnitAction_MoveAndAttackOrder
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_CanonAA_Marine
+            Action        = TAcknowUnitAction_OutOfAmmo
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_CanonAA_Marine
+            Action        = TAcknowUnitAction_Panicking
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_CanonAA_Marine
+            Action        = TAcknowUnitAction_PositionForbidden
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_CanonAA_Marine
+            Action        = TAcknowUnitAction_Reverse
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_CanonAA_Marine
+            Action        = TAcknowUnitAction_Select
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_CanonAA_Marine
+            Action        = TAcknowUnitAction_ShootOnPosition
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_CanonAA_Marine
+            Action        = TAcknowUnitAction_Stop
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_CanonAA_Marine
+            Action        = TAcknowUnitAction_Surrender
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_CanonAA_Marine
+            Action        = TAcknowUnitAction_TargetDestroyed
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_CanonAA_Marine
+            Action        = TAcknowUnitAction_WithdrawOrder
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
             TypeSpecific  = TAcknowUnitType_CanonAA
             Action        = TAcknowUnitAction_Move
             Sounds        =
@@ -42683,6 +43088,141 @@ export AcknowUnitContainer is TAcknowUnitContainerDescriptor
         TAcknowDescriptor
         (
             MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Command_Marine
+            Action        = TAcknowUnitAction_Attack
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Command_Marine
+            Action        = TAcknowUnitAction_DamageReceived
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Command_Marine
+            Action        = TAcknowUnitAction_EnemyUnitContact
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Command_Marine
+            Action        = TAcknowUnitAction_LoadIntoTransport
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Command_Marine
+            Action        = TAcknowUnitAction_Move
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Command_Marine
+            Action        = TAcknowUnitAction_MoveAndAttackOrder
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Command_Marine
+            Action        = TAcknowUnitAction_OutOfAmmo
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Command_Marine
+            Action        = TAcknowUnitAction_Panicking
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Command_Marine
+            Action        = TAcknowUnitAction_PositionForbidden
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Command_Marine
+            Action        = TAcknowUnitAction_Select
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Command_Marine
+            Action        = TAcknowUnitAction_ShootOnPosition
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Command_Marine
+            Action        = TAcknowUnitAction_Stop
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Command_Marine
+            Action        = TAcknowUnitAction_Surrender
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Command_Marine
+            Action        = TAcknowUnitAction_TargetDestroyed
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Command_Marine
+            Action        = TAcknowUnitAction_WithdrawOrder
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
             TypeSpecific  = TAcknowUnitType_Command
             Action        = TAcknowUnitAction_Move
             Sounds        =
@@ -42855,6 +43395,141 @@ export AcknowUnitContainer is TAcknowUnitContainerDescriptor
             Sounds        =
             [
                 Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/US/US_Engineer_Load_glad_to_get_a_ride.ogg' Filter = TSoundFilter_RadioOutside ),
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Engineer_Marine
+            Action        = TAcknowUnitAction_Attack
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Engineer_Marine
+            Action        = TAcknowUnitAction_DamageReceived
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Engineer_Marine
+            Action        = TAcknowUnitAction_EnemyUnitContact
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Engineer_Marine
+            Action        = TAcknowUnitAction_LoadIntoTransport
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Engineer_Marine
+            Action        = TAcknowUnitAction_Move
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Engineer_Marine
+            Action        = TAcknowUnitAction_MoveAndAttackOrder
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Engineer_Marine
+            Action        = TAcknowUnitAction_OutOfAmmo
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Engineer_Marine
+            Action        = TAcknowUnitAction_Panicking
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Engineer_Marine
+            Action        = TAcknowUnitAction_PositionForbidden
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Engineer_Marine
+            Action        = TAcknowUnitAction_Select
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Engineer_Marine
+            Action        = TAcknowUnitAction_ShootOnPosition
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Engineer_Marine
+            Action        = TAcknowUnitAction_Stop
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Engineer_Marine
+            Action        = TAcknowUnitAction_Surrender
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Engineer_Marine
+            Action        = TAcknowUnitAction_TargetDestroyed
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Engineer_Marine
+            Action        = TAcknowUnitAction_WithdrawOrder
+            Sounds        =
+            [
             ]
         ),
         TAcknowDescriptor
@@ -43058,6 +43733,114 @@ export AcknowUnitContainer is TAcknowUnitContainerDescriptor
         TAcknowDescriptor
         (
             MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_GroundAtk_Marine
+            Action        = TAcknowUnitAction_AirplaneOutOfFuel
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_GroundAtk_Marine
+            Action        = TAcknowUnitAction_Attack
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_GroundAtk_Marine
+            Action        = TAcknowUnitAction_DamageReceived
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_GroundAtk_Marine
+            Action        = TAcknowUnitAction_EnemyAirplaneContact
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_GroundAtk_Marine
+            Action        = TAcknowUnitAction_Evacuate
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_GroundAtk_Marine
+            Action        = TAcknowUnitAction_Move
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_GroundAtk_Marine
+            Action        = TAcknowUnitAction_OutOfAmmo
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_GroundAtk_Marine
+            Action        = TAcknowUnitAction_Panicking
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_GroundAtk_Marine
+            Action        = TAcknowUnitAction_PositionForbidden
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_GroundAtk_Marine
+            Action        = TAcknowUnitAction_Select
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_GroundAtk_Marine
+            Action        = TAcknowUnitAction_ShootOnPosition
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_GroundAtk_Marine
+            Action        = TAcknowUnitAction_TargetDestroyed
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
             TypeSpecific  = TAcknowUnitType_GroundAtk
             Action        = TAcknowUnitAction_Move
             Sounds        =
@@ -43208,6 +43991,123 @@ export AcknowUnitContainer is TAcknowUnitContainerDescriptor
         TAcknowDescriptor
         (
             MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_HeliAttack_Marine
+            Action        = TAcknowUnitAction_AirplaneOutOfFuel
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_HeliAttack_Marine
+            Action        = TAcknowUnitAction_Attack
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_HeliAttack_Marine
+            Action        = TAcknowUnitAction_DamageReceived
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_HeliAttack_Marine
+            Action        = TAcknowUnitAction_EnemyAirplaneContact
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_HeliAttack_Marine
+            Action        = TAcknowUnitAction_EnemyUnitContact
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_HeliAttack_Marine
+            Action        = TAcknowUnitAction_Evacuate
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_HeliAttack_Marine
+            Action        = TAcknowUnitAction_Move
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_HeliAttack_Marine
+            Action        = TAcknowUnitAction_OutOfAmmo
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_HeliAttack_Marine
+            Action        = TAcknowUnitAction_Panicking
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_HeliAttack_Marine
+            Action        = TAcknowUnitAction_PositionForbidden
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_HeliAttack_Marine
+            Action        = TAcknowUnitAction_Select
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_HeliAttack_Marine
+            Action        = TAcknowUnitAction_ShootOnPosition
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_HeliAttack_Marine
+            Action        = TAcknowUnitAction_TargetDestroyed
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
             TypeSpecific  = TAcknowUnitType_HeliAttack
             Action        = TAcknowUnitAction_Move
             Sounds        =
@@ -43332,6 +44232,132 @@ export AcknowUnitContainer is TAcknowUnitContainerDescriptor
             [
                 Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/US/US_HeliTransport_Load_come_on_board.ogg' Filter = TSoundFilter_RadioAirplane ),
                 Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/US/US_HeliTransport_Load_hope_you_ll_like_the_comfort_folks.ogg' Filter = TSoundFilter_RadioAirplane ),
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_HeliTransport_Marine
+            Action        = TAcknowUnitAction_Attack
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_HeliTransport_Marine
+            Action        = TAcknowUnitAction_DamageReceived
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_HeliTransport_Marine
+            Action        = TAcknowUnitAction_EnemyUnitContact
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_HeliTransport_Marine
+            Action        = TAcknowUnitAction_LoadIntoTransport
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_HeliTransport_Marine
+            Action        = TAcknowUnitAction_Move
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_HeliTransport_Marine
+            Action        = TAcknowUnitAction_OutOfAmmo
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_HeliTransport_Marine
+            Action        = TAcknowUnitAction_Panicking
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_HeliTransport_Marine
+            Action        = TAcknowUnitAction_PositionForbidden
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_HeliTransport_Marine
+            Action        = TAcknowUnitAction_Select
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_HeliTransport_Marine
+            Action        = TAcknowUnitAction_ShootOnPosition
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_HeliTransport_Marine
+            Action        = TAcknowUnitAction_Stop
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_HeliTransport_Marine
+            Action        = TAcknowUnitAction_TargetDestroyed
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_HeliTransport_Marine
+            Action        = TAcknowUnitAction_Unload
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_HeliTransport_Marine
+            Action        = TAcknowUnitAction_UnloadAtPosition
+            Sounds        =
+            [
             ]
         ),
         TAcknowDescriptor
@@ -43498,6 +44524,141 @@ export AcknowUnitContainer is TAcknowUnitContainerDescriptor
         TAcknowDescriptor
         (
             MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Inf_Marine
+            Action        = TAcknowUnitAction_Attack
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Inf_Marine
+            Action        = TAcknowUnitAction_DamageReceived
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Inf_Marine
+            Action        = TAcknowUnitAction_EnemyUnitContact
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Inf_Marine
+            Action        = TAcknowUnitAction_LoadIntoTransport
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Inf_Marine
+            Action        = TAcknowUnitAction_Move
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Inf_Marine
+            Action        = TAcknowUnitAction_MoveAndAttackOrder
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Inf_Marine
+            Action        = TAcknowUnitAction_OutOfAmmo
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Inf_Marine
+            Action        = TAcknowUnitAction_Panicking
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Inf_Marine
+            Action        = TAcknowUnitAction_PositionForbidden
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Inf_Marine
+            Action        = TAcknowUnitAction_Select
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Inf_Marine
+            Action        = TAcknowUnitAction_ShootOnPosition
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Inf_Marine
+            Action        = TAcknowUnitAction_Stop
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Inf_Marine
+            Action        = TAcknowUnitAction_Surrender
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Inf_Marine
+            Action        = TAcknowUnitAction_TargetDestroyed
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Inf_Marine
+            Action        = TAcknowUnitAction_WithdrawOrder
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
             TypeSpecific  = TAcknowUnitType_Inf
             Action        = TAcknowUnitAction_Move
             Sounds        =
@@ -43659,6 +44820,96 @@ export AcknowUnitContainer is TAcknowUnitContainerDescriptor
         TAcknowDescriptor
         (
             MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Logistic_Marine
+            Action        = TAcknowUnitAction_DamageReceived
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Logistic_Marine
+            Action        = TAcknowUnitAction_EnemyUnitContact
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Logistic_Marine
+            Action        = TAcknowUnitAction_Move
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Logistic_Marine
+            Action        = TAcknowUnitAction_OutOfAmmo
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Logistic_Marine
+            Action        = TAcknowUnitAction_Panicking
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Logistic_Marine
+            Action        = TAcknowUnitAction_PositionForbidden
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Logistic_Marine
+            Action        = TAcknowUnitAction_QuickMove
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Logistic_Marine
+            Action        = TAcknowUnitAction_Reverse
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Logistic_Marine
+            Action        = TAcknowUnitAction_Select
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Logistic_Marine
+            Action        = TAcknowUnitAction_Stop
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
             TypeSpecific  = TAcknowUnitType_Logistic
             Action        = TAcknowUnitAction_Move
             Sounds        =
@@ -43812,6 +45063,114 @@ export AcknowUnitContainer is TAcknowUnitContainerDescriptor
         TAcknowDescriptor
         (
             MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Multirole_Marine
+            Action        = TAcknowUnitAction_AirplaneOutOfFuel
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Multirole_Marine
+            Action        = TAcknowUnitAction_Attack
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Multirole_Marine
+            Action        = TAcknowUnitAction_DamageReceived
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Multirole_Marine
+            Action        = TAcknowUnitAction_EnemyAirplaneContact
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Multirole_Marine
+            Action        = TAcknowUnitAction_Evacuate
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Multirole_Marine
+            Action        = TAcknowUnitAction_Move
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Multirole_Marine
+            Action        = TAcknowUnitAction_OutOfAmmo
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Multirole_Marine
+            Action        = TAcknowUnitAction_Panicking
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Multirole_Marine
+            Action        = TAcknowUnitAction_PositionForbidden
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Multirole_Marine
+            Action        = TAcknowUnitAction_Select
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Multirole_Marine
+            Action        = TAcknowUnitAction_ShootOnPosition
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Multirole_Marine
+            Action        = TAcknowUnitAction_TargetDestroyed
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
             TypeSpecific  = TAcknowUnitType_Multirole
             Action        = TAcknowUnitAction_Move
             Sounds        =
@@ -43935,6 +45294,150 @@ export AcknowUnitContainer is TAcknowUnitContainerDescriptor
             Sounds        =
             [
                 Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/US/US_Reco_Load_get_in_there.ogg' Filter = TSoundFilter_RadioVehicule ),
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Reco_Marine
+            Action        = TAcknowUnitAction_Attack
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Reco_Marine
+            Action        = TAcknowUnitAction_DamageReceived
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Reco_Marine
+            Action        = TAcknowUnitAction_EnemyUnitContact
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Reco_Marine
+            Action        = TAcknowUnitAction_LoadIntoTransport
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Reco_Marine
+            Action        = TAcknowUnitAction_Move
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Reco_Marine
+            Action        = TAcknowUnitAction_MoveAndAttackOrder
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Reco_Marine
+            Action        = TAcknowUnitAction_OutOfAmmo
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Reco_Marine
+            Action        = TAcknowUnitAction_Panicking
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Reco_Marine
+            Action        = TAcknowUnitAction_PositionForbidden
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Reco_Marine
+            Action        = TAcknowUnitAction_Reverse
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Reco_Marine
+            Action        = TAcknowUnitAction_Select
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Reco_Marine
+            Action        = TAcknowUnitAction_ShootOnPosition
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Reco_Marine
+            Action        = TAcknowUnitAction_Stop
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Reco_Marine
+            Action        = TAcknowUnitAction_Surrender
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Reco_Marine
+            Action        = TAcknowUnitAction_TargetDestroyed
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Reco_Marine
+            Action        = TAcknowUnitAction_WithdrawOrder
+            Sounds        =
+            [
             ]
         ),
         TAcknowDescriptor
@@ -44117,6 +45620,141 @@ export AcknowUnitContainer is TAcknowUnitContainerDescriptor
         TAcknowDescriptor
         (
             MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_TankDestroyer_Marine
+            Action        = TAcknowUnitAction_Attack
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_TankDestroyer_Marine
+            Action        = TAcknowUnitAction_DamageReceived
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_TankDestroyer_Marine
+            Action        = TAcknowUnitAction_EnemyUnitContact
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_TankDestroyer_Marine
+            Action        = TAcknowUnitAction_Move
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_TankDestroyer_Marine
+            Action        = TAcknowUnitAction_MoveAndAttackOrder
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_TankDestroyer_Marine
+            Action        = TAcknowUnitAction_OutOfAmmo
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_TankDestroyer_Marine
+            Action        = TAcknowUnitAction_Panicking
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_TankDestroyer_Marine
+            Action        = TAcknowUnitAction_PositionForbidden
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_TankDestroyer_Marine
+            Action        = TAcknowUnitAction_QuickMove
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_TankDestroyer_Marine
+            Action        = TAcknowUnitAction_Reverse
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_TankDestroyer_Marine
+            Action        = TAcknowUnitAction_Select
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_TankDestroyer_Marine
+            Action        = TAcknowUnitAction_ShootOnPosition
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_TankDestroyer_Marine
+            Action        = TAcknowUnitAction_Stop
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_TankDestroyer_Marine
+            Action        = TAcknowUnitAction_Surrender
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_TankDestroyer_Marine
+            Action        = TAcknowUnitAction_TargetDestroyed
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
             TypeSpecific  = TAcknowUnitType_TankDestroyer
             Action        = TAcknowUnitAction_Move
             Sounds        =
@@ -44285,6 +45923,141 @@ export AcknowUnitContainer is TAcknowUnitContainerDescriptor
             Sounds        =
             [
                 Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/US/US_Tank_Enemy_Contact_this_is_red_2_enemy_spotted.ogg' Filter = TSoundFilter_RadioVehicule ),
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Tank_Marine
+            Action        = TAcknowUnitAction_Attack
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Tank_Marine
+            Action        = TAcknowUnitAction_DamageReceived
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Tank_Marine
+            Action        = TAcknowUnitAction_EnemyUnitContact
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Tank_Marine
+            Action        = TAcknowUnitAction_Move
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Tank_Marine
+            Action        = TAcknowUnitAction_MoveAndAttackOrder
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Tank_Marine
+            Action        = TAcknowUnitAction_OutOfAmmo
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Tank_Marine
+            Action        = TAcknowUnitAction_Panicking
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Tank_Marine
+            Action        = TAcknowUnitAction_PositionForbidden
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Tank_Marine
+            Action        = TAcknowUnitAction_QuickMove
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Tank_Marine
+            Action        = TAcknowUnitAction_Reverse
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Tank_Marine
+            Action        = TAcknowUnitAction_Select
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Tank_Marine
+            Action        = TAcknowUnitAction_ShootOnPosition
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Tank_Marine
+            Action        = TAcknowUnitAction_Stop
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Tank_Marine
+            Action        = TAcknowUnitAction_Surrender
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Tank_Marine
+            Action        = TAcknowUnitAction_TargetDestroyed
+            Sounds        =
+            [
             ]
         ),
         TAcknowDescriptor
@@ -44474,6 +46247,168 @@ export AcknowUnitContainer is TAcknowUnitContainerDescriptor
             [
                 Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/US/US_Transport_Load_come_on_board.ogg' Filter = TSoundFilter_RadioVehicule ),
                 Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/US/US_Transport_Load_hope_you_ll_like_the_comfort_folks.ogg' Filter = TSoundFilter_RadioVehicule ),
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Transport_Marine
+            Action        = TAcknowUnitAction_Attack
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Transport_Marine
+            Action        = TAcknowUnitAction_DamageReceived
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Transport_Marine
+            Action        = TAcknowUnitAction_EnemyUnitContact
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Transport_Marine
+            Action        = TAcknowUnitAction_LoadIntoTransport
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Transport_Marine
+            Action        = TAcknowUnitAction_Move
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Transport_Marine
+            Action        = TAcknowUnitAction_MoveAndAttackOrder
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Transport_Marine
+            Action        = TAcknowUnitAction_OutOfAmmo
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Transport_Marine
+            Action        = TAcknowUnitAction_Panicking
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Transport_Marine
+            Action        = TAcknowUnitAction_PositionForbidden
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Transport_Marine
+            Action        = TAcknowUnitAction_QuickMove
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Transport_Marine
+            Action        = TAcknowUnitAction_Reverse
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Transport_Marine
+            Action        = TAcknowUnitAction_Select
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Transport_Marine
+            Action        = TAcknowUnitAction_ShootOnPosition
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Transport_Marine
+            Action        = TAcknowUnitAction_Stop
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Transport_Marine
+            Action        = TAcknowUnitAction_Surrender
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Transport_Marine
+            Action        = TAcknowUnitAction_TargetDestroyed
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Transport_Marine
+            Action        = TAcknowUnitAction_Unload
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Transport_Marine
+            Action        = TAcknowUnitAction_UnloadAtPosition
+            Sounds        =
+            [
             ]
         ),
         TAcknowDescriptor
@@ -44676,6 +46611,141 @@ export AcknowUnitContainer is TAcknowUnitContainerDescriptor
             Sounds        =
             [
                 Template_UnitAcknow( FileName = 'GameData:/Assets/Sons/Acknows/US/US_Vehicle_Enemy_Contact_contact_with_enemies.ogg' Filter = TSoundFilter_RadioVehicule ),
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Vehicle_Marine
+            Action        = TAcknowUnitAction_Attack
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Vehicle_Marine
+            Action        = TAcknowUnitAction_DamageReceived
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Vehicle_Marine
+            Action        = TAcknowUnitAction_EnemyUnitContact
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Vehicle_Marine
+            Action        = TAcknowUnitAction_Move
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Vehicle_Marine
+            Action        = TAcknowUnitAction_MoveAndAttackOrder
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Vehicle_Marine
+            Action        = TAcknowUnitAction_OutOfAmmo
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Vehicle_Marine
+            Action        = TAcknowUnitAction_Panicking
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Vehicle_Marine
+            Action        = TAcknowUnitAction_PositionForbidden
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Vehicle_Marine
+            Action        = TAcknowUnitAction_QuickMove
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Vehicle_Marine
+            Action        = TAcknowUnitAction_Reverse
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Vehicle_Marine
+            Action        = TAcknowUnitAction_Select
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Vehicle_Marine
+            Action        = TAcknowUnitAction_ShootOnPosition
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Vehicle_Marine
+            Action        = TAcknowUnitAction_Stop
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Vehicle_Marine
+            Action        = TAcknowUnitAction_Surrender
+            Sounds        =
+            [
+            ]
+        ),
+        TAcknowDescriptor
+        (
+            MotherCountry = 'US'
+            TypeSpecific  = TAcknowUnitType_Vehicle_Marine
+            Action        = TAcknowUnitAction_TargetDestroyed
+            Sounds        =
+            [
             ]
         ),
         TAcknowDescriptor

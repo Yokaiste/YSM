@@ -1,0 +1,6 @@
+export ModelFile_Howz_M56_Pack_UK is "GameData:/Assets/3D/Units/UK/Canon/Howz_Mod56_105mm/Howz_Mod56_105mm.fbx"
+export ModelFile_Howz_M56_Pack_UK_MID is "GameData:/Assets/3D/Units/UK/Canon/Howz_Mod56_105mm_MID/Howz_Mod56_105mm_MID.fbx"
+export ModelFile_Howz_M56_Pack_UK_LOW is "GameData:/Assets/3D/Units/UK/Canon/Howz_Mod56_105mm_LOW/Howz_Mod56_105mm_LOW.fbx"
+export Modele_Howz_M56_Pack_UK is TResourceMesh( Mesh=ModelFile_Howz_M56_Pack_UK)
+export Modele_Howz_M56_Pack_UK_MID is TResourceMesh( Mesh=ModelFile_Howz_M56_Pack_UK_MID)
+export Modele_Howz_M56_Pack_UK_LOW is TResourceMesh( Mesh=ModelFile_Howz_M56_Pack_UK_LOW)

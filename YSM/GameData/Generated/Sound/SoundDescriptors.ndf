@@ -3466,6 +3466,65 @@ export SoundHappening_FULDA_76mm_PT76 is TSoundHappening
 )
 
 
+export Sound_FULDA_76mm_QF20 is TSoundSet
+(
+    Items = 
+    [
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SoundSettings_Tir_Canon_Moyen
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sounds/SFX/Canon/76mm_canon_tir_QF20_01.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SoundSettings_Tir_Canon_Moyen
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sounds/SFX/Canon/76mm_canon_tir_QF20_02.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SoundSettings_Tir_Canon_Moyen
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sounds/SFX/Canon/76mm_canon_tir_QF20_03.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SoundSettings_Tir_Canon_Moyen
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sounds/SFX/Canon/76mm_canon_tir_QF20_04.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SoundSettings_Tir_Canon_Moyen
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sounds/SFX/Canon/76mm_canon_tir_QF20_05.wav"
+            )
+            UseSpecialLoop = False
+        ),
+    ]
+)
+
+export SoundHappening_FULDA_76mm_QF20 is TSoundHappening
+(
+    SoundDescList = Sound_FULDA_76mm_QF20
+    Volume = 2
+)
+
+
 export Sound_FULDA_81mm_Mortar is TSoundSet
 (
     Items = 

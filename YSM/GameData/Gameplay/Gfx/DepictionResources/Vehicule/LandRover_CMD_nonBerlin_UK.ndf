@@ -1,0 +1,17 @@
+export Modele_LandRover_CMD_nonBerlin_UK is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Vehicule/LandRover_Para_CV/LandRover_Para_CV.fbx"
+    Textures="GameData:/Assets/3D/Units/UK/Vehicule/LandRover_Non_Para_CV"
+)
+
+export Modele_LandRover_CMD_nonBerlin_UK_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Vehicule/LandRover_Para_CV_MID/LandRover_Para_CV_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/UK/Vehicule/LandRover_Non_Para_CV_MID"
+)
+
+export Modele_LandRover_CMD_nonBerlin_UK_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Vehicule/LandRover_Para_CV_LOW/LandRover_Para_CV_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/UK/Vehicule/LandRover_Non_Para_CV_LOW"
+)

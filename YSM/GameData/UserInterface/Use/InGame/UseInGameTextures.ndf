@@ -98,28 +98,28 @@ UseInGame_AdditionalTextureBank is TBUCKToolAdditionalTextureBank
                             (~/ComponentState/Toggled, TUIResourceTexture_Common( FileName='GameData:/Assets/2D/Interface/UseInGame/GameSpeed/speed_04_normal.png' )),
                             ] ),
 
-//-------------------------------------------------------------------------------------// icones de flare
-        ("textureFlareAttack", MAP [
-                            (~/ComponentState/Normal, TUIResourceTexture_Common( FileName='GameData:/Assets/2D/Interface/UseInGame/FlarePanel/attack.png' )),
+//-------------------------------------------------------------------------------------// icones de Beacon
+        ("textureBeaconAttack", MAP [
+                            (~/ComponentState/Normal, TUIResourceTexture_Common( FileName='GameData:/Assets/2D/Interface/UseInGame/BeaconPanel/attack.png' )),
                             ] ),
-        ("textureFlareDefense", MAP [
-                            (~/ComponentState/Normal, TUIResourceTexture_Common( FileName='GameData:/Assets/2D/Interface/UseInGame/FlarePanel/defense.png' )),
+        ("textureBeaconDefense", MAP [
+                            (~/ComponentState/Normal, TUIResourceTexture_Common( FileName='GameData:/Assets/2D/Interface/UseInGame/BeaconPanel/defense.png' )),
 
                             ] ),
 
-        ("textureFlareCustom", MAP [
-                            (~/ComponentState/Normal, TUIResourceTexture_Common( FileName='GameData:/Assets/2D/Interface/UseInGame/FlarePanel/custom.png' )),
+        ("textureBeaconCustom", MAP [
+                            (~/ComponentState/Normal, TUIResourceTexture_Common( FileName='GameData:/Assets/2D/Interface/UseInGame/BeaconPanel/custom.png' )),
 
                             ] ),
-        ("textureFlareHelp", MAP [
-                            (~/ComponentState/Normal, TUIResourceTexture_Common( FileName='GameData:/Assets/2D/Interface/UseInGame/FlarePanel/help.png' )),
+        ("textureBeaconHelp", MAP [
+                            (~/ComponentState/Normal, TUIResourceTexture_Common( FileName='GameData:/Assets/2D/Interface/UseInGame/BeaconPanel/help.png' )),
                             ] ),
-        ("textureFlareFireSupport", MAP [
-                            (~/ComponentState/Normal, TUIResourceTexture_Common( FileName='GameData:/Assets/2D/Interface/UseInGame/FlarePanel/fireSupport.png' )),
+        ("textureBeaconFireSupport", MAP [
+                            (~/ComponentState/Normal, TUIResourceTexture_Common( FileName='GameData:/Assets/2D/Interface/UseInGame/BeaconPanel/fireSupport.png' )),
 
                             ] ),
-        ("textureFlareEnemySpotted", MAP [
-                            (~/ComponentState/Normal, TUIResourceTexture_Common( FileName='GameData:/Assets/2D/Interface/UseInGame/FlarePanel/enemySpotted.png' )),
+        ("textureBeaconEnemySpotted", MAP [
+                            (~/ComponentState/Normal, TUIResourceTexture_Common( FileName='GameData:/Assets/2D/Interface/UseInGame/BeaconPanel/enemySpotted.png' )),
                             ] ),
 
 //-------------------------------------------------------------------------------------// icones de player mission
@@ -389,7 +389,7 @@ UseInGame_AdditionalTextureBank is TBUCKToolAdditionalTextureBank
         ("UseInGame_SituationAwareness_Unit_under_attack",               MAP [(~/ComponentState/Normal, ~/UseInGame_SituationAwareness_Unit_under_attack)] ),
         ("UseInGame_SituationAwareness_Player_unit_destroyed",           MAP [(~/ComponentState/Normal, ~/UseInGame_SituationAwareness_Player_unit_destroyed)] ),
         ("UseInGame_SituationAwareness_Player_unit_captured",            MAP [(~/ComponentState/Normal, ~/UseInGame_SituationAwareness_Player_unit_captured)] ),
-        ("UseInGame_SituationAwareness_Flare_Launched",                  MAP [(~/ComponentState/Normal, ~/UseInGame_SituationAwareness_Flare_Launched)] ),
+        ("UseInGame_SituationAwareness_Beacon_Launched",                  MAP [(~/ComponentState/Normal, ~/UseInGame_SituationAwareness_Beacon_Launched)] ),
         ("UseInGame_SituationAwareness_Enemy_airplane_contact",          MAP [(~/ComponentState/Normal, ~/UseInGame_SituationAwareness_Enemy_airplane_contact)] ),
         ("UseInGame_SituationAwareness_Enemy_unit_captured",             MAP [(~/ComponentState/Normal, ~/UseInGame_SituationAwareness_Enemy_unit_captured)] ),
 
@@ -537,13 +537,13 @@ Texture_Minimap_Alert                is TUIResourceTexture_Common(FileName = "Ga
 Texture_Minimap_Death                is TUIResourceTexture_Common(FileName = "GameData:/Assets/2D/Interface/UseInGame/Minimap/minimap_death.png")
 Texture_Minimap_Alarm                is TUIResourceTexture_Common(FileName = "GameData:/Assets/2D/Interface/UseInGame/Minimap/minimap_alarm.png")
 
-Texture_MinimapFlareAttack           is TUIResourceTexture_Common(FileName = "GameData:/Assets/2D/Interface/UseInGame/FlarePanel/attack.png")
-Texture_MinimapFlareDefend           is TUIResourceTexture_Common(FileName = "GameData:/Assets/2D/Interface/UseInGame/FlarePanel/defense.png")
-Texture_MinimapFlareHelp             is TUIResourceTexture_Common(FileName = "GameData:/Assets/2D/Interface/UseInGame/FlarePanel/help.png")
-Texture_MinimapFlareCustom           is TUIResourceTexture_Common(FileName = "GameData:/Assets/2D/Interface/UseInGame/FlarePanel/custom.png")
+Texture_MinimapBeaconAttack           is TUIResourceTexture_Common(FileName = "GameData:/Assets/2D/Interface/UseInGame/BeaconPanel/attack.png")
+Texture_MinimapBeaconDefend           is TUIResourceTexture_Common(FileName = "GameData:/Assets/2D/Interface/UseInGame/BeaconPanel/defense.png")
+Texture_MinimapBeaconHelp             is TUIResourceTexture_Common(FileName = "GameData:/Assets/2D/Interface/UseInGame/BeaconPanel/help.png")
+Texture_MinimapBeaconCustom           is TUIResourceTexture_Common(FileName = "GameData:/Assets/2D/Interface/UseInGame/BeaconPanel/custom.png")
 Texture_MinimapPing_Spotted          is TUIResourceTexture_Common(FileName = "GameData:/Assets/2D/Interface/UseInGame/Minimap/minimap_alert.png")
-Texture_MinimapFlareFireSupport      is TUIResourceTexture_Common(FileName = "GameData:/Assets/2D/Interface/UseInGame/FlarePanel/fireSupport.png")
-Texture_MinimapFlareEnemySpotted     is TUIResourceTexture_Common(FileName = "GameData:/Assets/2D/Interface/UseInGame/FlarePanel/enemySpotted.png")
+Texture_MinimapBeaconFireSupport      is TUIResourceTexture_Common(FileName = "GameData:/Assets/2D/Interface/UseInGame/BeaconPanel/fireSupport.png")
+Texture_MinimapBeaconEnemySpotted     is TUIResourceTexture_Common(FileName = "GameData:/Assets/2D/Interface/UseInGame/BeaconPanel/enemySpotted.png")
 
 // -------------------------------------------------------------------------------
 // Off map Panel
@@ -667,7 +667,7 @@ UseInGame_SituationAwareness_New_phase_started      is TUIResourceTexture_Common
 UseInGame_SituationAwareness_Unit_under_attack      is TUIResourceTexture_Common(FileName = 'GameData:/Assets/2D/Interface/UseInGame/SituationAwareness/Unit_under_attack.png')
 UseInGame_SituationAwareness_Player_unit_destroyed  is TUIResourceTexture_Common(FileName = 'GameData:/Assets/2D/Interface/UseInGame/SituationAwareness/Player_unit_destroyed.png')
 UseInGame_SituationAwareness_Player_unit_captured   is TUIResourceTexture_Common(FileName = 'GameData:/Assets/2D/Interface/UseInGame/SituationAwareness/Player_unit_captured.png')
-UseInGame_SituationAwareness_Flare_Launched         is TUIResourceTexture_Common(FileName = 'GameData:/Assets/2D/Interface/UseInGame/SituationAwareness/Flare_Launched.png')
+UseInGame_SituationAwareness_Beacon_Launched         is TUIResourceTexture_Common(FileName = 'GameData:/Assets/2D/Interface/UseInGame/SituationAwareness/Beacon_Launched.png')
 UseInGame_SituationAwareness_Enemy_airplane_contact is TUIResourceTexture_Common(FileName = 'GameData:/Assets/2D/Interface/UseInGame/SituationAwareness/Enemy_airplane_contact.png')
 UseInGame_SituationAwareness_Enemy_unit_captured    is TUIResourceTexture_Common(FileName = 'GameData:/Assets/2D/Interface/UseInGame/SituationAwareness/Enemy_unit_captured.png')
 

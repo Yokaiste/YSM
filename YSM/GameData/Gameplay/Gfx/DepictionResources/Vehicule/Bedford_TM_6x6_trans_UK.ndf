@@ -1,0 +1,14 @@
+export Modele_Bedford_TM_6x6_trans_UK is TResourceMesh
+(
+    Mesh=ModelFile_Bedford_TM_6x6_supply_UK
+)
+
+export Modele_Bedford_TM_6x6_trans_UK_MID is TResourceMesh
+(
+    Mesh=ModelFile_Bedford_TM_6x6_supply_UK_MID
+)
+
+export Modele_Bedford_TM_6x6_trans_UK_LOW is TResourceMesh
+(
+    Mesh=ModelFile_Bedford_TM_6x6_supply_UK_LOW
+)

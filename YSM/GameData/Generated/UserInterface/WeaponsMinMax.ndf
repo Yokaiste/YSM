@@ -774,7 +774,7 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                )
                TimeBetweenTwoShots = TMinMaxValue (
                        Min = 0.1
-                       Max = 0.1
+                       Max = 0.2
                )
                NbShotsBySalvo = TMinMaxValue (
                        Min = 2
@@ -1269,7 +1269,7 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                        Max = 60
                )
                RateOfFire = TMinMaxValue (
-                       Min = 3.3333333333333335
+                       Min = 3.0
                        Max = 21.818181818181817
                )
                TimeBetweenTwoShots = TMinMaxValue (
@@ -1365,7 +1365,7 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                // PhysicalDamages x weapon_count_ (Number of weapons)
                PhysicalDamages = TMinMaxValue (
                        Min = 0.04
-                       Max = 0.44
+                       Max = 0.48
                )
                // SuppressDamages x weapon_count_ (Number of weapons)
                SuppressDamages = TMinMaxValue (
@@ -1469,7 +1469,7 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                        Max = 2.8
                )
                TurretSpeed = TMinMaxValue (
-                       Min = 360
+                       Min = 120
                        Max = 360
                )
                Accuracy = TMinMaxValue (
@@ -1626,7 +1626,7 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                )
                RateOfFire = TMinMaxValue (
                        Min = 1.3953488372093024
-                       Max = 6.0
+                       Max = 7.199999999999999
                )
                TimeBetweenTwoShots = TMinMaxValue (
                        Min = 4.0

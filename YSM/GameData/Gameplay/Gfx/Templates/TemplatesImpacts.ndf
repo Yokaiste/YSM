@@ -12,7 +12,6 @@ is TSequencingActionHappening
             parDirection is TPinnableValue(ExpectedType: float3),
             parRadiusPhysical is TPinnableValue(ExpectedType: float InitialValue = 0),
             parRadiusSuppress is TPinnableValue(ExpectedType: float InitialValue = 0),
-            parTerrain is TPinnableValue(ExpectedType: float),
         ]
         Mobile = TMobileWithLocalRepereMatrixFactory
         (
@@ -47,7 +46,6 @@ is TSequencingActionHappening
                     ('parDirection', float3[1,0,0]),
                     ('parRadiusPhysical', parRadiusPhysical),
                     ('parRadiusSuppress', parRadiusSuppress),
-                    ('parTerrain', parTerrain),
                 ]
             )
         ]

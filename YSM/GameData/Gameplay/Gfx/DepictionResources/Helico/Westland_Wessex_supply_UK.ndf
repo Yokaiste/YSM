@@ -1,0 +1,14 @@
+export Modele_Westland_Wessex_supply_UK is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Helico/Westland_Wessex_supply/Westland_Wessex_supply.fbx"
+)
+
+export Modele_Westland_Wessex_supply_UK_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Helico/Westland_Wessex_supply_MID/Westland_Wessex_supply_MID.fbx"
+)
+
+export Modele_Westland_Wessex_supply_UK_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Helico/Westland_Wessex_supply_LOW/Westland_Wessex_supply_LOW.fbx"
+)

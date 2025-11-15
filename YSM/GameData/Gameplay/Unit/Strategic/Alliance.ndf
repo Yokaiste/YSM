@@ -15,7 +15,7 @@ export Strategic_AllianceUnitDescriptor is TEntityDescriptor
         TAllianceRelationsModuleDescriptor
         (
         ),
-        TIAAllianceAirManagerModuleDescriptor
+        TAllianceAirManagerModuleDescriptor
         (
             MemoryTurnLength = 2
         ),

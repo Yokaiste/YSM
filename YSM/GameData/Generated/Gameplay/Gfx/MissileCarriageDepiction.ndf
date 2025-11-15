@@ -2893,6 +2893,59 @@ SubGenerators_Showroom_CUCV_Hellfire_US is TStaticMissileCarriageSubDepictionGen
 )
 
 
+SubGenerators_DCA_Bloodhound_UK is TMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_DCA_Bloodhound_UK
+    Missiles = 
+    [
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileGroundUnit
+            (
+                MissileNumber = 0
+                PhysicalProperty = "Tourelle1_MissileCount"
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Bloodhound
+            )
+            MissileIndex = 1
+            WeaponIndex = 1
+        ),
+    ]
+    Pylons = ~/DepictionPylonSet_Vehicle_Default
+    ReferenceMesh = $/GFX/DepictionResources/Modele_DCA_Bloodhound_UK
+)
+
+MissileAlternatives_DCA_Bloodhound_UK is 
+[
+    TDepictionVisual
+    (
+        MeshDescriptor = $/GFX/DepictionResources/Modele_Missile_Bloodhound
+        SelectorId = 
+        [
+            "DCA_Bloodhound_UK",
+        ]
+    ),
+]
+
+SubGenerators_Showroom_DCA_Bloodhound_UK is TStaticMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_DCA_Bloodhound_UK_Showroom
+    Missiles = 
+    [
+        TStaticMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Bloodhound
+            )
+            MissileCount = 1
+            WeaponIndex = 1
+        ),
+    ]
+    Pylons = ~/DepictionPylonSet_Vehicle_Default_Showroom
+    ReferenceMesh = $/GFX/DepictionResources/Modele_DCA_Bloodhound_UK
+)
+
+
 SubGenerators_DCA_I_Hawk_BEL is TMissileCarriageSubDepictionGenerator
 (
     MissileCarriageConnoisseur = MissileCarriage_DCA_I_Hawk_BEL
@@ -3706,6 +3759,124 @@ SubGenerators_Showroom_DCA_XM85_Chaparral_US is TStaticMissileCarriageSubDepicti
     ]
     Pylons = ~/DepictionPylonSet_ATGM_Showroom
     ReferenceMesh = $/GFX/DepictionResources/Modele_DCA_XM85_Chaparral_US
+)
+
+
+SubGenerators_Ferret_Swingfire_UK is TMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_Ferret_Swingfire_UK
+    Missiles = 
+    [
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileGroundUnit
+            (
+                MissileNumber = 0
+                PhysicalProperty = "Tourelle1_MissileCount"
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Swingfire
+            )
+            MissileIndex = 1
+            WeaponIndex = 1
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileGroundUnit
+            (
+                MissileNumber = 1
+                PhysicalProperty = "Tourelle1_MissileCount"
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Swingfire
+            )
+            MissileIndex = 2
+            WeaponIndex = 1
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileGroundUnit
+            (
+                MissileNumber = 2
+                PhysicalProperty = "Tourelle1_MissileCount"
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Swingfire
+            )
+            MissileIndex = 3
+            WeaponIndex = 1
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileGroundUnit
+            (
+                MissileNumber = 3
+                PhysicalProperty = "Tourelle1_MissileCount"
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Swingfire
+            )
+            MissileIndex = 4
+            WeaponIndex = 1
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileGroundUnit
+            (
+                MissileNumber = 4
+                PhysicalProperty = "Tourelle1_MissileCount"
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Swingfire
+            )
+            MissileIndex = 5
+            WeaponIndex = 1
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileGroundUnit
+            (
+                MissileNumber = 5
+                PhysicalProperty = "Tourelle1_MissileCount"
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Swingfire
+            )
+            MissileIndex = 6
+            WeaponIndex = 1
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileGroundUnit
+            (
+                MissileNumber = 6
+                PhysicalProperty = "Tourelle1_MissileCount"
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Swingfire
+            )
+            MissileIndex = 7
+            WeaponIndex = 1
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileGroundUnit
+            (
+                MissileNumber = 7
+                PhysicalProperty = "Tourelle1_MissileCount"
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Swingfire
+            )
+            MissileIndex = 8
+            WeaponIndex = 1
+        ),
+    ]
+    Pylons = ~/DepictionPylonSet_ATGM
+    ReferenceMesh = $/GFX/DepictionResources/Modele_Ferret_Swingfire_UK
+)
+
+SubGenerators_Showroom_Ferret_Swingfire_UK is TStaticMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_Ferret_Swingfire_UK_Showroom
+    Missiles = 
+    [
+        TStaticMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Swingfire
+            )
+            MissileCount = 8
+            WeaponIndex = 1
+        ),
+    ]
+    Pylons = ~/DepictionPylonSet_ATGM_Showroom
+    ReferenceMesh = $/GFX/DepictionResources/Modele_Ferret_Swingfire_UK
 )
 
 
@@ -4560,6 +4731,23 @@ SubGenerators_Showroom_VAB_HOT_Legion_FR is TStaticMissileCarriageSubDepictionGe
     ReferenceMesh = $/GFX/DepictionResources/Modele_VAB_HOT_Legion_FR
 )
 
+
+
+SubGenerators_A109A_RKT_UK is TStaticMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_A109A_RKT_UK
+    Missiles = []
+    Pylons = ~/DepictionPylonSet_Helico_Default
+    ReferenceMesh = $/GFX/DepictionResources/Modele_A109A_RKT_UK
+)
+
+SubGenerators_Showroom_A109A_RKT_UK is TStaticMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_A109A_RKT_UK_Showroom
+    Missiles = []
+    Pylons = ~/DepictionPylonSet_Helico_Default_Showroom
+    ReferenceMesh = $/GFX/DepictionResources/Modele_A109A_RKT_UK
+)
 
 
 SubGenerators_AH1E_Cobra_US is TStaticMissileCarriageSubDepictionGenerator
@@ -6886,46 +7074,6 @@ SubGenerators_Showroom_A6E_Intruder_SEAD_US is TStaticMissileCarriageSubDepictio
 )
 
 
-SubGenerators_A6E_Intruder_SWIP_AT_US is TStaticMissileCarriageSubDepictionGenerator
-(
-    MissileCarriageConnoisseur = MissileCarriage_A6E_Intruder_SWIP_AT_US
-    Missiles = 
-    [
-        TStaticMissileCarriageSubDepictionMissileInfo
-        (
-            Depiction = TemplateDepictionStaticMissiles
-            (
-                PhysicalProperty = "Tourelle2_MissileCount"
-                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Maverick
-            )
-            MissileCount = 2
-            WeaponIndex = 2
-        ),
-    ]
-    Pylons = ~/DepictionPylonSet_Airplane_Default
-    ReferenceMesh = $/GFX/DepictionResources/Modele_A6E_Intruder_SEAD_US
-)
-
-SubGenerators_Showroom_A6E_Intruder_SWIP_AT_US is TStaticMissileCarriageSubDepictionGenerator
-(
-    MissileCarriageConnoisseur = MissileCarriage_A6E_Intruder_SWIP_AT_US_Showroom
-    Missiles = 
-    [
-        TStaticMissileCarriageSubDepictionMissileInfo
-        (
-            Depiction = TemplateDepictionMissileShowroom
-            (
-                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Maverick
-            )
-            MissileCount = 2
-            WeaponIndex = 2
-        ),
-    ]
-    Pylons = ~/DepictionPylonSet_Airplane_Default_Showroom
-    ReferenceMesh = $/GFX/DepictionResources/Modele_A6E_Intruder_SEAD_US
-)
-
-
 SubGenerators_A6E_Intruder_US is TStaticMissileCarriageSubDepictionGenerator
 (
     MissileCarriageConnoisseur = MissileCarriage_A6E_Intruder_US
@@ -7867,6 +8015,46 @@ SubGenerators_Showroom_CM170_Magister_SS11_FR is TStaticMissileCarriageSubDepict
     ]
     Pylons = ~/DepictionPylonSet_Airplane_RFA_Showroom
     ReferenceMesh = $/GFX/DepictionResources/Modele_CM170_Magister_SS11_FR
+)
+
+
+SubGenerators_Canberra_B2_UK is TStaticMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_Canberra_B2_UK
+    Missiles = 
+    [
+        TStaticMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionStaticMissiles
+            (
+                PhysicalProperty = "Tourelle1_MissileCount"
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_BL755_Cluster
+            )
+            MissileCount = 2
+            WeaponIndex = 1
+        ),
+    ]
+    Pylons = ~/DepictionPylonSet_Airplane_Default
+    ReferenceMesh = $/GFX/DepictionResources/Modele_Canberra_B2_UK
+)
+
+SubGenerators_Showroom_Canberra_B2_UK is TStaticMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_Canberra_B2_UK_Showroom
+    Missiles = 
+    [
+        TStaticMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_BL755_Cluster
+            )
+            MissileCount = 2
+            WeaponIndex = 1
+        ),
+    ]
+    Pylons = ~/DepictionPylonSet_Airplane_Default_Showroom
+    ReferenceMesh = $/GFX/DepictionResources/Modele_Canberra_B2_UK
 )
 
 
@@ -10807,6 +10995,65 @@ SubGenerators_Showroom_F4_Phantom_AA_F3_UK is TStaticMissileCarriageSubDepiction
 )
 
 
+SubGenerators_F4_Phantom_AA_GR2_UK is TStaticMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_F4_Phantom_AA_GR2_UK
+    Missiles = 
+    [
+        TStaticMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionStaticMissiles
+            (
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Skyflash
+            )
+            MissileCount = 4
+            WeaponIndex = 2
+        ),
+        TStaticMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionStaticMissiles
+            (
+                PhysicalProperty = "Tourelle3_MissileCount"
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_SideWinder
+            )
+            MissileCount = 4
+            WeaponIndex = 3
+        ),
+    ]
+    Pylons = ~/DepictionPylonSet_Airplane_Default
+    ReferenceMesh = $/GFX/DepictionResources/Modele_F4_Phantom_AA_GR2_UK
+)
+
+SubGenerators_Showroom_F4_Phantom_AA_GR2_UK is TStaticMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_F4_Phantom_AA_GR2_UK_Showroom
+    Missiles = 
+    [
+        TStaticMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Skyflash
+            )
+            MissileCount = 4
+            WeaponIndex = 2
+        ),
+        TStaticMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_SideWinder
+            )
+            MissileCount = 4
+            WeaponIndex = 3
+        ),
+    ]
+    Pylons = ~/DepictionPylonSet_Airplane_Default_Showroom
+    ReferenceMesh = $/GFX/DepictionResources/Modele_F4_Phantom_AA_GR2_UK
+)
+
+
 SubGenerators_F4_Phantom_GR2_HE_UK is TStaticMissileCarriageSubDepictionGenerator
 (
     MissileCarriageConnoisseur = MissileCarriage_F4_Phantom_GR2_HE_UK
@@ -12042,6 +12289,63 @@ SubGenerators_Showroom_Harrier_UK is TStaticMissileCarriageSubDepictionGenerator
 )
 
 
+SubGenerators_Hawk_T1_AA_UK is TStaticMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_Hawk_T1_AA_UK
+    Missiles = 
+    [
+        TStaticMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionStaticMissiles
+            (
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_SideWinder
+            )
+            MissileCount = 2
+            WeaponIndex = 2
+        ),
+    ]
+    Pylons = ~/DepictionPylonSet_Airplane_FR
+    ReferenceMesh = $/GFX/DepictionResources/Modele_Hawk_T1_AA_UK
+)
+
+SubGenerators_Showroom_Hawk_T1_AA_UK is TStaticMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_Hawk_T1_AA_UK_Showroom
+    Missiles = 
+    [
+        TStaticMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_SideWinder
+            )
+            MissileCount = 2
+            WeaponIndex = 2
+        ),
+    ]
+    Pylons = ~/DepictionPylonSet_Airplane_FR_Showroom
+    ReferenceMesh = $/GFX/DepictionResources/Modele_Hawk_T1_AA_UK
+)
+
+
+SubGenerators_Hawk_T1_UK is TStaticMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_Hawk_T1_UK
+    Missiles = []
+    Pylons = ~/DepictionPylonSet_Airplane_FR
+    ReferenceMesh = $/GFX/DepictionResources/Modele_Hawk_T1_UK
+)
+
+SubGenerators_Showroom_Hawk_T1_UK is TStaticMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_Hawk_T1_UK_Showroom
+    Missiles = []
+    Pylons = ~/DepictionPylonSet_Airplane_FR_Showroom
+    ReferenceMesh = $/GFX/DepictionResources/Modele_Hawk_T1_UK
+)
+
+
 SubGenerators_Jaguar_ATGM_FR is TStaticMissileCarriageSubDepictionGenerator
 (
     MissileCarriageConnoisseur = MissileCarriage_Jaguar_ATGM_FR
@@ -12984,6 +13288,23 @@ SubGenerators_Showroom_L39ZO_NPLM_SOV is TStaticMissileCarriageSubDepictionGener
 )
 
 
+SubGenerators_L39ZO_SOV is TStaticMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_L39ZO_SOV
+    Missiles = []
+    Pylons = ~/DepictionPylonSet_Airplane_SOV
+    ReferenceMesh = $/GFX/DepictionResources/Modele_L39ZO_SOV
+)
+
+SubGenerators_Showroom_L39ZO_SOV is TStaticMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_L39ZO_SOV_Showroom
+    Missiles = []
+    Pylons = ~/DepictionPylonSet_Airplane_SOV_Showroom
+    ReferenceMesh = $/GFX/DepictionResources/Modele_L39ZO_SOV
+)
+
+
 SubGenerators_L39ZO_TCH is TStaticMissileCarriageSubDepictionGenerator
 (
     MissileCarriageConnoisseur = MissileCarriage_L39ZO_TCH
@@ -13547,6 +13868,65 @@ SubGenerators_Showroom_MiG_21bis_CLU_DDR is TStaticMissileCarriageSubDepictionGe
 )
 
 
+SubGenerators_MiG_21bis_CLU_SOV is TStaticMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_MiG_21bis_CLU_SOV
+    Missiles = 
+    [
+        TStaticMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionStaticMissiles
+            (
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_RBK_500
+            )
+            MissileCount = 2
+            WeaponIndex = 2
+        ),
+        TStaticMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionStaticMissiles
+            (
+                PhysicalProperty = "Tourelle3_MissileCount"
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_FAB_250
+            )
+            MissileCount = 2
+            WeaponIndex = 3
+        ),
+    ]
+    Pylons = ~/DepictionPylonSet_Airplane_SOV
+    ReferenceMesh = $/GFX/DepictionResources/Modele_MiG_21bis_CLU_SOV
+)
+
+SubGenerators_Showroom_MiG_21bis_CLU_SOV is TStaticMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_MiG_21bis_CLU_SOV_Showroom
+    Missiles = 
+    [
+        TStaticMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_RBK_500
+            )
+            MissileCount = 2
+            WeaponIndex = 2
+        ),
+        TStaticMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_FAB_250
+            )
+            MissileCount = 2
+            WeaponIndex = 3
+        ),
+    ]
+    Pylons = ~/DepictionPylonSet_Airplane_SOV_Showroom
+    ReferenceMesh = $/GFX/DepictionResources/Modele_MiG_21bis_CLU_SOV
+)
+
+
 SubGenerators_MiG_21bis_CLU_TCH is TStaticMissileCarriageSubDepictionGenerator
 (
     MissileCarriageConnoisseur = MissileCarriage_MiG_21bis_CLU_TCH
@@ -13742,6 +14122,46 @@ SubGenerators_Showroom_MiG_21bis_HE_POL is TStaticMissileCarriageSubDepictionGen
     ]
     Pylons = ~/DepictionPylonSet_Airplane_SOV_Showroom
     ReferenceMesh = $/GFX/DepictionResources/Modele_MiG_21bis_HE_POL
+)
+
+
+SubGenerators_MiG_21bis_HE_SOV is TStaticMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_MiG_21bis_HE_SOV
+    Missiles = 
+    [
+        TStaticMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionStaticMissiles
+            (
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_FAB_250
+            )
+            MissileCount = 4
+            WeaponIndex = 2
+        ),
+    ]
+    Pylons = ~/DepictionPylonSet_Airplane_SOV
+    ReferenceMesh = $/GFX/DepictionResources/Modele_MiG_21bis_HE_SOV
+)
+
+SubGenerators_Showroom_MiG_21bis_HE_SOV is TStaticMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_MiG_21bis_HE_SOV_Showroom
+    Missiles = 
+    [
+        TStaticMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_FAB_250
+            )
+            MissileCount = 4
+            WeaponIndex = 2
+        ),
+    ]
+    Pylons = ~/DepictionPylonSet_Airplane_SOV_Showroom
+    ReferenceMesh = $/GFX/DepictionResources/Modele_MiG_21bis_HE_SOV
 )
 
 
@@ -14996,7 +15416,7 @@ SubGenerators_MiG_23P_SOV is TStaticMissileCarriageSubDepictionGenerator
             Depiction = TemplateDepictionStaticMissiles
             (
                 PhysicalProperty = "Tourelle2_MissileCount"
-                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Vympel_R24R
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Vympel_R23R
             )
             MissileCount = 2
             WeaponIndex = 2
@@ -15006,9 +15426,9 @@ SubGenerators_MiG_23P_SOV is TStaticMissileCarriageSubDepictionGenerator
             Depiction = TemplateDepictionStaticMissiles
             (
                 PhysicalProperty = "Tourelle3_MissileCount"
-                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Vympel_R60
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Vympel_R13M
             )
-            MissileCount = 4
+            MissileCount = 2
             WeaponIndex = 3
         ),
     ]
@@ -15025,7 +15445,7 @@ SubGenerators_Showroom_MiG_23P_SOV is TStaticMissileCarriageSubDepictionGenerato
         (
             Depiction = TemplateDepictionMissileShowroom
             (
-                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Vympel_R24R
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Vympel_R23R
             )
             MissileCount = 2
             WeaponIndex = 2
@@ -15034,9 +15454,9 @@ SubGenerators_Showroom_MiG_23P_SOV is TStaticMissileCarriageSubDepictionGenerato
         (
             Depiction = TemplateDepictionMissileShowroom
             (
-                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Vympel_R60
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Vympel_R13M
             )
-            MissileCount = 4
+            MissileCount = 2
             WeaponIndex = 3
         ),
     ]
@@ -15537,6 +15957,65 @@ SubGenerators_Showroom_MiG_27M_sead_SOV is TStaticMissileCarriageSubDepictionGen
     ]
     Pylons = ~/DepictionPylonSet_Airplane_SOV_Showroom
     ReferenceMesh = $/GFX/DepictionResources/Modele_MiG_27M_sead_SOV
+)
+
+
+SubGenerators_MiG_29_9_13_SOV is TStaticMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_MiG_29_9_13_SOV
+    Missiles = 
+    [
+        TStaticMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionStaticMissiles
+            (
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Vympel_R73
+            )
+            MissileCount = 4
+            WeaponIndex = 2
+        ),
+        TStaticMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionStaticMissiles
+            (
+                PhysicalProperty = "Tourelle3_MissileCount"
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Vympel_R27ER
+            )
+            MissileCount = 2
+            WeaponIndex = 3
+        ),
+    ]
+    Pylons = ~/DepictionPylonSet_Airplane_SOV
+    ReferenceMesh = $/GFX/DepictionResources/Modele_MiG_29_9_13_SOV
+)
+
+SubGenerators_Showroom_MiG_29_9_13_SOV is TStaticMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_MiG_29_9_13_SOV_Showroom
+    Missiles = 
+    [
+        TStaticMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Vympel_R73
+            )
+            MissileCount = 4
+            WeaponIndex = 2
+        ),
+        TStaticMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Vympel_R27ER
+            )
+            MissileCount = 2
+            WeaponIndex = 3
+        ),
+    ]
+    Pylons = ~/DepictionPylonSet_Airplane_SOV_Showroom
+    ReferenceMesh = $/GFX/DepictionResources/Modele_MiG_29_9_13_SOV
 )
 
 
@@ -18323,6 +18802,65 @@ SubGenerators_Showroom_Su_22_RKT_POL is TStaticMissileCarriageSubDepictionGenera
     ]
     Pylons = ~/DepictionPylonSet_Airplane_SOV_Showroom
     ReferenceMesh = $/GFX/DepictionResources/Modele_Su_22_RKT_POL
+)
+
+
+SubGenerators_Su_22_SEAD2_TCH is TStaticMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_Su_22_SEAD2_TCH
+    Missiles = 
+    [
+        TStaticMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionStaticMissiles
+            (
+                PhysicalProperty = "Tourelle3_MissileCount"
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Vympel_R60
+            )
+            MissileCount = 2
+            WeaponIndex = 3
+        ),
+        TStaticMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionStaticMissiles
+            (
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Kh_25MP
+            )
+            MissileCount = 4
+            WeaponIndex = 2
+        ),
+    ]
+    Pylons = ~/DepictionPylonSet_Airplane_Default
+    ReferenceMesh = $/GFX/DepictionResources/Modele_Su_22_SEAD2_TCH
+)
+
+SubGenerators_Showroom_Su_22_SEAD2_TCH is TStaticMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_Su_22_SEAD2_TCH_Showroom
+    Missiles = 
+    [
+        TStaticMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Vympel_R60
+            )
+            MissileCount = 2
+            WeaponIndex = 3
+        ),
+        TStaticMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Kh_25MP
+            )
+            MissileCount = 4
+            WeaponIndex = 2
+        ),
+    ]
+    Pylons = ~/DepictionPylonSet_Airplane_Default_Showroom
+    ReferenceMesh = $/GFX/DepictionResources/Modele_Su_22_SEAD2_TCH
 )
 
 

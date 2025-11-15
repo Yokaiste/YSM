@@ -160,7 +160,7 @@ template BoutonFulda_AvecIcone
                 (
                     Radius = 3
                     NbOfPoints = 3
-                    BackgroundBlockColorToken = (<IsFromStrategic> == true ? "SM_RifleGreen_75" : "BoutonFlares")
+                    BackgroundBlockColorToken = (<IsFromStrategic> == true ? "SM_RifleGreen_75" : "BoutonBeacons")
                     BorderLineColorToken = (<IsFromStrategic> == true ? "SM_Grullo" : "BoutonTemps_Line")
                 )
             ]

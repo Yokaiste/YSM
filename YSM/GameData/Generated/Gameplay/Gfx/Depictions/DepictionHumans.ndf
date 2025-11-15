@@ -73,6 +73,30 @@ HumanSubDepictionsShowroom_81mm_mortar_CLU_UK is
         MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_UK
     ),
 ]
+HumanSubDepictions_81mm_mortar_Guards_UK is 
+[
+    SubDepiction_ServantLeft
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_G_Guards_UK
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_G_Guards_UK_LOW
+    ),
+    SubDepiction_ServantRight
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_D_Guards_UK
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_D_Guards_UK_LOW
+    ),
+]
+HumanSubDepictionsShowroom_81mm_mortar_Guards_UK is 
+[
+    ShowroomSubDepiction_ServantLeft
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_Guards_UK
+    ),
+    ShowroomSubDepiction_ServantRight
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_Guards_UK
+    ),
+]
 HumanSubDepictions_81mm_mortar_NG_US is 
 [
     SubDepiction_ServantLeft
@@ -548,6 +572,30 @@ HumanSubDepictionsShowroom_ATteam_Fagot_FJ_DDR is
         MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_FJ_DDR
     ),
 ]
+HumanSubDepictions_ATteam_Fagot_Gvardeitsy_SOV is 
+[
+    SubDepiction_ATGMServantLeft
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_G_TTsko
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_G_TTsko_LOW
+    ),
+    SubDepiction_ATGMServantRight
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_D_TTsko
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_D_TTsko_LOW
+    ),
+]
+HumanSubDepictionsShowroom_ATteam_Fagot_Gvardeitsy_SOV is 
+[
+    ShowroomSubDepiction_ATGMServantLeft
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_TTsko
+    ),
+    ShowroomSubDepiction_ATGMServantRight
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_TTsko
+    ),
+]
 HumanSubDepictions_ATteam_Fagot_SOV is 
 [
     SubDepiction_ATGMServantLeft
@@ -714,6 +762,30 @@ HumanSubDepictionsShowroom_ATteam_Konkurs_DDR is
     ShowroomSubDepiction_ATGMServantRight
     (
         MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_DDR
+    ),
+]
+HumanSubDepictions_ATteam_Konkurs_Gvardeitsy_SOV is 
+[
+    SubDepiction_ATGMServantLeft
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_G_TTsko
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_G_TTsko_LOW
+    ),
+    SubDepiction_ATGMServantRight
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_D_TTsko
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_D_TTsko_LOW
+    ),
+]
+HumanSubDepictionsShowroom_ATteam_Konkurs_Gvardeitsy_SOV is 
+[
+    ShowroomSubDepiction_ATGMServantLeft
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_TTsko
+    ),
+    ShowroomSubDepiction_ATGMServantRight
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_TTsko
     ),
 ]
 HumanSubDepictions_ATteam_Konkurs_SOV is 
@@ -978,6 +1050,30 @@ HumanSubDepictionsShowroom_ATteam_Milan_2_FR is
     ShowroomSubDepiction_ATGMServantRight
     (
         MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_FR
+    ),
+]
+HumanSubDepictions_ATteam_Milan_2_Guards_UK is 
+[
+    SubDepiction_ATGMServantLeft
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_G_Guards_UK
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_G_Guards_UK_LOW
+    ),
+    SubDepiction_ATGMServantRight
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_D_Guards_UK
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_D_Guards_UK_LOW
+    ),
+]
+HumanSubDepictionsShowroom_ATteam_Milan_2_Guards_UK is 
+[
+    ShowroomSubDepiction_ATGMServantLeft
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_Guards_UK
+    ),
+    ShowroomSubDepiction_ATGMServantRight
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_Guards_UK
     ),
 ]
 HumanSubDepictions_ATteam_Milan_2_Legion_FR is 
@@ -1362,6 +1458,30 @@ HumanSubDepictionsShowroom_ATteam_RCL_SPG9_FJ_DDR is
     ShowroomSubDepiction_ServantRight
     (
         MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_FJ_DDR
+    ),
+]
+HumanSubDepictions_ATteam_RCL_SPG9_Gvardeitsy_SOV is 
+[
+    SubDepiction_ATGMServantLeft
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_G_TTsko
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_G_TTsko_LOW
+    ),
+    SubDepiction_ATGMServantRight
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_D_TTsko
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_D_TTsko_LOW
+    ),
+]
+HumanSubDepictionsShowroom_ATteam_RCL_SPG9_Gvardeitsy_SOV is 
+[
+    ShowroomSubDepiction_ATGMServantLeft
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_TTsko
+    ),
+    ShowroomSubDepiction_ATGMServantRight
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_TTsko
     ),
 ]
 HumanSubDepictions_ATteam_RCL_SPG9_POL is 
@@ -2344,6 +2464,24 @@ HumanSubDepictions_Bedford_MJ_4t_trans_UK is
     ),
 ]
 HumanSubDepictionsShowroom_Bedford_MJ_4t_trans_UK is []
+HumanSubDepictions_Bedford_TM_6x6_supply_UK is 
+[
+    SubDepiction_Driver
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Driver_vz85_TCH
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Driver_vz85_TCH_LOW
+    ),
+]
+HumanSubDepictionsShowroom_Bedford_TM_6x6_supply_UK is []
+HumanSubDepictions_Bedford_TM_6x6_trans_UK is 
+[
+    SubDepiction_Driver
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Driver_vz85_TCH
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Driver_vz85_TCH_LOW
+    ),
+]
+HumanSubDepictionsShowroom_Bedford_TM_6x6_trans_UK is []
 HumanSubDepictions_Berliet_GBC_8KT_FR is 
 [
     SubDepiction_Driver
@@ -2851,6 +2989,30 @@ HumanSubDepictionsShowroom_DCA_Aspide_ESP is
     ShowroomSubDepiction_ServantRight
     (
         MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_ESP
+    ),
+]
+HumanSubDepictions_DCA_Bloodhound_UK is 
+[
+    SubDepiction_ServantLeft
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_G_UK
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_G_UK_LOW
+    ),
+    SubDepiction_ServantRight
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_D_UK
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_D_UK_LOW
+    ),
+]
+HumanSubDepictionsShowroom_DCA_Bloodhound_UK is 
+[
+    ShowroomSubDepiction_ServantLeft
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_UK
+    ),
+    ShowroomSubDepiction_ServantRight
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_UK
     ),
 ]
 HumanSubDepictions_DCA_Bofors_57mm_BEL is 
@@ -3998,6 +4160,30 @@ HumanSubDepictionsShowroom_DCA_Rapier_UK is
         MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_UK
     ),
 ]
+HumanSubDepictions_DCA_Starstreak_LML_UK is 
+[
+    SubDepiction_ATGMServantLeft
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_G_UK
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_G_UK_LOW
+    ),
+    SubDepiction_ATGMServantRight
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_D_UK
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_D_UK_LOW
+    ),
+]
+HumanSubDepictionsShowroom_DCA_Starstreak_LML_UK is 
+[
+    ShowroomSubDepiction_ATGMServantLeft
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_UK
+    ),
+    ShowroomSubDepiction_ATGMServantRight
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_UK
+    ),
+]
 HumanSubDepictions_DCA_XM85_Chaparral_US is 
 [
     SubDepiction_ServantLeft
@@ -4648,6 +4834,15 @@ HumanSubDepictions_GAZ_66_POL is
     ),
 ]
 HumanSubDepictionsShowroom_GAZ_66_POL is []
+HumanSubDepictions_GAZ_66_SIGINT_SOV is 
+[
+    SubDepiction_Driver
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Driver_FR
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Driver_FR_LOW
+    ),
+]
+HumanSubDepictionsShowroom_GAZ_66_SIGINT_SOV is []
 HumanSubDepictions_GAZ_66_SOV is 
 [
     SubDepiction_Driver
@@ -4858,6 +5053,30 @@ HumanSubDepictionsShowroom_HMGteam_AGS17_DShV_SOV is
     ShowroomSubDepiction_ATGMServantRight
     (
         MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_Spe_D_VDV
+    ),
+]
+HumanSubDepictions_HMGteam_AGS17_Gvardeitsy_SOV is 
+[
+    SubDepiction_ATGMServantLeft
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_G_TTsko
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_G_TTsko_LOW
+    ),
+    SubDepiction_ATGMServantRight
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_D_TTsko
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_D_TTsko_LOW
+    ),
+]
+HumanSubDepictionsShowroom_HMGteam_AGS17_Gvardeitsy_SOV is 
+[
+    ShowroomSubDepiction_ATGMServantLeft
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_TTsko
+    ),
+    ShowroomSubDepiction_ATGMServantRight
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_TTsko
     ),
 ]
 HumanSubDepictions_HMGteam_AGS17_POL is 
@@ -5172,6 +5391,30 @@ HumanSubDepictionsShowroom_HMGteam_M1919_Reserve_CAN is
         MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_CAN
     ),
 ]
+HumanSubDepictions_HMGteam_M1919_Reserve_UK is 
+[
+    SubDepiction_ATGMServantLeft
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_G_UK
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_G_UK_LOW
+    ),
+    SubDepiction_ATGMServantRight
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_D_UK
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_D_UK_LOW
+    ),
+]
+HumanSubDepictionsShowroom_HMGteam_M1919_Reserve_UK is 
+[
+    ShowroomSubDepiction_ATGMServantLeft
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_UK
+    ),
+    ShowroomSubDepiction_ATGMServantRight
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_UK
+    ),
+]
 HumanSubDepictions_HMGteam_M2HB_AB_US is 
 [
     SubDepiction_ATGMServantLeft
@@ -5314,6 +5557,30 @@ HumanSubDepictionsShowroom_HMGteam_M2HB_LUX is
     ShowroomSubDepiction_ATGMServantRight
     (
         MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_LUX
+    ),
+]
+HumanSubDepictions_HMGteam_M2HB_M63_UK is 
+[
+    SubDepiction_ATGMServantLeft
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_G_UK
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_G_UK_LOW
+    ),
+    SubDepiction_ATGMServantRight
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_D_UK
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_D_UK_LOW
+    ),
+]
+HumanSubDepictionsShowroom_HMGteam_M2HB_M63_UK is 
+[
+    ShowroomSubDepiction_ATGMServantLeft
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_UK
+    ),
+    ShowroomSubDepiction_ATGMServantRight
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_UK
     ),
 ]
 HumanSubDepictions_HMGteam_M2HB_M63_US is 
@@ -5652,6 +5919,30 @@ HumanSubDepictionsShowroom_HMGteam_MAG_CAN is
         MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_CAN
     ),
 ]
+HumanSubDepictions_HMGteam_MAG_Guards_UK is 
+[
+    SubDepiction_ATGMServantLeft
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_G_Guards_UK
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_G_Guards_UK_LOW
+    ),
+    SubDepiction_ATGMServantRight
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_D_Guards_UK
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_D_Guards_UK_LOW
+    ),
+]
+HumanSubDepictionsShowroom_HMGteam_MAG_Guards_UK is 
+[
+    ShowroomSubDepiction_ATGMServantLeft
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_Guards_UK
+    ),
+    ShowroomSubDepiction_ATGMServantRight
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_Guards_UK
+    ),
+]
 HumanSubDepictions_HMGteam_MAG_NL is 
 [
     SubDepiction_ATGMServantLeft
@@ -5967,6 +6258,30 @@ HumanSubDepictionsShowroom_HMGteam_NSV_DShV_SOV is
     ShowroomSubDepiction_ATGMServantRight
     (
         MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_Officer_D_VDV
+    ),
+]
+HumanSubDepictions_HMGteam_NSV_Gvardeitsy_SOV is 
+[
+    SubDepiction_ATGMServantLeft
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_G_TTsko
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_G_TTsko_LOW
+    ),
+    SubDepiction_ATGMServantRight
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_D_TTsko
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_D_TTsko_LOW
+    ),
+]
+HumanSubDepictionsShowroom_HMGteam_NSV_Gvardeitsy_SOV is 
+[
+    ShowroomSubDepiction_ATGMServantLeft
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_TTsko
+    ),
+    ShowroomSubDepiction_ATGMServantRight
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_TTsko
     ),
 ]
 HumanSubDepictions_HMGteam_NSV_POL is 
@@ -6450,6 +6765,30 @@ HumanSubDepictionsShowroom_Howz_B4M_203mm_SOV is
     ShowroomSubDepiction_ServantRight
     (
         MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_SOV
+    ),
+]
+HumanSubDepictions_Howz_BL_5_5in_140mm_UK is 
+[
+    SubDepiction_ServantLeft
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_G_UK
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_G_UK_LOW
+    ),
+    SubDepiction_ServantRight
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_D_UK
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_D_UK_LOW
+    ),
+]
+HumanSubDepictionsShowroom_Howz_BL_5_5in_140mm_UK is 
+[
+    ShowroomSubDepiction_ServantLeft
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_UK
+    ),
+    ShowroomSubDepiction_ServantRight
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_UK
     ),
 ]
 HumanSubDepictions_Howz_BS3_100mm_SOV is 
@@ -7292,6 +7631,30 @@ HumanSubDepictionsShowroom_Howz_M56_Pack_Geb_RFA is
         MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_RFA
     ),
 ]
+HumanSubDepictions_Howz_M56_Pack_UK is 
+[
+    SubDepiction_ServantLeft
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_G_UK
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_G_UK_LOW
+    ),
+    SubDepiction_ServantRight
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_D_UK
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_D_UK_LOW
+    ),
+]
+HumanSubDepictionsShowroom_Howz_M56_Pack_UK is 
+[
+    ShowroomSubDepiction_ServantLeft
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_UK
+    ),
+    ShowroomSubDepiction_ServantRight
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_UK
+    ),
+]
 HumanSubDepictions_Howz_M59_LongTom_155mm_BEL is 
 [
     SubDepiction_ServantLeft
@@ -7410,6 +7773,30 @@ HumanSubDepictionsShowroom_Howz_MstaB_150mm_SOV is
     ShowroomSubDepiction_ServantRight
     (
         MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_SOV
+    ),
+]
+HumanSubDepictions_Howz_QF_25pdr_87mm_UK is 
+[
+    SubDepiction_ServantLeft
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_G_UK
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_G_UK_LOW
+    ),
+    SubDepiction_ServantRight
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_D_UK
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_D_UK_LOW
+    ),
+]
+HumanSubDepictionsShowroom_Howz_QF_25pdr_87mm_UK is 
+[
+    ShowroomSubDepiction_ServantLeft
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_UK
+    ),
+    ShowroomSubDepiction_ServantRight
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_UK
     ),
 ]
 HumanSubDepictions_Howz_TRF1_155mm_FR is 
@@ -7832,6 +8219,15 @@ HumanSubDepictions_LandRover_CMD_UK is
     ),
 ]
 HumanSubDepictionsShowroom_LandRover_CMD_UK is []
+HumanSubDepictions_LandRover_CMD_nonBerlin_UK is 
+[
+    SubDepiction_Driver
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Driver_UK
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Driver_UK_LOW
+    ),
+]
+HumanSubDepictionsShowroom_LandRover_CMD_nonBerlin_UK is []
 HumanSubDepictions_LandRover_ESP is 
 [
     SubDepiction_Driver
@@ -7868,6 +8264,15 @@ HumanSubDepictions_LandRover_MILAN_UK is
     ),
 ]
 HumanSubDepictionsShowroom_LandRover_MILAN_UK is []
+HumanSubDepictions_LandRover_MILAN_nonBerlin_UK is 
+[
+    SubDepiction_Driver
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Driver_UK
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Driver_UK_LOW
+    ),
+]
+HumanSubDepictionsShowroom_LandRover_MILAN_nonBerlin_UK is []
 HumanSubDepictions_LandRover_MP_BEL is 
 [
     SubDepiction_Driver
@@ -7895,6 +8300,15 @@ HumanSubDepictions_LandRover_MP_NL is
     ),
 ]
 HumanSubDepictionsShowroom_LandRover_MP_NL is []
+HumanSubDepictions_LandRover_MP_UK is 
+[
+    SubDepiction_Driver
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Driver_UK
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Driver_UK_LOW
+    ),
+]
+HumanSubDepictionsShowroom_LandRover_MP_UK is []
 HumanSubDepictions_LandRover_NL is 
 [
     SubDepiction_Driver
@@ -7931,6 +8345,15 @@ HumanSubDepictions_LandRover_WOMBAT_UK is
     ),
 ]
 HumanSubDepictionsShowroom_LandRover_WOMBAT_UK is []
+HumanSubDepictions_LandRover_Yeoman_UK is 
+[
+    SubDepiction_Driver
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Driver_UK
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Driver_UK_LOW
+    ),
+]
+HumanSubDepictionsShowroom_LandRover_Yeoman_UK is []
 HumanSubDepictions_Lars_2_RFA is 
 [
     SubDepiction_Driver
@@ -8596,6 +9019,15 @@ HumanSubDepictions_MAN_Z311_Mi50_BEL is
     ),
 ]
 HumanSubDepictionsShowroom_MAN_Z311_Mi50_BEL is []
+HumanSubDepictions_MAZ_535A_supply_SOV is 
+[
+    SubDepiction_Driver
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Driver_SOV
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Driver_SOV_LOW
+    ),
+]
+HumanSubDepictionsShowroom_MAZ_535A_supply_SOV is []
 HumanSubDepictions_MLRS_WP_8z_POL is 
 [
     SubDepiction_ServantLeft
@@ -11242,6 +11674,17 @@ unnamed TTransportedInfantryCatalogEntries
         TTransportedInfantryEntry
         (
             Count = 2
+            Identifier = "81mm_mortar_Guards_UK"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Servant_G_Guards_UK,
+                $/GFX/DepictionResources/MeshDescriptor_Servant_D_Guards_UK,
+            ]
+            UniqueCount = 2
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 2
             Identifier = "81mm_mortar_NG_US"
             Meshes = 
             [
@@ -11461,6 +11904,17 @@ unnamed TTransportedInfantryCatalogEntries
         TTransportedInfantryEntry
         (
             Count = 2
+            Identifier = "ATteam_Fagot_Gvardeitsy_SOV"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Servant_G_TTsko,
+                $/GFX/DepictionResources/MeshDescriptor_Servant_D_TTsko,
+            ]
+            UniqueCount = 2
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 2
             Identifier = "ATteam_Fagot_SOV"
             Meshes = 
             [
@@ -11532,6 +11986,17 @@ unnamed TTransportedInfantryCatalogEntries
             [
                 $/GFX/DepictionResources/MeshDescriptor_Servant_G_DDR,
                 $/GFX/DepictionResources/MeshDescriptor_Servant_D_DDR,
+            ]
+            UniqueCount = 2
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 2
+            Identifier = "ATteam_Konkurs_Gvardeitsy_SOV"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Servant_G_TTsko,
+                $/GFX/DepictionResources/MeshDescriptor_Servant_D_TTsko,
             ]
             UniqueCount = 2
         ),
@@ -11653,6 +12118,17 @@ unnamed TTransportedInfantryCatalogEntries
             [
                 $/GFX/DepictionResources/MeshDescriptor_Servant_G_FR,
                 $/GFX/DepictionResources/MeshDescriptor_Servant_D_FR,
+            ]
+            UniqueCount = 2
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 2
+            Identifier = "ATteam_Milan_2_Guards_UK"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Servant_G_Guards_UK,
+                $/GFX/DepictionResources/MeshDescriptor_Servant_D_Guards_UK,
             ]
             UniqueCount = 2
         ),
@@ -11829,6 +12305,17 @@ unnamed TTransportedInfantryCatalogEntries
             [
                 $/GFX/DepictionResources/MeshDescriptor_Servant_G_FJ_DDR,
                 $/GFX/DepictionResources/MeshDescriptor_Servant_D_FJ_DDR,
+            ]
+            UniqueCount = 2
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 2
+            Identifier = "ATteam_RCL_SPG9_Gvardeitsy_SOV"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Servant_G_TTsko,
+                $/GFX/DepictionResources/MeshDescriptor_Servant_D_TTsko,
             ]
             UniqueCount = 2
         ),
@@ -12467,6 +12954,26 @@ unnamed TTransportedInfantryCatalogEntries
         TTransportedInfantryEntry
         (
             Count = 1
+            Identifier = "Bedford_TM_6x6_supply_UK"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Driver_vz85_TCH,
+            ]
+            UniqueCount = 1
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 1
+            Identifier = "Bedford_TM_6x6_trans_UK"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Driver_vz85_TCH,
+            ]
+            UniqueCount = 1
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 1
             Identifier = "Berliet_GBC_8KT_FR"
             Meshes = 
             [
@@ -12782,6 +13289,17 @@ unnamed TTransportedInfantryCatalogEntries
             [
                 $/GFX/DepictionResources/MeshDescriptor_Servant_D_ESP,
                 $/GFX/DepictionResources/MeshDescriptor_Servant_G_ESP,
+            ]
+            UniqueCount = 2
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 2
+            Identifier = "DCA_Bloodhound_UK"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Servant_G_UK,
+                $/GFX/DepictionResources/MeshDescriptor_Servant_D_UK,
             ]
             UniqueCount = 2
         ),
@@ -13228,6 +13746,17 @@ unnamed TTransportedInfantryCatalogEntries
         TTransportedInfantryEntry
         (
             Count = 2
+            Identifier = "DCA_Starstreak_LML_UK"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Servant_G_UK,
+                $/GFX/DepictionResources/MeshDescriptor_Servant_D_UK,
+            ]
+            UniqueCount = 2
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 2
             Identifier = "DCA_XM85_Chaparral_US"
             Meshes = 
             [
@@ -13623,6 +14152,16 @@ unnamed TTransportedInfantryCatalogEntries
         TTransportedInfantryEntry
         (
             Count = 1
+            Identifier = "GAZ_66_SIGINT_SOV"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Driver_FR,
+            ]
+            UniqueCount = 1
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 1
             Identifier = "GAZ_66_SOV"
             Meshes = 
             [
@@ -13754,6 +14293,17 @@ unnamed TTransportedInfantryCatalogEntries
             [
                 $/GFX/DepictionResources/MeshDescriptor_Servant_G_VDV,
                 $/GFX/DepictionResources/MeshDescriptor_Servant_Spe_D_VDV,
+            ]
+            UniqueCount = 2
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 2
+            Identifier = "HMGteam_AGS17_Gvardeitsy_SOV"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Servant_G_TTsko,
+                $/GFX/DepictionResources/MeshDescriptor_Servant_D_TTsko,
             ]
             UniqueCount = 2
         ),
@@ -13903,6 +14453,17 @@ unnamed TTransportedInfantryCatalogEntries
         TTransportedInfantryEntry
         (
             Count = 2
+            Identifier = "HMGteam_M1919_Reserve_UK"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Servant_G_UK,
+                $/GFX/DepictionResources/MeshDescriptor_Servant_D_UK,
+            ]
+            UniqueCount = 2
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 2
             Identifier = "HMGteam_M2HB_AB_US"
             Meshes = 
             [
@@ -13963,6 +14524,17 @@ unnamed TTransportedInfantryCatalogEntries
             [
                 $/GFX/DepictionResources/MeshDescriptor_Servant_G_LUX,
                 $/GFX/DepictionResources/MeshDescriptor_Servant_D_LUX,
+            ]
+            UniqueCount = 2
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 2
+            Identifier = "HMGteam_M2HB_M63_UK"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Servant_G_UK,
+                $/GFX/DepictionResources/MeshDescriptor_Servant_D_UK,
             ]
             UniqueCount = 2
         ),
@@ -14123,6 +14695,17 @@ unnamed TTransportedInfantryCatalogEntries
         TTransportedInfantryEntry
         (
             Count = 2
+            Identifier = "HMGteam_MAG_Guards_UK"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Servant_G_Guards_UK,
+                $/GFX/DepictionResources/MeshDescriptor_Servant_D_Guards_UK,
+            ]
+            UniqueCount = 2
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 2
             Identifier = "HMGteam_MAG_NL"
             Meshes = 
             [
@@ -14260,6 +14843,17 @@ unnamed TTransportedInfantryCatalogEntries
             [
                 $/GFX/DepictionResources/MeshDescriptor_Servant_Spe_G_VDV,
                 $/GFX/DepictionResources/MeshDescriptor_Servant_Officer_D_VDV,
+            ]
+            UniqueCount = 2
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 2
+            Identifier = "HMGteam_NSV_Gvardeitsy_SOV"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Servant_G_TTsko,
+                $/GFX/DepictionResources/MeshDescriptor_Servant_D_TTsko,
             ]
             UniqueCount = 2
         ),
@@ -14501,6 +15095,17 @@ unnamed TTransportedInfantryCatalogEntries
             [
                 $/GFX/DepictionResources/MeshDescriptor_Servant_G_SOV,
                 $/GFX/DepictionResources/MeshDescriptor_Servant_D_SOV,
+            ]
+            UniqueCount = 2
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 2
+            Identifier = "Howz_BL_5_5in_140mm_UK"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Servant_G_UK,
+                $/GFX/DepictionResources/MeshDescriptor_Servant_D_UK,
             ]
             UniqueCount = 2
         ),
@@ -14892,6 +15497,17 @@ unnamed TTransportedInfantryCatalogEntries
         TTransportedInfantryEntry
         (
             Count = 2
+            Identifier = "Howz_M56_Pack_UK"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Servant_G_UK,
+                $/GFX/DepictionResources/MeshDescriptor_Servant_D_UK,
+            ]
+            UniqueCount = 2
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 2
             Identifier = "Howz_M59_LongTom_155mm_BEL"
             Meshes = 
             [
@@ -14941,6 +15557,17 @@ unnamed TTransportedInfantryCatalogEntries
             [
                 $/GFX/DepictionResources/MeshDescriptor_Servant_G_SOV,
                 $/GFX/DepictionResources/MeshDescriptor_Servant_D_SOV,
+            ]
+            UniqueCount = 2
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 2
+            Identifier = "Howz_QF_25pdr_87mm_UK"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Servant_G_UK,
+                $/GFX/DepictionResources/MeshDescriptor_Servant_D_UK,
             ]
             UniqueCount = 2
         ),
@@ -15352,6 +15979,16 @@ unnamed TTransportedInfantryCatalogEntries
         TTransportedInfantryEntry
         (
             Count = 1
+            Identifier = "LandRover_CMD_nonBerlin_UK"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Driver_UK,
+            ]
+            UniqueCount = 1
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 1
             Identifier = "LandRover_ESP"
             Meshes = 
             [
@@ -15392,6 +16029,16 @@ unnamed TTransportedInfantryCatalogEntries
         TTransportedInfantryEntry
         (
             Count = 1
+            Identifier = "LandRover_MILAN_nonBerlin_UK"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Driver_UK,
+            ]
+            UniqueCount = 1
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 1
             Identifier = "LandRover_MP_BEL"
             Meshes = 
             [
@@ -15416,6 +16063,16 @@ unnamed TTransportedInfantryCatalogEntries
             Meshes = 
             [
                 $/GFX/DepictionResources/MeshDescriptor_Driver_BEL,
+            ]
+            UniqueCount = 1
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 1
+            Identifier = "LandRover_MP_UK"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Driver_UK,
             ]
             UniqueCount = 1
         ),
@@ -15453,6 +16110,16 @@ unnamed TTransportedInfantryCatalogEntries
         (
             Count = 1
             Identifier = "LandRover_WOMBAT_UK"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Driver_UK,
+            ]
+            UniqueCount = 1
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 1
+            Identifier = "LandRover_Yeoman_UK"
             Meshes = 
             [
                 $/GFX/DepictionResources/MeshDescriptor_Driver_UK,
@@ -16165,6 +16832,16 @@ unnamed TTransportedInfantryCatalogEntries
                 $/GFX/DepictionResources/MeshDescriptor_Servant_D_BEL,
             ]
             UniqueCount = 2
+        ),
+        TTransportedInfantryEntry
+        (
+            Count = 1
+            Identifier = "MAZ_535A_supply_SOV"
+            Meshes = 
+            [
+                $/GFX/DepictionResources/MeshDescriptor_Driver_SOV,
+            ]
+            UniqueCount = 1
         ),
         TTransportedInfantryEntry
         (

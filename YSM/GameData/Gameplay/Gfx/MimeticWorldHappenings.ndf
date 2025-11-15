@@ -23,28 +23,8 @@ unnamed TMimeticWorldHappeningRegistration
             )
         ),
         ('chaleur', TIntroduceMobileHappening( Happening = TSequencingActionHappening( ActionDescriptor = TActionCall( Action = $/VFX_Bank/FX_BANK_Binder_Chaleur_Simple )))),
-        ('fumigene', TIntroduceMobileHappening( Happening = TSequencingActionHappening( ActionDescriptor = FxFumigeneWithParams ))),
-        ('fumigene_ghost', TIntroduceMobileHappening( Happening = TSequencingActionHappening( ActionDescriptor = FxFumigeneGhostWithParams ))),
-        ("districtCombat", TIntroduceMobileHappening(
-            Happening = TRandomHappening
-            (
-                Alternatives =
-                [
-                    FxBuildingDestruction(Action = $/GFX/GameFx/fx_Close_Quarter_Combat_Batiment_1),
-                    FxBuildingDestruction(Action = $/GFX/GameFx/fx_Close_Quarter_Combat_Batiment_2),
-                    FxBuildingDestruction(Action = $/GFX/GameFx/fx_Close_Quarter_Combat_Batiment_3),
-                    FxBuildingDestruction(Action = $/GFX/GameFx/fx_Close_Quarter_Combat_Batiment_4),
-                    FxBuildingDestruction(Action = $/GFX/GameFx/fx_Close_Quarter_Combat_Batiment_5),
-                    FxBuildingDestruction(Action = $/GFX/GameFx/fx_Close_Quarter_Combat_Batiment_6),
-                    FxBuildingDestruction(Action = $/GFX/GameFx/fx_Close_Quarter_Combat_Batiment_7),
-                    FxBuildingDestruction(Action = $/GFX/GameFx/fx_Close_Quarter_Combat_Batiment_8),
-                    FxBuildingDestruction(Action = $/GFX/GameFx/fx_Close_Quarter_Combat_Batiment_9),
-                    FxBuildingDestruction(Action = $/GFX/GameFx/fx_Close_Quarter_Combat_Batiment_10),
-                    FxBuildingDestruction(Action = $/GFX/GameFx/fx_Close_Quarter_Combat_Batiment_11),
-                    FxBuildingDestruction(Action = $/GFX/GameFx/fx_Close_Quarter_Combat_Batiment_12),
-                ]
-            ))
-        ),
+        ('beacon', TIntroduceMobileHappening( Happening = TSequencingActionHappening( ActionDescriptor = FxBeaconWithParams ))),
+        ('beacon_ghost', TIntroduceMobileHappening( Happening = TSequencingActionHappening( ActionDescriptor = FxBeaconGhostWithParams ))),
         ('FOBDestruction',             TIntroduceMobileHappening(
             Happening = TRandomHappening
             (

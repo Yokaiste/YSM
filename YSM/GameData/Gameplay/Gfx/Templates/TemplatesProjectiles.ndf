@@ -21,7 +21,6 @@ is TActionCall
         private parPower            is TPinnableValue(ExpectedType = 'float'    InitialValue = <Power>),
         private parShotCount        is TPinnableValue(ExpectedType = 'float'    InitialValue = <ShotCount>),
         private parShotOnGround     is TPinnableValue(ExpectedType = 'bool'     InitialValue = true),
-        private parTerrain          is TPinnableValue(ExpectedType = 'int'      InitialValue = 1),
         private parWaitBetweenShot  is TPinnableValue(ExpectedType = 'float'    InitialValue = <WaitBetweenShot>),
     ]
     NamedParams = MAP
@@ -29,7 +28,6 @@ is TActionCall
         ('parPower',            parPower ),
         ('parShotCount',        parShotCount ),
         ('parShotOnGround',     parShotOnGround ),
-        ('parTerrain',          parTerrain ),
         ('parWaitBetweenShot',  parWaitBetweenShot),
     ]
 )
@@ -100,7 +98,6 @@ is TActionCall
         private parPower            is TPinnableValue(ExpectedType = 'float'    InitialValue = <Power>),
         private parShotCount        is TPinnableValue(ExpectedType = 'float'    InitialValue = <ShotCount>),
         private parShotOnGround     is TPinnableValue(ExpectedType = 'bool'     InitialValue = true),
-        private parTerrain          is TPinnableValue(ExpectedType = 'int'      InitialValue = 1),
         private parTirPhysic        is TPinnableValue(ExpectedType = 'bool'     InitialValue = <WithPhysics>),
         private parTirTendu         is TPinnableValue(ExpectedType = 'bool'     InitialValue = <DirectFire>),
         private parTravelDuration   is TPinnableValue(ExpectedType = 'float'),
@@ -117,7 +114,6 @@ is TActionCall
         ('parPower',            parPower),
         ('parShotCount',        parShotCount),
         ('parShotOnGround',     parShotOnGround),
-        ('parTerrain',          parTerrain),
         ('parTirPhysic',        parTirPhysic),
         ('parTirTendu',         parTirTendu),
         ('parWaitBetweenShot',  parWaitBetweenShot),

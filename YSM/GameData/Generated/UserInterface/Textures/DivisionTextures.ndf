@@ -119,6 +119,10 @@ Texture_Division_Emblem_SOV_27GvMSD is TUIResourceTexture_Common
 (
     FileName = "GameData:/Assets/2D/Interface/UseOutGame/Division/Emblem/SOV_27GvMSD.png"
 )
+Texture_Division_Emblem_SOV_2GvMSD is TUIResourceTexture_Common
+(
+    FileName = "GameData:/Assets/2D/Interface/UseOutGame/Division/Emblem/SOV_2GvMSD.png"
+)
 Texture_Division_Emblem_SOV_31TD is TUIResourceTexture_Common
 (
     FileName = "GameData:/Assets/2D/Interface/UseOutGame/Division/Emblem/SOV_31TD.png"
@@ -174,6 +178,10 @@ Texture_Division_Emblem_UK_4th_Armoured is TUIResourceTexture_Common
 Texture_Division_Emblem_UK_5th_Airborne is TUIResourceTexture_Common
 (
     FileName = "GameData:/Assets/2D/Interface/UseOutGame/Division/Emblem/UK_5th_Airborne.png"
+)
+Texture_Division_Emblem_UK_London_HDR is TUIResourceTexture_Common
+(
+    FileName = "GameData:/Assets/2D/Interface/UseOutGame/Division/Emblem/UK_London_HDR.png"
 )
 Texture_Division_Emblem_US_101st_Airmobile is TUIResourceTexture_Common
 (
@@ -459,6 +467,7 @@ DivisionAdditionalTextureBank is TBUCKToolAdditionalTextureBank
         ("Texture_Division_Emblem_SOV_17gvTD", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_SOV_17gvTD)]),
         ("Texture_Division_Emblem_SOV_25th_TD", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_SOV_25th_TD)]),
         ("Texture_Division_Emblem_SOV_27GvMSD", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_SOV_27GvMSD)]),
+        ("Texture_Division_Emblem_SOV_2GvMSD", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_SOV_2GvMSD)]),
         ("Texture_Division_Emblem_SOV_31TD", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_SOV_31TD)]),
         ("Texture_Division_Emblem_35th_VDV_Brigade", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_35th_VDV_Brigade)]),
         ("Texture_Division_Emblem_39th_gmsd", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_39th_gmsd)]),
@@ -473,6 +482,7 @@ DivisionAdditionalTextureBank is TBUCKToolAdditionalTextureBank
         ("Texture_Division_Emblem_UK_2nd_Infantry", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_UK_2nd_Infantry)]),
         ("Texture_Division_Emblem_UK_4th_Armoured", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_UK_4th_Armoured)]),
         ("Texture_Division_Emblem_UK_5th_Airborne", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_UK_5th_Airborne)]),
+        ("Texture_Division_Emblem_UK_London_HDR", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_UK_London_HDR)]),
         ("Texture_Division_Emblem_US_101st_Airmobile", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_US_101st_Airmobile)]),
         ("Texture_Division_Emblem_11ACR", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_11ACR)]),
         ("Texture_Division_Emblem_24th_infantry_division", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_24th_infantry_division)]),

@@ -239,84 +239,84 @@ OnUnitFiring is TUIFeedbackDispatchedMessageDescriptor
     IsActiveForPlayer = true
 )
 
-OnFlareAttackPlaced is TUIFeedbackDispatchedMessageDescriptor
+OnBeaconAttackPlaced is TUIFeedbackDispatchedMessageDescriptor
 (
-    MinimapPingType = $/UI/Components/MinimapFlareAttack
+    MinimapPingType = $/UI/Components/MinimapBeaconAttack
     MinimapPingAnimType = $/UI/Components/MinimapPingAnim_Fade
     MinimapPingDuration = 8
     MinimapPingAnimStartTime = 0.5
     BaseFilterColorForMinimap = [255,255,255,150]
-    HudSound = ~/HudSoundFlareAttkPlaced
+    HudSound = ~/HudSoundBeaconAttkPlaced
     IsActiveForAllies = true
     IsActiveForPlayer = true
     AllowFocusOnEvent = true
     //TimeBeforeRepeat = 10
 )
 
-OnFlareDefendPlaced is TUIFeedbackDispatchedMessageDescriptor
+OnBeaconDefendPlaced is TUIFeedbackDispatchedMessageDescriptor
 (
-    MinimapPingType = $/UI/Components/MinimapFlareDefend
+    MinimapPingType = $/UI/Components/MinimapBeaconDefend
     MinimapPingAnimType = $/UI/Components/MinimapPingAnim_Fade
     MinimapPingDuration = 8
     MinimapPingAnimStartTime = 0.5
     BaseFilterColorForMinimap = [255,255,255,150]
-    HudSound = ~/HudSoundFlarePlaced
+    HudSound = ~/HudSoundBeaconPlaced
     IsActiveForAllies = true
     IsActiveForPlayer = true
     AllowFocusOnEvent = true
     //TimeBeforeRepeat = 10
 )
 
-OnFlareHelpPlaced is TUIFeedbackDispatchedMessageDescriptor
+OnBeaconHelpPlaced is TUIFeedbackDispatchedMessageDescriptor
 (
-    MinimapPingType = $/UI/Components/MinimapFlareHelp
+    MinimapPingType = $/UI/Components/MinimapBeaconHelp
     MinimapPingAnimType = $/UI/Components/MinimapPingAnim_Fade
     MinimapPingDuration = 8
     MinimapPingAnimStartTime = 0.5
     BaseFilterColorForMinimap = [255,255,255,150]
-    HudSound = ~/HudSoundFlareHelpPlaced
+    HudSound = ~/HudSoundBeaconHelpPlaced
     IsActiveForAllies = true
     IsActiveForPlayer = true
     AllowFocusOnEvent = true
     //TimeBeforeRepeat = 10
 )
 
-OnFlareCustomPlaced is TUIFeedbackDispatchedMessageDescriptor
+OnBeaconCustomPlaced is TUIFeedbackDispatchedMessageDescriptor
 (
-    MinimapPingType = $/UI/Components/MinimapFlareCustom
+    MinimapPingType = $/UI/Components/MinimapBeaconCustom
     MinimapPingAnimType = $/UI/Components/MinimapPingAnim_Fade
     MinimapPingDuration = 8
     MinimapPingAnimStartTime = 0.5
     BaseFilterColorForMinimap = [255,255,255,150]
-    HudSound = ~/HudSoundFlareCustomPlaced
+    HudSound = ~/HudSoundBeaconCustomPlaced
     IsActiveForAllies = true
     IsActiveForPlayer = true
     AllowFocusOnEvent = true
     //TimeBeforeRepeat = 10
 )
 
-OnFlareFireSupportPlaced is TUIFeedbackDispatchedMessageDescriptor
+OnBeaconFireSupportPlaced is TUIFeedbackDispatchedMessageDescriptor
 (
-    MinimapPingType = $/UI/Components/MinimapFlareFireSupport
+    MinimapPingType = $/UI/Components/MinimapBeaconFireSupport
     MinimapPingAnimType = $/UI/Components/MinimapPingAnim_Fade
     MinimapPingDuration = 8
     MinimapPingAnimStartTime = 0.5
     BaseFilterColorForMinimap = [255,255,255,150]
-    HudSound = ~/HudSoundFlarePlaced
+    HudSound = ~/HudSoundBeaconPlaced
     IsActiveForAllies = true
     IsActiveForPlayer = true
     AllowFocusOnEvent = true
     //TimeBeforeRepeat = 10
 )
 
-OnFlareEnemySpottedPlaced is TUIFeedbackDispatchedMessageDescriptor
+OnBeaconEnemySpottedPlaced is TUIFeedbackDispatchedMessageDescriptor
 (
-    MinimapPingType = $/UI/Components/MinimapFlareEnemySpotted
+    MinimapPingType = $/UI/Components/MinimapBeaconEnemySpotted
     MinimapPingAnimType = $/UI/Components/MinimapPingAnim_Fade
     MinimapPingDuration = 8
     MinimapPingAnimStartTime = 0.5
     BaseFilterColorForMinimap = [250,190,50,150]
-    HudSound = ~/HudSoundFlareSpottedPlaced
+    HudSound = ~/HudSoundBeaconSpottedPlaced
     IsActiveForAllies = true
     IsActiveForPlayer = true
     AllowFocusOnEvent = true
@@ -845,12 +845,12 @@ IngameFeedbackMessageManagerDescriptor is TUISpecificInGameFeedbackMessageManage
         ( FeedbackMessage_OnEnemyBuildingCaptured, ~/OnEnemyBuildingCaptured ),
         ( FeedbackMessage_OnCaptureOrder, ~/OnCaptureOrder ),
         ( FeedbackMessage_OnUnitFiring, ~/OnUnitFiring ),
-        ( FeedbackMessage_OnFlareAttackPlaced, ~/OnFlareAttackPlaced ),
-        ( FeedbackMessage_OnFlareDefendPlaced, ~/OnFlareDefendPlaced ),
-        ( FeedbackMessage_OnFlareHelpPlaced, ~/OnFlareHelpPlaced ),
-        ( FeedbackMessage_OnFlareCustomPlaced, ~/OnFlareCustomPlaced ),
-        ( FeedbackMessage_OnFlareFireSupportPlaced, ~/OnFlareFireSupportPlaced ),
-        ( FeedbackMessage_OnFlareEnemySpottedPlaced, ~/OnFlareEnemySpottedPlaced ),
+        ( FeedbackMessage_OnBeaconAttackPlaced, ~/OnBeaconAttackPlaced ),
+        ( FeedbackMessage_OnBeaconDefendPlaced, ~/OnBeaconDefendPlaced ),
+        ( FeedbackMessage_OnBeaconHelpPlaced, ~/OnBeaconHelpPlaced ),
+        ( FeedbackMessage_OnBeaconCustomPlaced, ~/OnBeaconCustomPlaced ),
+        ( FeedbackMessage_OnBeaconFireSupportPlaced, ~/OnBeaconFireSupportPlaced ),
+        ( FeedbackMessage_OnBeaconEnemySpottedPlaced, ~/OnBeaconEnemySpottedPlaced ),
         ( FeedbackMessage_OnUnitUnderAttack, ~/OnUnitUnderAttack ),
         ( FeedbackMessage_OnUnloadFromTransportOrder, ~/OnUnloadOrder ),
         ( FeedbackMessage_OnUnloadAtPositionOrder, ~/OnUnloadAtPositionOrder ),
@@ -878,6 +878,7 @@ IngameFeedbackMessageManagerDescriptor is TUISpecificInGameFeedbackMessageManage
         ( FeedbackMessage_OnCriticEvacuate, ~/OnCriticEvacuate),
         ( FeedbackMessage_OnUnitSold, ~/OnUnitSold ),
         ( FeedbackMessage_OnAttackReaction, ~/OnAttackReaction ),
+        ( FeedbackMessage_OnAirplaneAttackOrder, ~/OnAttackOrder ),
         ( FeedbackMessage_OnCommandZoneSecuredByPlayer, ~/OnCommandZoneSecuredByPlayer ),
         ( FeedbackMessage_OnCommandZoneLost, ~/OnCommandZoneLost ),
         ( FeedbackMessage_OnCommandZoneSecuredByEnemy, ~/OnCommandZoneSecuredByEnemy ),

@@ -1,0 +1,19 @@
+export Modele_F4_Phantom_AA_GR2_UK is TResourceMesh
+(
+    Mesh=ModelFile_F4_Phantom_GR2_UK
+)
+
+export Modele_F4_Phantom_AA_GR2_UK_MID is TResourceMesh
+(
+    Mesh=ModelFile_F4_Phantom_GR2_UK_MID
+)
+
+export Modele_F4_Phantom_AA_GR2_UK_LOW is TResourceMesh
+(
+    Mesh=ModelFile_F4_Phantom_GR2_UK_LOW
+)
+
+export Modele_F4_Phantom_AA_GR2_UK_train is TResourceMesh
+(
+    Mesh=ModelFile_F4_Phantom_GR2_UK_train
+)

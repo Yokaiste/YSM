@@ -523,6 +523,24 @@ export Descriptor_Deck_Division_SOV_27_Gds_Rifle_multi is TDeckDivisionDescripto
     TypeTexture       = "Texture_Division_Type_infantryReg"
     CountryId = "SOV"
 )
+export Descriptor_Deck_Division_SOV_2_Gds_Rifle_multi is TDeckDivisionDescriptor
+(
+    DescriptorId = GUID:{0eb3b72b-0a99-4da1-8131-dc58ae6f5ab5}
+    CfgName = 'SOV_2_Gds_Rifle_multi'
+    DivisionName = 'GLCHUFJCAE'
+    InterfaceOrder = 1.0
+    DivisionPowerClassification = 'DC_PWR2'
+    DivisionCoalition = ECoalition/PACT
+    DivisionTags = ['DEFAULT', 'SOV', 'PACT', 'infantryReg', 'DC_PWR2']
+    DescriptionHintTitleToken = 'JEFNHMECFG'
+    MaxActivationPoints = 50
+    DivisionRule = Descriptor_Deck_Division_SOV_2_Gds_Rifle_multi_Rule
+    CostMatrix = MatrixCostName_SOV_2_Gds_Rifle_multi
+    EmblemTexture     = "Texture_Division_Emblem_SOV_2GvMSD"
+    PortraitTexture   = "Texture_Division_Portrait_default"
+    TypeTexture       = "Texture_Division_Type_infantryReg"
+    CountryId = "SOV"
+)
 export Descriptor_Deck_Division_SOV_31_Tank_multi is TDeckDivisionDescriptor
 (
     DescriptorId = GUID:{f163af7e-73f9-42ee-a607-e1b50e104c98}
@@ -771,6 +789,24 @@ export Descriptor_Deck_Division_UK_5th_Airborne_Brigade_multi is TDeckDivisionDe
     DivisionRule = Descriptor_Deck_Division_UK_5th_Airborne_Brigade_multi_Rule
     CostMatrix = MatrixCostName_UK_5th_Airborne_Brigade_multi
     EmblemTexture     = "Texture_Division_Emblem_UK_5th_Airborne"
+    PortraitTexture   = "Texture_Division_Portrait_default"
+    TypeTexture       = "Texture_Division_Type_infantryReg"
+    CountryId = "UK"
+)
+export Descriptor_Deck_Division_UK_London_HDR_multi is TDeckDivisionDescriptor
+(
+    DescriptorId = GUID:{3bf3066f-98f2-4ea5-b590-bf326622f3ec}
+    CfgName = 'UK_London_HDR_multi'
+    DivisionName = 'JIUNYRKVBK'
+    InterfaceOrder = 21.0
+    DivisionPowerClassification = 'DC_PWR2'
+    DivisionCoalition = ECoalition/NATO
+    DivisionTags = ['DEFAULT', 'UK', 'NATO', 'infantryReg', 'DC_PWR2']
+    DescriptionHintTitleToken = 'IXEQASWYLR'
+    MaxActivationPoints = 50
+    DivisionRule = Descriptor_Deck_Division_UK_London_HDR_multi_Rule
+    CostMatrix = MatrixCostName_UK_London_HDR_multi
+    EmblemTexture     = "Texture_Division_Emblem_UK_London_HDR"
     PortraitTexture   = "Texture_Division_Portrait_default"
     TypeTexture       = "Texture_Division_Type_infantryReg"
     CountryId = "UK"

@@ -1,0 +1,17 @@
+export Modele_BMP_1_CMD_POTOK2_SOV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/CMD/BMP_1_CMD_POTOK2/BMP_1_CMD_POTOK2.fbx"
+)
+
+export Modele_BMP_1_CMD_POTOK2_SOV_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/CMD/BMP_1_CMD_POTOK2_MID/BMP_1_CMD_POTOK2_MID.fbx"
+)
+
+export Modele_BMP_1_CMD_POTOK2_SOV_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/CMD/BMP_1_CMD_POTOK2_LOW/BMP_1_CMD_POTOK2_LOW.fbx"
+)
+
+
+

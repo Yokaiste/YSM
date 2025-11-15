@@ -10,13 +10,13 @@ export MinimapPing_None                 is 0
 export MinimapPing_Beep                 is 1
 export MinimapPing_Cross                is 2
 export MinimapPing_Alarm                is 3
-export MinimapFlareAttack               is 4
-export MinimapFlareDefend               is 5
-export MinimapFlareHelp                 is 6
-export MinimapFlareCustom               is 7
+export MinimapBeaconAttack              is 4
+export MinimapBeaconDefend              is 5
+export MinimapBeaconHelp                is 6
+export MinimapBeaconCustom              is 7
 export MinimapPing_Spotted              is 8
-export MinimapFlareFireSupport          is 9
-export MinimapFlareEnemySpotted         is 10
+export MinimapBeaconFireSupport         is 9
+export MinimapBeaconEnemySpotted        is 10
 
 MinimapPingType_Enum is TMinimapPingType
 (
@@ -25,13 +25,13 @@ MinimapPingType_Enum is TMinimapPingType
         "MinimapPing_Beep",
         "MinimapPing_Cross",
         "MinimapPing_Alarm",
-        "MinimapFlareAttack",
-        "MinimapFlareDefend",
-        "MinimapFlareHelp",
-        "MinimapFlareCustom",
+        "MinimapBeaconAttack",
+        "MinimapBeaconDefend",
+        "MinimapBeaconHelp",
+        "MinimapBeaconCustom",
         "MinimapPing_Spotted",
-        "MinimapFlareFireSupport",
-        "MinimapFlareEnemySpotted",
+        "MinimapBeaconFireSupport",
+        "MinimapBeaconEnemySpotted",
     ]
 )
 
@@ -83,13 +83,13 @@ InGameMinimap is TUISpecificInGameMinimapResources
         ( MinimapPing_Beep, ~/Texture_Minimap_Alert ),
         ( MinimapPing_Cross, ~/Texture_Minimap_Death ),
         ( MinimapPing_Alarm, ~/Texture_Minimap_Alarm ),
-        ( MinimapFlareAttack, ~/Texture_MinimapFlareAttack ),
-        ( MinimapFlareDefend, ~/Texture_MinimapFlareDefend ),
-        ( MinimapFlareHelp, ~/Texture_MinimapFlareHelp ),
-        ( MinimapFlareCustom, ~/Texture_MinimapFlareCustom ),
+        ( MinimapBeaconAttack, ~/Texture_MinimapBeaconAttack ),
+        ( MinimapBeaconDefend, ~/Texture_MinimapBeaconDefend ),
+        ( MinimapBeaconHelp, ~/Texture_MinimapBeaconHelp ),
+        ( MinimapBeaconCustom, ~/Texture_MinimapBeaconCustom ),
         ( MinimapPing_Spotted, ~/Texture_MinimapPing_Spotted ),
-        ( MinimapFlareFireSupport, ~/Texture_MinimapFlareFireSupport ),
-        ( MinimapFlareEnemySpotted, ~/Texture_MinimapFlareEnemySpotted ),
+        ( MinimapBeaconFireSupport, ~/Texture_MinimapBeaconFireSupport ),
+        ( MinimapBeaconEnemySpotted, ~/Texture_MinimapBeaconEnemySpotted ),
     ]
 
     UnitAppearingColor                  = RGBA[255, 255, 255, 255]
@@ -104,11 +104,11 @@ InGameMinimap is TUISpecificInGameMinimapResources
     CommandZoneBorderWidth              = 0.5
 
     // Les layers sont répartis en 5 couches de 4 layers, soit 20 au total. Le layer 0 est tout au fond et le 19 est au sommet, le plus visible.
-    // 'SortOrderList' définit la couche. C'est la catégorie de trucs qu'on affiche, histoire de dire "les flares c'est au-dessus des unités"
+    // 'SortOrderList' définit la couche. C'est la catégorie de trucs qu'on affiche, histoire de dire "les beacons c'est au-dessus des unités"
     // 'SortOrderInsideLayer' définit le sous-niveau, à l'intérieur d'une couche. Là c'est plutôt "Parmi tel type d'infos, on affiche mes trucs par-dessus ceux des autres"
     // Avec les valeurs actuelles, par exemple un Supply ennemi appartiendra à la couche 1, sous-couche 2, soit layer 6 (1x4 + 2)
 
-    // specifier Layer pour GameplayZone,Unit,Fob,Command,Supply,Alert,Mort,Flare
+    // specifier Layer pour GameplayZone,Unit,Fob,Command,Supply,Alert,Mort,Beacon
     // 0 en dessous 5 au dessus et 7 valeurs OBLIGATOIREMENT
     SortOrderList                       = [0,0,1,1,1,3,4,2]
     // specifier Ordre a l'interieur d'un layer pour Player,Allied,Enemy

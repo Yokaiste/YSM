@@ -1,0 +1,14 @@
+export Modele_CH47D_Chinook_SAS_UK is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Helico/CH47D_Chinook_SAS/CH47D_Chinook_SAS.fbx"
+)
+
+export Modele_CH47D_Chinook_SAS_UK_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Helico/CH47D_Chinook_SAS_MID/CH47D_Chinook_SAS_MID.fbx"
+)
+
+export Modele_CH47D_Chinook_SAS_UK_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Helico/CH47D_Chinook_SAS_LOW/CH47D_Chinook_SAS_LOW.fbx"
+)

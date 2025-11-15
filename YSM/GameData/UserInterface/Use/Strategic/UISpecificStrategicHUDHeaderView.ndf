@@ -152,7 +152,7 @@ private AffichageMenu is BUCKListDescriptor
         (
             ComponentDescriptor = BUCKContainerDescriptor
             (
-                UniqueName = "FlareEditableTextContainer"
+                UniqueName = "BeaconEditableTextContainer"
                 ComponentFrame = TUIFramePropertyRTTI
                 (
                     RelativeWidthHeight = [1.0, 0.0]

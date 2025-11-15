@@ -171,6 +171,12 @@ unnamed GhostVehicleDepictionRegistration
 )
 unnamed GhostVehicleDepictionRegistration
 (
+    Alternatives = Alternatives_81mm_mortar_Guards_UK
+    MimeticName = "81mm_mortar_Guards_UK"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
     Alternatives = Alternatives_81mm_mortar_NG_US
     MimeticName = "81mm_mortar_NG_US"
     Selector = SpecificVehicleDepictionSelector
@@ -525,6 +531,12 @@ unnamed GhostVehicleDepictionRegistration
 )
 unnamed GhostVehicleDepictionRegistration
 (
+    Alternatives = Alternatives_AS90_155mm_UK
+    MimeticName = "AS90_155mm_UK"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
     Alternatives = Alternatives_ASU_85_CMD_POL
     MimeticName = "ASU_85_CMD_POL"
     Selector = SpecificVehicleDepictionSelector
@@ -627,6 +639,12 @@ unnamed GhostVehicleDepictionRegistration
 )
 unnamed GhostVehicleDepictionRegistration
 (
+    Alternatives = Alternatives_ATteam_Fagot_Gvardeitsy_SOV
+    MimeticName = "ATteam_Fagot_Gvardeitsy_SOV"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
     Alternatives = Alternatives_ATteam_Fagot_SOV
     MimeticName = "ATteam_Fagot_SOV"
     Selector = SpecificVehicleDepictionSelector
@@ -665,6 +683,12 @@ unnamed GhostVehicleDepictionRegistration
 (
     Alternatives = Alternatives_ATteam_Konkurs_DDR
     MimeticName = "ATteam_Konkurs_DDR"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
+    Alternatives = Alternatives_ATteam_Konkurs_Gvardeitsy_SOV
+    MimeticName = "ATteam_Konkurs_Gvardeitsy_SOV"
     Selector = SpecificVehicleDepictionSelector
 )
 unnamed GhostVehicleDepictionRegistration
@@ -731,6 +755,12 @@ unnamed GhostVehicleDepictionRegistration
 (
     Alternatives = Alternatives_ATteam_Milan_2_FR
     MimeticName = "ATteam_Milan_2_FR"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
+    Alternatives = Alternatives_ATteam_Milan_2_Guards_UK
+    MimeticName = "ATteam_Milan_2_Guards_UK"
     Selector = SpecificVehicleDepictionSelector
 )
 unnamed GhostVehicleDepictionRegistration
@@ -827,6 +857,12 @@ unnamed GhostVehicleDepictionRegistration
 (
     Alternatives = Alternatives_ATteam_RCL_SPG9_FJ_DDR
     MimeticName = "ATteam_RCL_SPG9_FJ_DDR"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
+    Alternatives = Alternatives_ATteam_RCL_SPG9_Gvardeitsy_SOV
+    MimeticName = "ATteam_RCL_SPG9_Gvardeitsy_SOV"
     Selector = SpecificVehicleDepictionSelector
 )
 unnamed GhostVehicleDepictionRegistration
@@ -1289,6 +1325,12 @@ unnamed GhostVehicleDepictionRegistration
 (
     Alternatives = Alternatives_BMP_1_CMD_POL
     MimeticName = "BMP_1_CMD_POL"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
+    Alternatives = Alternatives_BMP_1_CMD_POTOK2_SOV
+    MimeticName = "BMP_1_CMD_POTOK2_SOV"
     Selector = SpecificVehicleDepictionSelector
 )
 unnamed GhostVehicleDepictionRegistration
@@ -1809,6 +1851,12 @@ unnamed GhostVehicleDepictionRegistration
 )
 unnamed GhostVehicleDepictionRegistration
 (
+    Alternatives = Alternatives_BTR_80_reco_SOV
+    MimeticName = "BTR_80_reco_SOV"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
     Alternatives = Alternatives_BTR_D_Robot_SOV
     MimeticName = "BTR_D_Robot_SOV"
     Selector = SpecificVehicleDepictionSelector
@@ -1841,6 +1889,18 @@ unnamed GhostVehicleDepictionRegistration
 (
     Alternatives = Alternatives_Bedford_MJ_4t_trans_UK
     MimeticName = "Bedford_MJ_4t_trans_UK"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
+    Alternatives = Alternatives_Bedford_TM_6x6_supply_UK
+    MimeticName = "Bedford_TM_6x6_supply_UK"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
+    Alternatives = Alternatives_Bedford_TM_6x6_trans_UK
+    MimeticName = "Bedford_TM_6x6_trans_UK"
     Selector = SpecificVehicleDepictionSelector
 )
 unnamed GhostVehicleDepictionRegistration
@@ -1961,6 +2021,18 @@ unnamed GhostVehicleDepictionRegistration
 (
     Alternatives = Alternatives_Centurion_AVRE_105_UK
     MimeticName = "Centurion_AVRE_105_UK"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
+    Alternatives = Alternatives_Centurion_Mk13_CMD_UK
+    MimeticName = "Centurion_Mk13_CMD_UK"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
+    Alternatives = Alternatives_Centurion_Mk13_UK
+    MimeticName = "Centurion_Mk13_UK"
     Selector = SpecificVehicleDepictionSelector
 )
 unnamed GhostVehicleDepictionRegistration
@@ -2087,6 +2159,12 @@ unnamed GhostVehicleDepictionRegistration
 (
     Alternatives = Alternatives_DCA_Aspide_ESP
     MimeticName = "DCA_Aspide_ESP"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
+    Alternatives = Alternatives_DCA_Bloodhound_UK
+    MimeticName = "DCA_Bloodhound_UK"
     Selector = SpecificVehicleDepictionSelector
 )
 unnamed GhostVehicleDepictionRegistration
@@ -2327,6 +2405,12 @@ unnamed GhostVehicleDepictionRegistration
 (
     Alternatives = Alternatives_DCA_Rapier_UK
     MimeticName = "DCA_Rapier_UK"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
+    Alternatives = Alternatives_DCA_Starstreak_LML_UK
+    MimeticName = "DCA_Starstreak_LML_UK"
     Selector = SpecificVehicleDepictionSelector
 )
 unnamed GhostVehicleDepictionRegistration
@@ -2589,6 +2673,12 @@ unnamed GhostVehicleDepictionRegistration
 )
 unnamed GhostVehicleDepictionRegistration
 (
+    Alternatives = Alternatives_FV107_Scimitar_Spyglass_UK
+    MimeticName = "FV107_Scimitar_Spyglass_UK"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
     Alternatives = Alternatives_FV107_Scimitar_UK
     MimeticName = "FV107_Scimitar_UK"
     Selector = SpecificVehicleDepictionSelector
@@ -2603,6 +2693,24 @@ unnamed GhostVehicleDepictionRegistration
 (
     Alternatives = Alternatives_FV120_Spartan_MCT_UK
     MimeticName = "FV120_Spartan_MCT_UK"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
+    Alternatives = Alternatives_FV1611_Humber_Pig_UK
+    MimeticName = "FV1611_Humber_Pig_UK"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
+    Alternatives = Alternatives_FV1611a_Kremlin_Pig_UK
+    MimeticName = "FV1611a_Kremlin_Pig_UK"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
+    Alternatives = Alternatives_FV1612_Humber_CMD_UK
+    MimeticName = "FV1612_Humber_CMD_UK"
     Selector = SpecificVehicleDepictionSelector
 )
 unnamed GhostVehicleDepictionRegistration
@@ -2633,6 +2741,12 @@ unnamed GhostVehicleDepictionRegistration
 (
     Alternatives = Alternatives_FV4201_Chieftain_Mk11_UK
     MimeticName = "FV4201_Chieftain_Mk11_UK"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
+    Alternatives = Alternatives_FV4201_Chieftain_Mk1_4_UK
+    MimeticName = "FV4201_Chieftain_Mk1_4_UK"
     Selector = SpecificVehicleDepictionSelector
 )
 unnamed GhostVehicleDepictionRegistration
@@ -2733,6 +2847,12 @@ unnamed GhostVehicleDepictionRegistration
 )
 unnamed GhostVehicleDepictionRegistration
 (
+    Alternatives = Alternatives_FV721_Fox_ZB298_UK
+    MimeticName = "FV721_Fox_ZB298_UK"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
     Alternatives = Alternatives_Faun_Kraka_20mm_RFA
     MimeticName = "Faun_Kraka_20mm_RFA"
     Selector = SpecificVehicleDepictionSelector
@@ -2783,6 +2903,12 @@ unnamed GhostVehicleDepictionRegistration
 (
     Alternatives = Alternatives_Ferret_Mk2_UK
     MimeticName = "Ferret_Mk2_UK"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
+    Alternatives = Alternatives_Ferret_Swingfire_UK
+    MimeticName = "Ferret_Swingfire_UK"
     Selector = SpecificVehicleDepictionSelector
 )
 unnamed GhostVehicleDepictionRegistration
@@ -2843,6 +2969,12 @@ unnamed GhostVehicleDepictionRegistration
 (
     Alternatives = Alternatives_GAZ_66_POL
     MimeticName = "GAZ_66_POL"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
+    Alternatives = Alternatives_GAZ_66_SIGINT_SOV
+    MimeticName = "GAZ_66_SIGINT_SOV"
     Selector = SpecificVehicleDepictionSelector
 )
 unnamed GhostVehicleDepictionRegistration
@@ -2961,6 +3093,12 @@ unnamed GhostVehicleDepictionRegistration
 )
 unnamed GhostVehicleDepictionRegistration
 (
+    Alternatives = Alternatives_HMGteam_AGS17_Gvardeitsy_SOV
+    MimeticName = "HMGteam_AGS17_Gvardeitsy_SOV"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
     Alternatives = Alternatives_HMGteam_AGS17_POL
     MimeticName = "HMGteam_AGS17_POL"
     Selector = SpecificVehicleDepictionSelector
@@ -3039,6 +3177,12 @@ unnamed GhostVehicleDepictionRegistration
 )
 unnamed GhostVehicleDepictionRegistration
 (
+    Alternatives = Alternatives_HMGteam_M1919_Reserve_UK
+    MimeticName = "HMGteam_M1919_Reserve_UK"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
     Alternatives = Alternatives_HMGteam_M2HB_AB_US
     MimeticName = "HMGteam_M2HB_AB_US"
     Selector = SpecificVehicleDepictionSelector
@@ -3071,6 +3215,12 @@ unnamed GhostVehicleDepictionRegistration
 (
     Alternatives = Alternatives_HMGteam_M2HB_LUX
     MimeticName = "HMGteam_M2HB_LUX"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
+    Alternatives = Alternatives_HMGteam_M2HB_M63_UK
+    MimeticName = "HMGteam_M2HB_M63_UK"
     Selector = SpecificVehicleDepictionSelector
 )
 unnamed GhostVehicleDepictionRegistration
@@ -3159,6 +3309,12 @@ unnamed GhostVehicleDepictionRegistration
 )
 unnamed GhostVehicleDepictionRegistration
 (
+    Alternatives = Alternatives_HMGteam_MAG_Guards_UK
+    MimeticName = "HMGteam_MAG_Guards_UK"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
     Alternatives = Alternatives_HMGteam_MAG_NL
     MimeticName = "HMGteam_MAG_NL"
     Selector = SpecificVehicleDepictionSelector
@@ -3233,6 +3389,12 @@ unnamed GhostVehicleDepictionRegistration
 (
     Alternatives = Alternatives_HMGteam_NSV_DShV_SOV
     MimeticName = "HMGteam_NSV_DShV_SOV"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
+    Alternatives = Alternatives_HMGteam_NSV_Gvardeitsy_SOV
+    MimeticName = "HMGteam_NSV_Gvardeitsy_SOV"
     Selector = SpecificVehicleDepictionSelector
 )
 unnamed GhostVehicleDepictionRegistration
@@ -3371,6 +3533,12 @@ unnamed GhostVehicleDepictionRegistration
 (
     Alternatives = Alternatives_Howz_B4M_203mm_SOV
     MimeticName = "Howz_B4M_203mm_SOV"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
+    Alternatives = Alternatives_Howz_BL_5_5in_140mm_UK
+    MimeticName = "Howz_BL_5_5in_140mm_UK"
     Selector = SpecificVehicleDepictionSelector
 )
 unnamed GhostVehicleDepictionRegistration
@@ -3585,6 +3753,12 @@ unnamed GhostVehicleDepictionRegistration
 )
 unnamed GhostVehicleDepictionRegistration
 (
+    Alternatives = Alternatives_Howz_M56_Pack_UK
+    MimeticName = "Howz_M56_Pack_UK"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
     Alternatives = Alternatives_Howz_M59_LongTom_155mm_BEL
     MimeticName = "Howz_M59_LongTom_155mm_BEL"
     Selector = SpecificVehicleDepictionSelector
@@ -3611,6 +3785,12 @@ unnamed GhostVehicleDepictionRegistration
 (
     Alternatives = Alternatives_Howz_MstaB_150mm_SOV
     MimeticName = "Howz_MstaB_150mm_SOV"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
+    Alternatives = Alternatives_Howz_QF_25pdr_87mm_UK
+    MimeticName = "Howz_QF_25pdr_87mm_UK"
     Selector = SpecificVehicleDepictionSelector
 )
 unnamed GhostVehicleDepictionRegistration
@@ -3897,6 +4077,12 @@ unnamed GhostVehicleDepictionRegistration
 )
 unnamed GhostVehicleDepictionRegistration
 (
+    Alternatives = Alternatives_LandRover_CMD_nonBerlin_UK
+    MimeticName = "LandRover_CMD_nonBerlin_UK"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
     Alternatives = Alternatives_LandRover_ESP
     MimeticName = "LandRover_ESP"
     Selector = SpecificVehicleDepictionSelector
@@ -3921,6 +4107,12 @@ unnamed GhostVehicleDepictionRegistration
 )
 unnamed GhostVehicleDepictionRegistration
 (
+    Alternatives = Alternatives_LandRover_MILAN_nonBerlin_UK
+    MimeticName = "LandRover_MILAN_nonBerlin_UK"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
     Alternatives = Alternatives_LandRover_MP_BEL
     MimeticName = "LandRover_MP_BEL"
     Selector = SpecificVehicleDepictionSelector
@@ -3935,6 +4127,12 @@ unnamed GhostVehicleDepictionRegistration
 (
     Alternatives = Alternatives_LandRover_MP_NL
     MimeticName = "LandRover_MP_NL"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
+    Alternatives = Alternatives_LandRover_MP_UK
+    MimeticName = "LandRover_MP_UK"
     Selector = SpecificVehicleDepictionSelector
 )
 unnamed GhostVehicleDepictionRegistration
@@ -3959,6 +4157,12 @@ unnamed GhostVehicleDepictionRegistration
 (
     Alternatives = Alternatives_LandRover_WOMBAT_UK
     MimeticName = "LandRover_WOMBAT_UK"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
+    Alternatives = Alternatives_LandRover_Yeoman_UK
+    MimeticName = "LandRover_Yeoman_UK"
     Selector = SpecificVehicleDepictionSelector
 )
 unnamed GhostVehicleDepictionRegistration
@@ -5313,6 +5517,12 @@ unnamed GhostVehicleDepictionRegistration
 )
 unnamed GhostVehicleDepictionRegistration
 (
+    Alternatives = Alternatives_MAZ_535A_supply_SOV
+    MimeticName = "MAZ_535A_supply_SOV"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
     Alternatives = Alternatives_MCV_80_Warrior_CMD_UK
     MimeticName = "MCV_80_Warrior_CMD_UK"
     Selector = SpecificVehicleDepictionSelector
@@ -6633,6 +6843,12 @@ unnamed GhostVehicleDepictionRegistration
 )
 unnamed GhostVehicleDepictionRegistration
 (
+    Alternatives = Alternatives_T72B1_early_SOV
+    MimeticName = "T72B1_early_SOV"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
     Alternatives = Alternatives_T72B_CMD_SOV
     MimeticName = "T72B_CMD_SOV"
     Selector = SpecificVehicleDepictionSelector
@@ -6783,6 +6999,12 @@ unnamed GhostVehicleDepictionRegistration
 )
 unnamed GhostVehicleDepictionRegistration
 (
+    Alternatives = Alternatives_T72_CMD_SOV
+    MimeticName = "T72_CMD_SOV"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
     Alternatives = Alternatives_T72_DDR
     MimeticName = "T72_DDR"
     Selector = SpecificVehicleDepictionSelector
@@ -6839,6 +7061,12 @@ unnamed GhostVehicleDepictionRegistration
 (
     Alternatives = Alternatives_T80U_CMD_SOV
     MimeticName = "T80U_CMD_SOV"
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed GhostVehicleDepictionRegistration
+(
+    Alternatives = Alternatives_T80U_Obr89_SOV
+    MimeticName = "T80U_Obr89_SOV"
     Selector = SpecificVehicleDepictionSelector
 )
 unnamed GhostVehicleDepictionRegistration

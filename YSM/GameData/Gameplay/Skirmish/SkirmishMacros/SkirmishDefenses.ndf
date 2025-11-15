@@ -218,7 +218,7 @@ private template Template_Capture_Command_Zone
     NumberLaunchBasedOnGenerationType:int = 0,
     AlsoConsiderTheseDescriptorsForMaintain = [],
     RoundFloor:bool = false,
-    PoolModelList = [~/Pool_Commandant, ~/Pool_Commandant_Tank, ~/Pool_Commandant_Helo],
+    PoolModelList = [~/Pool_Commandant],
 ]
 is TMacroActionDescriptor_CaptureCommandZone_Specific
 (
@@ -250,6 +250,7 @@ is TMacroActionDescriptor_CaptureCommandZone_Specific
             DefensePointPositioning = EDefensePointPositioningType/Defensive)
             ForbidDefenseOnZoneBorder = true
         ),
+        TDisableUnitToReleaseSettingHolder(),
     ]
 )
 //-------------------------------------------------------------------------
@@ -263,7 +264,6 @@ export CaptureOneObjectif is Template_Capture_Command_Zone
 (
     GenerationType = TGenerationType_FixedSize
     NumberLaunchBasedOnGenerationType = 1
-    PoolModelList = [~/Pool_Commandant_One_Mission]
 )
 //-------------------------------------------------------------------------
 export CaptureAllZoneObjectif is Template_Capture_Command_Zone
@@ -298,61 +298,6 @@ export Pool_Commandant is TPoolModel
             IndexPriorityOverPrice = true
             PriceComparisonMethod = EPriceComparatorType/Random
             TagsPriority = [
-                "Vehicule_CMD",
-                "InfmapCommander",
-            ]
-        ),
-    ]
-)
-//-------------------------------------------------------------------------
-export Pool_Commandant_Tank is TPoolModel
-(
-    ModelList = [
-        TPoolElement(
-            DescriptorId = GUID:{0341d04f-0388-4674-9717-e0a158d5c637}
-            Required = true
-            Nb = 1
-            IndexPriorityOverPrice = true
-            PriceComparisonMethod = EPriceComparatorType/Random
-            TagsPriority = [
-                "Char_CMD",
-                "InfmapCommander",
-            ]
-        ),
-    ]
-)
-//-------------------------------------------------------------------------
-export Pool_Commandant_Helo is TPoolModel
-(
-    ModelList = [
-        TPoolElement(
-            DescriptorId = GUID:{f4906d35-bbd0-408e-a852-4102c7f8eaed}
-            Required = true
-            Nb = 1
-            IndexPriorityOverPrice = true
-            PriceComparisonMethod = EPriceComparatorType/Random
-            TagsPriority = [
-                "Helo_CMD",
-                "InfmapCommander",
-            ]
-        ),
-    ]
-)
-
-//-------------------------------------------------------------------------
-export Pool_Commandant_One_Mission is TPoolModel
-(
-    ModelList = [
-        TPoolElement(
-            DescriptorId = GUID:{87930d05-cd59-4314-a1d1-2c04914945ff}
-            Required = true
-            Nb = 1
-            IndexPriorityOverPrice = true
-            PriceComparisonMethod = EPriceComparatorType/Random
-            TagsPriority = [
-                "Vehicule_CMD",
-                "Helo_CMD",
-                "Char_CMD",
                 "InfmapCommander",
             ]
         ),

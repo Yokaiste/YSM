@@ -6,12 +6,12 @@ unnamed TResourcePackLoader
         TResourceDescriptorMeshPack
         (
             PackName = "Base"
-            PackFileName = "Pack/YSM/Mesh_All.spk"
+            PackRelativePath = "Pack/YSM/Mesh_All.spk"
         ),
         TResourceDescriptorProxyPack
         (
             PackName = "Base"
-            PackFileName = "Pack/YSM/Mesh_All.ndfbin"
+            PackRelativePath = "Pack/YSM/Mesh_All.ndfbin"
         ),
     ]
 )

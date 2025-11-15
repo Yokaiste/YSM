@@ -1,50 +1,50 @@
 private iconeDim is [ 25.0, 25.0 ]
 
-CommonFlareLabelResources is TUISpecificFlareLabelResources
+CommonBeaconLabelResources is TUISpecificBeaconLabelResources
 (
     Layer = $/UserInterface/UILayer_Labels
 
-    FlareLabelMagnificationMultiplier = 1.0
+    BeaconLabelMagnificationMultiplier = 1.0
     FadeTime        = 0.5
 
-    FlareAttackLabelDescriptor = FlareLabelDescriptor
+    BeaconAttackLabelDescriptor = BeaconLabelDescriptor
     (
         TextToken = "HFL_ATTACT"
-        IconTextureToken = "textureFlareAttack"
+        IconTextureToken = "textureBeaconAttack"
         IconSize = iconeDim
     )
-    FlareDefendLabelDescriptor = FlareLabelDescriptor
+    BeaconDefendLabelDescriptor = BeaconLabelDescriptor
     (
         TextToken = "HFL_DEFENT"
-        IconTextureToken = "textureFlareDefense"
+        IconTextureToken = "textureBeaconDefense"
         IconSize = iconeDim
     )
-    FlareHelpLabelDescriptor = FlareLabelDescriptor
+    BeaconHelpLabelDescriptor = BeaconLabelDescriptor
     (
         TextToken = "HFL_HELPT"
-        IconTextureToken = "textureFlareHelp"
+        IconTextureToken = "textureBeaconHelp"
         IconSize = iconeDim
     )
-    FlareCustomLabelDescriptor = FlareLabelDescriptor
+    BeaconCustomLabelDescriptor = BeaconLabelDescriptor
     (
-        IconTextureToken = "textureFlareCustom"
+        IconTextureToken = "textureBeaconCustom"
         IconSize = iconeDim
         Largeur = 200.0
     )
-    FlareFireSupportLabelDescriptor = FlareLabelDescriptor
+    BeaconFireSupportLabelDescriptor = BeaconLabelDescriptor
     (
         TextToken = "HFL_SuppT"
-        IconTextureToken = "textureFlareFireSupport"
+        IconTextureToken = "textureBeaconFireSupport"
         IconSize = iconeDim
     )
-    FlareEnemySpottedLabelDescriptor = FlareLabelDescriptor
+    BeaconEnemySpottedLabelDescriptor = BeaconLabelDescriptor
     (
         TextToken = "HFL_recoT"
-        IconTextureToken = "textureFlareEnemySpotted"
+        IconTextureToken = "textureBeaconEnemySpotted"
         IconSize = iconeDim
     )
 
-    FlareLabelTransformation = TLabelTransformPreTranslateFaceCamFakePerspective
+    BeaconLabelTransformation = TLabelTransformPreTranslateFaceCamFakePerspective
     (
         PreTranslation = [0,0,5000]
         ScalePerAltitudeConstReso = 1.5
@@ -52,9 +52,11 @@ CommonFlareLabelResources is TUISpecificFlareLabelResources
         Scene2D = $/M3D/Scene/Scene_2D_Interface
         ConstnessFactor = 0.6
     )
+
+    VideoModeValue = $/M3D/Scene/ShootVideoMode
 )
 
-private template FlareLabelDescriptor
+private template BeaconLabelDescriptor
 [
     TextToken : string = "",
     IconTextureToken : string = "",
@@ -94,7 +96,7 @@ is BUCKListDescriptor
 
         BUCKListElementDescriptor
         (
-            ComponentDescriptor = FlareLabelText
+            ComponentDescriptor = BeaconLabelText
             (
                 ElementName = "Text"
                 TextToken = <TextToken>
@@ -121,7 +123,7 @@ is BUCKListDescriptor
 
     ForegroundComponents =
     [
-        FlareLabelText
+        BeaconLabelText
         (
             ElementName = "HeadingText"
 
@@ -151,14 +153,14 @@ is BUCKListDescriptor
     ]
 )
 
-private template FlareLabelText
+private template BeaconLabelText
 [
     ElementName : string,
     TextToken : string = "",
     ComponentFrame : TUIFramePropertyRTTI,
     TypefaceToken : string = "IBM",
     TextSize : string,
-    TextColor : string = "ObjectiveEtiquetteManager/FlareText",
+    TextColor : string = "ObjectiveEtiquetteManager/BeaconText",
     Alignment = UIText_Left,
     HorizontalFitStyle = ~/FitStyle/FitToContent,
     VerticalFitStyle = ~/FitStyle/FitToContent,

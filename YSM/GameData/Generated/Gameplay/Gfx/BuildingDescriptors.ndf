@@ -51,7 +51,6 @@ export Descriptor_Unit_FOB_BEL is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         ~/TargetCoordinatorModuleDescriptor,
@@ -128,7 +127,6 @@ export Descriptor_Unit_FOB_BEL is TEntityDescriptor
             PriceCategory = 'tank_A'
             NameToken = 'BFCFNEMWNZ'
             InfoPanelConfigurationToken = 'FOB'
-            GenerateName = true
             MenuIconTexture = 'Texture_RTS_H_fob'
             ButtonTexture = 'Texture_Button_Unit_FOB_BEL'
             TypeStrategicCount = ETypeStrategicDetailedCount/NotCounted
@@ -185,7 +183,6 @@ export Descriptor_Unit_FOB_CAN is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         ~/TargetCoordinatorModuleDescriptor,
@@ -262,7 +259,6 @@ export Descriptor_Unit_FOB_CAN is TEntityDescriptor
             PriceCategory = 'tank_A'
             NameToken = 'FOBUSUK'
             InfoPanelConfigurationToken = 'FOB'
-            GenerateName = true
             MenuIconTexture = 'Texture_RTS_H_fob'
             ButtonTexture = 'Texture_Button_Unit_FOB_CAN'
             TypeStrategicCount = ETypeStrategicDetailedCount/NotCounted
@@ -319,7 +315,6 @@ export Descriptor_Unit_FOB_DDR is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         ~/TargetCoordinatorModuleDescriptor,
@@ -396,7 +391,6 @@ export Descriptor_Unit_FOB_DDR is TEntityDescriptor
             PriceCategory = 'tank_A'
             NameToken = 'FOBGER'
             InfoPanelConfigurationToken = 'FOB'
-            GenerateName = true
             MenuIconTexture = 'Texture_RTS_H_fob'
             ButtonTexture = 'Texture_Button_Unit_FOB_DDR'
             TypeStrategicCount = ETypeStrategicDetailedCount/NotCounted
@@ -453,7 +447,6 @@ export Descriptor_Unit_FOB_ESP is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         ~/TargetCoordinatorModuleDescriptor,
@@ -530,7 +523,6 @@ export Descriptor_Unit_FOB_ESP is TEntityDescriptor
             PriceCategory = 'tank_A'
             NameToken = 'FOBQZRPWXQ'
             InfoPanelConfigurationToken = 'FOB'
-            GenerateName = true
             MenuIconTexture = 'Texture_RTS_H_fob'
             ButtonTexture = 'Texture_Button_Unit_FOB_ESP'
             TypeStrategicCount = ETypeStrategicDetailedCount/NotCounted
@@ -587,7 +579,6 @@ export Descriptor_Unit_FOB_FR is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         ~/TargetCoordinatorModuleDescriptor,
@@ -664,7 +655,6 @@ export Descriptor_Unit_FOB_FR is TEntityDescriptor
             PriceCategory = 'tank_A'
             NameToken = 'FOBFRA'
             InfoPanelConfigurationToken = 'FOB'
-            GenerateName = true
             MenuIconTexture = 'Texture_RTS_H_fob'
             ButtonTexture = 'Texture_Button_Unit_FOB_FR'
             TypeStrategicCount = ETypeStrategicDetailedCount/NotCounted
@@ -721,7 +711,6 @@ export Descriptor_Unit_FOB_NL is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         ~/TargetCoordinatorModuleDescriptor,
@@ -798,7 +787,6 @@ export Descriptor_Unit_FOB_NL is TEntityDescriptor
             PriceCategory = 'tank_A'
             NameToken = 'FOBNL'
             InfoPanelConfigurationToken = 'FOB'
-            GenerateName = true
             MenuIconTexture = 'Texture_RTS_H_fob'
             ButtonTexture = 'Texture_Button_Unit_FOB_NL'
             TypeStrategicCount = ETypeStrategicDetailedCount/NotCounted
@@ -855,7 +843,6 @@ export Descriptor_Unit_FOB_POL is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         ~/TargetCoordinatorModuleDescriptor,
@@ -932,7 +919,6 @@ export Descriptor_Unit_FOB_POL is TEntityDescriptor
             PriceCategory = 'tank_A'
             NameToken = 'WJEPUEYMNL'
             InfoPanelConfigurationToken = 'FOB'
-            GenerateName = true
             MenuIconTexture = 'Texture_RTS_H_fob'
             ButtonTexture = 'Texture_Button_Unit_FOB_POL'
             TypeStrategicCount = ETypeStrategicDetailedCount/NotCounted
@@ -989,7 +975,6 @@ export Descriptor_Unit_FOB_RFA is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         ~/TargetCoordinatorModuleDescriptor,
@@ -1066,7 +1051,6 @@ export Descriptor_Unit_FOB_RFA is TEntityDescriptor
             PriceCategory = 'tank_A'
             NameToken = 'FOBGER'
             InfoPanelConfigurationToken = 'FOB'
-            GenerateName = true
             MenuIconTexture = 'Texture_RTS_H_fob'
             ButtonTexture = 'Texture_Button_Unit_FOB_RFA'
             TypeStrategicCount = ETypeStrategicDetailedCount/NotCounted
@@ -1123,7 +1107,6 @@ export Descriptor_Unit_FOB_SOV is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         ~/TargetCoordinatorModuleDescriptor,
@@ -1200,7 +1183,6 @@ export Descriptor_Unit_FOB_SOV is TEntityDescriptor
             PriceCategory = 'tank_A'
             NameToken = 'FOBSOV'
             InfoPanelConfigurationToken = 'FOB'
-            GenerateName = true
             MenuIconTexture = 'Texture_RTS_H_fob'
             ButtonTexture = 'Texture_Button_Unit_FOB_SOV'
             TypeStrategicCount = ETypeStrategicDetailedCount/NotCounted
@@ -1257,7 +1239,6 @@ export Descriptor_Unit_FOB_TCH is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         ~/TargetCoordinatorModuleDescriptor,
@@ -1334,7 +1315,6 @@ export Descriptor_Unit_FOB_TCH is TEntityDescriptor
             PriceCategory = 'tank_A'
             NameToken = 'BGANMGCHQZ'
             InfoPanelConfigurationToken = 'FOB'
-            GenerateName = true
             MenuIconTexture = 'Texture_RTS_H_fob'
             ButtonTexture = 'Texture_Button_Unit_FOB_TCH'
             TypeStrategicCount = ETypeStrategicDetailedCount/NotCounted
@@ -1391,7 +1371,6 @@ export Descriptor_Unit_FOB_UK is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         ~/TargetCoordinatorModuleDescriptor,
@@ -1468,7 +1447,6 @@ export Descriptor_Unit_FOB_UK is TEntityDescriptor
             PriceCategory = 'tank_A'
             NameToken = 'FOBUSUK'
             InfoPanelConfigurationToken = 'FOB'
-            GenerateName = true
             MenuIconTexture = 'Texture_RTS_H_fob'
             ButtonTexture = 'Texture_Button_Unit_FOB_UK'
             TypeStrategicCount = ETypeStrategicDetailedCount/NotCounted
@@ -1525,7 +1503,6 @@ export Descriptor_Unit_FOB_US is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         ~/TargetCoordinatorModuleDescriptor,
@@ -1602,7 +1579,6 @@ export Descriptor_Unit_FOB_US is TEntityDescriptor
             PriceCategory = 'tank_A'
             NameToken = 'FOBUSUK'
             InfoPanelConfigurationToken = 'FOB'
-            GenerateName = true
             MenuIconTexture = 'Texture_RTS_H_fob'
             ButtonTexture = 'Texture_Button_Unit_FOB_US'
             TypeStrategicCount = ETypeStrategicDetailedCount/NotCounted
@@ -1664,7 +1640,6 @@ export Descriptor_Unit_YSM_Supply_Base is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         ~/TargetCoordinatorModuleDescriptor,
@@ -1741,7 +1716,6 @@ export Descriptor_Unit_YSM_Supply_Base is TEntityDescriptor
             PriceCategory = 'tank_A'
             NameToken = 'YSM_SB'
             InfoPanelConfigurationToken = 'FOB'
-            GenerateName = true
             MenuIconTexture = 'Texture_RTS_H_fob'
             ButtonTexture = 'Texture_Button_Unit_FOB_US'
             TypeStrategicCount = ETypeStrategicDetailedCount/NotCounted
@@ -1799,7 +1773,6 @@ export Descriptor_Unit_YSM_Supply_Base_Thicc is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         ~/TargetCoordinatorModuleDescriptor,
@@ -1876,7 +1849,6 @@ export Descriptor_Unit_YSM_Supply_Base_Thicc is TEntityDescriptor
             PriceCategory = 'tank_A'
             NameToken = 'YSM_SBT'
             InfoPanelConfigurationToken = 'FOB'
-            GenerateName = true
             MenuIconTexture = 'Texture_RTS_H_fob'
             ButtonTexture = 'Texture_Button_Unit_FOB_US'
             TypeStrategicCount = ETypeStrategicDetailedCount/NotCounted
@@ -1934,7 +1906,6 @@ export Descriptor_Unit_YSM_Supply_Base_Ultra is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         ~/TargetCoordinatorModuleDescriptor,
@@ -2015,7 +1986,6 @@ export Descriptor_Unit_YSM_Supply_Base_Ultra is TEntityDescriptor
             PriceCategory = 'tank_A'
             NameToken = 'YSM_SBU'
             InfoPanelConfigurationToken = 'VehiculeSupplier'
-            GenerateName = true
             MenuIconTexture = 'Texture_RTS_H_fob'
             ButtonTexture = 'Texture_Button_Unit_FOB_US'
             TypeStrategicCount = ETypeStrategicDetailedCount/NotCounted

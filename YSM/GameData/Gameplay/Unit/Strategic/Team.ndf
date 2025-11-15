@@ -55,7 +55,7 @@ export Strategic_TeamUnitDescriptor is TEntityDescriptor
         TTeamInitialCurrencyModuleDescriptor
         (
         ),
-        TFumigeneModuleDescriptor
+        TBeaconModuleDescriptor
         (
         ),
         TIATeamStrategyModuleDescriptor

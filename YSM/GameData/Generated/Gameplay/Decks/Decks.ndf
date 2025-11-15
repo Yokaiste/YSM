@@ -1268,6 +1268,50 @@ export Descriptor_Deck_SOV_27_Gds_Rifle_multi is TDeckDescriptor
         ~/Descriptor_Deck_Pack_T80BV_SOV_0_1,
     ]
 )
+export Descriptor_Deck_SOV_2_Gds_Rifle_multi is TDeckDescriptor
+(
+    DeckDivision = $/GFX/Division/Descriptor_Deck_Division_SOV_2_Gds_Rifle_multi
+    DeckName = "PIQDJIXNDD"
+    DeckPackList = 
+    [
+        ~/Descriptor_Deck_Pack_BMP_2_CMD_SOV_1_1,
+        ~/Descriptor_Deck_Pack_Ural_4320_SOV_0_1,
+        ~/Descriptor_Deck_Pack_MAZ_535A_supply_SOV_0_1,
+        ~/Descriptor_Deck_Pack_Mi_8TZ_SOV_0_1,
+        ~/Descriptor_Deck_Pack_Gvardeitsy_CMD_SOV_BTR_80_SOV_1_1,
+        ~/Descriptor_Deck_Pack_Gvardeitsy_BTR_SOV_BTR_80_SOV_1_1,
+        ~/Descriptor_Deck_Pack_Gvardeitsy_SVD_SOV_BTR_80_SOV_1_1,
+        ~/Descriptor_Deck_Pack_Gvardeitsy_CMD_SOV_BMP_2_SOV_1_1,
+        ~/Descriptor_Deck_Pack_Gvardeitsy_SOV_BMP_2_SOV_1_1,
+        ~/Descriptor_Deck_Pack_Gvardeitsy_SOV_BMP_2_SOV_1_1,
+        ~/Descriptor_Deck_Pack_ATteam_Fagot_Gvardeitsy_SOV_BTR_80_SOV_1_1,
+        ~/Descriptor_Deck_Pack_ATteam_Konkurs_Gvardeitsy_SOV_BTR_80_SOV_1_1,
+        ~/Descriptor_Deck_Pack_ATteam_RCL_SPG9_Gvardeitsy_SOV_BTR_80_SOV_1_1,
+        ~/Descriptor_Deck_Pack_Howz_D30_122mm_SOV_MTLB_transp_SOV_0_1,
+        ~/Descriptor_Deck_Pack_2S3M_Akatsiya_SOV_0_1,
+        ~/Descriptor_Deck_Pack_BM21_Grad_SOV_0_1,
+        ~/Descriptor_Deck_Pack_AT_T12_Rapira_SOV_MTLB_transp_SOV_1_1,
+        ~/Descriptor_Deck_Pack_T64A_CMD_SOV_1_1,
+        ~/Descriptor_Deck_Pack_T72B1_early_SOV_1_1,
+        ~/Descriptor_Deck_Pack_T64B_SOV_1_1,
+        ~/Descriptor_Deck_Pack_T64B_SOV_1_1,
+        ~/Descriptor_Deck_Pack_T80U_Obr89_SOV_1_1,
+        ~/Descriptor_Deck_Pack_T80U_Obr89_SOV_1_1,
+        ~/Descriptor_Deck_Pack_Engineers_Scout_SOV_BTR_80_SOV_1_1,
+        ~/Descriptor_Deck_Pack_Scout_Spetsnaz_SOV_Mi_8TV_SOV_1_1,
+        ~/Descriptor_Deck_Pack_BRM_1_SOV_0_1,
+        ~/Descriptor_Deck_Pack_Mi_24K_reco_SOV_1_1,
+        ~/Descriptor_Deck_Pack_MANPAD_Igla_Gvardeitsy_SOV_UAZ_469_SOV_1_1,
+        ~/Descriptor_Deck_Pack_ZSU_23_Shilka_SOV_1_1,
+        ~/Descriptor_Deck_Pack_MTLB_Strela10_SOV_1_1,
+        ~/Descriptor_Deck_Pack_Osa_9K33M3_SOV_1_1,
+        ~/Descriptor_Deck_Pack_Mi_8TV_SOV_1_1,
+        ~/Descriptor_Deck_Pack_Mi_24V_RKT2_SOV_1_1,
+        ~/Descriptor_Deck_Pack_L39ZO_SOV_1_1,
+        ~/Descriptor_Deck_Pack_Su_25_SOV_1_1,
+        ~/Descriptor_Deck_Pack_MiG_29_9_13_SOV_1_1,
+    ]
+)
 export Descriptor_Deck_SOV_31_Tank_multi is TDeckDescriptor
 (
     DeckDivision = $/GFX/Division/Descriptor_Deck_Division_SOV_31_Tank_multi
@@ -1811,9 +1855,9 @@ export Descriptor_Deck_UK_2nd_Infantry_multi is TDeckDescriptor
         ~/Descriptor_Deck_Pack_M107A2_175mm_UK_1_1,
         ~/Descriptor_Deck_Pack_Challenger_1_Mk1_CMD_UK_1_1,
         ~/Descriptor_Deck_Pack_Challenger_1_Mk1_UK_0_1,
-        ~/Descriptor_Deck_Pack_LandRover_MILAN_UK_1_1,
-        ~/Descriptor_Deck_Pack_LandRover_MILAN_UK_1_1,
-        ~/Descriptor_Deck_Pack_LandRover_MILAN_UK_1_1,
+        ~/Descriptor_Deck_Pack_LandRover_MILAN_nonBerlin_UK_1_1,
+        ~/Descriptor_Deck_Pack_LandRover_MILAN_nonBerlin_UK_1_1,
+        ~/Descriptor_Deck_Pack_LandRover_MILAN_nonBerlin_UK_1_1,
         ~/Descriptor_Deck_Pack_Scout_UK_LandRover_UK_1_1,
         ~/Descriptor_Deck_Pack_FV721_Fox_UK_1_1,
         ~/Descriptor_Deck_Pack_Gazelle_UK_1_1,
@@ -1871,6 +1915,50 @@ export Descriptor_Deck_NATO_Garnison_Berlin_multi is TDeckDescriptor
         ~/Descriptor_Deck_Pack_F117_Nighthawk_US_2_1,
         ~/Descriptor_Deck_Pack_F117_Nighthawk_US_2_1,
         ~/Descriptor_Deck_Pack_Lynx_AH_Mk7_I_TOW_UK_1_1,
+    ]
+)
+export Descriptor_Deck_UK_London_HDR_multi is TDeckDescriptor
+(
+    DeckDivision = $/GFX/Division/Descriptor_Deck_Division_UK_London_HDR_multi
+    DeckName = "TJFOATBNKZ"
+    DeckPackList = 
+    [
+        ~/Descriptor_Deck_Pack_Guards_CMD_UK_Bedford_MJ_4t_trans_UK_1_1,
+        ~/Descriptor_Deck_Pack_Guards_CMD_UK_Bedford_MJ_4t_trans_UK_1_1,
+        ~/Descriptor_Deck_Pack_Guards_CarlG_UK_Bedford_MJ_4t_trans_UK_1_1,
+        ~/Descriptor_Deck_Pack_Guards_CarlG_UK_Bedford_MJ_4t_trans_UK_1_1,
+        ~/Descriptor_Deck_Pack_ATteam_Milan_2_Guards_UK_LandRover_UK_1_1,
+        ~/Descriptor_Deck_Pack_HMGteam_MAG_Guards_UK_LandRover_UK_1_1,
+        ~/Descriptor_Deck_Pack_RCL_L6_Wombat_UK_Bedford_MJ_4t_trans_UK_0_1,
+        ~/Descriptor_Deck_Pack_Airmobile_TA_UK_Westland_Wessex_trans_UK_1_1,
+        ~/Descriptor_Deck_Pack_SAS_G_UK_CH47D_Chinook_SAS_UK_3_1,
+        ~/Descriptor_Deck_Pack_81mm_mortar_Guards_UK_LandRover_UK_1_1,
+        ~/Descriptor_Deck_Pack_81mm_mortar_Guards_UK_LandRover_UK_1_1,
+        ~/Descriptor_Deck_Pack_AS90_155mm_UK_0_1,
+        ~/Descriptor_Deck_Pack_Centurion_Mk13_CMD_UK_1_1,
+        ~/Descriptor_Deck_Pack_Centurion_Mk13_UK_1_1,
+        ~/Descriptor_Deck_Pack_FV4201_Chieftain_Mk1_4_UK_1_1,
+        ~/Descriptor_Deck_Pack_FV4201_Chieftain_Mk9_UK_1_1,
+        ~/Descriptor_Deck_Pack_Challenger_1_Mk1_UK_1_1,
+        ~/Descriptor_Deck_Pack_LandRover_MILAN_nonBerlin_UK_1_1,
+        ~/Descriptor_Deck_Pack_Scout_UK_LandRover_UK_1_1,
+        ~/Descriptor_Deck_Pack_Sniper_Guards_UK_A109A_RKT_UK_1_1,
+        ~/Descriptor_Deck_Pack_FV721_Fox_ZB298_UK_1_1,
+        ~/Descriptor_Deck_Pack_MANPAD_Javelin_UK_LandRover_UK_1_1,
+        ~/Descriptor_Deck_Pack_DCA_Starstreak_LML_UK_Bedford_MJ_4t_trans_UK_1_1,
+        ~/Descriptor_Deck_Pack_DCA_Rapier_FSA_UK_Bedford_MJ_4t_trans_UK_1_1,
+        ~/Descriptor_Deck_Pack_Gazelle_SNEB_UK_1_1,
+        ~/Descriptor_Deck_Pack_Lynx_AH_Mk7_I_TOW_UK_1_1,
+        ~/Descriptor_Deck_Pack_Gazelle_CMD_UK_1_1,
+        ~/Descriptor_Deck_Pack_Bedford_MJ_4t_UK_0_1,
+        ~/Descriptor_Deck_Pack_Bedford_TM_6x6_supply_UK_0_1,
+        ~/Descriptor_Deck_Pack_Westland_Wessex_supply_UK_0_1,
+        ~/Descriptor_Deck_Pack_Hawk_T1_UK_1_1,
+        ~/Descriptor_Deck_Pack_Canberra_B2_UK_1_1,
+        ~/Descriptor_Deck_Pack_Canberra_T17A_UK_2_1,
+        ~/Descriptor_Deck_Pack_DCA_Bloodhound_UK_Bedford_TM_6x6_trans_UK_1_1,
+        ~/Descriptor_Deck_Pack_Lynx_AH_Mk7_Chancellor_UK_1_1,
+        ~/Descriptor_Deck_Pack_Tornado_ADV_UK_1_1,
     ]
 )
 export Descriptor_Deck_UK_5th_Airborne_Brigade_multi is TDeckDescriptor

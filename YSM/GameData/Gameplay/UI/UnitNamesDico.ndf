@@ -18,7 +18,6 @@ WargameUnitNames is TModernWarfareUnitNamesDico
         ("POL", "NAMES_POL"),
         ("TCH", "NAMES_TCH"),
         ("CAN", "NAMES_CAN"),
-        ("DAN", "NAMES_DAN"),
         ("SWE", "NAMES_SWE"),
         ("FIN", "NAMES_SWE"),
         ("NOR", "NAMES_NOR"),
@@ -30,6 +29,7 @@ WargameUnitNames is TModernWarfareUnitNamesDico
         ("HON", "NAMES_HON"),
         ("ROU", "NAMES_HON"),
         ("ESP", "NAMES_ESP"),
+        ("DK", "NAMES_DK"),
 
 
 

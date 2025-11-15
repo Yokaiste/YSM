@@ -1,145 +1,145 @@
 
-private FlaresButtonDims is [25.0, 25.0]
-private dimensionBoutonFlare is 24
+private BeaconsButtonDims is [25.0, 25.0]
+private dimensionBoutonBeacon is 24
 
 //-------------------------------------------------------------------------------------
-template FlareButtonSupport
+template BeaconButtonSupport
 [
 IsFromStrategic : bool = false
 ]
  is BoutonFulda_AvecIcone
 (
-    ElementName = 'FlareFireSupport'
+    ElementName = 'BeaconFireSupport'
     IsFromStrategic = <IsFromStrategic>
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [dimensionBoutonFlare, 0.0]
+        MagnifiableWidthHeight = [dimensionBoutonBeacon, 0.0]
         RelativeWidthHeight = [0.0, 1.0]
     )
-    TextureToken = 'textureFlareFireSupport'
+    TextureToken = 'textureBeaconFireSupport'
     HintTitleToken = "HFL_SuppT"
     HintBodyToken = "HFL_SuppB"
 
-    Mapping = $/KeyboardOption/Mapping_FlareFireSupport
+    Mapping = $/KeyboardOption/Mapping_BeaconFireSupport
     IsTogglable = true
 )
 //-------------------------------------------------------------------------------------
-template FlareButtonNeedHelp
+template BeaconButtonNeedHelp
 [
 IsFromStrategic : bool = false
 ]
  is BoutonFulda_AvecIcone
 
 (
-    ElementName = 'FlareHelp'
+    ElementName = 'BeaconHelp'
     IsFromStrategic = <IsFromStrategic>
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [dimensionBoutonFlare, 0.0]
+        MagnifiableWidthHeight = [dimensionBoutonBeacon, 0.0]
         RelativeWidthHeight = [0.0, 1.0]
     )
 
-    TextureToken = 'textureFlareHelp'
+    TextureToken = 'textureBeaconHelp'
     HintTitleToken = "HFL_HELPT"
     HintBodyToken = "HFL_HELPB"
     HintExtendedToken = "HFL_HELPE"
 
-    Mapping = $/KeyboardOption/Mapping_FlareHelp
+    Mapping = $/KeyboardOption/Mapping_BeaconHelp
     IsTogglable = true
 )
 //-------------------------------------------------------------------------------------
-template FlareButtonEnemySpotted
+template BeaconButtonEnemySpotted
 [
 IsFromStrategic : bool = false
 ]
  is BoutonFulda_AvecIcone
 (
-    ElementName = 'FlareEnemySpotted'
+    ElementName = 'BeaconEnemySpotted'
     IsFromStrategic = <IsFromStrategic>
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [dimensionBoutonFlare, 0.0]
+        MagnifiableWidthHeight = [dimensionBoutonBeacon, 0.0]
         RelativeWidthHeight = [0.0, 1.0]
     )
-    TextureToken = 'textureFlareEnemySpotted'
+    TextureToken = 'textureBeaconEnemySpotted'
     HintTitleToken = "HFL_recoT"
     HintBodyToken = "HFL_recoB"
 
-    Mapping = $/KeyboardOption/Mapping_FlareEnemySpotted
+    Mapping = $/KeyboardOption/Mapping_BeaconEnemySpotted
     IsTogglable = true
 )
 
 //-------------------------------------------------------------------------------------
-template FlareButtonStrategyAttack
+template BeaconButtonStrategyAttack
 [
 IsFromStrategic : bool = false
 ]
  is BoutonFulda_AvecIcone
 (
-    ElementName = 'FlareAttack'
+    ElementName = 'BeaconAttack'
     IsFromStrategic = <IsFromStrategic>
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [dimensionBoutonFlare, 0.0]
+        MagnifiableWidthHeight = [dimensionBoutonBeacon, 0.0]
         RelativeWidthHeight = [0.0, 1.0]
     )
-    Mapping = $/KeyboardOption/Mapping_FlareAttack
+    Mapping = $/KeyboardOption/Mapping_BeaconAttack
     IsTogglable = true
-    TextureToken = 'textureFlareAttack'
+    TextureToken = 'textureBeaconAttack'
     HintTitleToken = "HFL_ATTACT"
     HintBodyToken = "HFL_ATTACB"
     HintExtendedToken = "HFL_ATTACE"
 )
 //-------------------------------------------------------------------------------------
-template FlareButtonStrategyDefend
+template BeaconButtonStrategyDefend
 [
 IsFromStrategic : bool = false
 ]
  is BoutonFulda_AvecIcone
 (
-    ElementName = 'FlareDefend'
+    ElementName = 'BeaconDefend'
     IsFromStrategic = <IsFromStrategic>
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [dimensionBoutonFlare, 0.0]
+        MagnifiableWidthHeight = [dimensionBoutonBeacon, 0.0]
         RelativeWidthHeight = [0.0, 1.0]
     )
-    Mapping = $/KeyboardOption/Mapping_FlareDefend
+    Mapping = $/KeyboardOption/Mapping_BeaconDefend
     IsTogglable = true
-    TextureToken = 'textureFlareDefense'
+    TextureToken = 'textureBeaconDefense'
     HintTitleToken = "HFL_DEFENT"
     HintBodyToken = "HFL_DEFENB"
     HintExtendedToken = "HFL_DEFENE"
 )
 //-------------------------------------------------------------------------------------
-template FlareButtonCustom
+template BeaconButtonCustom
 [
 IsFromStrategic : bool = false
 ]
  is BoutonFulda_AvecIcone
 (
-    ElementName = 'FlareCustom'
+    ElementName = 'BeaconCustom'
     IsFromStrategic = <IsFromStrategic>
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [dimensionBoutonFlare, 0.0]
+        MagnifiableWidthHeight = [dimensionBoutonBeacon, 0.0]
         RelativeWidthHeight = [0.0, 1.0]
     )
 
-    Mapping = $/KeyboardOption/Mapping_FlareCustom
+    Mapping = $/KeyboardOption/Mapping_BeaconCustom
     IsTogglable = true
-    TextureToken = 'textureFlareCustom'
+    TextureToken = 'textureBeaconCustom'
     HintTitleToken = "HFL_CUSMET"
     HintBodyToken = "HFL_CUSMEB"
     HintExtendedToken = "HFL_CUSMEE"
 )
 //-------------------------------------------------------------------------------------
-template FlareCustomEditableText
+template BeaconCustomEditableText
 [
     IsFromStrategic : bool = false
 ] is BUCKEditableTextDescriptor
 (
-    ElementName = "FlareCustomEditableText"
+    ElementName = "BeaconCustomEditableText"
     ComponentFrame = TUIFramePropertyRTTI
     (
         MagnifiableWidthHeight = [240.0, 24.0]
@@ -149,17 +149,17 @@ template FlareCustomEditableText
     )
 
     HasBackground = true
-    BackgroundBlockColorToken = (<IsFromStrategic> == true ? "SM_RifleGreen_75" : "CustomFlareText")
+    BackgroundBlockColorToken = (<IsFromStrategic> == true ? "SM_RifleGreen_75" : "CustomBeaconText")
 
     ClippingContainerFrameProperty = TUIFramePropertyRTTI
     (
         RelativeWidthHeight = [1.0, 1.0]
     )
 
-    TextSizeToken = "FlaresPanel/CustomFlare/EditableText"
+    TextSizeToken = "BeaconsPanel/CustomBeacon/EditableText"
     TypefaceToken = "IBM"
     TextColorToken = (<IsFromStrategic> == true ? "SM_paleSilver" : "Blanc")
-    SelectionColorToken = "FlaresPanel/CustomFlare/EditableText/Selected"
+    SelectionColorToken = "BeaconsPanel/CustomBeacon/EditableText/Selected"
 
     MaxChars = 100
 )

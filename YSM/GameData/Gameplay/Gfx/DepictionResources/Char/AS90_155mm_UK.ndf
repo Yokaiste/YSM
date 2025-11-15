@@ -1,0 +1,19 @@
+export Modele_AS90_155mm_UK is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Artillerie/AS90_155mm/AS90_155mm.fbx"
+)
+
+export Modele_AS90_155mm_UK_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Artillerie/AS90_155mm_MID/AS90_155mm_MID.fbx"
+)
+
+export Modele_AS90_155mm_UK_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Artillerie/AS90_155mm_LOW/AS90_155mm_LOW.fbx"
+)
+
+export Modele_AS90_155mm_UK_Tourelle_02 is TResourceMesh
+(
+    Mesh=ModelFile_VZ59_no_ammo
+)

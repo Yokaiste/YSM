@@ -171,6 +171,7 @@ export FOB_Skirmish is TMacroActionDescriptor_ProduceBuilding
     [
         TGenerationSettingHolder(GenerationType = TGenerationType_FixedSize NumberLaunchBasedOnGenerationType = 1),
         TMacroActionProductionSettingHolder(PoolModelList = [~/Pool_FOB_Skirmish] DisableReinforcement = true),
+        TCanTargetAlliedSettingHolder(LaunchOnlyIfHasAlly = true)
     ]
 )
 

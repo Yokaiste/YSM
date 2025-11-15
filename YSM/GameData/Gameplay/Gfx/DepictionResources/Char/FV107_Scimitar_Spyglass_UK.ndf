@@ -1,0 +1,14 @@
+export Modele_FV107_Scimitar_Spyglass_UK is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Char/FV107_SCIMITAR_SPYGLASS/FV107_SCIMITAR_SPYGLASS.fbx"
+)
+
+export Modele_FV107_Scimitar_Spyglass_UK_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Char/FV107_SCIMITAR_SPYGLASS_MID/FV107_SCIMITAR_SPYGLASS_MID.fbx"
+)
+
+export Modele_FV107_Scimitar_Spyglass_UK_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Char/FV107_SCIMITAR_SPYGLASS_LOW/FV107_SCIMITAR_SPYGLASS_LOW.fbx"
+)

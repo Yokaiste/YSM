@@ -12,7 +12,7 @@ StrategicResource is TUISpecificStrategicResources
     ViewDescriptors = MAP
     [
         ("UISpecificIngameChatViewDescriptor", UISpecificIngameChatViewDescriptor(PanelColorStyle = "StrategicPanel" ButtonColorStyle = "StrategicButton_highlightable")),
-        ("UISpecificInGameFlarePanelViewDescriptor", ~/UIStrategicFlarePanelViewDescriptor),
+        ("UISpecificInGameBeaconPanelViewDescriptor", ~/UIStrategicBeaconPanelViewDescriptor),
         ("UISpecificLossesStateViewDescriptor", ~/UISpecificLossesStateViewDescriptor),
         ("UISpecificUnitInfoPanelViewDescriptor", UISpecificUnitInfoPanelViewDescriptor(MainComponentContainerUniqueName = "BUCKSpecificUnitInfoPanelMainComponentContainer")),
         ("UISpecificStrategicDateViewDescriptor", ~/UISpecificStrategicDateViewDescriptor),
@@ -47,7 +47,7 @@ StrategicResource is TUISpecificStrategicResources
     ScriptedLabelResources      = ~/StrategicScriptedLabelResources
     FeedbackManagerDescriptor   = ~/StrategicFeedbackMessageManagerDescriptor
     UnitLabelResource           = ~/SpecificStrategicUnitLabelResources
-    FlareLabelResources         = ~/CommonFlareLabelResources
+    BeaconLabelResources        = ~/CommonBeaconLabelResources
 
     SelectionHandlerInGameResources = ~/SelectionResources
     GroupSelectionReminderResources = ~/GroupSelectionReminder
@@ -193,9 +193,9 @@ private StrategicMainContainerResource is TUICommonMainContainerResource
                     ),
                     BUCKListElementDescriptor
                     (
-                        ComponentDescriptor = FlarePanelChatContainer is BUCKContainerDescriptor
+                        ComponentDescriptor = BeaconPanelChatContainer is BUCKContainerDescriptor
                         (
-                            UniqueName = "UICommonFlarePanelViewMainContainer"
+                            UniqueName = "UICommonBeaconPanelViewMainContainer"
                             ComponentFrame = TUIFramePropertyRTTI
                             (
                                 RelativeWidthHeight = [1.0, 0.0]

@@ -1,0 +1,24 @@
+export Modele_LandRover_Yeoman_UK is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Vehicule/LandRover_Yeoman/LandRover_Yeoman.fbx"
+)
+
+export Modele_LandRover_Yeoman_UK_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Vehicule/LandRover_Yeoman_MID/LandRover_Yeoman_MID.fbx"
+)
+
+export Modele_LandRover_Yeoman_UK_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Vehicule/LandRover_Yeoman_LOW/LandRover_Yeoman_LOW.fbx"
+)
+
+export Modele_LandRover_Yeoman_UK_Tourelle_01 is TResourceMesh
+(
+    Mesh=ModelFile_MAG_t4
+)
+
+export Modele_LandRover_Yeoman_UK_Tourelle_02 is TResourceMesh
+(
+    Mesh=ModelFile_MAG_t4
+)

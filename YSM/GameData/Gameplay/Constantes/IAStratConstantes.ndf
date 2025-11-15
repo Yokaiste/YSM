@@ -55,7 +55,7 @@ IAStratConstantes is TIAStratConstantesDescriptor_Specific
     CommandZoneWeight = ~/CommandZoneCustomWeighForIAStrat // Numero donné aux zones générées automatiquement autours des zones objectif.
 
     //--------------- Transport ----------------------------------------//
-    MinDistanceToRequireTransportGRU = 3534 //un peu plus de 3.5KM in game
+    MinDistanceToRequireTransportGRU = 2000
     MaxDistanceToAcceptTransportRequestGRU = 10601 //un peu plus de 10KM in game
     ForbidToLoadNewUnits = false // Ce paramètre a true empêche de charger une unité qu'on ne transporte pas à la base (applicable aux transports qui spawnent préchargés)
 

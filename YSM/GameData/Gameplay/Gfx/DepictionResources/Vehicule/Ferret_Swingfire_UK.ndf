@@ -1,0 +1,14 @@
+export Modele_Ferret_Swingfire_UK is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Vehicule/Ferret_Swingfire/Ferret_Swingfire.fbx"
+)
+
+export Modele_Ferret_Swingfire_UK_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Vehicule/Ferret_Swingfire_MID/Ferret_Swingfire_MID.fbx"
+)
+
+export Modele_Ferret_Swingfire_UK_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Vehicule/Ferret_Swingfire_LOW/Ferret_Swingfire_LOW.fbx"
+)

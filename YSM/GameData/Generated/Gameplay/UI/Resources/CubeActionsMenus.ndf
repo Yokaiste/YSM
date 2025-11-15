@@ -9,7 +9,6 @@ export CubeAction_Menu_Ordres_avions is TCubeActionMenuDescriptor
         ( 1, [ CubeAction_Order_ShootOnPosition ] ),
         ( 2, [ CubeAction_Order_ShootOnPositionSmoke ] ),
         ( 3, [ CubeAction_Order_Move ] ),
-        ( 4, [ CubeAction_Order_Attack ] ),
         ( 5, [ CubeAction_Order_Evacuate ] ),
         ( 17, [ CubeAction_Order_AIAirplaneAutoManage ] ),
     ]

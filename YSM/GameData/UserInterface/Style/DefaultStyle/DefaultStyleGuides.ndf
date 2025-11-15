@@ -151,7 +151,7 @@ DefaultStyleGuide is TUIStyleGuide
         ("35000",                                           MAP [ ( ~/ComponentState/Normal, TFloatRTTI( Value = 35000 ) ), ]),
 
 
-        ("FlaresPanel/CustomFlare/EditableText",            MAP [ ( ~/ComponentState/Normal, TFloatRTTI( Value = Moyen ) ), ]),
+        ("BeaconsPanel/CustomBeacon/EditableText",            MAP [ ( ~/ComponentState/Normal, TFloatRTTI( Value = Moyen ) ), ]),
         ("Jauge/Title",                                     MAP [ ( ~/ComponentState/Normal, TFloatRTTI( Value = Petit3 ) ), ]), //ancien composant
         ("PawnLabel/ActionPoints",                          MAP [ ( ~/ComponentState/Normal, TFloatRTTI( Value = Petit2 ) ), ]),
         ("UnitLabel/TextElement",                           MAP [ ( ~/ComponentState/Normal, TFloatRTTI( Value = Petit2 ) ), ]), //moyen1
@@ -332,7 +332,7 @@ DefaultStyleGuide is TUIStyleGuide
         //InGame
 
         ("Hint",                                        MAP [ ( ~/ComponentState/Normal, TFloat4RTTI( Value = MargeHint ) ), ]),
-        ("FlaresPanel/CustomFlare/EditableText",        MAP [ ( ~/ComponentState/Normal, TFloat4RTTI( Value = MargePetite ) ), ]),
+        ("BeaconsPanel/CustomBeacon/EditableText",        MAP [ ( ~/ComponentState/Normal, TFloat4RTTI( Value = MargePetite ) ), ]),
 
 
         ("EditableText",                                MAP [ ( ~/ComponentState/Normal, TFloat4RTTI( Value = MargeScrollbar ) ), ]),
@@ -399,7 +399,7 @@ DefaultStyleGuide is TUIStyleGuide
                                                    ( ~/ComponentState/ToggleClicked,         TColorRTTI( Color = Blanc2 ) ),
                                                    ( ~/ComponentState/Grayed,                TColorRTTI( Color = [122,167,176,50] ) ),
                                                ]),
-        ("CustomFlareText",                    MAP [
+        ("CustomBeaconText",                   MAP [
                                                    ( ~/ComponentState/Normal,                TColorRTTI( Color = [122,167,176,202]  ) ),
                                                    ( ~/ComponentState/Highlighted,           TColorRTTI( Color = BleuVariable ) ),
                                                    ( ~/ComponentState/Clicked,               TColorRTTI( Color = Blanc184 ) ),
@@ -418,7 +418,7 @@ DefaultStyleGuide is TUIStyleGuide
                                                    ( ~/ComponentState/ToggleClicked,         TColorRTTI( Color = Blanc2 ) ),
                                                    ( ~/ComponentState/Grayed,                TColorRTTI( Color = [122,167,176,50] ) ),
                                                ]),
-         ("BoutonFlares",                    MAP [
+         ("BoutonBeacons",                    MAP [
                                                    ( ~/ComponentState/Normal,                TColorRTTI( Color = [47,119,139,240]  ) ),
                                                    ( ~/ComponentState/Highlighted,           TColorRTTI( Color = BleuVariable ) ),
                                                    ( ~/ComponentState/Clicked,               TColorRTTI( Color = Blanc184 ) ),
@@ -1061,12 +1061,12 @@ DefaultStyleGuide is TUIStyleGuide
         // -- Nouvelles Couleur (SD2)
         ("NoirPur",      MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = NoirPur ) ), ]),
 
-        ("FlaresPanel/CustomFlare/EditableText/Fond",                   MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = Gray70 ) ), ]),
-        ("FlaresPanel/CustomFlare/EditableText/Selected",               MAP [
+        ("BeaconsPanel/CustomBeacon/EditableText/Fond",                   MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = Gray70 ) ), ]),
+        ("BeaconsPanel/CustomBeacon/EditableText/Selected",               MAP [
                                                                             ( ~/ComponentState/Normal, TColorRTTI( Color = DarkerGray70 ) ),
                                                                             ( ~/ComponentState/Highlighted, TColorRTTI( Color = DarkerGray70 ) ),
                                                                         ]),
-        ("FlarePanel/FlareButtonBackground",                            MAP [
+        ("BeaconPanel/BeaconButtonBackground",                            MAP [
                                                                             ( ~/ComponentState/Normal, TColorRTTI( Color = Transparent ) ),
                                                                             ( ~/ComponentState/Highlighted, TColorRTTI( Color = BlancPur ) ),
                                                                             ]),
@@ -1865,7 +1865,7 @@ DefaultStyleGuide is TUIStyleGuide
 
 
 
-        ("FlarePanel/FlareButtonBorder",                            MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = LightGray ) ), ]),
+        ("BeaconPanel/BeaconButtonBorder",                          MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = LightGray ) ), ]),
 
 
         ("DeckOverview/CaseVide/Survol",                            MAP [
@@ -3388,7 +3388,7 @@ DefaultStyleGuide is TUIStyleGuide
 
         ("Title",                                       MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = BeigeSombre ) ), ]), //ancien composant
         ("ObjectiveEtiquetteManager/TextBackground",    MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = [40, 40, 40, 100] ) ), ]),
-        ("ObjectiveEtiquetteManager/FlareText",         MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = Blanc7 ) ), ]),
+        ("ObjectiveEtiquetteManager/BeaconText",         MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = Blanc7 ) ), ]),
         ("ObjectiveEtiquetteManager/Text",              MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = BeigeSombre ) ), ]),
         ("ObjectiveLabel/Primary/Title",                MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = JauneOrange2 ) ), ]),
         ("ObjectiveLabel/Bonus/Title",                  MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = Blanc7 ) ), ]),

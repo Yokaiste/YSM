@@ -52,11 +52,11 @@ ShowRoomResource is TUISpecificShowRoomResources
     // Updated by YSM
     AllianceToCountriesToShow = MAP [
         (ECoalition/PACT, ["YSM","SOV","POL","DDR","TCH"]),
-        (ECoalition/NATO, ["YSM","US","UK","FR","CAN","RFA","NL","BEL","LUX","ESP"])
+        (ECoalition/NATO, ["YSM","US","UK","FR","CAN","RFA","NL","BEL","LUX","ESP", "DK"])
     ]
     // AllianceToCountriesToShow = MAP [
     //     (ECoalition/PACT, ["SOV","POL","DDR","TCH"]),
-    //     (ECoalition/NATO, ["US","UK","FR","CAN","RFA","NL","BEL","LUX","ESP"])
+    //     (ECoalition/NATO, ["US","UK","FR","CAN","RFA","NL","BEL","LUX","ESP", "DK"])
     // ]
 
     SpecificHidingViewDescriptor = ~/UISpecificHidingViewDescriptor

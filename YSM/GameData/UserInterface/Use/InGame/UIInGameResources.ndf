@@ -14,7 +14,7 @@ UIInGameResource is TUISpecificInGameResources
     ViewDescriptors = MAP
     [
         ("UISpecificIngameChatViewDescriptor", UISpecificIngameChatViewDescriptor(PanelColorStyle = "TacticPanel" ButtonColorStyle = "TacticButton_highlightable")),
-        ("UISpecificInGameFlarePanelViewDescriptor", ~/UIInGameFlarePanelViewDescriptor),
+        ("UISpecificInGameBeaconPanelViewDescriptor", ~/UIInGameBeaconPanelViewDescriptor),
         ("UISpecificIngameHUDTransportAndUnitsInfoViewDescriptor", ~/UISpecificInGameHUDTransportAndUnitsInfoViewDescriptor),
         ("UISpecificUnitInfoPanelViewDescriptor", UISpecificUnitInfoPanelViewDescriptor()),
         ("SkirmishProductionMenu", UISpecificSkirmishProductionMenuViewDescriptor()),
@@ -55,7 +55,7 @@ UIInGameResource is TUISpecificInGameResources
     CommonHUDResources          = ~/InGameHUDResource
     HUDResource                 = ~/InGameHUDResource
     LabelResource               = ~/CommonLabelResource
-    FlareLabelResources         = ~/CommonFlareLabelResources
+    BeaconLabelResources        = ~/CommonBeaconLabelResources
     PlayerMissionLabelResources = ~/SpecificInGamePlayerMissionLabelResources
     GabaritResources            = ~/InGameGabaritResources
     UnitLabelResource           = ~/SpecificInGameUnitLabelResources
@@ -189,7 +189,7 @@ InGameMainContainerResource is TUICommonMainContainerResource
                     (
                         ComponentDescriptor = BUCKContainerDescriptor
                         (
-                            UniqueName = "UICommonFlarePanelViewMainContainer"
+                            UniqueName = "UICommonBeaconPanelViewMainContainer"
                             ComponentFrame = TUIFramePropertyRTTI
                             (
                                 RelativeWidthHeight = [1.0, 0.0]

@@ -41,7 +41,7 @@ SmokePositionModuleDescriptor is TPositionModuleDescriptor
 template Descriptor_Unit_MimeticUnit[ DescriptorId, MimeticName ] is TEntityDescriptor
 (
     DescriptorId      = <DescriptorId>
-    ClassNameForDebug = 'Unit_MimeticUnit'
+    ClassNameForDebug = 'Unit_MimeticUnit_' + <MimeticName>
     World = WorldIndices_Mimetic_Units
     ModulesDescriptors = [
         // Position

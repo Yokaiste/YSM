@@ -315,6 +315,28 @@ export MeshDescriptor_Servant_D_VDV is TResourceMesh
 export MeshDescriptor_Servant_G_VDV_LOW is TResourceMesh (Mesh=MotoStrelki_1_LOW)
 export MeshDescriptor_Servant_D_VDV_LOW is TResourceMesh (Mesh=MotoStrelki_1_LOW)
 //--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Servant_G_Morskaya is TResourceMesh
+(
+    Mesh=SOV_Morskaya_1
+)
+export MeshDescriptor_Servant_D_Morskaya is TResourceMesh
+(
+    Mesh=SOV_Morskaya_3
+)
+export MeshDescriptor_Servant_G_Morskaya_LOW is TResourceMesh (Mesh=SOV_Morskaya_LOW)
+export MeshDescriptor_Servant_D_Morskaya_LOW is TResourceMesh (Mesh=SOV_Morskaya_LOW)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Servant_G_Guards_UK is TResourceMesh
+(
+    Mesh=UK_Guard_spe
+)
+export MeshDescriptor_Servant_D_Guards_UK is TResourceMesh
+(
+    Mesh=UK_Guard_NCO
+)
+export MeshDescriptor_Servant_G_Guards_UK_LOW is TResourceMesh (Mesh=UK_Rifleman_1_LOW)
+export MeshDescriptor_Servant_D_Guards_UK_LOW is TResourceMesh (Mesh=UK_Rifleman_1_LOW)
+//--------------------------------------------------------------------------------------------------------------------
 export MeshDescriptor_Servant_NCO_G_VDV is TResourceMesh
 (
     Mesh="GameData:/Assets/3D/Units/URSS/Infanterie/VDV/VDV_NCO.fbx"

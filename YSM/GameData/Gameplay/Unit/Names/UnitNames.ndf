@@ -55,8 +55,8 @@ unnamed TLocalisationDicoResource
 )
 unnamed TLocalisationDicoResource
 (
-    DicoToken = "NAMES_DAN"
-    FileName = "GameData:/Gameplay/Unit/Names/UNITNAMES_DAN.csv"
+    DicoToken = "NAMES_DK"
+    FileName = "GameData:/Gameplay/Unit/Names/UNITNAMES_DK.csv"
 )
 unnamed TLocalisationDicoResource
 (

@@ -1,0 +1,14 @@
+export Modele_GAZ_66_SIGINT_SOV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Vehicule/GAZ_66_SIGINT/GAZ_66_SIGINT.fbx"
+)
+
+export Modele_GAZ_66_SIGINT_SOV_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Vehicule/GAZ_66_SIGINT_MID/GAZ_66_SIGINT_MID.fbx"
+)
+
+export Modele_GAZ_66_SIGINT_SOV_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Vehicule/GAZ_66_SIGINT_LOW/GAZ_66_SIGINT_LOW.fbx"
+)

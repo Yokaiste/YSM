@@ -1,0 +1,31 @@
+FxBeaconWithParams is TActionCall
+(
+    Action = $/GFX/GameFx/FX_Beacon
+    LocalVariables =
+    [
+        Par_Beacon_Color is TPinnableValue(ExpectedType : float3),
+        Par_Beacon_Alpha is TPinnableValue(ExpectedType : float),
+    ]
+
+    NamedParams =
+    MAP[
+        ('Par_Beacon_Color', Par_Beacon_Color),
+        ('Par_Beacon_Alpha', Par_Beacon_Alpha),
+    ]
+)
+
+FxBeaconGhostWithParams is TActionCall
+(
+    Action = $/GFX/GameFx/FX_Beacon_Ghost
+    LocalVariables =
+    [
+        Par_Beacon_Color is TPinnableValue(ExpectedType : float3),
+        Par_Beacon_Alpha is TPinnableValue(ExpectedType : float),
+    ]
+
+    NamedParams =
+    MAP[
+        ('Par_Beacon_Color', Par_Beacon_Color),
+        ('Par_Beacon_Alpha', Par_Beacon_Alpha),
+    ]
+)

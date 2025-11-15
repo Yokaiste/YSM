@@ -1,0 +1,19 @@
+export Modele_Hawk_T1_AA_UK is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Avion/Hawk_T1_AA/Hawk_T1_AA.fbx"
+)
+
+export Modele_Hawk_T1_AA_UK_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Avion/Hawk_T1_AA_MID/Hawk_T1_AA_MID.fbx"
+)
+
+export Modele_Hawk_T1_AA_UK_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Avion/Hawk_T1_AA_LOW/Hawk_T1_AA_LOW.fbx"
+)
+
+export Modele_Hawk_T1_AA_UK_train is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Avion/Hawk_T1_AA/Hawk_T1_AA_Train.fbx"
+)

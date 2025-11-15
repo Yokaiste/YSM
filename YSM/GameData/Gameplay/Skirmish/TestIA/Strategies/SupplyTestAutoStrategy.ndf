@@ -64,7 +64,7 @@ export TestAuto_Supply_Phase_Deploiement is TSequenceGeneratorDescriptor
 (
     GeneratorList =
     [
-        ~/FOB_Skirmish,
+        ~/FOB_Skirmish_TestAutoOnly,
         ~/Supply_TestAutoOnly,
     ]
 )

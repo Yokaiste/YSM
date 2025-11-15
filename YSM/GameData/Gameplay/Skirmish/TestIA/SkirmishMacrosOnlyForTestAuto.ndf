@@ -384,6 +384,8 @@ export Supply_TestAutoOnly is TMacroActionDescriptor_Supply_Specific
             (ESupplyableType_Fuel, 0.3),
             (ESupplyableType_Weapons, 0.3),
             (ESupplyableType_Life, 0.5),
+            //Attention, si cette variable descend en dessous de la valeur du comportement de retraite certains tests ne passeront plus car l'unité partira en retraite au lieu de supply
+            //cf IAStrat constante : MinLifeRatioForRetreat
         ]),
     ]
 )
@@ -413,6 +415,35 @@ export Pool_Supply_Skirmish_TestAuto is TPoolModel
         Nb = 1
         TagsPriority = [
             "Vehicule_Logistique",
+        ]
+    ),
+    ]
+)
+
+//-------------------------------------------------------------------------
+export FOB_Skirmish_TestAutoOnly is TMacroActionDescriptor_ProduceBuilding
+(
+    ParametresDeMission =
+    [
+        TGenerationSettingHolder(GenerationType = TGenerationType_FixedSize NumberLaunchBasedOnGenerationType = 1),
+        TMacroActionProductionSettingHolder(PoolModelList = [~/Pool_FOB_Skirmish_TestAuto] DisableReinforcement = true),
+    ]
+)
+
+//-------------------------------------------------------------------------
+// Pool Models
+//-------------------------------------------------------------------------
+export Pool_FOB_Skirmish_TestAuto is TPoolModel
+(
+    ModelList = [
+    TPoolElement(
+        DescriptorId = GUID:{00d307f0-748f-4670-9b0b-bbb823c7e34d}
+        Required = true
+        Nb = 1
+        IndexPriorityOverPrice = true
+        PriceComparisonMethod = EPriceComparatorType/Random
+        TagsPriority = [
+            "FOB",
         ]
     ),
     ]

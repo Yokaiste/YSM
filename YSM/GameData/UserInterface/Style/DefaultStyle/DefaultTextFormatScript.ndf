@@ -1446,10 +1446,10 @@ DefaultTextFormatScript is TTextFormatScriptRTTI
             )
          ),
         (
-            "Flare_Launched",
+            "Beacon_Launched",
             TTFSCommand_UISymbol
             (
-                TextureToken = "UseInGame_SituationAwareness_Flare_Launched"
+                TextureToken = "UseInGame_SituationAwareness_Beacon_Launched"
                 BBMin=[0, -1, 0]
                 BBMax=[1.2, 0.2, 0]
                 ShaderDescriptor = $/M3D/Shader/MaterialInterface2D_Blend
@@ -2349,8 +2349,8 @@ DefaultTextFormatScript is TTextFormatScriptRTTI
             TemplateTFS_Flag(TextureToken = "CommonTexture_MotherCountryFlag_CAN")
         ),
         (
-            "DAN",
-            TemplateTFS_Flag(TextureToken = "CommonTexture_MotherCountryFlag_DAN")
+            "DK",
+            TemplateTFS_Flag(TextureToken = "CommonTexture_MotherCountryFlag_DK")
         ),
         (
             "SWE",

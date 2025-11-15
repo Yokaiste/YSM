@@ -1,0 +1,19 @@
+export Modele_Westland_Wessex_trans_UK is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Helico/Westland_Wessex_trans/Westland_Wessex_trans.fbx"
+)
+
+export Modele_Westland_Wessex_trans_UK_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Helico/Westland_Wessex_trans_MID/Westland_Wessex_trans_MID.fbx"
+)
+
+export Modele_Westland_Wessex_trans_UK_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Helico/Westland_Wessex_trans_LOW/Westland_Wessex_trans_LOW.fbx"
+)
+
+export Modele_Westland_Wessex_trans_UK_Tourelle_01 is TResourceMesh
+(
+    Mesh=ModelFile_MAG_t1
+)

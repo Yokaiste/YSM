@@ -1,0 +1,14 @@
+export Modele_MAZ_535A_supply_SOV is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Vehicule/MAZ_535A_cargo/MAZ_535A_cargo.fbx"
+)
+
+export Modele_MAZ_535A_supply_SOV_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Vehicule/MAZ_535A_cargo_MID/MAZ_535A_cargo_MID.fbx"
+)
+
+export Modele_MAZ_535A_supply_SOV_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/URSS/Vehicule/MAZ_535A_cargo_LOW/MAZ_535A_cargo_LOW.fbx"
+)

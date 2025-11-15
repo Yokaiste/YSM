@@ -3,6 +3,12 @@
 
 unnamed GhostAerialDepictionRegistration
 (
+    Alternatives = Alternatives_A109A_RKT_UK
+    MimeticName = "A109A_RKT_UK"
+    Selector = SpecificHelicoDepictionSelector
+)
+unnamed GhostAerialDepictionRegistration
+(
     Alternatives = Alternatives_A109BA_BEL
     MimeticName = "A109BA_BEL"
     Selector = SpecificHelicoDepictionSelector
@@ -405,6 +411,12 @@ unnamed GhostAerialDepictionRegistration
 )
 unnamed GhostAerialDepictionRegistration
 (
+    Alternatives = Alternatives_CH47D_Chinook_SAS_UK
+    MimeticName = "CH47D_Chinook_SAS_UK"
+    Selector = SpecificHelicoDepictionSelector
+)
+unnamed GhostAerialDepictionRegistration
+(
     Alternatives = Alternatives_CH47D_Chinook_supply_UK
     MimeticName = "CH47D_Chinook_supply_UK"
     Selector = SpecificHelicoDepictionSelector
@@ -491,6 +503,18 @@ unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_CM170_Magister_SS11_FR
     MimeticName = "CM170_Magister_SS11_FR"
+    Selector = SpecificAirplaneDepictionSelector
+)
+unnamed GhostAerialDepictionRegistration
+(
+    Alternatives = Alternatives_Canberra_B2_UK
+    MimeticName = "Canberra_B2_UK"
+    Selector = SpecificAirplaneDepictionSelector
+)
+unnamed GhostAerialDepictionRegistration
+(
+    Alternatives = Alternatives_Canberra_T17A_UK
+    MimeticName = "Canberra_T17A_UK"
     Selector = SpecificAirplaneDepictionSelector
 )
 unnamed GhostAerialDepictionRegistration
@@ -873,6 +897,12 @@ unnamed GhostAerialDepictionRegistration
 )
 unnamed GhostAerialDepictionRegistration
 (
+    Alternatives = Alternatives_F4_Phantom_AA_GR2_UK
+    MimeticName = "F4_Phantom_AA_GR2_UK"
+    Selector = SpecificAirplaneDepictionSelector
+)
+unnamed GhostAerialDepictionRegistration
+(
     Alternatives = Alternatives_F4_Phantom_GR2_HE_UK
     MimeticName = "F4_Phantom_GR2_HE_UK"
     Selector = SpecificAirplaneDepictionSelector
@@ -1101,6 +1131,18 @@ unnamed GhostAerialDepictionRegistration
 )
 unnamed GhostAerialDepictionRegistration
 (
+    Alternatives = Alternatives_Hawk_T1_AA_UK
+    MimeticName = "Hawk_T1_AA_UK"
+    Selector = SpecificAirplaneDepictionSelector
+)
+unnamed GhostAerialDepictionRegistration
+(
+    Alternatives = Alternatives_Hawk_T1_UK
+    MimeticName = "Hawk_T1_UK"
+    Selector = SpecificAirplaneDepictionSelector
+)
+unnamed GhostAerialDepictionRegistration
+(
     Alternatives = Alternatives_JOH_58C_US
     MimeticName = "JOH_58C_US"
     Selector = SpecificHelicoDepictionSelector
@@ -1245,6 +1287,12 @@ unnamed GhostAerialDepictionRegistration
 )
 unnamed GhostAerialDepictionRegistration
 (
+    Alternatives = Alternatives_L39ZO_SOV
+    MimeticName = "L39ZO_SOV"
+    Selector = SpecificAirplaneDepictionSelector
+)
+unnamed GhostAerialDepictionRegistration
+(
     Alternatives = Alternatives_L39ZO_TCH
     MimeticName = "L39ZO_TCH"
     Selector = SpecificAirplaneDepictionSelector
@@ -1377,6 +1425,12 @@ unnamed GhostAerialDepictionRegistration
 )
 unnamed GhostAerialDepictionRegistration
 (
+    Alternatives = Alternatives_MiG_21bis_CLU_SOV
+    MimeticName = "MiG_21bis_CLU_SOV"
+    Selector = SpecificAirplaneDepictionSelector
+)
+unnamed GhostAerialDepictionRegistration
+(
     Alternatives = Alternatives_MiG_21bis_CLU_TCH
     MimeticName = "MiG_21bis_CLU_TCH"
     Selector = SpecificAirplaneDepictionSelector
@@ -1391,6 +1445,12 @@ unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_21bis_HE_POL
     MimeticName = "MiG_21bis_HE_POL"
+    Selector = SpecificAirplaneDepictionSelector
+)
+unnamed GhostAerialDepictionRegistration
+(
+    Alternatives = Alternatives_MiG_21bis_HE_SOV
+    MimeticName = "MiG_21bis_HE_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
 unnamed GhostAerialDepictionRegistration
@@ -1637,6 +1697,12 @@ unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_MiG_27M_sead_SOV
     MimeticName = "MiG_27M_sead_SOV"
+    Selector = SpecificAirplaneDepictionSelector
+)
+unnamed GhostAerialDepictionRegistration
+(
+    Alternatives = Alternatives_MiG_29_9_13_SOV
+    MimeticName = "MiG_29_9_13_SOV"
     Selector = SpecificAirplaneDepictionSelector
 )
 unnamed GhostAerialDepictionRegistration
@@ -2589,6 +2655,12 @@ unnamed GhostAerialDepictionRegistration
 )
 unnamed GhostAerialDepictionRegistration
 (
+    Alternatives = Alternatives_Su_22_SEAD2_TCH
+    MimeticName = "Su_22_SEAD2_TCH"
+    Selector = SpecificAirplaneDepictionSelector
+)
+unnamed GhostAerialDepictionRegistration
+(
     Alternatives = Alternatives_Su_22_SEAD_DDR
     MimeticName = "Su_22_SEAD_DDR"
     Selector = SpecificAirplaneDepictionSelector
@@ -3017,5 +3089,23 @@ unnamed GhostAerialDepictionRegistration
 (
     Alternatives = Alternatives_Westland_Scout_SS11_UK
     MimeticName = "Westland_Scout_SS11_UK"
+    Selector = SpecificHelicoDepictionSelector
+)
+unnamed GhostAerialDepictionRegistration
+(
+    Alternatives = Alternatives_Westland_Scout_UK
+    MimeticName = "Westland_Scout_UK"
+    Selector = SpecificHelicoDepictionSelector
+)
+unnamed GhostAerialDepictionRegistration
+(
+    Alternatives = Alternatives_Westland_Wessex_supply_UK
+    MimeticName = "Westland_Wessex_supply_UK"
+    Selector = SpecificHelicoDepictionSelector
+)
+unnamed GhostAerialDepictionRegistration
+(
+    Alternatives = Alternatives_Westland_Wessex_trans_UK
+    MimeticName = "Westland_Wessex_trans_UK"
     Selector = SpecificHelicoDepictionSelector
 )

@@ -1,8 +1,8 @@
 
 //-------------------------------------------------------------------------------------
-// Conteneur pour les flares
+// Conteneur pour les beacons
 //-------------------------------------------------------------------------------------
-UIStrategicFlarePanelViewMainComponent is BUCKListDescriptor
+UIStrategicBeaconPanelViewMainComponent is BUCKListDescriptor
 (
     ComponentFrame = TUIFramePropertyRTTI
     (
@@ -36,12 +36,12 @@ UIStrategicFlarePanelViewMainComponent is BUCKListDescriptor
 
                 Elements =
                 [
-                    BUCKListElementDescriptor(ComponentDescriptor = FlareButtonNeedHelp(IsFromStrategic = true)),
-                    BUCKListElementDescriptor(ComponentDescriptor = FlareButtonStrategyAttack(IsFromStrategic = true)),
-                    BUCKListElementDescriptor(ComponentDescriptor = FlareButtonStrategyDefend(IsFromStrategic = true)),
-                    BUCKListElementDescriptor(ComponentDescriptor = FlareButtonSupport(IsFromStrategic = true)),
-                    BUCKListElementDescriptor(ComponentDescriptor = FlareButtonEnemySpotted(IsFromStrategic = true)),
-                    BUCKListElementDescriptor(ComponentDescriptor = FlareButtonCustom(IsFromStrategic = true))
+                    BUCKListElementDescriptor(ComponentDescriptor = BeaconButtonNeedHelp(IsFromStrategic = true)),
+                    BUCKListElementDescriptor(ComponentDescriptor = BeaconButtonStrategyAttack(IsFromStrategic = true)),
+                    BUCKListElementDescriptor(ComponentDescriptor = BeaconButtonStrategyDefend(IsFromStrategic = true)),
+                    BUCKListElementDescriptor(ComponentDescriptor = BeaconButtonSupport(IsFromStrategic = true)),
+                    BUCKListElementDescriptor(ComponentDescriptor = BeaconButtonEnemySpotted(IsFromStrategic = true)),
+                    BUCKListElementDescriptor(ComponentDescriptor = BeaconButtonCustom(IsFromStrategic = true))
                 ]
             )
         )
@@ -63,14 +63,14 @@ UIStrategicFlarePanelViewMainComponent is BUCKListDescriptor
 
     ForegroundComponents =
     [
-        FlareCustomEditableText(IsFromStrategic = true)
+        BeaconCustomEditableText(IsFromStrategic = true)
     ]
 )
 
 //-------------------------------------------------------------------------------------
 
-UIStrategicFlarePanelViewDescriptor is TUIInGameFlarePanelViewDescriptor
+UIStrategicBeaconPanelViewDescriptor is TUIInGameBeaconPanelViewDescriptor
 (
-    MainComponentDescriptor = ~/UIStrategicFlarePanelViewMainComponent
-    MainComponentContainerUniqueName = "UICommonFlarePanelViewMainContainer"
+    MainComponentDescriptor = ~/UIStrategicBeaconPanelViewMainComponent
+    MainComponentContainerUniqueName = "UICommonBeaconPanelViewMainContainer"
 )

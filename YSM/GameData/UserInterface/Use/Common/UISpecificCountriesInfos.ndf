@@ -134,6 +134,13 @@ export SpecificCountriesInfos is MAP [
             Country = "ESP"
             NameToken = "CtrESP"
         )),
+    ("DK", TUISpecificCountryInfos
+        (
+            FlagTexture = "CommonTexture_MotherCountryFlag_DK"
+            PawnExpTexture = "CommonTexture_Etoile_Grande"
+            Country = "DK"
+            NameToken = "CtrDK"
+        )),
 
 
 

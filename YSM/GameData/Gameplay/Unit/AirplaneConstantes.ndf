@@ -37,15 +37,6 @@ DogfightAttackStrategyDescriptor is TDogfightAttackStrategyDescriptor
     AngleToFakeTargetPositionInDegree = 60
 )
 
-StukaNosediveAttackStrategyDescriptor is TStukaNosediveAttackStrategyDescriptor
-(
-    DescriptorId                     = GUID:{1AC55F2F-BDC0-420A-A89D-A101BEA10EFB}
-
-    DistanceNosediveGRU = 477
-    WaypointDistanceFromTargetGRU = 283
-    AgilityMultiplicator = 2.5
-)
-
 AirGroundMissileAttackStrategyDescriptor is TAirGroundMissileAttackStrategyDescriptor
 (
     DescriptorId                     = GUID:{1AC55F2F-BDC0-420A-A89D-A101BEA10EFC}

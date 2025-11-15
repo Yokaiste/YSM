@@ -1,0 +1,22 @@
+export Modele_Centurion_Mk13_CMD_UK is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Char/Centurion_Mk13/Centurion_Mk13.fbx"
+    Textures="GameData:/Assets/3D/Units/UK/Char/Centurion_Mk13_CMD"
+)
+
+export Modele_Centurion_Mk13_CMD_UK_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Char/Centurion_Mk13_MID/Centurion_Mk13_MID.fbx"
+    Textures="GameData:/Assets/3D/Units/UK/Char/Centurion_Mk13_CMD_MID"
+)
+
+export Modele_Centurion_Mk13_CMD_UK_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Char/Centurion_Mk13_LOW/Centurion_Mk13_LOW.fbx"
+    Textures="GameData:/Assets/3D/Units/UK/Char/Centurion_Mk13_CMD_LOW"
+)
+
+export Modele_Centurion_Mk13_CMD_UK_Tourelle_02 is TResourceMesh
+(
+    Mesh=ModelFile_VZ59_t2
+)

@@ -1,0 +1,17 @@
+export Modele_LandRover_MILAN_nonBerlin_UK is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Vehicule/LandRover_Para_MILAN/LandRover_Para_MILAN.fbx"
+    Textures="GameData:/Assets/3D/Units/UK/Vehicule/LandRover_Non_Para_MILAN"
+)
+
+export Modele_LandRover_MILAN_nonBerlin_UK_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Vehicule/LandRover_Para_MILAN/LandRover_Para_MILAN.fbx"
+    Textures="GameData:/Assets/3D/Units/UK/Vehicule/LandRover_Non_Para_MILAN"
+)
+
+export Modele_LandRover_MILAN_nonBerlin_UK_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/Vehicule/LandRover_Para_MILAN/LandRover_Para_MILAN.fbx"
+    Textures="GameData:/Assets/3D/Units/UK/Vehicule/LandRover_Non_Para_MILAN"
+)

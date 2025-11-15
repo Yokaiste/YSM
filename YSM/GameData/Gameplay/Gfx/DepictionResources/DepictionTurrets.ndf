@@ -25,6 +25,7 @@ export ModelFile_Milan_F1_t1 is 'GameData:/Assets/3D/Units/Ammo/Tourelles/FR/Mil
 export ModelFile_Milan_F1_t2 is 'GameData:/Assets/3D/Units/Ammo/Tourelles/FR/Milan_F1/Milan_F1_t2.fbx'
 // cas particulier, support pour l'affichage correct des drones dans la showroom
 export ModelFile_Support_Drones is 'GameData:/Assets/3D/Units/Ammo/Drones/support_drones.fbx'
+export ModelFile_MAG_t1 is 'GameData:/Assets/3D/Units/Ammo/Armes/HMG_trepied/MAG_t1.fbx'
 export ModelFile_MAG_t2 is 'GameData:/Assets/3D/Units/Ammo/Armes/HMG_trepied/MAG_t2.fbx'
 export ModelFile_MAG_t4 is 'GameData:/Assets/3D/Units/Ammo/Armes/HMG_trepied/MAG_t4.fbx'
 export ModelFile_Javelin_LML_t1 is 'GameData:/Assets/3D/Units/UK/Canon/Javelin_LML/Javelin_LML_t1.fbx'

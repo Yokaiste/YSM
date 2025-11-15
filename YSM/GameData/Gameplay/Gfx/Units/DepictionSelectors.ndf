@@ -98,7 +98,7 @@ export SoldierDynamicWeaponSubDepictionSelector is TInfantryWeaponSelector
     NoneLimitInMeter = LodHighNoneLimit_SoldierWeapon
     CameraMoverManager = $/Camera/CameraMoverManager
     MeshAlternativeKey = 'mesh_alternative'
-    PrincipalDepiction = ['MeshAlternative_1'] // On verra bien si y'a besoin de gérer un truc ici si ça crash parce que y'a pas d'arme 1
+    PrincipalDepiction = ['WeaponAlternative_1'] // On verra bien si y'a besoin de gérer un truc ici si ça crash parce que y'a pas d'arme 1
 )
 
 export SoldierDynamicBackpackWeaponSubDepictionSelector is TInfantryBackpackWeaponSelector
@@ -106,5 +106,5 @@ export SoldierDynamicBackpackWeaponSubDepictionSelector is TInfantryBackpackWeap
     NoneLimitInMeter = LodHighNoneLimit_SoldierWeapon
     CameraMoverManager = $/Camera/CameraMoverManager
     MeshAlternativeKey = 'mesh_alternative_backpack'
-    PrincipalDepiction = ['MeshAlternative_1'] // On verra bien si y'a besoin de gérer un truc ici si ça crash parce que y'a pas d'arme 1
+    PrincipalDepiction = ['WeaponAlternative_1'] // On verra bien si y'a besoin de gérer un truc ici si ça crash parce que y'a pas d'arme 1
 )

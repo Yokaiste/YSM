@@ -1,0 +1,3 @@
+export Modele_Howz_QF_25pdr_87mm_UK is TResourceMesh( Mesh="GameData:/Assets/3D/Units/UK/Canon/Howz_QF_25pdr_87mm/Howz_QF_25pdr_87mm.fbx")
+export Modele_Howz_QF_25pdr_87mm_UK_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/UK/Canon/Howz_QF_25pdr_87mm_MID/Howz_QF_25pdr_87mm_MID.fbx")
+export Modele_Howz_QF_25pdr_87mm_UK_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/UK/Canon/Howz_QF_25pdr_87mm_LOW/Howz_QF_25pdr_87mm_LOW.fbx")

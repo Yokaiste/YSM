@@ -76,30 +76,22 @@ SmartGroupPanelHeadList is BUCKListDescriptor
 
 //----------------------------------------------------
 
-template SmartGroupActionButton
-[
-    ElementName : string,
-    ComponentFrame : TUIFramePropertyRTTI = TUIFramePropertyRTTI
+DissolveButton is BUCKButtonDescriptor
+(
+    ElementName = "DissolveButton"
+
+    ComponentFrame = TUIFramePropertyRTTI
     (
         MagnifiableWidthHeight = [75.0, 25.0]
-    ),
-    TextToken : string,
-    ReinforceBackgroundBlockColorToken : string = "BoutonTemps_Background",
-    ReinforceBorderLineColorToken : string = "BoutonTemps_Line",
-    IsTogglable : bool,
-    HasHintableArea : bool,
-    IsClippable : bool = true,
-    Mapping : TEugBMutablePBaseClass = nil,
-] is BUCKButtonDescriptor
-(
-    ElementName = <ElementName>
+        MagnifiableOffset = [0.0, -5.0]
+        AlignementToFather = [0.0, 1.0]
+        AlignementToAnchor = [0.0, 1.0]
+    )
 
-    ComponentFrame = <ComponentFrame>
+    IsTogglable = false
+    IsClippable = true
 
-    IsTogglable = <IsTogglable>
-    IsClippable = <IsClippable>
-
-    Mapping = <Mapping>
+    Mapping =  $/KeyboardOption/Mapping_MergeUnits
 
     Components =
     [
@@ -118,8 +110,8 @@ template SmartGroupActionButton
                 PanelRoundedCorner
                 (
                     Radius = 3
-                    BackgroundBlockColorToken = <ReinforceBackgroundBlockColorToken>
-                    BorderLineColorToken = <ReinforceBorderLineColorToken>
+                    BackgroundBlockColorToken = "BoutonTemps_Background"
+                    BorderLineColorToken =  "BoutonTemps_Line"
                 )
             ]
         ),
@@ -142,7 +134,7 @@ template SmartGroupActionButton
             HorizontalFitStyle = ~/FitStyle/FitToContent
             VerticalFitStyle = ~/FitStyle/FitToContent
 
-            TextToken = <TextToken>
+            TextToken = "SGR_DISLV"
 
             TypefaceToken   = "UIMainFont"
             BigLineAction = ~/BigLineAction/BalancedMultiline
@@ -152,17 +144,7 @@ template SmartGroupActionButton
             TextColor = "ButtonHUD/Text2"
             TextSize  = "12"
         ),
-    ] +
-    (<HasHintableArea> ?
-        [
-            BUCKSpecificHintableArea
-            (
-                ElementName = <ElementName> + "HintableArea"
-
-                HintBodyToken = "SGR_RCOSB"
-            ),
-        ] : []
-    )
+    ]
 )
 
 //----------------------------------------------------
@@ -175,24 +157,6 @@ SmartGroupLabelContainer is BUCKContainerDescriptor
 
     Components =
     [
-        SmartGroupActionButton
-        (
-            ElementName = "ReinforceLabelButton"
-            ComponentFrame = TUIFramePropertyRTTI
-            (
-                MagnifiableWidthHeight = [75.0, 25.0]
-                AlignementToFather = [0.5, 0.0]
-                AlignementToAnchor = [0.5, 1.0]
-            )
-
-            ReinforceBackgroundBlockColorToken = "BoutonSelectionMultiple"
-            ReinforceBorderLineColorToken = "H2_bleu_2_40p"
-
-            TextToken = "SGR_REIN"
-            IsTogglable = false
-            HasHintableArea = true
-            IsClippable = false
-        ),
         BUCKContainerDescriptor
         (
             ElementName = "SmartGroupLabelContainer"
@@ -262,24 +226,7 @@ SmartGroupSelectionPanelMainPanel is BUCKListDescriptor
     [
         BUCKListElementDescriptor
         (
-            ComponentDescriptor = SmartGroupActionButton
-            (
-                ElementName = "DisolveButton"
-
-                ComponentFrame = TUIFramePropertyRTTI
-                (
-                    MagnifiableWidthHeight = [75.0, 25.0]
-                    MagnifiableOffset = [0.0, -5.0]
-                    AlignementToFather = [0.0, 1.0]
-                    AlignementToAnchor = [0.0, 1.0]
-                )
-
-                Mapping = $/KeyboardOption/Mapping_MergeUnits
-
-                TextToken = "SGR_DISLV"
-                IsTogglable = false
-                HasHintableArea = false
-            )
+            ComponentDescriptor = ~/DissolveButton
         ),
         BUCKListElementDescriptor
         (

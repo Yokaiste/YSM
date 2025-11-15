@@ -26,10 +26,10 @@ FeedbackMessage_OnBuildingCapturedByEnemy       is 21
 FeedbackMessage_OnEnemyBuildingCaptured         is 22
 FeedbackMessage_OnCaptureOrder                  is 23
 FeedbackMessage_OnUnitFiring                    is 24
-FeedbackMessage_OnFlareAttackPlaced             is 25
-FeedbackMessage_OnFlareDefendPlaced             is 26
-FeedbackMessage_OnFlareHelpPlaced               is 27
-FeedbackMessage_OnFlareCustomPlaced             is 28
+FeedbackMessage_OnBeaconAttackPlaced            is 25
+FeedbackMessage_OnBeaconDefendPlaced            is 26
+FeedbackMessage_OnBeaconHelpPlaced              is 27
+FeedbackMessage_OnBeaconCustomPlaced            is 28
 FeedbackMessage_OnUnitUnderAttack               is 29
 FeedbackMessage_OnUnloadFromTransportOrder      is 30
 FeedbackMessage_OnUnloadAtPositionOrder         is 31
@@ -75,8 +75,8 @@ FeedbackMessage_OnAIAttackOrder                 is 70
 FeedbackMessage_OnFastMoveAndAttackOrder        is 71
 FeedbackMessage_OnAIManageArtillery_FocusOrder  is 72
 FeedbackMessage_OnAirplaneAttackOrder           is 73
-FeedbackMessage_OnFlareFireSupportPlaced        is 74
-FeedbackMessage_OnFlareEnemySpottedPlaced       is 75
+FeedbackMessage_OnBeaconFireSupportPlaced       is 74
+FeedbackMessage_OnBeaconEnemySpottedPlaced      is 75
 FeedbackMessage_OnCommandZoneSecuredByPlayer    is 76
 FeedbackMessage_OnCommandZoneLost               is 77
 FeedbackMessage_OnCommandZoneSecuredByEnemy     is 78
@@ -131,10 +131,10 @@ export Generated_DispatchedMessageType_Enum is TDispatchedMessageType
         "FeedbackMessage_OnEnemyBuildingCaptured",
         "FeedbackMessage_OnCaptureOrder",
         "FeedbackMessage_OnUnitFiring",
-        "FeedbackMessage_OnFlareAttackPlaced",
-        "FeedbackMessage_OnFlareDefendPlaced",
-        "FeedbackMessage_OnFlareHelpPlaced",
-        "FeedbackMessage_OnFlareCustomPlaced",
+        "FeedbackMessage_OnBeaconAttackPlaced",
+        "FeedbackMessage_OnBeaconDefendPlaced",
+        "FeedbackMessage_OnBeaconHelpPlaced",
+        "FeedbackMessage_OnBeaconCustomPlaced",
         "FeedbackMessage_OnUnitUnderAttack",
         "FeedbackMessage_OnUnloadFromTransportOrder",
         "FeedbackMessage_OnUnloadAtPositionOrder",
@@ -180,8 +180,8 @@ export Generated_DispatchedMessageType_Enum is TDispatchedMessageType
         "FeedbackMessage_OnFastMoveAndAttackOrder",
         "FeedbackMessage_OnAIManageArtillery_FocusOrder",
         "FeedbackMessage_OnAirplaneAttackOrder",
-        "FeedbackMessage_OnFlareFireSupportPlaced",
-        "FeedbackMessage_OnFlareEnemySpottedPlaced",
+        "FeedbackMessage_OnBeaconFireSupportPlaced",
+        "FeedbackMessage_OnBeaconEnemySpottedPlaced",
         "FeedbackMessage_OnCommandZoneSecuredByPlayer",
         "FeedbackMessage_OnCommandZoneLost",
         "FeedbackMessage_OnCommandZoneSecuredByEnemy",

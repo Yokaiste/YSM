@@ -206,6 +206,13 @@ unnamed ShowroomVehicleDepictionRegistration
 )
 unnamed ShowroomVehicleDepictionRegistration
 (
+    MimeticName = "showroom_81mm_mortar_Guards_UK"
+    Alternatives = Alternatives_81mm_mortar_Guards_UK
+    Selector = SpecificVehicleDepictionSelector
+    SubDepictions = HumanSubDepictionsShowroom_81mm_mortar_Guards_UK
+)
+unnamed ShowroomVehicleDepictionRegistration
+(
     MimeticName = "showroom_81mm_mortar_NG_US"
     Alternatives = Alternatives_81mm_mortar_NG_US
     Selector = SpecificVehicleDepictionSelector
@@ -794,6 +801,20 @@ unnamed ShowroomVehicleDepictionRegistration
 )
 unnamed ShowroomVehicleDepictionRegistration
 (
+    MimeticName = "showroom_AS90_155mm_UK"
+    Alternatives = Alternatives_AS90_155mm_UK
+    Selector = SpecificVehicleDepictionSelector
+    SubDepictions = 
+    [
+        ObjectSubDepiction
+        (
+            Anchor = "base_tourelle_02"
+            MeshDescriptor = $/GFX/DepictionResources/Modele_AS90_155mm_UK_Tourelle_02
+        ),
+    ]
+)
+unnamed ShowroomVehicleDepictionRegistration
+(
     MimeticName = "showroom_ASU_85_CMD_POL"
     Alternatives = Alternatives_ASU_85_CMD_POL
     Selector = SpecificVehicleDepictionSelector
@@ -911,6 +932,13 @@ unnamed ShowroomVehicleDepictionRegistration
 )
 unnamed ShowroomVehicleDepictionRegistration
 (
+    MimeticName = "showroom_ATteam_Fagot_Gvardeitsy_SOV"
+    Alternatives = Alternatives_ATteam_Fagot_Gvardeitsy_SOV
+    Selector = SpecificVehicleDepictionSelector
+    SubDepictions = HumanSubDepictionsShowroom_ATteam_Fagot_Gvardeitsy_SOV
+)
+unnamed ShowroomVehicleDepictionRegistration
+(
     MimeticName = "showroom_ATteam_Fagot_SOV"
     Alternatives = Alternatives_ATteam_Fagot_SOV
     Selector = SpecificVehicleDepictionSelector
@@ -957,6 +985,13 @@ unnamed ShowroomVehicleDepictionRegistration
     Alternatives = Alternatives_ATteam_Konkurs_DDR
     Selector = SpecificVehicleDepictionSelector
     SubDepictions = HumanSubDepictionsShowroom_ATteam_Konkurs_DDR
+)
+unnamed ShowroomVehicleDepictionRegistration
+(
+    MimeticName = "showroom_ATteam_Konkurs_Gvardeitsy_SOV"
+    Alternatives = Alternatives_ATteam_Konkurs_Gvardeitsy_SOV
+    Selector = SpecificVehicleDepictionSelector
+    SubDepictions = HumanSubDepictionsShowroom_ATteam_Konkurs_Gvardeitsy_SOV
 )
 unnamed ShowroomVehicleDepictionRegistration
 (
@@ -1034,6 +1069,13 @@ unnamed ShowroomVehicleDepictionRegistration
     Alternatives = Alternatives_ATteam_Milan_2_FR
     Selector = SpecificVehicleDepictionSelector
     SubDepictions = HumanSubDepictionsShowroom_ATteam_Milan_2_FR
+)
+unnamed ShowroomVehicleDepictionRegistration
+(
+    MimeticName = "showroom_ATteam_Milan_2_Guards_UK"
+    Alternatives = Alternatives_ATteam_Milan_2_Guards_UK
+    Selector = SpecificVehicleDepictionSelector
+    SubDepictions = HumanSubDepictionsShowroom_ATteam_Milan_2_Guards_UK
 )
 unnamed ShowroomVehicleDepictionRegistration
 (
@@ -1146,6 +1188,13 @@ unnamed ShowroomVehicleDepictionRegistration
     Alternatives = Alternatives_ATteam_RCL_SPG9_FJ_DDR
     Selector = SpecificVehicleDepictionSelector
     SubDepictions = HumanSubDepictionsShowroom_ATteam_RCL_SPG9_FJ_DDR
+)
+unnamed ShowroomVehicleDepictionRegistration
+(
+    MimeticName = "showroom_ATteam_RCL_SPG9_Gvardeitsy_SOV"
+    Alternatives = Alternatives_ATteam_RCL_SPG9_Gvardeitsy_SOV
+    Selector = SpecificVehicleDepictionSelector
+    SubDepictions = HumanSubDepictionsShowroom_ATteam_RCL_SPG9_Gvardeitsy_SOV
 )
 unnamed ShowroomVehicleDepictionRegistration
 (
@@ -1698,6 +1747,12 @@ unnamed ShowroomVehicleDepictionRegistration
     Selector = SpecificVehicleDepictionSelector
 
     SubDepictionGenerators = [ SubGenerators_Showroom_BMP_1_CMD_POL ]
+)
+unnamed ShowroomVehicleDepictionRegistration
+(
+    MimeticName = "showroom_BMP_1_CMD_POTOK2_SOV"
+    Alternatives = Alternatives_BMP_1_CMD_POTOK2_SOV
+    Selector = SpecificVehicleDepictionSelector
 )
 unnamed ShowroomVehicleDepictionRegistration
 (
@@ -2393,6 +2448,12 @@ unnamed ShowroomVehicleDepictionRegistration
 )
 unnamed ShowroomVehicleDepictionRegistration
 (
+    MimeticName = "showroom_BTR_80_reco_SOV"
+    Alternatives = Alternatives_BTR_80_reco_SOV
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed ShowroomVehicleDepictionRegistration
+(
     MimeticName = "showroom_BTR_D_Robot_SOV"
     Alternatives = Alternatives_BTR_D_Robot_SOV
     Selector = SpecificVehicleDepictionSelector
@@ -2429,6 +2490,20 @@ unnamed ShowroomVehicleDepictionRegistration
     Alternatives = Alternatives_Bedford_MJ_4t_trans_UK
     Selector = SpecificVehicleDepictionSelector
     SubDepictions = HumanSubDepictionsShowroom_Bedford_MJ_4t_trans_UK
+)
+unnamed ShowroomVehicleDepictionRegistration
+(
+    MimeticName = "showroom_Bedford_TM_6x6_supply_UK"
+    Alternatives = Alternatives_Bedford_TM_6x6_supply_UK
+    Selector = SpecificVehicleDepictionSelector
+    SubDepictions = HumanSubDepictionsShowroom_Bedford_TM_6x6_supply_UK
+)
+unnamed ShowroomVehicleDepictionRegistration
+(
+    MimeticName = "showroom_Bedford_TM_6x6_trans_UK"
+    Alternatives = Alternatives_Bedford_TM_6x6_trans_UK
+    Selector = SpecificVehicleDepictionSelector
+    SubDepictions = HumanSubDepictionsShowroom_Bedford_TM_6x6_trans_UK
 )
 unnamed ShowroomVehicleDepictionRegistration
 (
@@ -2587,6 +2662,34 @@ unnamed ShowroomVehicleDepictionRegistration
 )
 unnamed ShowroomVehicleDepictionRegistration
 (
+    MimeticName = "showroom_Centurion_Mk13_CMD_UK"
+    Alternatives = Alternatives_Centurion_Mk13_CMD_UK
+    Selector = SpecificVehicleDepictionSelector
+    SubDepictions = 
+    [
+        ObjectSubDepiction
+        (
+            Anchor = "base_tourelle_02"
+            MeshDescriptor = $/GFX/DepictionResources/Modele_Centurion_Mk13_UK_Tourelle_02
+        ),
+    ]
+)
+unnamed ShowroomVehicleDepictionRegistration
+(
+    MimeticName = "showroom_Centurion_Mk13_UK"
+    Alternatives = Alternatives_Centurion_Mk13_UK
+    Selector = SpecificVehicleDepictionSelector
+    SubDepictions = 
+    [
+        ObjectSubDepiction
+        (
+            Anchor = "base_tourelle_02"
+            MeshDescriptor = $/GFX/DepictionResources/Modele_Centurion_Mk13_UK_Tourelle_02
+        ),
+    ]
+)
+unnamed ShowroomVehicleDepictionRegistration
+(
     MimeticName = "showroom_Centurion_Mk5_2_NL"
     Alternatives = Alternatives_Centurion_Mk5_2_NL
     Selector = SpecificVehicleDepictionSelector
@@ -2737,6 +2840,15 @@ unnamed ShowroomVehicleDepictionRegistration
     Alternatives = Alternatives_DCA_Aspide_ESP
     Selector = SpecificVehicleDepictionSelector
     SubDepictions = HumanSubDepictionsShowroom_DCA_Aspide_ESP
+)
+unnamed ShowroomVehicleDepictionRegistration
+(
+    MimeticName = "showroom_DCA_Bloodhound_UK"
+    Alternatives = Alternatives_DCA_Bloodhound_UK
+    Selector = SpecificVehicleDepictionSelector
+    SubDepictions = HumanSubDepictionsShowroom_DCA_Bloodhound_UK
+
+    SubDepictionGenerators = [ SubGenerators_Showroom_DCA_Bloodhound_UK ]
 )
 unnamed ShowroomVehicleDepictionRegistration
 (
@@ -3035,6 +3147,13 @@ unnamed ShowroomVehicleDepictionRegistration
     SubDepictions = HumanSubDepictionsShowroom_DCA_Rapier_UK
 
     SubDepictionGenerators = [ SubGenerators_Showroom_DCA_Rapier_UK ]
+)
+unnamed ShowroomVehicleDepictionRegistration
+(
+    MimeticName = "showroom_DCA_Starstreak_LML_UK"
+    Alternatives = Alternatives_DCA_Starstreak_LML_UK
+    Selector = SpecificVehicleDepictionSelector
+    SubDepictions = HumanSubDepictionsShowroom_DCA_Starstreak_LML_UK
 )
 unnamed ShowroomVehicleDepictionRegistration
 (
@@ -3401,6 +3520,12 @@ unnamed ShowroomVehicleDepictionRegistration
 )
 unnamed ShowroomVehicleDepictionRegistration
 (
+    MimeticName = "showroom_FV107_Scimitar_Spyglass_UK"
+    Alternatives = Alternatives_FV107_Scimitar_Spyglass_UK
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed ShowroomVehicleDepictionRegistration
+(
     MimeticName = "showroom_FV107_Scimitar_UK"
     Alternatives = Alternatives_FV107_Scimitar_UK
     Selector = SpecificVehicleDepictionSelector
@@ -3415,6 +3540,24 @@ unnamed ShowroomVehicleDepictionRegistration
 (
     MimeticName = "showroom_FV120_Spartan_MCT_UK"
     Alternatives = Alternatives_FV120_Spartan_MCT_UK
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed ShowroomVehicleDepictionRegistration
+(
+    MimeticName = "showroom_FV1611_Humber_Pig_UK"
+    Alternatives = Alternatives_FV1611_Humber_Pig_UK
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed ShowroomVehicleDepictionRegistration
+(
+    MimeticName = "showroom_FV1611a_Kremlin_Pig_UK"
+    Alternatives = Alternatives_FV1611a_Kremlin_Pig_UK
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed ShowroomVehicleDepictionRegistration
+(
+    MimeticName = "showroom_FV1612_Humber_CMD_UK"
+    Alternatives = Alternatives_FV1612_Humber_CMD_UK
     Selector = SpecificVehicleDepictionSelector
 )
 unnamed ShowroomVehicleDepictionRegistration
@@ -3445,6 +3588,12 @@ unnamed ShowroomVehicleDepictionRegistration
 (
     MimeticName = "showroom_FV4201_Chieftain_Mk11_UK"
     Alternatives = Alternatives_FV4201_Chieftain_Mk11_UK
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed ShowroomVehicleDepictionRegistration
+(
+    MimeticName = "showroom_FV4201_Chieftain_Mk1_4_UK"
+    Alternatives = Alternatives_FV4201_Chieftain_Mk1_4_UK
     Selector = SpecificVehicleDepictionSelector
 )
 unnamed ShowroomVehicleDepictionRegistration
@@ -3573,6 +3722,12 @@ unnamed ShowroomVehicleDepictionRegistration
 )
 unnamed ShowroomVehicleDepictionRegistration
 (
+    MimeticName = "showroom_FV721_Fox_ZB298_UK"
+    Alternatives = Alternatives_FV721_Fox_ZB298_UK
+    Selector = SpecificVehicleDepictionSelector
+)
+unnamed ShowroomVehicleDepictionRegistration
+(
     MimeticName = "showroom_Faun_Kraka_20mm_RFA"
     Alternatives = Alternatives_Faun_Kraka_20mm_RFA
     Selector = SpecificVehicleDepictionSelector
@@ -3694,6 +3849,14 @@ unnamed ShowroomVehicleDepictionRegistration
 )
 unnamed ShowroomVehicleDepictionRegistration
 (
+    MimeticName = "showroom_Ferret_Swingfire_UK"
+    Alternatives = Alternatives_Ferret_Swingfire_UK
+    Selector = SpecificVehicleDepictionSelector
+
+    SubDepictionGenerators = [ SubGenerators_Showroom_Ferret_Swingfire_UK ]
+)
+unnamed ShowroomVehicleDepictionRegistration
+(
     MimeticName = "showroom_GAZ_46_DDR"
     Alternatives = Alternatives_GAZ_46_DDR
     Selector = SpecificVehicleDepictionSelector
@@ -3761,6 +3924,13 @@ unnamed ShowroomVehicleDepictionRegistration
     Alternatives = Alternatives_GAZ_66_POL
     Selector = SpecificVehicleDepictionSelector
     SubDepictions = HumanSubDepictionsShowroom_GAZ_66_POL
+)
+unnamed ShowroomVehicleDepictionRegistration
+(
+    MimeticName = "showroom_GAZ_66_SIGINT_SOV"
+    Alternatives = Alternatives_GAZ_66_SIGINT_SOV
+    Selector = SpecificVehicleDepictionSelector
+    SubDepictions = HumanSubDepictionsShowroom_GAZ_66_SIGINT_SOV
 )
 unnamed ShowroomVehicleDepictionRegistration
 (
@@ -3891,6 +4061,13 @@ unnamed ShowroomVehicleDepictionRegistration
 )
 unnamed ShowroomVehicleDepictionRegistration
 (
+    MimeticName = "showroom_HMGteam_AGS17_Gvardeitsy_SOV"
+    Alternatives = Alternatives_HMGteam_AGS17_Gvardeitsy_SOV
+    Selector = SpecificVehicleDepictionSelector
+    SubDepictions = HumanSubDepictionsShowroom_HMGteam_AGS17_Gvardeitsy_SOV
+)
+unnamed ShowroomVehicleDepictionRegistration
+(
     MimeticName = "showroom_HMGteam_AGS17_POL"
     Alternatives = Alternatives_HMGteam_AGS17_POL
     Selector = SpecificVehicleDepictionSelector
@@ -3982,6 +4159,13 @@ unnamed ShowroomVehicleDepictionRegistration
 )
 unnamed ShowroomVehicleDepictionRegistration
 (
+    MimeticName = "showroom_HMGteam_M1919_Reserve_UK"
+    Alternatives = Alternatives_HMGteam_M1919_Reserve_UK
+    Selector = SpecificVehicleDepictionSelector
+    SubDepictions = HumanSubDepictionsShowroom_HMGteam_M1919_Reserve_UK
+)
+unnamed ShowroomVehicleDepictionRegistration
+(
     MimeticName = "showroom_HMGteam_M2HB_AB_US"
     Alternatives = Alternatives_HMGteam_M2HB_AB_US
     Selector = SpecificVehicleDepictionSelector
@@ -4021,6 +4205,13 @@ unnamed ShowroomVehicleDepictionRegistration
     Alternatives = Alternatives_HMGteam_M2HB_LUX
     Selector = SpecificVehicleDepictionSelector
     SubDepictions = HumanSubDepictionsShowroom_HMGteam_M2HB_LUX
+)
+unnamed ShowroomVehicleDepictionRegistration
+(
+    MimeticName = "showroom_HMGteam_M2HB_M63_UK"
+    Alternatives = Alternatives_HMGteam_M2HB_M63_UK
+    Selector = SpecificVehicleDepictionSelector
+    SubDepictions = HumanSubDepictionsShowroom_HMGteam_M2HB_M63_UK
 )
 unnamed ShowroomVehicleDepictionRegistration
 (
@@ -4122,6 +4313,13 @@ unnamed ShowroomVehicleDepictionRegistration
 )
 unnamed ShowroomVehicleDepictionRegistration
 (
+    MimeticName = "showroom_HMGteam_MAG_Guards_UK"
+    Alternatives = Alternatives_HMGteam_MAG_Guards_UK
+    Selector = SpecificVehicleDepictionSelector
+    SubDepictions = HumanSubDepictionsShowroom_HMGteam_MAG_Guards_UK
+)
+unnamed ShowroomVehicleDepictionRegistration
+(
     MimeticName = "showroom_HMGteam_MAG_NL"
     Alternatives = Alternatives_HMGteam_MAG_NL
     Selector = SpecificVehicleDepictionSelector
@@ -4210,6 +4408,13 @@ unnamed ShowroomVehicleDepictionRegistration
     Alternatives = Alternatives_HMGteam_NSV_DShV_SOV
     Selector = SpecificVehicleDepictionSelector
     SubDepictions = HumanSubDepictionsShowroom_HMGteam_NSV_DShV_SOV
+)
+unnamed ShowroomVehicleDepictionRegistration
+(
+    MimeticName = "showroom_HMGteam_NSV_Gvardeitsy_SOV"
+    Alternatives = Alternatives_HMGteam_NSV_Gvardeitsy_SOV
+    Selector = SpecificVehicleDepictionSelector
+    SubDepictions = HumanSubDepictionsShowroom_HMGteam_NSV_Gvardeitsy_SOV
 )
 unnamed ShowroomVehicleDepictionRegistration
 (
@@ -4383,6 +4588,13 @@ unnamed ShowroomVehicleDepictionRegistration
     Alternatives = Alternatives_Howz_B4M_203mm_SOV
     Selector = SpecificVehicleDepictionSelector
     SubDepictions = HumanSubDepictionsShowroom_Howz_B4M_203mm_SOV
+)
+unnamed ShowroomVehicleDepictionRegistration
+(
+    MimeticName = "showroom_Howz_BL_5_5in_140mm_UK"
+    Alternatives = Alternatives_Howz_BL_5_5in_140mm_UK
+    Selector = SpecificVehicleDepictionSelector
+    SubDepictions = HumanSubDepictionsShowroom_Howz_BL_5_5in_140mm_UK
 )
 unnamed ShowroomVehicleDepictionRegistration
 (
@@ -4631,6 +4843,13 @@ unnamed ShowroomVehicleDepictionRegistration
 )
 unnamed ShowroomVehicleDepictionRegistration
 (
+    MimeticName = "showroom_Howz_M56_Pack_UK"
+    Alternatives = Alternatives_Howz_M56_Pack_UK
+    Selector = SpecificVehicleDepictionSelector
+    SubDepictions = HumanSubDepictionsShowroom_Howz_M56_Pack_UK
+)
+unnamed ShowroomVehicleDepictionRegistration
+(
     MimeticName = "showroom_Howz_M59_LongTom_155mm_BEL"
     Alternatives = Alternatives_Howz_M59_LongTom_155mm_BEL
     Selector = SpecificVehicleDepictionSelector
@@ -4663,6 +4882,13 @@ unnamed ShowroomVehicleDepictionRegistration
     Alternatives = Alternatives_Howz_MstaB_150mm_SOV
     Selector = SpecificVehicleDepictionSelector
     SubDepictions = HumanSubDepictionsShowroom_Howz_MstaB_150mm_SOV
+)
+unnamed ShowroomVehicleDepictionRegistration
+(
+    MimeticName = "showroom_Howz_QF_25pdr_87mm_UK"
+    Alternatives = Alternatives_Howz_QF_25pdr_87mm_UK
+    Selector = SpecificVehicleDepictionSelector
+    SubDepictions = HumanSubDepictionsShowroom_Howz_QF_25pdr_87mm_UK
 )
 unnamed ShowroomVehicleDepictionRegistration
 (
@@ -5084,6 +5310,13 @@ unnamed ShowroomVehicleDepictionRegistration
 )
 unnamed ShowroomVehicleDepictionRegistration
 (
+    MimeticName = "showroom_LandRover_CMD_nonBerlin_UK"
+    Alternatives = Alternatives_LandRover_CMD_nonBerlin_UK
+    Selector = SpecificVehicleDepictionSelector
+    SubDepictions = HumanSubDepictionsShowroom_LandRover_CMD_nonBerlin_UK
+)
+unnamed ShowroomVehicleDepictionRegistration
+(
     MimeticName = "showroom_LandRover_ESP"
     Alternatives = Alternatives_LandRover_ESP
     Selector = SpecificVehicleDepictionSelector
@@ -5112,6 +5345,13 @@ unnamed ShowroomVehicleDepictionRegistration
 )
 unnamed ShowroomVehicleDepictionRegistration
 (
+    MimeticName = "showroom_LandRover_MILAN_nonBerlin_UK"
+    Alternatives = Alternatives_LandRover_MILAN_nonBerlin_UK
+    Selector = SpecificVehicleDepictionSelector
+    SubDepictions = HumanSubDepictionsShowroom_LandRover_MILAN_nonBerlin_UK
+)
+unnamed ShowroomVehicleDepictionRegistration
+(
     MimeticName = "showroom_LandRover_MP_BEL"
     Alternatives = Alternatives_LandRover_MP_BEL
     Selector = SpecificVehicleDepictionSelector
@@ -5130,6 +5370,13 @@ unnamed ShowroomVehicleDepictionRegistration
     Alternatives = Alternatives_LandRover_MP_NL
     Selector = SpecificVehicleDepictionSelector
     SubDepictions = HumanSubDepictionsShowroom_LandRover_MP_NL
+)
+unnamed ShowroomVehicleDepictionRegistration
+(
+    MimeticName = "showroom_LandRover_MP_UK"
+    Alternatives = Alternatives_LandRover_MP_UK
+    Selector = SpecificVehicleDepictionSelector
+    SubDepictions = HumanSubDepictionsShowroom_LandRover_MP_UK
 )
 unnamed ShowroomVehicleDepictionRegistration
 (
@@ -5158,6 +5405,25 @@ unnamed ShowroomVehicleDepictionRegistration
     Alternatives = Alternatives_LandRover_WOMBAT_UK
     Selector = SpecificVehicleDepictionSelector
     SubDepictions = HumanSubDepictionsShowroom_LandRover_WOMBAT_UK
+)
+unnamed ShowroomVehicleDepictionRegistration
+(
+    MimeticName = "showroom_LandRover_Yeoman_UK"
+    Alternatives = Alternatives_LandRover_Yeoman_UK
+    Selector = SpecificVehicleDepictionSelector
+    SubDepictions = HumanSubDepictionsShowroom_LandRover_Yeoman_UK + 
+    [
+        ObjectSubDepiction
+        (
+            Anchor = "base_tourelle_01"
+            MeshDescriptor = $/GFX/DepictionResources/Modele_LandRover_Yeoman_UK_Tourelle_01
+        ),
+        ObjectSubDepiction
+        (
+            Anchor = "base_tourelle_02"
+            MeshDescriptor = $/GFX/DepictionResources/Modele_LandRover_Yeoman_UK_Tourelle_02
+        ),
+    ]
 )
 unnamed ShowroomVehicleDepictionRegistration
 (
@@ -7457,6 +7723,13 @@ unnamed ShowroomVehicleDepictionRegistration
 )
 unnamed ShowroomVehicleDepictionRegistration
 (
+    MimeticName = "showroom_MAZ_535A_supply_SOV"
+    Alternatives = Alternatives_MAZ_535A_supply_SOV
+    Selector = SpecificVehicleDepictionSelector
+    SubDepictions = HumanSubDepictionsShowroom_MAZ_535A_supply_SOV
+)
+unnamed ShowroomVehicleDepictionRegistration
+(
     MimeticName = "showroom_MCV_80_Warrior_CMD_UK"
     Alternatives = Alternatives_MCV_80_Warrior_CMD_UK
     Selector = SpecificVehicleDepictionSelector
@@ -9467,6 +9740,20 @@ unnamed ShowroomVehicleDepictionRegistration
 )
 unnamed ShowroomVehicleDepictionRegistration
 (
+    MimeticName = "showroom_T72B1_early_SOV"
+    Alternatives = Alternatives_T72B1_early_SOV
+    Selector = SpecificVehicleDepictionSelector
+    SubDepictions = 
+    [
+        ObjectSubDepiction
+        (
+            Anchor = "base_tourelle_02"
+            MeshDescriptor = $/GFX/DepictionResources/Modele_T72B1_early_SOV_Tourelle_02
+        ),
+    ]
+)
+unnamed ShowroomVehicleDepictionRegistration
+(
     MimeticName = "showroom_T72B_CMD_SOV"
     Alternatives = Alternatives_T72B_CMD_SOV
     Selector = SpecificVehicleDepictionSelector
@@ -9817,6 +10104,20 @@ unnamed ShowroomVehicleDepictionRegistration
 )
 unnamed ShowroomVehicleDepictionRegistration
 (
+    MimeticName = "showroom_T72_CMD_SOV"
+    Alternatives = Alternatives_T72_CMD_SOV
+    Selector = SpecificVehicleDepictionSelector
+    SubDepictions = 
+    [
+        ObjectSubDepiction
+        (
+            Anchor = "base_tourelle_02"
+            MeshDescriptor = $/GFX/DepictionResources/Modele_T72_CMD_SOV_Tourelle_02
+        ),
+    ]
+)
+unnamed ShowroomVehicleDepictionRegistration
+(
     MimeticName = "showroom_T72_DDR"
     Alternatives = Alternatives_T72_DDR
     Selector = SpecificVehicleDepictionSelector
@@ -9952,6 +10253,20 @@ unnamed ShowroomVehicleDepictionRegistration
         (
             Anchor = "base_tourelle_02"
             MeshDescriptor = $/GFX/DepictionResources/Modele_T80U_CMD_SOV_Tourelle_02
+        ),
+    ]
+)
+unnamed ShowroomVehicleDepictionRegistration
+(
+    MimeticName = "showroom_T80U_Obr89_SOV"
+    Alternatives = Alternatives_T80U_Obr89_SOV
+    Selector = SpecificVehicleDepictionSelector
+    SubDepictions = 
+    [
+        ObjectSubDepiction
+        (
+            Anchor = "base_tourelle_02"
+            MeshDescriptor = $/GFX/DepictionResources/Modele_T80U_Obr89_SOV_Tourelle_02
         ),
     ]
 )

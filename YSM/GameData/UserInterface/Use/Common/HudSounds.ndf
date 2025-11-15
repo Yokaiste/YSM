@@ -2,25 +2,25 @@ HudSoundOnUnitDestroyed is TemplateSoundDescriptor
 (
     FileName  = "GameData:/Assets/Sounds/SFX/SA/event_03.wav"
 )
-HudSoundFlarePlaced is TemplateSoundDescriptor
+HudSoundBeaconPlaced is TemplateSoundDescriptor
 (
-    FileName  = "GameData:/Assets/Sounds/Hud/FlarePlaced.wav"
+    FileName  = "GameData:/Assets/Sounds/Hud/BeaconPlaced.wav"
 )
-HudSoundFlareHelpPlaced is TemplateSoundDescriptor
+HudSoundBeaconHelpPlaced is TemplateSoundDescriptor
 (
-    FileName  = "GameData:/Assets/Sounds/Hud/FlareHelpPlaced.wav"
+    FileName  = "GameData:/Assets/Sounds/Hud/BeaconHelpPlaced.wav"
 )
-HudSoundFlareCustomPlaced is TemplateSoundDescriptor
+HudSoundBeaconCustomPlaced is TemplateSoundDescriptor
 (
-    FileName  = "GameData:/Assets/Sounds/Hud/FlareCustomPlaced.wav"
+    FileName  = "GameData:/Assets/Sounds/Hud/BeaconCustomPlaced.wav"
 )
-HudSoundFlareSpottedPlaced is TemplateSoundDescriptor
+HudSoundBeaconSpottedPlaced is TemplateSoundDescriptor
 (
-    FileName  = "GameData:/Assets/Sounds/Hud/FlareSpottedPlaced.wav"
+    FileName  = "GameData:/Assets/Sounds/Hud/BeaconSpottedPlaced.wav"
 )
-HudSoundFlareAttkPlaced is TemplateSoundDescriptor
+HudSoundBeaconAttkPlaced is TemplateSoundDescriptor
 (
-    FileName  = "GameData:/Assets/Sounds/Hud/FlareAttkPlaced.wav"
+    FileName  = "GameData:/Assets/Sounds/Hud/BeaconAttkPlaced.wav"
 )
 HudSoundAirContact is TemplateSoundDescriptor
 (

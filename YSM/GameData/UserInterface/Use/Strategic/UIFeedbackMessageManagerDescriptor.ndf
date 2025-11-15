@@ -44,49 +44,49 @@ StrategicOnObjectiveLost is TUIFeedbackDispatchedMessageDescriptor
     TimeBeforeRepeat = 20
 )
 
-StrategicOnFlareAttackPlaced is TUIFeedbackDispatchedMessageDescriptor
+StrategicOnBeaconAttackPlaced is TUIFeedbackDispatchedMessageDescriptor
 (
-    HudSound = ~/HudSoundFlarePlaced
+    HudSound = ~/HudSoundBeaconPlaced
     IsActiveForAllies = true
     IsActiveForPlayer = true
     AllowFocusOnEvent = true
 )
 
-StrategicOnFlareDefendPlaced is TUIFeedbackDispatchedMessageDescriptor
+StrategicOnBeaconDefendPlaced is TUIFeedbackDispatchedMessageDescriptor
 (
-    HudSound = ~/HudSoundFlarePlaced
+    HudSound = ~/HudSoundBeaconPlaced
     IsActiveForAllies = true
     IsActiveForPlayer = true
     AllowFocusOnEvent = true
 )
 
-StrategicOnFlareHelpPlaced is TUIFeedbackDispatchedMessageDescriptor
+StrategicOnBeaconHelpPlaced is TUIFeedbackDispatchedMessageDescriptor
 (
-    HudSound = ~/HudSoundFlarePlaced
+    HudSound = ~/HudSoundBeaconPlaced
     IsActiveForAllies = true
     IsActiveForPlayer = true
     AllowFocusOnEvent = true
 )
 
-StrategicOnFlareCustomPlaced is TUIFeedbackDispatchedMessageDescriptor
+StrategicOnBeaconCustomPlaced is TUIFeedbackDispatchedMessageDescriptor
 (
-    HudSound = ~/HudSoundFlarePlaced
+    HudSound = ~/HudSoundBeaconPlaced
     IsActiveForAllies = true
     IsActiveForPlayer = true
     AllowFocusOnEvent = true
 )
 
-StrategicOnFlareFireSupportPlaced is TUIFeedbackDispatchedMessageDescriptor
+StrategicOnBeaconFireSupportPlaced is TUIFeedbackDispatchedMessageDescriptor
 (
-    HudSound = ~/HudSoundFlarePlaced
+    HudSound = ~/HudSoundBeaconPlaced
     IsActiveForAllies = true
     IsActiveForPlayer = true
     AllowFocusOnEvent = true
 )
 
-StrategicOnFlareEnemySpottedPlaced is TUIFeedbackDispatchedMessageDescriptor
+StrategicOnBeaconEnemySpottedPlaced is TUIFeedbackDispatchedMessageDescriptor
 (
-    HudSound = ~/HudSoundFlarePlaced
+    HudSound = ~/HudSoundBeaconPlaced
     IsActiveForAllies = true
     IsActiveForPlayer = true
     AllowFocusOnEvent = true
@@ -437,12 +437,12 @@ StrategicFeedbackMessageManagerDescriptor is TUISpecificFeedbackMessageManagerDe
         ( FeedbackMessage_OnUnitLost, ~/StrategicOnUnitLost ),
         ( FeedbackMessage_OnObjectiveCaptured, ~/StrategicOnObjectiveCaptured ),
         ( FeedbackMessage_OnObjectiveLost, ~/StrategicOnObjectiveLost ),
-        ( FeedbackMessage_OnFlareAttackPlaced, ~/StrategicOnFlareAttackPlaced ),
-        ( FeedbackMessage_OnFlareDefendPlaced, ~/StrategicOnFlareDefendPlaced ),
-        ( FeedbackMessage_OnFlareHelpPlaced, ~/StrategicOnFlareHelpPlaced ),
-        ( FeedbackMessage_OnFlareCustomPlaced, ~/StrategicOnFlareCustomPlaced ),
-        ( FeedbackMessage_OnFlareFireSupportPlaced, ~/StrategicOnFlareFireSupportPlaced ),
-        ( FeedbackMessage_OnFlareEnemySpottedPlaced, ~/StrategicOnFlareEnemySpottedPlaced ),
+        ( FeedbackMessage_OnBeaconAttackPlaced, ~/StrategicOnBeaconAttackPlaced ),
+        ( FeedbackMessage_OnBeaconDefendPlaced, ~/StrategicOnBeaconDefendPlaced ),
+        ( FeedbackMessage_OnBeaconHelpPlaced, ~/StrategicOnBeaconHelpPlaced ),
+        ( FeedbackMessage_OnBeaconCustomPlaced, ~/StrategicOnBeaconCustomPlaced ),
+        ( FeedbackMessage_OnBeaconFireSupportPlaced, ~/StrategicOnBeaconFireSupportPlaced ),
+        ( FeedbackMessage_OnBeaconEnemySpottedPlaced, ~/StrategicOnBeaconEnemySpottedPlaced ),
         ( FeedbackMessage_Strategic_APLost, ~/StrategicOnAPLost ),
         ( FeedbackMessage_Strategic_APGained, ~/StrategicOnAPGained ),
         ( FeedbackMessage_Strategic_PawnDeath, StrategicOnPawnDeath( Token = "SDR_UD") ),

@@ -1,0 +1,3 @@
+export Modele_DCA_Starstreak_LML_UK is TResourceMesh( Mesh="GameData:/Assets/3D/Units/UK/DCA/DCA_Starstreak_LML/DCA_Starstreak_LML.fbx")
+export Modele_DCA_Starstreak_LML_UK_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/UK/DCA/DCA_Starstreak_LML_MID/DCA_Starstreak_LML_MID.fbx")
+export Modele_DCA_Starstreak_LML_UK_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/UK/DCA/DCA_Starstreak_LML_LOW/DCA_Starstreak_LML_LOW.fbx")

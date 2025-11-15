@@ -15,9 +15,6 @@ Constantes is TTunableConstante
 //--------------------------- Constantes Affichage ---------------------------------------//
 
     EliminationWarningsDuration = 5.0
-    FumigeneAlphaGhost = 0.3
-    FumigeneMaxCount = 4
-    FumigeneTimeout = 60.0
 
 //------------------------ Constantes AutomaticBehavior ----------------------------------//
 
@@ -39,7 +36,12 @@ Constantes is TTunableConstante
 
 //--------------------------- Constantes Bâtiments ---------------------------------------//
 
-    UnitPositionVerticalOffsetFromRoofGRU = 21
+    UnitPositionVerticalOffsetFromRoofGRU = -21
+
+//--------------------------- Constantes Beacon ---------------------------------------//
+    BeaconAlphaGhost = 0.3
+    BeaconMaxCount = 4
+    BeaconTimeout = 60.0
 
 //----------------------------- Constantes Combat -----------------------------------------//
 
@@ -439,12 +441,13 @@ WargameConstantes is TWargameTunableConstante
         // Updated by YSM (added)
         , 2, 2.5, 3, 3.5, 4, 4.5, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 40, 50, 60, 70, 80, 90, 100, 150, 200, 300, 400, 500, 1000,
     ]
-    TimeBeforeEarningCommandPoints = MAP
+    TimeBeforeEarningCommandPointsSkirmish = MAP
     [
         (ECombatRule/NotSpecified,   60.0),
         (ECombatRule/Conquest,       60.0),
         (ECombatRule/Destruction,     4.0),
     ]
+    TimeBeforeEarningCommandPointsStrategicBattleground = 60.0
 
     TimeBeforeEarningCommandPointsFactorToAddByNbPlayers = //Facteur de TimeBeforeEarningCommandPoints à ajouter selon des paliers de joueurs
                 [

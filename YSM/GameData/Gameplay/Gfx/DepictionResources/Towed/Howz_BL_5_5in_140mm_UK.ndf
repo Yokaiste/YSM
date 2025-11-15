@@ -1,0 +1,3 @@
+export Modele_Howz_BL_5_5in_140mm_UK is TResourceMesh( Mesh="GameData:/Assets/3D/Units/UK/Canon/Howz_BL_5_5in_140mm/Howz_BL_5_5in_140mm.fbx")
+export Modele_Howz_BL_5_5in_140mm_UK_MID is TResourceMesh( Mesh="GameData:/Assets/3D/Units/UK/Canon/Howz_BL_5_5in_140mm_MID/Howz_BL_5_5in_140mm_MID.fbx")
+export Modele_Howz_BL_5_5in_140mm_UK_LOW is TResourceMesh( Mesh="GameData:/Assets/3D/Units/UK/Canon/Howz_BL_5_5in_140mm_LOW/Howz_BL_5_5in_140mm_LOW.fbx")

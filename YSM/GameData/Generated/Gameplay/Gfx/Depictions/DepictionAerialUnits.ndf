@@ -1,6 +1,101 @@
 // Ne pas éditer, ce fichier est généré par DepictionAerialUnitsFileWriter_Specific
 
 
+// Dépiction de l'unité A109A_RKT_UK
+Op_A109A_RKT_UK_Weapon1 is DepictionOperator_WeaponContinuousFire
+(
+    Anchors = 
+    [
+        "fx_tourelle1_tir_01",
+        "fx_tourelle1_tir_02",
+    ]
+    FireEffectTag = "weapon_effet_tag1"
+    NbFX = 2
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_1"
+    WeaponShootDataPropertyName = "WeaponShootData_0_1"
+)
+Op_A109A_RKT_UK_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
+(
+    Connoisseur = MissileCarriage_A109A_RKT_UK
+    FireEffectTag = "weapon_effet_tag2"
+    NbProj = 1
+    WeaponIndex = 2
+    WeaponShootDataPropertyName = 
+    [
+        "WeaponShootData_0_2",
+    ]
+)
+unnamed TacticAerialDepictionRegistration
+(
+    AdditionalTextures = $/M3D/Shader/HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
+    CoatingName = 'A109A_RKT_UK'
+    Alternatives = Alternatives_A109A_RKT_UK
+
+    Operators = 
+        [
+            $/GFX/Sound/DepictionOperator_MovementSound_SM_Helico_Agusta_A109,
+            DepictionOperator_SoundProbe,
+            Op_A109A_RKT_UK_Weapon1,
+            Op_A109A_RKT_UK_Weapon2,
+            DepictionOperator_CriticalEffects,
+            DepictionOperator_HelicopterLanding,
+            DepictionOperator_GroundPuff_Helico,
+            DepictionOperator_ShadowPointCloudProvider,
+            DepictionOperator_Rotors
+            (
+                HelixList = 
+                [
+                    THelix
+                    (
+                        BladeCount = 4
+                        BladesBoneName = "helice_ls_1"
+                        BlurActionId = "FX_Helice_1"
+                        Clockwise = False
+                        HelixBoneName = "bloc_moteur_1"
+                        RotationAxis = 2
+                        RotationSpeed = 242
+                    ),
+                    THelix
+                    (
+                        BladeCount = 2
+                        BladesBoneName = "helice_ls_2"
+                        BlurActionId = "FX_Helice_2"
+                        Clockwise = False
+                        HelixBoneName = "bloc_moteur_2"
+                        RotationAxis = 1
+                        RotationSpeed = 242
+                    ),
+                ]
+            ),
+            DepictionOperator_Feedback_Degat_Level1,
+            DepictionOperator_Feedback_Degat_Level2,
+            DepictionOperator_Heat,
+            DepictionOperator_EjectableProps_Helico,
+        ]
+        Actions = MAP[
+                    ( "weapon_effet_tag1", Weapon_Pod_HMG_FN_HMP400_12_7mm_x2 ),
+                    ( "weapon_effet_tag2", Weapon_RocketAir_Hydra_70mm_x14 ),
+                ]
+                + DepictionAction_Stress_And_Wrecked_Helicopter
+                + MAP [ ('FX_Helice_1', Template_DepictionAction_Rotor( PaleLength = 1170 PaleCount = 4 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ ('FX_Helice_2', Template_DepictionAction_Rotor( PaleLength = 250 PaleCount = 2 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + DepictionAction_CriticalFX_Helicopter
+
+        SubDepictions = 
+
+        [
+            TSubDepiction
+            (
+                Anchors = 
+                [
+                    "pilot",
+                    "pilot2",
+                ]
+                Depiction = Pilot_Pilote_Helico_UK
+            ),
+        ]        
+)
 // Dépiction de l'unité A109BA_BEL
 unnamed TacticAerialDepictionRegistration
 (
@@ -782,12 +877,11 @@ Op_A6E_Intruder_SEAD_US_Weapon1 is DepictionOperator_WeaponMissileCarriageFire
 (
     Connoisseur = MissileCarriage_A6E_Intruder_SEAD_US
     FireEffectTag = "weapon_effet_tag1"
-    NbProj = 2
+    NbProj = 1
     WeaponIndex = 2
     WeaponShootDataPropertyName = 
     [
         "WeaponShootData_0_1",
-        "WeaponShootData_1_1",
     ]
 )
 unnamed TacticAerialDepictionRegistration
@@ -814,7 +908,7 @@ unnamed TacticAerialDepictionRegistration
             DepictionOperator_Flares,
         ]
         Actions = MAP[
-                    ( "weapon_effet_tag1", Weapon_AGM_AGM65E_Maverick ),
+                    ( "weapon_effet_tag1", Weapon_AGM_AGM45_Shrike ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Avion
                 + DepictionAction_CriticalFX_Airplane
@@ -5702,6 +5796,91 @@ unnamed TacticAerialDepictionRegistration
             ),
         ]        
 )
+// Dépiction de l'unité CH47D_Chinook_SAS_UK
+Op_CH47D_Chinook_SAS_UK_Weapon1 is DepictionOperator_WeaponContinuousFire
+(
+    Anchors = 
+    [
+        "fx_tourelle1_tir_01",
+    ]
+    FireEffectTag = "weapon_effet_tag1"
+    NbFX = 1
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_1"
+    WeaponShootDataPropertyName = "WeaponShootData_0_1"
+)
+unnamed TacticAerialDepictionRegistration
+(
+    AdditionalTextures = $/M3D/Shader/HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
+    CoatingName = 'CH47D_Chinook_SAS_UK'
+    Alternatives = Alternatives_CH47D_Chinook_SAS_UK
+
+    Operators = 
+        [
+            $/GFX/Sound/DepictionOperator_MovementSound_SM_Helico_Chinook,
+            DepictionOperator_SoundProbe,
+            DepictionOperator_Turret_1_Aim,
+            Op_CH47D_Chinook_SAS_UK_Weapon1,
+            DepictionOperator_CriticalEffects,
+            DepictionOperator_HelicopterLanding,
+            DepictionOperator_GroundPuff_Helico,
+            DepictionOperator_ShadowPointCloudProvider,
+            DepictionOperator_Rotors
+            (
+                HelixList = 
+                [
+                    THelix
+                    (
+                        BladeCount = 3
+                        BladesBoneName = "helice_ls_1"
+                        BlurActionId = "FX_Helice_1"
+                        Clockwise = False
+                        HelixBoneName = "bloc_moteur_1"
+                        RotationAxis = 2
+                        RotationSpeed = 242
+                    ),
+                    THelix
+                    (
+                        BladeCount = 3
+                        BladesBoneName = "helice_ls_2"
+                        BlurActionId = "FX_Helice_2"
+                        Clockwise = True
+                        HelixBoneName = "bloc_moteur_2"
+                        RotationAxis = 2
+                        RotationSpeed = 242
+                    ),
+                ]
+            ),
+            DepictionOperator_Feedback_Degat_Level1,
+            DepictionOperator_Feedback_Degat_Level2,
+            DepictionOperator_Heat,
+            DepictionOperator_TurretCannonGatling_SlowRotation( XAxisHasTargetPhysicalPropertyName="tourelle1target" XAxisRotationNode="canon_01" ),
+            DepictionOperator_EjectableProps_Helico,
+            DepictionOperator_Flares,
+        ]
+        Actions = MAP[
+                    ( "weapon_effet_tag1", Weapon_Gatling_m134_7_62mm ),
+                ]
+                + DepictionAction_Stress_And_Wrecked_Helicopter
+                + MAP [ ('FX_Helice_1', Template_DepictionAction_Rotor( PaleLength = 1900 PaleCount = 3 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ ('FX_Helice_2', Template_DepictionAction_Rotor( PaleLength = 1900 PaleCount = 3 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_2" ))]
+                + DepictionAction_CriticalFX_Helicopter
+                + DepictionAction_Flare_Simple
+
+        SubDepictions = 
+
+        [
+            TSubDepiction
+            (
+                Anchors = 
+                [
+                    "pilot",
+                    "pilot2",
+                ]
+                Depiction = Pilot_Pilote_Helico_US
+            ),
+        ]        
+)
 // Dépiction de l'unité CH47D_Chinook_supply_UK
 unnamed TacticAerialDepictionRegistration
 (
@@ -6642,6 +6821,120 @@ unnamed TacticAerialDepictionRegistration
         ]        
 
         SubDepictionGenerators = [ SubGenerators_CM170_Magister_SS11_FR ]
+)
+// Dépiction de l'unité Canberra_B2_UK
+Op_Canberra_B2_UK_Weapon1 is DepictionOperator_WeaponMissileCarriageFire
+(
+    Connoisseur = MissileCarriage_Canberra_B2_UK
+    FireEffectTag = "weapon_effet_tag1"
+    NbProj = 1
+    WeaponIndex = 1
+    WeaponShootDataPropertyName = 
+    [
+        "WeaponShootData_0_1",
+    ]
+)
+Op_Canberra_B2_UK_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
+(
+    Connoisseur = MissileCarriage_Canberra_B2_UK
+    FireEffectTag = "weapon_effet_tag2"
+    NbProj = 1
+    WeaponIndex = 2
+    WeaponShootDataPropertyName = 
+    [
+        "WeaponShootData_0_2",
+    ]
+)
+unnamed TacticAerialDepictionRegistration
+(
+    Deviator = DepictionDeviator_Airplane
+    AdditionalTextures = $/M3D/Shader/AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
+    CoatingName = 'Canberra_B2_UK'
+    Alternatives = Alternatives_Canberra_B2_UK
+
+    Operators = 
+        [
+            $/GFX/Sound/DepictionOperator_MovementSound_SM_SD_avion_bombardier_Canberra,
+            DepictionOperator_SoundProbe,
+            Op_Canberra_B2_UK_Weapon1,
+            Op_Canberra_B2_UK_Weapon2,
+            DepictionOperator_CriticalEffects,
+            DepictionOperator_AirplaneParts,
+            DepictionOperator_Airplane,
+            DepictionOperator_AirplaneShadow,
+            DepictionOperator_Feedback_Degat_Level1,
+            DepictionOperator_Feedback_Degat_Level2,
+            DepictionOperator_Heat,
+            DepictionOperator_EjectableProps_Plane,
+            DepictionOperator_Flares,
+        ]
+        Actions = MAP[
+                    ( "weapon_effet_tag1", Weapon_Bomb_BL755_cluster_264kg_x2 ),
+                    ( "weapon_effet_tag2", Weapon_Bomb_Mk18_RET_513kg_x6 ),
+                ]
+                + DepictionAction_Stress_And_Wrecked_Avion
+                + DepictionAction_CriticalFX_Airplane
+                + DepictionAction_MovementFX_DoubleReactorAirplane_Smoky
+                + DepictionAction_Flare_Simple
+
+        SubDepictions = 
+
+        [
+            TSubDepiction
+            (
+                Anchors = 
+                [
+                    "pilot",
+                ]
+                Depiction = Pilot_Pilote_US
+            ),
+        ]        
+
+        SubDepictionGenerators = [ SubGenerators_Canberra_B2_UK ]
+)
+// Dépiction de l'unité Canberra_T17A_UK
+unnamed TacticAerialDepictionRegistration
+(
+    Deviator = DepictionDeviator_Airplane
+    AdditionalTextures = $/M3D/Shader/AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
+    CoatingName = 'Canberra_T17A_UK'
+    Alternatives = Alternatives_Canberra_T17A_UK
+
+    Operators = 
+        [
+            $/GFX/Sound/DepictionOperator_MovementSound_SM_SD_avion_bombardier_Canberra,
+            DepictionOperator_SoundProbe,
+            DepictionOperator_CriticalEffects,
+            DepictionOperator_AirplaneParts,
+            DepictionOperator_Airplane,
+            DepictionOperator_AirplaneShadow,
+            DepictionOperator_Feedback_Degat_Level1,
+            DepictionOperator_Feedback_Degat_Level2,
+            DepictionOperator_Heat,
+            DepictionOperator_EjectableProps_Plane,
+            DepictionOperator_Flares,
+        ]
+        Actions = MAP[
+                ]
+                + DepictionAction_Stress_And_Wrecked_Avion
+                + DepictionAction_CriticalFX_Airplane
+                + DepictionAction_MovementFX_DoubleReactorAirplane_Smoky
+                + DepictionAction_Flare_Simple
+
+        SubDepictions = 
+
+        [
+            TSubDepiction
+            (
+                Anchors = 
+                [
+                    "pilot",
+                ]
+                Depiction = Pilot_Pilote_US
+            ),
+        ]        
 )
 // Dépiction de l'unité EA6B_Prowler_US
 Op_EA6B_Prowler_US_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
@@ -10385,7 +10678,7 @@ unnamed TacticAerialDepictionRegistration
         Actions = MAP[
                     ( "weapon_effet_tag1", Weapon_GatlingAir_M61_Vulcan_20mm ),
                     ( "weapon_effet_tag2", Weapon_AA_AIM9J_Sidewinder ),
-                    ( "weapon_effet_tag3", Weapon_AA_AIM7M_Sparrow ),
+                    ( "weapon_effet_tag3", Weapon_AA_AIM7F_Sparrow ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Avion
                 + DepictionAction_CriticalFX_Airplane
@@ -11461,6 +11754,92 @@ unnamed TacticAerialDepictionRegistration
         ]        
 
         SubDepictionGenerators = [ SubGenerators_F4_Phantom_AA_F3_UK ]
+)
+// Dépiction de l'unité F4_Phantom_AA_GR2_UK
+Op_F4_Phantom_AA_GR2_UK_Weapon1 is DepictionOperator_WeaponContinuousFire
+(
+    Anchors = 
+    [
+        "fx_tourelle1_tir_01",
+    ]
+    FireEffectTag = "weapon_effet_tag1"
+    NbFX = 1
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_1"
+    WeaponShootDataPropertyName = "WeaponShootData_0_1"
+)
+Op_F4_Phantom_AA_GR2_UK_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
+(
+    Connoisseur = MissileCarriage_F4_Phantom_AA_GR2_UK
+    FireEffectTag = "weapon_effet_tag2"
+    NbProj = 1
+    WeaponIndex = 2
+    WeaponShootDataPropertyName = 
+    [
+        "WeaponShootData_0_2",
+    ]
+)
+Op_F4_Phantom_AA_GR2_UK_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
+(
+    Connoisseur = MissileCarriage_F4_Phantom_AA_GR2_UK
+    FireEffectTag = "weapon_effet_tag3"
+    NbProj = 1
+    WeaponIndex = 3
+    WeaponShootDataPropertyName = 
+    [
+        "WeaponShootData_0_3",
+    ]
+)
+unnamed TacticAerialDepictionRegistration
+(
+    Deviator = DepictionDeviator_Airplane
+    AdditionalTextures = $/M3D/Shader/AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
+    CoatingName = 'F4_Phantom_AA_GR2_UK'
+    Alternatives = Alternatives_F4_Phantom_AA_GR2_UK
+
+    Operators = 
+        [
+            $/GFX/Sound/DepictionOperator_MovementSound_SM_SD_avion_multirole_F4,
+            DepictionOperator_SoundProbe,
+            DepictionOperator_Turret_1_Aim,
+            Op_F4_Phantom_AA_GR2_UK_Weapon1,
+            Op_F4_Phantom_AA_GR2_UK_Weapon2,
+            Op_F4_Phantom_AA_GR2_UK_Weapon3,
+            DepictionOperator_CriticalEffects,
+            DepictionOperator_AirplaneParts,
+            DepictionOperator_Airplane,
+            DepictionOperator_AirplaneShadow,
+            DepictionOperator_Feedback_Degat_Level1,
+            DepictionOperator_Feedback_Degat_Level2,
+            DepictionOperator_Heat,
+            DepictionOperator_EjectableProps_Plane,
+            DepictionOperator_Flares,
+        ]
+        Actions = MAP[
+                    ( "weapon_effet_tag1", Weapon_GatlingAir_M61_Vulcan_20mm ),
+                    ( "weapon_effet_tag2", Weapon_AA_Skyflash ),
+                    ( "weapon_effet_tag3", Weapon_AA_AIM9L_Sidewinder ),
+                ]
+                + DepictionAction_Stress_And_Wrecked_Avion
+                + DepictionAction_CriticalFX_Airplane
+                + DepictionAction_MovementFX_DoubleReactorAirplane_VerySmoky
+                + DepictionAction_Flare_Simple
+
+        SubDepictions = 
+
+        [
+            TSubDepiction
+            (
+                Anchors = 
+                [
+                    "pilot",
+                    "pilot2",
+                ]
+                Depiction = Pilot_Pilote_UK
+            ),
+        ]        
+
+        SubDepictionGenerators = [ SubGenerators_F4_Phantom_AA_GR2_UK ]
 )
 // Dépiction de l'unité F4_Phantom_GR2_HE_UK
 Op_F4_Phantom_GR2_HE_UK_Weapon1 is DepictionOperator_WeaponContinuousFire
@@ -14527,6 +14906,153 @@ unnamed TacticAerialDepictionRegistration
 
         SubDepictionGenerators = [ SubGenerators_Harrier_UK ]
 )
+// Dépiction de l'unité Hawk_T1_AA_UK
+Op_Hawk_T1_AA_UK_Weapon1 is DepictionOperator_WeaponContinuousFire
+(
+    Anchors = 
+    [
+        "fx_tourelle1_tir_01",
+    ]
+    FireEffectTag = "weapon_effet_tag1"
+    NbFX = 1
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_1"
+    WeaponShootDataPropertyName = "WeaponShootData_0_1"
+)
+Op_Hawk_T1_AA_UK_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
+(
+    Connoisseur = MissileCarriage_Hawk_T1_AA_UK
+    FireEffectTag = "weapon_effet_tag2"
+    NbProj = 1
+    WeaponIndex = 2
+    WeaponShootDataPropertyName = 
+    [
+        "WeaponShootData_0_2",
+    ]
+)
+unnamed TacticAerialDepictionRegistration
+(
+    Deviator = DepictionDeviator_Airplane
+    AdditionalTextures = $/M3D/Shader/AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
+    CoatingName = 'Hawk_T1_AA_UK'
+    Alternatives = Alternatives_Hawk_T1_AA_UK
+
+    Operators = 
+        [
+            $/GFX/Sound/DepictionOperator_MovementSound_SM_SD_avion_Hawk_T1,
+            DepictionOperator_SoundProbe,
+            DepictionOperator_Turret_1_Aim,
+            Op_Hawk_T1_AA_UK_Weapon1,
+            Op_Hawk_T1_AA_UK_Weapon2,
+            DepictionOperator_CriticalEffects,
+            DepictionOperator_AirplaneParts,
+            DepictionOperator_Airplane,
+            DepictionOperator_AirplaneShadow,
+            DepictionOperator_Feedback_Degat_Level1,
+            DepictionOperator_Feedback_Degat_Level2,
+            DepictionOperator_Heat,
+            DepictionOperator_EjectableProps_Plane,
+            DepictionOperator_Flares,
+        ]
+        Actions = MAP[
+                    ( "weapon_effet_tag1", Weapon_Pod_ADEN_Mk4_30mm_x1 ),
+                    ( "weapon_effet_tag2", Weapon_AA_AIM9L_Sidewinder ),
+                ]
+                + DepictionAction_Stress_And_Wrecked_Avion
+                + DepictionAction_CriticalFX_Airplane
+                + DepictionAction_MovementFX_SingleReactorAirplane_Smoky
+                + DepictionAction_Flare_Simple
+
+        SubDepictions = 
+
+        [
+            TSubDepiction
+            (
+                Anchors = 
+                [
+                    "pilot",
+                    "pilot2",
+                ]
+                Depiction = Pilot_Pilote_US
+            ),
+        ]        
+
+        SubDepictionGenerators = [ SubGenerators_Hawk_T1_AA_UK ]
+)
+// Dépiction de l'unité Hawk_T1_UK
+Op_Hawk_T1_UK_Weapon1 is DepictionOperator_WeaponContinuousFire
+(
+    Anchors = 
+    [
+        "fx_tourelle1_tir_01",
+    ]
+    FireEffectTag = "weapon_effet_tag1"
+    NbFX = 1
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_1"
+    WeaponShootDataPropertyName = "WeaponShootData_0_1"
+)
+Op_Hawk_T1_UK_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
+(
+    Connoisseur = MissileCarriage_Hawk_T1_UK
+    FireEffectTag = "weapon_effet_tag2"
+    NbProj = 2
+    WeaponIndex = 2
+    WeaponShootDataPropertyName = 
+    [
+        "WeaponShootData_0_2",
+        "WeaponShootData_1_2",
+    ]
+)
+unnamed TacticAerialDepictionRegistration
+(
+    Deviator = DepictionDeviator_Airplane
+    AdditionalTextures = $/M3D/Shader/AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
+    CoatingName = 'Hawk_T1_UK'
+    Alternatives = Alternatives_Hawk_T1_UK
+
+    Operators = 
+        [
+            $/GFX/Sound/DepictionOperator_MovementSound_SM_SD_avion_Hawk_T1,
+            DepictionOperator_SoundProbe,
+            DepictionOperator_Turret_1_Aim,
+            Op_Hawk_T1_UK_Weapon1,
+            Op_Hawk_T1_UK_Weapon2,
+            DepictionOperator_CriticalEffects,
+            DepictionOperator_AirplaneParts,
+            DepictionOperator_Airplane,
+            DepictionOperator_AirplaneShadow,
+            DepictionOperator_Feedback_Degat_Level1,
+            DepictionOperator_Feedback_Degat_Level2,
+            DepictionOperator_Heat,
+            DepictionOperator_EjectableProps_Plane,
+            DepictionOperator_Flares,
+        ]
+        Actions = MAP[
+                    ( "weapon_effet_tag1", Weapon_Pod_ADEN_Mk4_30mm_x1 ),
+                    ( "weapon_effet_tag2", Weapon_RocketAir_SNEB_68mm_x36 ),
+                ]
+                + DepictionAction_Stress_And_Wrecked_Avion
+                + DepictionAction_CriticalFX_Airplane
+                + DepictionAction_MovementFX_SingleReactorAirplane_Smoky
+                + DepictionAction_Flare_Simple
+
+        SubDepictions = 
+
+        [
+            TSubDepiction
+            (
+                Anchors = 
+                [
+                    "pilot",
+                    "pilot2",
+                ]
+                Depiction = Pilot_Pilote_US
+            ),
+        ]        
+
+        SubDepictionGenerators = [ SubGenerators_Hawk_T1_UK ]
+)
 // Dépiction de l'unité JOH_58C_US
 Op_JOH_58C_US_Weapon1 is DepictionOperator_WeaponContinuousFire
 (
@@ -16504,6 +17030,80 @@ unnamed TacticAerialDepictionRegistration
 
         SubDepictionGenerators = [ SubGenerators_L39ZO_NPLM_SOV ]
 )
+// Dépiction de l'unité L39ZO_SOV
+Op_L39ZO_SOV_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
+(
+    Connoisseur = MissileCarriage_L39ZO_SOV
+    FireEffectTag = "weapon_effet_tag2"
+    NbProj = 2
+    WeaponIndex = 2
+    WeaponShootDataPropertyName = 
+    [
+        "WeaponShootData_0_2",
+        "WeaponShootData_1_2",
+    ]
+)
+Op_L39ZO_SOV_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
+(
+    Connoisseur = MissileCarriage_L39ZO_SOV
+    FireEffectTag = "weapon_effet_tag3"
+    NbProj = 2
+    WeaponIndex = 3
+    WeaponShootDataPropertyName = 
+    [
+        "WeaponShootData_0_3",
+        "WeaponShootData_1_3",
+    ]
+)
+unnamed TacticAerialDepictionRegistration
+(
+    Deviator = DepictionDeviator_Airplane
+    AdditionalTextures = $/M3D/Shader/AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
+    CoatingName = 'L39ZO_SOV'
+    Alternatives = Alternatives_L39ZO_SOV
+
+    Operators = 
+        [
+            $/GFX/Sound/DepictionOperator_MovementSound_SM_SD_avion_Albatros,
+            DepictionOperator_SoundProbe,
+            Op_L39ZO_SOV_Weapon2,
+            Op_L39ZO_SOV_Weapon3,
+            DepictionOperator_CriticalEffects,
+            DepictionOperator_AirplaneParts,
+            DepictionOperator_Airplane,
+            DepictionOperator_AirplaneShadow,
+            DepictionOperator_Feedback_Degat_Level1,
+            DepictionOperator_Feedback_Degat_Level2,
+            DepictionOperator_Heat,
+            DepictionOperator_EjectableProps_Plane,
+            DepictionOperator_Flares,
+        ]
+        Actions = MAP[
+                    ( "weapon_effet_tag2", Weapon_RocketAir_S5_57mm_x32 ),
+                    ( "weapon_effet_tag3", Weapon_RocketAir_S5_57mm_x32 ),
+                ]
+                + DepictionAction_Stress_And_Wrecked_Avion
+                + DepictionAction_CriticalFX_Airplane
+                + DepictionAction_MovementFX_SingleReactorAirplane_Smoky
+                + DepictionAction_Flare_Simple
+
+        SubDepictions = 
+
+        [
+            TSubDepiction
+            (
+                Anchors = 
+                [
+                    "pilot",
+                    "pilot2",
+                ]
+                Depiction = Pilot_Pilote_US
+            ),
+        ]        
+
+        SubDepictionGenerators = [ SubGenerators_L39ZO_SOV ]
+)
 // Dépiction de l'unité L39ZO_TCH
 Op_L39ZO_TCH_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
 (
@@ -18349,6 +18949,91 @@ unnamed TacticAerialDepictionRegistration
 
         SubDepictionGenerators = [ SubGenerators_MiG_21bis_CLU_DDR ]
 )
+// Dépiction de l'unité MiG_21bis_CLU_SOV
+Op_MiG_21bis_CLU_SOV_Weapon1 is DepictionOperator_WeaponContinuousFire
+(
+    Anchors = 
+    [
+        "fx_tourelle1_tir_01",
+    ]
+    FireEffectTag = "weapon_effet_tag1"
+    NbFX = 1
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_1"
+    WeaponShootDataPropertyName = "WeaponShootData_0_1"
+)
+Op_MiG_21bis_CLU_SOV_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
+(
+    Connoisseur = MissileCarriage_MiG_21bis_CLU_SOV
+    FireEffectTag = "weapon_effet_tag2"
+    NbProj = 1
+    WeaponIndex = 2
+    WeaponShootDataPropertyName = 
+    [
+        "WeaponShootData_0_2",
+    ]
+)
+Op_MiG_21bis_CLU_SOV_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
+(
+    Connoisseur = MissileCarriage_MiG_21bis_CLU_SOV
+    FireEffectTag = "weapon_effet_tag3"
+    NbProj = 1
+    WeaponIndex = 3
+    WeaponShootDataPropertyName = 
+    [
+        "WeaponShootData_0_3",
+    ]
+)
+unnamed TacticAerialDepictionRegistration
+(
+    Deviator = DepictionDeviator_Airplane
+    AdditionalTextures = $/M3D/Shader/AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
+    CoatingName = 'MiG_21bis_CLU_SOV'
+    Alternatives = Alternatives_MiG_21bis_CLU_SOV
+
+    Operators = 
+        [
+            $/GFX/Sound/DepictionOperator_MovementSound_SM_SD_avion_multirole_MiG21,
+            DepictionOperator_SoundProbe,
+            DepictionOperator_Turret_1_Aim,
+            Op_MiG_21bis_CLU_SOV_Weapon1,
+            Op_MiG_21bis_CLU_SOV_Weapon2,
+            Op_MiG_21bis_CLU_SOV_Weapon3,
+            DepictionOperator_CriticalEffects,
+            DepictionOperator_AirplaneParts,
+            DepictionOperator_Airplane,
+            DepictionOperator_AirplaneShadow,
+            DepictionOperator_Feedback_Degat_Level1,
+            DepictionOperator_Feedback_Degat_Level2,
+            DepictionOperator_Heat,
+            DepictionOperator_EjectableProps_Plane,
+            DepictionOperator_Flares,
+        ]
+        Actions = MAP[
+                    ( "weapon_effet_tag1", Weapon_GatlingAir_GSh_23_23mm ),
+                    ( "weapon_effet_tag2", Weapon_Bomb_CLU_RBK_500kg_x2 ),
+                    ( "weapon_effet_tag3", Weapon_Bomb_CLU_RBK_250kg_x2 ),
+                ]
+                + DepictionAction_Stress_And_Wrecked_Avion
+                + DepictionAction_CriticalFX_Airplane
+                + DepictionAction_MovementFX_SingleReactorAirplane_VerySmoky
+                + DepictionAction_Flare_Simple
+
+        SubDepictions = 
+
+        [
+            TSubDepiction
+            (
+                Anchors = 
+                [
+                    "pilot",
+                ]
+                Depiction = Pilot_Pilote_DDR
+            ),
+        ]        
+
+        SubDepictionGenerators = [ SubGenerators_MiG_21bis_CLU_SOV ]
+)
 // Dépiction de l'unité MiG_21bis_CLU_TCH
 Op_MiG_21bis_CLU_TCH_Weapon1 is DepictionOperator_WeaponContinuousFire
 (
@@ -18577,6 +19262,78 @@ unnamed TacticAerialDepictionRegistration
         ]        
 
         SubDepictionGenerators = [ SubGenerators_MiG_21bis_HE_POL ]
+)
+// Dépiction de l'unité MiG_21bis_HE_SOV
+Op_MiG_21bis_HE_SOV_Weapon1 is DepictionOperator_WeaponContinuousFire
+(
+    Anchors = 
+    [
+        "fx_tourelle1_tir_01",
+    ]
+    FireEffectTag = "weapon_effet_tag1"
+    NbFX = 1
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_1"
+    WeaponShootDataPropertyName = "WeaponShootData_0_1"
+)
+Op_MiG_21bis_HE_SOV_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
+(
+    Connoisseur = MissileCarriage_MiG_21bis_HE_SOV
+    FireEffectTag = "weapon_effet_tag2"
+    NbProj = 1
+    WeaponIndex = 2
+    WeaponShootDataPropertyName = 
+    [
+        "WeaponShootData_0_2",
+    ]
+)
+unnamed TacticAerialDepictionRegistration
+(
+    Deviator = DepictionDeviator_Airplane
+    AdditionalTextures = $/M3D/Shader/AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
+    CoatingName = 'MiG_21bis_HE_SOV'
+    Alternatives = Alternatives_MiG_21bis_HE_SOV
+
+    Operators = 
+        [
+            $/GFX/Sound/DepictionOperator_MovementSound_SM_SD_avion_multirole_MiG21,
+            DepictionOperator_SoundProbe,
+            DepictionOperator_Turret_1_Aim,
+            Op_MiG_21bis_HE_SOV_Weapon1,
+            Op_MiG_21bis_HE_SOV_Weapon2,
+            DepictionOperator_CriticalEffects,
+            DepictionOperator_AirplaneParts,
+            DepictionOperator_Airplane,
+            DepictionOperator_AirplaneShadow,
+            DepictionOperator_Feedback_Degat_Level1,
+            DepictionOperator_Feedback_Degat_Level2,
+            DepictionOperator_Heat,
+            DepictionOperator_EjectableProps_Plane,
+            DepictionOperator_Flares,
+        ]
+        Actions = MAP[
+                    ( "weapon_effet_tag1", Weapon_GatlingAir_GSh_23_23mm ),
+                    ( "weapon_effet_tag2", Weapon_Bomb_FAB_250kg_x4 ),
+                ]
+                + DepictionAction_Stress_And_Wrecked_Avion
+                + DepictionAction_CriticalFX_Airplane
+                + DepictionAction_MovementFX_SingleReactorAirplane_VerySmoky
+                + DepictionAction_Flare_Simple
+
+        SubDepictions = 
+
+        [
+            TSubDepiction
+            (
+                Anchors = 
+                [
+                    "pilot",
+                ]
+                Depiction = Pilot_Pilote_DDR
+            ),
+        ]        
+
+        SubDepictionGenerators = [ SubGenerators_MiG_21bis_HE_SOV ]
 )
 // Dépiction de l'unité MiG_21bis_HE_TCH
 Op_MiG_21bis_HE_TCH_Weapon1 is DepictionOperator_WeaponContinuousFire
@@ -20950,8 +21707,8 @@ unnamed TacticAerialDepictionRegistration
         ]
         Actions = MAP[
                     ( "weapon_effet_tag1", Weapon_GatlingAir_GSh_23_23mm ),
-                    ( "weapon_effet_tag2", Weapon_AA_R24R_Vympel ),
-                    ( "weapon_effet_tag3", Weapon_AA_R60M_Vympel ),
+                    ( "weapon_effet_tag2", Weapon_AA_R24MR_Vympel ),
+                    ( "weapon_effet_tag3", Weapon_AA_R13M1 ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Avion
                 + DepictionAction_CriticalFX_Airplane
@@ -22004,6 +22761,91 @@ unnamed TacticAerialDepictionRegistration
         ]        
 
         SubDepictionGenerators = [ SubGenerators_MiG_27M_sead_SOV ]
+)
+// Dépiction de l'unité MiG_29_9_13_SOV
+Op_MiG_29_9_13_SOV_Weapon1 is DepictionOperator_WeaponContinuousFire
+(
+    Anchors = 
+    [
+        "fx_tourelle1_tir_01",
+    ]
+    FireEffectTag = "weapon_effet_tag1"
+    NbFX = 1
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_1"
+    WeaponShootDataPropertyName = "WeaponShootData_0_1"
+)
+Op_MiG_29_9_13_SOV_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
+(
+    Connoisseur = MissileCarriage_MiG_29_9_13_SOV
+    FireEffectTag = "weapon_effet_tag2"
+    NbProj = 1
+    WeaponIndex = 2
+    WeaponShootDataPropertyName = 
+    [
+        "WeaponShootData_0_2",
+    ]
+)
+Op_MiG_29_9_13_SOV_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
+(
+    Connoisseur = MissileCarriage_MiG_29_9_13_SOV
+    FireEffectTag = "weapon_effet_tag3"
+    NbProj = 1
+    WeaponIndex = 3
+    WeaponShootDataPropertyName = 
+    [
+        "WeaponShootData_0_3",
+    ]
+)
+unnamed TacticAerialDepictionRegistration
+(
+    Deviator = DepictionDeviator_Airplane
+    AdditionalTextures = $/M3D/Shader/AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
+    CoatingName = 'MiG_29_9_13_SOV'
+    Alternatives = Alternatives_MiG_29_9_13_SOV
+
+    Operators = 
+        [
+            $/GFX/Sound/DepictionOperator_MovementSound_SM_SD_avion_multirole_MiG29,
+            DepictionOperator_SoundProbe,
+            DepictionOperator_Turret_1_Aim,
+            Op_MiG_29_9_13_SOV_Weapon1,
+            Op_MiG_29_9_13_SOV_Weapon2,
+            Op_MiG_29_9_13_SOV_Weapon3,
+            DepictionOperator_CriticalEffects,
+            DepictionOperator_AirplaneParts,
+            DepictionOperator_Airplane,
+            DepictionOperator_AirplaneShadow,
+            DepictionOperator_Feedback_Degat_Level1,
+            DepictionOperator_Feedback_Degat_Level2,
+            DepictionOperator_Heat,
+            DepictionOperator_EjectableProps_Plane,
+            DepictionOperator_Flares,
+        ]
+        Actions = MAP[
+                    ( "weapon_effet_tag1", Weapon_GatlingAir_Gsh_30_1_30mm ),
+                    ( "weapon_effet_tag2", Weapon_AA_R73_Vympel ),
+                    ( "weapon_effet_tag3", Weapon_AA_R27R_Vympel ),
+                ]
+                + DepictionAction_Stress_And_Wrecked_Avion
+                + DepictionAction_CriticalFX_Airplane
+                + DepictionAction_MovementFX_DoubleReactorAirplane_VerySmoky
+                + DepictionAction_Flare_Double
+
+        SubDepictions = 
+
+        [
+            TSubDepiction
+            (
+                Anchors = 
+                [
+                    "pilot",
+                ]
+                Depiction = Pilot_Pilote_SOV
+            ),
+        ]        
+
+        SubDepictionGenerators = [ SubGenerators_MiG_29_9_13_SOV ]
 )
 // Dépiction de l'unité MiG_29_AA2_POL
 Op_MiG_29_AA2_POL_Weapon1 is DepictionOperator_WeaponContinuousFire
@@ -36708,6 +37550,92 @@ unnamed TacticAerialDepictionRegistration
                 GroundStartGroupIndex = 0
             ) ]
 )
+// Dépiction de l'unité Su_22_SEAD2_TCH
+Op_Su_22_SEAD2_TCH_Weapon1 is DepictionOperator_WeaponContinuousFire
+(
+    Anchors = 
+    [
+        "fx_tourelle1_tir_01",
+        "fx_tourelle1_tir_02",
+    ]
+    FireEffectTag = "weapon_effet_tag1"
+    NbFX = 2
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_1"
+    WeaponShootDataPropertyName = "WeaponShootData_0_1"
+)
+Op_Su_22_SEAD2_TCH_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
+(
+    Connoisseur = MissileCarriage_Su_22_SEAD2_TCH
+    FireEffectTag = "weapon_effet_tag2"
+    NbProj = 1
+    WeaponIndex = 3
+    WeaponShootDataPropertyName = 
+    [
+        "WeaponShootData_0_2",
+    ]
+)
+Op_Su_22_SEAD2_TCH_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
+(
+    Connoisseur = MissileCarriage_Su_22_SEAD2_TCH
+    FireEffectTag = "weapon_effet_tag3"
+    NbProj = 1
+    WeaponIndex = 2
+    WeaponShootDataPropertyName = 
+    [
+        "WeaponShootData_0_3",
+    ]
+)
+unnamed TacticAerialDepictionRegistration
+(
+    Deviator = DepictionDeviator_Airplane
+    AdditionalTextures = $/M3D/Shader/AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
+    CoatingName = 'Su_22_SEAD2_TCH'
+    Alternatives = Alternatives_Su_22_SEAD2_TCH
+
+    Operators = 
+        [
+            $/GFX/Sound/DepictionOperator_MovementSound_SM_SD_avion_bombardier_SU22,
+            DepictionOperator_SoundProbe,
+            DepictionOperator_Turret_1_Aim,
+            Op_Su_22_SEAD2_TCH_Weapon1,
+            Op_Su_22_SEAD2_TCH_Weapon2,
+            Op_Su_22_SEAD2_TCH_Weapon3,
+            DepictionOperator_CriticalEffects,
+            DepictionOperator_AirplaneParts,
+            DepictionOperator_Airplane,
+            DepictionOperator_AirplaneShadow,
+            DepictionOperator_Feedback_Degat_Level1,
+            DepictionOperator_Feedback_Degat_Level2,
+            DepictionOperator_Heat,
+            DepictionOperator_EjectableProps_Plane,
+            DepictionOperator_Flares,
+        ]
+        Actions = MAP[
+                    ( "weapon_effet_tag1", Weapon_GatlingAir_NR30_30mm_x2 ),
+                    ( "weapon_effet_tag2", Weapon_AA_R60M_Vympel ),
+                    ( "weapon_effet_tag3", Weapon_AGM_Kh25MP ),
+                ]
+                + DepictionAction_Stress_And_Wrecked_Avion
+                + DepictionAction_CriticalFX_Airplane
+                + DepictionAction_MovementFX_SingleReactorAirplane_VerySmoky
+                + DepictionAction_Flare_Simple
+
+        SubDepictions = 
+
+        [
+            TSubDepiction
+            (
+                Anchors = 
+                [
+                    "pilot",
+                ]
+                Depiction = Pilot_Pilote_DDR
+            ),
+        ]        
+
+        SubDepictionGenerators = [ SubGenerators_Su_22_SEAD2_TCH ]
+)
 // Dépiction de l'unité Su_22_SEAD_DDR
 Op_Su_22_SEAD_DDR_Weapon1 is DepictionOperator_WeaponContinuousFire
 (
@@ -43050,6 +43978,274 @@ unnamed TacticAerialDepictionRegistration
         ]        
 
         SubDepictionGenerators = [ SubGenerators_Westland_Scout_SS11_UK ]
+)
+// Dépiction de l'unité Westland_Scout_UK
+unnamed TacticAerialDepictionRegistration
+(
+    AdditionalTextures = $/M3D/Shader/HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
+    CoatingName = 'Westland_Scout_UK'
+    Alternatives = Alternatives_Westland_Scout_UK
+
+    Operators = 
+        [
+            $/GFX/Sound/DepictionOperator_MovementSound_SM_Helico_Westland_Scout,
+            DepictionOperator_SoundProbe,
+            DepictionOperator_CriticalEffects,
+            DepictionOperator_HelicopterLanding,
+            DepictionOperator_GroundPuff_Helico,
+            DepictionOperator_ShadowPointCloudProvider,
+            DepictionOperator_Rotors
+            (
+                HelixList = 
+                [
+                    THelix
+                    (
+                        BladeCount = 4
+                        BladesBoneName = "helice_ls_1"
+                        BlurActionId = "FX_Helice_1"
+                        Clockwise = False
+                        HelixBoneName = "bloc_moteur_1"
+                        RotationAxis = 2
+                        RotationSpeed = 242
+                    ),
+                    THelix
+                    (
+                        BladeCount = 2
+                        BladesBoneName = "helice_ls_2"
+                        BlurActionId = "FX_Helice_2"
+                        Clockwise = False
+                        HelixBoneName = "bloc_moteur_2"
+                        RotationAxis = 1
+                        RotationSpeed = 242
+                    ),
+                ]
+            ),
+            DepictionOperator_Feedback_Degat_Level1,
+            DepictionOperator_Feedback_Degat_Level2,
+            DepictionOperator_Heat,
+            DepictionOperator_EjectableProps_Helico,
+        ]
+        Actions = MAP[
+                ]
+                + DepictionAction_Stress_And_Wrecked_Helicopter
+                + MAP [ ('FX_Helice_1', Template_DepictionAction_Rotor( PaleLength = 1000 PaleCount = 4 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ ('FX_Helice_2', Template_DepictionAction_Rotor( PaleLength = 300 PaleCount = 2 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + DepictionAction_CriticalFX_Helicopter
+                + DepictionAction_Flare_Simple
+
+        SubDepictions = 
+
+        [
+            TSubDepiction
+            (
+                Anchors = 
+                [
+                    "pilot",
+                    "pilot2",
+                ]
+                Depiction = Pilot_Pilote_Helico_US
+            ),
+        ]        
+)
+// Dépiction de l'unité Westland_Wessex_supply_UK
+unnamed TacticAerialDepictionRegistration
+(
+    AdditionalTextures = $/M3D/Shader/HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
+    CoatingName = 'Westland_Wessex_supply_UK'
+    Alternatives = Alternatives_Westland_Wessex_supply_UK
+
+    Operators = 
+        [
+            $/GFX/Sound/DepictionOperator_MovementSound_SM_Helico_Westland_Wessex,
+            DepictionOperator_SoundProbe,
+            DepictionOperator_CriticalEffects,
+            DepictionOperator_HelicopterLanding,
+            DepictionOperator_GroundPuff_Helico,
+            DepictionOperator_ShadowPointCloudProvider,
+            DepictionOperator_Rotors
+            (
+                HelixList = 
+                [
+                    THelix
+                    (
+                        BladeCount = 4
+                        BladesBoneName = "helice_ls_1"
+                        BlurActionId = "FX_Helice_1"
+                        Clockwise = False
+                        HelixBoneName = "bloc_moteur_1"
+                        RotationAxis = 2
+                        RotationSpeed = 242
+                    ),
+                    THelix
+                    (
+                        BladeCount = 4
+                        BladesBoneName = "helice_ls_2"
+                        BlurActionId = "FX_Helice_2"
+                        Clockwise = True
+                        HelixBoneName = "bloc_moteur_2"
+                        RotationAxis = 1
+                        RotationSpeed = 242
+                    ),
+                ]
+            ),
+            DepictionOperator_Feedback_Degat_Level1,
+            DepictionOperator_Feedback_Degat_Level2,
+            DepictionOperator_Heat,
+            DepictionOperator_EjectableProps_Helico,
+            DepictionOperator_Flares,
+        ]
+        Actions = MAP[
+                ]
+                + DepictionAction_Stress_And_Wrecked_Helicopter
+                + MAP [ ('FX_Helice_1', Template_DepictionAction_Rotor( PaleLength = 1900 PaleCount = 4 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ ('FX_Helice_2', Template_DepictionAction_Rotor( PaleLength = 335 PaleCount = 4 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + DepictionAction_CriticalFX_Helicopter
+                + DepictionAction_Flare_Simple
+
+        SubDepictions = 
+
+        [
+            TSubDepiction
+            (
+                Anchors = 
+                [
+                    "pilot",
+                    "pilot2",
+                ]
+                Depiction = Pilot_Pilote_Helico_US
+            ),
+        ]        
+)
+// Dépiction de l'unité Westland_Wessex_trans_UK
+Op_Westland_Wessex_trans_UK_Weapon1 is DepictionOperator_WeaponContinuousFire
+(
+    Anchors = 
+    [
+        "fx_tourelle1_tir_01",
+    ]
+    FireEffectTag = "weapon_effet_tag1"
+    NbFX = 1
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_1"
+    WeaponShootDataPropertyName = "WeaponShootData_0_1"
+)
+Op_Westland_Wessex_trans_UK_Weapon2 is DepictionOperator_WeaponContinuousFire
+(
+    Anchors = 
+    [
+        "fx_tourelle2_tir_01",
+    ]
+    FireEffectTag = "weapon_effet_tag2"
+    NbFX = 1
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_2"
+    WeaponShootDataPropertyName = "WeaponShootData_0_2"
+)
+unnamed TacticAerialDepictionRegistration
+(
+    AdditionalTextures = $/M3D/Shader/HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
+    CoatingName = 'Westland_Wessex_trans_UK'
+    Alternatives = Alternatives_Westland_Wessex_trans_UK
+
+    Operators = 
+        [
+            $/GFX/Sound/DepictionOperator_MovementSound_SM_Helico_Westland_Wessex,
+            DepictionOperator_SoundProbe,
+            DepictionOperator_Turret_2_Aim,
+            Op_Westland_Wessex_trans_UK_Weapon2,
+            DepictionOperator_CriticalEffects,
+            DepictionOperator_HelicopterLanding,
+            DepictionOperator_GroundPuff_Helico,
+            DepictionOperator_ShadowPointCloudProvider,
+            DepictionOperator_Rotors
+            (
+                HelixList = 
+                [
+                    THelix
+                    (
+                        BladeCount = 4
+                        BladesBoneName = "helice_ls_1"
+                        BlurActionId = "FX_Helice_1"
+                        Clockwise = False
+                        HelixBoneName = "bloc_moteur_1"
+                        RotationAxis = 2
+                        RotationSpeed = 242
+                    ),
+                    THelix
+                    (
+                        BladeCount = 4
+                        BladesBoneName = "helice_ls_2"
+                        BlurActionId = "FX_Helice_2"
+                        Clockwise = True
+                        HelixBoneName = "bloc_moteur_2"
+                        RotationAxis = 1
+                        RotationSpeed = 242
+                    ),
+                ]
+            ),
+            DepictionOperator_Feedback_Degat_Level1,
+            DepictionOperator_Feedback_Degat_Level2,
+            DepictionOperator_Heat,
+            DepictionOperator_EjectableProps_Helico,
+            DepictionOperator_Flares,
+        ]
+        Actions = MAP[
+                    ( "weapon_effet_tag2", Weapon_MMG_FN_MAG_7_62mm_Helo ),
+                ]
+                + DepictionAction_Stress_And_Wrecked_Helicopter
+                + MAP [ ('FX_Helice_1', Template_DepictionAction_Rotor( PaleLength = 1900 PaleCount = 4 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ ('FX_Helice_2', Template_DepictionAction_Rotor( PaleLength = 335 PaleCount = 4 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + DepictionAction_CriticalFX_Helicopter
+                + DepictionAction_Flare_Simple
+
+        SubDepictions = 
+
+        [
+            TSubDepiction
+            (
+                Anchors = 
+                [
+                    "pilot",
+                    "pilot2",
+                ]
+                Depiction = Pilot_Pilote_Helico_US
+            ),
+            TSubDepiction
+            (
+                Anchors = 
+                [
+                    "base_tourelle_01",
+                ]
+                Depiction = TDepictionDescriptor
+                (
+                    Actions = 
+                    MAP[
+                        ("weapon_effet_tag1" , Weapon_MMG_FN_MAG_7_62mm_Helo),
+                    ]
+                    AdditionalTextures = $/M3D/Shader/HelicoDestTextures
+                    CoatingName = "Westland_Wessex_trans_UK_turret1"
+                    DepictionAlternatives = 
+                    [
+                        DepictionVisual_LOD_High
+                        (
+                            MeshDescriptor = $/GFX/DepictionResources/Modele_Westland_Wessex_trans_UK_Tourelle_01
+                        ),
+                    ]
+                    Operators = 
+                    [
+                        DepictionOperator_Reset_Generic,
+                        DepictionOperator_Turret_1_Aim,
+                        Op_Westland_Wessex_trans_UK_Weapon1,
+                    ]
+                    ResidentMaterialTags = 
+                    [
+                        MaterialTagMech,
+                    ]
+                    Selector = ~/OnlyHighDepictionSelector
+                )
+            ),
+        ]        
 )
 Pilot_Pilote_DDR is TemplateDepictionPilote(MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Pilote_DDR MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Pilote_DDR_LOW)
 Pilot_Pilote_Helico_DDR is TemplateDepictionPilote(MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Pilote_Helico_DDR MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Pilote_Helico_DDR_LOW)

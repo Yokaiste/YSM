@@ -1,8 +1,8 @@
 
 //-------------------------------------------------------------------------------------
 
-// Conteneur pour les flares
-UIInGameFlarePanelViewMainComponent is BUCKListDescriptor
+// Conteneur pour les beacons
+UIInGameBeaconPanelViewMainComponent is BUCKListDescriptor
 (
     Axis = ~/ListAxis/Vertical
     ComponentFrame = TUIFramePropertyRTTI
@@ -21,23 +21,22 @@ UIInGameFlarePanelViewMainComponent is BUCKListDescriptor
     [
         BUCKListElementDescriptor
         (
-            ComponentDescriptor = AllVisibleFlares
+            ComponentDescriptor = AllVisibleBeacons
         )
     ]
 
     ForegroundComponents =
     [
-        FlareCustomEditableText()
+        BeaconCustomEditableText()
     ]
 
-    // Updated by YSM (disabled)
-    // BackgroundComponents =
-    // [
-    //     PanelRoundedCorner()
-    // ]
+    BackgroundComponents =
+    [
+        PanelRoundedCorner()
+    ]
 )
 
-AllVisibleFlares is BUCKListDescriptor
+AllVisibleBeacons is BUCKListDescriptor
 (
     ComponentFrame = TUIFramePropertyRTTI
     (
@@ -53,19 +52,19 @@ AllVisibleFlares is BUCKListDescriptor
 
     Elements =
     [
-        BUCKListElementDescriptor(ComponentDescriptor = FlareButtonNeedHelp()),
-        BUCKListElementDescriptor(ComponentDescriptor = FlareButtonStrategyAttack()),
-        BUCKListElementDescriptor(ComponentDescriptor = FlareButtonStrategyDefend()),
-        BUCKListElementDescriptor(ComponentDescriptor = FlareButtonSupport()),
-        BUCKListElementDescriptor(ComponentDescriptor = FlareButtonEnemySpotted()),
-        BUCKListElementDescriptor(ComponentDescriptor = FlareButtonCustom()),
+        BUCKListElementDescriptor(ComponentDescriptor = BeaconButtonNeedHelp()),
+        BUCKListElementDescriptor(ComponentDescriptor = BeaconButtonStrategyAttack()),
+        BUCKListElementDescriptor(ComponentDescriptor = BeaconButtonStrategyDefend()),
+        BUCKListElementDescriptor(ComponentDescriptor = BeaconButtonSupport()),
+        BUCKListElementDescriptor(ComponentDescriptor = BeaconButtonEnemySpotted()),
+        BUCKListElementDescriptor(ComponentDescriptor = BeaconButtonCustom()),
     ]
 )
 //-------------------------------------------------------------------------------------
 
-UIInGameFlarePanelViewDescriptor is TUIInGameFlarePanelViewDescriptor
+UIInGameBeaconPanelViewDescriptor is TUIInGameBeaconPanelViewDescriptor
 (
-    MainComponentDescriptor = ~/UIInGameFlarePanelViewMainComponent
-    MainComponentContainerUniqueName = "UICommonFlarePanelViewMainContainer"
+    MainComponentDescriptor = ~/UIInGameBeaconPanelViewMainComponent
+    MainComponentContainerUniqueName = "UICommonBeaconPanelViewMainContainer"
 )
 

@@ -1,0 +1,17 @@
+export Modele_FV1611_Humber_Pig_UK is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/APC/FV1611_Humber_Pig/FV1611_Humber_Pig.fbx"
+)
+
+export Modele_FV1611_Humber_Pig_UK_MID is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/APC/FV1611_Humber_Pig_MID/FV1611_Humber_Pig_MID.fbx"
+)
+
+export Modele_FV1611_Humber_Pig_UK_LOW is TResourceMesh
+(
+    Mesh="GameData:/Assets/3D/Units/UK/APC/FV1611_Humber_Pig_LOW/FV1611_Humber_Pig_LOW.fbx"
+)
+
+
+

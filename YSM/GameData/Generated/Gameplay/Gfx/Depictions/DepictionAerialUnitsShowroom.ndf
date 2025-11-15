@@ -3,6 +3,27 @@
 
 unnamed ShowroomAerialDepictionRegistration
 (
+    MeshDescriptor = $/GFX/DepictionResources/Modele_A109A_RKT_UK
+    MimeticName = "showroom_A109A_RKT_UK"
+    Operators = 
+    [
+        DepictionOperator_Reset_Generic,
+        TCosmeticFixedBoneRotationOperatorDesc
+        (
+            BoneName = "bloc_moteur_1"
+            RotationAxis = float3[0, 0, 1]
+            RotationInDegree = -30
+        ),
+        TCosmeticFixedBoneRotationOperatorDesc
+        (
+            BoneName = "bloc_moteur_2"
+            RotationAxis = float3[0, 1, 0]
+            RotationInDegree = -30
+        ),
+    ]
+)
+unnamed ShowroomAerialDepictionRegistration
+(
     MeshDescriptor = $/GFX/DepictionResources/Modele_A109BA_BEL
     MimeticName = "showroom_A109BA_BEL"
     Operators = 
@@ -1340,6 +1361,27 @@ unnamed ShowroomAerialDepictionRegistration
 )
 unnamed ShowroomAerialDepictionRegistration
 (
+    MeshDescriptor = $/GFX/DepictionResources/Modele_CH47D_Chinook_SAS_UK
+    MimeticName = "showroom_CH47D_Chinook_SAS_UK"
+    Operators = 
+    [
+        DepictionOperator_Reset_Generic,
+        TCosmeticFixedBoneRotationOperatorDesc
+        (
+            BoneName = "bloc_moteur_1"
+            RotationAxis = float3[0, 0, 1]
+            RotationInDegree = -30
+        ),
+        TCosmeticFixedBoneRotationOperatorDesc
+        (
+            BoneName = "bloc_moteur_2"
+            RotationAxis = float3[0, 0, 1]
+            RotationInDegree = 30
+        ),
+    ]
+)
+unnamed ShowroomAerialDepictionRegistration
+(
     MeshDescriptor = $/GFX/DepictionResources/Modele_CH47D_Chinook_supply_UK
     MimeticName = "showroom_CH47D_Chinook_supply_UK"
     Operators = 
@@ -1608,6 +1650,34 @@ unnamed ShowroomAerialDepictionRegistration
         ShowroomLandingGear
         (
             MeshDescriptor = $/GFX/DepictionResources/Modele_CM170_Magister_SS11_FR_train
+        ),
+    ]
+)
+unnamed ShowroomAerialDepictionRegistration
+(
+    MeshDescriptor = $/GFX/DepictionResources/Modele_Canberra_B2_UK
+    MimeticName = "showroom_Canberra_B2_UK"
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Canberra_B2_UK,
+    ]
+    SubDepictions = 
+    [
+        ShowroomLandingGear
+        (
+            MeshDescriptor = $/GFX/DepictionResources/Modele_Canberra_B2_UK_train
+        ),
+    ]
+)
+unnamed ShowroomAerialDepictionRegistration
+(
+    MeshDescriptor = $/GFX/DepictionResources/Modele_Canberra_T17A_UK
+    MimeticName = "showroom_Canberra_T17A_UK"
+    SubDepictions = 
+    [
+        ShowroomLandingGear
+        (
+            MeshDescriptor = $/GFX/DepictionResources/Modele_Canberra_T17A_UK_train
         ),
     ]
 )
@@ -2624,6 +2694,22 @@ unnamed ShowroomAerialDepictionRegistration
 )
 unnamed ShowroomAerialDepictionRegistration
 (
+    MeshDescriptor = $/GFX/DepictionResources/Modele_F4_Phantom_AA_GR2_UK
+    MimeticName = "showroom_F4_Phantom_AA_GR2_UK"
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_F4_Phantom_AA_GR2_UK,
+    ]
+    SubDepictions = 
+    [
+        ShowroomLandingGear
+        (
+            MeshDescriptor = $/GFX/DepictionResources/Modele_F4_Phantom_AA_GR2_UK_train
+        ),
+    ]
+)
+unnamed ShowroomAerialDepictionRegistration
+(
     MeshDescriptor = $/GFX/DepictionResources/Modele_F4_Phantom_GR2_HE_UK
     MimeticName = "showroom_F4_Phantom_GR2_HE_UK"
     SubDepictionGenerators = 
@@ -3288,6 +3374,38 @@ unnamed ShowroomAerialDepictionRegistration
 )
 unnamed ShowroomAerialDepictionRegistration
 (
+    MeshDescriptor = $/GFX/DepictionResources/Modele_Hawk_T1_AA_UK
+    MimeticName = "showroom_Hawk_T1_AA_UK"
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Hawk_T1_AA_UK,
+    ]
+    SubDepictions = 
+    [
+        ShowroomLandingGear
+        (
+            MeshDescriptor = $/GFX/DepictionResources/Modele_Hawk_T1_AA_UK_train
+        ),
+    ]
+)
+unnamed ShowroomAerialDepictionRegistration
+(
+    MeshDescriptor = $/GFX/DepictionResources/Modele_Hawk_T1_UK
+    MimeticName = "showroom_Hawk_T1_UK"
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Hawk_T1_UK,
+    ]
+    SubDepictions = 
+    [
+        ShowroomLandingGear
+        (
+            MeshDescriptor = $/GFX/DepictionResources/Modele_Hawk_T1_UK_train
+        ),
+    ]
+)
+unnamed ShowroomAerialDepictionRegistration
+(
     MeshDescriptor = $/GFX/DepictionResources/Modele_JOH_58C_US
     MimeticName = "showroom_JOH_58C_US"
     Operators = 
@@ -3690,6 +3808,22 @@ unnamed ShowroomAerialDepictionRegistration
         ShowroomLandingGear
         (
             MeshDescriptor = $/GFX/DepictionResources/Modele_L39ZO_NPLM_SOV_train
+        ),
+    ]
+)
+unnamed ShowroomAerialDepictionRegistration
+(
+    MeshDescriptor = $/GFX/DepictionResources/Modele_L39ZO_SOV
+    MimeticName = "showroom_L39ZO_SOV"
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_L39ZO_SOV,
+    ]
+    SubDepictions = 
+    [
+        ShowroomLandingGear
+        (
+            MeshDescriptor = $/GFX/DepictionResources/Modele_L39ZO_SOV_train
         ),
     ]
 )
@@ -4107,6 +4241,22 @@ unnamed ShowroomAerialDepictionRegistration
 )
 unnamed ShowroomAerialDepictionRegistration
 (
+    MeshDescriptor = $/GFX/DepictionResources/Modele_MiG_21bis_CLU_SOV
+    MimeticName = "showroom_MiG_21bis_CLU_SOV"
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_MiG_21bis_CLU_SOV,
+    ]
+    SubDepictions = 
+    [
+        ShowroomLandingGear
+        (
+            MeshDescriptor = $/GFX/DepictionResources/Modele_MiG_21bis_CLU_SOV_train
+        ),
+    ]
+)
+unnamed ShowroomAerialDepictionRegistration
+(
     MeshDescriptor = $/GFX/DepictionResources/Modele_MiG_21bis_CLU_TCH
     MimeticName = "showroom_MiG_21bis_CLU_TCH"
     SubDepictionGenerators = 
@@ -4150,6 +4300,22 @@ unnamed ShowroomAerialDepictionRegistration
         ShowroomLandingGear
         (
             MeshDescriptor = $/GFX/DepictionResources/Modele_MiG_21bis_HE_POL_train
+        ),
+    ]
+)
+unnamed ShowroomAerialDepictionRegistration
+(
+    MeshDescriptor = $/GFX/DepictionResources/Modele_MiG_21bis_HE_SOV
+    MimeticName = "showroom_MiG_21bis_HE_SOV"
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_MiG_21bis_HE_SOV,
+    ]
+    SubDepictions = 
+    [
+        ShowroomLandingGear
+        (
+            MeshDescriptor = $/GFX/DepictionResources/Modele_MiG_21bis_HE_SOV_train
         ),
     ]
 )
@@ -4850,6 +5016,22 @@ unnamed ShowroomAerialDepictionRegistration
         ShowroomLandingGear
         (
             MeshDescriptor = $/GFX/DepictionResources/Modele_MiG_27M_sead_SOV_train
+        ),
+    ]
+)
+unnamed ShowroomAerialDepictionRegistration
+(
+    MeshDescriptor = $/GFX/DepictionResources/Modele_MiG_29_9_13_SOV
+    MimeticName = "showroom_MiG_29_9_13_SOV"
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_MiG_29_9_13_SOV,
+    ]
+    SubDepictions = 
+    [
+        ShowroomLandingGear
+        (
+            MeshDescriptor = $/GFX/DepictionResources/Modele_MiG_29_9_13_SOV_train
         ),
     ]
 )
@@ -8446,6 +8628,22 @@ unnamed ShowroomAerialDepictionRegistration
 )
 unnamed ShowroomAerialDepictionRegistration
 (
+    MeshDescriptor = $/GFX/DepictionResources/Modele_Su_22_SEAD2_TCH
+    MimeticName = "showroom_Su_22_SEAD2_TCH"
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Su_22_SEAD2_TCH,
+    ]
+    SubDepictions = 
+    [
+        ShowroomLandingGear
+        (
+            MeshDescriptor = $/GFX/DepictionResources/Modele_Su_22_SEAD2_TCH_train
+        ),
+    ]
+)
+unnamed ShowroomAerialDepictionRegistration
+(
     MeshDescriptor = $/GFX/DepictionResources/Modele_Su_22_SEAD_DDR
     MimeticName = "showroom_Su_22_SEAD_DDR"
     SubDepictionGenerators = 
@@ -9800,5 +9998,87 @@ unnamed ShowroomAerialDepictionRegistration
     SubDepictionGenerators = 
     [
         SubGenerators_Showroom_Westland_Scout_SS11_UK,
+    ]
+)
+unnamed ShowroomAerialDepictionRegistration
+(
+    MeshDescriptor = $/GFX/DepictionResources/Modele_Westland_Scout_UK
+    MimeticName = "showroom_Westland_Scout_UK"
+    Operators = 
+    [
+        DepictionOperator_Reset_Generic,
+        TCosmeticFixedBoneRotationOperatorDesc
+        (
+            BoneName = "bloc_moteur_1"
+            RotationAxis = float3[0, 0, 1]
+            RotationInDegree = -30
+        ),
+        TCosmeticFixedBoneRotationOperatorDesc
+        (
+            BoneName = "bloc_moteur_2"
+            RotationAxis = float3[0, 1, 0]
+            RotationInDegree = -30
+        ),
+    ]
+)
+unnamed ShowroomAerialDepictionRegistration
+(
+    MeshDescriptor = $/GFX/DepictionResources/Modele_Westland_Wessex_supply_UK
+    MimeticName = "showroom_Westland_Wessex_supply_UK"
+    Operators = 
+    [
+        DepictionOperator_Reset_Generic,
+        TCosmeticFixedBoneRotationOperatorDesc
+        (
+            BoneName = "bloc_moteur_1"
+            RotationAxis = float3[0, 0, 1]
+            RotationInDegree = -30
+        ),
+        TCosmeticFixedBoneRotationOperatorDesc
+        (
+            BoneName = "bloc_moteur_2"
+            RotationAxis = float3[0, 1, 0]
+            RotationInDegree = 30
+        ),
+    ]
+)
+unnamed ShowroomAerialDepictionRegistration
+(
+    MeshDescriptor = $/GFX/DepictionResources/Modele_Westland_Wessex_trans_UK
+    MimeticName = "showroom_Westland_Wessex_trans_UK"
+    Operators = 
+    [
+        DepictionOperator_Reset_Generic,
+        TCosmeticFixedBoneRotationOperatorDesc
+        (
+            BoneName = "bloc_moteur_1"
+            RotationAxis = float3[0, 0, 1]
+            RotationInDegree = -30
+        ),
+        TCosmeticFixedBoneRotationOperatorDesc
+        (
+            BoneName = "bloc_moteur_2"
+            RotationAxis = float3[0, 1, 0]
+            RotationInDegree = 30
+        ),
+    ]
+    SubDepictions = 
+    [
+        TSubDepiction
+        (
+            Anchors = 
+            [
+                "base_tourelle_01",
+            ]
+            Depiction = TDepictionDescriptor
+            (
+                CoatingName = "Westland_Wessex_trans_UK_turret1"
+                DepictionAlternatives = 
+                [
+                    DepictionVisual_LOD_High( MeshDescriptor=$/GFX/DepictionResources/Modele_Westland_Wessex_trans_UK_Tourelle_01 ),
+                ]
+                Selector = OnlyHighDepictionSelector
+            )
+        ),
     ]
 )

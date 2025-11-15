@@ -70,7 +70,6 @@ export GenBTDef_Deploiement is TSequenceGeneratorDescriptor
 
         ~/FOB_Skirmish,
 
-
         ~/Defense_Static_ATGM_BKT,
         ~/Defense_Static_ATGM_Reco_BKT,
         ~/Defense_Static_Inf_BKT,

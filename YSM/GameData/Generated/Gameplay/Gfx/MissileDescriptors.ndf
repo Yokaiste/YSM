@@ -82,7 +82,6 @@ export Descriptor_Missile_AA_AIM120A_AMRAAM is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -176,7 +175,6 @@ export Descriptor_Missile_AA_AIM132_ASRAAM is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -207,10 +205,10 @@ export Descriptor_Missile_AA_AIM54_Phoenix is TEntityDescriptor
         ~/LinkTeamModuleDescriptor,
         TApparenceModuleDescriptor
         (
-            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_AIM7
+            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_AIM54_Phoenix
             Depiction     = Template_DescriptorMissileBase
             (
-                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_AIM7
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_AIM54_Phoenix
                 Actions = MAP[
                     ( "fx_propulsion_on", template_PropulsionActionHappening( Action = $/GFX/GameFx/fx_propulsion_missile_AA_gros )),
                     ( "fx_propulsion_off", template_PropulsionActionHappening( Action = $/GFX/GameFx/fx_arret_missile_AA_gros )),
@@ -264,7 +262,6 @@ export Descriptor_Missile_AA_AIM54_Phoenix is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -352,7 +349,6 @@ export Descriptor_Missile_AA_AIM7F_Sparrow is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -440,7 +436,99 @@ export Descriptor_Missile_AA_AIM7M_Sparrow is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
+            UseTopArmorAgainstFire = False
+        ),
+        TDangerousnessModuleDescriptor(Dangerousness  = 200),
+        TCapaciteModuleDescriptor
+        (
+            DefaultSkillList = [
+                $/GFX/EffectCapacity/Capacite_StressOnMiss_mid,
+            ]
+        ),
+        ~/TargetDataModuleDescriptor,
+    ]
+)
+export Descriptor_Missile_AA_AIM9H_Sidewinder is TEntityDescriptor
+(
+    DescriptorId       = GUID:{fca0d531-b330-4c84-af09-83ec69da56e5}
+    ClassNameForDebug  = 'Missile_AA_AIM9H_Sidewinder'
+    ModulesDescriptors = [
+        ~/SimpleTypeUnitModuleDescriptor,
+        TTagsModuleDescriptor
+        (
+            TagSet = [
+                "MISSILE",
+                "MISSILE_AA_AIM9H_Sidewinder",
+            ]
+        ),
+        ~/MissileFlagsModuleDescriptor,
+        ~/MissilePositionModuleDescriptor,
+        ~/LinkTeamModuleDescriptor,
+        TApparenceModuleDescriptor
+        (
+            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_SideWinder
+            Depiction     = Template_DescriptorMissileBase
+            (
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_SideWinder
+                Actions = MAP[
+                    ( "fx_propulsion_on", TRandomHappening(
+                            Alternatives = [
+                                template_PropulsionActionHappening( Action = $/GFX/GameFx/fx_propulsion_missile_AA_moyen_1 ),
+                                template_PropulsionActionHappening( Action = $/GFX/GameFx/fx_propulsion_missile_AA_moyen_2 ),
+                                template_PropulsionActionHappening( Action = $/GFX/GameFx/fx_propulsion_missile_AA_moyen_3 ),
+                            ]
+                        )),
+                    ( "fx_propulsion_off", template_PropulsionActionHappening( Action = $/GFX/GameFx/fx_arret_missile_AA_moyen )),
+                ]
+            )
+        ),
+        TGuidedMissileModuleDescriptor
+        (
+        ),
+        TGuidedMissileMovementModuleDescriptor
+        (
+            DefaultConfig = TGuidedMissileMovementConfigDescriptor
+            (
+                MaxSpeedGRU        = 4240
+                MaxAccelerationGRU = 2120
+                AutoGyr            = 1.5707963267948966
+            )
+            UncontrollableConfig = TGuidedMissileMovementConfigDescriptor
+            (
+                MaxSpeedGRU        = 4240
+                MaxAccelerationGRU = 2120
+                AutoGyr            = 1.3962634015954636
+            )
+            AscendantPhaseConfig = nil
+            TerminalPhaseConfig = nil
+            CruiseAltitudeGRU = 0.0
+            TimeMaxBetweenRandomMoveWhenUncontrollable = 2
+            TimeMinBetweenRandomMoveWhenUncontrollable = 1.0
+            TimeBetweenChaosUpdates = 0.1
+            RangeChaos = 8000
+            AngleMaxForRandomMouvUncontrollable = 6.0
+            RotationSpeedWhenUncontrollable = 30
+        ),
+        TBaseDamageModuleDescriptor
+        (
+            MaxPhysicalDamages = 2
+            MaxSuppressionDamages = ~/Missile_MaxSuppressionDamages
+            MaxStunDamages = ~/Missile_MaxStunDamages
+        ),
+        TDamageModuleDescriptor
+        (
+            SuppressDamagesRegenRatio = ~/Missile_SuppressDamagesRegenRatioList
+            StunDamagesRegen = ~/Missile_StunDamagesRegen
+            BlindageProperties = TBlindageProperties
+            (
+                ResistanceFront = TResistanceTypeRTTI(Family=ResistanceFamily_vehicule Index=1)
+                ResistanceSides = TResistanceTypeRTTI(Family=ResistanceFamily_vehicule Index=1)
+                ResistanceRear = TResistanceTypeRTTI(Family=ResistanceFamily_vehicule Index=1)
+                ResistanceTop = TResistanceTypeRTTI(Family=ResistanceFamily_vehicule Index=1)
+                ExplosiveReactiveArmor = False
+            )
+            KillWhenDamagesReachMax = True
+            HitRollECM = 0.0
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -534,7 +622,6 @@ export Descriptor_Missile_AA_AIM9J_Sidewinder is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -628,7 +715,6 @@ export Descriptor_Missile_AA_AIM9L_Sidewinder is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -722,7 +808,6 @@ export Descriptor_Missile_AA_AIM9L_Sidewinder_upgrade is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -816,7 +901,6 @@ export Descriptor_Missile_AA_AIM9M_Sidewinder is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -910,7 +994,6 @@ export Descriptor_Missile_AA_AIM9P_Sidewinder is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -1004,7 +1087,6 @@ export Descriptor_Missile_AA_AIM9P_Sidewinder_x2 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -1092,7 +1174,6 @@ export Descriptor_Missile_AA_Matra_R530 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -1180,7 +1261,6 @@ export Descriptor_Missile_AA_Matra_Super_530D is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -1268,7 +1348,6 @@ export Descriptor_Missile_AA_Matra_Super_530F is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -1362,7 +1441,6 @@ export Descriptor_Missile_AA_R13M is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -1456,7 +1534,6 @@ export Descriptor_Missile_AA_R13M1 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -1544,7 +1621,6 @@ export Descriptor_Missile_AA_R23R_Vympel is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -1632,7 +1708,6 @@ export Descriptor_Missile_AA_R24MR_Vympel is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -1720,7 +1795,6 @@ export Descriptor_Missile_AA_R24R_Vympel is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -1808,7 +1882,6 @@ export Descriptor_Missile_AA_R27ER_Vympel is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -1896,7 +1969,6 @@ export Descriptor_Missile_AA_R27R_Vympel is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -1984,7 +2056,6 @@ export Descriptor_Missile_AA_R27T_Vympel is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -2072,7 +2143,6 @@ export Descriptor_Missile_AA_R33_Vympel is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -2160,7 +2230,6 @@ export Descriptor_Missile_AA_R37_Vympel is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -2254,7 +2323,6 @@ export Descriptor_Missile_AA_R3R is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -2342,7 +2410,6 @@ export Descriptor_Missile_AA_R40RD1 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -2430,7 +2497,6 @@ export Descriptor_Missile_AA_R40TD1 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -2524,7 +2590,6 @@ export Descriptor_Missile_AA_R550_Magic is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -2618,7 +2683,6 @@ export Descriptor_Missile_AA_R550_Magic_II is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -2712,7 +2776,6 @@ export Descriptor_Missile_AA_R60_Vympel is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -2806,7 +2869,6 @@ export Descriptor_Missile_AA_R60_Vympel_helo is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -2900,7 +2962,6 @@ export Descriptor_Missile_AA_R60M_Vympel is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -2994,7 +3055,6 @@ export Descriptor_Missile_AA_R60M_Vympel_x2 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -3088,7 +3148,6 @@ export Descriptor_Missile_AA_R60M_Vympel_helo is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -3182,7 +3241,6 @@ export Descriptor_Missile_AA_R73_Vympel is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -3276,7 +3334,6 @@ export Descriptor_Missile_AA_R77_Vympel is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -3364,7 +3421,6 @@ export Descriptor_Missile_AA_R98MR is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -3452,7 +3508,6 @@ export Descriptor_Missile_AA_R98MT is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -3540,7 +3595,6 @@ export Descriptor_Missile_AA_Skyflash is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -3628,7 +3682,6 @@ export Descriptor_Missile_AA_Skyflash_SuperTEMP is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -3715,7 +3768,6 @@ export Descriptor_Missile_AGM_9K121_Vikhr is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -3796,7 +3848,6 @@ export Descriptor_Missile_AGM_9K121_Vikhr_x12 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -3877,7 +3928,6 @@ export Descriptor_Missile_AGM_9K121_Vikhr_x16 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -3958,7 +4008,6 @@ export Descriptor_Missile_AGM_9K121_Vikhr_x16_avion is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -4039,7 +4088,6 @@ export Descriptor_Missile_AGM_9M114M_Ataka_x4 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -4120,7 +4168,6 @@ export Descriptor_Missile_AGM_9M114M_Ataka_x8 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -4201,7 +4248,6 @@ export Descriptor_Missile_AGM_9M114M_KokonM is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -4282,7 +4328,6 @@ export Descriptor_Missile_AGM_9M114M_KokonM_x16 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -4363,7 +4408,6 @@ export Descriptor_Missile_AGM_9M114M_KokonM_x2 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -4444,7 +4488,6 @@ export Descriptor_Missile_AGM_9M114M_KokonM_x4 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -4525,7 +4568,6 @@ export Descriptor_Missile_AGM_9M114M_KokonM_x6 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -4606,7 +4648,6 @@ export Descriptor_Missile_AGM_9M114M_KokonM_x8 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -4687,7 +4728,6 @@ export Descriptor_Missile_AGM_9M14_MalyutkaP_x4 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -4768,7 +4808,6 @@ export Descriptor_Missile_AGM_9M14_MalyutkaP_x6 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -4849,7 +4888,6 @@ export Descriptor_Missile_AGM_9M17P_FalangaP is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -4930,7 +4968,6 @@ export Descriptor_Missile_AGM_9M17P_FalangaP_x2 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -5011,7 +5048,6 @@ export Descriptor_Missile_AGM_9M17P_FalangaP_x4 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -5092,7 +5128,6 @@ export Descriptor_Missile_AGM_9M17P_FalangaP_x6 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -5185,7 +5220,6 @@ export Descriptor_Missile_AGM_AGM114A is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -5278,7 +5312,6 @@ export Descriptor_Missile_AGM_AGM114A_x16 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -5371,7 +5404,6 @@ export Descriptor_Missile_AGM_AGM114A_x2_salve is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -5464,7 +5496,6 @@ export Descriptor_Missile_AGM_AGM114A_x2_sol is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -5557,7 +5588,6 @@ export Descriptor_Missile_AGM_AGM114A_x4 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -5650,7 +5680,6 @@ export Descriptor_Missile_AGM_AGM114A_x8 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -5731,7 +5760,6 @@ export Descriptor_Missile_AGM_AGM122_Sidearm is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -5812,7 +5840,6 @@ export Descriptor_Missile_AGM_AGM45_Shrike is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -5893,7 +5920,6 @@ export Descriptor_Missile_AGM_AGM65B_Maverick is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -5974,7 +6000,6 @@ export Descriptor_Missile_AGM_AGM65D_Maverick is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -6055,7 +6080,6 @@ export Descriptor_Missile_AGM_AGM65E_Maverick is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -6136,7 +6160,6 @@ export Descriptor_Missile_AGM_AGM88_HARM is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -6217,7 +6240,6 @@ export Descriptor_Missile_AGM_AJ_168_x2 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -6298,7 +6320,6 @@ export Descriptor_Missile_AGM_ALARM is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -6379,7 +6400,6 @@ export Descriptor_Missile_AGM_ARMAT is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -6460,7 +6480,6 @@ export Descriptor_Missile_AGM_AS11_x2 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -6541,7 +6560,6 @@ export Descriptor_Missile_AGM_AS11_x2_air is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -6622,7 +6640,6 @@ export Descriptor_Missile_AGM_AS11_x4 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -6703,7 +6720,6 @@ export Descriptor_Missile_AGM_AS30 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -6784,7 +6800,6 @@ export Descriptor_Missile_AGM_AS30L is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -6865,7 +6880,6 @@ export Descriptor_Missile_AGM_AS37_Martel is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -6946,7 +6960,6 @@ export Descriptor_Missile_AGM_AS37_Martel_x2 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -7027,7 +7040,6 @@ export Descriptor_Missile_AGM_BGM71_TOW_x8 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -7108,7 +7120,6 @@ export Descriptor_Missile_AGM_BGM71C_FITOW_x8 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -7189,7 +7200,6 @@ export Descriptor_Missile_AGM_BGM71C_ITOW_x8 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -7270,7 +7280,6 @@ export Descriptor_Missile_AGM_BGM71D_TOW_2_x4 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -7351,7 +7360,6 @@ export Descriptor_Missile_AGM_BGM71D_TOW_2_x8 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -7432,7 +7440,6 @@ export Descriptor_Missile_AGM_HOT1 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -7513,7 +7520,6 @@ export Descriptor_Missile_AGM_HOT1_x4 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -7594,7 +7600,6 @@ export Descriptor_Missile_AGM_HOT1_x6 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -7675,7 +7680,6 @@ export Descriptor_Missile_AGM_HOT2 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -7756,7 +7760,6 @@ export Descriptor_Missile_AGM_HOT2_x4 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -7837,7 +7840,6 @@ export Descriptor_Missile_AGM_HOT2_x6 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -7918,7 +7920,6 @@ export Descriptor_Missile_AGM_Kh23M is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -7999,7 +8000,6 @@ export Descriptor_Missile_AGM_Kh23M_helo is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -8080,7 +8080,6 @@ export Descriptor_Missile_AGM_Kh25ML is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -8161,7 +8160,6 @@ export Descriptor_Missile_AGM_Kh25MP is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -8242,7 +8240,6 @@ export Descriptor_Missile_AGM_Kh25MPU is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -8323,7 +8320,6 @@ export Descriptor_Missile_AGM_Kh28_X28 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -8404,7 +8400,6 @@ export Descriptor_Missile_AGM_Kh29D is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -8485,7 +8480,6 @@ export Descriptor_Missile_AGM_Kh29L is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -8566,7 +8560,6 @@ export Descriptor_Missile_AGM_Kh29T is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -8647,7 +8640,6 @@ export Descriptor_Missile_AGM_Kh31P is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -8728,7 +8720,6 @@ export Descriptor_Missile_AGM_Kh58U is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -8809,7 +8800,6 @@ export Descriptor_Missile_AGM_Kh66 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -8890,7 +8880,6 @@ export Descriptor_Missile_AGM_SS11_TCA_x4 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -8971,7 +8960,6 @@ export Descriptor_Missile_AGM_SS11_x4 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -9052,7 +9040,6 @@ export Descriptor_Missile_ATGM_9K111_Fagot is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -9133,7 +9120,6 @@ export Descriptor_Missile_ATGM_9K111M_Fagot_M is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -9214,7 +9200,6 @@ export Descriptor_Missile_ATGM_9K111M_Fagot_M_IFV is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -9295,7 +9280,6 @@ export Descriptor_Missile_ATGM_9K121_Vikhr is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -9376,7 +9360,6 @@ export Descriptor_Missile_ATGM_9M112_1_Kobra is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -9457,7 +9440,6 @@ export Descriptor_Missile_ATGM_9M113_Konkurs_BMP2 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -9538,7 +9520,6 @@ export Descriptor_Missile_ATGM_9M113_Konkurs_x3 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -9619,7 +9600,6 @@ export Descriptor_Missile_ATGM_9M113_Konkurs_x5 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -9700,7 +9680,6 @@ export Descriptor_Missile_ATGM_9M113_KonkursM is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -9781,7 +9760,6 @@ export Descriptor_Missile_ATGM_9M113_KonkursM_late is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -9862,7 +9840,6 @@ export Descriptor_Missile_ATGM_9M113_KonkursM_late_x5 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -9943,7 +9920,6 @@ export Descriptor_Missile_ATGM_9M114_Shturm_MTLB is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -10024,7 +10000,6 @@ export Descriptor_Missile_ATGM_9M114M_Ataka is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -10105,7 +10080,6 @@ export Descriptor_Missile_ATGM_9M114M_KokonM is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -10186,7 +10160,6 @@ export Descriptor_Missile_ATGM_9M117_Bastion is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -10267,7 +10240,6 @@ export Descriptor_Missile_ATGM_9M117_Bastion_IFV is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -10348,7 +10320,86 @@ export Descriptor_Missile_ATGM_9M117M_Arkan is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
+            UseTopArmorAgainstFire = False
+        ),
+        TDangerousnessModuleDescriptor(Dangerousness  = 200),
+        ~/TargetDataModuleDescriptor,
+    ]
+)
+export Descriptor_Missile_ATGM_9M119M_Invar is TEntityDescriptor
+(
+    DescriptorId       = GUID:{60f3c78e-e84f-40b1-8151-9cebc57db75f}
+    ClassNameForDebug  = 'Missile_ATGM_9M119M_Invar'
+    ModulesDescriptors = [
+        ~/SimpleTypeUnitModuleDescriptor,
+        TTagsModuleDescriptor
+        (
+            TagSet = [
+                "MISSILE",
+                "MISSILE_ATGM_9M119M_Invar",
+            ]
+        ),
+        ~/MissileFlagsModuleDescriptor,
+        ~/MissilePositionModuleDescriptor,
+        ~/LinkTeamModuleDescriptor,
+        TApparenceModuleDescriptor
+        (
+            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_Bastion
+            Depiction     = Template_DescriptorMissileBase
+            (
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Bastion
+                Actions = MAP[
+                    ( "fx_propulsion_on", template_PropulsionActionHappening( Action = $/GFX/GameFx/fx_propulsion_missile_generation3 )),
+                ]
+            )
+        ),
+        TGuidedMissileModuleDescriptor
+        (
+        ),
+        TGuidedMissileMovementModuleDescriptor
+        (
+            DefaultConfig = TGuidedMissileMovementConfigDescriptor
+            (
+                MaxSpeedGRU        = 777
+                MaxAccelerationGRU = 353
+                AutoGyr            = 0.8726646259971648
+            )
+            UncontrollableConfig = TGuidedMissileMovementConfigDescriptor
+            (
+                MaxSpeedGRU        = 777
+                MaxAccelerationGRU = 353
+                AutoGyr            = 0.08726646259971647
+            )
+            AscendantPhaseConfig = nil
+            TerminalPhaseConfig = nil
+            CruiseAltitudeGRU = 0.0
+            TimeMaxBetweenRandomMoveWhenUncontrollable = 1
+            TimeMinBetweenRandomMoveWhenUncontrollable = 0.5
+            TimeBetweenChaosUpdates = 0.1
+            RangeChaos = 750
+            AngleMaxForRandomMouvUncontrollable = 0.0
+            RotationSpeedWhenUncontrollable = 0
+        ),
+        TBaseDamageModuleDescriptor
+        (
+            MaxPhysicalDamages = 2
+            MaxSuppressionDamages = ~/Missile_MaxSuppressionDamages
+            MaxStunDamages = ~/Missile_MaxStunDamages
+        ),
+        TDamageModuleDescriptor
+        (
+            SuppressDamagesRegenRatio = ~/Missile_SuppressDamagesRegenRatioList
+            StunDamagesRegen = ~/Missile_StunDamagesRegen
+            BlindageProperties = TBlindageProperties
+            (
+                ResistanceFront = TResistanceTypeRTTI(Family=ResistanceFamily_vehicule Index=1)
+                ResistanceSides = TResistanceTypeRTTI(Family=ResistanceFamily_vehicule Index=1)
+                ResistanceRear = TResistanceTypeRTTI(Family=ResistanceFamily_vehicule Index=1)
+                ResistanceTop = TResistanceTypeRTTI(Family=ResistanceFamily_vehicule Index=1)
+                ExplosiveReactiveArmor = False
+            )
+            KillWhenDamagesReachMax = True
+            HitRollECM = 0.0
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -10429,7 +10480,6 @@ export Descriptor_Missile_ATGM_9M119M_Refleks is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -10510,7 +10560,6 @@ export Descriptor_Missile_ATGM_9M119M_Svir is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -10591,7 +10640,6 @@ export Descriptor_Missile_ATGM_9M128_Agona is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -10672,7 +10720,6 @@ export Descriptor_Missile_ATGM_9M14_MalyutkaP is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -10753,7 +10800,6 @@ export Descriptor_Missile_ATGM_9M14_MalyutkaP_x2 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -10834,7 +10880,6 @@ export Descriptor_Missile_ATGM_9M14_MalyutkaP_x4 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -10915,7 +10960,6 @@ export Descriptor_Missile_ATGM_9M14_MalyutkaP_x6 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -10996,7 +11040,6 @@ export Descriptor_Missile_ATGM_9M14_MalyutkaP_IFV is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -11077,7 +11120,6 @@ export Descriptor_Missile_ATGM_9k111M_Faktoriya is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -11158,7 +11200,6 @@ export Descriptor_Missile_ATGM_ADATS is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -11239,7 +11280,6 @@ export Descriptor_Missile_ATGM_AS11_x4 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -11320,7 +11360,6 @@ export Descriptor_Missile_ATGM_BGM71_TOW is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -11401,7 +11440,6 @@ export Descriptor_Missile_ATGM_BGM71_TOW_x2 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -11482,7 +11520,6 @@ export Descriptor_Missile_ATGM_BGM71_TOW_x4 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -11563,7 +11600,6 @@ export Descriptor_Missile_ATGM_BGM71_TOW_x8 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -11644,7 +11680,6 @@ export Descriptor_Missile_ATGM_BGM71C_ITOW is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -11725,7 +11760,6 @@ export Descriptor_Missile_ATGM_BGM71C_ITOW_x2 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -11806,7 +11840,6 @@ export Descriptor_Missile_ATGM_BGM71C_ITOW_x2_IFV is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -11887,7 +11920,6 @@ export Descriptor_Missile_ATGM_BGM71C_ITOW_x4 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -11968,7 +12000,6 @@ export Descriptor_Missile_ATGM_BGM71C_ITOW_x8 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -12049,7 +12080,6 @@ export Descriptor_Missile_ATGM_BGM71D_TOW_2 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -12130,7 +12160,6 @@ export Descriptor_Missile_ATGM_BGM71D_TOW_2_x2 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -12211,7 +12240,6 @@ export Descriptor_Missile_ATGM_BGM71D_TOW_2_x2_IFV is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -12292,7 +12320,6 @@ export Descriptor_Missile_ATGM_BGM71D_TOW_2_x4 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -12373,7 +12400,6 @@ export Descriptor_Missile_ATGM_BGM71D_TOW_2_x8 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -12454,7 +12480,6 @@ export Descriptor_Missile_ATGM_BGM71D_TOW_2A is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -12535,7 +12560,6 @@ export Descriptor_Missile_ATGM_BGM71D_TOW_2A_x2 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -12616,7 +12640,6 @@ export Descriptor_Missile_ATGM_BGM71D_TOW_2A_x2_IFV is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -12697,7 +12720,6 @@ export Descriptor_Missile_ATGM_HOT1 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -12778,7 +12800,6 @@ export Descriptor_Missile_ATGM_HOT1_x4 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -12859,7 +12880,6 @@ export Descriptor_Missile_ATGM_HOT1_x6 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -12940,7 +12960,6 @@ export Descriptor_Missile_ATGM_HOT2 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -13021,7 +13040,6 @@ export Descriptor_Missile_ATGM_HOT2_x2 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -13102,7 +13120,6 @@ export Descriptor_Missile_ATGM_HOT2_x3 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -13183,7 +13200,6 @@ export Descriptor_Missile_ATGM_HOT2_x4 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -13264,7 +13280,6 @@ export Descriptor_Missile_ATGM_HOT2_x6 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -13345,7 +13360,6 @@ export Descriptor_Missile_ATGM_MGM551C_Shillelagh is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -13426,7 +13440,6 @@ export Descriptor_Missile_ATGM_MILAN is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -13507,7 +13520,6 @@ export Descriptor_Missile_ATGM_MILAN_2 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -13588,7 +13600,6 @@ export Descriptor_Missile_ATGM_MILAN_2_x2 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -13669,7 +13680,6 @@ export Descriptor_Missile_ATGM_MILAN_2_IFV is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -13750,7 +13760,6 @@ export Descriptor_Missile_ATGM_MILAN_IFV is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -13831,7 +13840,6 @@ export Descriptor_Missile_ATGM_Swingfire is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -13912,7 +13920,6 @@ export Descriptor_Missile_ATGM_Swingfire_x2 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -13993,7 +14000,6 @@ export Descriptor_Missile_ATGM_Swingfire_x4 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -14074,7 +14080,6 @@ export Descriptor_Missile_ATGM_Swingfire_x5 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -14155,7 +14160,6 @@ export Descriptor_Missile_ATGM_9K115_Metis_M is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -14236,7 +14240,6 @@ export Descriptor_Missile_ATGM_Eryx is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -14318,7 +14321,6 @@ export Descriptor_Missile_Bomb_BGL_400_x1 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -14400,7 +14402,6 @@ export Descriptor_Missile_Bomb_BGL_400_x2 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -14482,7 +14483,6 @@ export Descriptor_Missile_Bomb_CPU_123_x1 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -14564,7 +14564,6 @@ export Descriptor_Missile_Bomb_CPU_123_x2 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -14646,7 +14645,6 @@ export Descriptor_Missile_Bomb_GBU_10_x1 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -14728,7 +14726,6 @@ export Descriptor_Missile_Bomb_GBU_10_x2 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -14810,7 +14807,6 @@ export Descriptor_Missile_Bomb_GBU_12_x1 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -14892,7 +14888,6 @@ export Descriptor_Missile_Bomb_GBU_12_x2 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -14974,7 +14969,6 @@ export Descriptor_Missile_Bomb_GBU_27_x1 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -15056,7 +15050,6 @@ export Descriptor_Missile_Bomb_GBU_27_x2 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -15138,7 +15131,6 @@ export Descriptor_Missile_Bomb_KAB_1500Kr_x1 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -15220,7 +15212,6 @@ export Descriptor_Missile_Bomb_KAB_1500Kr_x2 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -15302,7 +15293,6 @@ export Descriptor_Missile_Bomb_KAB_1500L_x1 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -15384,7 +15374,6 @@ export Descriptor_Missile_Bomb_KAB_1500L_x2 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -15466,7 +15455,6 @@ export Descriptor_Missile_Bomb_KAB_1500L_x3 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -15548,7 +15536,6 @@ export Descriptor_Missile_Bomb_KAB_500Kr_x1 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -15630,7 +15617,6 @@ export Descriptor_Missile_Bomb_KAB_500Kr_x2 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -15712,7 +15698,6 @@ export Descriptor_Missile_Bomb_KAB_500L_x1 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -15794,7 +15779,6 @@ export Descriptor_Missile_Bomb_KAB_500L_x2 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -15876,7 +15860,6 @@ export Descriptor_Missile_Bomb_KAB_500L_x4 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -15964,7 +15947,6 @@ export Descriptor_Missile_FakeRoquette_S_24 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         ~/TargetDataModuleDescriptor,
@@ -16051,7 +16033,6 @@ export Descriptor_Missile_FakeRoquette_S_24_helo is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         ~/TargetDataModuleDescriptor,
@@ -16139,7 +16120,6 @@ export Descriptor_Missile_Javelin is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -16234,7 +16214,6 @@ export Descriptor_Missile_Javelin_LML is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -16321,7 +16300,6 @@ export Descriptor_Missile_M47_DRAGON is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -16402,7 +16380,6 @@ export Descriptor_Missile_M47_DRAGON_Bipied is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -16483,7 +16460,6 @@ export Descriptor_Missile_M47_DRAGON_II is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -16572,7 +16548,6 @@ export Descriptor_Missile_MANPAD_Blowpipe is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -16667,7 +16642,6 @@ export Descriptor_Missile_MANPAD_FIM43 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -16762,7 +16736,6 @@ export Descriptor_Missile_MANPAD_FIM92 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -16857,7 +16830,6 @@ export Descriptor_Missile_MANPAD_FIM92_A is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -16952,7 +16924,6 @@ export Descriptor_Missile_MANPAD_Javelin is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -17047,7 +17018,6 @@ export Descriptor_Missile_MANPAD_Strela2M is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -17142,7 +17112,6 @@ export Descriptor_Missile_MANPAD_Strela3 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -17237,7 +17206,6 @@ export Descriptor_Missile_MANPAD_igla is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -17332,7 +17300,6 @@ export Descriptor_Missile_MissileAA_9K38_Igla_c is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -17427,7 +17394,6 @@ export Descriptor_Missile_Mistral is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -17522,7 +17488,6 @@ export Descriptor_Missile_Mistral_Celtic_x4 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -17530,6 +17495,99 @@ export Descriptor_Missile_Mistral_Celtic_x4 is TEntityDescriptor
         (
             DefaultSkillList = [
                 $/GFX/EffectCapacity/Capacite_StressOnMiss_mid,
+            ]
+        ),
+        ~/TargetDataModuleDescriptor,
+    ]
+)
+export Descriptor_Missile_SAM_3M9M1_x3 is TEntityDescriptor
+(
+    DescriptorId       = GUID:{baf64562-fa54-4815-9895-0b9a7e12f3e0}
+    ClassNameForDebug  = 'Missile_SAM_3M9M1_x3'
+    ModulesDescriptors = [
+        ~/SimpleTypeUnitModuleDescriptor,
+        TTagsModuleDescriptor
+        (
+            TagSet = [
+                "MISSILE",
+                "MISSILE_SAM_3M9M1_x3",
+            ]
+        ),
+        ~/MissileFlagsModuleDescriptor,
+        ~/MissilePositionModuleDescriptor,
+        ~/LinkTeamModuleDescriptor,
+        TApparenceModuleDescriptor
+        (
+            ReferenceMesh = $/GFX/DepictionResources/Modele_Missile_Kub
+            Depiction     = Template_DescriptorMissileBase
+            (
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Kub
+                Actions = MAP[
+                    ( "fx_propulsion_on", TRandomHappening(
+                            Alternatives = [
+                                template_PropulsionActionHappening( Action = $/GFX/GameFx/fx_propulsion_missile_AA_tres_gros_1 ),
+                                template_PropulsionActionHappening( Action = $/GFX/GameFx/fx_propulsion_missile_AA_tres_gros_2 ),
+                                template_PropulsionActionHappening( Action = $/GFX/GameFx/fx_propulsion_missile_AA_tres_gros_3 ),
+                            ]
+                        )),
+                    ( "fx_propulsion_off", template_PropulsionActionHappening( Action = $/GFX/GameFx/fx_arret_missile_AA_moyen )),
+                ]
+            )
+        ),
+        TGuidedMissileModuleDescriptor
+        (
+        ),
+        TGuidedMissileMovementModuleDescriptor
+        (
+            DefaultConfig = TGuidedMissileMovementConfigDescriptor
+            (
+                MaxSpeedGRU        = 5300
+                MaxAccelerationGRU = 2826
+                AutoGyr            = 1.7453292519943295
+            )
+            UncontrollableConfig = TGuidedMissileMovementConfigDescriptor
+            (
+                MaxSpeedGRU        = 5300
+                MaxAccelerationGRU = 2826
+                AutoGyr            = 0.17453292519943295
+            )
+            AscendantPhaseConfig = nil
+            TerminalPhaseConfig = nil
+            CruiseAltitudeGRU = 0.0
+            TimeMaxBetweenRandomMoveWhenUncontrollable = 2
+            TimeMinBetweenRandomMoveWhenUncontrollable = 1.0
+            TimeBetweenChaosUpdates = 0.1
+            RangeChaos = 1000
+            AngleMaxForRandomMouvUncontrollable = 2.0
+            RotationSpeedWhenUncontrollable = 5
+        ),
+        TBaseDamageModuleDescriptor
+        (
+            MaxPhysicalDamages = 2
+            MaxSuppressionDamages = ~/Missile_MaxSuppressionDamages
+            MaxStunDamages = ~/Missile_MaxStunDamages
+        ),
+        TDamageModuleDescriptor
+        (
+            SuppressDamagesRegenRatio = ~/Missile_SuppressDamagesRegenRatioList
+            StunDamagesRegen = ~/Missile_StunDamagesRegen
+            BlindageProperties = TBlindageProperties
+            (
+                ResistanceFront = TResistanceTypeRTTI(Family=ResistanceFamily_vehicule Index=1)
+                ResistanceSides = TResistanceTypeRTTI(Family=ResistanceFamily_vehicule Index=1)
+                ResistanceRear = TResistanceTypeRTTI(Family=ResistanceFamily_vehicule Index=1)
+                ResistanceTop = TResistanceTypeRTTI(Family=ResistanceFamily_vehicule Index=1)
+                ExplosiveReactiveArmor = False
+            )
+            KillWhenDamagesReachMax = True
+            HitRollECM = 0.0
+            UseTopArmorAgainstFire = False
+        ),
+        TDangerousnessModuleDescriptor(Dangerousness  = 200),
+        TCapaciteModuleDescriptor
+        (
+            DefaultSkillList = [
+                $/GFX/EffectCapacity/Capacite_StressOnMiss_high,
             ]
         ),
         ~/TargetDataModuleDescriptor,
@@ -17616,7 +17674,6 @@ export Descriptor_Missile_SAM_9M311_Tunguska_x8 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -17710,7 +17767,6 @@ export Descriptor_Missile_SAM_9M33 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -17798,7 +17854,6 @@ export Descriptor_Missile_SAM_9M330_Tor_x8 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -17892,7 +17947,6 @@ export Descriptor_Missile_SAM_9M336_x3 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -17986,7 +18040,6 @@ export Descriptor_Missile_SAM_9M33M2_x6 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -18080,7 +18133,6 @@ export Descriptor_Missile_SAM_9M38M1_x4 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -18168,7 +18220,6 @@ export Descriptor_Missile_SAM_9M8M3_x2 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -18255,7 +18306,6 @@ export Descriptor_Missile_SAM_ADATS is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -18349,7 +18399,6 @@ export Descriptor_Missile_SAM_Aspide_1A_x4 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -18437,7 +18486,6 @@ export Descriptor_Missile_SAM_BLOODHOUND_x1 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -18532,7 +18580,6 @@ export Descriptor_Missile_SAM_FASTA_Strela2M_x4 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -18627,7 +18674,6 @@ export Descriptor_Missile_SAM_FASTA_Strela2M_x4_TOWED is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -18722,7 +18768,6 @@ export Descriptor_Missile_SAM_FIM92_Stinger_CS is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -18817,7 +18862,6 @@ export Descriptor_Missile_SAM_FIM92_Stinger_CS_x4 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -18912,7 +18956,6 @@ export Descriptor_Missile_SAM_FIM92_Stinger_x4 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -19007,7 +19050,6 @@ export Descriptor_Missile_SAM_FIM92_Stinger_x8 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -19102,7 +19144,6 @@ export Descriptor_Missile_SAM_FIM92C is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -19196,7 +19237,6 @@ export Descriptor_Missile_SAM_I_Hawk is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -19290,7 +19330,6 @@ export Descriptor_Missile_SAM_I_Hawk_x3 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -19385,7 +19424,6 @@ export Descriptor_Missile_SAM_Igla is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -19480,7 +19518,6 @@ export Descriptor_Missile_SAM_IglaN is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -19575,7 +19612,6 @@ export Descriptor_Missile_SAM_IglaN_1M is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -19670,7 +19706,6 @@ export Descriptor_Missile_SAM_IglaV is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -19765,7 +19800,6 @@ export Descriptor_Missile_SAM_IglaV_x4 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -19859,7 +19893,6 @@ export Descriptor_Missile_SAM_MIM72A is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -19953,7 +19986,6 @@ export Descriptor_Missile_SAM_MIM72F is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -20047,7 +20079,6 @@ export Descriptor_Missile_SAM_MIM72G is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -20142,7 +20173,6 @@ export Descriptor_Missile_SAM_Mistral is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -20236,7 +20266,6 @@ export Descriptor_Missile_SAM_R440_x4 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -20330,7 +20359,6 @@ export Descriptor_Missile_SAM_RAPIER is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -20424,7 +20452,6 @@ export Descriptor_Missile_SAM_RAPIER_DARKFIRE_x6 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -20518,7 +20545,6 @@ export Descriptor_Missile_SAM_RAPIER_FSA_x4 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -20612,7 +20638,6 @@ export Descriptor_Missile_SAM_RAPIER_x4 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -20706,7 +20731,6 @@ export Descriptor_Missile_SAM_RAPIER_x8 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -20800,7 +20824,6 @@ export Descriptor_Missile_SAM_ROLAND is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -20894,7 +20917,6 @@ export Descriptor_Missile_SAM_ROLAND_1 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -20988,7 +21010,6 @@ export Descriptor_Missile_SAM_ROLAND_1_x2 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -21082,7 +21103,6 @@ export Descriptor_Missile_SAM_ROLAND_2 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -21176,7 +21196,6 @@ export Descriptor_Missile_SAM_ROLAND_2_x2 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -21270,7 +21289,6 @@ export Descriptor_Missile_SAM_ROLAND_3 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -21364,7 +21382,6 @@ export Descriptor_Missile_SAM_ROLAND_3_x2 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -21459,7 +21476,6 @@ export Descriptor_Missile_SAM_Strela1_x4 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -21554,7 +21570,6 @@ export Descriptor_Missile_SAM_Strela10_x4 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -21649,7 +21664,6 @@ export Descriptor_Missile_SAM_Strela10M3_x4 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -21744,7 +21758,6 @@ export Descriptor_Missile_SAM_Strela2_x12 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -21839,7 +21852,6 @@ export Descriptor_Missile_SAM_Strela2_x2 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -21934,7 +21946,6 @@ export Descriptor_Missile_SAM_Strela2_x4 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -22029,7 +22040,6 @@ export Descriptor_Missile_SAM_Strela2M_x2 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -22124,7 +22134,6 @@ export Descriptor_Missile_SAM_Strela2M_x2_Static is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
@@ -22219,7 +22228,6 @@ export Descriptor_Missile_Starstreak_x3 is TEntityDescriptor
             )
             KillWhenDamagesReachMax = True
             HitRollECM = 0.0
-            AutoOrientation = False
             UseTopArmorAgainstFire = False
         ),
         TDangerousnessModuleDescriptor(Dangerousness  = 200),
