@@ -1,14 +1,18 @@
 import fs from 'fs';
 
 console.log('\n\n\nThis script will process all units and buildings in the game and create DivisionRules for YSM');
-console.log('\n\n\nUpdated: September 5, 2025');
+console.log('\n\n\nUpdated: November 19, 2025');
 console.log('\n\n\n');
 
-console.log('Looking for files...');
+console.log('Initializing...');
+
+// ? ---------- SETUP ----------
 
 // ? Paths
 const buildingsFile = fs.readFileSync('../GameData/Generated/Gameplay/Gfx/BuildingDescriptors.ndf', 'utf8');
 const unitsFile = fs.readFileSync('../GameData/Generated/Gameplay/Gfx/UniteDescriptor.ndf', 'utf8');
+
+// ? ---------------------------
 
 if (!buildingsFile || !unitsFile) throw new Error('Required files not found.\nCheck the paths.');
 
@@ -26,8 +30,13 @@ function parseBuildings() {
     for (const [i, line] of lines.entries()) {
         if (!line?.length) continue;
 
+        if (line.match(/ysm-ignore-(unit|building)s-below/g)) {
+            console.log(`Skipping everything below line ${i + 1}`);
+            break;
+        }
+
         if (line.match(/export Descriptor_Unit_.+ is TEntityDescriptor/g)) {
-            if (lines[i - 1].match(/ysm ignore/g)) {
+            if (lines[i - 1]?.match(/ysm-ignore-(unit|building)/g)) {
                 console.log('Skipping ' + line.trim().split(' ')[1]);
                 continue;
             }
@@ -70,17 +79,22 @@ function parseUnits() {
         isInTags = false;
     }
 
-    function trim(s) {
-        return s.replaceAll(/[",]+/g, '').replaceAll(' ', '');
+    function strictTrim(s) {
+        return s.replaceAll(/[^A-z0-9]/g, '').toLowerCase();
     }
 
     const lines = unitsFile.split('\n');
     for (const [i, line] of lines.entries()) {
         if (!line?.length) continue;
 
+        if (line.match(/ysm-ignore-(unit|building)s-below/g)) {
+            console.log(`Skipping everything below line ${i + 1}`);
+            break;
+        }
+
         if (line.match(/export Descriptor_Unit_.+ is TEntityDescriptor/g)) {
             reset();
-            if (lines[i - 1].match(/ysm ignore/g)) {
+            if (lines[i - 1]?.match(/ysm-ignore-(unit|building)/g)) {
                 console.log('Skipping ' + line.trim().split(' ')[1]);
                 continue;
             }
@@ -92,13 +106,13 @@ function parseUnits() {
                 reset();
             } else if (isInTags) {
                 if (line.match(/]/g)) isInTags = false;
-                else tags.push(trim(line));
+                else tags.push(strictTrim(line));
             } else if (isInTransporter) {
                 if (line.match(/]/g)) isInTransporter = false;
                 else {
-                    const tag = trim(line);
+                    const tag = strictTrim(line);
                     if (!(tag in transports)) transports[tag] = [];
-                    transports[tag].push(name);
+                    if (!(name in transports[tag])) transports[tag].push(name);
                 }
             } else if (line.match(/TTransportableModuleDescriptor/g)) ignoreTags = false;
             else if (line.match(/TransportableTagSet[\s]+=/g)) isInTransporter = true;
