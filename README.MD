@@ -2,8 +2,8 @@
 - [YSM Community](https://discord.gg/XmbhaSRqfZ)
 - [YSM Installer](https://github.com/dary1337/YSM_Installer)
 - [Steam Workshop page](https://steamcommunity.com/sharedfiles/filedetails/?id=3296415395)
-- Updated: November 15, 2025
-- Tested on game version: 172972
+- Updated: November 21, 2025
+- Tested on game version: 173446
 
 
 ### License

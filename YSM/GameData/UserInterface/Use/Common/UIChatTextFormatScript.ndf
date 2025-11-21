@@ -43,8 +43,8 @@ ChatTextFormatScript is TTextFormatScriptRTTI
             TemplateTFS_Flag(TextureToken = "CommonTexture_MotherCountryFlag_CAN")
             ),
         (
-            "DAN",
-            TemplateTFS_Flag(TextureToken = "CommonTexture_MotherCountryFlag_DAN")
+            "DK",
+            TemplateTFS_Flag(TextureToken = "CommonTexture_MotherCountryFlag_DK")
         ),
         (
             "SWE",

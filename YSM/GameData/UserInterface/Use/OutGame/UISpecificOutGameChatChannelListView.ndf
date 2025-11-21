@@ -92,113 +92,31 @@ private Titre_channel is BUCKContainerDescriptor
 
     Components =
     [
-        BUCKListDescriptor
+        BUCKTextDescriptor
         (
+            ElementName = "CurrentChatChannelText"
+
             ComponentFrame = TUIFramePropertyRTTI
             (
-                RelativeWidthHeight = [0.0, 1.0]
                 AlignementToAnchor = [0.5,0.5]
                 AlignementToFather = [0.5,0.5]
-                MagnifiableOffset = [0,2]
             )
 
-            Axis = ~/ListAxis/Horizontal
+            HorizontalFitStyle = ~/FitStyle/FitToContent
+            VerticalFitStyle = ~/FitStyle/FitToContent
+            TextDico = ~/LocalisationConstantes/dico_interface_outgame
+            TextToken = "ALLCHAN"
+            TextColor = "BlancEquipe"
+            TextSize  = "14"
+            TypefaceToken = "IBM"
+            TextStyle = "Default"
 
-            InterItemMargin = TRTTILength(Magnifiable = 5.0)
-
-            Elements =
-            [
-                // Titre du channel
-                BUCKListElementDescriptor
-                (
-                    ComponentDescriptor = BUCKTextDescriptor
-                    (
-
-
-                        ComponentFrame = TUIFramePropertyRTTI
-                        (
-                            //RelativeWidthHeight = [0.0, 1.0]
-                            //MagnifiableWidthHeight = [200.0, 0.0]
-                        )
-                        HorizontalFitStyle = ~/FitStyle/FitToContent
-                        VerticalFitStyle = ~/FitStyle/FitToContent
-                        TextDico = ~/LocalisationConstantes/dico_interface_outgame
-                        TextToken = "ALLCHAN_p"
-                        TextColor = "BlancEquipe"
-                        TextSize  = "14"
-                        TypefaceToken = "IBM"
-                        TextStyle = "Default"
-
-                        ParagraphStyle = TParagraphStyle
-                        (
-                            Alignment = UIText_Right
-                            VerticalAlignment = UIText_VerticalCenter
-                        )
-
-
-                    )
-                ),
-                // Titre du channel
-                BUCKListElementDescriptor
-                (
-                    ComponentDescriptor = BUCKTextDescriptor
-                    (
-                        ElementName = "CurrentChatChannelName"
-
-                        ComponentFrame = TUIFramePropertyRTTI
-                        (
-                            //RelativeWidthHeight = [0.0, 1.0]
-                            //MagnifiableWidthHeight = [200.0, 0.0]
-                        )
-                        HorizontalFitStyle = ~/FitStyle/FitToContent
-                        VerticalFitStyle = ~/FitStyle/FitToContent
-                        TextDico = ~/LocalisationConstantes/dico_interface_outgame
-                        TextToken = ""
-                        TextColor = "Cyan"
-                        TextSize  = "14"
-                        TypefaceToken = "IBM"
-                        TextStyle = "Default"
-
-                        ParagraphStyle = TParagraphStyle
-                        (
-                            Alignment = UIText_Right
-                            VerticalAlignment = UIText_VerticalCenter
-                        )
-
-
-                    )
-                ),
-
-                // Titre de la section
-                BUCKListElementDescriptor
-                (
-                    //ExtendWeight = 1.0
-                    ComponentDescriptor = BUCKTextDescriptor
-                    (
-                        ComponentFrame = TUIFramePropertyRTTI
-                        (
-                            //RelativeWidthHeight = [1.0, 1.0]
-                        )
-                        HorizontalFitStyle = ~/FitStyle/FitToContent
-                        VerticalFitStyle = ~/FitStyle/FitToContent
-                        TextDico = ~/LocalisationConstantes/dico_interface_outgame
-                        TextToken = "ALLCHAN"
-                        TextColor = "BlancEquipe"
-                        TextSize  = "14"
-                        TypefaceToken = "IBM"
-                        TextStyle = "Default"
-
-                        ParagraphStyle = TParagraphStyle
-                        (
-                            Alignment = UIText_Left
-                            VerticalAlignment = UIText_VerticalCenter
-                        )
-
-
-                    )
-                )
-            ]
-        ),
+            ParagraphStyle = TParagraphStyle
+            (
+                Alignment = UIText_Right
+                VerticalAlignment = UIText_VerticalCenter
+            )
+        )
     ]
 )
 
