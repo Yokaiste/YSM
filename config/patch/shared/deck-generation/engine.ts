@@ -85,6 +85,7 @@ export function generateDeckOutputs(input: DeckGenerationInput): DeckGenerationR
     config.ignoredDivisionRuleNamePatterns,
     ndf,
   );
+  const divisionUnitNames = new Set(vanillaRules.keys());
   const contexts = buildDivisionContexts(deckableEntities, input.modTag, config);
   const persistentStore = parsePersistentStore(input.persistentStoreContent);
   const localisationState = parseLocalisation(input.localisationContent);
@@ -101,6 +102,7 @@ export function generateDeckOutputs(input: DeckGenerationInput): DeckGenerationR
       weaponDescriptors,
       ammunition,
       vanillaRules,
+      divisionUnitNames,
       generatedPacks,
       persistentStore,
       localisationState,
@@ -326,6 +328,7 @@ function buildDivisionVariants(args: {
   weaponDescriptors: ReturnType<typeof parseWeaponDescriptors>;
   ammunition: ReturnType<typeof parseAmmunition>;
   vanillaRules: Map<string, DivisionRuleData>;
+  divisionUnitNames: ReadonlySet<string>;
   generatedPacks: Map<string, GeneratedPack>;
   persistentStore: ReturnType<typeof parsePersistentStore>;
   localisationState: ReturnType<typeof parseLocalisation>;
@@ -341,6 +344,7 @@ function buildDivisionVariants(args: {
     weaponDescriptors,
     ammunition,
     vanillaRules,
+    divisionUnitNames,
     generatedPacks,
     persistentStore,
     localisationState,
@@ -363,7 +367,7 @@ function buildDivisionVariants(args: {
 
   for (const [modeIndex, mode] of modes.entries()) {
     const variantFilter = (entity: EntityData) =>
-      shouldIncludeEntityInVariant(entity, context, mode, config);
+      shouldIncludeEntityInVariant(entity, context, mode, config, divisionUnitNames);
     const contextEntities = deckableEntities.filter(variantFilter);
     const availableEntityNames = new Set(contextEntities.map((entity) => entity.name));
 

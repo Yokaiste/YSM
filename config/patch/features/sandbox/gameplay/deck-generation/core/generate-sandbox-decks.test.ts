@@ -467,6 +467,123 @@ export default async function test(context: Parameters<typeof generateSandboxDec
     );
   }
 
+  const divisionMembershipConfig = createDeckGenerationConfig(
+    {
+      ...DEFAULT_TEST_CONFIG,
+      excludeUnitsNotInAnyDivision: true,
+      forcedPremadeUnitPatterns: {
+        countryUnlimited: ['^Descriptor_Unit_YC_'],
+      },
+    },
+    modTag,
+    context.tools.values,
+  );
+  const divisionCountryContext = {
+    code: 'COUNTRY_US',
+    nameLabel: 'US',
+    scope: 'country' as const,
+    coalition: 'NATO',
+    countryId: 'US',
+    tags: [],
+    ruleFilter: (entity: EntityData) => entity.country === 'US',
+  };
+  const inDivisionEntity = createEntity('Descriptor_Unit_US_InDivision_Tank', {
+    country: 'US',
+    coalition: 'NATO',
+    factoryType: 'Tanks',
+    unitRole: 'Tank',
+    strategicType: 'Tank',
+  });
+  const orphanEntity = createEntity('Descriptor_Unit_US_Orphan_Tank', {
+    country: 'US',
+    coalition: 'NATO',
+    factoryType: 'Tanks',
+    unitRole: 'Tank',
+    strategicType: 'Tank',
+  });
+  const modOrphanEntity = createEntity(`Descriptor_Unit_${modTag}_Orphan`, {
+    country: modTag,
+    coalition: 'NATO',
+    factoryType: 'Logistic',
+    unitRole: 'Supply',
+    strategicType: 'Supply',
+    hasSupplyModule: true,
+  });
+  const forcedOrphanEntity = createEntity('Descriptor_Unit_YC_Orphan', {
+    country: 'US',
+    coalition: 'NATO',
+    factoryType: 'Tanks',
+    unitRole: 'Tank',
+    strategicType: 'Tank',
+  });
+  const divisionUnitNames = new Set([inDivisionEntity.name]);
+  const divisionMembershipFailures: string[] = [];
+  if (
+    !shouldIncludeEntityInVariant(
+      inDivisionEntity,
+      divisionCountryContext,
+      'Unlimited',
+      divisionMembershipConfig,
+      divisionUnitNames,
+    )
+  ) {
+    divisionMembershipFailures.push(
+      'A unit present in a vanilla division rule was wrongly dropped.',
+    );
+  }
+  if (
+    shouldIncludeEntityInVariant(
+      orphanEntity,
+      divisionCountryContext,
+      'Unlimited',
+      divisionMembershipConfig,
+      divisionUnitNames,
+    )
+  ) {
+    divisionMembershipFailures.push(
+      'A vanilla unit absent from every division rule was still included with the flag on.',
+    );
+  }
+  if (
+    !shouldIncludeEntityInVariant(
+      modOrphanEntity,
+      divisionCountryContext,
+      'Unlimited',
+      divisionMembershipConfig,
+      divisionUnitNames,
+    )
+  ) {
+    divisionMembershipFailures.push(
+      'Mod-country units must bypass the division-membership filter.',
+    );
+  }
+  if (
+    !shouldIncludeEntityInVariant(
+      forcedOrphanEntity,
+      divisionCountryContext,
+      'Unlimited',
+      divisionMembershipConfig,
+      divisionUnitNames,
+    )
+  ) {
+    divisionMembershipFailures.push(
+      'Forced-premade units must bypass the division-membership filter.',
+    );
+  }
+  if (
+    !shouldIncludeEntityInVariant(
+      orphanEntity,
+      divisionCountryContext,
+      'Unlimited',
+      forcedPremadeVariantConfig,
+      divisionUnitNames,
+    )
+  ) {
+    divisionMembershipFailures.push(
+      'Division-membership filtering ran even though the flag was disabled.',
+    );
+  }
+
   const forcedSlotConfig = createDeckGenerationConfig(
     {
       deckSlotCount: 1,
@@ -2791,6 +2908,23 @@ export default async function test(context: Parameters<typeof generateSandboxDec
             suggestion:
               'Treat forced-premade matches as variant-included for the configured unlimited variants.',
             details: forcedPremadeVariantFailures,
+          },
+      divisionMembershipFailures.length === 0
+        ? {
+            name: 'sandbox excludeUnitsNotInAnyDivision drops only orphan vanilla units',
+            status: 'passed' as const,
+            details: [
+              'Vanilla units outside every division rule are filtered while mod, forced and in-division units survive.',
+            ],
+          }
+        : {
+            name: 'sandbox excludeUnitsNotInAnyDivision drops only orphan vanilla units',
+            status: 'failed' as const,
+            reason:
+              'The excludeUnitsNotInAnyDivision flag no longer confines dropping to vanilla units missing from every division rule.',
+            suggestion:
+              'Only exclude regular vanilla units absent from vanillaRules; keep mod-country, forced-premade and in-division units.',
+            details: divisionMembershipFailures,
           },
       forcedSlotFailures.length === 0
         ? {

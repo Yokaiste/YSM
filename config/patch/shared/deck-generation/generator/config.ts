@@ -30,6 +30,7 @@ interface CommentDirectiveConfig {
 export interface DeckGenerationConfig {
   deckSlotCount: number;
   unlimitedPackUnitCount: number;
+  excludeUnitsNotInAnyDivision: boolean;
   contextGeneration: ContextGenerationPolicy;
   commentDirectives: CommentDirectiveConfig;
   preferredUnitCountryIdsByCoalition: Record<string, string[]>;
@@ -94,6 +95,13 @@ export function createDeckGenerationConfig(
       config.unlimitedPackUnitCount,
       'deckGeneration.unlimitedPackUnitCount',
     ),
+    excludeUnitsNotInAnyDivision:
+      config.excludeUnitsNotInAnyDivision === undefined
+        ? false
+        : readBoolean(
+            config.excludeUnitsNotInAnyDivision,
+            'deckGeneration.excludeUnitsNotInAnyDivision',
+          ),
     contextGeneration: readContextGeneration(config.contextGeneration),
     commentDirectives: readCommentDirectives(config.commentDirectives, modTag),
     preferredUnitCountryIdsByCoalition: readPreferredCountryIdsByCoalition(
@@ -148,6 +156,7 @@ export function shouldIncludeEntityInVariant(
   context: DivisionContext,
   mode: DivisionMode,
   config: DeckGenerationConfig,
+  divisionUnitNames?: ReadonlySet<string>,
 ): boolean {
   return shouldIncludeEntityWithPolicy(
     entity,
@@ -155,6 +164,7 @@ export function shouldIncludeEntityInVariant(
     resolveVariantKey(context.scope, mode),
     config,
     config.variantPolicies,
+    divisionUnitNames,
   );
 }
 
@@ -164,6 +174,7 @@ function shouldIncludeEntityWithPolicy(
   variantKey: VariantKey,
   config: DeckGenerationConfig,
   policyMap: Record<VariantKey, VariantPolicy>,
+  divisionUnitNames?: ReadonlySet<string>,
 ): boolean {
   if (!entity.country) {
     return false;
@@ -187,6 +198,14 @@ function shouldIncludeEntityWithPolicy(
   if (isModCountryEntity(entity, config)) {
     const policy = policyMap[variantKey];
     return policy.includeModUnits || (policy.includeModSupply && isSupplyEntity(entity, config));
+  }
+
+  if (
+    config.excludeUnitsNotInAnyDivision &&
+    divisionUnitNames &&
+    !divisionUnitNames.has(entity.name)
+  ) {
+    return false;
   }
 
   return context.ruleFilter(entity);

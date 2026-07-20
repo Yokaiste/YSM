@@ -20,6 +20,9 @@ variables:
   deckGeneration:
     deckSlotCount: ${deckSlotCount}
     unlimitedPackUnitCount: ${unlimitedPackUnitCount}
+    # Drop vanilla units that belong to no division rule from the country/side/all-side
+    # sandbox decks (mod, forced-premade and custom-division units are unaffected).
+    excludeUnitsNotInAnyDivision: true
     commentDirectives:
       ignore: '${commentDirectives.ignore}'
       everythingBelow: '${commentDirectives.everythingBelow}'
