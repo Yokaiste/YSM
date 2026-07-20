@@ -41,6 +41,7 @@ import {
   type GeneratedDivisionVariant,
   type PremadeCard,
 } from '../../../../../shared/deck-generation/generator/types.ts';
+import { resolvePackProfile } from '../../../../../shared/deck-generation/generator/packs.ts';
 import { injectDeckSerializerEntries } from '../../../../../shared/deck-generation/render.ts';
 import type generateSandboxDecks from './generate-sandbox-decks.ts';
 
@@ -394,6 +395,34 @@ export default async function test(context: Parameters<typeof generateSandboxDec
   ) {
     fallbackRuleFailures.push(
       'The default balanced fallback no longer matches the expected curve.',
+    );
+  }
+
+  const packProfileFailures: string[] = [];
+  const fractionalSingleUnitProfile = resolvePackProfile({
+    unitName: 'Descriptor_Unit_Test_Fractional_Single',
+    maxPackNumber: 80,
+    numberOfUnitInPack: 1,
+    multipliers: [1, 0.4, 0, 0],
+  });
+  if (
+    fractionalSingleUnitProfile?.xp !== 0 ||
+    fractionalSingleUnitProfile.number !== 1 ||
+    fractionalSingleUnitProfile.maxUnitCardCount !== 80
+  ) {
+    packProfileFailures.push(
+      `Single-unit fractional rules should fall back to rookie availability, got ${JSON.stringify(fractionalSingleUnitProfile)}.`,
+    );
+  }
+  const roundedVeterancyProfile = resolvePackProfile({
+    unitName: 'Descriptor_Unit_Test_Fractional_Multi',
+    maxPackNumber: 80,
+    numberOfUnitInPack: 2,
+    multipliers: [1, 0.4, 0, 0],
+  });
+  if (roundedVeterancyProfile?.xp !== 1 || roundedVeterancyProfile.number !== 1) {
+    packProfileFailures.push(
+      `Two-unit fractional rules should still keep their rounded veteran pack, got ${JSON.stringify(roundedVeterancyProfile)}.`,
     );
   }
 
@@ -2730,6 +2759,21 @@ export default async function test(context: Parameters<typeof generateSandboxDec
             suggestion:
               'If no similar sane rule exists, fall back to the capped default balanced availability profile.',
             details: fallbackRuleFailures,
+          },
+      packProfileFailures.length === 0
+        ? {
+            name: 'sandbox premade pack selection skips fractional veteran dead cards',
+            status: 'passed' as const,
+            details: ['Single-unit 0.4x cards now use rookie packs instead of invalid veteran ones.'],
+          }
+        : {
+            name: 'sandbox premade pack selection skips fractional veteran dead cards',
+            status: 'failed' as const,
+            reason:
+              'Premade pack generation still picks veterancy levels whose rounded pack size collapses to zero.',
+            suggestion:
+              'Only emit premade packs for XP levels that resolve to a real positive rounded card size, then fall back to the next valid XP.',
+            details: packProfileFailures,
           },
       forcedPremadeVariantFailures.length === 0
         ? {

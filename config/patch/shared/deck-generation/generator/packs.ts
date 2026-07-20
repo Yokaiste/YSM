@@ -9,10 +9,10 @@ interface PackProfile {
 
 export function resolvePackProfile(rule: DivisionRuleData): PackProfile | undefined {
   const xp = resolvePreferredXp(rule);
-  const number = resolvePackNumber(rule, xp);
-  if (number <= 0) {
+  if (xp === undefined) {
     return undefined;
   }
+  const number = resolvePackNumber(rule, xp);
   return {
     xp,
     number,
@@ -58,20 +58,19 @@ export function ensureGeneratedPackDescriptor(args: {
   return descriptorName;
 }
 
-function resolvePreferredXp(rule: DivisionRuleData): number {
+function resolvePreferredXp(rule: DivisionRuleData): number | undefined {
   for (const xp of [1, 2, 0, 3]) {
-    if ((rule.multipliers[xp] ?? 0) > 0) {
+    if (resolvePackNumber(rule, xp) > 0) {
       return xp;
     }
   }
-  return 1;
+  return undefined;
 }
 
 function resolvePackNumber(rule: DivisionRuleData, xp: number): number {
   const multiplier = rule.multipliers[xp] ?? 0;
   if (multiplier <= 0) {
-    return Math.max(1, rule.numberOfUnitInPack);
+    return 0;
   }
-  const resolved = Math.round(rule.numberOfUnitInPack * multiplier);
-  return resolved > 0 ? resolved : rule.numberOfUnitInPack;
+  return Math.round(rule.numberOfUnitInPack * multiplier);
 }
