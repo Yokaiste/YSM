@@ -1,0 +1,732 @@
+version: 1
+id: 'ysm.descriptors.units.nuclear'
+name: 'YSM Nuclear Planes'
+description: 'Adds two YN endgame strike bombers with tuned native tactical-nuclear visuals and concise weapon metadata.'
+enabled: true
+scope: 'prod'
+dependsOn: []
+variables:
+  modTagRaw: "'${modTag}'"
+  nukeUnitSourceDescriptorName: 'Descriptor_Unit_Tornado_IDS_HE1_RFA'
+  nukeSupplyCostRaw: '999.0'
+  nukeCommandPointCost: 5000
+  nukeX2CommandPointCost: 10000
+  nukeTicketCost: 10
+  nukeStrategicAttackValue: 999
+  nukeStrategicDefenseValue: 450
+  nukeRadiusGruRaw: '1460.99'
+  nukeX2RadiusGruRaw: '2921.98'
+  nukeDepictionRadiusRaw: "${nukeRadiusGruRaw + ' * 26 * 2.83'}"
+  nukeX2DepictionRadiusRaw: "${nukeX2RadiusGruRaw + ' * 26 * 2.83'}"
+  nukeSuppressSplashRadiusRaw: "${nukeRadiusGruRaw + ' * 2.5'}"
+  nukeX2SuppressSplashRadiusRaw: "${nukeX2RadiusGruRaw + ' * 2.5'}"
+  nukePhysicalDamageRaw: '500.0'
+  nukeSuppressDamageRaw: '100000.0'
+  nukeFireLifetimeRaw: '60'
+  nukeFireDelayRaw: '0.5'
+  nukeGuaranteedProbabilityRaw: '1.0'
+  nukeSingleSalvoIntervalRaw: '1.0'
+  nukeSingleShotCountRaw: '1'
+  nukeCarrierAltitudeGruRaw: '1000'
+  nukeImpactHappeningRaw: "'YSMNuke50'"
+  nukeX2ImpactHappeningRaw: "'YSMNuke100'"
+  zeroDispersionRaw: '0'
+  nukeProductionResourcesNeededRaw: "${'MAP [\\n        ($/GFX/Resources/Resource_CommandPoints, ' + nukeCommandPointCost + '),\\n        ($/GFX/Resources/Resource_Tickets, ' + nukeTicketCost + '),\\n    ]'}"
+  nukeX2ProductionResourcesNeededRaw: "${'MAP [\\n        ($/GFX/Resources/Resource_CommandPoints, ' + nukeX2CommandPointCost + '),\\n        ($/GFX/Resources/Resource_Tickets, ' + nukeTicketCost + '),\\n    ]'}"
+targets:
+  - file: 'GameData/Fx/Set/FX_Impact_Nuke.ndf'
+    operations:
+      - op: 'copy'
+        selector:
+          kind: 'object'
+          by: 'name'
+          value: 'fx_impact_sol_Tactical_Nuke'
+        destination:
+          kind: 'sibling'
+          name: 'fx_impact_sol_YN_Nuke'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'fx_impact_sol_YN_Nuke.SizeFactor'
+        value:
+          $raw: '12.0'
+      - op: 'copy'
+        selector:
+          kind: 'object'
+          by: 'name'
+          value: 'fx_impact_sol_Tactical_Nuke'
+        destination:
+          kind: 'sibling'
+          name: 'fx_impact_sol_YN_Nuke_X2'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'fx_impact_sol_YN_Nuke_X2.SizeFactor'
+        value:
+          $raw: '15.0'
+  - file: 'GameData/Generated/Gameplay/Gfx/MimeticImpactMapping.ndf'
+    operations:
+      - op: 'add'
+        selector:
+          kind: 'object'
+          by: 'name'
+          value: 'FxImpactSolTacticalNuke'
+        value:
+          $raw: |-
+            FxImpactSolYNNuke is ImpactWrapper( Action = $/GFX/GameFx/fx_impact_sol_YN_Nuke )
+            FxImpactSolYNNukeX2 is ImpactWrapper( Action = $/GFX/GameFx/fx_impact_sol_YN_Nuke_X2 )
+
+            unnamed TMimeticWorldHappeningRegistration
+            (
+                MimeticWorldDescriptor = $/DepictionCore/MimeticWorldDescriptor
+                Happenings = MAP
+                [
+                    ('YSMNuke50', TImpactHappening( Happenings = MAP[
+                        ( EImpactSurface/Ground , FxImpactSolYNNuke ),
+                        ( EImpactSurface/Water , FxImpactSolYNNuke ),
+                        ( EImpactSurface/Air , FxImpactSolYNNuke ),
+                        ( EImpactSurface/Wall , FxImpactSolYNNuke ),
+                        ( EImpactSurface/Vehicle , FxImpactSolYNNuke ),
+                        ( EImpactSurface/FlyingVehicle , FxImpactSolYNNuke ),
+                        ( EImpactSurface/Missile , nil ),
+                        ( EImpactSurface/Ricochet , nil ),
+                    ])),
+                    ('YSMNuke100', TImpactHappening( Happenings = MAP[
+                        ( EImpactSurface/Ground , FxImpactSolYNNukeX2 ),
+                        ( EImpactSurface/Water , FxImpactSolYNNukeX2 ),
+                        ( EImpactSurface/Air , FxImpactSolYNNukeX2 ),
+                        ( EImpactSurface/Wall , FxImpactSolYNNukeX2 ),
+                        ( EImpactSurface/Vehicle , FxImpactSolYNNukeX2 ),
+                        ( EImpactSurface/FlyingVehicle , FxImpactSolYNNukeX2 ),
+                        ( EImpactSurface/Missile , nil ),
+                        ( EImpactSurface/Ricochet , nil ),
+                    ])),
+                ]
+            )
+  - file: 'GameData/Generated/Gameplay/Gfx/FireDescriptor.ndf'
+    operations:
+      - op: 'copy'
+        selector:
+          kind: 'object'
+          by: 'name'
+          value: 'Descriptor_Fire_NapalmSpecial'
+        destination:
+          kind: 'sibling'
+          name: 'Descriptor_Fire_YN_Nuke'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Fire_YN_Nuke.DescriptorId'
+        value:
+          $raw: 'GUID:{9d1cac3e-c432-4696-93d7-85d45b688c5f}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Fire_YN_Nuke.ClassNameForDebug'
+        value:
+          $raw: "'Fire_YN_Nuke'"
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Fire_YN_Nuke.ModulesDescriptors.[TApparenceModuleDescriptor].Depiction.DepictionDescriptor.Radius'
+        value:
+          $raw: '${nukeDepictionRadiusRaw}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Fire_YN_Nuke.ModulesDescriptors.[TFireModuleDescriptor].TimeToLive'
+        value:
+          $raw: '${nukeFireLifetimeRaw}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Fire_YN_Nuke.ModulesDescriptors.[TFireModuleDescriptor].TimeBeforeSpreading'
+        value:
+          $raw: '${nukeFireDelayRaw}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Fire_YN_Nuke.ModulesDescriptors.[TFireModuleDescriptor].TimeBeforeSpreadAttempt'
+        value:
+          $raw: '${nukeFireDelayRaw}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Fire_YN_Nuke.ModulesDescriptors.[TFireModuleDescriptor].SpreadProbability'
+        value:
+          $raw: '${nukeGuaranteedProbabilityRaw}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Fire_YN_Nuke.ModulesDescriptors.[TFireModuleDescriptor].IsNewFireProbability'
+        value:
+          $raw: '${nukeGuaranteedProbabilityRaw}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Fire_YN_Nuke.ModulesDescriptors.[TFireModuleDescriptor].RadiusGRU'
+        value:
+          $raw: '${nukeRadiusGruRaw}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Fire_YN_Nuke.ModulesDescriptors.[TFireModuleDescriptor].AmmunitionForBurn'
+        value:
+          $raw: '$/GFX/Weapon/Ammo_Degats_napalm_lourd'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Fire_YN_Nuke.ModulesDescriptors.[TFireModuleDescriptor].IgniteDistricts'
+        value:
+          $raw: 'True'
+      - op: 'copy'
+        selector:
+          kind: 'object'
+          by: 'name'
+          value: 'Descriptor_Fire_YN_Nuke'
+        destination:
+          kind: 'sibling'
+          name: 'Descriptor_Fire_YN_Nuke_X2'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Fire_YN_Nuke_X2.DescriptorId'
+        value:
+          $raw: 'GUID:{43c680d5-50da-44e4-b691-75b3b0a49a00}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Fire_YN_Nuke_X2.ClassNameForDebug'
+        value:
+          $raw: "'Fire_YN_Nuke_X2'"
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Fire_YN_Nuke_X2.ModulesDescriptors.[TApparenceModuleDescriptor].Depiction.DepictionDescriptor.Radius'
+        value:
+          $raw: '${nukeX2DepictionRadiusRaw}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Fire_YN_Nuke_X2.ModulesDescriptors.[TFireModuleDescriptor].RadiusGRU'
+        value:
+          $raw: '${nukeX2RadiusGruRaw}'
+  - file: 'GameData/Generated/Gameplay/Gfx/Ammunition.ndf'
+    operations:
+      - op: 'copy'
+        selector:
+          kind: 'object'
+          by: 'name'
+          value: 'Ammo_Bomb_Mk83_450kg_x3'
+        destination:
+          kind: 'sibling'
+          name: 'Ammo_YN_Nuke'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Ammo_YN_Nuke.DescriptorId'
+        value:
+          $raw: 'GUID:{1f62bd62-4b23-4527-908b-4bb94da242f0}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Ammo_YN_Nuke.Name'
+        value:
+          $raw: "'YNWNUKE'"
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Ammo_YN_Nuke.TypeCategoryName'
+        value:
+          $raw: "'YNWTYPE'"
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Ammo_YN_Nuke.Caliber'
+        value:
+          $raw: "'YNWCAL'"
+      - op: 'remove'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Ammo_YN_Nuke.WeaponDescriptionToken'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Ammo_YN_Nuke.TargetOnlyOneUnitInDistrict'
+        value:
+          $raw: 'False'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Ammo_YN_Nuke.FxPower'
+        value:
+          $raw: 'EFXPower/UltraLourd'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Ammo_YN_Nuke.ImpactHappening'
+        value:
+          $raw: '${nukeImpactHappeningRaw}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Ammo_YN_Nuke.AffecteParNombre'
+        value:
+          $raw: 'True'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Ammo_YN_Nuke.DispersionAtMaxRangeGRU'
+        value:
+          $raw: '${zeroDispersionRaw}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Ammo_YN_Nuke.DispersionAtMinRangeGRU'
+        value:
+          $raw: '${zeroDispersionRaw}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Ammo_YN_Nuke.MaximumRangeHelicopterGRU'
+        value:
+          $raw: '${nukeRadiusGruRaw}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Ammo_YN_Nuke.MaximumRangeAirplaneGRU'
+        value:
+          $raw: '${nukeRadiusGruRaw}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Ammo_YN_Nuke.RadiusSplashPhysicalDamagesGRU'
+        value:
+          $raw: '${nukeRadiusGruRaw}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Ammo_YN_Nuke.PhysicalDamages'
+        value:
+          $raw: '${nukePhysicalDamageRaw}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Ammo_YN_Nuke.RadiusSplashSuppressDamagesGRU'
+        value:
+          $raw: '${nukeSuppressSplashRadiusRaw}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Ammo_YN_Nuke.SuppressDamages'
+        value:
+          $raw: '${nukeSuppressDamageRaw}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Ammo_YN_Nuke.AllowSuppressDamageWhenNoImpact'
+        value:
+          $raw: 'True'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Ammo_YN_Nuke.FireDescriptor'
+        value:
+          $raw: '$/GFX/Weapon/Descriptor_Fire_YN_Nuke'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Ammo_YN_Nuke.FireTriggeringProbability'
+        value:
+          $raw: '${nukeGuaranteedProbabilityRaw}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Ammo_YN_Nuke.IgnoreInflammabilityConditions'
+        value:
+          $raw: 'True'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Ammo_YN_Nuke.TimeBetweenTwoSalvos'
+        value:
+          $raw: '${nukeSingleSalvoIntervalRaw}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Ammo_YN_Nuke.ShotsCountPerSalvo'
+        value:
+          $raw: '${nukeSingleShotCountRaw}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Ammo_YN_Nuke.SimultaneousShotsCount'
+        value:
+          $raw: '${nukeSingleShotCountRaw}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Ammo_YN_Nuke.AffichageMunitionParSalve'
+        value:
+          $raw: '${nukeSingleShotCountRaw}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Ammo_YN_Nuke.SupplyCost'
+        value:
+          $raw: '${nukeSupplyCostRaw}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Ammo_YN_Nuke.HitRollRuleDescriptor'
+        value:
+          $raw: |-
+            TDiceHitRollRuleDescriptor
+            (
+                BaseCriticModifier = 100
+                BaseHitValueModifiers =
+                [
+                    (EBaseHitValueModifier/Base, 100),
+                    (EBaseHitValueModifier/Idling, 100),
+                    (EBaseHitValueModifier/Moving, 100),
+                    (EBaseHitValueModifier/Targeted, 100),
+                ]
+                DistanceToTarget = False
+            )
+      - op: 'copy'
+        selector:
+          kind: 'object'
+          by: 'name'
+          value: 'Ammo_YN_Nuke'
+        destination:
+          kind: 'sibling'
+          name: 'Ammo_YN_Nuke_X2'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Ammo_YN_Nuke_X2.DescriptorId'
+        value:
+          $raw: 'GUID:{3bc7accf-e4dc-4ef2-b28f-97de121526ee}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Ammo_YN_Nuke_X2.Name'
+        value:
+          $raw: "'YNWNUKE2'"
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Ammo_YN_Nuke_X2.Caliber'
+        value:
+          $raw: "'YNWCAL2'"
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Ammo_YN_Nuke_X2.ImpactHappening'
+        value:
+          $raw: '${nukeX2ImpactHappeningRaw}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Ammo_YN_Nuke_X2.MaximumRangeHelicopterGRU'
+        value:
+          $raw: '${nukeX2RadiusGruRaw}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Ammo_YN_Nuke_X2.MaximumRangeAirplaneGRU'
+        value:
+          $raw: '${nukeX2RadiusGruRaw}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Ammo_YN_Nuke_X2.RadiusSplashPhysicalDamagesGRU'
+        value:
+          $raw: '${nukeX2RadiusGruRaw}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Ammo_YN_Nuke_X2.RadiusSplashSuppressDamagesGRU'
+        value:
+          $raw: '${nukeX2SuppressSplashRadiusRaw}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Ammo_YN_Nuke_X2.FireDescriptor'
+        value:
+          $raw: '$/GFX/Weapon/Descriptor_Fire_YN_Nuke_X2'
+  - file: 'GameData/Generated/Gameplay/Gfx/WeaponDescriptor.ndf'
+    operations:
+      - op: 'copy'
+        selector:
+          kind: 'object'
+          by: 'name'
+          value: 'WeaponDescriptor_Tornado_IDS_HE1_RFA'
+        destination:
+          kind: 'sibling'
+          name: 'WeaponDescriptor_YN_Nuke'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'WeaponDescriptor_YN_Nuke.TurretDescriptorList.[YulBoneOrdinal=2].MountedWeaponDescriptorList.[TMountedWeaponDescriptor#0].Ammunition'
+        value:
+          $raw: '$/GFX/Weapon/Ammo_YN_Nuke'
+      - op: 'copy'
+        selector:
+          kind: 'object'
+          by: 'name'
+          value: 'WeaponDescriptor_YN_Nuke'
+        destination:
+          kind: 'sibling'
+          name: 'WeaponDescriptor_YN_Nuke_X2'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'WeaponDescriptor_YN_Nuke_X2.TurretDescriptorList.[YulBoneOrdinal=2].MountedWeaponDescriptorList.[TMountedWeaponDescriptor#0].Ammunition'
+        value:
+          $raw: '$/GFX/Weapon/Ammo_YN_Nuke_X2'
+  - file: 'GameData/Generated/Gameplay/Gfx/UniteDescriptor.ndf'
+    operations:
+      - op: 'copy'
+        selector:
+          kind: 'object'
+          by: 'name'
+          value: '${nukeUnitSourceDescriptorName}'
+        destination:
+          kind: 'sibling'
+          name: 'Descriptor_Unit_YN_Nuke'
+        leadingComment: '${commentDirectives.forceInclude}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YN_Nuke.DescriptorId'
+        value:
+          $raw: 'GUID:{4a60ddeb-d9a6-4bfb-9ea4-9a0c94df15a1}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YN_Nuke.ClassNameForDebug'
+        value:
+          $raw: "'Unit_YN_Nuke'"
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YN_Nuke.ModulesDescriptors.[TTypeUnitModuleDescriptor].MotherCountry'
+        value:
+          $raw: '${modTagRaw}'
+      - op: 'add'
+        selector:
+          kind: 'collection'
+          by: 'path'
+          value: 'Descriptor_Unit_YN_Nuke.ModulesDescriptors.[TTagsModuleDescriptor].TagSet'
+        position:
+          mode: 'before'
+          anchor: '"Unite"'
+        value:
+          $raw: '"UNITE_YN_Nuke",'
+      - op: 'remove'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YN_Nuke.ModulesDescriptors.[value=$/GFX/Weapon/WeaponDescriptor_Tornado_IDS_HE1_RFA]'
+      - op: 'add'
+        selector:
+          kind: 'collection'
+          by: 'path'
+          value: 'Descriptor_Unit_YN_Nuke.ModulesDescriptors'
+        position:
+          mode: 'before'
+          anchor: 'TBaseDamageModuleDescriptor'
+        value:
+          $raw: |-
+            $/GFX/Weapon/WeaponDescriptor_YN_Nuke,
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YN_Nuke.ModulesDescriptors.[TProductionModuleDescriptor].ProductionRessourcesNeeded'
+        value:
+          $raw: '${nukeProductionResourcesNeededRaw}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YN_Nuke.ModulesDescriptors.[TStrategicDataModuleDescriptor].UnitAttackValue'
+        value: ${nukeStrategicAttackValue}
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YN_Nuke.ModulesDescriptors.[TStrategicDataModuleDescriptor].UnitDefenseValue'
+        value: ${nukeStrategicDefenseValue}
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YN_Nuke.ModulesDescriptors.[TUnitUIModuleDescriptor].NameToken'
+        value:
+          $raw: "'YNNUKE'"
+      - op: 'remove'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YN_Nuke.ModulesDescriptors.[TUnitUIModuleDescriptor].UpgradeFromUnit'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YN_Nuke.ModulesDescriptors.[AirplaneMovementDescriptor|TAirplaneMovementModuleDescriptor].AltitudeGRU'
+        value:
+          $raw: '${nukeCarrierAltitudeGruRaw}'
+      - op: 'copy'
+        selector:
+          kind: 'object'
+          by: 'name'
+          value: '${nukeUnitSourceDescriptorName}'
+        destination:
+          kind: 'sibling'
+          name: 'Descriptor_Unit_YN_Nuke_X2'
+        leadingComment: '${commentDirectives.forceInclude}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YN_Nuke_X2.DescriptorId'
+        value:
+          $raw: 'GUID:{54c88e1b-8db2-4549-9326-ebd3854c0259}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YN_Nuke_X2.ClassNameForDebug'
+        value:
+          $raw: "'Unit_YN_Nuke_X2'"
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YN_Nuke_X2.ModulesDescriptors.[TTypeUnitModuleDescriptor].MotherCountry'
+        value:
+          $raw: '${modTagRaw}'
+      - op: 'add'
+        selector:
+          kind: 'collection'
+          by: 'path'
+          value: 'Descriptor_Unit_YN_Nuke_X2.ModulesDescriptors.[TTagsModuleDescriptor].TagSet'
+        position:
+          mode: 'before'
+          anchor: '"Unite"'
+        value:
+          $raw: '"UNITE_YN_Nuke_X2",'
+      - op: 'remove'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YN_Nuke_X2.ModulesDescriptors.[value=$/GFX/Weapon/WeaponDescriptor_Tornado_IDS_HE1_RFA]'
+      - op: 'add'
+        selector:
+          kind: 'collection'
+          by: 'path'
+          value: 'Descriptor_Unit_YN_Nuke_X2.ModulesDescriptors'
+        position:
+          mode: 'before'
+          anchor: 'TBaseDamageModuleDescriptor'
+        value:
+          $raw: |-
+            $/GFX/Weapon/WeaponDescriptor_YN_Nuke_X2,
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YN_Nuke_X2.ModulesDescriptors.[TProductionModuleDescriptor].ProductionRessourcesNeeded'
+        value:
+          $raw: '${nukeX2ProductionResourcesNeededRaw}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YN_Nuke_X2.ModulesDescriptors.[TStrategicDataModuleDescriptor].UnitAttackValue'
+        value: ${nukeStrategicAttackValue}
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YN_Nuke_X2.ModulesDescriptors.[TStrategicDataModuleDescriptor].UnitDefenseValue'
+        value: ${nukeStrategicDefenseValue}
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YN_Nuke_X2.ModulesDescriptors.[TUnitUIModuleDescriptor].NameToken'
+        value:
+          $raw: "'YNNUKE2'"
+      - op: 'remove'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YN_Nuke_X2.ModulesDescriptors.[TUnitUIModuleDescriptor].UpgradeFromUnit'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YN_Nuke_X2.ModulesDescriptors.[AirplaneMovementDescriptor|TAirplaneMovementModuleDescriptor].AltitudeGRU'
+        value:
+          $raw: '${nukeCarrierAltitudeGruRaw}'

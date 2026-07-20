@@ -1,0 +1,20 @@
+version: 1
+id: 'ysm.ui.ingame.resources'
+name: 'YSM In-Game Resources'
+description: 'Adjusts the YSM in-game HUD container layout.'
+enabled: true
+scope: 'prod'
+dependsOn: []
+targets:
+  - file: 'GameData/UserInterface/Use/InGame/UIInGameResources.ndf'
+    operations:
+      - op: 'remove'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'InGameMainContainerResource.ForegroundComponents.Components.[UniqueName="barre_du_haut"].HasBackground'
+      - op: 'remove'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'InGameMainContainerResource.ForegroundComponents.Components.[UniqueName="barre_du_haut"].BackgroundBlockColorToken'

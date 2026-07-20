@@ -1,0 +1,1751 @@
+version: 1
+id: ysm.descriptors.ammunition.zombies
+name: YSM Zombie Ammunition
+description: Defines the refactored zombie ammo roster with role-specific melee, panic, smoke, demolisher, and anti-heli attack profiles.
+enabled: true
+scope: prod
+variables:
+  noHelicopterRangeRaw: '0'
+  instantAimingTimeRaw: '0.0'
+  suppressWithoutImpactRaw: 'True'
+  canShootWhileMovingRaw: 'True'
+  zombieMeleeDamageTypeRaw: 'TDamageTypeRTTI(Family=DamageFamily_ap Index=19)'
+  zombieMeleeDamageFalloffRaw: '~/DamageTypeEvolutionOverRangeDescriptor_AP1_1Km'
+  assaultShardsSupplyCostRaw: '2.5'
+  scoutShardsSupplyCostRaw: '1.8'
+  demolisherShardsSupplyCostRaw: '3.2'
+  swarmBiteSupplyCostRaw: '2.5'
+  breakerMaulSupplyCostRaw: '10.0'
+  stalkerTalonsSupplyCostRaw: '2.0'
+  packLeaderFangsSupplyCostRaw: '3.0'
+  demolisherChargeSupplyCostRaw: '30.0'
+  smokerCloudSupplyCostRaw: '0.5'
+  screecherSporeSupplyCostRaw: '24'
+targets:
+  - file: GameData/Generated/Gameplay/Gfx/Ammunition.ndf
+    operations:
+      - op: copy
+        selector:
+          kind: object
+          by: name
+          value: Ammo_SHOT_KS_23
+        destination:
+          kind: sibling
+          name: Ammo_YZ_Assault_Shards
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Assault_Shards.DescriptorId
+        value:
+          $raw: GUID:{71563898-d2e0-4298-93a1-721891f0e44e}
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Assault_Shards.Name
+        value:
+          $raw: "'YZSHARD'"
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Assault_Shards.MaximumRangeGRU
+        value:
+          $raw: '35'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Assault_Shards.MaximumRangeHelicopterGRU
+        value:
+          $raw: '${noHelicopterRangeRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Assault_Shards.PhysicalDamages
+        value:
+          $raw: '6.6'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Assault_Shards.SuppressDamages
+        value:
+          $raw: '320.0'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Assault_Shards.RadiusSplashPhysicalDamagesGRU
+        value:
+          $raw: '10'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Assault_Shards.RadiusSplashSuppressDamagesGRU
+        value:
+          $raw: '30'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Assault_Shards.AllowSuppressDamageWhenNoImpact
+        value:
+          $raw: '${suppressWithoutImpactRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Assault_Shards.DispersionAtMaxRangeGRU
+        value:
+          $raw: '2'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Assault_Shards.AimingTime
+        value:
+          $raw: '${instantAimingTimeRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Assault_Shards.TimeBetweenTwoShots
+        value:
+          $raw: '0.2'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Assault_Shards.TimeBetweenTwoSalvos
+        value:
+          $raw: '0.8'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Assault_Shards.ShotsCountPerSalvo
+        value:
+          $raw: '8'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Assault_Shards.SupplyCost
+        value:
+          $raw: '${assaultShardsSupplyCostRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Assault_Shards.CanShootWhileMoving
+        value:
+          $raw: '${canShootWhileMovingRaw}'
+      - op: copy
+        selector:
+          kind: object
+          by: name
+          value: Ammo_SHOT_KS_23
+        destination:
+          kind: sibling
+          name: Ammo_YZ_Scout_Shards
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Scout_Shards.DescriptorId
+        value:
+          $raw: GUID:{339620cd-d829-4d40-a054-f75296b949ef}
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Scout_Shards.Name
+        value:
+          $raw: "'YZSHARD'"
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Scout_Shards.MaximumRangeGRU
+        value:
+          $raw: '30'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Scout_Shards.MaximumRangeHelicopterGRU
+        value:
+          $raw: '${noHelicopterRangeRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Scout_Shards.PhysicalDamages
+        value:
+          $raw: '4.5'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Scout_Shards.SuppressDamages
+        value:
+          $raw: '240.0'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Scout_Shards.RadiusSplashPhysicalDamagesGRU
+        value:
+          $raw: '8'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Scout_Shards.RadiusSplashSuppressDamagesGRU
+        value:
+          $raw: '22'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Scout_Shards.AllowSuppressDamageWhenNoImpact
+        value:
+          $raw: '${suppressWithoutImpactRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Scout_Shards.DispersionAtMaxRangeGRU
+        value:
+          $raw: '2'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Scout_Shards.AimingTime
+        value:
+          $raw: '${instantAimingTimeRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Scout_Shards.TimeBetweenTwoShots
+        value:
+          $raw: '0.2'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Scout_Shards.TimeBetweenTwoSalvos
+        value:
+          $raw: '0.9'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Scout_Shards.ShotsCountPerSalvo
+        value:
+          $raw: '6'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Scout_Shards.SupplyCost
+        value:
+          $raw: '${scoutShardsSupplyCostRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Scout_Shards.CanShootWhileMoving
+        value:
+          $raw: '${canShootWhileMovingRaw}'
+      - op: copy
+        selector:
+          kind: object
+          by: name
+          value: Ammo_SHOT_KS_23
+        destination:
+          kind: sibling
+          name: Ammo_YZ_Demolisher_Shards
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Demolisher_Shards.DescriptorId
+        value:
+          $raw: GUID:{4bd22c19-5994-4371-aba4-93863d14a4e3}
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Demolisher_Shards.Name
+        value:
+          $raw: "'YZSHARD'"
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Demolisher_Shards.MaximumRangeGRU
+        value:
+          $raw: '22'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Demolisher_Shards.MaximumRangeHelicopterGRU
+        value:
+          $raw: '${noHelicopterRangeRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Demolisher_Shards.PhysicalDamages
+        value:
+          $raw: '8.0'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Demolisher_Shards.SuppressDamages
+        value:
+          $raw: '340.0'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Demolisher_Shards.RadiusSplashPhysicalDamagesGRU
+        value:
+          $raw: '12'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Demolisher_Shards.RadiusSplashSuppressDamagesGRU
+        value:
+          $raw: '34'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Demolisher_Shards.AllowSuppressDamageWhenNoImpact
+        value:
+          $raw: '${suppressWithoutImpactRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Demolisher_Shards.DispersionAtMaxRangeGRU
+        value:
+          $raw: '2'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Demolisher_Shards.AimingTime
+        value:
+          $raw: '${instantAimingTimeRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Demolisher_Shards.TimeBetweenTwoShots
+        value:
+          $raw: '0.2'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Demolisher_Shards.TimeBetweenTwoSalvos
+        value:
+          $raw: '1.0'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Demolisher_Shards.ShotsCountPerSalvo
+        value:
+          $raw: '8'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Demolisher_Shards.SupplyCost
+        value:
+          $raw: '${demolisherShardsSupplyCostRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Demolisher_Shards.CanShootWhileMoving
+        value:
+          $raw: '${canShootWhileMovingRaw}'
+      - op: copy
+        selector:
+          kind: object
+          by: name
+          value: Ammo_Grenade_Satchel_Charge
+        destination:
+          kind: sibling
+          name: Ammo_YZ_Swarm_Bite
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Swarm_Bite.DescriptorId
+        value:
+          $raw: GUID:{0d715e46-89f7-4608-ad68-78aabdb9c693}
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Swarm_Bite.Name
+        value:
+          $raw: "'YZBITE'"
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Swarm_Bite.Arme
+        value:
+          $raw: '${zombieMeleeDamageTypeRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Swarm_Bite.WeaponCursorType
+        value:
+          $raw: Weapon_Cursor_Canon
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Swarm_Bite.MinMaxCategory
+        value:
+          $raw: MinMax_CanonAP
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Swarm_Bite.ProjectileType
+        value:
+          $raw: EProjectileType/Obus
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Swarm_Bite.PitchForParabolic
+        value:
+          $raw: '0'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Swarm_Bite.MaximumRangeGRU
+        value:
+          $raw: '70'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Swarm_Bite.MaximumRangeHelicopterGRU
+        value:
+          $raw: '${noHelicopterRangeRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Swarm_Bite.PhysicalDamages
+        value:
+          $raw: '32.0'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Swarm_Bite.SuppressDamages
+        value:
+          $raw: '520.0'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Swarm_Bite.RadiusSplashPhysicalDamagesGRU
+        value:
+          $raw: '18'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Swarm_Bite.RadiusSplashSuppressDamagesGRU
+        value:
+          $raw: '50'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Swarm_Bite.TargetOnlyOneUnitInDistrict
+        value:
+          $raw: 'True'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Swarm_Bite.ForceHitTopArmor
+        value:
+          $raw: 'True'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Swarm_Bite.ForceHitTopArmorOnSuccess
+        value:
+          $raw: 'True'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Swarm_Bite.ComputeArmorFromImpactLocation
+        value:
+          $raw: 'True'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Swarm_Bite.DisplaySalveAccuracy
+        value:
+          $raw: 'False'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Swarm_Bite.PiercingWeapon
+        value:
+          $raw: 'True'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Swarm_Bite.DamageTypeEvolutionOverRangeDescriptor
+        value:
+          $raw: '${zombieMeleeDamageFalloffRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Swarm_Bite.TirIndirect
+        value:
+          $raw: 'False'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Swarm_Bite.ProjectileSpeedGRU
+        value:
+          $raw: '90'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Swarm_Bite.AimingTime
+        value:
+          $raw: '${instantAimingTimeRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Swarm_Bite.TimeBetweenTwoShots
+        value:
+          $raw: '0.5'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Swarm_Bite.TimeBetweenTwoFx
+        value:
+          $raw: '0.2'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Swarm_Bite.CanShootWhileMoving
+        value:
+          $raw: '${canShootWhileMovingRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Swarm_Bite.TimeBetweenTwoSalvos
+        value:
+          $raw: '0.7'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Swarm_Bite.SupplyCost
+        value:
+          $raw: '${swarmBiteSupplyCostRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Swarm_Bite.CanShootOnPosition
+        value:
+          $raw: 'False'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Swarm_Bite.NbSalvosShootOnPosition
+        value:
+          $raw: '0'
+      - op: copy
+        selector:
+          kind: object
+          by: name
+          value: Ammo_Grenade_Satchel_Charge
+        destination:
+          kind: sibling
+          name: Ammo_YZ_Breaker_Maul
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Breaker_Maul.DescriptorId
+        value:
+          $raw: GUID:{54e69cda-6023-49b8-9672-7bb322d04d08}
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Breaker_Maul.Name
+        value:
+          $raw: "'YZMAUL'"
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Breaker_Maul.WeaponCursorType
+        value:
+          $raw: Weapon_Cursor_Canon
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Breaker_Maul.MinMaxCategory
+        value:
+          $raw: MinMax_CanonAP
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Breaker_Maul.MaximumRangeGRU
+        value:
+          $raw: '85'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Breaker_Maul.Arme
+        value:
+          $raw: '${zombieMeleeDamageTypeRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Breaker_Maul.ProjectileType
+        value:
+          $raw: EProjectileType/Obus
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Breaker_Maul.PitchForParabolic
+        value:
+          $raw: '0'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Breaker_Maul.MaximumRangeHelicopterGRU
+        value:
+          $raw: '${noHelicopterRangeRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Breaker_Maul.PhysicalDamages
+        value:
+          $raw: '54.0'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Breaker_Maul.SuppressDamages
+        value:
+          $raw: '700.0'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Breaker_Maul.RadiusSplashPhysicalDamagesGRU
+        value:
+          $raw: '34'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Breaker_Maul.RadiusSplashSuppressDamagesGRU
+        value:
+          $raw: '80'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Breaker_Maul.DisplaySalveAccuracy
+        value:
+          $raw: 'False'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Breaker_Maul.TargetOnlyOneUnitInDistrict
+        value:
+          $raw: 'True'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Breaker_Maul.TirIndirect
+        value:
+          $raw: 'False'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Breaker_Maul.ProjectileSpeedGRU
+        value:
+          $raw: '85'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Breaker_Maul.AimingTime
+        value:
+          $raw: '0.05'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Breaker_Maul.TimeBetweenTwoShots
+        value:
+          $raw: '0.7'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Breaker_Maul.TimeBetweenTwoFx
+        value:
+          $raw: '0.2'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Breaker_Maul.CanShootWhileMoving
+        value:
+          $raw: '${canShootWhileMovingRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Breaker_Maul.TimeBetweenTwoSalvos
+        value:
+          $raw: '0.9'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Breaker_Maul.SupplyCost
+        value:
+          $raw: '${breakerMaulSupplyCostRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Breaker_Maul.CanShootOnPosition
+        value:
+          $raw: 'False'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Breaker_Maul.NbSalvosShootOnPosition
+        value:
+          $raw: '0'
+      - op: copy
+        selector:
+          kind: object
+          by: name
+          value: Ammo_Grenade_Satchel_Charge
+        destination:
+          kind: sibling
+          name: Ammo_YZ_Stalker_Talons
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Stalker_Talons.DescriptorId
+        value:
+          $raw: GUID:{ab21f63e-ac39-4e73-817f-918aa6400899}
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Stalker_Talons.Name
+        value:
+          $raw: "'YZTALON'"
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Stalker_Talons.Arme
+        value:
+          $raw: '${zombieMeleeDamageTypeRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Stalker_Talons.WeaponCursorType
+        value:
+          $raw: Weapon_Cursor_Canon
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Stalker_Talons.MinMaxCategory
+        value:
+          $raw: MinMax_CanonAP
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Stalker_Talons.ProjectileType
+        value:
+          $raw: EProjectileType/Obus
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Stalker_Talons.PitchForParabolic
+        value:
+          $raw: '0'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Stalker_Talons.MaximumRangeGRU
+        value:
+          $raw: '65'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Stalker_Talons.MaximumRangeHelicopterGRU
+        value:
+          $raw: '${noHelicopterRangeRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Stalker_Talons.PhysicalDamages
+        value:
+          $raw: '18.0'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Stalker_Talons.SuppressDamages
+        value:
+          $raw: '360.0'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Stalker_Talons.RadiusSplashPhysicalDamagesGRU
+        value:
+          $raw: '12'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Stalker_Talons.RadiusSplashSuppressDamagesGRU
+        value:
+          $raw: '30'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Stalker_Talons.TargetOnlyOneUnitInDistrict
+        value:
+          $raw: 'True'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Stalker_Talons.ForceHitTopArmor
+        value:
+          $raw: 'True'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Stalker_Talons.ForceHitTopArmorOnSuccess
+        value:
+          $raw: 'True'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Stalker_Talons.ComputeArmorFromImpactLocation
+        value:
+          $raw: 'True'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Stalker_Talons.DisplaySalveAccuracy
+        value:
+          $raw: 'False'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Stalker_Talons.PiercingWeapon
+        value:
+          $raw: 'True'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Stalker_Talons.DamageTypeEvolutionOverRangeDescriptor
+        value:
+          $raw: '${zombieMeleeDamageFalloffRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Stalker_Talons.TirIndirect
+        value:
+          $raw: 'False'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Stalker_Talons.ProjectileSpeedGRU
+        value:
+          $raw: '95'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Stalker_Talons.AimingTime
+        value:
+          $raw: '${instantAimingTimeRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Stalker_Talons.TimeBetweenTwoShots
+        value:
+          $raw: '0.5'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Stalker_Talons.TimeBetweenTwoFx
+        value:
+          $raw: '0.2'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Stalker_Talons.CanShootWhileMoving
+        value:
+          $raw: '${canShootWhileMovingRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Stalker_Talons.TimeBetweenTwoSalvos
+        value:
+          $raw: '0.8'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Stalker_Talons.SupplyCost
+        value:
+          $raw: '${stalkerTalonsSupplyCostRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Stalker_Talons.CanShootOnPosition
+        value:
+          $raw: 'False'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Stalker_Talons.NbSalvosShootOnPosition
+        value:
+          $raw: '0'
+      - op: copy
+        selector:
+          kind: object
+          by: name
+          value: Ammo_Grenade_Satchel_Charge
+        destination:
+          kind: sibling
+          name: Ammo_YZ_PackLeader_Fangs
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_PackLeader_Fangs.DescriptorId
+        value:
+          $raw: GUID:{33bcea1e-1a62-4c76-bae0-8616f045a7a0}
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_PackLeader_Fangs.Name
+        value:
+          $raw: "'YZFANG'"
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_PackLeader_Fangs.Arme
+        value:
+          $raw: TDamageTypeRTTI(Family=DamageFamily_ap Index=19)
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_PackLeader_Fangs.WeaponCursorType
+        value:
+          $raw: Weapon_Cursor_Canon
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_PackLeader_Fangs.MinMaxCategory
+        value:
+          $raw: MinMax_CanonAP
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_PackLeader_Fangs.ProjectileType
+        value:
+          $raw: EProjectileType/Obus
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_PackLeader_Fangs.PitchForParabolic
+        value:
+          $raw: '0'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_PackLeader_Fangs.MaximumRangeGRU
+        value:
+          $raw: '80'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_PackLeader_Fangs.MaximumRangeHelicopterGRU
+        value:
+          $raw: '0'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_PackLeader_Fangs.PhysicalDamages
+        value:
+          $raw: '43.0'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_PackLeader_Fangs.SuppressDamages
+        value:
+          $raw: '600.0'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_PackLeader_Fangs.RadiusSplashPhysicalDamagesGRU
+        value:
+          $raw: '18'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_PackLeader_Fangs.RadiusSplashSuppressDamagesGRU
+        value:
+          $raw: '45'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_PackLeader_Fangs.TargetOnlyOneUnitInDistrict
+        value:
+          $raw: 'True'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_PackLeader_Fangs.ForceHitTopArmor
+        value:
+          $raw: 'True'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_PackLeader_Fangs.ForceHitTopArmorOnSuccess
+        value:
+          $raw: 'True'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_PackLeader_Fangs.ComputeArmorFromImpactLocation
+        value:
+          $raw: 'True'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_PackLeader_Fangs.DisplaySalveAccuracy
+        value:
+          $raw: 'False'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_PackLeader_Fangs.PiercingWeapon
+        value:
+          $raw: 'True'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_PackLeader_Fangs.DamageTypeEvolutionOverRangeDescriptor
+        value:
+          $raw: ~/DamageTypeEvolutionOverRangeDescriptor_AP1_1Km
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_PackLeader_Fangs.TirIndirect
+        value:
+          $raw: 'False'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_PackLeader_Fangs.ProjectileSpeedGRU
+        value:
+          $raw: '85'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_PackLeader_Fangs.AimingTime
+        value:
+          $raw: '0.05'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_PackLeader_Fangs.TimeBetweenTwoShots
+        value:
+          $raw: '0.7'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_PackLeader_Fangs.TimeBetweenTwoFx
+        value:
+          $raw: '0.2'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_PackLeader_Fangs.CanShootWhileMoving
+        value:
+          $raw: 'True'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_PackLeader_Fangs.TimeBetweenTwoSalvos
+        value:
+          $raw: '1.0'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_PackLeader_Fangs.SupplyCost
+        value:
+          $raw: '${packLeaderFangsSupplyCostRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_PackLeader_Fangs.CanShootOnPosition
+        value:
+          $raw: 'False'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_PackLeader_Fangs.NbSalvosShootOnPosition
+        value:
+          $raw: '0'
+      - op: copy
+        selector:
+          kind: object
+          by: name
+          value: Ammo_Grenade_Satchel_Charge
+        destination:
+          kind: sibling
+          name: Ammo_YZ_Demolisher_Charge
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Demolisher_Charge.DescriptorId
+        value:
+          $raw: GUID:{11927107-be27-4830-a33f-6700cf1595f6}
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Demolisher_Charge.Name
+        value:
+          $raw: "'YZCHARGE'"
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Demolisher_Charge.WeaponCursorType
+        value:
+          $raw: Weapon_Cursor_Canon
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Demolisher_Charge.MinMaxCategory
+        value:
+          $raw: MinMax_CanonAP
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Demolisher_Charge.MaximumRangeGRU
+        value:
+          $raw: '100'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Demolisher_Charge.MaximumRangeHelicopterGRU
+        value:
+          $raw: '90'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Demolisher_Charge.Arme
+        value:
+          $raw: TDamageTypeRTTI(Family=DamageFamily_ap Index=19)
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Demolisher_Charge.ProjectileType
+        value:
+          $raw: EProjectileType/Obus
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Demolisher_Charge.PitchForParabolic
+        value:
+          $raw: '0'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Demolisher_Charge.RadiusSplashPhysicalDamagesGRU
+        value:
+          $raw: '120'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Demolisher_Charge.PhysicalDamages
+        value:
+          $raw: '720.0'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Demolisher_Charge.RadiusSplashSuppressDamagesGRU
+        value:
+          $raw: '220'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Demolisher_Charge.SuppressDamages
+        value:
+          $raw: '6000.0'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Demolisher_Charge.TimeBetweenTwoShots
+        value:
+          $raw: '12.0'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Demolisher_Charge.TimeBetweenTwoFx
+        value:
+          $raw: '1.2'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Demolisher_Charge.DisplaySalveAccuracy
+        value:
+          $raw: 'False'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Demolisher_Charge.TargetOnlyOneUnitInDistrict
+        value:
+          $raw: 'False'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Demolisher_Charge.ProjectileSpeedGRU
+        value:
+          $raw: '110'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Demolisher_Charge.AimingTime
+        value:
+          $raw: '2.8'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Demolisher_Charge.TirIndirect
+        value:
+          $raw: 'False'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Demolisher_Charge.TimeBetweenTwoSalvos
+        value:
+          $raw: '12.0'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Demolisher_Charge.SupplyCost
+        value:
+          $raw: '${demolisherChargeSupplyCostRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Demolisher_Charge.CanShootWhileMoving
+        value:
+          $raw: 'False'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Demolisher_Charge.CanShootOnPosition
+        value:
+          $raw: 'False'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Demolisher_Charge.NbSalvosShootOnPosition
+        value:
+          $raw: '0'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Demolisher_Charge.FireDescriptor
+        value:
+          $raw: nil
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Demolisher_Charge.FireTriggeringProbability
+        value:
+          $raw: '0.0'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Demolisher_Charge.DamageTypeEvolutionOverRangeDescriptor
+        value:
+          $raw: ~/DamageTypeEvolutionOverRangeDescriptor_AP1_1Km
+      - op: copy
+        selector:
+          kind: object
+          by: name
+          value: Ammo_Mortier_M252_81mm_SMOKE
+        destination:
+          kind: sibling
+          name: Ammo_YZ_Smoker_Cloud
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Smoker_Cloud.DescriptorId
+        value:
+          $raw: GUID:{d6dc9c0d-ac0a-4661-97fc-5a46e4f3fea5}
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Smoker_Cloud.Name
+        value:
+          $raw: "'YZSMOG'"
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Smoker_Cloud.WeaponCursorType
+        value:
+          $raw: Weapon_Cursor_MachineGun
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Smoker_Cloud.MinMaxCategory
+        value:
+          $raw: MinMax_Grenade
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Smoker_Cloud.ProjectileType
+        value:
+          $raw: EProjectileType/Grenade
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Smoker_Cloud.ImpactHappening
+        value:
+          $raw: "'GrenadeVehicleSmokeX8'"
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Smoker_Cloud.MinimumRangeGRU
+        value:
+          $raw: '0'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Smoker_Cloud.MaximumRangeGRU
+        value:
+          $raw: '260'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Smoker_Cloud.PhysicalDamages
+        value:
+          $raw: '0.0'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Smoker_Cloud.SuppressDamages
+        value:
+          $raw: '800.0'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Smoker_Cloud.RadiusSplashPhysicalDamagesGRU
+        value:
+          $raw: '0'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Smoker_Cloud.RadiusSplashSuppressDamagesGRU
+        value:
+          $raw: '60'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Smoker_Cloud.AllowSuppressDamageWhenNoImpact
+        value:
+          $raw: 'True'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Smoker_Cloud.AimingTime
+        value:
+          $raw: '${instantAimingTimeRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Smoker_Cloud.TimeBetweenTwoShots
+        value:
+          $raw: '0.4'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Smoker_Cloud.TimeBetweenTwoFx
+        value:
+          $raw: '0.1'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Smoker_Cloud.TimeBetweenTwoSalvos
+        value:
+          $raw: '4.0'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Smoker_Cloud.ShotsCountPerSalvo
+        value:
+          $raw: '8'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Smoker_Cloud.SimultaneousShotsCount
+        value:
+          $raw: '8'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Smoker_Cloud.ProjectileSpeedGRU
+        value:
+          $raw: '200'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Smoker_Cloud.SupplyCost
+        value:
+          $raw: '${smokerCloudSupplyCostRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Smoker_Cloud.CanShootWhileMoving
+        value:
+          $raw: 'True'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Smoker_Cloud.HasDeploymentTime
+        value:
+          $raw: 'False'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Smoker_Cloud.TirReflexe
+        value:
+          $raw: 'True'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Smoker_Cloud.SmokeDescriptor
+        value:
+          $raw: $/GFX/Weapon/Descriptor_Smoke_Fumi_smoke_grenade
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Smoker_Cloud.IsHarmlessForAllies
+        value:
+          $raw: 'True'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Smoker_Cloud.FireDescriptor
+        value:
+          $raw: nil
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Smoker_Cloud.FireTriggeringProbability
+        value:
+          $raw: '0.0'
+  - file: GameData/Generated/Gameplay/Gfx/AmmunitionMissiles.ndf
+    operations:
+      - op: copy
+        selector:
+          kind: object
+          by: name
+          value: Ammo_MANPAD_igla
+        destination:
+          kind: sibling
+          name: Ammo_YZ_Screecher_Spore
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Screecher_Spore.DescriptorId
+        value:
+          $raw: GUID:{49d9b837-cbf3-409a-818e-3e600f790d4a}
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Screecher_Spore.Name
+        value:
+          $raw: "'YZSPIT'"
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Screecher_Spore.MaximumRangeHelicopterGRU
+        value:
+          $raw: '400'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Screecher_Spore.MaximumRangeAirplaneGRU
+        value:
+          $raw: '300'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Screecher_Spore.RadiusSplashPhysicalDamagesGRU
+        value:
+          $raw: '8'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Screecher_Spore.PhysicalDamages
+        value:
+          $raw: '18.0'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Screecher_Spore.RadiusSplashSuppressDamagesGRU
+        value:
+          $raw: '80'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Screecher_Spore.SuppressDamages
+        value:
+          $raw: '700.0'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Screecher_Spore.AllowSuppressDamageWhenNoImpact
+        value:
+          $raw: 'True'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Screecher_Spore.HitRollRuleDescriptor
+        value:
+          $raw: |-
+            TDiceHitRollRuleDescriptor
+            (
+                BaseCriticModifier = 0
+                BaseHitValueModifiers =
+                [
+                    (EBaseHitValueModifier/Base, -10),
+                    (EBaseHitValueModifier/Idling, 15),
+                    (EBaseHitValueModifier/Moving, -25),
+                    (EBaseHitValueModifier/Targeted, 0),
+                ]
+                DistanceToTarget = True
+            )
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Screecher_Spore.AimingTime
+        value:
+          $raw: '0.0'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Screecher_Spore.TimeBetweenTwoSalvos
+        value:
+          $raw: '7.5'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Screecher_Spore.SupplyCost
+        value:
+          $raw: '${screecherSporeSupplyCostRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Ammo_YZ_Screecher_Spore.CanShootWhileMoving
+        value:
+          $raw: 'True'

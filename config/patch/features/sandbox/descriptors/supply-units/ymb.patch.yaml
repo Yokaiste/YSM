@@ -1,0 +1,177 @@
+version: 1
+id: 'ysm.descriptors.units'
+name: 'YSM Supply Units'
+description: 'Adds the YSM supply helicopter, truck, and amphibious descriptors.'
+enabled: true
+scope: 'prod'
+dependsOn: []
+variables:
+  modTagRaw: "'${modTag}'"
+  supplyHeliSourceDescriptorName: 'Descriptor_Unit_Mi_26_SOV'
+  supplyTruckSourceDescriptorName: 'Descriptor_Unit_Volvo_N10_supply_BEL'
+  supplyAmphibiousSourceDescriptorName: 'Descriptor_Unit_LARC_60_supply_US'
+targets:
+  - file: 'GameData/Generated/Gameplay/Gfx/UniteDescriptor.ndf'
+    operations:
+      - op: 'copy'
+        selector:
+          kind: 'object'
+          by: 'name'
+          value: '${supplyHeliSourceDescriptorName}'
+        destination:
+          kind: 'sibling'
+          name: 'Descriptor_Unit_YS_Supply_Heli'
+        leadingComment: '${commentDirectives.forceInclude}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YS_Supply_Heli.DescriptorId'
+        value:
+          $raw: 'GUID:{ABF52943-585B-4F63-9DFA-C0703C4B63D7}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YS_Supply_Heli.ClassNameForDebug'
+        value:
+          $raw: "'Unit_YS_Supply_Heli'"
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YS_Supply_Heli.ModulesDescriptors.[TTypeUnitModuleDescriptor].MotherCountry'
+        value:
+          $raw: '${modTagRaw}'
+      - op: 'add'
+        selector:
+          kind: 'collection'
+          by: 'path'
+          value: 'Descriptor_Unit_YS_Supply_Heli.ModulesDescriptors.[TTagsModuleDescriptor].TagSet'
+        position:
+          mode: 'before'
+          anchor: '"Unite"'
+        value:
+          $raw: '"UNITE_YS_Supply_Heli",'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YS_Supply_Heli.ModulesDescriptors.[TSupplyModuleDescriptor].SupplyCapacity'
+        value:
+          $raw: '${unlimitedSupplyCapacity}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YS_Supply_Heli.ModulesDescriptors.[TUnitUIModuleDescriptor].NameToken'
+        value:
+          $raw: "'YSHELI'"
+      - op: 'copy'
+        selector:
+          kind: 'object'
+          by: 'name'
+          value: '${supplyTruckSourceDescriptorName}'
+        destination:
+          kind: 'sibling'
+          name: 'Descriptor_Unit_YS_Supply_Truck'
+        leadingComment: '${commentDirectives.forceInclude}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YS_Supply_Truck.DescriptorId'
+        value:
+          $raw: 'GUID:{2A9120F1-D95F-4BDC-886F-8F80F26450C4}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YS_Supply_Truck.ClassNameForDebug'
+        value:
+          $raw: "'Unit_YS_Supply_Truck'"
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YS_Supply_Truck.ModulesDescriptors.[TTypeUnitModuleDescriptor].MotherCountry'
+        value:
+          $raw: '${modTagRaw}'
+      - op: 'add'
+        selector:
+          kind: 'collection'
+          by: 'path'
+          value: 'Descriptor_Unit_YS_Supply_Truck.ModulesDescriptors.[TTagsModuleDescriptor].TagSet'
+        position:
+          mode: 'before'
+          anchor: '"Unite"'
+        value:
+          $raw: '"UNITE_YS_Supply_Truck",'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YS_Supply_Truck.ModulesDescriptors.[TSupplyModuleDescriptor].SupplyCapacity'
+        value:
+          $raw: '${unlimitedSupplyCapacity}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YS_Supply_Truck.ModulesDescriptors.[TUnitUIModuleDescriptor].NameToken'
+        value:
+          $raw: "'YSTRUCK'"
+      - op: 'copy'
+        selector:
+          kind: 'object'
+          by: 'name'
+          value: '${supplyAmphibiousSourceDescriptorName}'
+        destination:
+          kind: 'sibling'
+          name: 'Descriptor_Unit_YS_Supply_Amphibious'
+        leadingComment: '${commentDirectives.forceInclude}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YS_Supply_Amphibious.DescriptorId'
+        value:
+          $raw: 'GUID:{509F1A35-38C6-4755-BF6F-A9308DD0611C}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YS_Supply_Amphibious.ClassNameForDebug'
+        value:
+          $raw: "'Unit_YS_Supply_Amphibious'"
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YS_Supply_Amphibious.ModulesDescriptors.[TTypeUnitModuleDescriptor].MotherCountry'
+        value:
+          $raw: '${modTagRaw}'
+      - op: 'add'
+        selector:
+          kind: 'collection'
+          by: 'path'
+          value: 'Descriptor_Unit_YS_Supply_Amphibious.ModulesDescriptors.[TTagsModuleDescriptor].TagSet'
+        position:
+          mode: 'before'
+          anchor: '"Unite"'
+        value:
+          $raw: '"UNITE_YS_Supply_Amphibious",'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YS_Supply_Amphibious.ModulesDescriptors.[TSupplyModuleDescriptor].SupplyCapacity'
+        value:
+          $raw: '${unlimitedSupplyCapacity}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YS_Supply_Amphibious.ModulesDescriptors.[TUnitUIModuleDescriptor].NameToken'
+        value:
+          $raw: "'YSAMPHIB'"

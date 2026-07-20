@@ -1,0 +1,15 @@
+version: 1
+id: 'ysm.ui.ingame.minimap-info'
+name: 'YSM Minimap Info'
+description: 'Removes the minimap frame background shell.'
+enabled: true
+scope: 'prod'
+dependsOn: []
+targets:
+  - file: 'GameData/UserInterface/Use/InGame/UISpecificMiniMapInfoView.ndf'
+    operations:
+      - op: 'remove'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'BUCKSpecificMiniMapInfoMainComponentDescriptor.Components.[PanelRoundedCorner]'

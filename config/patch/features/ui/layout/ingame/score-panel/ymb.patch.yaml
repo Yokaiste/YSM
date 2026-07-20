@@ -1,0 +1,15 @@
+version: 1
+id: 'ysm.ui.ingame.hud-score'
+name: 'YSM Score View'
+description: 'Adjusts the YSM score panel layout.'
+enabled: true
+scope: 'prod'
+dependsOn: []
+targets:
+  - file: 'GameData/UserInterface/Use/InGame/UISpecificHUDScoreView.ndf'
+    operations:
+      - op: 'remove'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'MainScorePanelComponent.BackgroundComponents'

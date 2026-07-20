@@ -1,0 +1,407 @@
+version: 1
+id: 'ysm.descriptors.buildings'
+name: 'YSM Supply Buildings'
+description: 'Adds YSM supply buildings, including the smoke/SIGINT-jammer defensive base.'
+enabled: true
+scope: 'prod'
+dependsOn: []
+variables:
+  modTagRaw: "'${modTag}'"
+  fobSourceDescriptorName: 'Descriptor_Unit_FOB_US'
+  doomsdaySalvoCount: 999
+  fortifiedSupplyBuildingHealth: 50
+  supplyBunkerCommandPointCost: 300
+  doomsdayCommandPointCost: 900
+  doomsdayDeploymentShiftGruRaw: '100000.0'
+  supplyBunkerProductionResourcesNeededRaw: "${'MAP [\\n        ($/GFX/Resources/Resource_CommandPoints, ' + supplyBunkerCommandPointCost + '),\\n    ]'}"
+  doomsdayProductionResourcesNeededRaw: "${'MAP [\\n        ($/GFX/Resources/Resource_CommandPoints, ' + doomsdayCommandPointCost + '),\\n    ]'}"
+  doomsdaySmokeMinRangeGruRaw: '0'
+  doomsdaySmokeMaxRangeGruRaw: '1000'
+targets:
+  - file: 'GameData/Generated/Gameplay/Gfx/Ammunition.ndf'
+    operations:
+      # Vanilla smoke grenades only fire between 88 and 325 GRU; a vehicle drives
+      # into that window, a static base just queues the order forever.
+      - op: 'copy'
+        selector:
+          kind: 'object'
+          by: 'name'
+          value: 'Ammo_SMOKE_Vehicle_Grenadex8'
+        destination:
+          kind: 'sibling'
+          name: 'Ammo_YS_Doomsday_Smoke'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Ammo_YS_Doomsday_Smoke.DescriptorId'
+        value:
+          $raw: 'GUID:{dedbaac4-f67e-4ea2-b012-ee92a5d0da47}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Ammo_YS_Doomsday_Smoke.MinimumRangeGRU'
+        value:
+          $raw: '${doomsdaySmokeMinRangeGruRaw}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Ammo_YS_Doomsday_Smoke.MaximumRangeGRU'
+        value:
+          $raw: '${doomsdaySmokeMaxRangeGruRaw}'
+  - file: 'GameData/Generated/Gameplay/Gfx/WeaponDescriptor.ndf'
+    operations:
+      - op: 'copy'
+        selector:
+          kind: 'object'
+          by: 'name'
+          value: 'WeaponDescriptor_M113_ADATS_CAN'
+        destination:
+          kind: 'sibling'
+          name: 'WeaponDescriptor_YS_Doomsday'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'WeaponDescriptor_YS_Doomsday.Salves'
+        value:
+          $raw: "${'[ ' + join(repeat(doomsdaySalvoCount, 2), ', ') + ' ]'}"
+      # Smoke launchers sit on a hull-fixed TTurretUnitDescriptor: vehicles aim it
+      # by turning the hull, which a static building can never do. Rebuild it as a
+      # free-spinning two-axis turret (the same kind the working SAM turret uses)
+      # and point it at the wider-range smoke ammo clone.
+      - op: 'remove'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'WeaponDescriptor_YS_Doomsday.TurretDescriptorList.[TTurretUnitDescriptor]'
+      - op: 'add'
+        selector:
+          kind: 'collection'
+          by: 'path'
+          value: 'WeaponDescriptor_YS_Doomsday.TurretDescriptorList'
+        position:
+          mode: 'end'
+        value:
+          $raw: |-
+            TTurretTwoAxisDescriptor
+            (
+                AngleRotationBase = 0
+                AngleRotationBasePitch = 0
+                AngleRotationMax = 6.283185307179586
+                AngleRotationMaxPitch = 1.3089969389957472
+                AngleRotationMinPitch = -0.2617993877991494
+                MountedWeaponDescriptorList =
+                [
+                    TMountedWeaponDescriptor
+                    (
+                        AmmoBoxIndex = 1
+                        Ammunition = $/GFX/Weapon/Ammo_YS_Doomsday_Smoke
+                        AnimateOnlyOneSoldier = True
+                        DispersionRadiusOffColor = RGBA[0,0,0,0]
+                        DispersionRadiusOffThickness = -0.1
+                        DispersionRadiusOnColor = RGBA[0,0,0,0]
+                        DispersionRadiusOnThickness = -0.1
+                        EffectTag = "FireEffect_SMOKE_Vehicle_Grenadex8"
+                        HandheldEquipmentKey = "WeaponAlternative_5"
+                        HideInInterface = True
+                        NbWeapons = 1
+                        ShowDispersion = False
+                        WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_5"
+                        WeaponIgnoredPropertyName = "WeaponIgnored_5"
+                        WeaponShootDataPropertyName =
+                        [
+                            "WeaponShootData_0_5",
+                            "WeaponShootData_1_5",
+                            "WeaponShootData_2_5",
+                            "WeaponShootData_3_5",
+                        ]
+                    ),
+                ]
+                OutOfRangeTrackingDuration = 3.5
+                Tag = "tourelle5"
+                TurretIdleBehaviourDescriptor = ~/TurretIdle_WatchForwardNormal
+                VitesseRotation = 6.283185307179586
+                YulBoneOrdinal = 5
+            ),
+  - file: 'GameData/Generated/Gameplay/Gfx/BuildingDescriptors.ndf'
+    operations:
+      - op: 'copy'
+        selector:
+          kind: 'object'
+          by: 'name'
+          value: '${fobSourceDescriptorName}'
+        destination:
+          kind: 'sibling'
+          name: 'Descriptor_Unit_YS_Supply_Base'
+        leadingComment: '${commentDirectives.forceInclude}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YS_Supply_Base.DescriptorId'
+        value:
+          $raw: 'GUID:{8152B76B-D4E3-4ABE-86B2-09F5393A2FDF}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YS_Supply_Base.ClassNameForDebug'
+        value:
+          $raw: "'Building_YS_Supply_Base'"
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YS_Supply_Base.ModulesDescriptors.[TTypeUnitModuleDescriptor].MotherCountry'
+        value:
+          $raw: '${modTagRaw}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YS_Supply_Base.ModulesDescriptors.[TSupplyModuleDescriptor].SupplyCapacity'
+        value:
+          $raw: '${unlimitedSupplyCapacity}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YS_Supply_Base.ModulesDescriptors.[TUnitUIModuleDescriptor].NameToken'
+        value:
+          $raw: "'YSBASE'"
+      - op: 'copy'
+        selector:
+          kind: 'object'
+          by: 'name'
+          value: '${fobSourceDescriptorName}'
+        destination:
+          kind: 'sibling'
+          name: 'Descriptor_Unit_YS_Supply_Bunker'
+        leadingComment: '${commentDirectives.forceInclude}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YS_Supply_Bunker.DescriptorId'
+        value:
+          $raw: 'GUID:{24AA3EFA-58A0-4519-9113-0852A22FC419}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YS_Supply_Bunker.ClassNameForDebug'
+        value:
+          $raw: "'Building_YS_Supply_Bunker'"
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YS_Supply_Bunker.ModulesDescriptors.[TTypeUnitModuleDescriptor].MotherCountry'
+        value:
+          $raw: '${modTagRaw}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YS_Supply_Bunker.ModulesDescriptors.[TSupplyModuleDescriptor].SupplyCapacity'
+        value:
+          $raw: '${unlimitedSupplyCapacity}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YS_Supply_Bunker.ModulesDescriptors.[TProductionModuleDescriptor].ProductionRessourcesNeeded'
+        value:
+          $raw: '${supplyBunkerProductionResourcesNeededRaw}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YS_Supply_Bunker.ModulesDescriptors.[TBaseDamageModuleDescriptor].MaxPhysicalDamages'
+        value: ${fortifiedSupplyBuildingHealth}
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YS_Supply_Bunker.ModulesDescriptors.[TUnitUIModuleDescriptor].NameToken'
+        value:
+          $raw: "'YSBUNKER'"
+      - op: 'copy'
+        selector:
+          kind: 'object'
+          by: 'name'
+          value: '${fobSourceDescriptorName}'
+        destination:
+          kind: 'sibling'
+          name: 'Descriptor_Unit_YS_Doomsday'
+        leadingComment: '${commentDirectives.forceInclude}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YS_Doomsday.DescriptorId'
+        value:
+          $raw: 'GUID:{11F1E445-D8AE-4222-B0E0-9E1A09BC77DC}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YS_Doomsday.ClassNameForDebug'
+        value:
+          $raw: "'Building_YS_Doomsday'"
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YS_Doomsday.ModulesDescriptors.[TTypeUnitModuleDescriptor].MotherCountry'
+        value:
+          $raw: '${modTagRaw}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YS_Doomsday.ModulesDescriptors.[TSupplyModuleDescriptor].SupplyCapacity'
+        value:
+          $raw: '${unlimitedSupplyCapacity}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YS_Doomsday.ModulesDescriptors.[TProductionModuleDescriptor].ProductionRessourcesNeeded'
+        value:
+          $raw: '${doomsdayProductionResourcesNeededRaw}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YS_Doomsday.ModulesDescriptors.[TBaseDamageModuleDescriptor].MaxPhysicalDamages'
+        value: ${fortifiedSupplyBuildingHealth}
+      # Replace the source FOB's supply-only orders by stable module identity.
+      - op: 'remove'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YS_Doomsday.ModulesDescriptors.[value=~/BuildingOrderConfigModuleDescriptor]'
+      - op: 'remove'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YS_Doomsday.ModulesDescriptors.[value=~/BuildingScannerConfigurationDescriptor]'
+      - op: 'add'
+        selector:
+          kind: 'collection'
+          by: 'path'
+          value: 'Descriptor_Unit_YS_Doomsday.ModulesDescriptors'
+        position:
+          mode: 'before'
+          anchor: 'TReverseScannerWithIdentificationDescriptor'
+        value:
+          $raw: |-
+            TScannerConfigurationDescriptor
+            (
+                VisionRangesGRU = MAP [
+                    ( EVisionRange/Standard, 3500.0 ),
+                    ( EVisionRange/LowAltitude, 4947.0 ),
+                    ( EVisionRange/HighAltitude, 10601.0 ),
+                ]
+                OpticalStrengths = MAP [
+                    ( EOpticalStrength/Standard, 8834.0 ),
+                    ( EOpticalStrength/LowAltitude, 8834.0 ),
+                    ( EOpticalStrength/HighAltitude, 8834.0 ),
+                ]
+            ),
+      - op: 'add'
+        selector:
+          kind: 'collection'
+          by: 'path'
+          value: 'Descriptor_Unit_YS_Doomsday.ModulesDescriptors'
+        position:
+          mode: 'before'
+          anchor: 'TBaseDamageModuleDescriptor'
+        value:
+          $raw: |-
+            $/GFX/Weapon/WeaponDescriptor_YS_Doomsday,
+      - op: 'add'
+        selector:
+          kind: 'collection'
+          by: 'path'
+          value: 'Descriptor_Unit_YS_Doomsday.ModulesDescriptors'
+        position:
+          mode: 'before'
+          anchor: 'TUnitUIModuleDescriptor'
+        value:
+          $raw: |-
+            TDeploymentShiftModuleDescriptor
+            (
+                DeploymentShiftGRU = ${doomsdayDeploymentShiftGruRaw}
+            ),
+            TCapaciteModuleDescriptor
+            (
+                DefaultSkillList = [
+                    $/GFX/EffectCapacity/Capacite_jammer,
+                    $/GFX/EffectCapacity/Capacite_sigint_far,
+                    $/GFX/EffectCapacity/Capacite_sigint_close,
+                ]
+            ),
+            TOrderConfigModuleDescriptor
+            (
+                ValidOrders = [
+                    EOrderType/Stop,
+                    EOrderType/Attack,
+                    EOrderType/Shoot,
+                    EOrderType/ShootDefensiveSmoke,
+                    EOrderType/SupplyUnit,
+                    EOrderType/AskForSupply,
+                    EOrderType/UseCapacite,
+                    EOrderType/AIDefend,
+                    EOrderType/AIAttack,
+                    EOrderType/AIStop,
+                ]
+            ),
+            TOrderableModuleDescriptor
+            (
+                UnlockableOrders = [
+                    EOrderType/Stop,
+                    EOrderType/Attack,
+                    EOrderType/Shoot,
+                    EOrderType/ShootDefensiveSmoke,
+                    EOrderType/SupplyUnit,
+                    EOrderType/AskForSupply,
+                    EOrderType/UseCapacite,
+                    EOrderType/AIDefend,
+                    EOrderType/AIAttack,
+                    EOrderType/AIStop,
+                ]
+            ),
+            ~/FacingInfosModuleDescriptor,
+            ~/TargetDataModuleDescriptor,
+            TVisualShootPositionsModuleDescriptor(),
+      - op: 'add'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YS_Doomsday.ModulesDescriptors.[TUnitUIModuleDescriptor].SpecialtiesList'
+        value:
+          $raw: |-
+            [
+                '_singint',
+                '_jammer',
+                '_smoke_launcher',
+            ]
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YS_Doomsday.ModulesDescriptors.[TUnitUIModuleDescriptor].NameToken'
+        value:
+          $raw: "'YSDOOM'"
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YS_Doomsday.ModulesDescriptors.[TUnitUIModuleDescriptor].InfoPanelConfigurationToken'
+        value:
+          $raw: "'Default'"

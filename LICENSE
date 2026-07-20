@@ -1,0 +1,161 @@
+Yokaiste's Sandbox Mod (YSM)
+Custom Non-Commercial Attribution + Source-Link License
+Version 1.2
+
+Copyright 2026 Yokaiste
+
+1. Scope
+
+This license applies to the original YSM project located in this directory,
+including its original source files, configuration, scripts, documentation, and
+bundled original assets, unless a different license file is included in a
+subdirectory.
+
+This license does not claim ownership of WARNO, Eugen Systems property,
+platform services, or any third-party content referenced by, required by, or
+packaged alongside YSM. Those materials remain governed by their own terms, and
+your use of YSM must also comply with those terms.
+
+2. Definitions
+
+"YSM" means the project covered by this license.
+
+"Non-Commercial" means use that is not primarily intended for or directed
+toward commercial advantage or monetary compensation.
+
+"Distribute" means to publish, share, upload, mirror, host, transmit, sell,
+license, sublicense, bundle, repack, or otherwise make YSM or a derivative work
+available to any other person or entity in any format.
+
+"Commercial Use" includes selling, licensing for a fee, paid access,
+required donations or subscriptions for access, ad-monetized or
+sponsor-monetized distribution, paid bundles, use in paid products or services,
+or any other use primarily intended for commercial advantage or monetary
+compensation.
+
+"Derivative Work" means a modified, adapted, translated, remixed, merged, or
+otherwise changed version of YSM that is based on YSM in whole or in part.
+
+"Working source link" means a functioning URL or other public source location
+that reasonably identifies the canonical source for YSM and allows the source
+to be found without unusual effort.
+
+3. Allowed Non-Commercial Use
+
+You may use, copy, study, edit, modify, adapt, and Distribute YSM and
+Derivative Works of YSM solely for personal, community, educational, archival,
+and other Non-Commercial purposes, subject to the conditions in this license.
+
+This license is not an open-source license and does not grant any permission
+beyond the rights expressly stated here.
+
+4. Conditions For Sharing YSM Or Derivative Works
+
+If you Distribute YSM or any Derivative Work, you must:
+
+- give clear and reasonably visible credit to Yokaiste as the original author
+- provide a clear and reasonably visible working source link to YSM
+- preserve existing copyright, notice, and license information in source distributions, or provide an equally visible notice and license reference with non-source distributions
+- refrain from adding legal or technical restrictions that conflict with this license
+
+No exact wording is required. Any truthful attribution that visibly identifies
+Yokaiste or YSM and includes a working source link is sufficient.
+
+5. Commercial Use Prohibited Without Explicit Written Permission
+
+Commercial Use of YSM is prohibited unless Yokaiste gives explicit prior written
+permission.
+
+Without that permission, you may not:
+
+- sell, resell, or license YSM or any Derivative Work for a fee
+- place YSM or any Derivative Work behind paid access, required donations, subscriptions, memberships, or supporter tiers
+- distribute YSM or any Derivative Work through monetized, sponsor-backed, ad-supported, or revenue-sharing channels where the distribution itself is commercialized
+- include YSM or any Derivative Work in paid packs, paid services, commercial hosting offers, or paid installer bundles
+- use YSM branding, reputation, or community presence to promote a commercial product or service
+
+6. No Sublicensing, Endorsement, Or Branding Rights
+
+This license does not grant any right to use the author's name, project name,
+branding, logos, or community identity beyond truthful attribution required by
+this license.
+
+You may not imply endorsement, sponsorship, approval, certification, or
+official status by Yokaiste without explicit prior written permission.
+
+You may not sublicense or relicense YSM under different terms that reduce or
+remove the protections in this license for the covered YSM material.
+
+7. Ownership And Reservation Of Rights
+
+YSM is licensed, not sold. All rights not expressly granted by this license are
+reserved by Yokaiste.
+
+8. Contributor Submissions
+
+Unless Yokaiste agrees otherwise in writing, any contribution, patch, pull
+request, issue attachment, documentation update, test, asset, or other
+submission intentionally provided for inclusion in YSM is submitted on the
+basis that:
+
+- you represent that you have sufficient rights to submit it
+- you grant Yokaiste the right to use, reproduce, modify, adapt, distribute, and relicense that submission as part of YSM and related project maintenance
+- you intend the submission to be governed for users and downstream recipients under the same license and project terms that apply to the version of YSM into which it is accepted
+
+Yokaiste is not required to accept, publish, credit, or continue maintaining
+any submission.
+
+9. Patent License
+
+To the extent Yokaiste can grant it, you receive a limited patent license for
+patent claims necessarily infringed by your permitted use, modification, and
+distribution of the unmodified YSM project and permitted Derivative Works under
+this license. No patent license is granted for uses beyond the permissions
+expressly granted by this license.
+
+10. Patent Defense
+
+If you make or direct a written patent claim alleging that YSM infringes or
+contributes to infringement of a patent, any patent license granted to you
+under this license ends immediately as of the date of that claim.
+
+11. Termination And Cure
+
+Any use of YSM that violates this license automatically and immediately
+terminates the rights granted under it.
+
+If the violation is your first violation of this license, is capable of cure,
+and you receive written notice describing it, your rights may continue only if
+you come into full compliance within 30 days after receiving that notice and
+take practical steps to correct past non-compliance.
+
+Otherwise, or in the case of repeated, uncured, intentional, or commercially
+exploitative violations, rights may be restored only by explicit written
+permission from Yokaiste.
+
+Upon termination, you must stop Distributing the infringing copy and, where
+reasonably possible, remove it from channels you control.
+
+12. Enforcement
+
+You acknowledge that breach of this license may cause irreparable harm for
+which monetary damages may be inadequate, and that Yokaiste may seek injunctive
+or other equitable relief to the maximum extent permitted by law.
+
+13. Disclaimer
+
+YSM is provided "as is", without warranties or conditions of any kind, express
+or implied, including merchantability, fitness for a particular purpose, title,
+and non-infringement.
+
+14. Limitation Of Liability
+
+To the maximum extent permitted by law, Yokaiste is not liable for any claim,
+damages, losses, or other liability arising from or related to YSM or use of
+YSM.
+
+15. Severability And No Waiver
+
+If any provision of this license is held unenforceable, the remaining
+provisions remain in effect to the maximum extent permitted by law. Failure to
+enforce any provision is not a waiver of future enforcement.

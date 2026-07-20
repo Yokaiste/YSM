@@ -1,0 +1,50 @@
+version: 1
+id: 'ysm.gameplay.deck-generation.zombie-horde'
+name: 'YSM Zombie Horde Deck Generation'
+description: 'Generates the zombie-only horde division and premade deck.'
+enabled: true
+scope: 'prod'
+dependsOn:
+  - 'ysm.descriptors.units.zombies'
+  - 'ysm.gameplay.deck-generation.core'
+variables:
+  zombieUnitPatterns:
+    - '^Descriptor_Unit_YZ_'
+  deckGeneration:
+    deckSlotCount: ${deckSlotCount}
+    unlimitedPackUnitCount: ${unlimitedPackUnitCount}
+    commentDirectives:
+      ignore: '${commentDirectives.ignore}'
+      everythingBelow: '${commentDirectives.everythingBelow}'
+      forceInclude: '${commentDirectives.forceInclude}'
+    contextGeneration:
+      countries: false
+      coalitions: false
+      allSides: false
+    customDivisions:
+      - code: 'ZOMBIE_HORDE_BLUE'
+        name: 'ZOMBIE HORDE'
+        coalition: 'NATO'
+        countryId: '${modTag}'
+        enabled: true
+        skipIfEmpty: true
+        tags:
+          - 'ZOMBIES'
+          - 'HORDE'
+        modes:
+          - 'Unlimited'
+        unitPatterns: ${zombieUnitPatterns}
+      - code: 'ZOMBIE_HORDE_RED'
+        name: 'ZOMBIE HORDE'
+        coalition: 'PACT'
+        countryId: '${modTag}'
+        enabled: true
+        skipIfEmpty: true
+        tags:
+          - 'ZOMBIES'
+          - 'HORDE'
+        modes:
+          - 'Unlimited'
+        unitPatterns: ${zombieUnitPatterns}
+scripts:
+  - path: 'generate-zombie-horde-decks.ts'
