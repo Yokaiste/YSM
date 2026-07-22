@@ -1,0 +1,73 @@
+name: Auto Deploy
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ysm-auto-deploy-release
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    name: Publish installer
+    runs-on: windows-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Smoke-test installer help
+        shell: cmd
+        run: Deploy-YSM.bat --help
+
+      - name: Check fail-safe placement validation
+        shell: pwsh
+        run: |
+          $env:CI = '1'
+          $process = Start-Process -FilePath cmd.exe `
+            -ArgumentList '/D', '/C', 'Deploy-YSM.bat' `
+            -NoNewWindow -Wait -PassThru
+          if ($process.ExitCode -ne 1) {
+            throw "Installer must reject the repository checkout as a WARNO mod root. Exit code: $($process.ExitCode)"
+          }
+
+      - name: Write release notes
+        shell: pwsh
+        run: |
+          @'
+          # YSM Auto Deploy
+
+          Download **Deploy-YSM.bat** to install or update YSM.
+
+          1. Create a WARNO mod with `WARNO\Mods\CreateNewMod.bat YourModName`.
+          2. Put `Deploy-YSM.bat` inside the new mod folder, beside `CommonData` and `GameData`.
+          3. Double-click it.
+
+          The installer checks Git and Git LFS, installs YMB and YSM, validates the configuration, and builds a preview. It does **not** sync or recover live WARNO files automatically; it prints those commands when it finishes.
+
+          This release is replaced whenever the installer changes, so it always contains only the current deployment file.
+          '@ | Set-Content -Path release-notes.md -Encoding utf8
+
+      - name: Replace Auto Deploy release
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release delete auto-deploy --yes --cleanup-tag 2>$null
+          if ($LASTEXITCODE -ne 0) {
+            git push origin :refs/tags/auto-deploy 2>$null
+          }
+
+          git tag --force auto-deploy $env:GITHUB_SHA
+          git push origin refs/tags/auto-deploy --force
+          gh release create auto-deploy Deploy-YSM.bat `
+            --title "Auto Deploy" `
+            --notes-file release-notes.md `
+            --latest=false

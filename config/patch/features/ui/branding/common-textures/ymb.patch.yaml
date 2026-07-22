@@ -1,0 +1,72 @@
+version: 1
+id: 'ysm.ui.generated.common-textures'
+name: 'YSM Common Textures'
+description: 'Registers the shared YSM UI textures.'
+enabled: true
+scope: 'prod'
+dependsOn: []
+targets:
+  - file: 'GameData/UserInterface/Use/Common/CommonTextures.ndf'
+    operations:
+      - op: 'add'
+        selector:
+          kind: 'collection'
+          by: 'path'
+          value: 'CommonTexture_AdditionalTextureBank.Textures'
+        value:
+          $raw: |-
+            ("Texture${modTag}_BrandLogo",            MAP [ (~/ComponentState/Normal, ~/Texture${modTag}_BrandLogo), ] ),
+      - op: 'add'
+        selector:
+          kind: 'collection'
+          by: 'path'
+          value: 'CommonTexture_AdditionalTextureBank.Textures'
+        value:
+          $raw: |-
+            ("Texture${modTag}_CountryFlag",          MAP [ (~/ComponentState/Normal, ~/Texture${modTag}_CountryFlag), ] ),
+      - op: 'add'
+        selector:
+          kind: 'collection'
+          by: 'path'
+          value: 'CommonTexture_AdditionalTextureBank.Textures'
+        value:
+          $raw: |-
+            ("Texture${modTag}_Division_NATO",        MAP [ (~/ComponentState/Normal, ~/Texture${modTag}_Division_NATO), ] ),
+      - op: 'add'
+        selector:
+          kind: 'collection'
+          by: 'path'
+          value: 'CommonTexture_AdditionalTextureBank.Textures'
+        value:
+          $raw: |-
+            ("Texture${modTag}_Division_NATO_Balanced", MAP [ (~/ComponentState/Normal, ~/Texture${modTag}_Division_NATO_Balanced), ] ),
+      - op: 'add'
+        selector:
+          kind: 'collection'
+          by: 'path'
+          value: 'CommonTexture_AdditionalTextureBank.Textures'
+        value:
+          $raw: |-
+            ("Texture${modTag}_Division_PACT",        MAP [ (~/ComponentState/Normal, ~/Texture${modTag}_Division_PACT), ] ),
+      - op: 'add'
+        selector:
+          kind: 'collection'
+          by: 'path'
+          value: 'CommonTexture_AdditionalTextureBank.Textures'
+        value:
+          $raw: |-
+            ("Texture${modTag}_Division_PACT_Balanced", MAP [ (~/ComponentState/Normal, ~/Texture${modTag}_Division_PACT_Balanced), ] ),
+      - op: 'add'
+        selector:
+          kind: 'object'
+          by: 'name'
+          value: 'TextureMapTaille4v4'
+        value:
+          $raw: |-
+            Texture${modTag}_BrandLogo is TUIResourceTexture_Common(FileName = 'GameData:/Assets/2D/Interface/Common/y-brand-logo.png')
+            Texture${modTag}_CountryFlag is TUIResourceTexture_Common(FileName = 'GameData:/Assets/2D/Interface/Common/y-country-flag.png')
+
+            Texture${modTag}_Division_NATO is TUIResourceTexture_Common(FileName = 'GameData:/Assets/2D/Interface/Common/y-division-nato-unlimited.png')
+            Texture${modTag}_Division_NATO_Balanced is TUIResourceTexture_Common(FileName = 'GameData:/Assets/2D/Interface/Common/y-division-nato-balanced.png')
+            Texture${modTag}_Division_PACT is TUIResourceTexture_Common(FileName = 'GameData:/Assets/2D/Interface/Common/y-division-pact-unlimited.png')
+            Texture${modTag}_Division_PACT_Balanced is TUIResourceTexture_Common(FileName = 'GameData:/Assets/2D/Interface/Common/y-division-pact-balanced.png')

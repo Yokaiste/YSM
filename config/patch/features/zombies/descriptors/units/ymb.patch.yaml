@@ -1,0 +1,2293 @@
+version: 1
+id: ysm.descriptors.units.zombies
+name: YSM Zombie Units
+description: Creates the refactored zombie roster with clean roles, tighter AI behavior, proper anti-heli support, and less legacy stat bloat.
+enabled: true
+scope: prod
+dependsOn:
+  - ysm.descriptors.weapons.zombies
+variables:
+  modTagRaw: "'${modTag}'"
+  immortalDamageRaw: '999999'
+  immortalRoutModuleRaw: 'TRoutModuleDescriptor(MoralLevel = 999999),'
+  swarmMaxStunDamageRaw: '900'
+  breakerMaxStunDamageRaw: '1100'
+  screecherMaxStunDamageRaw: '850'
+  stalkerMaxStunDamageRaw: '800'
+  smokerMaxStunDamageRaw: '700'
+  packLeaderMaxStunDamageRaw: '1200'
+  demolisherMaxStunDamageRaw: '1300'
+  groundTargetsOnlyRaw: |-
+    [
+        "GroundUnits",
+    ]
+  defaultZombieDeploymentShiftModuleRaw: |-
+    TDeploymentShiftModuleDescriptor
+    (
+        DeploymentShiftGRU = 2500.0
+    ),
+  zombieTicketCost: 1
+  swarmCommandPointCost: 56
+  breakerCommandPointCost: 96
+  screecherCommandPointCost: 90
+  stalkerCommandPointCost: 76
+  smokerCommandPointCost: 69
+  packLeaderCommandPointCost: 178
+  demolisherCommandPointCost: 131
+  swarmProductionResourcesNeededRaw: "${'MAP [\\n                ($/GFX/Resources/Resource_CommandPoints, ' + swarmCommandPointCost + '),\\n                ($/GFX/Resources/Resource_Tickets, ' + zombieTicketCost + '),\\n            ]'}"
+  breakerProductionResourcesNeededRaw: "${'MAP [\\n                ($/GFX/Resources/Resource_CommandPoints, ' + breakerCommandPointCost + '),\\n                ($/GFX/Resources/Resource_Tickets, ' + zombieTicketCost + '),\\n            ]'}"
+  screecherProductionResourcesNeededRaw: "${'MAP [\\n                ($/GFX/Resources/Resource_CommandPoints, ' + screecherCommandPointCost + '),\\n                ($/GFX/Resources/Resource_Tickets, ' + zombieTicketCost + '),\\n            ]'}"
+  stalkerProductionResourcesNeededRaw: "${'MAP [\\n                ($/GFX/Resources/Resource_CommandPoints, ' + stalkerCommandPointCost + '),\\n                ($/GFX/Resources/Resource_Tickets, ' + zombieTicketCost + '),\\n            ]'}"
+  smokerProductionResourcesNeededRaw: "${'MAP [\\n                ($/GFX/Resources/Resource_CommandPoints, ' + smokerCommandPointCost + '),\\n                ($/GFX/Resources/Resource_Tickets, ' + zombieTicketCost + '),\\n            ]'}"
+  packLeaderProductionResourcesNeededRaw: "${'MAP [\\n                ($/GFX/Resources/Resource_CommandPoints, ' + packLeaderCommandPointCost + '),\\n                ($/GFX/Resources/Resource_Tickets, ' + zombieTicketCost + '),\\n            ]'}"
+  demolisherProductionResourcesNeededRaw: "${'MAP [\\n                ($/GFX/Resources/Resource_CommandPoints, ' + demolisherCommandPointCost + '),\\n                ($/GFX/Resources/Resource_Tickets, ' + zombieTicketCost + '),\\n            ]'}"
+targets:
+  - file: GameData/Generated/Gameplay/Gfx/UniteDescriptor.ndf
+    operations:
+      - op: copy
+        selector:
+          kind: object
+          by: name
+          value: Descriptor_Unit_MotSchutzen_DDR
+        destination:
+          kind: sibling
+          name: Descriptor_Unit_YZ_Swarm
+        leadingComment: '${commentDirectives.forceInclude}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Swarm.DescriptorId
+        value:
+          $raw: GUID:{064bc26c-ad9c-4c59-835f-0aabd781148b}
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Swarm.ClassNameForDebug
+        value:
+          $raw: "'Unit_YZ_Swarm'"
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Swarm.ModulesDescriptors.[TTypeUnitModuleDescriptor].MotherCountry
+        value:
+          $raw: '${modTagRaw}'
+      - op: add
+        selector:
+          kind: collection
+          by: path
+          value: Descriptor_Unit_YZ_Swarm.ModulesDescriptors.[TTagsModuleDescriptor].TagSet
+        position:
+          mode: before
+          anchor: '"Unite"'
+        value:
+          $raw: |-
+            "UNITE_YZ_Swarm",
+            "Zombie",
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Swarm.ModulesDescriptors.[TVisibilityModuleDescriptor].UnitConcealmentBonus
+        value: 4.6
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Swarm.ModulesDescriptors.[TAutoCoverModuleDescriptor].UseTerrainsForEscape
+        value:
+          $raw: 'False'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Swarm.ModulesDescriptors.[TScannerConfigurationDescriptor].VisionRangesGRU
+        value:
+          $raw: |-
+            MAP [
+                ( EVisionRange/Standard, 4200.0 ),
+                ( EVisionRange/LowAltitude, 5654.0 ),
+                ( EVisionRange/HighAltitude, 6361.0 ),
+            ]
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Swarm.ModulesDescriptors.[TScannerConfigurationDescriptor].OpticalStrengths
+        value:
+          $raw: |-
+            MAP [
+                ( EOpticalStrength/Standard, 2800.0 ),
+                ( EOpticalStrength/LowAltitude, 2800.0 ),
+                ( EOpticalStrength/HighAltitude, 900.0 ),
+            ]
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Swarm.ModulesDescriptors.[TDamageModuleDescriptor].BlindageProperties.ResistanceFront
+        value:
+          $raw: TResistanceTypeRTTI(Family=ResistanceFamily_infanterie Index=2)
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Swarm.ModulesDescriptors.[TDamageModuleDescriptor].BlindageProperties.ResistanceSides
+        value:
+          $raw: TResistanceTypeRTTI(Family=ResistanceFamily_infanterie Index=2)
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Swarm.ModulesDescriptors.[TDamageModuleDescriptor].BlindageProperties.ResistanceRear
+        value:
+          $raw: TResistanceTypeRTTI(Family=ResistanceFamily_infanterie Index=2)
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Swarm.ModulesDescriptors.[TDamageModuleDescriptor].BlindageProperties.ResistanceTop
+        value:
+          $raw: TResistanceTypeRTTI(Family=ResistanceFamily_infanterie Index=2)
+      - op: remove
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Swarm.ModulesDescriptors.[value=$/GFX/Weapon/WeaponDescriptor_MotSchutzen_DDR]
+      - op: add
+        selector:
+          kind: collection
+          by: path
+          value: Descriptor_Unit_YZ_Swarm.ModulesDescriptors
+        position:
+          mode: before
+          anchor: TBaseDamageModuleDescriptor
+        value:
+          $raw: $/GFX/Weapon/WeaponDescriptor_YZ_Swarm,
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Swarm.ModulesDescriptors.[TBaseDamageModuleDescriptor].MaxPhysicalDamages
+        value: 84
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Swarm.ModulesDescriptors.[TBaseDamageModuleDescriptor].MaxSuppressionDamages
+        value:
+          $raw: '${immortalDamageRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Swarm.ModulesDescriptors.[TBaseDamageModuleDescriptor].MaxStunDamages
+        value:
+          $raw: '${swarmMaxStunDamageRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Swarm.ModulesDescriptors.[TCapaciteModuleDescriptor].DefaultSkillList
+        value:
+          $raw: |-
+            [
+                $/GFX/EffectCapacity/Capacite_resolute,
+                $/GFX/EffectCapacity/Capacite_Choc,
+                $/GFX/EffectCapacity/Capacite_Choc_feedback,
+            ]
+      - op: remove
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Swarm.ModulesDescriptors.[TDangerousnessModuleDescriptor]
+      - op: add
+        selector:
+          kind: collection
+          by: path
+          value: Descriptor_Unit_YZ_Swarm.ModulesDescriptors
+        position:
+          mode: before
+          anchor: TRoutModuleDescriptor
+        value:
+          $raw: TDangerousnessModuleDescriptor( Dangerousness = 190 ),
+      - op: remove
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Swarm.ModulesDescriptors.[TRoutModuleDescriptor]
+      - op: add
+        selector:
+          kind: collection
+          by: path
+          value: Descriptor_Unit_YZ_Swarm.ModulesDescriptors
+        position:
+          mode: before
+          anchor: ~/FacingInfosModuleDescriptor
+        value:
+          $raw: '${immortalRoutModuleRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Swarm.ModulesDescriptors.[TInfantrySquadModuleDescriptor].MimeticDescriptor.DescriptorId
+        value:
+          $raw: GUID:{625e7470-8c20-452d-933d-03ddc8af20b9}
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Swarm.ModulesDescriptors.[TInfantrySquadModuleDescriptor].SoldierCount
+        value: 10
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Swarm.ModulesDescriptors.[TGenericMovementModuleDescriptor].MaxSpeedInKmph
+        value: 68
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Swarm.ModulesDescriptors.[TProductionModuleDescriptor].ProductionRessourcesNeeded
+        value:
+          $raw: '${swarmProductionResourcesNeededRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Swarm.ModulesDescriptors.[TAttackReactionModuleDescriptor].CanAssist
+        value:
+          $raw: 'True'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Swarm.ModulesDescriptors.[TAttackReactionModuleDescriptor].AssistRequestBroadcastRadiusGRU
+        value:
+          $raw: '2600'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Swarm.ModulesDescriptors.[TAttackReactionModuleDescriptor].MaxDistanceForOffensiveReactionGRU
+        value:
+          $raw: '900'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Swarm.ModulesDescriptors.[TAttackReactionModuleDescriptor].MaxDistanceForEngagementGRU
+        value:
+          $raw: '900'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Swarm.ModulesDescriptors.[TAttackReactionModuleDescriptor].SearchedTagsInEngagementTarget
+        value:
+          $raw: '${groundTargetsOnlyRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Swarm.ModulesDescriptors.[TAttackReactionModuleDescriptor].DistanceToFleeGRU
+        value:
+          $raw: '0'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Swarm.ModulesDescriptors.[TIAStratModuleDescriptor].GameplayBehavior
+        value:
+          $raw: EGameplayBehavior/Nothing
+      - op: add
+        selector:
+          kind: collection
+          by: path
+          value: Descriptor_Unit_YZ_Swarm.ModulesDescriptors
+        position:
+          mode: before
+          anchor: TUnitUIModuleDescriptor
+        value:
+          $raw: '${defaultZombieDeploymentShiftModuleRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Swarm.ModulesDescriptors.[TUnitUIModuleDescriptor].NameToken
+        value:
+          $raw: "'YZSWARM'"
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Swarm.ModulesDescriptors.[TUnitUIModuleDescriptor].SpecialtiesList
+        value:
+          $raw: |-
+            [
+                '_choc',
+                '_resolute',
+            ]
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Swarm.ModulesDescriptors.[TUnitUIModuleDescriptor].UpgradeFromUnit
+        value:
+          $raw: nil
+      - op: copy
+        selector:
+          kind: object
+          by: name
+          value: Descriptor_Unit_Engineers_CAN
+        destination:
+          kind: sibling
+          name: Descriptor_Unit_YZ_Breaker
+        leadingComment: '${commentDirectives.forceInclude}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Breaker.DescriptorId
+        value:
+          $raw: GUID:{06896f1d-471e-4638-ab44-355a24bd6284}
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Breaker.ClassNameForDebug
+        value:
+          $raw: "'Unit_YZ_Breaker'"
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Breaker.ModulesDescriptors.[TTypeUnitModuleDescriptor].Coalition
+        value:
+          $raw: TWargameCoalition/PACT
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Breaker.ModulesDescriptors.[TTypeUnitModuleDescriptor].MotherCountry
+        value:
+          $raw: '${modTagRaw}'
+      - op: add
+        selector:
+          kind: collection
+          by: path
+          value: Descriptor_Unit_YZ_Breaker.ModulesDescriptors.[TTagsModuleDescriptor].TagSet
+        position:
+          mode: before
+          anchor: '"Unite"'
+        value:
+          $raw: |-
+            "UNITE_YZ_Breaker",
+            "Zombie",
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Breaker.ModulesDescriptors.[TVisibilityModuleDescriptor].UnitConcealmentBonus
+        value: 3.2
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Breaker.ModulesDescriptors.[TAutoCoverModuleDescriptor].UseTerrainsForEscape
+        value:
+          $raw: 'False'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Breaker.ModulesDescriptors.[TScannerConfigurationDescriptor].VisionRangesGRU
+        value:
+          $raw: |-
+            MAP [
+                ( EVisionRange/Standard, 4000.0 ),
+                ( EVisionRange/LowAltitude, 5300.0 ),
+                ( EVisionRange/HighAltitude, 6361.0 ),
+            ]
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Breaker.ModulesDescriptors.[TScannerConfigurationDescriptor].OpticalStrengths
+        value:
+          $raw: |-
+            MAP [
+                ( EOpticalStrength/Standard, 2200.0 ),
+                ( EOpticalStrength/LowAltitude, 2200.0 ),
+                ( EOpticalStrength/HighAltitude, 900.0 ),
+            ]
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Breaker.ModulesDescriptors.[TDamageModuleDescriptor].BlindageProperties.ResistanceFront
+        value:
+          $raw: TResistanceTypeRTTI(Family=ResistanceFamily_infanterie Index=2)
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Breaker.ModulesDescriptors.[TDamageModuleDescriptor].BlindageProperties.ResistanceSides
+        value:
+          $raw: TResistanceTypeRTTI(Family=ResistanceFamily_infanterie Index=2)
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Breaker.ModulesDescriptors.[TDamageModuleDescriptor].BlindageProperties.ResistanceRear
+        value:
+          $raw: TResistanceTypeRTTI(Family=ResistanceFamily_infanterie Index=2)
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Breaker.ModulesDescriptors.[TDamageModuleDescriptor].BlindageProperties.ResistanceTop
+        value:
+          $raw: TResistanceTypeRTTI(Family=ResistanceFamily_infanterie Index=2)
+      - op: remove
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Breaker.ModulesDescriptors.[value=$/GFX/Weapon/WeaponDescriptor_Engineers_CAN]
+      - op: add
+        selector:
+          kind: collection
+          by: path
+          value: Descriptor_Unit_YZ_Breaker.ModulesDescriptors
+        position:
+          mode: before
+          anchor: TBaseDamageModuleDescriptor
+        value:
+          $raw: $/GFX/Weapon/WeaponDescriptor_YZ_Breaker,
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Breaker.ModulesDescriptors.[TBaseDamageModuleDescriptor].MaxPhysicalDamages
+        value: 96
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Breaker.ModulesDescriptors.[TBaseDamageModuleDescriptor].MaxSuppressionDamages
+        value:
+          $raw: '${immortalDamageRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Breaker.ModulesDescriptors.[TBaseDamageModuleDescriptor].MaxStunDamages
+        value:
+          $raw: '${breakerMaxStunDamageRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Breaker.ModulesDescriptors.[TCapaciteModuleDescriptor].DefaultSkillList
+        value:
+          $raw: |-
+            [
+                $/GFX/EffectCapacity/Capacite_resolute,
+                $/GFX/EffectCapacity/Capacite_Choc,
+                $/GFX/EffectCapacity/Capacite_Choc_feedback,
+            ]
+      - op: remove
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Breaker.ModulesDescriptors.[TDangerousnessModuleDescriptor]
+      - op: add
+        selector:
+          kind: collection
+          by: path
+          value: Descriptor_Unit_YZ_Breaker.ModulesDescriptors
+        position:
+          mode: before
+          anchor: TRoutModuleDescriptor
+        value:
+          $raw: TDangerousnessModuleDescriptor( Dangerousness = 193 ),
+      - op: remove
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Breaker.ModulesDescriptors.[TRoutModuleDescriptor]
+      - op: add
+        selector:
+          kind: collection
+          by: path
+          value: Descriptor_Unit_YZ_Breaker.ModulesDescriptors
+        position:
+          mode: before
+          anchor: ~/FacingInfosModuleDescriptor
+        value:
+          $raw: '${immortalRoutModuleRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Breaker.ModulesDescriptors.[TInfantrySquadModuleDescriptor].MimeticDescriptor.DescriptorId
+        value:
+          $raw: GUID:{76a3d59b-58e6-4a89-80e0-73ccd00d48cc}
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Breaker.ModulesDescriptors.[TInfantrySquadModuleDescriptor].SoldierCount
+        value: 8
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Breaker.ModulesDescriptors.[TGenericMovementModuleDescriptor].MaxSpeedInKmph
+        value: 58
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Breaker.ModulesDescriptors.[TProductionModuleDescriptor].ProductionRessourcesNeeded
+        value:
+          $raw: '${breakerProductionResourcesNeededRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Breaker.ModulesDescriptors.[TAttackReactionModuleDescriptor].CanAssist
+        value:
+          $raw: 'True'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Breaker.ModulesDescriptors.[TAttackReactionModuleDescriptor].AssistRequestBroadcastRadiusGRU
+        value:
+          $raw: '2800'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Breaker.ModulesDescriptors.[TAttackReactionModuleDescriptor].MaxDistanceForOffensiveReactionGRU
+        value:
+          $raw: '950'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Breaker.ModulesDescriptors.[TAttackReactionModuleDescriptor].MaxDistanceForEngagementGRU
+        value:
+          $raw: '950'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Breaker.ModulesDescriptors.[TAttackReactionModuleDescriptor].SearchedTagsInEngagementTarget
+        value:
+          $raw: '${groundTargetsOnlyRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Breaker.ModulesDescriptors.[TAttackReactionModuleDescriptor].DistanceToFleeGRU
+        value:
+          $raw: '0'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Breaker.ModulesDescriptors.[TIAStratModuleDescriptor].GameplayBehavior
+        value:
+          $raw: EGameplayBehavior/Nothing
+      - op: add
+        selector:
+          kind: collection
+          by: path
+          value: Descriptor_Unit_YZ_Breaker.ModulesDescriptors
+        position:
+          mode: before
+          anchor: TUnitUIModuleDescriptor
+        value:
+          $raw: '${defaultZombieDeploymentShiftModuleRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Breaker.ModulesDescriptors.[TUnitUIModuleDescriptor].NameToken
+        value:
+          $raw: "'YZBREAK'"
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Breaker.ModulesDescriptors.[TUnitUIModuleDescriptor].UnitRole
+        value:
+          $raw: "'infantry'"
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Breaker.ModulesDescriptors.[TUnitUIModuleDescriptor].SpecialtiesList
+        value:
+          $raw: |-
+            [
+                '_choc',
+                '_resolute',
+            ]
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Breaker.ModulesDescriptors.[TUnitUIModuleDescriptor].UpgradeFromUnit
+        value:
+          $raw: nil
+      - op: copy
+        selector:
+          kind: object
+          by: name
+          value: Descriptor_Unit_MANPAD_Igla_DDR
+        destination:
+          kind: sibling
+          name: Descriptor_Unit_YZ_Screecher
+        leadingComment: '${commentDirectives.forceInclude}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Screecher.DescriptorId
+        value:
+          $raw: GUID:{c0a1f43a-ca80-44ae-8adb-00b5265c370e}
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Screecher.ClassNameForDebug
+        value:
+          $raw: "'Unit_YZ_Screecher'"
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Screecher.ModulesDescriptors.[TTypeUnitModuleDescriptor].MotherCountry
+        value:
+          $raw: '${modTagRaw}'
+      - op: add
+        selector:
+          kind: collection
+          by: path
+          value: Descriptor_Unit_YZ_Screecher.ModulesDescriptors.[TTagsModuleDescriptor].TagSet
+        position:
+          mode: before
+          anchor: '"Unite"'
+        value:
+          $raw: |-
+            "UNITE_YZ_Screecher",
+            "Zombie",
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Screecher.ModulesDescriptors.[TVisibilityModuleDescriptor].UnitConcealmentBonus
+        value: 4.8
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Screecher.ModulesDescriptors.[TAutoCoverModuleDescriptor].UseTerrainsForEscape
+        value:
+          $raw: 'False'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Screecher.ModulesDescriptors.[TScannerConfigurationDescriptor].VisionRangesGRU
+        value:
+          $raw: |-
+            MAP [
+                ( EVisionRange/Standard, 4200.0 ),
+                ( EVisionRange/LowAltitude, 6000.0 ),
+                ( EVisionRange/HighAltitude, 8481.0 ),
+            ]
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Screecher.ModulesDescriptors.[TScannerConfigurationDescriptor].OpticalStrengths
+        value:
+          $raw: |-
+            MAP [
+                ( EOpticalStrength/Standard, 3600.0 ),
+                ( EOpticalStrength/LowAltitude, 3600.0 ),
+                ( EOpticalStrength/HighAltitude, 2826.0 ),
+            ]
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Screecher.ModulesDescriptors.[TDamageModuleDescriptor].BlindageProperties.ResistanceFront
+        value:
+          $raw: TResistanceTypeRTTI(Family=ResistanceFamily_infanterie Index=2)
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Screecher.ModulesDescriptors.[TDamageModuleDescriptor].BlindageProperties.ResistanceSides
+        value:
+          $raw: TResistanceTypeRTTI(Family=ResistanceFamily_infanterie Index=2)
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Screecher.ModulesDescriptors.[TDamageModuleDescriptor].BlindageProperties.ResistanceRear
+        value:
+          $raw: TResistanceTypeRTTI(Family=ResistanceFamily_infanterie Index=2)
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Screecher.ModulesDescriptors.[TDamageModuleDescriptor].BlindageProperties.ResistanceTop
+        value:
+          $raw: TResistanceTypeRTTI(Family=ResistanceFamily_infanterie Index=2)
+      - op: remove
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Screecher.ModulesDescriptors.[value=$/GFX/Weapon/WeaponDescriptor_MANPAD_Igla_DDR]
+      - op: add
+        selector:
+          kind: collection
+          by: path
+          value: Descriptor_Unit_YZ_Screecher.ModulesDescriptors
+        position:
+          mode: before
+          anchor: TBaseDamageModuleDescriptor
+        value:
+          $raw: $/GFX/Weapon/WeaponDescriptor_YZ_Screecher,
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Screecher.ModulesDescriptors.[TBaseDamageModuleDescriptor].MaxPhysicalDamages
+        value: 56
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Screecher.ModulesDescriptors.[TBaseDamageModuleDescriptor].MaxSuppressionDamages
+        value:
+          $raw: '${immortalDamageRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Screecher.ModulesDescriptors.[TBaseDamageModuleDescriptor].MaxStunDamages
+        value:
+          $raw: '${screecherMaxStunDamageRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Screecher.ModulesDescriptors.[TCapaciteModuleDescriptor].DefaultSkillList
+        value:
+          $raw: |-
+            [
+                $/GFX/EffectCapacity/Capacite_resolute,
+                $/GFX/EffectCapacity/Capacite_Choc,
+                $/GFX/EffectCapacity/Capacite_Choc_feedback,
+            ]
+      - op: remove
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Screecher.ModulesDescriptors.[TDangerousnessModuleDescriptor]
+      - op: add
+        selector:
+          kind: collection
+          by: path
+          value: Descriptor_Unit_YZ_Screecher.ModulesDescriptors
+        position:
+          mode: before
+          anchor: TRoutModuleDescriptor
+        value:
+          $raw: TDangerousnessModuleDescriptor( Dangerousness = 192 ),
+      - op: remove
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Screecher.ModulesDescriptors.[TRoutModuleDescriptor]
+      - op: add
+        selector:
+          kind: collection
+          by: path
+          value: Descriptor_Unit_YZ_Screecher.ModulesDescriptors
+        position:
+          mode: before
+          anchor: ~/FacingInfosModuleDescriptor
+        value:
+          $raw: '${immortalRoutModuleRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Screecher.ModulesDescriptors.[TInfantrySquadModuleDescriptor].MimeticDescriptor.DescriptorId
+        value:
+          $raw: GUID:{215e0656-3a90-4c25-9cdc-1978d091ef49}
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Screecher.ModulesDescriptors.[TInfantrySquadModuleDescriptor].SoldierCount
+        value: 4
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Screecher.ModulesDescriptors.[TGenericMovementModuleDescriptor].MaxSpeedInKmph
+        value: 66
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Screecher.ModulesDescriptors.[TProductionModuleDescriptor].ProductionRessourcesNeeded
+        value:
+          $raw: '${screecherProductionResourcesNeededRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Screecher.ModulesDescriptors.[TAttackReactionModuleDescriptor].CanAssist
+        value:
+          $raw: 'True'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Screecher.ModulesDescriptors.[TAttackReactionModuleDescriptor].AssistRequestBroadcastRadiusGRU
+        value:
+          $raw: '2400'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Screecher.ModulesDescriptors.[TAttackReactionModuleDescriptor].MaxDistanceForOffensiveReactionGRU
+        value:
+          $raw: '500'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Screecher.ModulesDescriptors.[TAttackReactionModuleDescriptor].MaxDistanceForEngagementGRU
+        value:
+          $raw: '500'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Screecher.ModulesDescriptors.[TAttackReactionModuleDescriptor].SearchedTagsInEngagementTarget
+        value:
+          $raw: |-
+            [
+                "AllUnits",
+            ]
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Screecher.ModulesDescriptors.[TAttackReactionModuleDescriptor].DistanceToFleeGRU
+        value:
+          $raw: '0'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Screecher.ModulesDescriptors.[TIAStratModuleDescriptor].GameplayBehavior
+        value:
+          $raw: EGameplayBehavior/Nothing
+      - op: add
+        selector:
+          kind: collection
+          by: path
+          value: Descriptor_Unit_YZ_Screecher.ModulesDescriptors
+        position:
+          mode: before
+          anchor: TUnitUIModuleDescriptor
+        value:
+          $raw: '${defaultZombieDeploymentShiftModuleRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Screecher.ModulesDescriptors.[TUnitUIModuleDescriptor].NameToken
+        value:
+          $raw: "'YZSCREE'"
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Screecher.ModulesDescriptors.[TUnitUIModuleDescriptor].SpecialtiesList
+        value:
+          $raw: |-
+            [
+                '_choc',
+                '_resolute',
+            ]
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Screecher.ModulesDescriptors.[TUnitUIModuleDescriptor].UpgradeFromUnit
+        value:
+          $raw: nil
+      - op: copy
+        selector:
+          kind: object
+          by: name
+          value: Descriptor_Unit_Rifles_BEL
+        destination:
+          kind: sibling
+          name: Descriptor_Unit_YZ_Stalker
+        leadingComment: '${commentDirectives.forceInclude}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Stalker.DescriptorId
+        value:
+          $raw: GUID:{9575d090-e8fe-4467-8acc-d3a437723910}
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Stalker.ClassNameForDebug
+        value:
+          $raw: "'Unit_YZ_Stalker'"
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Stalker.ModulesDescriptors.[TTypeUnitModuleDescriptor].Coalition
+        value:
+          $raw: TWargameCoalition/PACT
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Stalker.ModulesDescriptors.[TTypeUnitModuleDescriptor].MotherCountry
+        value:
+          $raw: '${modTagRaw}'
+      - op: add
+        selector:
+          kind: collection
+          by: path
+          value: Descriptor_Unit_YZ_Stalker.ModulesDescriptors.[TTagsModuleDescriptor].TagSet
+        position:
+          mode: before
+          anchor: '"Unite"'
+        value:
+          $raw: |-
+            "UNITE_YZ_Stalker",
+            "Infanterie_Reco",
+            "Reco",
+            "Zombie",
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Stalker.ModulesDescriptors.[TTypeUnitModuleDescriptor].AcknowUnitTypes
+        value:
+          $raw: |-
+            [
+                ~/TAcknowUnitType_Recon_INF,
+            ]
+      - op: remove
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Stalker.ModulesDescriptors.[TFormationModuleDescriptor]
+      - op: add
+        selector:
+          kind: collection
+          by: path
+          value: Descriptor_Unit_YZ_Stalker.ModulesDescriptors
+        position:
+          mode: before
+          anchor: InfantryFlagsModuleDescriptor
+        value:
+          $raw: TFormationModuleDescriptor(TypeUnitFormation = 'Reconnaissance'),
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Stalker.ModulesDescriptors.[TVisibilityModuleDescriptor].UnitConcealmentBonus
+        value: 8.8
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Stalker.ModulesDescriptors.[TAutoCoverModuleDescriptor].UseTerrainsForEscape
+        value:
+          $raw: 'False'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Stalker.ModulesDescriptors.[TScannerConfigurationDescriptor].VisionRangesGRU
+        value:
+          $raw: |-
+            MAP [
+                ( EVisionRange/Standard, 6000.0 ),
+                ( EVisionRange/LowAltitude, 7420.5 ),
+                ( EVisionRange/HighAltitude, 8481.0 ),
+            ]
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Stalker.ModulesDescriptors.[TScannerConfigurationDescriptor].OpticalStrengths
+        value:
+          $raw: |-
+            MAP [
+                ( EOpticalStrength/Standard, 9000.0 ),
+                ( EOpticalStrength/LowAltitude, 9000.0 ),
+                ( EOpticalStrength/HighAltitude, 1590.0 ),
+            ]
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Stalker.ModulesDescriptors.[TDamageModuleDescriptor].BlindageProperties.ResistanceFront
+        value:
+          $raw: TResistanceTypeRTTI(Family=ResistanceFamily_infanterie Index=2)
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Stalker.ModulesDescriptors.[TDamageModuleDescriptor].BlindageProperties.ResistanceSides
+        value:
+          $raw: TResistanceTypeRTTI(Family=ResistanceFamily_infanterie Index=2)
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Stalker.ModulesDescriptors.[TDamageModuleDescriptor].BlindageProperties.ResistanceRear
+        value:
+          $raw: TResistanceTypeRTTI(Family=ResistanceFamily_infanterie Index=2)
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Stalker.ModulesDescriptors.[TDamageModuleDescriptor].BlindageProperties.ResistanceTop
+        value:
+          $raw: TResistanceTypeRTTI(Family=ResistanceFamily_infanterie Index=2)
+      - op: remove
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Stalker.ModulesDescriptors.[value=$/GFX/Weapon/WeaponDescriptor_Rifles_BEL]
+      - op: add
+        selector:
+          kind: collection
+          by: path
+          value: Descriptor_Unit_YZ_Stalker.ModulesDescriptors
+        position:
+          mode: before
+          anchor: TBaseDamageModuleDescriptor
+        value:
+          $raw: $/GFX/Weapon/WeaponDescriptor_YZ_Stalker,
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Stalker.ModulesDescriptors.[TBaseDamageModuleDescriptor].MaxPhysicalDamages
+        value: 38
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Stalker.ModulesDescriptors.[TBaseDamageModuleDescriptor].MaxSuppressionDamages
+        value:
+          $raw: '${immortalDamageRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Stalker.ModulesDescriptors.[TBaseDamageModuleDescriptor].MaxStunDamages
+        value:
+          $raw: '${stalkerMaxStunDamageRaw}'
+      - op: add
+        selector:
+          kind: collection
+          by: path
+          value: Descriptor_Unit_YZ_Stalker.ModulesDescriptors
+        position:
+          mode: before
+          anchor: TProductionModuleDescriptor
+        value:
+          $raw: |-
+            TCapaciteModuleDescriptor
+            (
+                DefaultSkillList = [
+                $/GFX/EffectCapacity/Capacite_resolute,
+                $/GFX/EffectCapacity/Capacite_Choc,
+                $/GFX/EffectCapacity/Capacite_Choc_feedback,
+            ]
+            ),
+      - op: remove
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Stalker.ModulesDescriptors.[TDangerousnessModuleDescriptor]
+      - op: add
+        selector:
+          kind: collection
+          by: path
+          value: Descriptor_Unit_YZ_Stalker.ModulesDescriptors
+        position:
+          mode: before
+          anchor: TRoutModuleDescriptor
+        value:
+          $raw: TDangerousnessModuleDescriptor( Dangerousness = 189 ),
+      - op: remove
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Stalker.ModulesDescriptors.[TRoutModuleDescriptor]
+      - op: add
+        selector:
+          kind: collection
+          by: path
+          value: Descriptor_Unit_YZ_Stalker.ModulesDescriptors
+        position:
+          mode: before
+          anchor: ~/FacingInfosModuleDescriptor
+        value:
+          $raw: '${immortalRoutModuleRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Stalker.ModulesDescriptors.[TInfantrySquadModuleDescriptor].MimeticDescriptor.DescriptorId
+        value:
+          $raw: GUID:{ed0b7196-d7fd-49a4-ad78-fb87e8258ab4}
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Stalker.ModulesDescriptors.[TInfantrySquadModuleDescriptor].SoldierCount
+        value: 5
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Stalker.ModulesDescriptors.[TGenericMovementModuleDescriptor].MaxSpeedInKmph
+        value: 108
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Stalker.ModulesDescriptors.[TProductionModuleDescriptor].ProductionRessourcesNeeded
+        value:
+          $raw: '${stalkerProductionResourcesNeededRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Stalker.ModulesDescriptors.[TAttackReactionModuleDescriptor].CanAssist
+        value:
+          $raw: 'False'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Stalker.ModulesDescriptors.[TAttackReactionModuleDescriptor].AssistRequestBroadcastRadiusGRU
+        value:
+          $raw: '0'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Stalker.ModulesDescriptors.[TAttackReactionModuleDescriptor].MaxDistanceForOffensiveReactionGRU
+        value:
+          $raw: '550'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Stalker.ModulesDescriptors.[TAttackReactionModuleDescriptor].MaxDistanceForEngagementGRU
+        value:
+          $raw: '550'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Stalker.ModulesDescriptors.[TAttackReactionModuleDescriptor].SearchedTagsInEngagementTarget
+        value:
+          $raw: '${groundTargetsOnlyRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Stalker.ModulesDescriptors.[TAttackReactionModuleDescriptor].DistanceToFleeGRU
+        value:
+          $raw: '0'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Stalker.ModulesDescriptors.[TIAStratModuleDescriptor].GameplayBehavior
+        value:
+          $raw: EGameplayBehavior/Nothing
+      - op: add
+        selector:
+          kind: collection
+          by: path
+          value: Descriptor_Unit_YZ_Stalker.ModulesDescriptors
+        position:
+          mode: before
+          anchor: TUnitUIModuleDescriptor
+        value:
+          $raw: |-
+            TDeploymentShiftModuleDescriptor
+            (
+                DeploymentShiftGRU = 5000.0
+            ),
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Stalker.ModulesDescriptors.[TUnitUIModuleDescriptor].NameToken
+        value:
+          $raw: "'YZSTALK'"
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Stalker.ModulesDescriptors.[TUnitUIModuleDescriptor].UnitRole
+        value:
+          $raw: "'reco'"
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Stalker.ModulesDescriptors.[TUnitUIModuleDescriptor].SpecialtiesList
+        value:
+          $raw: |-
+            [
+                '_sf',
+                '_choc',
+                '_resolute',
+            ]
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Stalker.ModulesDescriptors.[TUnitUIModuleDescriptor].UpgradeFromUnit
+        value:
+          $raw: nil
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Stalker.ModulesDescriptors.[TUnitUIModuleDescriptor].MenuIconTexture
+        value:
+          $raw: "'Texture_RTS_H_RECO_inf_sf'"
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Stalker.ModulesDescriptors.[TUnitUIModuleDescriptor].TypeStrategicCount
+        value:
+          $raw: ETypeStrategicDetailedCount/Reco_Inf
+      - op: copy
+        selector:
+          kind: object
+          by: name
+          value: Descriptor_Unit_MotSchutzen_DDR
+        destination:
+          kind: sibling
+          name: Descriptor_Unit_YZ_Smoker
+        leadingComment: '${commentDirectives.forceInclude}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Smoker.DescriptorId
+        value:
+          $raw: GUID:{4b1cb55e-6858-4648-a732-d1cca3f0470a}
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Smoker.ClassNameForDebug
+        value:
+          $raw: "'Unit_YZ_Smoker'"
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Smoker.ModulesDescriptors.[TTypeUnitModuleDescriptor].MotherCountry
+        value:
+          $raw: '${modTagRaw}'
+      - op: add
+        selector:
+          kind: collection
+          by: path
+          value: Descriptor_Unit_YZ_Smoker.ModulesDescriptors.[TTagsModuleDescriptor].TagSet
+        position:
+          mode: before
+          anchor: '"Unite"'
+        value:
+          $raw: |-
+            "UNITE_YZ_Smoker",
+            "Zombie",
+      - op: add
+        selector:
+          kind: collection
+          by: path
+          value: Descriptor_Unit_YZ_Smoker.ModulesDescriptors
+        position:
+          mode: before
+          anchor: TScannerConfigurationDescriptor
+        value:
+          $raw: |-
+            TSupplyModuleDescriptor
+            (
+                SupplyDescriptor = $/GFX/Weapon/StandardSupply
+                SupplyCapacity = ${unlimitedSupplyCapacity}
+                SupplyPriority = 1
+            ),
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Smoker.ModulesDescriptors.[TVisibilityModuleDescriptor].UnitConcealmentBonus
+        value: 6
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Smoker.ModulesDescriptors.[TAutoCoverModuleDescriptor].UseTerrainsForEscape
+        value:
+          $raw: 'False'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Smoker.ModulesDescriptors.[TScannerConfigurationDescriptor].VisionRangesGRU
+        value:
+          $raw: |-
+            MAP [
+                ( EVisionRange/Standard, 4200.0 ),
+                ( EVisionRange/LowAltitude, 5654.0 ),
+                ( EVisionRange/HighAltitude, 6361.0 ),
+            ]
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Smoker.ModulesDescriptors.[TScannerConfigurationDescriptor].OpticalStrengths
+        value:
+          $raw: |-
+            MAP [
+                ( EOpticalStrength/Standard, 2600.0 ),
+                ( EOpticalStrength/LowAltitude, 2600.0 ),
+                ( EOpticalStrength/HighAltitude, 900.0 ),
+            ]
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Smoker.ModulesDescriptors.[TDamageModuleDescriptor].BlindageProperties.ResistanceFront
+        value:
+          $raw: TResistanceTypeRTTI(Family=ResistanceFamily_infanterie Index=2)
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Smoker.ModulesDescriptors.[TDamageModuleDescriptor].BlindageProperties.ResistanceSides
+        value:
+          $raw: TResistanceTypeRTTI(Family=ResistanceFamily_infanterie Index=2)
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Smoker.ModulesDescriptors.[TDamageModuleDescriptor].BlindageProperties.ResistanceRear
+        value:
+          $raw: TResistanceTypeRTTI(Family=ResistanceFamily_infanterie Index=2)
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Smoker.ModulesDescriptors.[TDamageModuleDescriptor].BlindageProperties.ResistanceTop
+        value:
+          $raw: TResistanceTypeRTTI(Family=ResistanceFamily_infanterie Index=2)
+      - op: remove
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Smoker.ModulesDescriptors.[value=$/GFX/Weapon/WeaponDescriptor_MotSchutzen_DDR]
+      - op: add
+        selector:
+          kind: collection
+          by: path
+          value: Descriptor_Unit_YZ_Smoker.ModulesDescriptors
+        position:
+          mode: before
+          anchor: TBaseDamageModuleDescriptor
+        value:
+          $raw: $/GFX/Weapon/WeaponDescriptor_YZ_Smoker,
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Smoker.ModulesDescriptors.[TBaseDamageModuleDescriptor].MaxPhysicalDamages
+        value: 48
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Smoker.ModulesDescriptors.[TBaseDamageModuleDescriptor].MaxSuppressionDamages
+        value:
+          $raw: '${immortalDamageRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Smoker.ModulesDescriptors.[TBaseDamageModuleDescriptor].MaxStunDamages
+        value:
+          $raw: '${smokerMaxStunDamageRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Smoker.ModulesDescriptors.[TCapaciteModuleDescriptor].DefaultSkillList
+        value:
+          $raw: |-
+            [
+                $/GFX/EffectCapacity/Capacite_resolute,
+                $/GFX/EffectCapacity/Capacite_Choc,
+                $/GFX/EffectCapacity/Capacite_Choc_feedback,
+            ]
+      - op: remove
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Smoker.ModulesDescriptors.[TDangerousnessModuleDescriptor]
+      - op: add
+        selector:
+          kind: collection
+          by: path
+          value: Descriptor_Unit_YZ_Smoker.ModulesDescriptors
+        position:
+          mode: before
+          anchor: TRoutModuleDescriptor
+        value:
+          $raw: TDangerousnessModuleDescriptor( Dangerousness = 188 ),
+      - op: remove
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Smoker.ModulesDescriptors.[TRoutModuleDescriptor]
+      - op: add
+        selector:
+          kind: collection
+          by: path
+          value: Descriptor_Unit_YZ_Smoker.ModulesDescriptors
+        position:
+          mode: before
+          anchor: ~/FacingInfosModuleDescriptor
+        value:
+          $raw: '${immortalRoutModuleRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Smoker.ModulesDescriptors.[TInfantrySquadModuleDescriptor].MimeticDescriptor.DescriptorId
+        value:
+          $raw: GUID:{bb977b41-f34b-45ff-a20c-db70b7ae54b0}
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Smoker.ModulesDescriptors.[TInfantrySquadModuleDescriptor].SoldierCount
+        value: 2
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Smoker.ModulesDescriptors.[TGenericMovementModuleDescriptor].MaxSpeedInKmph
+        value: 72
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Smoker.ModulesDescriptors.[TProductionModuleDescriptor].ProductionRessourcesNeeded
+        value:
+          $raw: '${smokerProductionResourcesNeededRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Smoker.ModulesDescriptors.[TAttackReactionModuleDescriptor].CanAssist
+        value:
+          $raw: 'True'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Smoker.ModulesDescriptors.[TAttackReactionModuleDescriptor].AssistRequestBroadcastRadiusGRU
+        value:
+          $raw: '2600'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Smoker.ModulesDescriptors.[TAttackReactionModuleDescriptor].MaxDistanceForOffensiveReactionGRU
+        value:
+          $raw: '700'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Smoker.ModulesDescriptors.[TAttackReactionModuleDescriptor].MaxDistanceForEngagementGRU
+        value:
+          $raw: '700'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Smoker.ModulesDescriptors.[TAttackReactionModuleDescriptor].SearchedTagsInEngagementTarget
+        value:
+          $raw: '${groundTargetsOnlyRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Smoker.ModulesDescriptors.[TAttackReactionModuleDescriptor].DistanceToFleeGRU
+        value:
+          $raw: '0'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Smoker.ModulesDescriptors.[TIAStratModuleDescriptor].GameplayBehavior
+        value:
+          $raw: EGameplayBehavior/Nothing
+      - op: add
+        selector:
+          kind: collection
+          by: path
+          value: Descriptor_Unit_YZ_Smoker.ModulesDescriptors
+        position:
+          mode: before
+          anchor: TUnitUIModuleDescriptor
+        value:
+          $raw: '${defaultZombieDeploymentShiftModuleRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Smoker.ModulesDescriptors.[TUnitUIModuleDescriptor].NameToken
+        value:
+          $raw: "'YZSMOKE'"
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Smoker.ModulesDescriptors.[TUnitUIModuleDescriptor].UnitRole
+        value:
+          $raw: "'supply'"
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Smoker.ModulesDescriptors.[TUnitUIModuleDescriptor].SpecialtiesList
+        value:
+          $raw: |-
+            [
+                '_smoke_launcher',
+                '_choc',
+                '_resolute',
+            ]
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Smoker.ModulesDescriptors.[TUnitUIModuleDescriptor].UpgradeFromUnit
+        value:
+          $raw: nil
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Smoker.ModulesDescriptors.[TUnitUIModuleDescriptor].InfoPanelConfigurationToken
+        value:
+          $raw: "'VehiculeSupplier'"
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Smoker.ModulesDescriptors.[TUnitUIModuleDescriptor].MenuIconTexture
+        value:
+          $raw: "'Texture_RTS_H_supply'"
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Smoker.ModulesDescriptors.[TUnitUIModuleDescriptor].TypeStrategicCount
+        value:
+          $raw: ETypeStrategicDetailedCount/Supply
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Smoker.ModulesDescriptors.[TTransportableModuleDescriptor].TransportedTexture
+        value:
+          $raw: '"UseInGame_Transport_Mortar"'
+      - op: copy
+        selector:
+          kind: object
+          by: name
+          value: Descriptor_Unit_Rifles_Gurkhas_CMD_UK
+        destination:
+          kind: sibling
+          name: Descriptor_Unit_YZ_PackLeader
+        leadingComment: '${commentDirectives.forceInclude}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_PackLeader.DescriptorId
+        value:
+          $raw: GUID:{be412ea7-21d9-47fd-a7de-f8a327cd9363}
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_PackLeader.ClassNameForDebug
+        value:
+          $raw: "'Unit_YZ_PackLeader'"
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_PackLeader.ModulesDescriptors.[TTypeUnitModuleDescriptor].Coalition
+        value:
+          $raw: TWargameCoalition/PACT
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_PackLeader.ModulesDescriptors.[TTypeUnitModuleDescriptor].MotherCountry
+        value:
+          $raw: '${modTagRaw}'
+      - op: add
+        selector:
+          kind: collection
+          by: path
+          value: Descriptor_Unit_YZ_PackLeader.ModulesDescriptors.[TTagsModuleDescriptor].TagSet
+        position:
+          mode: before
+          anchor: '"Unite"'
+        value:
+          $raw: |-
+            "UNITE_YZ_PackLeader",
+            "Zombie",
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_PackLeader.ModulesDescriptors.[TVisibilityModuleDescriptor].UnitConcealmentBonus
+        value: 6.8
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_PackLeader.ModulesDescriptors.[TAutoCoverModuleDescriptor].UseTerrainsForEscape
+        value:
+          $raw: 'False'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_PackLeader.ModulesDescriptors.[TScannerConfigurationDescriptor].VisionRangesGRU
+        value:
+          $raw: |-
+            MAP [
+                ( EVisionRange/Standard, 4500.0 ),
+                ( EVisionRange/LowAltitude, 6000.0 ),
+                ( EVisionRange/HighAltitude, 7420.5 ),
+            ]
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_PackLeader.ModulesDescriptors.[TScannerConfigurationDescriptor].OpticalStrengths
+        value:
+          $raw: |-
+            MAP [
+                ( EOpticalStrength/Standard, 4200.0 ),
+                ( EOpticalStrength/LowAltitude, 4200.0 ),
+                ( EOpticalStrength/HighAltitude, 1590.0 ),
+            ]
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_PackLeader.ModulesDescriptors.[TDamageModuleDescriptor].BlindageProperties.ResistanceFront
+        value:
+          $raw: TResistanceTypeRTTI(Family=ResistanceFamily_infanterie Index=2)
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_PackLeader.ModulesDescriptors.[TDamageModuleDescriptor].BlindageProperties.ResistanceSides
+        value:
+          $raw: TResistanceTypeRTTI(Family=ResistanceFamily_infanterie Index=2)
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_PackLeader.ModulesDescriptors.[TDamageModuleDescriptor].BlindageProperties.ResistanceRear
+        value:
+          $raw: TResistanceTypeRTTI(Family=ResistanceFamily_infanterie Index=2)
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_PackLeader.ModulesDescriptors.[TDamageModuleDescriptor].BlindageProperties.ResistanceTop
+        value:
+          $raw: TResistanceTypeRTTI(Family=ResistanceFamily_infanterie Index=2)
+      - op: remove
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_PackLeader.ModulesDescriptors.[value=$/GFX/Weapon/WeaponDescriptor_Rifles_Gurkhas_CMD_UK]
+      - op: add
+        selector:
+          kind: collection
+          by: path
+          value: Descriptor_Unit_YZ_PackLeader.ModulesDescriptors
+        position:
+          mode: before
+          anchor: TBaseDamageModuleDescriptor
+        value:
+          $raw: $/GFX/Weapon/WeaponDescriptor_YZ_PackLeader,
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_PackLeader.ModulesDescriptors.[TBaseDamageModuleDescriptor].MaxPhysicalDamages
+        value: 80
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_PackLeader.ModulesDescriptors.[TBaseDamageModuleDescriptor].MaxSuppressionDamages
+        value:
+          $raw: '${immortalDamageRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_PackLeader.ModulesDescriptors.[TBaseDamageModuleDescriptor].MaxStunDamages
+        value:
+          $raw: '${packLeaderMaxStunDamageRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_PackLeader.ModulesDescriptors.[TCapaciteModuleDescriptor].DefaultSkillList
+        value:
+          $raw: |-
+            [
+                $/GFX/EffectCapacity/Capacite_resolute,
+                $/GFX/EffectCapacity/Capacite_Choc,
+                $/GFX/EffectCapacity/Capacite_Choc_feedback,
+            ]
+      - op: remove
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_PackLeader.ModulesDescriptors.[TDangerousnessModuleDescriptor]
+      - op: add
+        selector:
+          kind: collection
+          by: path
+          value: Descriptor_Unit_YZ_PackLeader.ModulesDescriptors
+        position:
+          mode: before
+          anchor: TRoutModuleDescriptor
+        value:
+          $raw: TDangerousnessModuleDescriptor( Dangerousness = 194 ),
+      - op: remove
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_PackLeader.ModulesDescriptors.[TRoutModuleDescriptor]
+      - op: add
+        selector:
+          kind: collection
+          by: path
+          value: Descriptor_Unit_YZ_PackLeader.ModulesDescriptors
+        position:
+          mode: before
+          anchor: ~/FacingInfosModuleDescriptor
+        value:
+          $raw: '${immortalRoutModuleRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_PackLeader.ModulesDescriptors.[TInfantrySquadModuleDescriptor].MimeticDescriptor.DescriptorId
+        value:
+          $raw: GUID:{8a0945f9-8e54-4283-8026-a61539010f0f}
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_PackLeader.ModulesDescriptors.[TInfantrySquadModuleDescriptor].SoldierCount
+        value: 8
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_PackLeader.ModulesDescriptors.[TGenericMovementModuleDescriptor].MaxSpeedInKmph
+        value: 74
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_PackLeader.ModulesDescriptors.[TProductionModuleDescriptor].ProductionRessourcesNeeded
+        value:
+          $raw: '${packLeaderProductionResourcesNeededRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_PackLeader.ModulesDescriptors.[TAttackReactionModuleDescriptor].CanAssist
+        value:
+          $raw: 'True'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_PackLeader.ModulesDescriptors.[TAttackReactionModuleDescriptor].AssistRequestBroadcastRadiusGRU
+        value:
+          $raw: '3200'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_PackLeader.ModulesDescriptors.[TAttackReactionModuleDescriptor].MaxDistanceForOffensiveReactionGRU
+        value:
+          $raw: '1000'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_PackLeader.ModulesDescriptors.[TAttackReactionModuleDescriptor].MaxDistanceForEngagementGRU
+        value:
+          $raw: '1000'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_PackLeader.ModulesDescriptors.[TAttackReactionModuleDescriptor].SearchedTagsInEngagementTarget
+        value:
+          $raw: '${groundTargetsOnlyRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_PackLeader.ModulesDescriptors.[TAttackReactionModuleDescriptor].DistanceToFleeGRU
+        value:
+          $raw: '0'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_PackLeader.ModulesDescriptors.[TIAStratModuleDescriptor].GameplayBehavior
+        value:
+          $raw: EGameplayBehavior/Nothing
+      - op: add
+        selector:
+          kind: collection
+          by: path
+          value: Descriptor_Unit_YZ_PackLeader.ModulesDescriptors
+        position:
+          mode: before
+          anchor: TUnitUIModuleDescriptor
+        value:
+          $raw: '${defaultZombieDeploymentShiftModuleRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_PackLeader.ModulesDescriptors.[TUnitUIModuleDescriptor].NameToken
+        value:
+          $raw: "'YZALPHA'"
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_PackLeader.ModulesDescriptors.[TUnitUIModuleDescriptor].UnitRole
+        value:
+          $raw: "'hq_inf'"
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_PackLeader.ModulesDescriptors.[TUnitUIModuleDescriptor].SpecialtiesList
+        value:
+          $raw: |-
+            [
+                '_leader',
+                '_choc',
+                '_resolute',
+            ]
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_PackLeader.ModulesDescriptors.[TUnitUIModuleDescriptor].UpgradeFromUnit
+        value:
+          $raw: nil
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_PackLeader.ModulesDescriptors.[TUnitUIModuleDescriptor].MenuIconTexture
+        value:
+          $raw: "'Texture_RTS_H_CMD_inf'"
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_PackLeader.ModulesDescriptors.[TUnitUIModuleDescriptor].TypeStrategicCount
+        value:
+          $raw: ETypeStrategicDetailedCount/CMD_Inf
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_PackLeader.ModulesDescriptors.[TTransportableModuleDescriptor].TransportedTexture
+        value:
+          $raw: '"UseInGame_Transport_COMMAND"'
+      - op: copy
+        selector:
+          kind: object
+          by: name
+          value: Descriptor_Unit_Engineers_CAN
+        destination:
+          kind: sibling
+          name: Descriptor_Unit_YZ_Demolisher
+        leadingComment: '${commentDirectives.forceInclude}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Demolisher.DescriptorId
+        value:
+          $raw: GUID:{6b8c2956-e73f-4cb6-b828-5f89e3653187}
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Demolisher.ClassNameForDebug
+        value:
+          $raw: "'Unit_YZ_Demolisher'"
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Demolisher.ModulesDescriptors.[TTypeUnitModuleDescriptor].Coalition
+        value:
+          $raw: TWargameCoalition/PACT
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Demolisher.ModulesDescriptors.[TTypeUnitModuleDescriptor].MotherCountry
+        value:
+          $raw: '${modTagRaw}'
+      - op: add
+        selector:
+          kind: collection
+          by: path
+          value: Descriptor_Unit_YZ_Demolisher.ModulesDescriptors.[TTagsModuleDescriptor].TagSet
+        position:
+          mode: before
+          anchor: '"Unite"'
+        value:
+          $raw: |-
+            "UNITE_YZ_Demolisher",
+            "Zombie",
+            "Breacher",
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Demolisher.ModulesDescriptors.[TVisibilityModuleDescriptor].UnitConcealmentBonus
+        value: 2.2
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Demolisher.ModulesDescriptors.[TAutoCoverModuleDescriptor].UseTerrainsForEscape
+        value:
+          $raw: 'False'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Demolisher.ModulesDescriptors.[TScannerConfigurationDescriptor].VisionRangesGRU
+        value:
+          $raw: |-
+            MAP [
+                ( EVisionRange/Standard, 3500.0 ),
+                ( EVisionRange/LowAltitude, 5000.0 ),
+                ( EVisionRange/HighAltitude, 6361.0 ),
+            ]
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Demolisher.ModulesDescriptors.[TScannerConfigurationDescriptor].OpticalStrengths
+        value:
+          $raw: |-
+            MAP [
+                ( EOpticalStrength/Standard, 1800.0 ),
+                ( EOpticalStrength/LowAltitude, 1800.0 ),
+                ( EOpticalStrength/HighAltitude, 900.0 ),
+            ]
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Demolisher.ModulesDescriptors.[TDamageModuleDescriptor].BlindageProperties.ResistanceFront
+        value:
+          $raw: TResistanceTypeRTTI(Family=ResistanceFamily_infanterie Index=2)
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Demolisher.ModulesDescriptors.[TDamageModuleDescriptor].BlindageProperties.ResistanceSides
+        value:
+          $raw: TResistanceTypeRTTI(Family=ResistanceFamily_infanterie Index=2)
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Demolisher.ModulesDescriptors.[TDamageModuleDescriptor].BlindageProperties.ResistanceRear
+        value:
+          $raw: TResistanceTypeRTTI(Family=ResistanceFamily_infanterie Index=2)
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Demolisher.ModulesDescriptors.[TDamageModuleDescriptor].BlindageProperties.ResistanceTop
+        value:
+          $raw: TResistanceTypeRTTI(Family=ResistanceFamily_infanterie Index=2)
+      - op: remove
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Demolisher.ModulesDescriptors.[value=$/GFX/Weapon/WeaponDescriptor_Engineers_CAN]
+      - op: add
+        selector:
+          kind: collection
+          by: path
+          value: Descriptor_Unit_YZ_Demolisher.ModulesDescriptors
+        position:
+          mode: before
+          anchor: TBaseDamageModuleDescriptor
+        value:
+          $raw: $/GFX/Weapon/WeaponDescriptor_YZ_Demolisher,
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Demolisher.ModulesDescriptors.[TBaseDamageModuleDescriptor].MaxPhysicalDamages
+        value: 74
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Demolisher.ModulesDescriptors.[TBaseDamageModuleDescriptor].MaxSuppressionDamages
+        value:
+          $raw: '${immortalDamageRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Demolisher.ModulesDescriptors.[TBaseDamageModuleDescriptor].MaxStunDamages
+        value:
+          $raw: '${demolisherMaxStunDamageRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Demolisher.ModulesDescriptors.[TCapaciteModuleDescriptor].DefaultSkillList
+        value:
+          $raw: |-
+            [
+                $/GFX/EffectCapacity/Capacite_resolute,
+                $/GFX/EffectCapacity/Capacite_Choc,
+                $/GFX/EffectCapacity/Capacite_Choc_feedback,
+            ]
+      - op: remove
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Demolisher.ModulesDescriptors.[TDangerousnessModuleDescriptor]
+      - op: add
+        selector:
+          kind: collection
+          by: path
+          value: Descriptor_Unit_YZ_Demolisher.ModulesDescriptors
+        position:
+          mode: before
+          anchor: TRoutModuleDescriptor
+        value:
+          $raw: TDangerousnessModuleDescriptor( Dangerousness = 195 ),
+      - op: remove
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Demolisher.ModulesDescriptors.[TRoutModuleDescriptor]
+      - op: add
+        selector:
+          kind: collection
+          by: path
+          value: Descriptor_Unit_YZ_Demolisher.ModulesDescriptors
+        position:
+          mode: before
+          anchor: ~/FacingInfosModuleDescriptor
+        value:
+          $raw: '${immortalRoutModuleRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Demolisher.ModulesDescriptors.[TInfantrySquadModuleDescriptor].MimeticDescriptor.DescriptorId
+        value:
+          $raw: GUID:{58d93c12-96f7-474c-a496-450550576f57}
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Demolisher.ModulesDescriptors.[TInfantrySquadModuleDescriptor].SoldierCount
+        value: 4
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Demolisher.ModulesDescriptors.[TGenericMovementModuleDescriptor].MaxSpeedInKmph
+        value: 46
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Demolisher.ModulesDescriptors.[TProductionModuleDescriptor].ProductionRessourcesNeeded
+        value:
+          $raw: '${demolisherProductionResourcesNeededRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Demolisher.ModulesDescriptors.[TAttackReactionModuleDescriptor].CanAssist
+        value:
+          $raw: 'True'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Demolisher.ModulesDescriptors.[TAttackReactionModuleDescriptor].AssistRequestBroadcastRadiusGRU
+        value:
+          $raw: '2400'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Demolisher.ModulesDescriptors.[TAttackReactionModuleDescriptor].MaxDistanceForOffensiveReactionGRU
+        value:
+          $raw: '700'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Demolisher.ModulesDescriptors.[TAttackReactionModuleDescriptor].MaxDistanceForEngagementGRU
+        value:
+          $raw: '700'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Demolisher.ModulesDescriptors.[TAttackReactionModuleDescriptor].SearchedTagsInEngagementTarget
+        value:
+          $raw: |-
+            [
+                "AllUnits",
+            ]
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Demolisher.ModulesDescriptors.[TAttackReactionModuleDescriptor].DistanceToFleeGRU
+        value:
+          $raw: '0'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Demolisher.ModulesDescriptors.[TIAStratModuleDescriptor].GameplayBehavior
+        value:
+          $raw: EGameplayBehavior/Nothing
+      - op: add
+        selector:
+          kind: collection
+          by: path
+          value: Descriptor_Unit_YZ_Demolisher.ModulesDescriptors
+        position:
+          mode: before
+          anchor: TUnitUIModuleDescriptor
+        value:
+          $raw: '${defaultZombieDeploymentShiftModuleRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Demolisher.ModulesDescriptors.[TUnitUIModuleDescriptor].NameToken
+        value:
+          $raw: "'YZDEMO'"
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Demolisher.ModulesDescriptors.[TUnitUIModuleDescriptor].UnitRole
+        value:
+          $raw: "'infantry'"
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Demolisher.ModulesDescriptors.[TUnitUIModuleDescriptor].SpecialtiesList
+        value:
+          $raw: |-
+            [
+                '_choc',
+                '_resolute',
+            ]
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: Descriptor_Unit_YZ_Demolisher.ModulesDescriptors.[TUnitUIModuleDescriptor].UpgradeFromUnit
+        value:
+          $raw: nil

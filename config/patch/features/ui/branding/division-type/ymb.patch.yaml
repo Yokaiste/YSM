@@ -1,0 +1,22 @@
+version: 1
+id: 'ysm.ui.generated.division-types'
+name: 'YSM Division Type'
+description: 'Adds the YSM division type entry to generated UI metadata.'
+enabled: true
+scope: 'prod'
+dependsOn:
+  - 'ysm.ui.generated.common-textures'
+targets:
+  - file: 'GameData/Generated/UserInterface/DivisionTypes.ndf'
+    operations:
+      - op: 'add'
+        selector:
+          kind: 'collection'
+          by: 'path'
+          value: 'DivisionTypeDescriptions.DivisionTypes'
+        position:
+          mode: 'before'
+          anchor: "('MECHANIZ'"
+        value:
+          $raw: |-
+            ('${modTag}', 'Texture${modTag}_CountryFlag'),

@@ -1,0 +1,31 @@
+version: 1
+id: 'ysm.gameplay.cost-matrix'
+name: 'YSM Cost Matrix'
+description: 'Adds the YSM deck cost matrix.'
+enabled: true
+scope: 'prod'
+dependsOn: []
+variables:
+  deckSlotCostMatrixRow: ${join(repeat(1, deckSlotCount), ', ')}
+targets:
+  - file: 'GameData/Generated/Gameplay/Decks/DivisionCostMatrix.ndf'
+    operations:
+      - op: 'add'
+        selector:
+          kind: 'object'
+          by: 'name'
+          value: 'MatrixCostName_WP_Unternehmen_Zentrum_multi'
+        value:
+          $raw: |-
+            MatrixCostName_${modTag} is MAP
+            [
+                (Factory/Art, [${deckSlotCostMatrixRow}]),
+                (Factory/DCA, [${deckSlotCostMatrixRow}]),
+                (Factory/Defense, [${deckSlotCostMatrixRow}]),
+                (Factory/Helis, [${deckSlotCostMatrixRow}]),
+                (Factory/Infantry, [${deckSlotCostMatrixRow}]),
+                (Factory/Logistic, [${deckSlotCostMatrixRow}]),
+                (Factory/Planes, [${deckSlotCostMatrixRow}]),
+                (Factory/Recons, [${deckSlotCostMatrixRow}]),
+                (Factory/Tanks, [${deckSlotCostMatrixRow}]),
+            ]

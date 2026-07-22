@@ -1,0 +1,26 @@
+version: 1
+id: 'ysm.ui.generated.countries'
+name: 'YSM Country Info'
+description: 'Adds the YSM country metadata to generated UI info.'
+enabled: true
+scope: 'prod'
+dependsOn:
+  - 'ysm.ui.generated.common-textures'
+targets:
+  - file: 'GameData/Generated/UserInterface/UISpecificCountriesInfos.ndf'
+    operations:
+      - op: 'add'
+        selector:
+          kind: 'collection'
+          by: 'path'
+          value: '@type:TUISpecificCountriesInfos.CountriesInfos'
+        value:
+          $raw: |-
+            ("${modTag}", TUISpecificCountryInfos
+                        (
+                            FlagTexture = "Texture${modTag}_CountryFlag"
+                            Country = "${modTag}"
+                            NameToken = "${modTag}"
+                            Coalition = TWargameCoalition/NATO
+                        )
+                    ),

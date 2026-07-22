@@ -1,0 +1,71 @@
+version: 1
+id: 'ysm.ui.ingame.shortcuts'
+name: 'YSM Shortcuts'
+description: 'Adjusts the YSM selection shortcut layout.'
+enabled: true
+scope: 'prod'
+dependsOn: []
+targets:
+  - file: 'GameData/UserInterface/Use/InGame/UISpecificShortcutsForSelectionView.ndf'
+    operations:
+      - op: 'remove'
+        selector:
+          kind: 'object'
+          by: 'name'
+          value: 'BUCKSpecificShortcutsForSelectionMainComponentDescriptor'
+      - op: 'add'
+        selector:
+          kind: 'object'
+          by: 'name'
+          value: 'SpotLight_GameSpeedBtn'
+        value:
+          $raw: |-
+            BUCKSpecificShortcutsForSelectionMainComponentDescriptor is BUCKContainerDescriptor
+            (
+                ComponentFrame = TUIFramePropertyRTTI
+                (
+                    MagnifiableOffset = [10.0, 0.0]
+                    AlignementToFather = [1.0, 0.0]
+                    AlignementToAnchor = [1.0, 0.0]
+                )
+
+                FitStyle = ~/ContainerFitStyle/FitToContent
+                Components =
+                [
+                    BUCKListDescriptor
+                    (
+                        ComponentFrame = TUIFramePropertyRTTI
+                        (
+                            MagnifiableOffset = [0.0, 0.0]
+                        )
+
+                        Axis = ~/ListAxis/Horizontal
+                        BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
+                        LastMargin = TRTTILength(Magnifiable = 8.0)
+
+                        Elements =
+                        [
+                            BUCKListElementDescriptor
+                            (
+                                ComponentDescriptor = ~/DisplayStartingInformationButton
+                            ),
+                            BUCKListElementDescriptor
+                            (
+                                ComponentDescriptor = ~/OrderPanelPanelButton
+                            ),
+                            BUCKListElementDescriptor
+                            (
+                                ComponentDescriptor = ~/LoSPanelButton
+                            ),
+                            BUCKListElementDescriptor
+                            (
+                                ComponentDescriptor = ~/ChatShortcutButton
+                            ),
+                            BUCKListElementDescriptor
+                            (
+                                ComponentDescriptor = ~/EngagementRulesButton
+                            ),
+                        ]
+                    )
+                ]
+            )

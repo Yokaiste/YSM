@@ -1,0 +1,70 @@
+YSM 2 x WiF [Open Beta]
+
+
+
+[h1]⚠️ Open Beta Warning[/h1]
+[b]This is the separate [i]Open Beta[/i] Workshop page.[/b]
+
+[list]
+[*][b]Stay subscribed to the stable Workshop page[/b] if you want to keep playing after the beta ends: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3518369503]Stable version[/url]
+[*]This beta page will be [b]removed when the beta ends[/b]
+[*]If you only subscribe here and ignore the stable page, future-you may experience sadness, confusion, and a Steam Workshop scavenger hunt
+[/list]
+
+[hr][/hr]
+This is a combined version of Yokaiste’s Sandbox Mod 2 and A World in Flames.
+
+[h2]ℹ️ Learn More[/h2]
+[list]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3758204546]Yokaiste’s Sandbox Mod 2[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3388575848]A World in Flames[/url]
+[/list]
+
+[h2]💬 Join The Community[/h2]
+[list]
+[*][url=https://discord.gg/bBaaZZYqQU]YSM Community[/url]
+[*][url=https://discord.gg/5bkACmS26p]A World in Flames Discord[/url]
+[/list]
+
+[hr][/hr]
+[h1]🃏 Ready-to-Play Premade Decks[/h1]
+[list]
+[*]Jump straight into the action without spending hours building decks in the armory
+[*]Includes a wide variety of premade decks for all factions and division types
+[*]Features balanced, specialized, and absolute chaos configurations ready out of the box
+[/list]
+
+[hr][/hr]
+[h1]🛠️ Yuri's WARNO Toolkit & Deck Recovery[/h1]
+[list]
+[*]Use [url=https://github.com/dary1337/yuri-warno-toolkit][b]Yuri's WARNO Toolkit[/b][/url] for [b]deck editing, profile backups, mod installs, and recovering lost decks[/b]
+[*][b]Recover lost decks:[/b] YWT can restore decks from previous game versions or other mods, bringing them back from the void instead of forcing you to rebuild your cursed 3 AM masterpiece from memory
+[*][b]Advanced editing:[/b] Change units, veterancy, transports, and names; duplicate decks; make coalition copies; and commit other legal-looking crimes
+[*][b]Profile backups:[/b] Snapshot and restore your profile to keep your decks safe from unexpected accidents
+[*][b]Mod catalog:[/b] Install YSM-family mods directly from the toolkit
+[*]Get it here: [url=https://github.com/dary1337/yuri-warno-toolkit/releases/latest]Latest Release[/url]
+[/list]
+
+[hr][/hr]
+[h1]💡 Good To Know[/h1]
+[list]
+[*][b]Activate the mod[/b] in WARNO's Mod Center after subscribing
+[*]Use only the units you need if you want performance to remain a real concept
+[*]Works best for [b]Skirmish[/b] and [b]Multiplayer[/b] sandbox play
+[*]Expect conflicts with most [b]gameplay[/b] and [b]UI[/b] mods, because YSM changes basically everything it can reach
+[*][b]Map mods are usually fine[/b], because even YSM occasionally respects property boundaries
+[/list]
+
+[hr][/hr]
+[h1]🛠️ Built With YMB[/h1]
+YSM is built with [url=https://github.com/Yokaiste/YMB][b]Yokaiste's Mod Builder (YMB)[/b][/url], meaning it wasn't assembled by hand inside live WARNO files like a sleep-deprived disaster wizard.
+
+[list]
+[*]YMB builds [b]source mods[/b] with targeted patches, replacement files, scripts, validation, build review, sync, and recovery
+[*]If updates keep breaking your WARNO mod, [b]YMB is the toolchain behind this[/b]
+[*]It makes large mods more [b]update-resilient[/b] instead of making every patch day unpaid emotional damage
+[*]YSM is source-available, so modders can inspect how a large YMB-based project is structured
+[/list]
+
+[hr][/hr]
+[b]🧪 Tested on game version: 197351[/b]

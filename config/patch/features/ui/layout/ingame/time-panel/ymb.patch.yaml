@@ -1,0 +1,46 @@
+version: 1
+id: 'ysm.ui.ingame.time-panel'
+name: 'YSM Time Panel'
+description: 'Adjusts the YSM time and speed controls.'
+enabled: true
+scope: 'prod'
+dependsOn: []
+targets:
+  - file: 'GameData/UserInterface/Use/InGame/UISpecificInGameHUDTimePanelView.ndf'
+    operations:
+      - op: 'add'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'AffichageTempsEtVitesseEnTexte.BackgroundComponents'
+        value:
+          $raw: |-
+            [
+                PanelRoundedCorner
+                (
+                    HasBackground = true
+                    BackgroundBlockColorToken = 'TypeA'
+                    HasBorder = false
+                )
+            ]
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'TimePanelSpeedButtons.ComponentFrame.MagnifiableWidthHeight'
+        value:
+          $raw: '[0.0, GameSpeedPanelButtonHeight]'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'TimePanelSpeedButtons.Elements.[ComponentDescriptor.ElementName="SpeedSlowButton"].ComponentDescriptor.ComponentFrame.RelativeWidthHeight'
+        value:
+          $raw: '[0.0, 1.0]'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'TimePanelSpeedButtons.Elements.[ComponentDescriptor.ElementName="SpeedSlowButton"].ComponentDescriptor.ComponentFrame.MagnifiableWidthHeight'
+        value:
+          $raw: '[GameSpeedPanelButtonWidth, 0.0]'

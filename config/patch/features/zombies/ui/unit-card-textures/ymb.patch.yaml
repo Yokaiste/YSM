@@ -1,0 +1,118 @@
+version: 1
+id: 'ysm.zombies.ui.unit-card-textures'
+name: 'YSM Zombie Unit Card Textures'
+description: 'Registers dedicated zombie unit card textures and assigns them to the zombie roster.'
+enabled: true
+scope: 'prod'
+dependsOn:
+  - ysm.descriptors.units.zombies
+targets:
+  - file: 'GameData/Generated/UserInterface/Textures/ButtonTexturesUnites.ndf'
+    operations:
+      - op: 'add'
+        selector:
+          kind: 'collection'
+          by: 'path'
+          value: 'UnitButtonTextureAdditionalBank.Textures'
+        value:
+          $raw: |-
+            ("Texture_Button_Unit_YZ_Swarm", MAP [( ~/ComponentState/Normal, TUIResourceTexture( FileName = "GameData:/Assets/2D/Interface/Common/UnitsIcons/PACT/yz-swarm.png"))]),
+      - op: 'add'
+        selector:
+          kind: 'collection'
+          by: 'path'
+          value: 'UnitButtonTextureAdditionalBank.Textures'
+        value:
+          $raw: |-
+            ("Texture_Button_Unit_YZ_Breaker", MAP [( ~/ComponentState/Normal, TUIResourceTexture( FileName = "GameData:/Assets/2D/Interface/Common/UnitsIcons/PACT/yz-breaker.png"))]),
+      - op: 'add'
+        selector:
+          kind: 'collection'
+          by: 'path'
+          value: 'UnitButtonTextureAdditionalBank.Textures'
+        value:
+          $raw: |-
+            ("Texture_Button_Unit_YZ_Screecher", MAP [( ~/ComponentState/Normal, TUIResourceTexture( FileName = "GameData:/Assets/2D/Interface/Common/UnitsIcons/PACT/yz-screecher.png"))]),
+      - op: 'add'
+        selector:
+          kind: 'collection'
+          by: 'path'
+          value: 'UnitButtonTextureAdditionalBank.Textures'
+        value:
+          $raw: |-
+            ("Texture_Button_Unit_YZ_Stalker", MAP [( ~/ComponentState/Normal, TUIResourceTexture( FileName = "GameData:/Assets/2D/Interface/Common/UnitsIcons/PACT/yz-stalker.png"))]),
+      - op: 'add'
+        selector:
+          kind: 'collection'
+          by: 'path'
+          value: 'UnitButtonTextureAdditionalBank.Textures'
+        value:
+          $raw: |-
+            ("Texture_Button_Unit_YZ_Smoker", MAP [( ~/ComponentState/Normal, TUIResourceTexture( FileName = "GameData:/Assets/2D/Interface/Common/UnitsIcons/PACT/yz-smoker.png"))]),
+      - op: 'add'
+        selector:
+          kind: 'collection'
+          by: 'path'
+          value: 'UnitButtonTextureAdditionalBank.Textures'
+        value:
+          $raw: |-
+            ("Texture_Button_Unit_YZ_PackLeader", MAP [( ~/ComponentState/Normal, TUIResourceTexture( FileName = "GameData:/Assets/2D/Interface/Common/UnitsIcons/PACT/yz-pack-leader.png"))]),
+      - op: 'add'
+        selector:
+          kind: 'collection'
+          by: 'path'
+          value: 'UnitButtonTextureAdditionalBank.Textures'
+        value:
+          $raw: |-
+            ("Texture_Button_Unit_YZ_Demolisher", MAP [( ~/ComponentState/Normal, TUIResourceTexture( FileName = "GameData:/Assets/2D/Interface/Common/UnitsIcons/PACT/yz-demolisher.png"))]),
+  - file: 'GameData/Generated/Gameplay/Gfx/UniteDescriptor.ndf'
+    operations:
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YZ_Swarm.ModulesDescriptors.[TUnitUIModuleDescriptor].ButtonTexture'
+        value:
+          $raw: "'Texture_Button_Unit_YZ_Swarm'"
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YZ_Breaker.ModulesDescriptors.[TUnitUIModuleDescriptor].ButtonTexture'
+        value:
+          $raw: "'Texture_Button_Unit_YZ_Breaker'"
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YZ_Screecher.ModulesDescriptors.[TUnitUIModuleDescriptor].ButtonTexture'
+        value:
+          $raw: "'Texture_Button_Unit_YZ_Screecher'"
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YZ_Stalker.ModulesDescriptors.[TUnitUIModuleDescriptor].ButtonTexture'
+        value:
+          $raw: "'Texture_Button_Unit_YZ_Stalker'"
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YZ_Smoker.ModulesDescriptors.[TUnitUIModuleDescriptor].ButtonTexture'
+        value:
+          $raw: "'Texture_Button_Unit_YZ_Smoker'"
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YZ_PackLeader.ModulesDescriptors.[TUnitUIModuleDescriptor].ButtonTexture'
+        value:
+          $raw: "'Texture_Button_Unit_YZ_PackLeader'"
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YZ_Demolisher.ModulesDescriptors.[TUnitUIModuleDescriptor].ButtonTexture'
+        value:
+          $raw: "'Texture_Button_Unit_YZ_Demolisher'"

@@ -1,0 +1,88 @@
+version: 1
+id: 'ysm.ui.showroom.groups-deck-creator'
+name: 'YSM Groups Deck Creator'
+description: 'Adjusts the YSM groups deck creator layout.'
+enabled: true
+scope: 'prod'
+dependsOn: []
+targets:
+  - file: 'GameData/UserInterface/Use/ShowRoom/Views/UISpecificShowRoomGroupsDeckCreatorScreenView.ndf'
+    operations:
+      - op: 'remove'
+        selector:
+          kind: 'object'
+          by: 'name'
+          value: 'Barre_uniteSmartGroup'
+      - op: 'add'
+        selector:
+          kind: 'object'
+          by: 'name'
+          value: 'DeckCategoryList'
+        value:
+          $raw: |-
+            private Barre_uniteSmartGroup is BUCKSpecificScrollingContainerDescriptor
+            (
+                ElementName = "CategoryAndUnitListContainerYSM"
+                ComponentFrame = TUIFramePropertyRTTI
+                (
+                    MagnifiableWidthHeight = [2000.0, 120.0]
+                )
+
+                ExternalScrollbar = true
+                ScrollStepSize = [40.0, 0.0]
+
+                HasHorizontalScrollbar = true
+                HorizontalScrollbarComponentFrame = TUIFramePropertyRTTI
+                (
+                    MagnifiableWidthHeight = [80.0, 7.0]
+                    MagnifiableOffset = [20.0, 100.0]
+                )
+
+                Components =
+                [
+                    BUCKListDescriptor
+                    (
+                        ElementName = "CategoryAndUnitList"
+                        ComponentFrame = TUIFramePropertyRTTI()
+
+                        Axis = ~/ListAxis/Horizontal
+                        BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
+
+                        FirstMargin = TRTTILength( Magnifiable = 20.0 )
+                        InterItemMargin = TRTTILength( Magnifiable = 8.0 )
+
+                        Elements =
+                        [
+                            BUCKListElementDescriptor(ComponentDescriptor = ~/DeckCategoryList),
+                            BUCKListElementDescriptor
+                            (
+                                ComponentDescriptor = BUCKRackDescriptor
+                                (
+                                    ElementName = 'DeckCategoryFamilies'
+                                    ComponentFrame = TUIFramePropertyRTTI()
+
+                                    BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
+                                    Axis = ~/ListAxis/Horizontal
+
+                                    FirstMargin = TRTTILength( Magnifiable = 1.0 )
+                                    InterItemMargin = TRTTILength( Magnifiable = 1.0 )
+                                    LastMargin = TRTTILength( Magnifiable = 1.0 )
+
+                                    BladeDescriptor = BUCKGridDescriptor
+                                    (
+                                        ComponentFrame = TUIFramePropertyRTTI()
+
+                                        FirstElementMargin = TRTTILength2( Magnifiable = [5.0, 0.0] )
+                                        InterElementMargin = TRTTILength2( Magnifiable = [1.0, 15.0] )
+                                        LastElementMargin = TRTTILength2( Magnifiable = [5.0, 10.0] )
+
+                                        MaxElementsPerDimension = [12, 0]
+
+                                        // envoie UnitPackDescriptor
+                                    )
+                                )
+                            ),
+                        ]
+                    )
+                ]
+            )

@@ -1,0 +1,346 @@
+version: 1
+id: ysm.descriptors.weapons.zombies
+name: YSM Zombie Weapons
+description: Creates the refactored zombie weapon managers with clean, role-specific loadouts for swarm, breaker, screecher, stalker, smoker, pack leader, and demolisher units.
+enabled: true
+scope: prod
+dependsOn:
+  - ysm.descriptors.ammunition.zombies
+variables:
+  infiniteSalvoCount: 999
+  singleInfiniteSalvesRaw: "${'[ ' + join(repeat(infiniteSalvoCount, 1), ', ') + ' ]'}"
+  doubleInfiniteSalvesRaw: "${'[ ' + join(repeat(infiniteSalvoCount, 2), ', ') + ' ]'}"
+  tripleInfiniteSalvesRaw: "${'[ ' + join(repeat(infiniteSalvoCount, 3), ', ') + ' ]'}"
+targets:
+  - file: GameData/Generated/Gameplay/Gfx/WeaponDescriptor.ndf
+    operations:
+      - op: copy
+        selector:
+          kind: object
+          by: name
+          value: WeaponDescriptor_MotSchutzen_DDR
+        destination:
+          kind: sibling
+          name: WeaponDescriptor_YZ_Swarm
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: WeaponDescriptor_YZ_Swarm.Salves
+        value:
+          $raw: '${tripleInfiniteSalvesRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: WeaponDescriptor_YZ_Swarm.TurretDescriptorList.[YulBoneOrdinal=1].MountedWeaponDescriptorList.[TMountedWeaponDescriptor#0].Ammunition
+        value:
+          $raw: $/GFX/Weapon/Ammo_YZ_Assault_Shards
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: WeaponDescriptor_YZ_Swarm.TurretDescriptorList.[YulBoneOrdinal=1].MountedWeaponDescriptorList.[TMountedWeaponDescriptor#0].NbWeapons
+        value:
+          $raw: '8'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: WeaponDescriptor_YZ_Swarm.TurretDescriptorList.[YulBoneOrdinal=2].MountedWeaponDescriptorList.[TMountedWeaponDescriptor#0].Ammunition
+        value:
+          $raw: $/GFX/Weapon/Ammo_YZ_Swarm_Bite
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: WeaponDescriptor_YZ_Swarm.TurretDescriptorList.[YulBoneOrdinal=3].MountedWeaponDescriptorList.[TMountedWeaponDescriptor#0].Ammunition
+        value:
+          $raw: $/GFX/Weapon/Ammo_YZ_Swarm_Bite
+      - op: copy
+        selector:
+          kind: object
+          by: name
+          value: WeaponDescriptor_Engineers_CAN
+        destination:
+          kind: sibling
+          name: WeaponDescriptor_YZ_Breaker
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: WeaponDescriptor_YZ_Breaker.Salves
+        value:
+          $raw: '${tripleInfiniteSalvesRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: WeaponDescriptor_YZ_Breaker.TurretDescriptorList.[YulBoneOrdinal=1].MountedWeaponDescriptorList.[TMountedWeaponDescriptor#0].Ammunition
+        value:
+          $raw: $/GFX/Weapon/Ammo_YZ_Assault_Shards
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: WeaponDescriptor_YZ_Breaker.TurretDescriptorList.[YulBoneOrdinal=1].MountedWeaponDescriptorList.[TMountedWeaponDescriptor#0].NbWeapons
+        value:
+          $raw: '5'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: WeaponDescriptor_YZ_Breaker.TurretDescriptorList.[YulBoneOrdinal=2].MountedWeaponDescriptorList.[TMountedWeaponDescriptor#0].Ammunition
+        value:
+          $raw: $/GFX/Weapon/Ammo_YZ_Breaker_Maul
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: WeaponDescriptor_YZ_Breaker.TurretDescriptorList.[YulBoneOrdinal=2].MountedWeaponDescriptorList.[TMountedWeaponDescriptor#0].NbWeapons
+        value:
+          $raw: '2'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: WeaponDescriptor_YZ_Breaker.TurretDescriptorList.[YulBoneOrdinal=3].MountedWeaponDescriptorList.[TMountedWeaponDescriptor#0].Ammunition
+        value:
+          $raw: $/GFX/Weapon/Ammo_YZ_Breaker_Maul
+      - op: copy
+        selector:
+          kind: object
+          by: name
+          value: WeaponDescriptor_MANPAD_Igla_DDR
+        destination:
+          kind: sibling
+          name: WeaponDescriptor_YZ_Screecher
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: WeaponDescriptor_YZ_Screecher.Salves
+        value:
+          $raw: '${doubleInfiniteSalvesRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: WeaponDescriptor_YZ_Screecher.TurretDescriptorList.[YulBoneOrdinal=1].MountedWeaponDescriptorList.[TMountedWeaponDescriptor#0].Ammunition
+        value:
+          $raw: $/GFX/Weapon/Ammo_YZ_Scout_Shards
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: WeaponDescriptor_YZ_Screecher.TurretDescriptorList.[YulBoneOrdinal=1].MountedWeaponDescriptorList.[TMountedWeaponDescriptor#0].NbWeapons
+        value:
+          $raw: '3'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: WeaponDescriptor_YZ_Screecher.TurretDescriptorList.[YulBoneOrdinal=2].MountedWeaponDescriptorList.[TMountedWeaponDescriptor#0].Ammunition
+        value:
+          $raw: $/GFX/Weapon/Ammo_YZ_Screecher_Spore
+      - op: copy
+        selector:
+          kind: object
+          by: name
+          value: WeaponDescriptor_Rifles_BEL
+        destination:
+          kind: sibling
+          name: WeaponDescriptor_YZ_Stalker
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: WeaponDescriptor_YZ_Stalker.Salves
+        value:
+          $raw: '${tripleInfiniteSalvesRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: WeaponDescriptor_YZ_Stalker.TurretDescriptorList.[YulBoneOrdinal=1].MountedWeaponDescriptorList.[TMountedWeaponDescriptor#0].Ammunition
+        value:
+          $raw: $/GFX/Weapon/Ammo_YZ_Scout_Shards
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: WeaponDescriptor_YZ_Stalker.TurretDescriptorList.[YulBoneOrdinal=1].MountedWeaponDescriptorList.[TMountedWeaponDescriptor#0].NbWeapons
+        value:
+          $raw: '3'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: WeaponDescriptor_YZ_Stalker.TurretDescriptorList.[YulBoneOrdinal=2].MountedWeaponDescriptorList.[TMountedWeaponDescriptor#0].Ammunition
+        value:
+          $raw: $/GFX/Weapon/Ammo_YZ_Stalker_Talons
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: WeaponDescriptor_YZ_Stalker.TurretDescriptorList.[YulBoneOrdinal=2].MountedWeaponDescriptorList.[TMountedWeaponDescriptor#0].NbWeapons
+        value:
+          $raw: '1'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: WeaponDescriptor_YZ_Stalker.TurretDescriptorList.[YulBoneOrdinal=3].MountedWeaponDescriptorList.[TMountedWeaponDescriptor#0].Ammunition
+        value:
+          $raw: $/GFX/Weapon/Ammo_YZ_Stalker_Talons
+      - op: copy
+        selector:
+          kind: object
+          by: name
+          value: WeaponDescriptor_AeroRifles_Dragon_US
+        destination:
+          kind: sibling
+          name: WeaponDescriptor_YZ_Smoker
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: WeaponDescriptor_YZ_Smoker.Salves
+        value:
+          $raw: '${singleInfiniteSalvesRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: WeaponDescriptor_YZ_Smoker.TurretDescriptorList
+        value:
+          $raw: |-
+            [
+                TTurretInfanterieDescriptor
+                (
+                    MountedWeaponDescriptorList =
+                    [
+                        TMountedWeaponDescriptor
+                        (
+                            AmmoBoxIndex = 0
+                            Ammunition = $/GFX/Weapon/Ammo_YZ_Smoker_Cloud
+                            AnimateOnlyOneSoldier = False
+                            DispersionRadiusOffColor = RGBA[0,0,0,0]
+                            DispersionRadiusOffThickness = -0.1
+                            DispersionRadiusOnColor = RGBA[0,0,0,0]
+                            DispersionRadiusOnThickness = -0.1
+                            EffectTag = "FireEffect_Grenade_SMOKE"
+                            HandheldEquipmentKey = "WeaponAlternative_1"
+                            NbWeapons = 2
+                            ShowDispersion = False
+                            WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_1"
+                            WeaponIgnoredPropertyName = "WeaponIgnored_1"
+                            WeaponShootDataPropertyName =
+                            [
+                                "WeaponShootData_0_1",
+                            ]
+                        ),
+                    ]
+                    YulBoneOrdinal = 1
+                ),
+            ]
+      - op: copy
+        selector:
+          kind: object
+          by: name
+          value: WeaponDescriptor_Rifles_Gurkhas_UK
+        destination:
+          kind: sibling
+          name: WeaponDescriptor_YZ_PackLeader
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: WeaponDescriptor_YZ_PackLeader.Salves
+        value:
+          $raw: '${tripleInfiniteSalvesRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: WeaponDescriptor_YZ_PackLeader.TurretDescriptorList.[YulBoneOrdinal=1].MountedWeaponDescriptorList.[TMountedWeaponDescriptor#0].Ammunition
+        value:
+          $raw: $/GFX/Weapon/Ammo_YZ_Assault_Shards
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: WeaponDescriptor_YZ_PackLeader.TurretDescriptorList.[YulBoneOrdinal=1].MountedWeaponDescriptorList.[TMountedWeaponDescriptor#0].NbWeapons
+        value:
+          $raw: '5'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: WeaponDescriptor_YZ_PackLeader.TurretDescriptorList.[YulBoneOrdinal=2].MountedWeaponDescriptorList.[TMountedWeaponDescriptor#0].Ammunition
+        value:
+          $raw: $/GFX/Weapon/Ammo_YZ_PackLeader_Fangs
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: WeaponDescriptor_YZ_PackLeader.TurretDescriptorList.[YulBoneOrdinal=2].MountedWeaponDescriptorList.[TMountedWeaponDescriptor#0].NbWeapons
+        value:
+          $raw: '2'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: WeaponDescriptor_YZ_PackLeader.TurretDescriptorList.[YulBoneOrdinal=3].MountedWeaponDescriptorList.[TMountedWeaponDescriptor#0].Ammunition
+        value:
+          $raw: $/GFX/Weapon/Ammo_YZ_PackLeader_Fangs
+      - op: copy
+        selector:
+          kind: object
+          by: name
+          value: WeaponDescriptor_Engineers_CAN
+        destination:
+          kind: sibling
+          name: WeaponDescriptor_YZ_Demolisher
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: WeaponDescriptor_YZ_Demolisher.Salves
+        value:
+          $raw: '${tripleInfiniteSalvesRaw}'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: WeaponDescriptor_YZ_Demolisher.TurretDescriptorList.[YulBoneOrdinal=1].MountedWeaponDescriptorList.[TMountedWeaponDescriptor#0].Ammunition
+        value:
+          $raw: $/GFX/Weapon/Ammo_YZ_Demolisher_Shards
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: WeaponDescriptor_YZ_Demolisher.TurretDescriptorList.[YulBoneOrdinal=1].MountedWeaponDescriptorList.[TMountedWeaponDescriptor#0].NbWeapons
+        value:
+          $raw: '2'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: WeaponDescriptor_YZ_Demolisher.TurretDescriptorList.[YulBoneOrdinal=2].MountedWeaponDescriptorList.[TMountedWeaponDescriptor#0].Ammunition
+        value:
+          $raw: $/GFX/Weapon/Ammo_YZ_Demolisher_Shards
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: WeaponDescriptor_YZ_Demolisher.TurretDescriptorList.[YulBoneOrdinal=2].MountedWeaponDescriptorList.[TMountedWeaponDescriptor#0].NbWeapons
+        value:
+          $raw: '1'
+      - op: modify
+        selector:
+          kind: field
+          by: path
+          value: WeaponDescriptor_YZ_Demolisher.TurretDescriptorList.[YulBoneOrdinal=3].MountedWeaponDescriptorList.[TMountedWeaponDescriptor#0].Ammunition
+        value:
+          $raw: $/GFX/Weapon/Ammo_YZ_Demolisher_Charge

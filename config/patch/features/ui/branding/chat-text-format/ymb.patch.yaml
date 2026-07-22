@@ -1,0 +1,77 @@
+version: 1
+id: 'ysm.ui.generated.chat-text-format'
+name: 'YSM Chat Tokens'
+description: 'Adds the YSM chat formatting tokens.'
+enabled: true
+scope: 'prod'
+dependsOn:
+  - 'ysm.ui.generated.common-textures'
+targets:
+  - file: 'GameData/UserInterface/Use/Common/UIChatTextFormatScript.ndf'
+    operations:
+      - op: 'add'
+        selector:
+          kind: 'collection'
+          by: 'path'
+          value: 'ChatTextFormatScript.Commands'
+        value:
+          $raw: |-
+            (
+                        "${modTag}_FLAG",
+                        TemplateTFS_Flag(TextureToken = "Texture${modTag}_CountryFlag")
+                    ),
+      - op: 'add'
+        selector:
+          kind: 'collection'
+          by: 'path'
+          value: 'ChatTextFormatScript.Commands'
+        value:
+          $raw: |-
+            (
+                        "${modTag}",
+                        TemplateTFS_Flag(TextureToken = "Texture${modTag}_BrandLogo")
+                    ),
+      - op: 'add'
+        selector:
+          kind: 'collection'
+          by: 'path'
+          value: 'ChatTextFormatScript.Commands'
+        value:
+          $raw: |-
+            (
+                        "${modTag}_DIVISION_NATO",
+                        TemplateTFS_Flag(TextureToken = "Texture${modTag}_Division_NATO")
+                    ),
+      - op: 'add'
+        selector:
+          kind: 'collection'
+          by: 'path'
+          value: 'ChatTextFormatScript.Commands'
+        value:
+          $raw: |-
+            (
+                        "${modTag}_DIVISION_PACT",
+                        TemplateTFS_Flag(TextureToken = "Texture${modTag}_Division_PACT")
+                    ),
+      - op: 'add'
+        selector:
+          kind: 'collection'
+          by: 'path'
+          value: 'ChatTextFormatScript.Commands'
+        value:
+          $raw: |-
+            (
+                        "${modTag}_DIVISION_NATO_BALANCED",
+                        TemplateTFS_Flag(TextureToken = "Texture${modTag}_Division_NATO_Balanced")
+                    ),
+      - op: 'add'
+        selector:
+          kind: 'collection'
+          by: 'path'
+          value: 'ChatTextFormatScript.Commands'
+        value:
+          $raw: |-
+            (
+                        "${modTag}_DIVISION_PACT_BALANCED",
+                        TemplateTFS_Flag(TextureToken = "Texture${modTag}_Division_PACT_Balanced")
+                    ),

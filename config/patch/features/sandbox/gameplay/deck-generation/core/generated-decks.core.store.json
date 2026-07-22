@@ -1,0 +1,241 @@
+{
+  "version": 2,
+  "nextDivisionNameToken": 37,
+  "nextDeckNameToken": 37,
+  "divisions": {
+    "YSM_COUNTRY_BEL_UNLIMITED": {
+      "guid": "622d7834-48f3-4860-84f8-ace6b59a8229",
+      "divisionNameToken": "YD00000001",
+      "deckNameToken": "YK00000001"
+    },
+    "YSM_COUNTRY_BEL_BALANCED": {
+      "guid": "387d248a-b664-4ec7-83e4-1a2548ee9144",
+      "divisionNameToken": "YD00000002",
+      "deckNameToken": "YK00000002"
+    },
+    "YSM_COUNTRY_CAN_UNLIMITED": {
+      "guid": "71e1c50e-4df8-465c-841b-7572e9518585",
+      "divisionNameToken": "YD00000003",
+      "deckNameToken": "YK00000003"
+    },
+    "YSM_COUNTRY_CAN_BALANCED": {
+      "guid": "90feefff-e12f-4c71-86ed-625e5dcb50ee",
+      "divisionNameToken": "YD00000004",
+      "deckNameToken": "YK00000004"
+    },
+    "YSM_COUNTRY_DDR_UNLIMITED": {
+      "guid": "5c612ec3-ceb4-4131-8ab7-12bee88d6eab",
+      "divisionNameToken": "YD00000005",
+      "deckNameToken": "YK00000005"
+    },
+    "YSM_COUNTRY_DDR_BALANCED": {
+      "guid": "7398969e-a786-48ff-a8ab-9fd88ab862d9",
+      "divisionNameToken": "YD00000006",
+      "deckNameToken": "YK00000006"
+    },
+    "YSM_COUNTRY_DK_UNLIMITED": {
+      "guid": "5f95134a-134b-4742-a0da-8e8d8ae205f1",
+      "divisionNameToken": "YD00000007",
+      "deckNameToken": "YK00000007"
+    },
+    "YSM_COUNTRY_DK_BALANCED": {
+      "guid": "3ad43f34-07a2-497d-bfd0-4aa36b5b78bb",
+      "divisionNameToken": "YD00000008",
+      "deckNameToken": "YK00000008"
+    },
+    "YSM_COUNTRY_ESP_UNLIMITED": {
+      "guid": "7c1872e0-0884-4946-8080-7f9902634f64",
+      "divisionNameToken": "YD00000009",
+      "deckNameToken": "YK00000009"
+    },
+    "YSM_COUNTRY_ESP_BALANCED": {
+      "guid": "ca2d1ee7-2f11-49a9-942c-c3aed04c1fe6",
+      "divisionNameToken": "YD00000010",
+      "deckNameToken": "YK00000010"
+    },
+    "YSM_COUNTRY_FR_UNLIMITED": {
+      "guid": "0ef89fe8-4497-4a16-b489-cbf3129e4263",
+      "divisionNameToken": "YD00000011",
+      "deckNameToken": "YK00000011"
+    },
+    "YSM_COUNTRY_FR_BALANCED": {
+      "guid": "716aa7d5-4fbf-4794-a106-db326d1dbbc6",
+      "divisionNameToken": "YD00000012",
+      "deckNameToken": "YK00000012"
+    },
+    "YSM_COUNTRY_LUX_UNLIMITED": {
+      "guid": "9e1ea45b-0dc4-47e7-991e-429de6d990cd",
+      "divisionNameToken": "YD00000013",
+      "deckNameToken": "YK00000013"
+    },
+    "YSM_COUNTRY_LUX_BALANCED": {
+      "guid": "dfe809f8-6ec8-4d42-bf5e-a29ae34d6303",
+      "divisionNameToken": "YD00000014",
+      "deckNameToken": "YK00000014"
+    },
+    "YSM_COUNTRY_NL_UNLIMITED": {
+      "guid": "a1c5fcb8-15a6-48c0-bf58-53728c7ce7d5",
+      "divisionNameToken": "YD00000015",
+      "deckNameToken": "YK00000015"
+    },
+    "YSM_COUNTRY_NL_BALANCED": {
+      "guid": "9aee844b-bd6b-42e2-ac89-34b78e47e36e",
+      "divisionNameToken": "YD00000016",
+      "deckNameToken": "YK00000016"
+    },
+    "YSM_COUNTRY_POL_UNLIMITED": {
+      "guid": "c6e3139f-3de7-4829-8482-ba6cb63782fa",
+      "divisionNameToken": "YD00000017",
+      "deckNameToken": "YK00000017"
+    },
+    "YSM_COUNTRY_POL_BALANCED": {
+      "guid": "52dcfde0-045e-44ab-a98e-b707c8e00c93",
+      "divisionNameToken": "YD00000018",
+      "deckNameToken": "YK00000018"
+    },
+    "YSM_COUNTRY_RFA_UNLIMITED": {
+      "guid": "7cb401a1-e428-4716-a040-613f75f6aa69",
+      "divisionNameToken": "YD00000019",
+      "deckNameToken": "YK00000019"
+    },
+    "YSM_COUNTRY_RFA_BALANCED": {
+      "guid": "dafaf48e-f44f-4524-87df-39d0a6097f90",
+      "divisionNameToken": "YD00000020",
+      "deckNameToken": "YK00000020"
+    },
+    "YSM_COUNTRY_SOV_UNLIMITED": {
+      "guid": "edf5f630-6581-41b0-8f01-949bde2834b6",
+      "divisionNameToken": "YD00000021",
+      "deckNameToken": "YK00000021"
+    },
+    "YSM_COUNTRY_SOV_BALANCED": {
+      "guid": "dc821859-3d54-4021-a856-a71ac3ff7893",
+      "divisionNameToken": "YD00000022",
+      "deckNameToken": "YK00000022"
+    },
+    "YSM_COUNTRY_TCH_UNLIMITED": {
+      "guid": "1d7a7310-e077-4cbb-9d71-c26cf3069986",
+      "divisionNameToken": "YD00000023",
+      "deckNameToken": "YK00000023"
+    },
+    "YSM_COUNTRY_TCH_BALANCED": {
+      "guid": "03331537-ee22-4b78-9c91-d868d759b275",
+      "divisionNameToken": "YD00000024",
+      "deckNameToken": "YK00000024"
+    },
+    "YSM_COUNTRY_UK_UNLIMITED": {
+      "guid": "8d45b105-81b6-490b-be09-a9253a26765c",
+      "divisionNameToken": "YD00000025",
+      "deckNameToken": "YK00000025"
+    },
+    "YSM_COUNTRY_UK_BALANCED": {
+      "guid": "13971630-7685-4b77-8fc5-bc8ba6d6b126",
+      "divisionNameToken": "YD00000026",
+      "deckNameToken": "YK00000026"
+    },
+    "YSM_COUNTRY_US_UNLIMITED": {
+      "guid": "8ee8d3fa-a84d-4efe-ac70-82bdb10825d1",
+      "divisionNameToken": "YD00000027",
+      "deckNameToken": "YK00000027"
+    },
+    "YSM_COUNTRY_US_BALANCED": {
+      "guid": "75b20359-840c-40bc-b80a-74f0e5fdef51",
+      "divisionNameToken": "YD00000028",
+      "deckNameToken": "YK00000028"
+    },
+    "YSM_SIDE_NATO_UNLIMITED": {
+      "guid": "b24207ce-5396-4833-880d-44eee3dc5d7f",
+      "divisionNameToken": "YD00000029",
+      "deckNameToken": "YK00000029"
+    },
+    "YSM_SIDE_NATO_BALANCED": {
+      "guid": "463603f6-3868-4904-ad0e-29003cc366a2",
+      "divisionNameToken": "YD00000030",
+      "deckNameToken": "YK00000030"
+    },
+    "YSM_SIDE_PACT_UNLIMITED": {
+      "guid": "4782fee6-2f97-4cd2-85dc-352c8928553b",
+      "divisionNameToken": "YD00000031",
+      "deckNameToken": "YK00000031"
+    },
+    "YSM_SIDE_PACT_BALANCED": {
+      "guid": "cfa98653-1f93-4d9d-905d-4e9171899d39",
+      "divisionNameToken": "YD00000032",
+      "deckNameToken": "YK00000032"
+    },
+    "YSM_ALL_BLUE_UNLIMITED": {
+      "guid": "05ac4188-bc7c-4913-8d20-4ce7069f4d07",
+      "divisionNameToken": "YD00000033",
+      "deckNameToken": "YK00000033"
+    },
+    "YSM_ALL_BLUE_BALANCED": {
+      "guid": "6a7046a9-2331-409f-9f26-394038480cb8",
+      "divisionNameToken": "YD00000034",
+      "deckNameToken": "YK00000034"
+    },
+    "YSM_ALL_RED_UNLIMITED": {
+      "guid": "5a4a21b6-735e-449a-82e6-08a81480fd07",
+      "divisionNameToken": "YD00000035",
+      "deckNameToken": "YK00000035"
+    },
+    "YSM_ALL_RED_BALANCED": {
+      "guid": "7739aaad-e2bd-417a-8e58-00b4c4c094e7",
+      "divisionNameToken": "YD00000036",
+      "deckNameToken": "YK00000036"
+    }
+  },
+  "serializer": {
+    "nextDivisionId": 1636,
+    "nextUnitId": 16010,
+    "divisionIds": {
+      "Descriptor_Deck_Division_YSM_ALL_BLUE_BALANCED": 1600,
+      "Descriptor_Deck_Division_YSM_ALL_BLUE_UNLIMITED": 1601,
+      "Descriptor_Deck_Division_YSM_ALL_RED_BALANCED": 1602,
+      "Descriptor_Deck_Division_YSM_ALL_RED_UNLIMITED": 1603,
+      "Descriptor_Deck_Division_YSM_COUNTRY_BEL_BALANCED": 1604,
+      "Descriptor_Deck_Division_YSM_COUNTRY_BEL_UNLIMITED": 1605,
+      "Descriptor_Deck_Division_YSM_COUNTRY_CAN_BALANCED": 1606,
+      "Descriptor_Deck_Division_YSM_COUNTRY_CAN_UNLIMITED": 1607,
+      "Descriptor_Deck_Division_YSM_COUNTRY_DDR_BALANCED": 1608,
+      "Descriptor_Deck_Division_YSM_COUNTRY_DDR_UNLIMITED": 1609,
+      "Descriptor_Deck_Division_YSM_COUNTRY_DK_BALANCED": 1610,
+      "Descriptor_Deck_Division_YSM_COUNTRY_DK_UNLIMITED": 1611,
+      "Descriptor_Deck_Division_YSM_COUNTRY_ESP_BALANCED": 1612,
+      "Descriptor_Deck_Division_YSM_COUNTRY_ESP_UNLIMITED": 1613,
+      "Descriptor_Deck_Division_YSM_COUNTRY_FR_BALANCED": 1614,
+      "Descriptor_Deck_Division_YSM_COUNTRY_FR_UNLIMITED": 1615,
+      "Descriptor_Deck_Division_YSM_COUNTRY_LUX_BALANCED": 1616,
+      "Descriptor_Deck_Division_YSM_COUNTRY_LUX_UNLIMITED": 1617,
+      "Descriptor_Deck_Division_YSM_COUNTRY_NL_BALANCED": 1618,
+      "Descriptor_Deck_Division_YSM_COUNTRY_NL_UNLIMITED": 1619,
+      "Descriptor_Deck_Division_YSM_COUNTRY_POL_BALANCED": 1620,
+      "Descriptor_Deck_Division_YSM_COUNTRY_POL_UNLIMITED": 1621,
+      "Descriptor_Deck_Division_YSM_COUNTRY_RFA_BALANCED": 1622,
+      "Descriptor_Deck_Division_YSM_COUNTRY_RFA_UNLIMITED": 1623,
+      "Descriptor_Deck_Division_YSM_COUNTRY_SOV_BALANCED": 1624,
+      "Descriptor_Deck_Division_YSM_COUNTRY_SOV_UNLIMITED": 1625,
+      "Descriptor_Deck_Division_YSM_COUNTRY_TCH_BALANCED": 1626,
+      "Descriptor_Deck_Division_YSM_COUNTRY_TCH_UNLIMITED": 1627,
+      "Descriptor_Deck_Division_YSM_COUNTRY_UK_BALANCED": 1628,
+      "Descriptor_Deck_Division_YSM_COUNTRY_UK_UNLIMITED": 1629,
+      "Descriptor_Deck_Division_YSM_COUNTRY_US_BALANCED": 1630,
+      "Descriptor_Deck_Division_YSM_COUNTRY_US_UNLIMITED": 1631,
+      "Descriptor_Deck_Division_YSM_SIDE_NATO_BALANCED": 1632,
+      "Descriptor_Deck_Division_YSM_SIDE_NATO_UNLIMITED": 1633,
+      "Descriptor_Deck_Division_YSM_SIDE_PACT_BALANCED": 1634,
+      "Descriptor_Deck_Division_YSM_SIDE_PACT_UNLIMITED": 1635
+    },
+    "unitIds": {
+      "Descriptor_Unit_YC_Illegal": 16000,
+      "Descriptor_Unit_YC_Oracle": 16001,
+      "Descriptor_Unit_YN_Nuke": 16002,
+      "Descriptor_Unit_YN_Nuke_X2": 16003,
+      "Descriptor_Unit_YS_Doomsday": 16004,
+      "Descriptor_Unit_YS_Supply_Amphibious": 16005,
+      "Descriptor_Unit_YS_Supply_Base": 16006,
+      "Descriptor_Unit_YS_Supply_Bunker": 16007,
+      "Descriptor_Unit_YS_Supply_Heli": 16008,
+      "Descriptor_Unit_YS_Supply_Truck": 16009
+    }
+  }
+}
