@@ -42,8 +42,6 @@ jobs:
         shell: pwsh
         run: |
           @'
-          # YSM Auto Deploy
-
           Download **Deploy-YSM.bat** to install or update YSM.
 
           1. Create a WARNO mod with `WARNO\Mods\CreateNewMod.bat YourModName`.
@@ -51,8 +49,6 @@ jobs:
           3. Double-click it.
 
           The installer checks Git and Git LFS, installs YMB and YSM, validates the configuration, and builds a preview. It does **not** sync or recover live WARNO files automatically; it prints those commands when it finishes.
-
-          This release is replaced whenever the installer changes, so it always contains only the current deployment file.
           '@ | Set-Content -Path release-notes.md -Encoding utf8
 
       - name: Replace Auto Deploy release
