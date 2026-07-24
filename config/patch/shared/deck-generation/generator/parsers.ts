@@ -502,21 +502,92 @@ export function parseDivisionMemberNames(
   return parseDivisionRuleData(content, ignoredRuleNamePatterns, ndf).memberNames;
 }
 
+function collectUnitRuleListMembers(
+  unitRuleListValue: string,
+  ndf: NdfReaders,
+  memberNames: Set<string>,
+  candidatesByUnit: Map<string, DivisionRuleData[]>,
+): void {
+  for (const entry of ndf.findCollectionEntries(unitRuleListValue)) {
+    if (entry.typeName !== 'TDeckUniteRule') {
+      continue;
+    }
+
+    const unitName = extractUnitDescriptorName(ndf.readPath(entry.text, ['UnitDescriptor']));
+    if (!unitName) {
+      continue;
+    }
+    memberNames.add(unitName);
+
+    const availableTransportListValue = ndf.readPath(entry.text, ['AvailableTransportList']);
+    for (const transportName of extractUnitDescriptorNames(availableTransportListValue, ndf)) {
+      memberNames.add(transportName);
+    }
+
+    const multipliers = normalizeNumberArrayValue(
+      ndf.readPath(entry.text, ['NumberOfUnitInPackXPMultiplier']),
+      ndf,
+    );
+    const rule = {
+      unitName,
+      maxPackNumber: readInteger(ndf.readPath(entry.text, ['MaxPackNumber'])) ?? 0,
+      numberOfUnitInPack: readInteger(ndf.readPath(entry.text, ['NumberOfUnitInPack'])) ?? 0,
+      multipliers: multipliers.length > 0 ? multipliers : [...FALLBACK_BALANCED_RULE.multipliers],
+    };
+    const candidates = candidatesByUnit.get(unitName) ?? [];
+    candidates.push(rule);
+    candidatesByUnit.set(unitName, candidates);
+  }
+}
+
+function isIgnoredRuleName(name: string, ignoredRuleNamePatterns: RegExp[]): boolean {
+  return ignoredRuleNamePatterns.some((pattern) => {
+    pattern.lastIndex = 0;
+    return pattern.test(name);
+  });
+}
+
+// A decooked mod division carries its rule inline (`DivisionRule = TDeckDivisionRule(...)`) rather than
+// referencing a named rule in DivisionRules.ndf, so its members are invisible to the top-level scan and
+// the exclude-not-in-any-division filter would drop a whole mod roster. The inline rule is anonymous;
+// ignore patterns expect the `<Division>_Rule` name, so gate it under that synthesized name.
+function collectInlineDivisionRuleMembers(
+  divisionsContent: string,
+  ignoredRuleNamePatterns: RegExp[],
+  ndf: NdfReaders,
+  memberNames: Set<string>,
+  candidatesByUnit: Map<string, DivisionRuleData[]>,
+): void {
+  for (const block of collectTopLevelBlocksByType(
+    divisionsContent,
+    'TDeckDivisionDescriptor',
+    ndf,
+  )) {
+    if (!block.name || isIgnoredRuleName(`${block.name}_Rule`, ignoredRuleNamePatterns)) {
+      continue;
+    }
+    const divisionRuleValue = ndf.readField(getBlockBodyText(block, ndf), 'DivisionRule');
+    if (!divisionRuleValue) {
+      continue;
+    }
+    const unitRuleListValue = ndf.readField(divisionRuleValue, 'UnitRuleList');
+    if (!unitRuleListValue) {
+      continue;
+    }
+    collectUnitRuleListMembers(unitRuleListValue, ndf, memberNames, candidatesByUnit);
+  }
+}
+
 export function parseDivisionRuleData(
   content: string,
   ignoredRuleNamePatterns: RegExp[],
   ndf: NdfReaders,
+  divisionsContent = '',
 ): { rules: Map<string, DivisionRuleData>; memberNames: Set<string> } {
   const candidatesByUnit = new Map<string, DivisionRuleData[]>();
   const memberNames = new Set<string>();
   for (const block of collectTopLevelBlocksByType(content, 'TDeckDivisionRule', ndf)) {
-    if (
-      !block.name ||
-      ignoredRuleNamePatterns.some((pattern) => {
-        pattern.lastIndex = 0;
-        return pattern.test(block.name ?? '');
-      })
-    ) {
+    if (!block.name || isIgnoredRuleName(block.name, ignoredRuleNamePatterns)) {
       continue;
     }
 
@@ -525,37 +596,16 @@ export function parseDivisionRuleData(
       continue;
     }
 
-    for (const entry of ndf.findCollectionEntries(unitRuleListValue)) {
-      if (entry.typeName !== 'TDeckUniteRule') {
-        continue;
-      }
-
-      const unitName = extractUnitDescriptorName(ndf.readPath(entry.text, ['UnitDescriptor']));
-      if (!unitName) {
-        continue;
-      }
-      memberNames.add(unitName);
-
-      const availableTransportListValue = ndf.readPath(entry.text, ['AvailableTransportList']);
-      for (const transportName of extractUnitDescriptorNames(availableTransportListValue, ndf)) {
-        memberNames.add(transportName);
-      }
-
-      const multipliers = normalizeNumberArrayValue(
-        ndf.readPath(entry.text, ['NumberOfUnitInPackXPMultiplier']),
-        ndf,
-      );
-      const rule = {
-        unitName,
-        maxPackNumber: readInteger(ndf.readPath(entry.text, ['MaxPackNumber'])) ?? 0,
-        numberOfUnitInPack: readInteger(ndf.readPath(entry.text, ['NumberOfUnitInPack'])) ?? 0,
-        multipliers: multipliers.length > 0 ? multipliers : [...FALLBACK_BALANCED_RULE.multipliers],
-      };
-      const candidates = candidatesByUnit.get(unitName) ?? [];
-      candidates.push(rule);
-      candidatesByUnit.set(unitName, candidates);
-    }
+    collectUnitRuleListMembers(unitRuleListValue, ndf, memberNames, candidatesByUnit);
   }
+
+  collectInlineDivisionRuleMembers(
+    divisionsContent,
+    ignoredRuleNamePatterns,
+    ndf,
+    memberNames,
+    candidatesByUnit,
+  );
 
   const rules = new Map(
     [...candidatesByUnit].flatMap(([unitName, candidates]) => {

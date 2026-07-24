@@ -63,6 +63,7 @@ export interface DeckGenerationSourceAnalysis {
   weaponDescriptors: ReturnType<typeof parseWeaponDescriptors>;
   ammunition: ReturnType<typeof parseAmmunition>;
   sourceDivisionRulesContent: string;
+  sourceDivisionsContent: string;
   analysisFactory: EntityAnalysisFactory;
   divisionRuleDataByIgnoreKey: Map<string, ReturnType<typeof parseDivisionRuleData>>;
 }
@@ -73,6 +74,7 @@ export function createDeckGenerationSourceAnalysis(
   const { ndf } = input;
   const config = createDeckGenerationConfig(input.generationConfig, input.modTag, input.values);
   const sourceDivisionRulesContent = ndf.stripGeneratedBlocks(input.divisionRulesContent);
+  const sourceDivisionsContent = ndf.stripGeneratedBlocks(input.divisionsContent);
   const buildings = parseEntities(input.buildingsContent, 'building', ndf, {
     commentDirectives: config.commentDirectives,
   });
@@ -104,6 +106,7 @@ export function createDeckGenerationSourceAnalysis(
     weaponDescriptors,
     ammunition,
     sourceDivisionRulesContent,
+    sourceDivisionsContent,
     analysisFactory: createEntityAnalysisFactory(weaponDescriptors, ammunition),
     divisionRuleDataByIgnoreKey: new Map(),
   };
@@ -121,6 +124,7 @@ export function generateDeckOutputsFromSources(
     deckableEntities,
     entityByName,
     sourceDivisionRulesContent,
+    sourceDivisionsContent,
     transportMap,
     weaponDescriptors,
   } = sources;
@@ -133,6 +137,7 @@ export function generateDeckOutputsFromSources(
       sourceDivisionRulesContent,
       config.ignoredDivisionRuleNamePatterns,
       ndf,
+      sourceDivisionsContent,
     );
     sources.divisionRuleDataByIgnoreKey.set(ignoreKey, divisionRuleData);
   }
