@@ -1073,27 +1073,54 @@ function bucketRange(range: number): string {
         : 'local';
 }
 
-/** Vanilla declares Coalition on well under half its units; the rest only carry MotherCountry. */
-export function applyInferredCoalitions(entities: EntityData[]): void {
-  const coalitionVotesByCountry = new Map<string, Map<Coalition, number>>();
+function pickTopCoalition(votes: Map<Coalition, number>): Coalition | undefined {
+  const [top] = [...votes].sort(
+    ([leftCoalition, leftVotes], [rightCoalition, rightVotes]) =>
+      rightVotes - leftVotes || leftCoalition.localeCompare(rightCoalition),
+  );
+  return top?.[0];
+}
+
+function voteCoalitionByCountry(
+  entities: readonly EntityData[],
+  coalitionOf: (entity: EntityData) => Coalition | undefined,
+): Map<string, Coalition> {
+  const votesByCountry = new Map<string, Map<Coalition, number>>();
   for (const entity of entities) {
-    if (!entity.country || !entity.coalition) {
+    const coalition = coalitionOf(entity);
+    if (!entity.country || !coalition) {
       continue;
     }
-    const votes = coalitionVotesByCountry.get(entity.country) ?? new Map<Coalition, number>();
-    votes.set(entity.coalition, (votes.get(entity.coalition) ?? 0) + 1);
-    coalitionVotesByCountry.set(entity.country, votes);
+    const votes = votesByCountry.get(entity.country) ?? new Map<Coalition, number>();
+    votes.set(coalition, (votes.get(coalition) ?? 0) + 1);
+    votesByCountry.set(entity.country, votes);
   }
-
-  const coalitionByCountry = new Map<string, Coalition>(
-    [...coalitionVotesByCountry].flatMap(([country, votes]) => {
-      const [winner] = [...votes].sort(
-        ([leftCoalition, leftVotes], [rightCoalition, rightVotes]) =>
-          rightVotes - leftVotes || leftCoalition.localeCompare(rightCoalition),
-      );
-      return winner ? [[country, winner[0]] as const] : [];
+  return new Map(
+    [...votesByCountry].flatMap(([country, votes]) => {
+      const winner = pickTopCoalition(votes);
+      return winner ? [[country, winner] as const] : [];
     }),
   );
+}
+
+/** Vanilla declares Coalition on well under half its units; the rest only carry MotherCountry. */
+export function applyInferredCoalitions(
+  entities: EntityData[],
+  divisionCoalitionByUnit?: ReadonlyMap<string, Coalition>,
+): void {
+  const coalitionByCountry = voteCoalitionByCountry(entities, (entity) => entity.coalition);
+
+  // A mod faction may carry Coalition on no unit at all, leaving nothing to vote on; fall back to the
+  // coalition its divisions declare so the whole faction isn't dropped as sideless.
+  if (divisionCoalitionByUnit) {
+    const seededFromDivisions = voteCoalitionByCountry(
+      entities.filter((entity) => entity.country && !coalitionByCountry.has(entity.country)),
+      (entity) => divisionCoalitionByUnit.get(entity.name),
+    );
+    for (const [country, coalition] of seededFromDivisions) {
+      coalitionByCountry.set(country, coalition);
+    }
+  }
 
   for (const entity of entities) {
     if (entity.coalition || !entity.country) {
@@ -1104,6 +1131,97 @@ export function applyInferredCoalitions(entities: EntityData[]): void {
       entity.coalition = inferredCoalition;
     }
   }
+}
+
+function collectMemberUnitNames(unitRuleListValue: string, ndf: NdfReaders): string[] {
+  const names: string[] = [];
+  for (const entry of ndf.findCollectionEntries(unitRuleListValue)) {
+    if (entry.typeName !== 'TDeckUniteRule') {
+      continue;
+    }
+    const unitName = extractUnitDescriptorName(ndf.readPath(entry.text, ['UnitDescriptor']));
+    if (unitName) {
+      names.push(unitName);
+    }
+    names.push(
+      ...extractUnitDescriptorNames(ndf.readPath(entry.text, ['AvailableTransportList']), ndf),
+    );
+  }
+  return names;
+}
+
+// Decooked mod divisions drop the DivisionCoalition field and keep the coalition only as a
+// DivisionTags token; read either, matching tags against the coalition names other divisions declare.
+export function parseDivisionCoalitionsByUnit(
+  divisionRulesContent: string,
+  divisionsContent: string,
+  ignoredRuleNamePatterns: RegExp[],
+  ndf: NdfReaders,
+): Map<string, Coalition> {
+  const unitRuleListByRuleName = new Map<string, string>();
+  for (const block of collectTopLevelBlocksByType(divisionRulesContent, 'TDeckDivisionRule', ndf)) {
+    if (!block.name) {
+      continue;
+    }
+    const unitRuleListValue = ndf.readField(getBlockBodyText(block, ndf), 'UnitRuleList');
+    if (unitRuleListValue) {
+      unitRuleListByRuleName.set(block.name, unitRuleListValue);
+    }
+  }
+
+  const descriptors = collectTopLevelBlocksByType(divisionsContent, 'TDeckDivisionDescriptor', ndf);
+  // readTagArrayValue lowercases tags, so index the canonical coalition names by their lowercase form.
+  const coalitionByTag = new Map<string, Coalition>();
+  for (const block of descriptors) {
+    const declared = readReferenceSuffix(
+      ndf.readField(getBlockBodyText(block, ndf), 'DivisionCoalition'),
+      /^TWargameCoalition\/([A-Za-z0-9_]+)$/,
+    );
+    if (declared) {
+      coalitionByTag.set(declared.toLowerCase(), declared);
+    }
+  }
+
+  const votesByUnit = new Map<string, Map<Coalition, number>>();
+  for (const block of descriptors) {
+    if (!block.name || isIgnoredRuleName(`${block.name}_Rule`, ignoredRuleNamePatterns)) {
+      continue;
+    }
+    const body = getBlockBodyText(block, ndf);
+    const coalition =
+      readReferenceSuffix(
+        ndf.readField(body, 'DivisionCoalition'),
+        /^TWargameCoalition\/([A-Za-z0-9_]+)$/,
+      ) ??
+      readTagArrayValue(ndf.readField(body, 'DivisionTags'), ndf)
+        .map((tag) => coalitionByTag.get(tag))
+        .find((candidate): candidate is Coalition => candidate !== undefined);
+    if (!coalition) {
+      continue;
+    }
+    const divisionRuleValue = ndf.readField(body, 'DivisionRule');
+    if (!divisionRuleValue) {
+      continue;
+    }
+    const unitRuleListValue =
+      ndf.readField(divisionRuleValue, 'UnitRuleList') ??
+      unitRuleListByRuleName.get(divisionRuleValue.trim());
+    if (!unitRuleListValue) {
+      continue;
+    }
+    for (const unitName of collectMemberUnitNames(unitRuleListValue, ndf)) {
+      const votes = votesByUnit.get(unitName) ?? new Map<Coalition, number>();
+      votes.set(coalition, (votes.get(coalition) ?? 0) + 1);
+      votesByUnit.set(unitName, votes);
+    }
+  }
+
+  return new Map(
+    [...votesByUnit].flatMap(([unitName, votes]) => {
+      const winner = pickTopCoalition(votes);
+      return winner ? [[unitName, winner] as const] : [];
+    }),
+  );
 }
 
 export function buildTransportMap(entities: EntityData[]): Map<string, string[]> {

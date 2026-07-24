@@ -22,6 +22,7 @@ import {
   ensurePersistentDivisionMetadata,
   parseAmmunition,
   parseCapacityEffectProfiles,
+  parseDivisionCoalitionsByUnit,
   parseDivisionRuleData,
   parseEntities,
   parseLocalisation,
@@ -84,7 +85,15 @@ export function createDeckGenerationSourceAnalysis(
   const weaponDescriptors = parseWeaponDescriptors(input.weaponDescriptorsContent, ndf);
   const ammunition = parseAmmunition(input.ammunitionContent, ndf);
   const entities = [...buildings, ...units];
-  applyInferredCoalitions(entities);
+  applyInferredCoalitions(
+    entities,
+    parseDivisionCoalitionsByUnit(
+      sourceDivisionRulesContent,
+      sourceDivisionsContent,
+      config.ignoredDivisionRuleNamePatterns,
+      ndf,
+    ),
+  );
   applyCapacityEffectProfiles(
     entities,
     parseCapacityEffectProfiles(input.capacitiesContent, input.effectsContent, ndf),
