@@ -4,6 +4,7 @@ name: YSM Zombie Ammunition
 description: Defines the refactored zombie ammo roster with role-specific melee, panic, smoke, demolisher, and anti-heli attack profiles.
 enabled: true
 scope: prod
+optional: true
 variables:
   noHelicopterRangeRaw: '0'
   instantAimingTimeRaw: '0.0'

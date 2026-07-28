@@ -72,17 +72,36 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          # Republishing removes the existing release and tag, then creates them
-          # again, so the download link never serves a stale installer.
-          if (gh release view auto-deploy 2>$null) {
-            gh release delete auto-deploy --yes --cleanup-tag
-            if ($LASTEXITCODE -ne 0) { throw "Could not remove the existing auto-deploy release." }
+          # Republishing removes the existing release and creates it again, so the
+          # download link never serves a stale installer.
+          #
+          # Every step here treats "already in the state I wanted" as success. A
+          # push that deletes the tag, or a queued run doing the same work, can
+          # land between any two commands, and none of those races mean this run
+          # failed to publish.
+          $release = gh release view auto-deploy --json tagName 2>$null
+          if ($LASTEXITCODE -eq 0 -and $release) {
+            gh release delete auto-deploy --yes
+            if ($LASTEXITCODE -ne 0) {
+              gh release view auto-deploy 2>$null | Out-Null
+              if ($LASTEXITCODE -eq 0) { throw "Could not remove the existing auto-deploy release." }
+            }
           }
 
+          # The tag is force-updated rather than deleted and recreated: deleting
+          # it leaves a window where the release points at nothing, and deleting
+          # a tag that another run already removed is an error for no gain.
           git tag --force auto-deploy $env:GITHUB_SHA
           if ($LASTEXITCODE -ne 0) { throw "Could not tag auto-deploy." }
           git push origin refs/tags/auto-deploy --force
-          if ($LASTEXITCODE -ne 0) { throw "Could not push the auto-deploy tag." }
+          if ($LASTEXITCODE -ne 0) {
+            # Joined into one string first: `-notmatch` over an array filters it
+            # instead of answering yes or no, and any unmatched line reads true.
+            $remote = (git ls-remote --tags origin refs/tags/auto-deploy) -join "`n"
+            if ($LASTEXITCODE -ne 0 -or $remote -notmatch $env:GITHUB_SHA) {
+              throw "Could not push the auto-deploy tag."
+            }
+          }
 
           gh release create auto-deploy $env:INSTALLER `
             --title "Auto Deploy" `

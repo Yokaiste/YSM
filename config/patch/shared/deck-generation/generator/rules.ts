@@ -1,6 +1,6 @@
 import { deriveTransportGroup } from './analysis.ts';
 import type { DeckGenerationConfig } from './config.ts';
-import { deriveSimilarityTypeKey, isCommandEntity } from './helpers.ts';
+import { deriveSimilarityTypeKey, isCommandEntity, resolvePackCount } from './helpers.ts';
 import {
   createUnlimitedRule,
   type DivisionMode,
@@ -238,7 +238,7 @@ function resolveRuleCountAtXp(rule: DivisionRuleData, xp: number): number {
   if (multiplier <= 0) {
     return 0;
   }
-  return Math.max(1, Math.round(rule.numberOfUnitInPack * multiplier));
+  return Math.max(1, resolvePackCount(rule.numberOfUnitInPack, multiplier));
 }
 
 function isReasonableBalancedRule(rule: DivisionRuleData): boolean {

@@ -4,6 +4,7 @@ name: YSM Zombie Units
 description: Creates the refactored zombie roster with clean roles, tighter AI behavior, proper anti-heli support, and less legacy stat bloat.
 enabled: true
 scope: prod
+optional: true
 dependsOn:
   - ysm.descriptors.weapons.zombies
 variables:

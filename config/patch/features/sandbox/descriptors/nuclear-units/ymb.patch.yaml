@@ -4,6 +4,7 @@ name: 'YSM Nuclear Planes'
 description: 'Adds two YN endgame strike bombers with tuned native tactical-nuclear visuals and concise weapon metadata.'
 enabled: true
 scope: 'prod'
+optional: true
 dependsOn: []
 variables:
   modTagRaw: "'${modTag}'"

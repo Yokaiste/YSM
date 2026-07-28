@@ -4,6 +4,7 @@ name: 'YSM Supply Units'
 description: 'Adds the YSM supply helicopter, truck, and amphibious descriptors.'
 enabled: true
 scope: 'prod'
+optional: true
 dependsOn: []
 variables:
   modTagRaw: "'${modTag}'"

@@ -4,6 +4,7 @@ name: 'Repairable Supply Buildings'
 description: 'Removes the engine building classification that blocks health supply from vanilla FOBs.'
 enabled: true
 scope: 'prod'
+optional: true
 dependsOn: []
 targets:
   - file: 'GameData/Generated/Gameplay/Gfx/BuildingDescriptors.ndf'

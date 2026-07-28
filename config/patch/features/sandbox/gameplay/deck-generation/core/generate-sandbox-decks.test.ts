@@ -17,6 +17,7 @@ import {
   deriveMobilityKey,
   isCommandEntity,
   resolveDeckMaxActivationPointsFromCategories,
+  resolvePackCount,
 } from '../../../../../shared/deck-generation/generator/helpers.ts';
 import { resolvePackProfile } from '../../../../../shared/deck-generation/generator/packs.ts';
 import {
@@ -538,6 +539,40 @@ export default async function test(context: Parameters<typeof generateSandboxDec
   if (roundedVeterancyProfile?.xp !== 1 || roundedVeterancyProfile.number !== 1) {
     packProfileFailures.push(
       `Two-unit fractional rules should still keep their rounded veteran pack, got ${JSON.stringify(roundedVeterancyProfile)}.`,
+    );
+  }
+
+  // A decooked file prints the float32 the multiplier rounds to, so an authored
+  // 0.7 arrives as 0.699999988 and 5 x it lands a hair under 3.5. Rounding that
+  // down gives the game a pack count it did not compute, and it answers with
+  // "Following packs have an invalid unit amount" and refuses the whole deck.
+  const float32PackFailures: string[] = [];
+  for (const [numberOfUnitInPack, authoredMultiplier, expected] of [
+    [5, 0.7, 4],
+    [10, 0.35, 4],
+    [2, 0.25, 1],
+    // Products that never sit on a .5 boundary must be left exactly as they were.
+    [5, 0.6, 3],
+    [10, 0.68, 7],
+    [7, 0.5, 4],
+    [3, 0.5, 2],
+  ] as const) {
+    const actual = resolvePackCount(numberOfUnitInPack, Math.fround(authoredMultiplier));
+    if (actual !== expected) {
+      float32PackFailures.push(
+        `${numberOfUnitInPack} x ${authoredMultiplier} should hold ${expected} units, got ${actual}.`,
+      );
+    }
+  }
+  const float32Profile = resolvePackProfile({
+    unitName: 'Descriptor_Unit_Test_Float32_Pack',
+    maxPackNumber: 80,
+    numberOfUnitInPack: 5,
+    multipliers: [0, Math.fround(0.7), 0, 0],
+  });
+  if (float32Profile?.number !== 4) {
+    float32PackFailures.push(
+      `A pack read back from a decooked multiplier should hold 4 units, got ${JSON.stringify(float32Profile)}.`,
     );
   }
 
@@ -2946,6 +2981,21 @@ export default async function test(context: Parameters<typeof generateSandboxDec
             suggestion:
               'Only emit premade packs for XP levels that resolve to a real positive rounded card size, then fall back to the next valid XP.',
             details: packProfileFailures,
+          },
+      float32PackFailures.length === 0
+        ? {
+            name: 'pack counts survive a multiplier read back from float32',
+            status: 'passed' as const,
+            details: ['5 x 0.7 resolves to 4 units, as the game computes it.'],
+          }
+        : {
+            name: 'pack counts survive a multiplier read back from float32',
+            status: 'failed' as const,
+            reason:
+              'A pack multiplier that NDF rounded to float32 resolves to a different unit count than the game computes, which makes the cook reject the deck as having an invalid unit amount.',
+            suggestion:
+              'Round pack counts through `resolvePackCount`, which drops the float32 error before rounding, at every site that multiplies `numberOfUnitInPack` by a multiplier.',
+            details: float32PackFailures,
           },
       forcedPremadeVariantFailures.length === 0
         ? {

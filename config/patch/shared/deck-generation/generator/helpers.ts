@@ -145,6 +145,25 @@ export function deriveSimilarityTypeKey(entity: EntityData): string {
   );
 }
 
+/**
+ * How many units a pack holds at one XP rank.
+ *
+ * NDF keeps `NumberOfUnitInPackXPMultiplier` as float32, and a decooked file
+ * prints what that rounds to rather than what was authored: `0.7` comes back as
+ * `0.699999988`. A product that should land exactly on `.5` then falls a hair
+ * under it - 5 x 0.699999988 is 3.49999994 - and rounds down, while the game
+ * computes the higher count and rejects the whole deck:
+ *
+ *     Error in deck autofill '...': Following packs have an invalid unit amount
+ *
+ * Dropping that error before rounding puts the two back in agreement. Only
+ * products sitting on a `.5` boundary can differ at all, which is why the deck
+ * that breaks looks arbitrary - in one division it was a single unit.
+ */
+export function resolvePackCount(numberOfUnitInPack: number, multiplier: number): number {
+  return Math.round(Number((numberOfUnitInPack * multiplier).toFixed(4)));
+}
+
 export function formatNumber(value: number): string {
   if (Number.isInteger(value)) {
     return `${value}.0`;

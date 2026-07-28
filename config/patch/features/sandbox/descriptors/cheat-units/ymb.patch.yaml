@@ -4,6 +4,7 @@ name: 'YSM Cheat Units'
 description: 'Adds a YC cheat IFV and a range/altitude-only cheat variant of the SIGINT-jammer helicopter.'
 enabled: true
 scope: 'prod'
+optional: true
 dependsOn: []
 variables:
   modTagRaw: "'${modTag}'"

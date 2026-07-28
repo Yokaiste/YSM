@@ -4,6 +4,7 @@ name: YSM Zombie Weapons
 description: Creates the refactored zombie weapon managers with clean, role-specific loadouts for swarm, breaker, screecher, stalker, smoker, pack leader, and demolisher units.
 enabled: true
 scope: prod
+optional: true
 dependsOn:
   - ysm.descriptors.ammunition.zombies
 variables:

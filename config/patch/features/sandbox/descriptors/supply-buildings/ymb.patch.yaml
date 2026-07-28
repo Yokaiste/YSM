@@ -4,6 +4,7 @@ name: 'YSM Supply Buildings'
 description: 'Adds YSM supply buildings, including the SIGINT-jammer defensive base.'
 enabled: true
 scope: 'prod'
+optional: true
 dependsOn:
   - 'ysm.descriptors.repairable-supply-buildings'
 variables:

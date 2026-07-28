@@ -5,6 +5,7 @@ import {
   shouldForceIncludeEntity,
   shouldIgnoreEntity,
 } from './comment-directives.ts';
+import { resolvePackCount } from './helpers.ts';
 import {
   type AmmunitionData,
   type Coalition,
@@ -676,7 +677,7 @@ function resolvePeakRuleUnitCount(rule: DivisionRuleData): number {
     0,
     ...rule.multipliers
       .filter((multiplier) => multiplier > 0)
-      .map((multiplier) => Math.round(rule.numberOfUnitInPack * multiplier)),
+      .map((multiplier) => resolvePackCount(rule.numberOfUnitInPack, multiplier)),
   );
 }
 

@@ -1,4 +1,4 @@
-import { sanitizeIdentifier } from './helpers.ts';
+import { resolvePackCount, sanitizeIdentifier } from './helpers.ts';
 import type { DivisionMode, DivisionRuleData, EntityData, GeneratedPack } from './types.ts';
 
 interface PackProfile {
@@ -72,5 +72,5 @@ function resolvePackNumber(rule: DivisionRuleData, xp: number): number {
   if (multiplier <= 0) {
     return 0;
   }
-  return Math.round(rule.numberOfUnitInPack * multiplier);
+  return resolvePackCount(rule.numberOfUnitInPack, multiplier);
 }
