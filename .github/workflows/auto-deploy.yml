@@ -1,0 +1,91 @@
+name: Auto Deploy
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# CONFIG - the only section that differs between mods. Copy this workflow
+# into another mod and edit only these values.
+env:
+  INSTALLER: Deploy-YSM.bat
+  SUBJECT: YSM
+  INSTALLS: YMB and YSM
+
+concurrency:
+  group: ysm-auto-deploy-release
+  # Publishing replaces the existing auto-deploy release, so runs must queue.
+  # A run cancelled between removing and recreating it would leave none.
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    name: Publish installer
+    runs-on: windows-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Smoke-test installer help
+        shell: cmd
+        run: ${{ env.INSTALLER }} --help
+
+      - name: Check fail-safe placement validation
+        shell: pwsh
+        run: |
+          $env:CI = '1'
+          $process = Start-Process -FilePath cmd.exe `
+            -ArgumentList '/D', '/C', $env:INSTALLER `
+            -NoNewWindow -Wait -PassThru
+          if ($process.ExitCode -ne 1) {
+            throw "Installer must reject the repository checkout as a WARNO mod root. Exit code: $($process.ExitCode)"
+          }
+
+      - name: Write release notes
+        shell: pwsh
+        run: |
+          # A literal here-string keeps the markdown backticks intact; the
+          # per-mod values are substituted afterwards.
+          $notes = @'
+          Download **{{INSTALLER}}** to install or update {{SUBJECT}}.
+
+          1. Create a WARNO mod with `WARNO\Mods\CreateNewMod.bat YourModName`.
+          2. Put `{{INSTALLER}}` inside the new mod folder, beside `CommonData` and `GameData`.
+          3. Double-click it.
+
+          The installer checks the required Windows tools, installs {{INSTALLS}}, validates the configuration, and builds a preview. It does **not** sync or recover live WARNO files automatically; it prints those commands when it finishes.
+          '@
+          $notes = $notes.Replace('{{INSTALLER}}', $env:INSTALLER).Replace('{{SUBJECT}}', $env:SUBJECT).Replace('{{INSTALLS}}', $env:INSTALLS)
+          Set-Content -Path release-notes.md -Value $notes -Encoding utf8
+
+      - name: Replace Auto Deploy release
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # Republishing removes the existing release and tag, then creates them
+          # again, so the download link never serves a stale installer.
+          if (gh release view auto-deploy 2>$null) {
+            gh release delete auto-deploy --yes --cleanup-tag
+            if ($LASTEXITCODE -ne 0) { throw "Could not remove the existing auto-deploy release." }
+          }
+
+          git tag --force auto-deploy $env:GITHUB_SHA
+          if ($LASTEXITCODE -ne 0) { throw "Could not tag auto-deploy." }
+          git push origin refs/tags/auto-deploy --force
+          if ($LASTEXITCODE -ne 0) { throw "Could not push the auto-deploy tag." }
+
+          gh release create auto-deploy $env:INSTALLER `
+            --title "Auto Deploy" `
+            --notes-file release-notes.md `
+            --latest=false
+          if ($LASTEXITCODE -ne 0) { throw "Could not publish the auto-deploy release." }

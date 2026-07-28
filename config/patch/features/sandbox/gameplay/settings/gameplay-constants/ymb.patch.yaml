@@ -1,0 +1,112 @@
+version: 1
+id: 'ysm.gameplay.constants'
+name: 'YSM Gameplay Constants'
+description: 'Extends the gameplay constant tables used by YSM.'
+enabled: true
+scope: 'prod'
+dependsOn: []
+variables:
+  # Derived NDF text. Edit `gameplayConstants` in config/ymb.mod.yaml, not these.
+  timeLimitTableRaw: "${'[ ' + join(gameplayConstants.timeLimitTable, ', ') + ' ]'}"
+  economyModeTokensRaw: "${'[ ' + join(gameplayConstants.economyModeTokens, ', ') + ' ]'}"
+  upkeepPercentValuesRaw: "${'[ ' + join(gameplayConstants.upkeepPercentValues, ', ') + ' ]'}"
+  upkeepPercentIntegerValuesRaw: "${'[ ' + join(integers(gameplayConstants.upkeepPercentValues), ', ') + ' ]'}"
+  scoreValuesWithZero: ${concat(gameplayConstants.scoreValues, [0])}
+  scoreValuesRaw: "${'[ ' + join(gameplayConstants.scoreValues, ', ') + ' ]'}"
+  scoreValuesWithZeroRaw: "${'[ ' + join(scoreValuesWithZero, ', ') + ' ]'}"
+  destructionScoreLevelsTableRaw: |-
+    MAP
+    [
+        ${join(cartesian(scoreValuesWithZero, ['VictoryTypeDestructionLevelsTableOptions' + modTag], '({left}, {right})'), ',\n        ')}
+    ]
+  destructionScoreOptionsDefinitionRaw: "${'VictoryTypeDestructionLevelsTableOptions' + modTag + ' is [ ' + join(scoreValuesWithZero, ', ') + ' ]'}"
+targets:
+  - file: 'GameData/Gameplay/Constantes/GDConstants.ndf'
+    operations:
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Constantes.TimeLimitTable'
+        value:
+          $raw: '${timeLimitTableRaw}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Constantes.DefaultTimeLimitInMinutes'
+        value: ${gameplayConstants.defaultTimeLimitInMinutes}
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'WargameConstantes.MoneyWinLocalisationTokensInConquestMode'
+        value:
+          $raw: '${economyModeTokensRaw}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'WargameConstantes.MoneyWinPerAllianceInConquestMode'
+        value:
+          $raw: '${upkeepPercentValuesRaw}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'WargameConstantes.ConquestPossibleScores'
+        value:
+          $raw: '${scoreValuesRaw}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'WargameConstantes.IncomeMultiplier'
+        value:
+          $raw: '${upkeepPercentValuesRaw}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'WargameConstantes.IncomeMultiplierTokensInDestructionMode'
+        value:
+          $raw: '${economyModeTokensRaw}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'WargameConstantes.IncomeMultiplierInDestructionMode'
+        value:
+          $raw: '${upkeepPercentValuesRaw}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'WargameConstantes.ArgentInitialSetting'
+        value:
+          $raw: '${scoreValuesWithZeroRaw}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'WargameConstantes.DefaultDestructionScoreToReachSetting'
+        value:
+          $raw: '${scoreValuesWithZeroRaw}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'WargameConstantes.VictoryTypeDestructionLevelsTable'
+        value:
+          $raw: '${destructionScoreLevelsTableRaw}'
+      - op: 'add'
+        position: { mode: 'after', anchor: 'WargameConstantes' }
+        value:
+          $raw: '${destructionScoreOptionsDefinitionRaw}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'WargameConstantes.UpkeepPercentAvailableSettings'
+        value:
+          $raw: '${upkeepPercentIntegerValuesRaw}'

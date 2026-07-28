@@ -1,0 +1,11 @@
+version: 1
+id: 'ysm.ui.generated.welcome-view'
+name: 'YSM Welcome View'
+description: 'Generates the YSM main menu title block and link buttons.'
+enabled: true
+scope: 'prod'
+dependsOn: []
+scripts:
+  - path: 'generate-welcome-screen.ts'
+    tests:
+      - 'generate-welcome-screen.test.ts'

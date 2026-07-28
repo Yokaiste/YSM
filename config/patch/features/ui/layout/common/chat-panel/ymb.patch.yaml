@@ -1,0 +1,17 @@
+version: 1
+id: 'ysm.ui.common.chat-view'
+name: 'YSM Chat View'
+description: 'Adjusts the YSM chat panel layout.'
+enabled: true
+scope: 'prod'
+dependsOn: []
+targets:
+  - file: 'GameData/UserInterface/Use/Common/UISpecificChatView.ndf'
+    operations:
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'BUCKSpecificGameChatMainComponentDescriptor.ComponentFrame.MagnifiableOffset'
+        value:
+          $raw: '[10.0, -480.0]'

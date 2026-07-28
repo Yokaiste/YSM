@@ -1,0 +1,81 @@
+version: 1
+id: 'ysm.gameplay.splash-collision'
+name: 'YSM Splash Collision Planes'
+description: 'Lets ground-level detonations splash helicopters and airplanes.'
+enabled: true
+scope: 'prod'
+dependsOn: []
+targets:
+  - file: 'GameData/Gameplay/Constantes/GDConstants.ndf'
+    operations:
+      # Vanilla ground bursts splash only [Ground, NearGround, ProjectileAltitude],
+      # so helicopters (LowAltitude) and planes (HighAltitude) ignore every
+      # ground-level explosion regardless of its splash radius. Extend
+      # ground-level detonations to the air planes as well.
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'ModernWarfareConstantes.SplashCollisionPlanes'
+        value:
+          $raw: |-
+            MAP
+            [
+                (
+                    ~/TCollisionPlane/NoCollision,
+                    [
+                        ~/TCollisionPlane/NoCollision,
+                        ~/TCollisionPlane/Ground,
+                        ~/TCollisionPlane/NearGround,
+                        ~/TCollisionPlane/LowAltitude,
+                        ~/TCollisionPlane/HighAltitude,
+                        ~/TCollisionPlane/ProjectileAltitude,
+                    ]
+                ),
+                (
+                    ~/TCollisionPlane/Ground,
+                    [
+                        ~/TCollisionPlane/Ground,
+                        ~/TCollisionPlane/NearGround,
+                        ~/TCollisionPlane/LowAltitude,
+                        ~/TCollisionPlane/HighAltitude,
+                        ~/TCollisionPlane/ProjectileAltitude,
+                    ]
+                ),
+                (
+                    ~/TCollisionPlane/NearGround,
+                    [
+                        ~/TCollisionPlane/Ground,
+                        ~/TCollisionPlane/NearGround,
+                        ~/TCollisionPlane/LowAltitude,
+                        ~/TCollisionPlane/HighAltitude,
+                        ~/TCollisionPlane/ProjectileAltitude,
+                    ]
+                ),
+                (
+                    ~/TCollisionPlane/LowAltitude,
+                    [
+                        ~/TCollisionPlane/NearGround,
+                        ~/TCollisionPlane/LowAltitude,
+                        ~/TCollisionPlane/HighAltitude,
+                        ~/TCollisionPlane/ProjectileAltitude,
+                    ]
+                ),
+                (
+                    ~/TCollisionPlane/HighAltitude,
+                    [
+                        ~/TCollisionPlane/LowAltitude,
+                        ~/TCollisionPlane/HighAltitude,
+                    ]
+                ),
+                (
+                    ~/TCollisionPlane/ProjectileAltitude,
+                    [
+                        ~/TCollisionPlane/Ground,
+                        ~/TCollisionPlane/NearGround,
+                        ~/TCollisionPlane/LowAltitude,
+                        ~/TCollisionPlane/HighAltitude,
+                        ~/TCollisionPlane/ProjectileAltitude,
+                    ]
+                ),
+            ]

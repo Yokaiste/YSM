@@ -1,0 +1,20 @@
+version: 1
+id: 'ysm.ui.showroom.armory'
+name: 'YSM Showroom Armory'
+description: 'Adjusts the YSM showroom armory capacity.'
+enabled: true
+scope: 'prod'
+dependsOn: []
+targets:
+  - file: 'GameData/UserInterface/Use/ShowRoom/Views/UISpecificShowRoomArmoryComponent.ndf'
+    operations:
+      - op: 'remove'
+        selector:
+          kind: 'object'
+          by: 'name'
+          value: 'MaxUnitsInDeckPerCategory'
+      - op: 'add'
+        position: { mode: 'after', anchor: 'ArmoryUnitButtonRadioManager' }
+        value:
+          $raw: |-
+            MaxUnitsInDeckPerCategory is ${deckSlotCount}

@@ -1,0 +1,34 @@
+{
+  "version": 2,
+  "nextDivisionNameToken": 39,
+  "nextDeckNameToken": 39,
+  "divisions": {
+    "YSM_ZOMBIE_HORDE_BLUE_UNLIMITED": {
+      "guid": "552713ef-7fb1-47b7-abfb-d9031e781d91",
+      "divisionNameToken": "YD00000037",
+      "deckNameToken": "YK00000037"
+    },
+    "YSM_ZOMBIE_HORDE_RED_UNLIMITED": {
+      "guid": "72216993-a520-4f1b-9deb-f75b908dbf86",
+      "divisionNameToken": "YD00000038",
+      "deckNameToken": "YK00000038"
+    }
+  },
+  "serializer": {
+    "nextDivisionId": 1638,
+    "nextUnitId": 16017,
+    "divisionIds": {
+      "Descriptor_Deck_Division_YSM_ZOMBIE_HORDE_BLUE_UNLIMITED": 1636,
+      "Descriptor_Deck_Division_YSM_ZOMBIE_HORDE_RED_UNLIMITED": 1637
+    },
+    "unitIds": {
+      "Descriptor_Unit_YZ_Breaker": 16010,
+      "Descriptor_Unit_YZ_Demolisher": 16011,
+      "Descriptor_Unit_YZ_PackLeader": 16012,
+      "Descriptor_Unit_YZ_Screecher": 16013,
+      "Descriptor_Unit_YZ_Smoker": 16014,
+      "Descriptor_Unit_YZ_Stalker": 16015,
+      "Descriptor_Unit_YZ_Swarm": 16016
+    }
+  }
+}

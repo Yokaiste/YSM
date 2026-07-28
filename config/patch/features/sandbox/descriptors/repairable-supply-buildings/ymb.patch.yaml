@@ -1,0 +1,60 @@
+version: 1
+id: 'ysm.descriptors.repairable-supply-buildings'
+name: 'Repairable Supply Buildings'
+description: 'Removes the engine building classification that blocks health supply from vanilla FOBs.'
+enabled: true
+scope: 'prod'
+dependsOn: []
+targets:
+  - file: 'GameData/Generated/Gameplay/Gfx/BuildingDescriptors.ndf'
+    operations:
+      - op: 'bulk'
+        match:
+          mode: 'all'
+          conditions:
+            - on: 'type'
+              is: 'startsWith'
+              value: 'TEntityDescriptor'
+            - on: 'text'
+              is: 'contains'
+              value: 'TSupplyModuleDescriptor'
+            - on: 'text'
+              is: 'contains'
+              value: '~/FOBBuildingModuleDescriptor'
+        expect:
+          minBlocks: 13
+        edits:
+          - list: 'ModulesDescriptors'
+            removeEntry: '~/FOBBuildingModuleDescriptor'
+            minChanges: 13
+  - file: 'GameData/Generated/Gameplay/Gfx/Depictions/DepictionGhosts.ndf'
+    operations:
+      - op: 'add'
+        value:
+          $raw: |-
+            RepairableSupplyBuildingGhostDepiction is TDepictionDescriptor
+            (
+                Selector = TConstantAlternativeSelector(Key = ['none'])
+                DepictionAlternatives = [AlternativeNone]
+            )
+
+            unnamed TGhostMimeticRegistration
+            (
+                GfxProperties = $/DepictionCore/GfxProperties
+                GhostMimetics = MAP
+                [
+                    ('FOB_BEL', RepairableSupplyBuildingGhostDepiction),
+                    ('FOB_CAN', RepairableSupplyBuildingGhostDepiction),
+                    ('FOB_DDR', RepairableSupplyBuildingGhostDepiction),
+                    ('FOB_DK', RepairableSupplyBuildingGhostDepiction),
+                    ('FOB_ESP', RepairableSupplyBuildingGhostDepiction),
+                    ('FOB_FR', RepairableSupplyBuildingGhostDepiction),
+                    ('FOB_NL', RepairableSupplyBuildingGhostDepiction),
+                    ('FOB_POL', RepairableSupplyBuildingGhostDepiction),
+                    ('FOB_RFA', RepairableSupplyBuildingGhostDepiction),
+                    ('FOB_SOV', RepairableSupplyBuildingGhostDepiction),
+                    ('FOB_TCH', RepairableSupplyBuildingGhostDepiction),
+                    ('FOB_UK', RepairableSupplyBuildingGhostDepiction),
+                    ('FOB_US', RepairableSupplyBuildingGhostDepiction),
+                ]
+            )

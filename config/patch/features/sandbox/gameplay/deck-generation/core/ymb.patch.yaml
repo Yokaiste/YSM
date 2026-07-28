@@ -1,0 +1,82 @@
+version: 1
+id: 'ysm.gameplay.deck-generation.core'
+name: 'YSM Sandbox Deck Generation'
+description: 'Generates the general sandbox country, coalition, and all-side decks.'
+enabled: true
+scope: 'prod'
+dependsOn:
+  - 'ysm.descriptors.buildings'
+  - 'ysm.descriptors.units'
+  - 'ysm.descriptors.units.cheats'
+  - 'ysm.descriptors.units.nuclear'
+  - 'ysm.descriptors.units.zombies'
+  - 'ysm.gameplay.cost-matrix'
+  - 'ysm.ui.generated.countries'
+  - 'ysm.ui.generated.division-types'
+variables:
+  # Units always placed in the generated Unlimited premade decks, whatever the
+  # scoring says: the YSM sandbox, cheat, and nuclear additions.
+  alwaysInUnlimitedPremadePatterns:
+    - '^Descriptor_Unit_YS_'
+    - '^Descriptor_Unit_YC_'
+    - '^Descriptor_Unit_YN_'
+  deckGeneration:
+    deckSlotCount: ${deckSlotCount}
+    unlimitedPackUnitCount: ${unlimitedPackUnitCount}
+    excludeUnitsNotInAnyDivision: ${excludeUnitsNotInAnyDivision}
+    commentDirectives: ${commentDirectives}
+    # When several nations field the same unit, prefer these countries' copies.
+    preferredUnitCountryIdsByCoalition:
+      NATO: ['US']
+      PACT: ['SOV']
+    # Which families of sandbox division get generated.
+    contextGeneration:
+      countries: true # one division per nation
+      coalitions: true # NATO-only and PACT-only
+      allSides: true # every unit, per side
+    # The mod's own units reach decks through forcedPremadeUnitPatterns below,
+    # not as a country of their own.
+    ignoredCountryIds:
+      - '${modTag}'
+    # Vanilla rule blocks to skip when learning Balanced availability numbers.
+    # NOTE: '_multi_' rules are the regular multiplayer divisions and the primary
+    # source of sane availability -- never add them here.
+    ignoredDivisionRuleNamePatterns:
+      - '_challenge_'
+      - '_special_'
+    forcedPremadeUnitPatterns:
+      countryUnlimited: ${alwaysInUnlimitedPremadePatterns}
+      sideUnlimited: ${alwaysInUnlimitedPremadePatterns}
+      allSideUnlimited: ${alwaysInUnlimitedPremadePatterns}
+  # The horde generates one hand-authored division instead of scanning the roster.
+  hordeDeckGeneration:
+    deckSlotCount: ${deckSlotCount}
+    unlimitedPackUnitCount: ${unlimitedPackUnitCount}
+    commentDirectives: ${commentDirectives}
+    contextGeneration:
+      countries: false
+      coalitions: false
+      allSides: false
+    customDivisions:
+      - code: 'ZOMBIE_HORDE_BLUE'
+        name: 'ZOMBIE HORDE'
+        coalition: 'NATO'
+        countryId: '${modTag}'
+        enabled: true
+        skipIfEmpty: true
+        tags: ['ZOMBIES', 'HORDE']
+        modes: ['Unlimited']
+        unitPatterns: ['^Descriptor_Unit_YZ_']
+      - code: 'ZOMBIE_HORDE_RED'
+        name: 'ZOMBIE HORDE'
+        coalition: 'PACT'
+        countryId: '${modTag}'
+        enabled: true
+        skipIfEmpty: true
+        tags: ['ZOMBIES', 'HORDE']
+        modes: ['Unlimited']
+        unitPatterns: ['^Descriptor_Unit_YZ_']
+scripts:
+  - path: 'generate-sandbox-decks.ts'
+    tests:
+      - 'generate-sandbox-decks.test.ts'

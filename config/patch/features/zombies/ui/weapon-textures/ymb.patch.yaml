@@ -1,0 +1,165 @@
+version: 1
+id: ysm.zombies.ui.weapon-textures
+name: YSM Zombie Weapon Textures
+description: Registers dedicated weapon-panel icons for every zombie attack profile.
+enabled: true
+scope: prod
+dependsOn:
+  - ysm.descriptors.ammunition.zombies
+files:
+  - op: copy
+    source:
+      root: patch
+      path: assets
+    destination: GameData/Assets/2D/Interface/Common/UnitsIcons/Armes/Panel_Info
+    expect: { files: 10 }
+targets:
+  - file: GameData/Generated/UserInterface/Textures/WeaponTextures.ndf
+    operations:
+      - op: add
+        leadingComment: YSM zombie weapon textures
+        value:
+          $raw: |-
+            Texture_Interface_Weapon_YZ_Assault_Shards is TUIResourceTexture_Common
+            (
+                FileName = "GameData:/Assets/2D/Interface/Common/UnitsIcons/Armes/Panel_Info/YZ_Assault_Shards.png"
+            )
+      - op: add
+        value:
+          $raw: |-
+            Texture_Interface_Weapon_YZ_Scout_Shards is TUIResourceTexture_Common
+            (
+                FileName = "GameData:/Assets/2D/Interface/Common/UnitsIcons/Armes/Panel_Info/YZ_Scout_Shards.png"
+            )
+      - op: add
+        value:
+          $raw: |-
+            Texture_Interface_Weapon_YZ_Demolisher_Shards is TUIResourceTexture_Common
+            (
+                FileName = "GameData:/Assets/2D/Interface/Common/UnitsIcons/Armes/Panel_Info/YZ_Demolisher_Shards.png"
+            )
+      - op: add
+        value:
+          $raw: |-
+            Texture_Interface_Weapon_YZ_Swarm_Bite is TUIResourceTexture_Common
+            (
+                FileName = "GameData:/Assets/2D/Interface/Common/UnitsIcons/Armes/Panel_Info/YZ_Swarm_Bite.png"
+            )
+      - op: add
+        value:
+          $raw: |-
+            Texture_Interface_Weapon_YZ_Breaker_Maul is TUIResourceTexture_Common
+            (
+                FileName = "GameData:/Assets/2D/Interface/Common/UnitsIcons/Armes/Panel_Info/YZ_Breaker_Maul.png"
+            )
+      - op: add
+        value:
+          $raw: |-
+            Texture_Interface_Weapon_YZ_Stalker_Talons is TUIResourceTexture_Common
+            (
+                FileName = "GameData:/Assets/2D/Interface/Common/UnitsIcons/Armes/Panel_Info/YZ_Stalker_Talons.png"
+            )
+      - op: add
+        value:
+          $raw: |-
+            Texture_Interface_Weapon_YZ_PackLeader_Fangs is TUIResourceTexture_Common
+            (
+                FileName = "GameData:/Assets/2D/Interface/Common/UnitsIcons/Armes/Panel_Info/YZ_PackLeader_Fangs.png"
+            )
+      - op: add
+        value:
+          $raw: |-
+            Texture_Interface_Weapon_YZ_Demolisher_Charge is TUIResourceTexture_Common
+            (
+                FileName = "GameData:/Assets/2D/Interface/Common/UnitsIcons/Armes/Panel_Info/YZ_Demolisher_Charge.png"
+            )
+      - op: add
+        value:
+          $raw: |-
+            Texture_Interface_Weapon_YZ_Smoker_Cloud is TUIResourceTexture_Common
+            (
+                FileName = "GameData:/Assets/2D/Interface/Common/UnitsIcons/Armes/Panel_Info/YZ_Smoker_Cloud.png"
+            )
+      - op: add
+        value:
+          $raw: |-
+            Texture_Interface_Weapon_YZ_Screecher_Spore is TUIResourceTexture_Common
+            (
+                FileName = "GameData:/Assets/2D/Interface/Common/UnitsIcons/Armes/Panel_Info/YZ_Screecher_Spore.png"
+            )
+
+      - op: add
+        selector: { kind: collection, by: path, value: WeaponAdditionalTextureBank.Textures }
+        value:
+          $raw: ("Texture_Interface_Weapon_YZ_Assault_Shards", MAP [(~/ComponentState/Normal, ~/Texture_Interface_Weapon_YZ_Assault_Shards)]),
+      - op: add
+        selector: { kind: collection, by: path, value: WeaponAdditionalTextureBank.Textures }
+        value:
+          $raw: ("Texture_Interface_Weapon_YZ_Scout_Shards", MAP [(~/ComponentState/Normal, ~/Texture_Interface_Weapon_YZ_Scout_Shards)]),
+      - op: add
+        selector: { kind: collection, by: path, value: WeaponAdditionalTextureBank.Textures }
+        value:
+          $raw: ("Texture_Interface_Weapon_YZ_Demolisher_Shards", MAP [(~/ComponentState/Normal, ~/Texture_Interface_Weapon_YZ_Demolisher_Shards)]),
+      - op: add
+        selector: { kind: collection, by: path, value: WeaponAdditionalTextureBank.Textures }
+        value:
+          $raw: ("Texture_Interface_Weapon_YZ_Swarm_Bite", MAP [(~/ComponentState/Normal, ~/Texture_Interface_Weapon_YZ_Swarm_Bite)]),
+      - op: add
+        selector: { kind: collection, by: path, value: WeaponAdditionalTextureBank.Textures }
+        value:
+          $raw: ("Texture_Interface_Weapon_YZ_Breaker_Maul", MAP [(~/ComponentState/Normal, ~/Texture_Interface_Weapon_YZ_Breaker_Maul)]),
+      - op: add
+        selector: { kind: collection, by: path, value: WeaponAdditionalTextureBank.Textures }
+        value:
+          $raw: ("Texture_Interface_Weapon_YZ_Stalker_Talons", MAP [(~/ComponentState/Normal, ~/Texture_Interface_Weapon_YZ_Stalker_Talons)]),
+      - op: add
+        selector: { kind: collection, by: path, value: WeaponAdditionalTextureBank.Textures }
+        value:
+          $raw: ("Texture_Interface_Weapon_YZ_PackLeader_Fangs", MAP [(~/ComponentState/Normal, ~/Texture_Interface_Weapon_YZ_PackLeader_Fangs)]),
+      - op: add
+        selector: { kind: collection, by: path, value: WeaponAdditionalTextureBank.Textures }
+        value:
+          $raw: ("Texture_Interface_Weapon_YZ_Demolisher_Charge", MAP [(~/ComponentState/Normal, ~/Texture_Interface_Weapon_YZ_Demolisher_Charge)]),
+      - op: add
+        selector: { kind: collection, by: path, value: WeaponAdditionalTextureBank.Textures }
+        value:
+          $raw: ("Texture_Interface_Weapon_YZ_Smoker_Cloud", MAP [(~/ComponentState/Normal, ~/Texture_Interface_Weapon_YZ_Smoker_Cloud)]),
+      - op: add
+        selector: { kind: collection, by: path, value: WeaponAdditionalTextureBank.Textures }
+        value:
+          $raw: ("Texture_Interface_Weapon_YZ_Screecher_Spore", MAP [(~/ComponentState/Normal, ~/Texture_Interface_Weapon_YZ_Screecher_Spore)]),
+
+  - file: GameData/Generated/Gameplay/Gfx/Ammunition.ndf
+    operations:
+      - op: modify
+        selector: { kind: field, by: path, value: Ammo_YZ_Assault_Shards.InterfaceWeaponTexture }
+        value: { $string: Texture_Interface_Weapon_YZ_Assault_Shards }
+      - op: modify
+        selector: { kind: field, by: path, value: Ammo_YZ_Scout_Shards.InterfaceWeaponTexture }
+        value: { $string: Texture_Interface_Weapon_YZ_Scout_Shards }
+      - op: modify
+        selector: { kind: field, by: path, value: Ammo_YZ_Demolisher_Shards.InterfaceWeaponTexture }
+        value: { $string: Texture_Interface_Weapon_YZ_Demolisher_Shards }
+      - op: modify
+        selector: { kind: field, by: path, value: Ammo_YZ_Swarm_Bite.InterfaceWeaponTexture }
+        value: { $string: Texture_Interface_Weapon_YZ_Swarm_Bite }
+      - op: modify
+        selector: { kind: field, by: path, value: Ammo_YZ_Breaker_Maul.InterfaceWeaponTexture }
+        value: { $string: Texture_Interface_Weapon_YZ_Breaker_Maul }
+      - op: modify
+        selector: { kind: field, by: path, value: Ammo_YZ_Stalker_Talons.InterfaceWeaponTexture }
+        value: { $string: Texture_Interface_Weapon_YZ_Stalker_Talons }
+      - op: modify
+        selector: { kind: field, by: path, value: Ammo_YZ_PackLeader_Fangs.InterfaceWeaponTexture }
+        value: { $string: Texture_Interface_Weapon_YZ_PackLeader_Fangs }
+      - op: modify
+        selector: { kind: field, by: path, value: Ammo_YZ_Demolisher_Charge.InterfaceWeaponTexture }
+        value: { $string: Texture_Interface_Weapon_YZ_Demolisher_Charge }
+      - op: modify
+        selector: { kind: field, by: path, value: Ammo_YZ_Smoker_Cloud.InterfaceWeaponTexture }
+        value: { $string: Texture_Interface_Weapon_YZ_Smoker_Cloud }
+  - file: GameData/Generated/Gameplay/Gfx/AmmunitionMissiles.ndf
+    operations:
+      - op: modify
+        selector: { kind: field, by: path, value: Ammo_YZ_Screecher_Spore.InterfaceWeaponTexture }
+        value: { $string: Texture_Interface_Weapon_YZ_Screecher_Spore }

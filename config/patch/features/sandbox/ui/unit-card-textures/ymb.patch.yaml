@@ -1,0 +1,152 @@
+version: 1
+id: 'ysm.sandbox.ui.unit-card-textures'
+name: 'YSM Sandbox Unit Card Textures'
+description: 'Registers dedicated YC, YN, and YS unit card textures and assigns them to the sandbox roster.'
+enabled: true
+scope: 'prod'
+dependsOn:
+  - 'ysm.descriptors.units'
+  - 'ysm.descriptors.buildings'
+  - 'ysm.descriptors.units.cheats'
+  - 'ysm.descriptors.units.nuclear'
+targets:
+  - file: 'GameData/Generated/UserInterface/Textures/ButtonTexturesUnites.ndf'
+    operations:
+      - op: 'add'
+        selector:
+          kind: 'collection'
+          by: 'path'
+          value: 'UnitButtonTextureAdditionalBank.Textures'
+        value:
+          $raw: |-
+            ("Texture_Button_Unit_YS_Supply_Base", MAP [( ~/ComponentState/Normal, TUIResourceTexture( FileName = "GameData:/Assets/2D/Interface/Common/UnitsIcons/NATO/ys-base.png"))]),
+      - op: 'add'
+        selector:
+          kind: 'collection'
+          by: 'path'
+          value: 'UnitButtonTextureAdditionalBank.Textures'
+        value:
+          $raw: |-
+            ("Texture_Button_Unit_YS_Supply_Heli", MAP [( ~/ComponentState/Normal, TUIResourceTexture( FileName = "GameData:/Assets/2D/Interface/Common/UnitsIcons/NATO/ys-heli.png"))]),
+      - op: 'add'
+        selector:
+          kind: 'collection'
+          by: 'path'
+          value: 'UnitButtonTextureAdditionalBank.Textures'
+        value:
+          $raw: |-
+            ("Texture_Button_Unit_YS_Supply_Truck", MAP [( ~/ComponentState/Normal, TUIResourceTexture( FileName = "GameData:/Assets/2D/Interface/Common/UnitsIcons/NATO/ys-truck.png"))]),
+      - op: 'add'
+        selector:
+          kind: 'collection'
+          by: 'path'
+          value: 'UnitButtonTextureAdditionalBank.Textures'
+        value:
+          $raw: |-
+            ("Texture_Button_Unit_YS_Supply_Amphibious", MAP [( ~/ComponentState/Normal, TUIResourceTexture( FileName = "GameData:/Assets/2D/Interface/Common/UnitsIcons/NATO/ys-amphibious.png"))]),
+      - op: 'add'
+        selector:
+          kind: 'collection'
+          by: 'path'
+          value: 'UnitButtonTextureAdditionalBank.Textures'
+        value:
+          $raw: |-
+            ("Texture_Button_Unit_YC_Illegal", MAP [( ~/ComponentState/Normal, TUIResourceTexture( FileName = "GameData:/Assets/2D/Interface/Common/UnitsIcons/NATO/yc-illegal.png"))]),
+      - op: 'add'
+        selector:
+          kind: 'collection'
+          by: 'path'
+          value: 'UnitButtonTextureAdditionalBank.Textures'
+        value:
+          $raw: |-
+            ("Texture_Button_Unit_YC_Oracle", MAP [( ~/ComponentState/Normal, TUIResourceTexture( FileName = "GameData:/Assets/2D/Interface/Common/UnitsIcons/NATO/yc-oracle.png"))]),
+      - op: 'add'
+        selector:
+          kind: 'collection'
+          by: 'path'
+          value: 'UnitButtonTextureAdditionalBank.Textures'
+        value:
+          $raw: |-
+            ("Texture_Button_Unit_YN_Nuke", MAP [( ~/ComponentState/Normal, TUIResourceTexture( FileName = "GameData:/Assets/2D/Interface/Common/UnitsIcons/NATO/yn-nuke.png"))]),
+      - op: 'add'
+        selector:
+          kind: 'collection'
+          by: 'path'
+          value: 'UnitButtonTextureAdditionalBank.Textures'
+        value:
+          $raw: |-
+            ("Texture_Button_Unit_YN_Nuke_X2", MAP [( ~/ComponentState/Normal, TUIResourceTexture( FileName = "GameData:/Assets/2D/Interface/Common/UnitsIcons/NATO/yn-nuke-x2.png"))]),
+  - file: 'GameData/Generated/Gameplay/Gfx/UniteDescriptor.ndf'
+    operations:
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YS_Supply_Heli.ModulesDescriptors.[TUnitUIModuleDescriptor].ButtonTexture'
+        value:
+          $raw: "'Texture_Button_Unit_YS_Supply_Heli'"
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YS_Supply_Truck.ModulesDescriptors.[TUnitUIModuleDescriptor].ButtonTexture'
+        value:
+          $raw: "'Texture_Button_Unit_YS_Supply_Truck'"
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YS_Supply_Amphibious.ModulesDescriptors.[TUnitUIModuleDescriptor].ButtonTexture'
+        value:
+          $raw: "'Texture_Button_Unit_YS_Supply_Amphibious'"
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YC_Illegal.ModulesDescriptors.[TUnitUIModuleDescriptor].ButtonTexture'
+        value:
+          $raw: "'Texture_Button_Unit_YC_Illegal'"
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YC_Oracle.ModulesDescriptors.[TUnitUIModuleDescriptor].ButtonTexture'
+        value:
+          $raw: "'Texture_Button_Unit_YC_Oracle'"
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YN_Nuke.ModulesDescriptors.[TUnitUIModuleDescriptor].ButtonTexture'
+        value:
+          $raw: "'Texture_Button_Unit_YN_Nuke'"
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YN_Nuke_X2.ModulesDescriptors.[TUnitUIModuleDescriptor].ButtonTexture'
+        value:
+          $raw: "'Texture_Button_Unit_YN_Nuke_X2'"
+  - file: 'GameData/Generated/Gameplay/Gfx/BuildingDescriptors.ndf'
+    operations:
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YS_Supply_Base.ModulesDescriptors.[TUnitUIModuleDescriptor].ButtonTexture'
+        value:
+          $raw: "'Texture_Button_Unit_YS_Supply_Base'"
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YS_Supply_Bunker.ModulesDescriptors.[TUnitUIModuleDescriptor].ButtonTexture'
+        value:
+          $raw: "'Texture_Button_Unit_YS_Supply_Base'"
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YS_Doomsday.ModulesDescriptors.[TUnitUIModuleDescriptor].ButtonTexture'
+        value:
+          $raw: "'Texture_Button_Unit_YS_Supply_Base'"
