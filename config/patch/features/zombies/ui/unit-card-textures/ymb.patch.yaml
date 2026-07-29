@@ -4,6 +4,7 @@ name: 'YSM Zombie Unit Card Textures'
 description: 'Registers dedicated zombie unit card textures and assigns them to the zombie roster.'
 enabled: true
 scope: 'prod'
+optional: true
 dependsOn:
   - ysm.descriptors.units.zombies
 files:

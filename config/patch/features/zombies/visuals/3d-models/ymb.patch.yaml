@@ -4,6 +4,7 @@ name: YSM Zombie Texture Variant
 description: Copies the untouched WARNO Green Beret sample, replaces only its diffuse texture, and registers the native depiction.
 enabled: true
 scope: prod
+optional: true
 dependsOn:
   - ysm.descriptors.units.zombies
 files:

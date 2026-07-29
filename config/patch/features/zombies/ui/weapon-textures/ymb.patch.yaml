@@ -4,6 +4,7 @@ name: YSM Zombie Weapon Textures
 description: Registers dedicated weapon-panel icons for every zombie attack profile.
 enabled: true
 scope: prod
+optional: true
 dependsOn:
   - ysm.descriptors.ammunition.zombies
 files:
