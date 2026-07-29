@@ -1,15 +1,10 @@
 version: 1
 id: 'ysm.gameplay.deck-generation.core'
 name: 'YSM Sandbox Deck Generation'
-description: 'Generates the general sandbox country, coalition, and all-side decks.'
+description: 'Generates the general sandbox country, coalition, and all-side decks from whichever rosters this build produced.'
 enabled: true
 scope: 'prod'
 dependsOn:
-  - 'ysm.descriptors.buildings'
-  - 'ysm.descriptors.units'
-  - 'ysm.descriptors.units.cheats'
-  - 'ysm.descriptors.units.nuclear'
-  - 'ysm.descriptors.units.zombies'
   - 'ysm.gameplay.cost-matrix'
   - 'ysm.ui.generated.countries'
   - 'ysm.ui.generated.division-types'

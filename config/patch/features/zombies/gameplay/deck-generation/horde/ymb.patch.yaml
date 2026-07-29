@@ -1,11 +1,10 @@
 version: 1
 id: 'ysm.gameplay.deck-generation.zombie-horde'
 name: 'YSM Zombie Horde Deck Generation'
-description: 'Generates the zombie-only horde division and premade deck.'
+description: 'Generates the zombie-only horde division and premade deck when the zombie roster is present.'
 enabled: true
 scope: 'prod'
 dependsOn:
-  - 'ysm.descriptors.units.zombies'
   - 'ysm.gameplay.deck-generation.core'
 scripts:
   - path: 'generate-zombie-horde-decks.ts'
