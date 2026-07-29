@@ -50,15 +50,6 @@ export function ensurePersistentDivisionMetadata(
   return metadata;
 }
 
-export function prunePersistentStore(store: PersistentStore, activeKeys: string[]): void {
-  const activeKeySet = new Set(activeKeys);
-  for (const key of Object.keys(store.divisions)) {
-    if (!activeKeySet.has(key)) {
-      delete store.divisions[key];
-    }
-  }
-}
-
 function createDefaultPersistentStore(): PersistentStore {
   return {
     version: 2,

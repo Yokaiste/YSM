@@ -30,7 +30,6 @@ import {
   parsePersistentStore,
   parseSellableOrderAvailabilityNames,
   parseWeaponDescriptors,
-  prunePersistentStore,
   renderLocalisation,
 } from './generator/parsers.ts';
 import { buildPremadeCards } from './generator/premade.ts';
@@ -174,11 +173,6 @@ export function generateDeckOutputsFromSources(
   dedupeIdenticalDivisionRules(divisions);
   pruneGeneratedPacks(generatedPacks, divisions);
   assertGeneratedDeckIntegrity(divisions, generatedPacks, config);
-
-  prunePersistentStore(
-    persistentStore,
-    divisions.map((division) => division.cfgName),
-  );
 
   const referencedUnitNames = collectReferencedUnitNames(divisions, generatedPacks);
   const outputs = [

@@ -22,7 +22,7 @@ interface CachedDeckGenerationResult {
 }
 
 // Bump whenever generation output can change for unchanged sources and config.
-const DECK_GENERATION_CACHE_VERSION = 7;
+const DECK_GENERATION_CACHE_VERSION = 8;
 
 export interface DeckGenerationBatchEntry {
   generationConfig: unknown;

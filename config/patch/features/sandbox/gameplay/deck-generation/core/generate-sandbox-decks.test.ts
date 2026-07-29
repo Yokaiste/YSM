@@ -2022,6 +2022,41 @@ export default async function test(context: Parameters<typeof generateSandboxDec
     persistentStoreFailures.push('A new persistent store did not allocate valid stable tokens.');
   }
 
+  const absentDivisionKey = 'YSM_ZOMBIE_HORDE_BLUE_UNLIMITED';
+  const absentDivisionGuid = '552713ef-7fb1-47b7-abfb-d9031e781d91';
+  const survivingStore = parsePersistentStore(
+    JSON.stringify({
+      version: 2,
+      nextDivisionNameToken: 39,
+      nextDeckNameToken: 39,
+      divisions: {
+        [absentDivisionKey]: {
+          guid: absentDivisionGuid,
+          divisionNameToken: 'YD00000037',
+          deckNameToken: 'YK00000037',
+        },
+        YSM_COUNTRY_US_UNLIMITED: {
+          guid: '72216993-a520-4f1b-9deb-f75b908dbf86',
+          divisionNameToken: 'YD00000038',
+          deckNameToken: 'YK00000038',
+        },
+      },
+      serializer: { nextDivisionId: 1638, nextUnitId: 16017, divisionIds: {}, unitIds: {} },
+    }),
+  );
+  ensurePersistentDivisionMetadata(
+    survivingStore,
+    parseLocalisation('"TOKEN";"REFTEXT"\n'),
+    'YSM_COUNTRY_US_UNLIMITED',
+    'US Division',
+    'US Deck',
+  );
+  if (survivingStore.divisions[absentDivisionKey]?.guid !== absentDivisionGuid) {
+    persistentStoreFailures.push(
+      'A division that could not be generated this run lost its stable identity, which would repoint every saved deck that references it.',
+    );
+  }
+
   const serializerBase = [
     'DivisionIds = MAP [',
     '    (Descriptor_Deck_Division_Vanilla, 100),',

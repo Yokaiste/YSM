@@ -1248,8 +1248,4 @@ export function buildTransportMap(entities: EntityData[]): Map<string, string[]>
   );
 }
 
-export {
-  ensurePersistentDivisionMetadata,
-  parsePersistentStore,
-  prunePersistentStore,
-} from './persistent-store.ts';
+export { ensurePersistentDivisionMetadata, parsePersistentStore } from './persistent-store.ts';
