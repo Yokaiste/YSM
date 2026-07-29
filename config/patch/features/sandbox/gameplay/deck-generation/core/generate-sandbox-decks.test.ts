@@ -2132,6 +2132,72 @@ export default async function test(context: Parameters<typeof generateSandboxDec
     dynamicContextFailures.push('Expected an all-side context for coalition `ALIEN`.');
   }
 
+  const shippedCoreConfig = createDeckGenerationConfig(
+    context.variables.deckGeneration,
+    modTag,
+    context.tools.values,
+  );
+  const shippedHordeConfig = createDeckGenerationConfig(
+    context.variables.hordeDeckGeneration,
+    modTag,
+    context.tools.values,
+  );
+  const vanillaOnlyEntities = [
+    createEntity('Descriptor_Unit_M1A1HA_US', {
+      country: 'US',
+      coalition: 'NATO',
+      factoryType: 'Tanks',
+    }),
+    createEntity('Descriptor_Unit_T80U_SOV', {
+      country: 'SOV',
+      coalition: 'PACT',
+      factoryType: 'Tanks',
+    }),
+  ];
+  const zombieEntity = createEntity('Descriptor_Unit_YZ_Swarm', {
+    country: modTag,
+    coalition: 'PACT',
+    factoryType: 'Infantry',
+  });
+  const contentPackFreeContexts = buildDivisionContexts(
+    vanillaOnlyEntities,
+    modTag,
+    shippedCoreConfig,
+  );
+  const hordelessContexts = buildDivisionContexts(vanillaOnlyEntities, modTag, shippedHordeConfig);
+  const hordeContexts = buildDivisionContexts(
+    [...vanillaOnlyEntities, zombieEntity],
+    modTag,
+    shippedHordeConfig,
+  );
+  const missingContentPackFailures: string[] = [];
+  for (const expectedCode of [
+    'COUNTRY_US',
+    'COUNTRY_SOV',
+    'SIDE_NATO',
+    'SIDE_PACT',
+    'ALL_BLUE',
+    'ALL_RED',
+  ]) {
+    if (!contentPackFreeContexts.some((entry) => entry.code === expectedCode)) {
+      missingContentPackFailures.push(
+        `Expected \`${expectedCode}\` to be generated from the vanilla roster alone, with no YSM content pack present.`,
+      );
+    }
+  }
+  if (hordelessContexts.length > 0) {
+    missingContentPackFailures.push(
+      `Expected no horde division without a zombie roster, got ${hordelessContexts.map((entry) => entry.code).join(', ')}.`,
+    );
+  }
+  for (const expectedCode of ['ZOMBIE_HORDE_BLUE', 'ZOMBIE_HORDE_RED']) {
+    if (!hordeContexts.some((entry) => entry.code === expectedCode)) {
+      missingContentPackFailures.push(
+        `Expected \`${expectedCode}\` once the zombie roster is present.`,
+      );
+    }
+  }
+
   const maxActivationPoints = resolveDeckMaxActivationPointsFromCategories(80, [
     'Logistic',
     'Infantry',
@@ -3202,6 +3268,24 @@ export default async function test(context: Parameters<typeof generateSandboxDec
             suggestion:
               'Generate side and all-side contexts from the parsed coalition set rather than a hardcoded coalition pair.',
             details: dynamicContextFailures,
+          },
+      missingContentPackFailures.length === 0
+        ? {
+            name: 'sandbox deck generation survives an absent content pack',
+            status: 'passed' as const,
+            details: [
+              ...contentPackFreeContexts.map((entry) => entry.code),
+              ...hordeContexts.map((entry) => entry.code),
+            ],
+          }
+        : {
+            name: 'sandbox deck generation survives an absent content pack',
+            status: 'failed' as const,
+            reason:
+              'The shipped generation config no longer produces decks from the rosters that are present when a YSM content pack is missing.',
+            suggestion:
+              'Keep every content pack consumed by scanning descriptors and pattern-matched custom divisions, so an absent pack removes only its own contribution.',
+            details: missingContentPackFailures,
           },
       activationPointFailures.length === 0
         ? {
