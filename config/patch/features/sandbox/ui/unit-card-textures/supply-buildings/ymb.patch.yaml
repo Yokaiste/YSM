@@ -1,0 +1,43 @@
+version: 1
+id: 'ysm.sandbox.ui.unit-card-textures.supply-buildings'
+name: 'YSM Supply Building Card Textures'
+description: 'Registers the YS supply base card texture and assigns it to the supply buildings.'
+enabled: true
+scope: 'prod'
+optional: true
+dependsOn:
+  - 'ysm.descriptors.buildings'
+targets:
+  - file: 'GameData/Generated/UserInterface/Textures/ButtonTexturesUnites.ndf'
+    operations:
+      - op: 'add'
+        selector:
+          kind: 'collection'
+          by: 'path'
+          value: 'UnitButtonTextureAdditionalBank.Textures'
+        value:
+          $raw: |-
+            ("Texture_Button_Unit_YS_Supply_Base", MAP [( ~/ComponentState/Normal, TUIResourceTexture( FileName = "GameData:/Assets/2D/Interface/Common/UnitsIcons/NATO/ys-base.png"))]),
+  - file: 'GameData/Generated/Gameplay/Gfx/BuildingDescriptors.ndf'
+    operations:
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YS_Supply_Base.ModulesDescriptors.[TUnitUIModuleDescriptor].ButtonTexture'
+        value:
+          $raw: "'Texture_Button_Unit_YS_Supply_Base'"
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YS_Supply_Bunker.ModulesDescriptors.[TUnitUIModuleDescriptor].ButtonTexture'
+        value:
+          $raw: "'Texture_Button_Unit_YS_Supply_Base'"
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YS_Doomsday.ModulesDescriptors.[TUnitUIModuleDescriptor].ButtonTexture'
+        value:
+          $raw: "'Texture_Button_Unit_YS_Supply_Base'"

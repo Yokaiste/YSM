@@ -1,0 +1,44 @@
+version: 1
+id: 'ysm.sandbox.ui.unit-card-textures.nuclear'
+name: 'YSM Nuclear Unit Card Textures'
+description: 'Registers the YN nuclear unit card textures and assigns them to the nuclear roster.'
+enabled: true
+scope: 'prod'
+optional: true
+dependsOn:
+  - 'ysm.descriptors.units.nuclear'
+targets:
+  - file: 'GameData/Generated/UserInterface/Textures/ButtonTexturesUnites.ndf'
+    operations:
+      - op: 'add'
+        selector:
+          kind: 'collection'
+          by: 'path'
+          value: 'UnitButtonTextureAdditionalBank.Textures'
+        value:
+          $raw: |-
+            ("Texture_Button_Unit_YN_Nuke", MAP [( ~/ComponentState/Normal, TUIResourceTexture( FileName = "GameData:/Assets/2D/Interface/Common/UnitsIcons/NATO/yn-nuke.png"))]),
+      - op: 'add'
+        selector:
+          kind: 'collection'
+          by: 'path'
+          value: 'UnitButtonTextureAdditionalBank.Textures'
+        value:
+          $raw: |-
+            ("Texture_Button_Unit_YN_Nuke_X2", MAP [( ~/ComponentState/Normal, TUIResourceTexture( FileName = "GameData:/Assets/2D/Interface/Common/UnitsIcons/NATO/yn-nuke-x2.png"))]),
+  - file: 'GameData/Generated/Gameplay/Gfx/UniteDescriptor.ndf'
+    operations:
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YN_Nuke.ModulesDescriptors.[TUnitUIModuleDescriptor].ButtonTexture'
+        value:
+          $raw: "'Texture_Button_Unit_YN_Nuke'"
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'Descriptor_Unit_YN_Nuke_X2.ModulesDescriptors.[TUnitUIModuleDescriptor].ButtonTexture'
+        value:
+          $raw: "'Texture_Button_Unit_YN_Nuke_X2'"
