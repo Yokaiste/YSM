@@ -1,0 +1,188 @@
+version: 1
+id: 'ysm.sandbox.supply-units'
+name: 'YSM Supply Units'
+description: 'Adds three bottomless resupply vehicles -- a heavy helicopter, a truck, and an amphibious carrier -- with their own unit cards.'
+enabled: true
+scope: 'prod'
+# Cloned from vanilla units.
+optional: true
+dependsOn: []
+files:
+  - op: 'copy'
+    source: { root: 'patch', path: 'assets' }
+    destination: 'GameData/Assets/2D/Interface/Common/UnitsIcons/NATO'
+    expect: { files: 3 }
+variables:
+  modTagRaw: "'${modTag}'"
+  supplyHeliSourceDescriptorName: 'Descriptor_Unit_Mi_26_SOV'
+  supplyTruckSourceDescriptorName: 'Descriptor_Unit_Volvo_N10_supply_BEL'
+  supplyAmphibiousSourceDescriptorName: 'Descriptor_Unit_LARC_60_supply_US'
+
+  # What WARNO charges for each unit above; the YSM price is derived by
+  # `unlimitedPriceMultiplier`. `x - x % 1` floors it: command points must be whole.
+  supplyHeliSourceCost: 140
+  supplyTruckSourceCost: 80
+  supplyAmphibiousSourceCost: 115
+
+  supplyHeliCostRaw: ${supplyHeliSourceCost * unlimitedPriceMultiplier}
+  supplyTruckCostRaw: ${supplyTruckSourceCost * unlimitedPriceMultiplier}
+  supplyAmphibiousCostRaw: ${supplyAmphibiousSourceCost * unlimitedPriceMultiplier}
+  supplyHeliCommandPointCost: ${supplyHeliCostRaw - supplyHeliCostRaw % 1}
+  supplyTruckCommandPointCost: ${supplyTruckCostRaw - supplyTruckCostRaw % 1}
+  supplyAmphibiousCommandPointCost: ${supplyAmphibiousCostRaw - supplyAmphibiousCostRaw % 1}
+
+  supplyHeliProductionResourcesNeededRaw: "${'MAP [\\n        ($/GFX/Resources/Resource_CommandPoints, ' + supplyHeliCommandPointCost + '),\\n    ]'}"
+  supplyTruckProductionResourcesNeededRaw: "${'MAP [\\n        ($/GFX/Resources/Resource_CommandPoints, ' + supplyTruckCommandPointCost + '),\\n    ]'}"
+  supplyAmphibiousProductionResourcesNeededRaw: "${'MAP [\\n        ($/GFX/Resources/Resource_CommandPoints, ' + supplyAmphibiousCommandPointCost + '),\\n    ]'}"
+targets:
+  - file: GameData/Generated/Gameplay/Gfx/UniteDescriptor.ndf
+    operations:
+      - op: copy
+        leadingComment: '${commentDirectives.forceInclude}'
+        selector: { kind: object, by: name, value: '${supplyHeliSourceDescriptorName}' }
+        destination: { name: 'Descriptor_Unit_YS_Supply_Heli' }
+      - forEach:
+          - { at: 'DescriptorId', value: 'GUID:{ABF52943-585B-4F63-9DFA-C0703C4B63D7}' }
+          - { at: 'ClassNameForDebug', value: "'Unit_YS_Supply_Heli'" }
+          - at: 'ModulesDescriptors.[TTypeUnitModuleDescriptor].MotherCountry'
+            value: '${modTagRaw}'
+        as: edit
+        do:
+          - op: modify
+            selector: { kind: field, by: path, value: 'Descriptor_Unit_YS_Supply_Heli.${edit.at}' }
+            value:
+              $raw: ${edit.value}
+      - op: add
+        selector:
+          {
+            kind: collection,
+            by: path,
+            value: 'Descriptor_Unit_YS_Supply_Heli.ModulesDescriptors.[TTagsModuleDescriptor].TagSet',
+          }
+        position: { mode: before, anchor: '"Unite"' }
+        value:
+          $raw: '"UNITE_YS_Supply_Heli",'
+      - forEach:
+          - at: 'ModulesDescriptors.[TSupplyModuleDescriptor].SupplyCapacity'
+            value: '${unlimitedSupplyCapacity}'
+          - at: 'ModulesDescriptors.[TProductionModuleDescriptor].ProductionRessourcesNeeded'
+            value: '${supplyHeliProductionResourcesNeededRaw}'
+          - { at: 'ModulesDescriptors.[TUnitUIModuleDescriptor].NameToken', value: "'YSHELI'" }
+        as: edit
+        do:
+          - op: modify
+            selector: { kind: field, by: path, value: 'Descriptor_Unit_YS_Supply_Heli.${edit.at}' }
+            value:
+              $raw: ${edit.value}
+      - op: copy
+        leadingComment: '${commentDirectives.forceInclude}'
+        selector: { kind: object, by: name, value: '${supplyTruckSourceDescriptorName}' }
+        destination: { name: 'Descriptor_Unit_YS_Supply_Truck' }
+      - forEach:
+          - { at: 'DescriptorId', value: 'GUID:{2A9120F1-D95F-4BDC-886F-8F80F26450C4}' }
+          - { at: 'ClassNameForDebug', value: "'Unit_YS_Supply_Truck'" }
+          - at: 'ModulesDescriptors.[TTypeUnitModuleDescriptor].MotherCountry'
+            value: '${modTagRaw}'
+        as: edit
+        do:
+          - op: modify
+            selector: { kind: field, by: path, value: 'Descriptor_Unit_YS_Supply_Truck.${edit.at}' }
+            value:
+              $raw: ${edit.value}
+      - op: add
+        selector:
+          {
+            kind: collection,
+            by: path,
+            value: 'Descriptor_Unit_YS_Supply_Truck.ModulesDescriptors.[TTagsModuleDescriptor].TagSet',
+          }
+        position: { mode: before, anchor: '"Unite"' }
+        value:
+          $raw: '"UNITE_YS_Supply_Truck",'
+      - forEach:
+          - at: 'ModulesDescriptors.[TSupplyModuleDescriptor].SupplyCapacity'
+            value: '${unlimitedSupplyCapacity}'
+          - at: 'ModulesDescriptors.[TProductionModuleDescriptor].ProductionRessourcesNeeded'
+            value: '${supplyTruckProductionResourcesNeededRaw}'
+          - { at: 'ModulesDescriptors.[TUnitUIModuleDescriptor].NameToken', value: "'YSTRUCK'" }
+        as: edit
+        do:
+          - op: modify
+            selector: { kind: field, by: path, value: 'Descriptor_Unit_YS_Supply_Truck.${edit.at}' }
+            value:
+              $raw: ${edit.value}
+      - op: copy
+        leadingComment: '${commentDirectives.forceInclude}'
+        selector: { kind: object, by: name, value: '${supplyAmphibiousSourceDescriptorName}' }
+        destination: { name: 'Descriptor_Unit_YS_Supply_Amphibious' }
+      - forEach:
+          - { at: 'DescriptorId', value: 'GUID:{509F1A35-38C6-4755-BF6F-A9308DD0611C}' }
+          - { at: 'ClassNameForDebug', value: "'Unit_YS_Supply_Amphibious'" }
+          - at: 'ModulesDescriptors.[TTypeUnitModuleDescriptor].MotherCountry'
+            value: '${modTagRaw}'
+        as: edit
+        do:
+          - op: modify
+            selector:
+              { kind: field, by: path, value: 'Descriptor_Unit_YS_Supply_Amphibious.${edit.at}' }
+            value:
+              $raw: ${edit.value}
+      - op: add
+        selector:
+          {
+            kind: collection,
+            by: path,
+            value: 'Descriptor_Unit_YS_Supply_Amphibious.ModulesDescriptors.[TTagsModuleDescriptor].TagSet',
+          }
+        position: { mode: before, anchor: '"Unite"' }
+        value:
+          $raw: '"UNITE_YS_Supply_Amphibious",'
+      - forEach:
+          - at: 'ModulesDescriptors.[TSupplyModuleDescriptor].SupplyCapacity'
+            value: '${unlimitedSupplyCapacity}'
+          - at: 'ModulesDescriptors.[TProductionModuleDescriptor].ProductionRessourcesNeeded'
+            value: '${supplyAmphibiousProductionResourcesNeededRaw}'
+          - { at: 'ModulesDescriptors.[TUnitUIModuleDescriptor].NameToken', value: "'YSAMPHIB'" }
+        as: edit
+        do:
+          - op: modify
+            selector:
+              { kind: field, by: path, value: 'Descriptor_Unit_YS_Supply_Amphibious.${edit.at}' }
+            value:
+              $raw: ${edit.value}
+      - op: modify
+        selector:
+          {
+            kind: field,
+            by: path,
+            value: 'Descriptor_Unit_YS_Supply_Heli.ModulesDescriptors.[TUnitUIModuleDescriptor].ButtonTexture',
+          }
+        value:
+          $raw: "'Texture_Button_Unit_YS_Supply_Heli'"
+      - op: modify
+        selector:
+          {
+            kind: field,
+            by: path,
+            value: 'Descriptor_Unit_YS_Supply_Truck.ModulesDescriptors.[TUnitUIModuleDescriptor].ButtonTexture',
+          }
+        value:
+          $raw: "'Texture_Button_Unit_YS_Supply_Truck'"
+      - op: modify
+        selector:
+          {
+            kind: field,
+            by: path,
+            value: 'Descriptor_Unit_YS_Supply_Amphibious.ModulesDescriptors.[TUnitUIModuleDescriptor].ButtonTexture',
+          }
+        value:
+          $raw: "'Texture_Button_Unit_YS_Supply_Amphibious'"
+  - file: GameData/Generated/UserInterface/Textures/ButtonTexturesUnites.ndf
+    operations:
+      - op: add
+        selector: { kind: collection, by: path, value: 'UnitButtonTextureAdditionalBank.Textures' }
+        value:
+          $raw: |-
+            ("Texture_Button_Unit_YS_Supply_Heli", MAP [( ~/ComponentState/Normal, TUIResourceTexture( FileName = "GameData:/Assets/2D/Interface/Common/UnitsIcons/NATO/ys-heli.png"))]),
+            ("Texture_Button_Unit_YS_Supply_Truck", MAP [( ~/ComponentState/Normal, TUIResourceTexture( FileName = "GameData:/Assets/2D/Interface/Common/UnitsIcons/NATO/ys-truck.png"))]),
+            ("Texture_Button_Unit_YS_Supply_Amphibious", MAP [( ~/ComponentState/Normal, TUIResourceTexture( FileName = "GameData:/Assets/2D/Interface/Common/UnitsIcons/NATO/ys-amphibious.png"))]),

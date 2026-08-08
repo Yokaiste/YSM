@@ -1,0 +1,119 @@
+version: 1
+id: ysm.zombies.weapons
+name: YSM Zombie Weapons
+description: Builds the weapon managers that mount the zombie attack profiles for each role -- swarm, breaker, screecher, stalker, smoker, pack leader, and demolisher.
+enabled: true
+scope: prod
+optional: true
+dependsOn:
+  - ysm.zombies.ammunition
+variables:
+  # One salvo per ammo box, one ammo box per turret, so a zombie never runs dry.
+  infiniteSalvoCount: 999
+  # The turret list is replaced outright: a base mod may add a turret or reuse a bone
+  # ordinal, which makes the ordinal match ambiguous. `fx` is the vanilla muzzle effect
+  # minus the `FireEffect_` prefix; the other names count from the turret's position.
+  zombieWeapons:
+    - id: Swarm
+      source: WeaponDescriptor_MotSchutzen_DDR
+      turrets:
+        - { ammo: Ammo_YZ_Assault_Shards, soldiers: 8, solo: false, fx: FM_Mpi_AK_74N }
+        - { ammo: Ammo_YZ_Swarm_Bite, soldiers: 1, solo: true, fx: RocketInf_RPG7VR_64mm }
+        - { ammo: Ammo_YZ_Swarm_Bite, soldiers: 1, solo: true, fx: RocketInf_RPG7VR_64mm }
+    - id: Breaker
+      source: WeaponDescriptor_Engineers_CAN
+      turrets:
+        - { ammo: Ammo_YZ_Assault_Shards, soldiers: 5, solo: false, fx: FM_M16A2_C7A1 }
+        - { ammo: Ammo_YZ_Breaker_Maul, soldiers: 2, solo: false, fx: SAW_Minimi_5_56mm_C9 }
+        - { ammo: Ammo_YZ_Breaker_Maul, soldiers: 1, solo: true, fx: Grenade_Satchel_Charge }
+    - id: Screecher
+      source: WeaponDescriptor_MANPAD_Igla_DDR
+      turrets:
+        - { ammo: Ammo_YZ_Scout_Shards, soldiers: 3, solo: false, fx: FM_Mpi_AK_74N }
+        - { ammo: Ammo_YZ_Screecher_Spore, soldiers: 1, solo: true, fx: MANPAD_igla }
+    - id: Stalker
+      source: WeaponDescriptor_Rifles_BEL
+      turrets:
+        - { ammo: Ammo_YZ_Scout_Shards, soldiers: 3, solo: false, fx: FM_FNC }
+        - { ammo: Ammo_YZ_Stalker_Talons, soldiers: 1, solo: true, fx: SAW_FALO }
+        - { ammo: Ammo_YZ_Stalker_Talons, soldiers: 1, solo: true, fx: RocketInf_M72A1_LAW_66mm }
+    - id: Smoker
+      source: WeaponDescriptor_AeroRifles_Dragon_US
+      turrets:
+        - { ammo: Ammo_YZ_Smoker_Cloud, soldiers: 2, solo: false, fx: Grenade_SMOKE }
+    - id: PackLeader
+      source: WeaponDescriptor_Rifles_Gurkhas_UK
+      turrets:
+        - { ammo: Ammo_YZ_Assault_Shards, soldiers: 5, solo: false, fx: FM_L85A1 }
+        - { ammo: Ammo_YZ_PackLeader_Fangs, soldiers: 2, solo: false, fx: SAW_L86A1_5_56mm }
+        - { ammo: Ammo_YZ_PackLeader_Fangs, soldiers: 1, solo: true, fx: RocketInf_LAW_80 }
+    - id: Demolisher
+      source: WeaponDescriptor_Engineers_CAN
+      turrets:
+        - { ammo: Ammo_YZ_Demolisher_Shards, soldiers: 2, solo: false, fx: FM_M16A2_C7A1 }
+        - { ammo: Ammo_YZ_Demolisher_Shards, soldiers: 1, solo: false, fx: SAW_Minimi_5_56mm_C9 }
+        - { ammo: Ammo_YZ_Demolisher_Charge, soldiers: 1, solo: true, fx: Grenade_Satchel_Charge }
+targets:
+  - file: GameData/Generated/Gameplay/Gfx/WeaponDescriptor.ndf
+    operations:
+      - forEach: ${zombieWeapons}
+        as: weapon
+        do:
+          - op: copy
+            selector:
+              kind: object
+              by: name
+              value: ${weapon.source}
+            destination:
+              name: WeaponDescriptor_YZ_${weapon.id}
+          - op: modify
+            selector:
+              kind: field
+              by: path
+              value: WeaponDescriptor_YZ_${weapon.id}.Salves
+            value:
+              $raw: "${'[ ' + join(repeat(infiniteSalvoCount, len(weapon.turrets)), ', ') + ' ]'}"
+          - op: modify
+            selector:
+              kind: field
+              by: path
+              value: WeaponDescriptor_YZ_${weapon.id}.TurretDescriptorList
+            value:
+              $raw: '[]'
+          - forEach: ${weapon.turrets}
+            as: turret
+            do:
+              - op: add
+                selector:
+                  kind: collection
+                  by: path
+                  value: WeaponDescriptor_YZ_${weapon.id}.TurretDescriptorList
+                value:
+                  $raw: |-
+                    TTurretInfanterieDescriptor
+                    (
+                        MountedWeaponDescriptorList =
+                        [
+                            TMountedWeaponDescriptor
+                            (
+                                AmmoBoxIndex = ${turretIndex}
+                                Ammunition = $/GFX/Weapon/${turret.ammo}
+                                AnimateOnlyOneSoldier = ${turret.solo ? 'True' : 'False'}
+                                DispersionRadiusOffColor = RGBA[0,0,0,0]
+                                DispersionRadiusOffThickness = -0.1
+                                DispersionRadiusOnColor = RGBA[0,0,0,0]
+                                DispersionRadiusOnThickness = -0.1
+                                EffectTag = "FireEffect_${turret.fx}"
+                                HandheldEquipmentKey = "WeaponAlternative_${turretIndex + 1}"
+                                NbWeapons = ${turret.soldiers}
+                                ShowDispersion = False
+                                WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_${turretIndex + 1}"
+                                WeaponIgnoredPropertyName = "WeaponIgnored_${turretIndex + 1}"
+                                WeaponShootDataPropertyName =
+                                [
+                                    "WeaponShootData_0_${turretIndex + 1}",
+                                ]
+                            ),
+                        ]
+                        YulBoneOrdinal = ${turretIndex + 1}
+                    ),

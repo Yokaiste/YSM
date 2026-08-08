@@ -1,0 +1,26 @@
+version: 1
+id: 'ysm.core.chat-tokens'
+name: 'YSM Chat Tokens'
+description: 'Adds chat commands that print the YSM logo, flag, and division emblems in the lobby and in-game chat.'
+enabled: true
+scope: 'prod'
+optional: true
+# Every token draws a faction texture.
+dependsOn:
+  - 'ysm.core.faction'
+targets:
+  - file: 'GameData/UserInterface/Use/Common/UIChatTextFormatScript.ndf'
+    operations:
+      - op: 'add'
+        selector:
+          kind: 'collection'
+          by: 'path'
+          value: 'ChatTextFormatScript.Commands'
+        value:
+          $raw: |-
+            ("${modTag}_FLAG", TemplateTFS_Flag(TextureToken = "Texture${modTag}_CountryFlag")),
+            ("${modTag}", TemplateTFS_Flag(TextureToken = "Texture${modTag}_BrandLogo")),
+            ("${modTag}_DIVISION_NATO", TemplateTFS_Flag(TextureToken = "Texture${modTag}_Division_NATO")),
+            ("${modTag}_DIVISION_PACT", TemplateTFS_Flag(TextureToken = "Texture${modTag}_Division_PACT")),
+            ("${modTag}_DIVISION_NATO_BALANCED", TemplateTFS_Flag(TextureToken = "Texture${modTag}_Division_NATO_Balanced")),
+            ("${modTag}_DIVISION_PACT_BALANCED", TemplateTFS_Flag(TextureToken = "Texture${modTag}_Division_PACT_Balanced")),

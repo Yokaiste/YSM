@@ -1,0 +1,223 @@
+version: 1
+id: 'ysm'
+name: 'Yokaiste’s Sandbox Mod'
+description: 'Break the limits. Build the battle you want.'
+enabled: true
+
+# Top-level knobs. Per-feature tuning lives in that feature's ymb.patch.yaml.
+variables:
+  # Changing it after release orphans existing decks -- treat it as permanent.
+  modTag: 'YSM'
+  # Shown on the welcome screen.
+  author: 'Yokaiste'
+  modVersion: '2.6'
+  # Uncomment for a dismissable welcome-screen notice.
+  # alert:
+  #   title: ''
+  #   text: ''
+  links:
+    - name: 'Steam Workshop'
+      url: 't.ly/87TI3'
+    - name: 'YSM Community'
+      url: 't.ly/ZRnSO'
+    - name: 'Restore Decks & Combine Mods'
+      url: 't.ly/Nk20O'
+    - name: "Yokaiste's Mod Builder"
+      url: 't.ly/NIJ0e'
+
+  # Cards per category. Generation, cost matrix, armory, and deck creator must agree.
+  deckSlotCount: 80
+  # Units per pack on the Unlimited division variants.
+  unlimitedPackUnitCount: 999
+  # true also drops units no division fields at all -- a tighter roster, minus WARNO's own
+  # test units. Either way a unit stays out if every division holding it blocks its
+  # category: no card slots, or every slot free at a raised activation limit.
+  excludeHidden: false
+
+  # Effectively bottomless. NDF float literal: keep the trailing `.0`.
+  unlimitedSupplyCapacity: '2000000.0'
+
+  # Supply units are priced off the vanilla unit they clone, so the range moves together.
+  # What the bottomless pool is worth over the stock unit.
+  unlimitedPriceMultiplier: 2
+  # Per step up the base line: base -> bunker -> doomsday, compounding.
+  fortifiedTierPriceMultiplier: 1.5
+  # Off-map air slots. Read by the off-map panel and skirmish production.
+  planeCap: 297
+
+  # Comments you can put in a descriptor to steer deck generation by hand.
+  commentDirectives:
+    ignore: '${modTag}-ignore' # skip this one descriptor
+    everythingBelow: '${modTag}-ignore-everything-below' # skip the rest of the file
+    forceInclude: '${modTag}-force-include' # keep it despite the rules above
+
+  # Lobby option lists. Each is a menu, so adding an entry adds a choice.
+  gameplayConstants:
+    defaultTimeLimitInMinutes: 41
+    # Match length in minutes; 0 means unlimited.
+    timeLimitTable:
+      [
+        5,
+        10,
+        15,
+        21,
+        25,
+        30,
+        35,
+        41,
+        45,
+        50,
+        55,
+        60,
+        67,
+        80,
+        89,
+        101,
+        110,
+        120,
+        150,
+        180,
+        210,
+        240,
+        300,
+        360,
+        404,
+        480,
+        540,
+        600,
+        666,
+        720,
+        1080,
+        1337,
+        2880,
+        0,
+      ]
+    # Income rate multipliers. Must stay aligned with economyModeTokens below.
+    upkeepPercentValues:
+      [
+        0,
+        0.25,
+        0.5,
+        0.75,
+        1,
+        1.25,
+        1.5,
+        1.75,
+        2,
+        2.25,
+        2.5,
+        2.75,
+        3,
+        3.5,
+        4,
+        4.5,
+        5,
+        5.5,
+        6,
+        6.5,
+        7,
+        7.5,
+        8,
+        8.5,
+        9,
+        9.5,
+        10,
+        15,
+        20,
+        30,
+        40,
+        50,
+        99,
+      ]
+    # Starting money and destruction-mode score targets.
+    scoreValues:
+      [
+        67,
+        100,
+        404,
+        500,
+        666,
+        1000,
+        1337,
+        1500,
+        1750,
+        2000,
+        2500,
+        3000,
+        3500,
+        4000,
+        4500,
+        5000,
+        5500,
+        6000,
+        6500,
+        7000,
+        7500,
+        8008,
+        8500,
+        9001,
+        9500,
+        10000,
+        12345,
+        15000,
+        17500,
+        20000,
+        25000,
+        30000,
+        35000,
+        40000,
+        42069,
+        45000,
+        50000,
+        55000,
+        60000,
+        65000,
+        70000,
+        75000,
+        80085,
+        90000,
+        95000,
+        100000,
+        200000,
+        300000,
+        400000,
+        500000,
+        694200,
+        1000000,
+        2000000,
+      ]
+    # One per upkeepPercentValues entry, in the same order; lengths must match.
+    economyModeTokens:
+      - "'CONQ_NONE'"
+      - "'${modTag}_CON_0l'"
+      - "'${modTag}_CON_0m'"
+      - "'${modTag}_CON_0h'"
+      - "'${modTag}_CON_1'"
+      - "'${modTag}_CON_1l'"
+      - "'${modTag}_CON_1m'"
+      - "'${modTag}_CON_1h'"
+      - "'${modTag}_CON_2'"
+      - "'${modTag}_CON_2l'"
+      - "'${modTag}_CON_2m'"
+      - "'${modTag}_CON_2h'"
+      - "'${modTag}_CON_3'"
+      - "'${modTag}_CON_3m'"
+      - "'${modTag}_CON_4'"
+      - "'${modTag}_CON_4m'"
+      - "'${modTag}_CON_5'"
+      - "'${modTag}_CON_5m'"
+      - "'${modTag}_CON_6'"
+      - "'${modTag}_CON_6m'"
+      - "'${modTag}_CON_7'"
+      - "'${modTag}_CON_7m'"
+      - "'${modTag}_CON_8'"
+      - "'${modTag}_CON_8m'"
+      - "'${modTag}_CON_9'"
+      - "'${modTag}_CON_9m'"
+      - "'${modTag}_CON_10'"
+      - "'${modTag}_CON_15'"
+      - "'${modTag}_CON_20'"
+      - "'${modTag}_CON_30'"
+      - "'${modTag}_CON_40'"
+      - "'${modTag}_CON_50'"
+      - "'${modTag}_CON_99'"

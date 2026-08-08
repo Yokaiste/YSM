@@ -1,0 +1,32 @@
+version: 1
+id: 'ysm.ui.welcome-screen'
+name: 'YSM Welcome Screen'
+description: 'Puts the mod name, version, credit, and link buttons on the main menu, shows a scannable QR code for each link, and shows the optional notice. Edit `author`, `modVersion`, `links`, and `alert` in ymb.mod.yaml.'
+enabled: true
+scope: 'prod'
+# The script owns the localisation rows it writes, including the `${modTag}` faction name.
+dependsOn: []
+scripts:
+  - path: 'generate-welcome-screen.ts'
+    tests:
+      - 'generate-welcome-screen.test.ts'
+targets:
+  # One texture per link. Kept here because `ysm.core.faction` already writes this file.
+  - file: 'GameData/UserInterface/Use/Common/CommonTextures.ndf'
+    operations:
+      - forEach: ${links}
+        as: link
+        do:
+          - op: 'add'
+            position: { mode: 'after', anchor: 'TextureMapTaille4v4' }
+            value:
+              $raw: |-
+                Texture${modTag}_QR${linkIndex + 1} is TUIResourceTexture_Common(FileName = 'GameData:/Assets/2D/Interface/Common/y-qr-${linkIndex + 1}.png')
+          - op: 'add'
+            selector:
+              kind: 'collection'
+              by: 'path'
+              value: 'CommonTexture_AdditionalTextureBank.Textures'
+            value:
+              $raw: |-
+                ("Texture${modTag}_QR${linkIndex + 1}", MAP [ (~/ComponentState/Normal, ~/Texture${modTag}_QR${linkIndex + 1}), ] ),

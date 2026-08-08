@@ -1,0 +1,109 @@
+version: 1
+id: ysm.zombies.depiction
+name: YSM Zombie Models
+description: Gives every zombie a shared reskinned soldier model, built from the untouched WARNO Green Beret sample with only its diffuse texture replaced.
+enabled: true
+scope: prod
+# Skipped when the sample assets are absent; zombies keep their source model.
+optional: true
+dependsOn:
+  - ysm.zombies.units
+files:
+  - op: copy
+    source:
+      root: exampleAssets
+      path: Meshes/GreenBeret
+    destination: GameData/Assets/3D/Units/YSM/Zombies
+    expect: { files: 13 }
+  - op: remove
+    target: GameData/Assets/3D/Units/YSM/Zombies/GreenBeret_1.blend
+    expect: { files: 1 }
+  - op: replace
+    source:
+      root: patch
+      path: assets/GreenBeret_1.png
+    destination: GameData/Assets/3D/Units/YSM/Zombies/GreenBeret_1.png
+    expect: { files: 1 }
+  - op: copy
+    source:
+      root: patch
+      path: assets/ResourcePacks.ndf
+    destination: GameData/ResourcePacks/${modRootName}/ResourcePacks.ndf
+    expect: { files: 1 }
+targets:
+  - file: GameData/Gameplay/Gfx/DepictionResources/Gfx_infanterie.ndf
+    operations:
+      - op: add
+        leadingComment: YSM shared zombie texture variant
+        value:
+          $raw: export Modele_YZ_Zombie is TResourceMesh( Mesh = 'GameData:/Assets/3D/Units/YSM/Zombies/GreenBeret_1.fbx' )
+  - file: GameData/Generated/Gameplay/Gfx/Infanterie/DepictionInfantry.ndf
+    operations:
+      - op: add
+        leadingComment: YSM shared zombie depiction
+        value:
+          $raw: |-
+            TacticDepiction_YZ_Zombie_Alternatives is [
+              TDepictionVisual( SelectorId = [LOD_High, '01'] MeshDescriptor = $/GFX/DepictionResources/Modele_YZ_Zombie ),
+              TDepictionVisual( SelectorId = [LOD_Low] MeshDescriptor = $/GFX/DepictionResources/Modele_YZ_Zombie ),
+              TMeshlessDepictionDescriptor( SelectorId = ['none'] ReferenceMeshForSkeleton = $/GFX/DepictionResources/Modele_YZ_Zombie ),
+            ]
+      - op: add
+        value:
+          $raw: |-
+            TacticDepiction_YZ_Zombie_Soldier is TemplateInfantryDepictionFactoryTactic
+            (
+              Selector = InfantrySelectorTactic_00_01
+              Alternatives = TacticDepiction_YZ_Zombie_Alternatives
+              SubDepictions = []
+              Operators = [DepictionOperator_SkeletalAnimation2_Default()]
+            )
+      - op: add
+        value:
+          $raw: |-
+            TacticDepiction_YZ_Zombie_Ghost is TemplateInfantryDepictionFactoryGhost
+            (
+              Selector = InfantrySelectorTactic_00_01
+              Alternatives = TacticDepiction_YZ_Zombie_Alternatives
+            )
+      - op: add
+        selector:
+          kind: collection
+          by: path
+          value: '@type:TTransportedInfantryCatalogEntries.Entries'
+        value:
+          $raw: |-
+            TTransportedInfantryEntry
+            (
+              Count = 1
+              Identifier = "YZ_Zombie"
+              Meshes = [$/GFX/DepictionResources/Modele_YZ_Zombie]
+              UniqueCount = 0
+              UnitMimetic = TacticDepiction_YZ_Zombie_Soldier
+              UnitMimeticGhost = TacticDepiction_YZ_Zombie_Ghost
+            ),
+      - op: add
+        selector:
+          kind: collection
+          by: path
+          value: '@type:TUnitMimeticRegistration.UnitMimetics'
+        value:
+          $raw: ('squad_YZ_Zombie', TemplateInfantryDepictionSquad( SoundOperator = $/GFX/Sound/DepictionOperator_MovementSound_SM_Infanterie_SOVIET)),
+  - file: GameData/Generated/Gameplay/Gfx/UniteDescriptor.ndf
+    operations:
+      - op: bulk
+        match:
+          conditions:
+            - on: name
+              is: startsWith
+              value: Descriptor_Unit_YZ_
+        expect:
+          minBlocks: 7
+        leadingComment: YSM shared zombie texture variant
+        edits:
+          - field: SoldierBlackHoleKey
+            set: { $string: YZ_Zombie }
+            minChanges: 7
+          - field: BlackHoleKey
+            set: { $string: YZ_Zombie }
+            minChanges: 7

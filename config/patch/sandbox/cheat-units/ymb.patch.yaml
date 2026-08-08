@@ -1,0 +1,328 @@
+version: 1
+id: 'ysm.sandbox.cheat-units'
+name: 'YSM Cheat Units'
+description: 'Adds two testing units with their own unit cards: an IFV whose weapons ignore every limit, and a helicopter that only sees further and flies higher.'
+enabled: true
+scope: 'prod'
+# Cloned from vanilla units.
+optional: true
+dependsOn: []
+files:
+  - op: 'copy'
+    source: { root: 'patch', path: 'assets' }
+    destination: 'GameData/Assets/2D/Interface/Common/UnitsIcons/NATO'
+    expect: { files: 2 }
+variables:
+  modTagRaw: "'${modTag}'"
+  oracleSourceDescriptorName: 'Descriptor_Unit_EH60A_EW_US'
+
+  cheatUnitCommandPointCost: 99999
+  cheatUnitTicketCost: 3
+  cheatUnitStrategicValue: 999
+  # Found by the gun it carries, not its bone: a base mod may hang a second weapon on the
+  # same ordinal, which matches twice and skips the whole patch. Once the gun is swapped the
+  # turret answers to the YSM name, so later edits use `illegalTurretPatched`.
+  illegalTurretVanilla: 'TurretDescriptorList.[MountedWeaponDescriptorList.[TMountedWeaponDescriptor#0].Ammunition=$/GFX/Weapon/Ammo_AutoCanon_AP_25mm_KBA]'
+  illegalTurretPatched: 'TurretDescriptorList.[MountedWeaponDescriptorList.[TMountedWeaponDescriptor#0].Ammunition=$/GFX/Weapon/Ammo_YC_Illegal_AP]'
+  # The "illegal" IFV's two ammunition profiles.
+  illegalAPSplashRadiusGruRaw: '120'
+  illegalAPDamageRaw: '100.0'
+  illegalAPSuppressDamageRaw: '5000.0'
+  illegalHESplashRadiusGruRaw: '220'
+  illegalHEDamageRaw: '100.0'
+  illegalHESuppressDamageRaw: '8000.0'
+
+  # Values that exist to remove a limit, not to be balanced.
+  absurdValueRaw: '999999'
+  absurdValueFloatRaw: '999999.0'
+  singleShotCountRaw: '1'
+  illegalSupplyCostRaw: '1'
+  noDispersionRaw: '0'
+  illegalAimingTimeRaw: '0.0'
+  illegalBurstIntervalRaw: '0.1'
+  absurdVisionMapRaw: "${'MAP [\\n                ( EVisionRange/Standard, ' + absurdValueFloatRaw + ' ),\\n                ( EVisionRange/LowAltitude, ' + absurdValueFloatRaw + ' ),\\n                ( EVisionRange/HighAltitude, ' + absurdValueFloatRaw + ' ),\\n            ]'}"
+  # Optical strength is what the unit picks out at range, bigger-is-better: 1590 for a
+  # supply truck, 8834 for the best WARNO ships. Range without this buys nothing.
+  absurdOpticalMapRaw: "${'MAP [\\n                ( EOpticalStrength/Standard, ' + absurdValueFloatRaw + ' ),\\n                ( EOpticalStrength/LowAltitude, ' + absurdValueFloatRaw + ' ),\\n                ( EOpticalStrength/HighAltitude, ' + absurdValueFloatRaw + ' ),\\n            ]'}"
+  illegalProductionResourcesNeededRaw: "${'MAP [\\n        ($/GFX/Resources/Resource_CommandPoints, ' + cheatUnitCommandPointCost + '),\\n        ($/GFX/Resources/Resource_Tickets, ' + cheatUnitTicketCost + '),\\n    ]'}"
+  oracleProductionResourcesNeededRaw: "${'MAP [\\n        ($/GFX/Resources/Resource_CommandPoints, ' + cheatUnitCommandPointCost + '),\\n    ]'}"
+  perfectHitRollRuleRaw: |-
+    TDiceHitRollRuleDescriptor
+    (
+        BaseCriticModifier = 100
+        BaseHitValueModifiers =
+        [
+            (EBaseHitValueModifier/Base, 100),
+            (EBaseHitValueModifier/Idling, 100),
+            (EBaseHitValueModifier/Moving, 100),
+            (EBaseHitValueModifier/Targeted, 100),
+        ]
+        DistanceToTarget = False
+    )
+targets:
+  - file: GameData/Generated/Gameplay/Gfx/Ammunition.ndf
+    operations:
+      - op: copy
+        selector: { kind: object, by: name, value: 'Ammo_AutoCanon_AP_25mm_KBA' }
+        destination: { name: 'Ammo_YC_Illegal_AP' }
+      - forEach:
+          - { at: 'DescriptorId', value: 'GUID:{5310a8c1-8ef1-41f3-ade0-6e51dd1d680a}' }
+          - { at: 'Name', value: "'YCWILLEGAL'" }
+          - { at: 'MaximumRangeGRU', value: '${absurdValueRaw}' }
+          - { at: 'MaximumRangeHelicopterGRU', value: '${absurdValueRaw}' }
+          - { at: 'MaximumRangeAirplaneGRU', value: '${absurdValueRaw}' }
+          - { at: 'DispersionAtMaxRangeGRU', value: '${noDispersionRaw}' }
+          - { at: 'DispersionAtMinRangeGRU', value: '${noDispersionRaw}' }
+          - { at: 'RadiusSplashPhysicalDamagesGRU', value: '${illegalAPSplashRadiusGruRaw}' }
+          - { at: 'PhysicalDamages', value: '${illegalAPDamageRaw}' }
+          - { at: 'RadiusSplashSuppressDamagesGRU', value: '${illegalAPSplashRadiusGruRaw}' }
+          - { at: 'SuppressDamages', value: '${illegalAPSuppressDamageRaw}' }
+          - { at: 'ProjectileSpeedGRU', value: '${absurdValueRaw}' }
+          - { at: 'AffecteParNombre', value: 'False' }
+          - { at: 'AimingTime', value: '${illegalAimingTimeRaw}' }
+          - { at: 'TimeBetweenTwoShots', value: '${illegalBurstIntervalRaw}' }
+          - { at: 'TimeBetweenTwoFx', value: '${illegalBurstIntervalRaw}' }
+          - { at: 'TimeBetweenTwoSalvos', value: '${illegalBurstIntervalRaw}' }
+          - { at: 'ShotsCountPerSalvo', value: '${singleShotCountRaw}' }
+          - { at: 'AffichageMunitionParSalve', value: '${singleShotCountRaw}' }
+          - { at: 'SupplyCost', value: '${illegalSupplyCostRaw}' }
+          - { at: 'DisplaySalveAccuracy', value: 'False' }
+          - { at: 'DamageTypeEvolutionOverRangeDescriptor', value: 'nil' }
+          - { at: 'HitRollRuleDescriptor', value: '${perfectHitRollRuleRaw}' }
+        as: edit
+        do:
+          - op: modify
+            selector: { kind: field, by: path, value: 'Ammo_YC_Illegal_AP.${edit.at}' }
+            value:
+              $raw: ${edit.value}
+      - op: copy
+        selector: { kind: object, by: name, value: 'Ammo_AutoCanon_HE_25mm_KBA' }
+        destination: { name: 'Ammo_YC_Illegal_HE' }
+      - forEach:
+          - { at: 'DescriptorId', value: 'GUID:{980a80d8-eff9-4fce-8c9a-cb07992d565a}' }
+          - { at: 'Name', value: "'YCWILLEGAL'" }
+          - { at: 'MaximumRangeGRU', value: '${absurdValueRaw}' }
+          - { at: 'MaximumRangeHelicopterGRU', value: '${absurdValueRaw}' }
+          - { at: 'MaximumRangeAirplaneGRU', value: '${absurdValueRaw}' }
+          - { at: 'DispersionAtMaxRangeGRU', value: '${noDispersionRaw}' }
+          - { at: 'DispersionAtMinRangeGRU', value: '${noDispersionRaw}' }
+          - { at: 'RadiusSplashPhysicalDamagesGRU', value: '${illegalHESplashRadiusGruRaw}' }
+          - { at: 'PhysicalDamages', value: '${illegalHEDamageRaw}' }
+          - { at: 'RadiusSplashSuppressDamagesGRU', value: '${illegalHESplashRadiusGruRaw}' }
+          - { at: 'SuppressDamages', value: '${illegalHESuppressDamageRaw}' }
+          - { at: 'ProjectileSpeedGRU', value: '${absurdValueRaw}' }
+          - { at: 'AffecteParNombre', value: 'False' }
+          - { at: 'AllowSuppressDamageWhenNoImpact', value: 'False' }
+          - { at: 'AimingTime', value: '${illegalAimingTimeRaw}' }
+          - { at: 'TimeBetweenTwoShots', value: '${illegalBurstIntervalRaw}' }
+          - { at: 'TimeBetweenTwoFx', value: '${illegalBurstIntervalRaw}' }
+          - { at: 'TimeBetweenTwoSalvos', value: '${illegalBurstIntervalRaw}' }
+          - { at: 'ShotsCountPerSalvo', value: '${singleShotCountRaw}' }
+          - { at: 'AffichageMunitionParSalve', value: '${singleShotCountRaw}' }
+          - { at: 'SupplyCost', value: '${illegalSupplyCostRaw}' }
+          - { at: 'DisplaySalveAccuracy', value: 'False' }
+          - { at: 'CanShootOnPosition', value: 'False' }
+          - { at: 'NbSalvosShootOnPosition', value: '0' }
+          - { at: 'HitRollRuleDescriptor', value: '${perfectHitRollRuleRaw}' }
+        as: edit
+        do:
+          - op: modify
+            selector: { kind: field, by: path, value: 'Ammo_YC_Illegal_HE.${edit.at}' }
+            value:
+              $raw: ${edit.value}
+  - file: GameData/Generated/Gameplay/Gfx/WeaponDescriptor.ndf
+    operations:
+      - op: copy
+        selector: { kind: object, by: name, value: 'WeaponDescriptor_AIFV_B_C25_NL' }
+        destination: { name: 'WeaponDescriptor_YC_Illegal' }
+      - forEach:
+          - at: 'Salves'
+            value: "${'[ ' + join([cheatUnitStrategicValue, cheatUnitStrategicValue, 1], ', ') + ' ]'}"
+          - at: '${illegalTurretVanilla}.MountedWeaponDescriptorList.[Ammunition=$/GFX/Weapon/Ammo_AutoCanon_AP_25mm_KBA].Ammunition'
+            value: '$/GFX/Weapon/Ammo_YC_Illegal_AP'
+          - at: '${illegalTurretPatched}.MountedWeaponDescriptorList.[Ammunition=$/GFX/Weapon/Ammo_AutoCanon_HE_25mm_KBA].Ammunition'
+            value: '$/GFX/Weapon/Ammo_YC_Illegal_HE'
+          - { at: 'AlwaysOrientArmorTowardsThreat', value: 'False' }
+          - at: '${illegalTurretPatched}.OutOfRangeTrackingDuration'
+            value: '0.0'
+        as: edit
+        do:
+          - op: modify
+            selector: { kind: field, by: path, value: 'WeaponDescriptor_YC_Illegal.${edit.at}' }
+            value:
+              $raw: ${edit.value}
+  - file: GameData/Generated/Gameplay/Gfx/UniteDescriptor.ndf
+    operations:
+      - op: copy
+        leadingComment: '${commentDirectives.forceInclude}'
+        selector: { kind: object, by: name, value: 'Descriptor_Unit_AIFV_B_C25_NL' }
+        destination: { name: 'Descriptor_Unit_YC_Illegal' }
+      - forEach:
+          - { at: 'DescriptorId', value: 'GUID:{9717f477-3796-45b3-9461-c1eedf12c004}' }
+          - { at: 'ClassNameForDebug', value: "'Unit_YC_Illegal'" }
+          - at: 'ModulesDescriptors.[TTypeUnitModuleDescriptor].MotherCountry'
+            value: '${modTagRaw}'
+        as: edit
+        do:
+          - op: modify
+            selector: { kind: field, by: path, value: 'Descriptor_Unit_YC_Illegal.${edit.at}' }
+            value:
+              $raw: ${edit.value}
+      - op: add
+        selector:
+          {
+            kind: collection,
+            by: path,
+            value: 'Descriptor_Unit_YC_Illegal.ModulesDescriptors.[TTagsModuleDescriptor].TagSet',
+          }
+        position: { mode: before, anchor: '"Unite"' }
+        value:
+          $raw: '"UNITE_YC_Illegal",'
+      - op: remove
+        selector:
+          {
+            kind: field,
+            by: path,
+            value: 'Descriptor_Unit_YC_Illegal.ModulesDescriptors.[value=$/GFX/Weapon/WeaponDescriptor_AIFV_B_C25_NL]',
+          }
+      - op: add
+        selector:
+          { kind: collection, by: path, value: 'Descriptor_Unit_YC_Illegal.ModulesDescriptors' }
+        position: { mode: before, anchor: 'TBaseDamageModuleDescriptor' }
+        value:
+          $raw: '$/GFX/Weapon/WeaponDescriptor_YC_Illegal,'
+      - op: remove
+        selector:
+          {
+            kind: field,
+            by: path,
+            value: 'Descriptor_Unit_YC_Illegal.ModulesDescriptors.[TAttackReactionModuleDescriptor]',
+          }
+      - op: add
+        selector:
+          { kind: collection, by: path, value: 'Descriptor_Unit_YC_Illegal.ModulesDescriptors' }
+        position: { mode: before, anchor: 'TMinimapDisplayModuleDescriptor' }
+        value:
+          $raw: |-
+            TAttackReactionModuleDescriptor
+            (
+                CanAssist = False
+                AssistRequestBroadcastRadiusGRU = 0.0
+                DistanceToFleeGRU = 0
+                MaxDistanceForOffensiveReactionGRU = 0
+                MaxDistanceForEngagementGRU = 0.0
+                SearchedTagsInEngagementTarget = [
+                   "AllUnits",
+                ]
+            ),
+      - forEach:
+          - at: 'ModulesDescriptors.[TScannerConfigurationDescriptor].VisionRangesGRU'
+            value: '${absurdVisionMapRaw}'
+          - at: 'ModulesDescriptors.[TScannerConfigurationDescriptor].OpticalStrengths'
+            value: |-
+              MAP [
+                  ( EOpticalStrength/Standard, 1.0 ),
+                  ( EOpticalStrength/LowAltitude, 1.0 ),
+                  ( EOpticalStrength/HighAltitude, 1.0 ),
+              ]
+          - at: 'ModulesDescriptors.[TProductionModuleDescriptor].ProductionRessourcesNeeded'
+            value: '${illegalProductionResourcesNeededRaw}'
+        as: edit
+        do:
+          - op: modify
+            selector: { kind: field, by: path, value: 'Descriptor_Unit_YC_Illegal.${edit.at}' }
+            value:
+              $raw: ${edit.value}
+      - op: modify
+        selector:
+          {
+            kind: field,
+            by: path,
+            value: 'Descriptor_Unit_YC_Illegal.ModulesDescriptors.[TStrategicDataModuleDescriptor].UnitAttackValue',
+          }
+        value: '${cheatUnitStrategicValue}'
+      - op: modify
+        selector:
+          {
+            kind: field,
+            by: path,
+            value: 'Descriptor_Unit_YC_Illegal.ModulesDescriptors.[TStrategicDataModuleDescriptor].UnitDefenseValue',
+          }
+        value: '${cheatUnitStrategicValue}'
+      - op: modify
+        selector:
+          {
+            kind: field,
+            by: path,
+            value: 'Descriptor_Unit_YC_Illegal.ModulesDescriptors.[TUnitUIModuleDescriptor].NameToken',
+          }
+        value:
+          $raw: "'YCILLEGAL'"
+      - op: copy
+        leadingComment: '${commentDirectives.forceInclude}'
+        selector: { kind: object, by: name, value: '${oracleSourceDescriptorName}' }
+        destination: { name: 'Descriptor_Unit_YC_Oracle' }
+      - forEach:
+          - { at: 'DescriptorId', value: 'GUID:{fe6de158-7da9-40be-9e0f-003dd403f9fe}' }
+          - { at: 'ClassNameForDebug', value: "'Unit_YC_Oracle'" }
+          - at: 'ModulesDescriptors.[TTagsModuleDescriptor].TagSet'
+            value: |-
+              [
+                  "AllUnits",
+                  "AllowedForMissileRoE",
+                  "Helo",
+                  "Helo_Reco",
+                  "Radio",
+                  "Reco",
+                  "UNITE_YC_Oracle",
+                  "Unite",
+              ]
+          - at: 'ModulesDescriptors.[TTypeUnitModuleDescriptor].MotherCountry'
+            value: '${modTagRaw}'
+          - at: 'ModulesDescriptors.[TScannerConfigurationDescriptor].VisionRangesGRU'
+            value: '${absurdVisionMapRaw}'
+          - at: 'ModulesDescriptors.[TScannerConfigurationDescriptor].OpticalStrengths'
+            value: '${absurdOpticalMapRaw}'
+          - at: 'ModulesDescriptors.[TReverseScannerWithIdentificationDescriptor].IdentifyBaseProbability'
+            value: '1.0'
+          - at: 'ModulesDescriptors.[TReverseScannerWithIdentificationDescriptor].TimeBetweenEachIdentifyRoll'
+            value: '1.0'
+          - at: 'ModulesDescriptors.[THelicopterMovementModuleDescriptor].FlyingAltitudeGRU'
+            value: '600'
+          - at: 'ModulesDescriptors.[THelicopterMovementModuleDescriptor].NearGroundFlyingAltitudeGRU'
+            value: '300'
+          - at: 'ModulesDescriptors.[TProductionModuleDescriptor].ProductionRessourcesNeeded'
+            value: '${oracleProductionResourcesNeededRaw}'
+          - { at: 'ModulesDescriptors.[TUnitUIModuleDescriptor].NameToken', value: "'YCORACLE'" }
+        as: edit
+        do:
+          - op: modify
+            selector: { kind: field, by: path, value: 'Descriptor_Unit_YC_Oracle.${edit.at}' }
+            value:
+              $raw: ${edit.value}
+      - op: modify
+        selector:
+          {
+            kind: field,
+            by: path,
+            value: 'Descriptor_Unit_YC_Illegal.ModulesDescriptors.[TUnitUIModuleDescriptor].ButtonTexture',
+          }
+        value:
+          $raw: "'Texture_Button_Unit_YC_Illegal'"
+      - op: modify
+        selector:
+          {
+            kind: field,
+            by: path,
+            value: 'Descriptor_Unit_YC_Oracle.ModulesDescriptors.[TUnitUIModuleDescriptor].ButtonTexture',
+          }
+        value:
+          $raw: "'Texture_Button_Unit_YC_Oracle'"
+  - file: GameData/Generated/UserInterface/Textures/ButtonTexturesUnites.ndf
+    operations:
+      - op: add
+        selector: { kind: collection, by: path, value: 'UnitButtonTextureAdditionalBank.Textures' }
+        value:
+          $raw: |-
+            ("Texture_Button_Unit_YC_Illegal", MAP [( ~/ComponentState/Normal, TUIResourceTexture( FileName = "GameData:/Assets/2D/Interface/Common/UnitsIcons/NATO/yc-illegal.png"))]),
+            ("Texture_Button_Unit_YC_Oracle", MAP [( ~/ComponentState/Normal, TUIResourceTexture( FileName = "GameData:/Assets/2D/Interface/Common/UnitsIcons/NATO/yc-oracle.png"))]),

@@ -1,0 +1,161 @@
+version: 1
+id: 'ysm.decks.generation'
+name: 'YSM Deck Generation'
+description: 'Generates every YSM division and premade deck -- one per nation, one per coalition, one holding all units, plus the zombie horde -- and the cost matrix they share.'
+enabled: true
+scope: 'prod'
+# Only the faction is required: every division names its country, type, and emblem.
+dependsOn:
+  - 'ysm.core.faction'
+# `unsafeToRemove` keeps the identity stores out of a plain `cleanup`. Clearing one is a
+# complete reset: its localisation rows go and its divisions are renumbered, so decks
+# players saved against the old ids stop resolving.
+tempPaths:
+  - path: 'generated-decks.core.store.json'
+    unsafeToRemove: true
+  - path: 'generated-decks.horde.store.json'
+    unsafeToRemove: true
+variables:
+  # One cost per slot. Referenced by every division this patch generates.
+  deckSlotCostMatrixRow: ${join(repeat(1, deckSlotCount), ', ')}
+
+  # Smallest roster worth a division. 0 turns the check off.
+  minimumContextUnitCount: 3
+  # A roster nobody can lead makes an unplayable deck.
+  requireCommandUnitInContext: true
+  # Transport price cap as a multiple of its passenger. 0 disables; divisions still offer all.
+  deckMaxTransportCostRatio: 2
+
+  # Placeholders: {label}, {modTag}, {mode}, {coalition}, {country}, {name}, {code}.
+  divisionNaming:
+    divisionName: '{label} {modTag} {mode} DIVISION'
+    deckName: '{label} {modTag} {mode} DECK'
+    countryLabel: '[{country} UNITS ONLY]'
+    sideLabel: '[{coalition} UNITS ONLY]'
+    allSideLabel: '[ALL UNITS]'
+    customLabel: '[{name}]'
+
+  # Its own name and emblem, so it reads as a third faction. Texture from `ysm.core.faction`.
+  hordeDivisionName: 'ZOMBIE HORDE'
+  hordeEmblemTexture: 'Texture{modTag}_Division_HORDE'
+
+  # YSM is an ignored country below; these two lists are how its own units get back in.
+  alwaysInUnlimitedPatterns:
+    - '^Descriptor_Unit_YS_'
+    - '^Descriptor_Unit_YC_'
+    - '^Descriptor_Unit_YN_'
+  # Division side only: the ALL UNITS divisions field zombies, the premade decks do not.
+  alwaysInAllUnitsPatterns:
+    - '^Descriptor_Unit_YZ_'
+
+  # A plain name shapes the run, `division*` the pool, `deck*` the premades. Nested: a
+  # division ignore empties the decks; a deck force fills the division.
+  deckGeneration:
+    deckSlotCount: ${deckSlotCount}
+    unlimitedPackUnitCount: ${unlimitedPackUnitCount}
+    excludeHidden: ${excludeHidden}
+    minimumContextUnitCount: ${minimumContextUnitCount}
+    requireCommandUnitInContext: ${requireCommandUnitInContext}
+    commentDirectives: ${commentDirectives}
+    naming: ${divisionNaming}
+    contextGeneration:
+      countries: true # one division per nation
+      coalitions: true # NATO-only and PACT-only
+      allSides: true # every unit, per side
+    # Vanilla rule blocks to skip when learning Balanced availability. Never add `_multi_`
+    # -- those are the primary source of sane numbers.
+    ignoredDivisionRuleNamePatterns:
+      - '_challenge_'
+      - '_special_'
+
+    # No YSM division, and no YSM unit anywhere except where the force list names it.
+    divisionIgnoredCountryIds:
+      - '${modTag}'
+    # Normally empty: a division fields every in-game unit.
+    # divisionIgnoredUnitPatterns: []
+    divisionForcedUnitPatterns:
+      allSideBalanced: ${alwaysInAllUnitsPatterns}
+      allSideUnlimited: ${alwaysInAllUnitsPatterns}
+    # Inert while YSM is an ignored country.
+    # divisionPolicies: {}
+
+    # No YSM deck, and no YSM unit recommended except where the force list names it.
+    deckIgnoredCountryIds:
+      - '${modTag}'
+    # deckIgnoredUnitPatterns: []
+    deckForcedUnitPatterns:
+      countryUnlimited: ${alwaysInUnlimitedPatterns}
+      sideUnlimited: ${alwaysInUnlimitedPatterns}
+      allSideUnlimited: ${alwaysInUnlimitedPatterns}
+    # deckPolicies: {}   # inert for the same reason as divisionPolicies
+    deckPreferredCountryIdsByCoalition:
+      NATO: ['US']
+      PACT: ['SOV']
+    deckMaxTransportCostRatio: ${deckMaxTransportCostRatio}
+
+  # The horde lists its units instead of scanning the roster, and repeats none of the
+  # roster pass's ignore lists. `skipIfEmpty` drops it when the zombie patches are off.
+  hordeDeckGeneration:
+    deckSlotCount: ${deckSlotCount}
+    unlimitedPackUnitCount: ${unlimitedPackUnitCount}
+    minimumContextUnitCount: ${minimumContextUnitCount}
+    requireCommandUnitInContext: ${requireCommandUnitInContext}
+    commentDirectives: ${commentDirectives}
+    deckMaxTransportCostRatio: ${deckMaxTransportCostRatio}
+    # `[NATO] ZOMBIE HORDE`: no mod tag, no mode.
+    naming:
+      divisionName: '{label}'
+      deckName: '{label}'
+      customLabel: '[{coalition}] {name}'
+    contextGeneration:
+      countries: false
+      coalitions: false
+      allSides: false
+    customDivisions:
+      - code: 'ZOMBIE_HORDE_BLUE'
+        name: '${hordeDivisionName}'
+        coalition: 'NATO'
+        countryId: '${modTag}'
+        enabled: true
+        skipIfEmpty: true
+        tags: ['ZOMBIES', 'HORDE']
+        modes: ['Unlimited']
+        emblemTexture: '${hordeEmblemTexture}'
+        unitPatterns: ['^Descriptor_Unit_YZ_']
+      - code: 'ZOMBIE_HORDE_RED'
+        name: '${hordeDivisionName}'
+        coalition: 'PACT'
+        countryId: '${modTag}'
+        enabled: true
+        skipIfEmpty: true
+        tags: ['ZOMBIES', 'HORDE']
+        modes: ['Unlimited']
+        emblemTexture: '${hordeEmblemTexture}'
+        unitPatterns: ['^Descriptor_Unit_YZ_']
+targets:
+  - file: 'GameData/Generated/Gameplay/Decks/DivisionCostMatrix.ndf'
+    operations:
+      - op: 'add'
+        position: { mode: 'after', anchor: 'MatrixCostName_WP_Unternehmen_Zentrum_multi' }
+        value:
+          $raw: |-
+            MatrixCostName_${modTag} is MAP
+            [
+                (Factory/Art, [${deckSlotCostMatrixRow}]),
+                (Factory/DCA, [${deckSlotCostMatrixRow}]),
+                (Factory/Defense, [${deckSlotCostMatrixRow}]),
+                (Factory/Helis, [${deckSlotCostMatrixRow}]),
+                (Factory/Infantry, [${deckSlotCostMatrixRow}]),
+                (Factory/Logistic, [${deckSlotCostMatrixRow}]),
+                (Factory/Planes, [${deckSlotCostMatrixRow}]),
+                (Factory/Recons, [${deckSlotCostMatrixRow}]),
+                (Factory/Tanks, [${deckSlotCostMatrixRow}]),
+            ]
+scripts:
+  - path: 'generate-decks.ts'
+    tests:
+      - 'config-validation.test.ts'
+      - 'generate-decks.test.ts'
+      # Written by the generation run itself.
+      - path: 'identity-stores.test.ts'
+        when: 'after'
