@@ -1,0 +1,116 @@
+version: 1
+id: 'ysm.ui.ingame.offmap-panel'
+name: 'YSM Offmap Panel'
+description: 'Turns the off-map panel into a scrolling grid so it can hold every YSM air slot.'
+enabled: true
+scope: 'prod'
+optional: true
+dependsOn: []
+targets:
+  - file: 'GameData/UserInterface/Use/InGame/UISpecificOffMapView.ndf'
+    operations:
+      - op: 'remove'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'BUCKSpecificOffMapMainComponentDescriptor.Components'
+      - op: 'add'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'BUCKSpecificOffMapMainComponentDescriptor.Components'
+        value:
+          $raw: |-
+            [
+                PanelRoundedCorner (),
+                BUCKListDescriptor
+                (
+                    ComponentFrame = TUIFramePropertyRTTI
+                    (
+                        RelativeWidthHeight = [1.0, 0.0]
+                    )
+
+                    Axis = ~/ListAxis/Vertical
+                    LastMargin = TRTTILength(Magnifiable = 5)
+                    ChildFitToContent = true
+
+                    Elements =
+                    [
+                        BUCKListElementDescriptor
+                        (
+                            ComponentDescriptor = BUCKTextDescriptor
+                            (
+                                ComponentFrame = TUIFramePropertyRTTI
+                                (
+                                    MagnifiableWidthHeight = [0.0, 25.0]
+                                )
+
+                                TextPadding = TRTTILength4(Magnifiable = [6.0, 0.0, 0.0, 0.0])
+                                ParagraphStyle = ~/paragraphStyleTextLeftAlign
+                                TextStyle = "Default"
+                                HorizontalFitStyle = ~/FitStyle/FitToContent
+                                VerticalFitStyle = ~/FitStyle/UserDefined
+                                TextColor = "BlancEquipe"
+                                TextSize = "16"
+                                TextToken = "TTL_OFFMAP"
+                                TextDico = ~/LocalisationConstantes/dico_interface_ingame
+                                TypefaceToken = "UIMainFont"
+                                Hint = BUCKSpecificHintableArea
+                                (
+                                    DicoToken = ~/LocalisationConstantes/dico_interface_ingame
+                                    HintTitleToken = "HOM_TITLET"
+                                    HintBodyToken = "HOM_TITLEB"
+                                    HintExtendedToken = "HOM_TITLEE"
+                                )
+                            )
+                        ),
+                        BUCKListElementDescriptor
+                        (
+                            ComponentDescriptor = BUCKSpecificScrollingContainerDescriptor
+                            (
+                                ElementName = 'UnitGridScrollingContainerYSM'
+                                ComponentFrame = TUIFramePropertyRTTI
+                                (
+                                    RelativeWidthHeight = [1.0, 0.0]
+                                )
+
+                                ExternalScrollbar = false
+                                HasVerticalScrollbar = true
+                                FitStyle = ~/ContainerFitStyle/FitToContentVertically
+                                FitToMaximumSize = TRTTILength2(Magnifiable = [0.0, 430.0])
+                                ScrollStepSize = [0.0, 20.0]
+
+                                VerticalScrollbarComponentFrame = TUIFramePropertyRTTI
+                                (
+                                    MagnifiableWidthHeight = [10.0, 0.0]
+                                    MagnifiableOffset = [-3.0, 0.0]
+                                    AlignementToFather = [1.0, 0.0]
+                                    AlignementToAnchor = [1.0, 0.0]
+                                )
+
+                                ScrollBarBackgroundToken = "H2_bleu_2"
+                                ScrollBarElevatorBackgroundToken = "BoutonTemps_Background"
+
+                                Components =
+                                [
+                                    BUCKGridDescriptor
+                                    (
+                                        ElementName = 'UnitGrid'
+                                        ComponentFrame = TUIFramePropertyRTTI()
+
+                                        FirstElementMargin = TRTTILength2(Magnifiable = [10.0, 0.0])
+                                        InterElementMargin = TRTTILength2(Magnifiable = [3.0, 3.0])
+
+                                        MaxElementsPerDimension = [${planeCap / 3}, ${planeCap / 3}]
+
+                                        GridElements = MAP
+                                        [
+                                        ${join(cartesian(planeCap / 3, 3, "( [{left}, {right}], ~/DummyOffMapPanel )"), ",\n                                        ")}
+                                        ]
+                                    )
+                                ]
+                            )
+                        )
+                    ]
+                )
+            ]

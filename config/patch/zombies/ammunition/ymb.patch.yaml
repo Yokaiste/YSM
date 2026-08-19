@@ -1,0 +1,312 @@
+version: 1
+id: ysm.zombies.ammunition
+name: YSM Zombie Ammunition
+description: Defines the zombie attack profiles -- melee, panic scream, smoke, demolition charge, and anti-helicopter -- and the weapon-panel icon for each.
+enabled: true
+scope: prod
+# The whole zombie chain cascades from here.
+optional: true
+dependsOn: []
+files:
+  - op: copy
+    source: { root: patch, path: assets }
+    destination: GameData/Assets/2D/Interface/Common/UnitsIcons/Armes/Panel_Info
+    expect: { files: 10 }
+variables:
+  # One row per attack profile. The panel icon and its texture are both derived from `id`.
+  zombieAmmo:
+    - id: Assault_Shards
+      from: Ammo_SHOT_KS_23
+      set:
+        - { field: DescriptorId, value: 'GUID:{71563898-d2e0-4298-93a1-721891f0e44e}' }
+        - { field: Name, value: "'YZSHARD'" }
+        - { field: MaximumRangeGRU, value: '35' }
+        - { field: PhysicalDamages, value: '6.6' }
+        - { field: SuppressDamages, value: '320.0' }
+        - { field: RadiusSplashPhysicalDamagesGRU, value: '10' }
+        - { field: RadiusSplashSuppressDamagesGRU, value: '30' }
+        - { field: AllowSuppressDamageWhenNoImpact, value: 'True' }
+        - { field: DispersionAtMaxRangeGRU, value: '2' }
+        - { field: AimingTime, value: '0.0' }
+        - { field: TimeBetweenTwoShots, value: '0.2' }
+        - { field: TimeBetweenTwoSalvos, value: '0.8' }
+        - { field: ShotsCountPerSalvo, value: '8' }
+        - { field: SupplyCost, value: '2.5' }
+        - { field: CanShootWhileMoving, value: 'True' }
+    - id: Scout_Shards
+      from: Ammo_SHOT_KS_23
+      set:
+        - { field: DescriptorId, value: 'GUID:{339620cd-d829-4d40-a054-f75296b949ef}' }
+        - { field: Name, value: "'YZSHARD'" }
+        - { field: MaximumRangeGRU, value: '30' }
+        - { field: PhysicalDamages, value: '4.5' }
+        - { field: SuppressDamages, value: '240.0' }
+        - { field: RadiusSplashPhysicalDamagesGRU, value: '8' }
+        - { field: RadiusSplashSuppressDamagesGRU, value: '22' }
+        - { field: AllowSuppressDamageWhenNoImpact, value: 'True' }
+        - { field: DispersionAtMaxRangeGRU, value: '2' }
+        - { field: AimingTime, value: '0.0' }
+        - { field: TimeBetweenTwoShots, value: '0.2' }
+        - { field: TimeBetweenTwoSalvos, value: '0.9' }
+        - { field: ShotsCountPerSalvo, value: '6' }
+        - { field: SupplyCost, value: '1.8' }
+        - { field: CanShootWhileMoving, value: 'True' }
+    - id: Demolisher_Shards
+      from: Ammo_SHOT_KS_23
+      set:
+        - { field: DescriptorId, value: 'GUID:{4bd22c19-5994-4371-aba4-93863d14a4e3}' }
+        - { field: Name, value: "'YZSHARD'" }
+        - { field: MaximumRangeGRU, value: '22' }
+        - { field: PhysicalDamages, value: '8.0' }
+        - { field: SuppressDamages, value: '340.0' }
+        - { field: RadiusSplashPhysicalDamagesGRU, value: '12' }
+        - { field: RadiusSplashSuppressDamagesGRU, value: '34' }
+        - { field: AllowSuppressDamageWhenNoImpact, value: 'True' }
+        - { field: DispersionAtMaxRangeGRU, value: '2' }
+        - { field: AimingTime, value: '0.0' }
+        - { field: TimeBetweenTwoShots, value: '0.2' }
+        - { field: TimeBetweenTwoSalvos, value: '1.0' }
+        - { field: ShotsCountPerSalvo, value: '8' }
+        - { field: SupplyCost, value: '3.2' }
+        - { field: CanShootWhileMoving, value: 'True' }
+    - id: Swarm_Bite
+      from: Ammo_Grenade_Satchel_Charge
+      set:
+        - { field: DescriptorId, value: 'GUID:{0d715e46-89f7-4608-ad68-78aabdb9c693}' }
+        - { field: Name, value: "'YZBITE'" }
+        - { field: Arme, value: 'TDamageTypeRTTI(Family=DamageFamily_ap Index=19)' }
+        - { field: WeaponCursorType, value: 'Weapon_Cursor_Canon' }
+        - { field: MinMaxCategory, value: 'MinMax_CanonAP' }
+        - { field: ProjectileType, value: 'EProjectileType/Obus' }
+        - { field: PitchForParabolic, value: '0' }
+        - { field: MaximumRangeGRU, value: '70' }
+        - { field: PhysicalDamages, value: '32.0' }
+        - { field: SuppressDamages, value: '520.0' }
+        - { field: RadiusSplashPhysicalDamagesGRU, value: '18' }
+        - { field: RadiusSplashSuppressDamagesGRU, value: '50' }
+        - { field: TargetOnlyOneUnitInDistrict, value: 'True' }
+        - { field: DisplaySalveAccuracy, value: 'False' }
+        - field: DamageTypeEvolutionOverRangeDescriptor
+          value: '~/DamageTypeEvolutionOverRangeDescriptor_AP1_1Km'
+        - { field: TirIndirect, value: 'False' }
+        - { field: ProjectileSpeedGRU, value: '90' }
+        - { field: TimeBetweenTwoShots, value: '0.5' }
+        - { field: TimeBetweenTwoFx, value: '0.2' }
+        - { field: CanShootWhileMoving, value: 'True' }
+        - { field: TimeBetweenTwoSalvos, value: '0.7' }
+        - { field: SupplyCost, value: '2.5' }
+        - { field: CanShootOnPosition, value: 'False' }
+        - { field: NbSalvosShootOnPosition, value: '0' }
+    - id: Breaker_Maul
+      from: Ammo_Grenade_Satchel_Charge
+      set:
+        - { field: DescriptorId, value: 'GUID:{54e69cda-6023-49b8-9672-7bb322d04d08}' }
+        - { field: Name, value: "'YZMAUL'" }
+        - { field: WeaponCursorType, value: 'Weapon_Cursor_Canon' }
+        - { field: MinMaxCategory, value: 'MinMax_CanonAP' }
+        - { field: MaximumRangeGRU, value: '85' }
+        - { field: Arme, value: 'TDamageTypeRTTI(Family=DamageFamily_ap Index=19)' }
+        - { field: ProjectileType, value: 'EProjectileType/Obus' }
+        - { field: PitchForParabolic, value: '0' }
+        - { field: PhysicalDamages, value: '54.0' }
+        - { field: SuppressDamages, value: '700.0' }
+        - { field: RadiusSplashPhysicalDamagesGRU, value: '34' }
+        - { field: RadiusSplashSuppressDamagesGRU, value: '80' }
+        - { field: DisplaySalveAccuracy, value: 'False' }
+        - { field: TargetOnlyOneUnitInDistrict, value: 'True' }
+        - { field: TirIndirect, value: 'False' }
+        - { field: ProjectileSpeedGRU, value: '85' }
+        - { field: AimingTime, value: '0.05' }
+        - { field: TimeBetweenTwoShots, value: '0.7' }
+        - { field: TimeBetweenTwoFx, value: '0.2' }
+        - { field: CanShootWhileMoving, value: 'True' }
+        - { field: TimeBetweenTwoSalvos, value: '0.9' }
+        - { field: SupplyCost, value: '10.0' }
+        - { field: CanShootOnPosition, value: 'False' }
+        - { field: NbSalvosShootOnPosition, value: '0' }
+    - id: Stalker_Talons
+      from: Ammo_Grenade_Satchel_Charge
+      set:
+        - { field: DescriptorId, value: 'GUID:{ab21f63e-ac39-4e73-817f-918aa6400899}' }
+        - { field: Name, value: "'YZTALON'" }
+        - { field: Arme, value: 'TDamageTypeRTTI(Family=DamageFamily_ap Index=19)' }
+        - { field: WeaponCursorType, value: 'Weapon_Cursor_Canon' }
+        - { field: MinMaxCategory, value: 'MinMax_CanonAP' }
+        - { field: ProjectileType, value: 'EProjectileType/Obus' }
+        - { field: PitchForParabolic, value: '0' }
+        - { field: MaximumRangeGRU, value: '65' }
+        - { field: PhysicalDamages, value: '18.0' }
+        - { field: SuppressDamages, value: '360.0' }
+        - { field: RadiusSplashPhysicalDamagesGRU, value: '12' }
+        - { field: RadiusSplashSuppressDamagesGRU, value: '30' }
+        - { field: TargetOnlyOneUnitInDistrict, value: 'True' }
+        - { field: DisplaySalveAccuracy, value: 'False' }
+        - field: DamageTypeEvolutionOverRangeDescriptor
+          value: '~/DamageTypeEvolutionOverRangeDescriptor_AP1_1Km'
+        - { field: TirIndirect, value: 'False' }
+        - { field: ProjectileSpeedGRU, value: '95' }
+        - { field: TimeBetweenTwoShots, value: '0.5' }
+        - { field: TimeBetweenTwoFx, value: '0.2' }
+        - { field: CanShootWhileMoving, value: 'True' }
+        - { field: TimeBetweenTwoSalvos, value: '0.8' }
+        - { field: SupplyCost, value: '2.0' }
+        - { field: CanShootOnPosition, value: 'False' }
+        - { field: NbSalvosShootOnPosition, value: '0' }
+    - id: PackLeader_Fangs
+      from: Ammo_Grenade_Satchel_Charge
+      set:
+        - { field: DescriptorId, value: 'GUID:{33bcea1e-1a62-4c76-bae0-8616f045a7a0}' }
+        - { field: Name, value: "'YZFANG'" }
+        - { field: Arme, value: 'TDamageTypeRTTI(Family=DamageFamily_ap Index=19)' }
+        - { field: WeaponCursorType, value: 'Weapon_Cursor_Canon' }
+        - { field: MinMaxCategory, value: 'MinMax_CanonAP' }
+        - { field: ProjectileType, value: 'EProjectileType/Obus' }
+        - { field: PitchForParabolic, value: '0' }
+        - { field: MaximumRangeGRU, value: '80' }
+        - { field: PhysicalDamages, value: '43.0' }
+        - { field: SuppressDamages, value: '600.0' }
+        - { field: RadiusSplashPhysicalDamagesGRU, value: '18' }
+        - { field: RadiusSplashSuppressDamagesGRU, value: '45' }
+        - { field: TargetOnlyOneUnitInDistrict, value: 'True' }
+        - { field: DisplaySalveAccuracy, value: 'False' }
+        - field: DamageTypeEvolutionOverRangeDescriptor
+          value: '~/DamageTypeEvolutionOverRangeDescriptor_AP1_1Km'
+        - { field: TirIndirect, value: 'False' }
+        - { field: ProjectileSpeedGRU, value: '85' }
+        - { field: AimingTime, value: '0.05' }
+        - { field: TimeBetweenTwoShots, value: '0.7' }
+        - { field: TimeBetweenTwoFx, value: '0.2' }
+        - { field: CanShootWhileMoving, value: 'True' }
+        - { field: TimeBetweenTwoSalvos, value: '1.0' }
+        - { field: SupplyCost, value: '3.0' }
+        - { field: CanShootOnPosition, value: 'False' }
+        - { field: NbSalvosShootOnPosition, value: '0' }
+    - id: Demolisher_Charge
+      from: Ammo_Grenade_Satchel_Charge
+      set:
+        - { field: DescriptorId, value: 'GUID:{11927107-be27-4830-a33f-6700cf1595f6}' }
+        - { field: Name, value: "'YZCHARGE'" }
+        - { field: WeaponCursorType, value: 'Weapon_Cursor_Canon' }
+        - { field: MinMaxCategory, value: 'MinMax_CanonAP' }
+        - { field: MaximumRangeGRU, value: '100' }
+        - { field: MaximumRangeHelicopterGRU, value: '90' }
+        - { field: Arme, value: 'TDamageTypeRTTI(Family=DamageFamily_ap Index=19)' }
+        - { field: ProjectileType, value: 'EProjectileType/Obus' }
+        - { field: PitchForParabolic, value: '0' }
+        - { field: RadiusSplashPhysicalDamagesGRU, value: '120' }
+        - { field: PhysicalDamages, value: '720.0' }
+        - { field: RadiusSplashSuppressDamagesGRU, value: '220' }
+        - { field: SuppressDamages, value: '6000.0' }
+        - { field: TimeBetweenTwoShots, value: '12.0' }
+        - { field: TimeBetweenTwoFx, value: '1.2' }
+        - { field: DisplaySalveAccuracy, value: 'False' }
+        - { field: ProjectileSpeedGRU, value: '110' }
+        - { field: AimingTime, value: '2.8' }
+        - { field: TirIndirect, value: 'False' }
+        - { field: TimeBetweenTwoSalvos, value: '12.0' }
+        - { field: CanShootOnPosition, value: 'False' }
+        - { field: NbSalvosShootOnPosition, value: '0' }
+        - { field: FireDescriptor, value: 'nil' }
+        - { field: FireTriggeringProbability, value: '0.0' }
+        - field: DamageTypeEvolutionOverRangeDescriptor
+          value: '~/DamageTypeEvolutionOverRangeDescriptor_AP1_1Km'
+    - id: Smoker_Cloud
+      from: Ammo_Mortier_M252_81mm_SMOKE
+      set:
+        - { field: DescriptorId, value: 'GUID:{d6dc9c0d-ac0a-4661-97fc-5a46e4f3fea5}' }
+        - { field: Name, value: "'YZSMOG'" }
+        - { field: WeaponCursorType, value: 'Weapon_Cursor_MachineGun' }
+        - { field: MinMaxCategory, value: 'MinMax_Grenade' }
+        - { field: ProjectileType, value: 'EProjectileType/Grenade' }
+        - { field: ImpactHappening, value: "'GrenadeVehicleSmokeX8'" }
+        - { field: MinimumRangeGRU, value: '0' }
+        - { field: MaximumRangeGRU, value: '260' }
+        - { field: PhysicalDamages, value: '0.0' }
+        - { field: SuppressDamages, value: '800.0' }
+        - { field: RadiusSplashPhysicalDamagesGRU, value: '0' }
+        - { field: RadiusSplashSuppressDamagesGRU, value: '60' }
+        - { field: AimingTime, value: '0.0' }
+        - { field: TimeBetweenTwoShots, value: '0.4' }
+        - { field: TimeBetweenTwoFx, value: '0.1' }
+        - { field: TimeBetweenTwoSalvos, value: '4.0' }
+        - { field: ShotsCountPerSalvo, value: '8' }
+        - { field: SimultaneousShotsCount, value: '8' }
+        - { field: ProjectileSpeedGRU, value: '200' }
+        - { field: SupplyCost, value: '0.5' }
+        - { field: CanShootWhileMoving, value: 'True' }
+        - { field: HasDeploymentTime, value: 'False' }
+        - { field: TirReflexe, value: 'True' }
+        - { field: SmokeDescriptor, value: '$/GFX/Weapon/Descriptor_Smoke_Fumi_smoke_grenade' }
+        - { field: IsHarmlessForAllies, value: 'True' }
+        - { field: FireDescriptor, value: 'nil' }
+        - { field: FireTriggeringProbability, value: '0.0' }
+  # Screecher spit is anti-air, so it lives in AmmunitionMissiles.
+  zombieMissileAmmo:
+    - id: Screecher_Spore
+      from: Ammo_MANPAD_igla
+      set:
+        - { field: DescriptorId, value: 'GUID:{49d9b837-cbf3-409a-818e-3e600f790d4a}' }
+        - { field: Name, value: "'YZSPIT'" }
+        - { field: MaximumRangeHelicopterGRU, value: '400' }
+        - { field: MaximumRangeAirplaneGRU, value: '300' }
+        - { field: RadiusSplashPhysicalDamagesGRU, value: '8' }
+        - { field: PhysicalDamages, value: '18.0' }
+        - { field: RadiusSplashSuppressDamagesGRU, value: '80' }
+        - { field: SuppressDamages, value: '700.0' }
+        - field: HitRollRuleDescriptor
+          value: |-
+            TDiceHitRollRuleDescriptor
+            (
+                BaseCriticModifier = 0
+                BaseHitValueModifiers =
+                [
+                    (EBaseHitValueModifier/Base, -10),
+                    (EBaseHitValueModifier/Idling, 15),
+                    (EBaseHitValueModifier/Moving, -25),
+                    (EBaseHitValueModifier/Targeted, 0),
+                ]
+                DistanceToTarget = True
+            )
+        - { field: AimingTime, value: '0.0' }
+        - { field: TimeBetweenTwoSalvos, value: '7.5' }
+        - { field: SupplyCost, value: '24' }
+        - { field: CanShootWhileMoving, value: 'True' }
+  allZombieAmmo: ${concat(zombieAmmo, zombieMissileAmmo)}
+  iconPath: GameData:/Assets/2D/Interface/Common/UnitsIcons/Armes/Panel_Info
+targets:
+  - file: GameData/Generated/Gameplay/Gfx/Ammunition.ndf
+    operations:
+      - forEach: ${zombieAmmo}
+        as: ammo
+        do: &applyAmmo
+          - op: copy
+            selector: { kind: object, by: name, value: '${ammo.from}' }
+            destination: { name: 'Ammo_YZ_${ammo.id}' }
+          - forEach: ${ammo.set}
+            as: edit
+            do:
+              - op: modify
+                selector: { kind: field, by: path, value: 'Ammo_YZ_${ammo.id}.${edit.field}' }
+                value:
+                  $raw: ${edit.value}
+          - op: modify
+            selector: { kind: field, by: path, value: 'Ammo_YZ_${ammo.id}.InterfaceWeaponTexture' }
+            value:
+              $string: Texture_Interface_Weapon_YZ_${ammo.id}
+  - file: GameData/Generated/Gameplay/Gfx/AmmunitionMissiles.ndf
+    operations:
+      - forEach: ${zombieMissileAmmo}
+        as: ammo
+        do: *applyAmmo
+  - file: GameData/Generated/UserInterface/Textures/WeaponTextures.ndf
+    operations:
+      - forEach: ${allZombieAmmo}
+        as: ammo
+        do:
+          - op: add
+            value:
+              $raw: 'Texture_Interface_Weapon_YZ_${ammo.id} is TUIResourceTexture_Common(FileName = "${iconPath}/YZ_${ammo.id}.png")'
+          - op: add
+            selector: { kind: collection, by: path, value: WeaponAdditionalTextureBank.Textures }
+            value:
+              $raw: '("Texture_Interface_Weapon_YZ_${ammo.id}", MAP [(~/ComponentState/Normal, ~/Texture_Interface_Weapon_YZ_${ammo.id})]),'

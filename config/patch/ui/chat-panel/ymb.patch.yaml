@@ -1,0 +1,18 @@
+version: 1
+id: 'ysm.ui.chat-panel'
+name: 'YSM Chat Panel'
+description: 'Moves the chat panel up so it stops overlapping the wider YSM unit bar.'
+enabled: true
+scope: 'prod'
+optional: true
+dependsOn: []
+targets:
+  - file: 'GameData/UserInterface/Use/Common/UISpecificChatView.ndf'
+    operations:
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'BUCKSpecificGameChatMainComponentDescriptor.ComponentFrame.MagnifiableOffset'
+        value:
+          $raw: '[10.0, -480.0]'

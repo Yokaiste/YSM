@@ -1,0 +1,264 @@
+version: 1
+id: 'ysm.sandbox.supply-buildings'
+name: 'YSM Supply Buildings'
+description: 'Adds three deployable bases -- a plain resupply post, a hardened bunker, and a SIGINT/jammer doomsday emplacement -- with their own unit cards.'
+enabled: true
+scope: 'prod'
+# Cloned from a vanilla FOB.
+optional: true
+dependsOn: []
+files:
+  - op: 'copy'
+    source: { root: 'patch', path: 'assets' }
+    destination: 'GameData/Assets/2D/Interface/Common/UnitsIcons/NATO'
+    expect: { files: 1 }
+variables:
+  modTagRaw: "'${modTag}'"
+  # Vanilla building these three are cloned from.
+  fobSourceDescriptorName: 'Descriptor_Unit_FOB_US'
+
+  # The one number to update if a WARNO patch reprices the FOB; every tier follows.
+  supplyBuildingSourceCost: 175
+  # Health of the hardened bunker and doomsday buildings.
+  fortifiedSupplyBuildingHealth: 50
+  # The doomsday base: a SIGINT/jammer emplacement with a huge deployment radius.
+  doomsdaySalvoCount: 999
+  doomsdayDeploymentShiftGruRaw: '100000.0'
+
+  # Each tier is the one below times `fortifiedTierPriceMultiplier`. `x - x % 1` floors it:
+  # command points must be whole and the expression language has no rounding helper.
+  supplyBaseCostRaw: ${supplyBuildingSourceCost * unlimitedPriceMultiplier}
+  supplyBaseCommandPointCost: ${supplyBaseCostRaw - supplyBaseCostRaw % 1}
+  supplyBunkerCostRaw: ${supplyBaseCommandPointCost * fortifiedTierPriceMultiplier}
+  supplyBunkerCommandPointCost: ${supplyBunkerCostRaw - supplyBunkerCostRaw % 1}
+  doomsdayCostRaw: ${supplyBunkerCommandPointCost * fortifiedTierPriceMultiplier}
+  doomsdayCommandPointCost: ${doomsdayCostRaw - doomsdayCostRaw % 1}
+
+  supplyBaseProductionResourcesNeededRaw: "${'MAP [\\n        ($/GFX/Resources/Resource_CommandPoints, ' + supplyBaseCommandPointCost + '),\\n    ]'}"
+  supplyBunkerProductionResourcesNeededRaw: "${'MAP [\\n        ($/GFX/Resources/Resource_CommandPoints, ' + supplyBunkerCommandPointCost + '),\\n    ]'}"
+  doomsdayProductionResourcesNeededRaw: "${'MAP [\\n        ($/GFX/Resources/Resource_CommandPoints, ' + doomsdayCommandPointCost + '),\\n    ]'}"
+targets:
+  - file: GameData/Generated/Gameplay/Gfx/WeaponDescriptor.ndf
+    operations:
+      - op: copy
+        selector: { kind: object, by: name, value: 'WeaponDescriptor_M113_ADATS_CAN' }
+        destination: { name: 'WeaponDescriptor_YS_Doomsday' }
+      - op: modify
+        selector: { kind: field, by: path, value: 'WeaponDescriptor_YS_Doomsday.Salves' }
+        value:
+          $raw: "${'[ ' + join(repeat(doomsdaySalvoCount, 2), ', ') + ' ]'}"
+      - op: remove
+        selector:
+          {
+            kind: field,
+            by: path,
+            value: 'WeaponDescriptor_YS_Doomsday.TurretDescriptorList.[TTurretUnitDescriptor]',
+          }
+  - file: GameData/Generated/Gameplay/Gfx/BuildingDescriptors.ndf
+    operations:
+      - op: copy
+        leadingComment: '${commentDirectives.forceInclude}'
+        selector: { kind: object, by: name, value: '${fobSourceDescriptorName}' }
+        destination: { name: 'Descriptor_Unit_YS_Supply_Base' }
+      - forEach:
+          - { at: 'DescriptorId', value: 'GUID:{8152B76B-D4E3-4ABE-86B2-09F5393A2FDF}' }
+          - { at: 'ClassNameForDebug', value: "'Building_YS_Supply_Base'" }
+          - at: 'ModulesDescriptors.[TTypeUnitModuleDescriptor].MotherCountry'
+            value: '${modTagRaw}'
+          - at: 'ModulesDescriptors.[TSupplyModuleDescriptor].SupplyCapacity'
+            value: '${unlimitedSupplyCapacity}'
+          - at: 'ModulesDescriptors.[TProductionModuleDescriptor].ProductionRessourcesNeeded'
+            value: '${supplyBaseProductionResourcesNeededRaw}'
+          - { at: 'ModulesDescriptors.[TUnitUIModuleDescriptor].NameToken', value: "'YSBASE'" }
+        as: edit
+        do:
+          - op: modify
+            selector: { kind: field, by: path, value: 'Descriptor_Unit_YS_Supply_Base.${edit.at}' }
+            value:
+              $raw: ${edit.value}
+      - op: copy
+        leadingComment: '${commentDirectives.forceInclude}'
+        selector: { kind: object, by: name, value: '${fobSourceDescriptorName}' }
+        destination: { name: 'Descriptor_Unit_YS_Supply_Bunker' }
+      - forEach:
+          - { at: 'DescriptorId', value: 'GUID:{24AA3EFA-58A0-4519-9113-0852A22FC419}' }
+          - { at: 'ClassNameForDebug', value: "'Building_YS_Supply_Bunker'" }
+          - at: 'ModulesDescriptors.[TTypeUnitModuleDescriptor].MotherCountry'
+            value: '${modTagRaw}'
+          - at: 'ModulesDescriptors.[TSupplyModuleDescriptor].SupplyCapacity'
+            value: '${unlimitedSupplyCapacity}'
+          - at: 'ModulesDescriptors.[TProductionModuleDescriptor].ProductionRessourcesNeeded'
+            value: '${supplyBunkerProductionResourcesNeededRaw}'
+        as: edit
+        do:
+          - op: modify
+            selector:
+              { kind: field, by: path, value: 'Descriptor_Unit_YS_Supply_Bunker.${edit.at}' }
+            value:
+              $raw: ${edit.value}
+      - op: modify
+        selector:
+          {
+            kind: field,
+            by: path,
+            value: 'Descriptor_Unit_YS_Supply_Bunker.ModulesDescriptors.[TBaseDamageModuleDescriptor].MaxPhysicalDamages',
+          }
+        value: '${fortifiedSupplyBuildingHealth}'
+      - op: modify
+        selector:
+          {
+            kind: field,
+            by: path,
+            value: 'Descriptor_Unit_YS_Supply_Bunker.ModulesDescriptors.[TUnitUIModuleDescriptor].NameToken',
+          }
+        value:
+          $raw: "'YSBUNKER'"
+      - op: copy
+        leadingComment: '${commentDirectives.forceInclude}'
+        selector: { kind: object, by: name, value: '${fobSourceDescriptorName}' }
+        destination: { name: 'Descriptor_Unit_YS_Doomsday' }
+      - forEach:
+          - { at: 'DescriptorId', value: 'GUID:{11F1E445-D8AE-4222-B0E0-9E1A09BC77DC}' }
+          - { at: 'ClassNameForDebug', value: "'Building_YS_Doomsday'" }
+          - at: 'ModulesDescriptors.[TTypeUnitModuleDescriptor].MotherCountry'
+            value: '${modTagRaw}'
+          - at: 'ModulesDescriptors.[TSupplyModuleDescriptor].SupplyCapacity'
+            value: '${unlimitedSupplyCapacity}'
+          - at: 'ModulesDescriptors.[TProductionModuleDescriptor].ProductionRessourcesNeeded'
+            value: '${doomsdayProductionResourcesNeededRaw}'
+        as: edit
+        do:
+          - op: modify
+            selector: { kind: field, by: path, value: 'Descriptor_Unit_YS_Doomsday.${edit.at}' }
+            value:
+              $raw: ${edit.value}
+      - op: modify
+        selector:
+          {
+            kind: field,
+            by: path,
+            value: 'Descriptor_Unit_YS_Doomsday.ModulesDescriptors.[TBaseDamageModuleDescriptor].MaxPhysicalDamages',
+          }
+        value: '${fortifiedSupplyBuildingHealth}'
+      - op: remove
+        selector:
+          {
+            kind: field,
+            by: path,
+            value: 'Descriptor_Unit_YS_Doomsday.ModulesDescriptors.[value=~/BuildingOrderConfigModuleDescriptor]',
+          }
+      - op: remove
+        selector:
+          {
+            kind: field,
+            by: path,
+            value: 'Descriptor_Unit_YS_Doomsday.ModulesDescriptors.[value=~/BuildingScannerConfigurationDescriptor]',
+          }
+      - op: add
+        selector:
+          { kind: collection, by: path, value: 'Descriptor_Unit_YS_Doomsday.ModulesDescriptors' }
+        position: { mode: before, anchor: 'TReverseScannerWithIdentificationDescriptor' }
+        value:
+          $raw: |-
+            TScannerConfigurationDescriptor
+            (
+                VisionRangesGRU = MAP [
+                    ( EVisionRange/Standard, 3500.0 ),
+                    ( EVisionRange/LowAltitude, 4947.0 ),
+                    ( EVisionRange/HighAltitude, 10601.0 ),
+                ]
+                OpticalStrengths = MAP [
+                    ( EOpticalStrength/Standard, 8834.0 ),
+                    ( EOpticalStrength/LowAltitude, 8834.0 ),
+                    ( EOpticalStrength/HighAltitude, 8834.0 ),
+                ]
+            ),
+      - op: add
+        selector:
+          { kind: collection, by: path, value: 'Descriptor_Unit_YS_Doomsday.ModulesDescriptors' }
+        position: { mode: before, anchor: 'TBaseDamageModuleDescriptor' }
+        value:
+          $raw: '$/GFX/Weapon/WeaponDescriptor_YS_Doomsday,'
+      - op: add
+        selector:
+          { kind: collection, by: path, value: 'Descriptor_Unit_YS_Doomsday.ModulesDescriptors' }
+        position: { mode: before, anchor: 'TUnitUIModuleDescriptor' }
+        value:
+          $raw: |-
+            TDeploymentShiftModuleDescriptor
+            (
+                DeploymentShiftGRU = ${doomsdayDeploymentShiftGruRaw}
+            ),
+            TCapaciteModuleDescriptor
+            (
+                DefaultSkillList = [
+                    $/GFX/EffectCapacity/Capacite_jammer,
+                    $/GFX/EffectCapacity/Capacite_sigint_far,
+                    $/GFX/EffectCapacity/Capacite_sigint_close,
+                ]
+            ),
+            ~/FacingInfosModuleDescriptor,
+      - op: add
+        selector:
+          {
+            kind: field,
+            by: path,
+            value: 'Descriptor_Unit_YS_Doomsday.ModulesDescriptors.[TUnitUIModuleDescriptor].SpecialtiesList',
+          }
+        value:
+          $raw: |-
+            [
+                '_singint',
+                '_jammer',
+            ]
+      - op: modify
+        selector:
+          {
+            kind: field,
+            by: path,
+            value: 'Descriptor_Unit_YS_Doomsday.ModulesDescriptors.[TUnitUIModuleDescriptor].NameToken',
+          }
+        value:
+          $raw: "'YSDOOM'"
+      - op: modify
+        selector:
+          {
+            kind: field,
+            by: path,
+            value: 'Descriptor_Unit_YS_Doomsday.ModulesDescriptors.[TUnitUIModuleDescriptor].InfoPanelConfigurationToken',
+          }
+        value:
+          $raw: "'Default'"
+      - op: modify
+        selector:
+          {
+            kind: field,
+            by: path,
+            value: 'Descriptor_Unit_YS_Supply_Base.ModulesDescriptors.[TUnitUIModuleDescriptor].ButtonTexture',
+          }
+        value:
+          $raw: "'Texture_Button_Unit_YS_Supply_Base'"
+      - op: modify
+        selector:
+          {
+            kind: field,
+            by: path,
+            value: 'Descriptor_Unit_YS_Supply_Bunker.ModulesDescriptors.[TUnitUIModuleDescriptor].ButtonTexture',
+          }
+        value:
+          $raw: "'Texture_Button_Unit_YS_Supply_Base'"
+      - op: modify
+        selector:
+          {
+            kind: field,
+            by: path,
+            value: 'Descriptor_Unit_YS_Doomsday.ModulesDescriptors.[TUnitUIModuleDescriptor].ButtonTexture',
+          }
+        value:
+          $raw: "'Texture_Button_Unit_YS_Supply_Base'"
+  - file: GameData/Generated/UserInterface/Textures/ButtonTexturesUnites.ndf
+    operations:
+      - op: add
+        selector: { kind: collection, by: path, value: 'UnitButtonTextureAdditionalBank.Textures' }
+        value:
+          $raw: '("Texture_Button_Unit_YS_Supply_Base", MAP [( ~/ComponentState/Normal, TUIResourceTexture( FileName = "GameData:/Assets/2D/Interface/Common/UnitsIcons/NATO/ys-base.png"))]),'

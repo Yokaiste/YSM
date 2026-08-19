@@ -1,0 +1,59 @@
+version: 1
+id: 'ysm.match.constants'
+name: 'YSM Match Settings'
+description: 'Widens the lobby option lists: match lengths, income rates, and starting money / score targets. Edit `gameplayConstants` in ymb.mod.yaml to change them.'
+enabled: true
+scope: 'prod'
+# Only widens vanilla option lists.
+optional: true
+dependsOn: []
+variables:
+  # Derived. Edit `gameplayConstants` in config/ymb.mod.yaml.
+  timeLimitTableRaw: "${'[ ' + join(gameplayConstants.timeLimitTable, ', ') + ' ]'}"
+  economyModeTokensRaw: "${'[ ' + join(gameplayConstants.economyModeTokens, ', ') + ' ]'}"
+  upkeepPercentValuesRaw: "${'[ ' + join(gameplayConstants.upkeepPercentValues, ', ') + ' ]'}"
+  upkeepPercentIntegerValuesRaw: "${'[ ' + join(integers(gameplayConstants.upkeepPercentValues), ', ') + ' ]'}"
+  scoreValuesWithZero: ${concat(gameplayConstants.scoreValues, [0])}
+  scoreValuesRaw: "${'[ ' + join(gameplayConstants.scoreValues, ', ') + ' ]'}"
+  scoreValuesWithZeroRaw: "${'[ ' + join(scoreValuesWithZero, ', ') + ' ]'}"
+  destructionScoreLevelsTableRaw: |-
+    MAP
+    [
+        ${join(cartesian(scoreValuesWithZero, ['VictoryTypeDestructionLevelsTableOptions' + modTag], '({left}, {right})'), ',\n        ')}
+    ]
+  destructionScoreOptionsDefinitionRaw: "${'VictoryTypeDestructionLevelsTableOptions' + modTag + ' is [ ' + join(scoreValuesWithZero, ', ') + ' ]'}"
+targets:
+  - file: GameData/Gameplay/Constantes/GDConstants.ndf
+    operations:
+      - op: modify
+        selector: { kind: field, by: path, value: 'Constantes.TimeLimitTable' }
+        value:
+          $raw: '${timeLimitTableRaw}'
+      - op: modify
+        selector: { kind: field, by: path, value: 'Constantes.DefaultTimeLimitInMinutes' }
+        value: '${gameplayConstants.defaultTimeLimitInMinutes}'
+      - forEach:
+          - { at: 'MoneyWinLocalisationTokensInConquestMode', value: '${economyModeTokensRaw}' }
+          - { at: 'MoneyWinPerAllianceInConquestMode', value: '${upkeepPercentValuesRaw}' }
+          - { at: 'ConquestPossibleScores', value: '${scoreValuesRaw}' }
+          - { at: 'IncomeMultiplier', value: '${upkeepPercentValuesRaw}' }
+          - { at: 'IncomeMultiplierTokensInDestructionMode', value: '${economyModeTokensRaw}' }
+          - { at: 'IncomeMultiplierInDestructionMode', value: '${upkeepPercentValuesRaw}' }
+          - { at: 'ArgentInitialSetting', value: '${scoreValuesWithZeroRaw}' }
+          - { at: 'DefaultDestructionScoreToReachSetting', value: '${scoreValuesWithZeroRaw}' }
+          - { at: 'VictoryTypeDestructionLevelsTable', value: '${destructionScoreLevelsTableRaw}' }
+        as: edit
+        do:
+          - op: modify
+            selector: { kind: field, by: path, value: 'WargameConstantes.${edit.at}' }
+            value:
+              $raw: ${edit.value}
+      - op: add
+        position: { mode: after, anchor: 'WargameConstantes' }
+        value:
+          $raw: '${destructionScoreOptionsDefinitionRaw}'
+      - op: modify
+        selector:
+          { kind: field, by: path, value: 'WargameConstantes.UpkeepPercentAvailableSettings' }
+        value:
+          $raw: '${upkeepPercentIntegerValuesRaw}'

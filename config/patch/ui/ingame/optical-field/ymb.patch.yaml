@@ -1,0 +1,21 @@
+version: 1
+id: 'ysm.ui.ingame.optical-field'
+name: 'YSM Optical Field Panel'
+description: 'Removes the background shells around the optical field panel and its button.'
+enabled: true
+scope: 'prod'
+optional: true
+dependsOn: []
+targets:
+  - file: 'GameData/UserInterface/Use/InGame/UISpecificOpticalFieldView.ndf'
+    operations:
+      - op: 'remove'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'OpticalFieldPanel.BackgroundComponents'
+      - op: 'remove'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'DissimulationButton.Components.[PanelRoundedCorner]'

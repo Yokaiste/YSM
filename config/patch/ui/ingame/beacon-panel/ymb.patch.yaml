@@ -1,0 +1,16 @@
+version: 1
+id: 'ysm.ui.ingame.beacon-panel'
+name: 'YSM Beacon Panel'
+description: 'Removes the background shell around the place-markers panel.'
+enabled: true
+scope: 'prod'
+optional: true
+dependsOn: []
+targets:
+  - file: 'GameData/UserInterface/Use/InGame/UIInGameHUDBeaconPanel.ndf'
+    operations:
+      - op: 'remove'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'UIInGameBeaconPanelViewMainComponent.BackgroundComponents'

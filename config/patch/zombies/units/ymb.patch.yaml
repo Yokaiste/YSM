@@ -1,0 +1,709 @@
+version: 1
+id: ysm.zombies.units
+name: YSM Zombie Units
+description: Adds the seven zombie units -- swarm, breaker, screecher, stalker, smoker, pack leader, and demolisher -- with their roles, AI behavior, and unit cards.
+enabled: true
+scope: prod
+optional: true
+dependsOn:
+  - ysm.zombies.weapons
+files:
+  - op: copy
+    source: { root: patch, path: assets }
+    destination: GameData/Assets/2D/Interface/Common/UnitsIcons/PACT
+    expect: { files: 7 }
+variables:
+  modTagRaw: "'${modTag}'"
+  immortalDamageRaw: '999999'
+  zombieTicketCost: 1
+  # One row per zombie: `from` is the vanilla squad, `weapon` its weapon manager. Rout
+  # morale is pinned absurdly high below -- a zombie that routs stops being a zombie.
+  zombieUnits:
+    - id: Swarm
+      from: Descriptor_Unit_MotSchutzen_DDR
+      weapon: WeaponDescriptor_MotSchutzen_DDR
+      icon: yz-swarm.png
+      tags: ['Zombie']
+      soldiers: 10
+      speed: 68
+      concealment: 4.6
+      physicalDamage: 84
+      stunDamage: '900'
+      dangerousness: 190
+      commandPoints: 56
+      deploymentShift: '2500.0'
+      alsoRemove: []
+      alsoAdd: []
+      set:
+        - { at: 'DescriptorId', value: 'GUID:{064bc26c-ad9c-4c59-835f-0aabd781148b}' }
+        - { at: 'ClassNameForDebug', value: "'Unit_YZ_Swarm'" }
+        - at: 'ModulesDescriptors.[TScannerConfigurationDescriptor].VisionRangesGRU'
+          value: |-
+            MAP [
+                ( EVisionRange/Standard, 4200.0 ),
+                ( EVisionRange/LowAltitude, 5654.0 ),
+                ( EVisionRange/HighAltitude, 6361.0 ),
+            ]
+        - at: 'ModulesDescriptors.[TScannerConfigurationDescriptor].OpticalStrengths'
+          value: |-
+            MAP [
+                ( EOpticalStrength/Standard, 2800.0 ),
+                ( EOpticalStrength/LowAltitude, 2800.0 ),
+                ( EOpticalStrength/HighAltitude, 900.0 ),
+            ]
+        - at: 'ModulesDescriptors.[TCapaciteModuleDescriptor].DefaultSkillList'
+          value: |-
+            [
+                $/GFX/EffectCapacity/Capacite_resolute,
+                $/GFX/EffectCapacity/Capacite_Choc,
+                $/GFX/EffectCapacity/Capacite_Choc_feedback,
+            ]
+        - at: 'ModulesDescriptors.[TInfantrySquadModuleDescriptor].MimeticDescriptor.DescriptorId'
+          value: 'GUID:{625e7470-8c20-452d-933d-03ddc8af20b9}'
+        - { at: 'ModulesDescriptors.[TAttackReactionModuleDescriptor].CanAssist', value: 'True' }
+        - at: 'ModulesDescriptors.[TAttackReactionModuleDescriptor].AssistRequestBroadcastRadiusGRU'
+          value: '2600'
+        - at: 'ModulesDescriptors.[TAttackReactionModuleDescriptor].MaxDistanceForOffensiveReactionGRU'
+          value: '900'
+        - at: 'ModulesDescriptors.[TAttackReactionModuleDescriptor].MaxDistanceForEngagementGRU'
+          value: '900'
+        - at: 'ModulesDescriptors.[TAttackReactionModuleDescriptor].SearchedTagsInEngagementTarget'
+          value: |-
+            [
+                "GroundUnits",
+            ]
+        - { at: 'ModulesDescriptors.[TUnitUIModuleDescriptor].NameToken', value: "'YZSWARM'" }
+        - at: 'ModulesDescriptors.[TUnitUIModuleDescriptor].SpecialtiesList'
+          value: |-
+            [
+                '_choc',
+                '_resolute',
+            ]
+    - id: Breaker
+      from: Descriptor_Unit_Engineers_CAN
+      weapon: WeaponDescriptor_Engineers_CAN
+      icon: yz-breaker.png
+      tags: ['Zombie']
+      soldiers: 8
+      speed: 58
+      concealment: 3.2
+      physicalDamage: 96
+      stunDamage: '1100'
+      dangerousness: 193
+      commandPoints: 96
+      deploymentShift: '2500.0'
+      alsoRemove: []
+      alsoAdd: []
+      set:
+        - { at: 'DescriptorId', value: 'GUID:{06896f1d-471e-4638-ab44-355a24bd6284}' }
+        - { at: 'ClassNameForDebug', value: "'Unit_YZ_Breaker'" }
+        - at: 'ModulesDescriptors.[TTypeUnitModuleDescriptor].Coalition'
+          value: 'TWargameCoalition/PACT'
+        - at: 'ModulesDescriptors.[TScannerConfigurationDescriptor].VisionRangesGRU'
+          value: |-
+            MAP [
+                ( EVisionRange/Standard, 4000.0 ),
+                ( EVisionRange/LowAltitude, 5300.0 ),
+                ( EVisionRange/HighAltitude, 6361.0 ),
+            ]
+        - at: 'ModulesDescriptors.[TScannerConfigurationDescriptor].OpticalStrengths'
+          value: |-
+            MAP [
+                ( EOpticalStrength/Standard, 2200.0 ),
+                ( EOpticalStrength/LowAltitude, 2200.0 ),
+                ( EOpticalStrength/HighAltitude, 900.0 ),
+            ]
+        - at: 'ModulesDescriptors.[TCapaciteModuleDescriptor].DefaultSkillList'
+          value: |-
+            [
+                $/GFX/EffectCapacity/Capacite_resolute,
+                $/GFX/EffectCapacity/Capacite_Choc,
+                $/GFX/EffectCapacity/Capacite_Choc_feedback,
+            ]
+        - at: 'ModulesDescriptors.[TInfantrySquadModuleDescriptor].MimeticDescriptor.DescriptorId'
+          value: 'GUID:{76a3d59b-58e6-4a89-80e0-73ccd00d48cc}'
+        - { at: 'ModulesDescriptors.[TAttackReactionModuleDescriptor].CanAssist', value: 'True' }
+        - at: 'ModulesDescriptors.[TAttackReactionModuleDescriptor].AssistRequestBroadcastRadiusGRU'
+          value: '2800'
+        - at: 'ModulesDescriptors.[TAttackReactionModuleDescriptor].MaxDistanceForOffensiveReactionGRU'
+          value: '950'
+        - at: 'ModulesDescriptors.[TAttackReactionModuleDescriptor].MaxDistanceForEngagementGRU'
+          value: '950'
+        - at: 'ModulesDescriptors.[TAttackReactionModuleDescriptor].SearchedTagsInEngagementTarget'
+          value: |-
+            [
+                "GroundUnits",
+            ]
+        - { at: 'ModulesDescriptors.[TUnitUIModuleDescriptor].NameToken', value: "'YZBREAK'" }
+        - { at: 'ModulesDescriptors.[TUnitUIModuleDescriptor].UnitRole', value: "'infantry'" }
+        - at: 'ModulesDescriptors.[TUnitUIModuleDescriptor].SpecialtiesList'
+          value: |-
+            [
+                '_choc',
+                '_resolute',
+            ]
+    - id: Screecher
+      from: Descriptor_Unit_MANPAD_Igla_DDR
+      weapon: WeaponDescriptor_MANPAD_Igla_DDR
+      icon: yz-screecher.png
+      tags: ['Zombie']
+      soldiers: 4
+      speed: 66
+      concealment: 4.8
+      physicalDamage: 56
+      stunDamage: '850'
+      dangerousness: 192
+      commandPoints: 90
+      deploymentShift: '2500.0'
+      alsoRemove: []
+      alsoAdd: []
+      set:
+        - { at: 'DescriptorId', value: 'GUID:{c0a1f43a-ca80-44ae-8adb-00b5265c370e}' }
+        - { at: 'ClassNameForDebug', value: "'Unit_YZ_Screecher'" }
+        - at: 'ModulesDescriptors.[TScannerConfigurationDescriptor].VisionRangesGRU'
+          value: |-
+            MAP [
+                ( EVisionRange/Standard, 4200.0 ),
+                ( EVisionRange/LowAltitude, 6000.0 ),
+                ( EVisionRange/HighAltitude, 8481.0 ),
+            ]
+        - at: 'ModulesDescriptors.[TScannerConfigurationDescriptor].OpticalStrengths'
+          value: |-
+            MAP [
+                ( EOpticalStrength/Standard, 3600.0 ),
+                ( EOpticalStrength/LowAltitude, 3600.0 ),
+                ( EOpticalStrength/HighAltitude, 2826.0 ),
+            ]
+        - at: 'ModulesDescriptors.[TCapaciteModuleDescriptor].DefaultSkillList'
+          value: |-
+            [
+                $/GFX/EffectCapacity/Capacite_resolute,
+                $/GFX/EffectCapacity/Capacite_Choc,
+                $/GFX/EffectCapacity/Capacite_Choc_feedback,
+            ]
+        - at: 'ModulesDescriptors.[TInfantrySquadModuleDescriptor].MimeticDescriptor.DescriptorId'
+          value: 'GUID:{215e0656-3a90-4c25-9cdc-1978d091ef49}'
+        - { at: 'ModulesDescriptors.[TAttackReactionModuleDescriptor].CanAssist', value: 'True' }
+        - at: 'ModulesDescriptors.[TAttackReactionModuleDescriptor].AssistRequestBroadcastRadiusGRU'
+          value: '2400'
+        - at: 'ModulesDescriptors.[TAttackReactionModuleDescriptor].MaxDistanceForOffensiveReactionGRU'
+          value: '500'
+        - at: 'ModulesDescriptors.[TAttackReactionModuleDescriptor].MaxDistanceForEngagementGRU'
+          value: '500'
+        - at: 'ModulesDescriptors.[TAttackReactionModuleDescriptor].SearchedTagsInEngagementTarget'
+          value: |-
+            [
+                "AllUnits",
+            ]
+        - { at: 'ModulesDescriptors.[TUnitUIModuleDescriptor].NameToken', value: "'YZSCREE'" }
+        - at: 'ModulesDescriptors.[TUnitUIModuleDescriptor].SpecialtiesList'
+          value: |-
+            [
+                '_choc',
+                '_resolute',
+            ]
+    - id: Stalker
+      from: Descriptor_Unit_Rifles_BEL
+      weapon: WeaponDescriptor_Rifles_BEL
+      icon: yz-stalker.png
+      tags: ['Infanterie_Reco', 'Reco', 'Zombie']
+      soldiers: 5
+      speed: 108
+      concealment: 8.8
+      physicalDamage: 38
+      stunDamage: '800'
+      dangerousness: 189
+      commandPoints: 76
+      deploymentShift: '5000.0'
+      alsoRemove:
+        - 'ModulesDescriptors.[TFormationModuleDescriptor]'
+      alsoAdd:
+        - at: 'ModulesDescriptors'
+          anchor: 'InfantryFlagsModuleDescriptor'
+          value: "TFormationModuleDescriptor(TypeUnitFormation = 'Reconnaissance'),"
+        - at: 'ModulesDescriptors'
+          anchor: 'TProductionModuleDescriptor'
+          value: |-
+            TCapaciteModuleDescriptor
+            (
+                DefaultSkillList = [
+                $/GFX/EffectCapacity/Capacite_resolute,
+                $/GFX/EffectCapacity/Capacite_Choc,
+                $/GFX/EffectCapacity/Capacite_Choc_feedback,
+            ]
+            ),
+      set:
+        - { at: 'DescriptorId', value: 'GUID:{9575d090-e8fe-4467-8acc-d3a437723910}' }
+        - { at: 'ClassNameForDebug', value: "'Unit_YZ_Stalker'" }
+        - at: 'ModulesDescriptors.[TTypeUnitModuleDescriptor].Coalition'
+          value: 'TWargameCoalition/PACT'
+        - at: 'ModulesDescriptors.[TTypeUnitModuleDescriptor].AcknowUnitTypes'
+          value: |-
+            [
+                ~/TAcknowUnitType_Recon_INF,
+            ]
+        - at: 'ModulesDescriptors.[TScannerConfigurationDescriptor].VisionRangesGRU'
+          value: |-
+            MAP [
+                ( EVisionRange/Standard, 6000.0 ),
+                ( EVisionRange/LowAltitude, 7420.5 ),
+                ( EVisionRange/HighAltitude, 8481.0 ),
+            ]
+        - at: 'ModulesDescriptors.[TScannerConfigurationDescriptor].OpticalStrengths'
+          value: |-
+            MAP [
+                ( EOpticalStrength/Standard, 9000.0 ),
+                ( EOpticalStrength/LowAltitude, 9000.0 ),
+                ( EOpticalStrength/HighAltitude, 1590.0 ),
+            ]
+        - at: 'ModulesDescriptors.[TInfantrySquadModuleDescriptor].MimeticDescriptor.DescriptorId'
+          value: 'GUID:{ed0b7196-d7fd-49a4-ad78-fb87e8258ab4}'
+        - at: 'ModulesDescriptors.[TAttackReactionModuleDescriptor].AssistRequestBroadcastRadiusGRU'
+          value: '0'
+        - at: 'ModulesDescriptors.[TAttackReactionModuleDescriptor].MaxDistanceForOffensiveReactionGRU'
+          value: '550'
+        - at: 'ModulesDescriptors.[TAttackReactionModuleDescriptor].MaxDistanceForEngagementGRU'
+          value: '550'
+        - at: 'ModulesDescriptors.[TAttackReactionModuleDescriptor].SearchedTagsInEngagementTarget'
+          value: |-
+            [
+                "GroundUnits",
+            ]
+        - { at: 'ModulesDescriptors.[TUnitUIModuleDescriptor].NameToken', value: "'YZSTALK'" }
+        - { at: 'ModulesDescriptors.[TUnitUIModuleDescriptor].UnitRole', value: "'reco'" }
+        - at: 'ModulesDescriptors.[TUnitUIModuleDescriptor].SpecialtiesList'
+          value: |-
+            [
+                '_sf',
+                '_choc',
+                '_resolute',
+            ]
+        - at: 'ModulesDescriptors.[TUnitUIModuleDescriptor].MenuIconTexture'
+          value: "'Texture_RTS_H_RECO_inf_sf'"
+        - at: 'ModulesDescriptors.[TUnitUIModuleDescriptor].TypeStrategicCount'
+          value: 'ETypeStrategicDetailedCount/Reco_Inf'
+    - id: Smoker
+      from: Descriptor_Unit_MotSchutzen_DDR
+      weapon: WeaponDescriptor_MotSchutzen_DDR
+      icon: yz-smoker.png
+      tags: ['Zombie']
+      soldiers: 2
+      speed: 72
+      concealment: 6
+      physicalDamage: 48
+      stunDamage: '700'
+      dangerousness: 188
+      commandPoints: 69
+      deploymentShift: '2500.0'
+      alsoRemove: []
+      alsoAdd:
+        - at: 'ModulesDescriptors'
+          anchor: 'TScannerConfigurationDescriptor'
+          value: |-
+            TSupplyModuleDescriptor
+            (
+                SupplyDescriptor = $/GFX/Weapon/StandardSupply
+                SupplyCapacity = ${unlimitedSupplyCapacity}
+                SupplyPriority = 1
+            ),
+      set:
+        - { at: 'DescriptorId', value: 'GUID:{4b1cb55e-6858-4648-a732-d1cca3f0470a}' }
+        - { at: 'ClassNameForDebug', value: "'Unit_YZ_Smoker'" }
+        - at: 'ModulesDescriptors.[TScannerConfigurationDescriptor].VisionRangesGRU'
+          value: |-
+            MAP [
+                ( EVisionRange/Standard, 4200.0 ),
+                ( EVisionRange/LowAltitude, 5654.0 ),
+                ( EVisionRange/HighAltitude, 6361.0 ),
+            ]
+        - at: 'ModulesDescriptors.[TScannerConfigurationDescriptor].OpticalStrengths'
+          value: |-
+            MAP [
+                ( EOpticalStrength/Standard, 2600.0 ),
+                ( EOpticalStrength/LowAltitude, 2600.0 ),
+                ( EOpticalStrength/HighAltitude, 900.0 ),
+            ]
+        - at: 'ModulesDescriptors.[TCapaciteModuleDescriptor].DefaultSkillList'
+          value: |-
+            [
+                $/GFX/EffectCapacity/Capacite_resolute,
+                $/GFX/EffectCapacity/Capacite_Choc,
+                $/GFX/EffectCapacity/Capacite_Choc_feedback,
+            ]
+        - at: 'ModulesDescriptors.[TInfantrySquadModuleDescriptor].MimeticDescriptor.DescriptorId'
+          value: 'GUID:{bb977b41-f34b-45ff-a20c-db70b7ae54b0}'
+        - { at: 'ModulesDescriptors.[TAttackReactionModuleDescriptor].CanAssist', value: 'True' }
+        - at: 'ModulesDescriptors.[TAttackReactionModuleDescriptor].AssistRequestBroadcastRadiusGRU'
+          value: '2600'
+        - at: 'ModulesDescriptors.[TAttackReactionModuleDescriptor].MaxDistanceForOffensiveReactionGRU'
+          value: '700'
+        - at: 'ModulesDescriptors.[TAttackReactionModuleDescriptor].MaxDistanceForEngagementGRU'
+          value: '700'
+        - at: 'ModulesDescriptors.[TAttackReactionModuleDescriptor].SearchedTagsInEngagementTarget'
+          value: |-
+            [
+                "GroundUnits",
+            ]
+        - { at: 'ModulesDescriptors.[TUnitUIModuleDescriptor].NameToken', value: "'YZSMOKE'" }
+        - { at: 'ModulesDescriptors.[TUnitUIModuleDescriptor].UnitRole', value: "'supply'" }
+        - at: 'ModulesDescriptors.[TUnitUIModuleDescriptor].SpecialtiesList'
+          value: |-
+            [
+                '_smoke_launcher',
+                '_choc',
+                '_resolute',
+            ]
+        - at: 'ModulesDescriptors.[TUnitUIModuleDescriptor].InfoPanelConfigurationToken'
+          value: "'VehiculeSupplier'"
+        - at: 'ModulesDescriptors.[TUnitUIModuleDescriptor].MenuIconTexture'
+          value: "'Texture_RTS_H_supply'"
+        - at: 'ModulesDescriptors.[TUnitUIModuleDescriptor].TypeStrategicCount'
+          value: 'ETypeStrategicDetailedCount/Supply'
+        - at: 'ModulesDescriptors.[TTransportableModuleDescriptor].TransportedTexture'
+          value: '"UseInGame_Transport_Mortar"'
+    - id: PackLeader
+      from: Descriptor_Unit_Rifles_Gurkhas_CMD_UK
+      weapon: WeaponDescriptor_Rifles_Gurkhas_CMD_UK
+      icon: yz-pack-leader.png
+      tags: ['Zombie']
+      soldiers: 8
+      speed: 74
+      concealment: 6.8
+      physicalDamage: 80
+      stunDamage: '1200'
+      dangerousness: 194
+      commandPoints: 178
+      deploymentShift: '2500.0'
+      alsoRemove: []
+      alsoAdd: []
+      set:
+        - { at: 'DescriptorId', value: 'GUID:{be412ea7-21d9-47fd-a7de-f8a327cd9363}' }
+        - { at: 'ClassNameForDebug', value: "'Unit_YZ_PackLeader'" }
+        - at: 'ModulesDescriptors.[TTypeUnitModuleDescriptor].Coalition'
+          value: 'TWargameCoalition/PACT'
+        - at: 'ModulesDescriptors.[TScannerConfigurationDescriptor].VisionRangesGRU'
+          value: |-
+            MAP [
+                ( EVisionRange/Standard, 4500.0 ),
+                ( EVisionRange/LowAltitude, 6000.0 ),
+                ( EVisionRange/HighAltitude, 7420.5 ),
+            ]
+        - at: 'ModulesDescriptors.[TScannerConfigurationDescriptor].OpticalStrengths'
+          value: |-
+            MAP [
+                ( EOpticalStrength/Standard, 4200.0 ),
+                ( EOpticalStrength/LowAltitude, 4200.0 ),
+                ( EOpticalStrength/HighAltitude, 1590.0 ),
+            ]
+        - at: 'ModulesDescriptors.[TCapaciteModuleDescriptor].DefaultSkillList'
+          value: |-
+            [
+                $/GFX/EffectCapacity/Capacite_resolute,
+                $/GFX/EffectCapacity/Capacite_Choc,
+                $/GFX/EffectCapacity/Capacite_Choc_feedback,
+            ]
+        - at: 'ModulesDescriptors.[TInfantrySquadModuleDescriptor].MimeticDescriptor.DescriptorId'
+          value: 'GUID:{8a0945f9-8e54-4283-8026-a61539010f0f}'
+        - { at: 'ModulesDescriptors.[TAttackReactionModuleDescriptor].CanAssist', value: 'True' }
+        - at: 'ModulesDescriptors.[TAttackReactionModuleDescriptor].AssistRequestBroadcastRadiusGRU'
+          value: '3200'
+        - at: 'ModulesDescriptors.[TAttackReactionModuleDescriptor].MaxDistanceForOffensiveReactionGRU'
+          value: '1000'
+        - at: 'ModulesDescriptors.[TAttackReactionModuleDescriptor].MaxDistanceForEngagementGRU'
+          value: '1000'
+        - at: 'ModulesDescriptors.[TAttackReactionModuleDescriptor].SearchedTagsInEngagementTarget'
+          value: |-
+            [
+                "GroundUnits",
+            ]
+        - { at: 'ModulesDescriptors.[TUnitUIModuleDescriptor].NameToken', value: "'YZALPHA'" }
+        - at: 'ModulesDescriptors.[TUnitUIModuleDescriptor].SpecialtiesList'
+          value: |-
+            [
+                '_leader',
+                '_choc',
+                '_resolute',
+            ]
+    - id: Demolisher
+      from: Descriptor_Unit_Engineers_CAN
+      weapon: WeaponDescriptor_Engineers_CAN
+      icon: yz-demolisher.png
+      tags: ['Zombie', 'Breacher']
+      soldiers: 4
+      speed: 46
+      concealment: 2.2
+      physicalDamage: 74
+      stunDamage: '1300'
+      dangerousness: 195
+      commandPoints: 131
+      deploymentShift: '2500.0'
+      alsoRemove: []
+      alsoAdd: []
+      set:
+        - { at: 'DescriptorId', value: 'GUID:{6b8c2956-e73f-4cb6-b828-5f89e3653187}' }
+        - { at: 'ClassNameForDebug', value: "'Unit_YZ_Demolisher'" }
+        - at: 'ModulesDescriptors.[TTypeUnitModuleDescriptor].Coalition'
+          value: 'TWargameCoalition/PACT'
+        - at: 'ModulesDescriptors.[TScannerConfigurationDescriptor].VisionRangesGRU'
+          value: |-
+            MAP [
+                ( EVisionRange/Standard, 3500.0 ),
+                ( EVisionRange/LowAltitude, 5000.0 ),
+                ( EVisionRange/HighAltitude, 6361.0 ),
+            ]
+        - at: 'ModulesDescriptors.[TScannerConfigurationDescriptor].OpticalStrengths'
+          value: |-
+            MAP [
+                ( EOpticalStrength/Standard, 1800.0 ),
+                ( EOpticalStrength/LowAltitude, 1800.0 ),
+                ( EOpticalStrength/HighAltitude, 900.0 ),
+            ]
+        - at: 'ModulesDescriptors.[TCapaciteModuleDescriptor].DefaultSkillList'
+          value: |-
+            [
+                $/GFX/EffectCapacity/Capacite_resolute,
+                $/GFX/EffectCapacity/Capacite_Choc,
+                $/GFX/EffectCapacity/Capacite_Choc_feedback,
+            ]
+        - at: 'ModulesDescriptors.[TInfantrySquadModuleDescriptor].MimeticDescriptor.DescriptorId'
+          value: 'GUID:{58d93c12-96f7-474c-a496-450550576f57}'
+        - { at: 'ModulesDescriptors.[TAttackReactionModuleDescriptor].CanAssist', value: 'True' }
+        - at: 'ModulesDescriptors.[TAttackReactionModuleDescriptor].AssistRequestBroadcastRadiusGRU'
+          value: '2400'
+        - at: 'ModulesDescriptors.[TAttackReactionModuleDescriptor].MaxDistanceForOffensiveReactionGRU'
+          value: '700'
+        - at: 'ModulesDescriptors.[TAttackReactionModuleDescriptor].MaxDistanceForEngagementGRU'
+          value: '700'
+        - at: 'ModulesDescriptors.[TAttackReactionModuleDescriptor].SearchedTagsInEngagementTarget'
+          value: |-
+            [
+                "AllUnits",
+            ]
+        - { at: 'ModulesDescriptors.[TUnitUIModuleDescriptor].NameToken', value: "'YZDEMO'" }
+        - { at: 'ModulesDescriptors.[TUnitUIModuleDescriptor].UnitRole', value: "'infantry'" }
+        - at: 'ModulesDescriptors.[TUnitUIModuleDescriptor].SpecialtiesList'
+          value: |-
+            [
+                '_choc',
+                '_resolute',
+            ]
+targets:
+  - file: GameData/Generated/Gameplay/Gfx/UniteDescriptor.ndf
+    operations:
+      - forEach: ${zombieUnits}
+        as: unit
+        do:
+          - op: copy
+            selector: { kind: object, by: name, value: '${unit.from}' }
+            destination: { name: 'Descriptor_Unit_YZ_${unit.id}' }
+            leadingComment: '${commentDirectives.forceInclude}'
+          - forEach: ${concat(['UNITE_YZ_' + unit.id], unit.tags)}
+            as: tag
+            do:
+              - op: add
+                selector:
+                  {
+                    kind: collection,
+                    by: path,
+                    value: 'Descriptor_Unit_YZ_${unit.id}.ModulesDescriptors.[TTagsModuleDescriptor].TagSet',
+                  }
+                position: { mode: before, anchor: '"Unite"' }
+                value:
+                  $raw: '"${tag}",'
+          - forEach: ${unit.alsoRemove}
+            as: modulePath
+            do:
+              - op: remove
+                selector:
+                  { kind: field, by: path, value: 'Descriptor_Unit_YZ_${unit.id}.${modulePath}' }
+          - forEach: ${unit.alsoAdd}
+            as: extra
+            do:
+              - op: add
+                selector:
+                  {
+                    kind: collection,
+                    by: path,
+                    value: 'Descriptor_Unit_YZ_${unit.id}.ModulesDescriptors',
+                  }
+                position: { mode: before, anchor: '${extra.anchor}' }
+                value:
+                  $raw: ${extra.value}
+          - op: remove
+            selector:
+              {
+                kind: field,
+                by: path,
+                value: 'Descriptor_Unit_YZ_${unit.id}.ModulesDescriptors.[value=$/GFX/Weapon/${unit.weapon}]',
+              }
+          - op: add
+            selector:
+              {
+                kind: collection,
+                by: path,
+                value: 'Descriptor_Unit_YZ_${unit.id}.ModulesDescriptors',
+              }
+            position: { mode: before, anchor: TBaseDamageModuleDescriptor }
+            value:
+              $raw: '$/GFX/Weapon/WeaponDescriptor_YZ_${unit.id},'
+          - op: remove
+            selector:
+              {
+                kind: field,
+                by: path,
+                value: 'Descriptor_Unit_YZ_${unit.id}.ModulesDescriptors.[TDangerousnessModuleDescriptor]',
+              }
+          - op: add
+            selector:
+              {
+                kind: collection,
+                by: path,
+                value: 'Descriptor_Unit_YZ_${unit.id}.ModulesDescriptors',
+              }
+            position: { mode: before, anchor: TRoutModuleDescriptor }
+            value:
+              $raw: 'TDangerousnessModuleDescriptor( Dangerousness = ${unit.dangerousness} ),'
+          - op: remove
+            selector:
+              {
+                kind: field,
+                by: path,
+                value: 'Descriptor_Unit_YZ_${unit.id}.ModulesDescriptors.[TRoutModuleDescriptor]',
+              }
+          - op: add
+            selector:
+              {
+                kind: collection,
+                by: path,
+                value: 'Descriptor_Unit_YZ_${unit.id}.ModulesDescriptors',
+              }
+            position: { mode: before, anchor: '~/FacingInfosModuleDescriptor' }
+            value:
+              $raw: 'TRoutModuleDescriptor(MoralLevel = ${immortalDamageRaw}),'
+          - op: add
+            selector:
+              {
+                kind: collection,
+                by: path,
+                value: 'Descriptor_Unit_YZ_${unit.id}.ModulesDescriptors',
+              }
+            position: { mode: before, anchor: TUnitUIModuleDescriptor }
+            value:
+              $raw: |-
+                TDeploymentShiftModuleDescriptor
+                (
+                    DeploymentShiftGRU = ${unit.deploymentShift}
+                ),
+          - op: modify
+            selector:
+              {
+                kind: field,
+                by: path,
+                value: 'Descriptor_Unit_YZ_${unit.id}.ModulesDescriptors.[TVisibilityModuleDescriptor].UnitConcealmentBonus',
+              }
+            value: ${unit.concealment}
+          - op: modify
+            selector:
+              {
+                kind: field,
+                by: path,
+                value: 'Descriptor_Unit_YZ_${unit.id}.ModulesDescriptors.[TBaseDamageModuleDescriptor].MaxPhysicalDamages',
+              }
+            value: ${unit.physicalDamage}
+          - op: modify
+            selector:
+              {
+                kind: field,
+                by: path,
+                value: 'Descriptor_Unit_YZ_${unit.id}.ModulesDescriptors.[TBaseDamageModuleDescriptor].MaxStunDamages',
+              }
+            value:
+              $raw: '${unit.stunDamage}'
+          - op: modify
+            selector:
+              {
+                kind: field,
+                by: path,
+                value: 'Descriptor_Unit_YZ_${unit.id}.ModulesDescriptors.[TInfantrySquadModuleDescriptor].SoldierCount',
+              }
+            value: ${unit.soldiers}
+          - op: modify
+            selector:
+              {
+                kind: field,
+                by: path,
+                value: 'Descriptor_Unit_YZ_${unit.id}.ModulesDescriptors.[TGenericMovementModuleDescriptor].MaxSpeedInKmph',
+              }
+            value: ${unit.speed}
+          - op: modify
+            selector:
+              {
+                kind: field,
+                by: path,
+                value: 'Descriptor_Unit_YZ_${unit.id}.ModulesDescriptors.[TProductionModuleDescriptor].ProductionRessourcesNeeded',
+              }
+            value:
+              $raw: "${'MAP [\\n                ($/GFX/Resources/Resource_CommandPoints, ' + unit.commandPoints + '),\\n                ($/GFX/Resources/Resource_Tickets, ' + zombieTicketCost + '),\\n            ]'}"
+          - forEach: ${unit.set}
+            as: edit
+            do:
+              - op: modify
+                selector:
+                  { kind: field, by: path, value: 'Descriptor_Unit_YZ_${unit.id}.${edit.at}' }
+                value:
+                  $raw: ${edit.value}
+          - op: modify
+            selector:
+              {
+                kind: field,
+                by: path,
+                value: 'Descriptor_Unit_YZ_${unit.id}.ModulesDescriptors.[TUnitUIModuleDescriptor].ButtonTexture',
+              }
+            value:
+              $string: Texture_Button_Unit_YZ_${unit.id}
+      - op: bulk
+        match:
+          conditions:
+            - { on: name, is: startsWith, value: Descriptor_Unit_YZ_ }
+        expect: { minBlocks: 7 }
+        edits:
+          - field: MotherCountry
+            set: { $raw: '${modTagRaw}' }
+            minChanges: 7
+          - field: UseTerrainsForEscape
+            set: { $raw: 'False' }
+            minChanges: 7
+          - field: ResistanceFront
+            set: { $raw: 'TResistanceTypeRTTI(Family=ResistanceFamily_infanterie Index=2)' }
+            minChanges: 7
+          - field: ResistanceSides
+            set: { $raw: 'TResistanceTypeRTTI(Family=ResistanceFamily_infanterie Index=2)' }
+            minChanges: 7
+          - field: ResistanceRear
+            set: { $raw: 'TResistanceTypeRTTI(Family=ResistanceFamily_infanterie Index=2)' }
+            minChanges: 7
+          - field: ResistanceTop
+            set: { $raw: 'TResistanceTypeRTTI(Family=ResistanceFamily_infanterie Index=2)' }
+            minChanges: 7
+          - field: MaxSuppressionDamages
+            set: { $raw: '${immortalDamageRaw}' }
+            minChanges: 7
+          - field: DistanceToFleeGRU
+            set: { $raw: '0' }
+            minChanges: 7
+          - field: GameplayBehavior
+            set: { $raw: 'EGameplayBehavior/Nothing' }
+            minChanges: 7
+          - field: UpgradeFromUnit
+            set: { $raw: 'nil' }
+            minChanges: 4
+  - file: GameData/Generated/UserInterface/Textures/ButtonTexturesUnites.ndf
+    operations:
+      - forEach: ${zombieUnits}
+        as: unit
+        do:
+          - op: add
+            selector:
+              { kind: collection, by: path, value: UnitButtonTextureAdditionalBank.Textures }
+            value:
+              $raw: '("Texture_Button_Unit_YZ_${unit.id}", MAP [( ~/ComponentState/Normal, TUIResourceTexture( FileName = "GameData:/Assets/2D/Interface/Common/UnitsIcons/PACT/${unit.icon}"))]),'
