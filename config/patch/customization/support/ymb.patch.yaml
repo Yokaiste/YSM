@@ -1,0 +1,143 @@
+version: 1
+id: ysm.customization.support
+name: YSM Support Customization
+description: Optional multipliers for supply, command and other support radii and effects.
+enabled: false
+scope: prod
+
+variables:
+  supportRadiusMultiplier: 1.0
+  supportStrengthMultiplier: 1.0
+  supply:
+    radiusMultiplier: 1.0
+    rateMultiplier: 1.0
+    costMultiplier: 1.0
+  command:
+    radiusMultiplier: 1.0
+    strengthMultiplier: 1.0
+  militaryPolice:
+    radiusMultiplier: 1.0
+    strengthMultiplier: 1.0
+  jammer:
+    radiusMultiplier: 1.0
+    strengthMultiplier: 1.0
+  electronicWarfare:
+    radiusMultiplier: 1.0
+    strengthMultiplier: 1.0
+  fireDirection:
+    radiusMultiplier: 1.0
+    aimTimeMultiplier: 1.0
+  instructor:
+    radiusMultiplier: 1.0
+    strengthMultiplier: 1.0
+  artillery:
+    radiusMultiplier: 1.0
+
+targets:
+  - file: GameData/Gameplay/Constantes/Ravitaillement.ndf
+    operations:
+      - op: bulk
+        match:
+          conditions: [{ on: name, is: equals, value: StandardSupply }]
+        expect: { minBlocks: 1 }
+        edits:
+          - field: DefaultSupplyRangeGRU
+            multiply: ${multipliers.range * supportRadiusMultiplier * supply.radiusMultiplier}
+          - field: FuelSupplyBySecond
+            multiply: ${supportStrengthMultiplier * supply.rateMultiplier}
+          - field: HealthSupplyBySecond
+            multiply: ${supportStrengthMultiplier * supply.rateMultiplier}
+          - field: SupplySupplyBySecond
+            multiply: ${supportStrengthMultiplier * supply.rateMultiplier}
+          - field: AmmunitionSupplyBySecond
+            multiply: ${supportStrengthMultiplier * supply.rateMultiplier}
+          - field: CriticsSupplyBySecond
+            multiply: ${supportStrengthMultiplier * supply.rateMultiplier}
+          - field: FuelSupplyCostBySecond
+            multiply: ${supply.costMultiplier}
+          - field: HealthSupplyCostBySecond
+            multiply: ${supply.costMultiplier}
+          - field: SupplySupplyCostBySecond
+            multiply: ${supply.costMultiplier}
+          - field: CriticsSupplyCostBySecond
+            multiply: ${supply.costMultiplier}
+
+  - file: GameData/Gameplay/Constantes/GDConstants.ndf
+    operations:
+      - op: modify
+        selector: { kind: field, by: path, value: Constantes.CommanderRadiusEffectByLevelGRU }
+        value:
+          - ${round(424 * multipliers.range * supportRadiusMultiplier * command.radiusMultiplier)}
+          - ${round(565 * multipliers.range * supportRadiusMultiplier * command.radiusMultiplier)}
+          - ${round(636 * multipliers.range * supportRadiusMultiplier * command.radiusMultiplier)}
+      - op: bulk
+        match:
+          conditions: [{ on: name, is: equals, value: Constantes }]
+        expect: { minBlocks: 1 }
+        edits:
+          - field: PorteeRadioArtillerieGRU
+            multiply: ${multipliers.range * supportRadiusMultiplier * artillery.radiusMultiplier}
+
+  - file: GameData/Generated/Gameplay/Gfx/CapaciteList.ndf
+    operations:
+      - forEach:
+          - { name: Capacite_MilitaryPolice, scale: '${militaryPolice.radiusMultiplier}' }
+          - { name: Capacite_jammer, scale: '${jammer.radiusMultiplier}' }
+          - { name: Capacite_electronic_warfare, scale: '${electronicWarfare.radiusMultiplier}' }
+          - { name: Capacite_fireDirection, scale: '${fireDirection.radiusMultiplier}' }
+          - { name: Capacite_Instructor_INF, scale: '${instructor.radiusMultiplier}' }
+          - { name: Capacite_Instructor_TNK, scale: '${instructor.radiusMultiplier}' }
+        as: area
+        do:
+          - op: bulk
+            match:
+              conditions: [{ on: name, is: equals, value: '${area.name}' }]
+            expect: { minBlocks: 1 }
+            edits:
+              - field: RangeGRU
+                multiply: ${multipliers.range * supportRadiusMultiplier * area.scale}
+
+  - file: GameData/Generated/Gameplay/Effects/EffetsSurUnite.ndf
+    operations:
+      - forEach:
+          - {
+              name: UnitEffect_Gain_un_niveau_XP,
+              field: ExperienceLevelModifier,
+              scale: '${command.strengthMultiplier}',
+            }
+          - {
+              name: UnitEffect_military_police,
+              field: HealUnitsPerSecond,
+              scale: '${militaryPolice.strengthMultiplier}',
+            }
+          - {
+              name: UnitEffect_jammer,
+              field: BonusOpticalStrength,
+              scale: '${jammer.strengthMultiplier}',
+            }
+          - {
+              name: UnitEffect_electronic_warfare,
+              field: ModifierValue,
+              scale: '${electronicWarfare.strengthMultiplier}',
+            }
+          - {
+              name: UnitEffect_Instructor,
+              field: ExperienceLevelModifier,
+              scale: '${instructor.strengthMultiplier}',
+            }
+        as: effect
+        do:
+          - op: bulk
+            match:
+              conditions: [{ on: name, is: equals, value: '${effect.name}' }]
+            expect: { minBlocks: 1 }
+            edits:
+              - field: ${effect.field}
+                multiply: ${supportStrengthMultiplier * effect.scale}
+      - op: bulk
+        match:
+          conditions: [{ on: name, is: equals, value: UnitEffect_fireDirection }]
+        expect: { minBlocks: 1 }
+        edits:
+          - field: ModifierValue
+            multiply: ${fireDirection.aimTimeMultiplier}

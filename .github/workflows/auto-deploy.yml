@@ -1,0 +1,223 @@
+name: Auto Deploy
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# CONFIG - the only section that differs between mods. Copy this workflow
+# into another mod and edit only these values.
+env:
+  MOD: YSM
+  INSTALLER: publish\deploy\Deploy-YSM.bat
+  SUBJECT: YSM
+  INSTALLS: YMB and YSM
+
+concurrency:
+  group: ysm-stable-release
+  # Publishing replaces the existing stable release, so runs must queue.
+  # A run cancelled between removing and recreating it would leave none.
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    name: Publish stable release
+    runs-on: windows-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Check fail-safe placement validation
+        shell: pwsh
+        run: |
+          $env:CI = '1'
+          $process = Start-Process -FilePath cmd.exe `
+            -ArgumentList '/D', '/C', $env:INSTALLER `
+            -NoNewWindow -Wait -PassThru
+          if ($process.ExitCode -ne 1) {
+            throw "Installer must reject the repository checkout as a WARNO mod root. Exit code: $($process.ExitCode)"
+          }
+
+      - name: Build the configuration package
+        shell: pwsh
+        run: |
+          # The published archive is only what YMB builds from, plus the legal
+          # text and a pointer back here. Its layout is a contract with the
+          # installer, which extracts `<MOD>/config` straight into YMB\mods:
+          #
+          #   <MOD>/config/...
+          #   <MOD>/LICENSE
+          #   <MOD>/NOTICE
+          #   <MOD>/SOURCE.txt
+          #
+          # The asset name is a contract too - the installer builds the same
+          # `<MOD>-config.zip` URL rather than querying the release.
+          $stageRoot = Join-Path $env:RUNNER_TEMP 'package'
+          $stage = Join-Path $stageRoot $env:MOD
+          Remove-Item -Recurse -Force $stageRoot -ErrorAction Ignore
+          New-Item -ItemType Directory -Path $stage -Force | Out-Null
+
+          if (-not (Test-Path 'config/ymb.mod.yaml')) {
+            throw 'config/ymb.mod.yaml is missing. The package would not build.'
+          }
+          Copy-Item -Path 'config' -Destination $stage -Recurse
+
+          foreach ($legalFile in 'LICENSE', 'NOTICE') {
+            if (-not (Test-Path $legalFile)) {
+              throw "$legalFile is missing. Every published package carries its own terms."
+            }
+            Copy-Item -Path $legalFile -Destination $stage
+          }
+
+          $sourceNote = Get-Content -Raw -Path 'publish/deploy/SOURCE.txt'
+          $sourceNote = $sourceNote.
+            Replace('{{MOD}}', $env:MOD).
+            Replace('{{REPOSITORY}}', $env:GITHUB_REPOSITORY).
+            Replace('{{COMMIT}}', $env:GITHUB_SHA).
+            Replace('{{DATE}}', (Get-Date -AsUTC -Format 'yyyy-MM-dd'))
+          Set-Content -Path (Join-Path $stage 'SOURCE.txt') -Value $sourceNote -Encoding utf8
+
+          # ZipFile rather than Compress-Archive: it is explicit about the base
+          # directory and always writes forward-slash entry names, which is what
+          # the installer's tar.exe expects.
+          $archivePath = Join-Path $env:RUNNER_TEMP "$($env:MOD)-config.zip"
+          Remove-Item -Force $archivePath -ErrorAction Ignore
+          [System.IO.Compression.ZipFile]::CreateFromDirectory(
+            $stageRoot, $archivePath, [System.IO.Compression.CompressionLevel]::Optimal, $false)
+
+          "ARCHIVE_PATH=$archivePath" | Out-File -FilePath $env:GITHUB_ENV -Append -Encoding utf8
+
+      - name: Verify the configuration package
+        shell: pwsh
+        run: |
+          # Reads the archive the way the installer will, so a broken layout
+          # fails here instead of on a player's machine.
+          $archive = [System.IO.Compression.ZipFile]::OpenRead($env:ARCHIVE_PATH)
+          try {
+            $entries = @($archive.Entries | ForEach-Object { $_.FullName })
+          } finally {
+            $archive.Dispose()
+          }
+
+          foreach ($required in 'config/ymb.mod.yaml', 'LICENSE', 'NOTICE', 'SOURCE.txt') {
+            if ($entries -notcontains "$($env:MOD)/$required") {
+              throw "The package is missing $($env:MOD)/$required."
+            }
+          }
+
+          $stray = @($entries | Where-Object { $_ -notlike "$($env:MOD)/*" })
+          if ($stray.Count -gt 0) {
+            throw "The package has entries outside $($env:MOD)/: $($stray -join ', ')"
+          }
+
+          $size = [math]::Round((Get-Item $env:ARCHIVE_PATH).Length / 1MB, 2)
+          Write-Host "$($env:MOD)-config.zip: $($entries.Count) entries, $size MB"
+
+      - name: Write release notes
+        shell: pwsh
+        run: |
+          $installerName = Split-Path -Leaf $env:INSTALLER
+          # A literal here-string keeps the markdown backticks intact; the
+          # per-mod values are substituted afterwards.
+          $notes = @'
+          Download **{{INSTALLER}}** to install or update {{SUBJECT}}.
+
+          1. Create a WARNO mod with `WARNO\Mods\CreateNewMod.bat YourModName`.
+          2. Put `{{INSTALLER}}` inside the new mod folder, beside `CommonData` and `GameData`.
+          3. Double-click it.
+
+          The installer checks the required Windows tools, installs {{INSTALLS}}, then asks whether to apply it to WARNO. Answer **no** and nothing in your game is touched — it prints the sync command to use whenever you are ready.
+
+          **Git is no longer required.** The installer downloads `{{ARCHIVE}}`, which holds only the `config` folder YMB builds from, plus this repository's `LICENSE` and `NOTICE`. The full source stays here on GitHub.
+          '@
+          $notes = $notes.
+            Replace('{{INSTALLER}}', $installerName).
+            Replace('{{ARCHIVE}}', "$($env:MOD)-config.zip").
+            Replace('{{SUBJECT}}', $env:SUBJECT).
+            Replace('{{INSTALLS}}', $env:INSTALLS)
+          Set-Content -Path release-notes.md -Value $notes -Encoding utf8
+
+      - name: Read the release title from the last commit
+        shell: pwsh
+        run: |
+          # The release is named after the change that produced it, so the
+          # releases page reads as a changelog.
+          $title = (git log -1 --format=%s $env:GITHUB_SHA | Out-String).Trim()
+          if (-not $title) { $title = "$($env:MOD) stable" }
+          if ($title.Length -gt 200) { $title = $title.Substring(0, 197) + '...' }
+          "RELEASE_TITLE=$title" | Out-File -FilePath $env:GITHUB_ENV -Append -Encoding utf8
+
+      - name: Replace the stable release
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # `gh` reports "not found" through its exit code, and several checks
+          # below read that code deliberately. Keep native failures out of the
+          # error preference so they stay data rather than terminating errors.
+          $PSNativeCommandUseErrorActionPreference = $false
+
+          # Republishing removes the existing release and creates it again, so the
+          # download links never serve a stale installer or package.
+          #
+          # Every step here treats "already in the state I wanted" as success. A
+          # push that deletes the tag, or a queued run doing the same work, can
+          # land between any two commands, and none of those races mean this run
+          # failed to publish.
+          $release = gh release view stable --json tagName 2>$null
+          if ($LASTEXITCODE -eq 0 -and $release) {
+            gh release delete stable --yes
+            if ($LASTEXITCODE -ne 0) {
+              gh release view stable 2>$null | Out-Null
+              if ($LASTEXITCODE -eq 0) { throw "Could not remove the existing stable release." }
+            }
+          }
+
+          # The tag is force-updated rather than deleted and recreated: deleting
+          # it leaves a window where the release points at nothing, and deleting
+          # a tag that another run already removed is an error for no gain.
+          git tag --force stable $env:GITHUB_SHA
+          if ($LASTEXITCODE -ne 0) { throw "Could not tag stable." }
+          git push origin refs/tags/stable --force
+          if ($LASTEXITCODE -ne 0) {
+            # Joined into one string first: `-notmatch` over an array filters it
+            # instead of answering yes or no, and any unmatched line reads true.
+            $remote = (git ls-remote --tags origin refs/tags/stable) -join "`n"
+            if ($LASTEXITCODE -ne 0 -or $remote -notmatch $env:GITHUB_SHA) {
+              throw "Could not push the stable tag."
+            }
+          }
+
+          gh release create stable $env:INSTALLER $env:ARCHIVE_PATH `
+            --title $env:RELEASE_TITLE `
+            --notes-file release-notes.md `
+            --latest=true
+          if ($LASTEXITCODE -ne 0) { throw "Could not publish the stable release." }
+
+      - name: Retire the old auto-deploy release
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          $PSNativeCommandUseErrorActionPreference = $false
+
+          # `stable` replaced `auto-deploy`. The old release still serves an
+          # installer that clones over Git, so it is removed rather than left to
+          # rot. Missing is the desired state, so nothing here fails the run.
+          gh release view auto-deploy --json tagName 2>$null | Out-Null
+          if ($LASTEXITCODE -eq 0) {
+            gh release delete auto-deploy --yes --cleanup-tag
+            if ($LASTEXITCODE -ne 0) {
+              Write-Host '::warning::Could not remove the superseded auto-deploy release.'
+            }
+          }
+          $global:LASTEXITCODE = 0

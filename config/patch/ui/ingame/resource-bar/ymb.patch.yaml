@@ -1,0 +1,21 @@
+version: 1
+id: 'ysm.ui.ingame.resource-bar'
+name: 'YSM Resource Bar'
+description: 'Removes the background behind the top resource bar.'
+enabled: true
+scope: 'prod'
+optional: true
+dependsOn: []
+targets:
+  - file: 'GameData/UserInterface/Use/InGame/UIInGameResources.ndf'
+    operations:
+      - op: 'remove'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'InGameMainContainerResource.ForegroundComponents.Components.[UniqueName="barre_du_haut"].HasBackground'
+      - op: 'remove'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'InGameMainContainerResource.ForegroundComponents.Components.[UniqueName="barre_du_haut"].BackgroundBlockColorToken'

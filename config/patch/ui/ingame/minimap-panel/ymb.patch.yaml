@@ -1,0 +1,16 @@
+version: 1
+id: 'ysm.ui.ingame.minimap-panel'
+name: 'YSM Minimap Panel'
+description: 'Removes the background frame around the minimap.'
+enabled: true
+scope: 'prod'
+optional: true
+dependsOn: []
+targets:
+  - file: 'GameData/UserInterface/Use/InGame/UISpecificMiniMapInfoView.ndf'
+    operations:
+      - op: 'remove'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'BUCKSpecificMiniMapInfoMainComponentDescriptor.Components.[PanelRoundedCorner]'

@@ -1,0 +1,14 @@
+{{MOD}} configuration package
+
+This archive is not the full {{MOD}} source. It holds only the files the YMB
+builder needs, so the Auto Deploy installer can set the mod up without Git:
+
+  {{MOD}}/config/     the configuration YMB builds the mod from
+  {{MOD}}/LICENSE     the terms this configuration is published under
+  {{MOD}}/NOTICE      attribution and third-party notices
+  {{MOD}}/SOURCE.txt  this file
+
+Full source, history, and issue tracker:
+  https://github.com/{{REPOSITORY}}
+
+Built from commit {{COMMIT}} on {{DATE}}.

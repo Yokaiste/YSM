@@ -1,0 +1,38 @@
+version: 1
+id: 'ysm.ui.ingame.skirmish-production'
+name: 'YSM Skirmish Production'
+description: 'Compacts the skirmish production menu and raises its air slot cap to the YSM plane cap.'
+enabled: true
+scope: 'prod'
+optional: true
+dependsOn: []
+targets:
+  - file: 'GameData/UserInterface/Use/InGame/UISpecificSkirmishProductionMenuView.ndf'
+    operations:
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'SkirmishProductionMenuCategoryButton.ButtonMagnifiableWidthHeight'
+        value:
+          $raw: '[55.0, 32.0]'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'SkirmishProductionMenuUnitListScrollingContainer.ComponentFrame.MagnifiableOffset'
+        value:
+          $raw: '[-10.0, 0.0]'
+      - op: 'add'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'SkirmishProductionMenuUnitListScrollingContainer.ScrollStepSize'
+        value:
+          $raw: '[40.0, 0.0]'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'UISpecificSkirmishProductionMenuViewDescriptor.NbMaxPlanes'
+        value: ${planeCap}

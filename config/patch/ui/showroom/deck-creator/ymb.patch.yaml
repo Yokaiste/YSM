@@ -1,0 +1,190 @@
+version: 1
+id: 'ysm.ui.showroom.deck-creator'
+name: 'YSM Deck Creator'
+description: 'Widens the deck creator and makes its transport list scroll, so large YSM decks fit.'
+enabled: true
+scope: 'prod'
+optional: true
+dependsOn: []
+targets:
+  - file: 'GameData/UserInterface/Use/ShowRoom/Views/UISpecificShowRoomDeckCreatorScreenComponent.ndf'
+    # Children the screen names, so replacing one only shows if the parent still points at
+    # it. `DeckCreatorMaxUnitsInDeckPerCategory` is excluded: the game reads it by name.
+    expect:
+      referenced:
+        - 'TransportSelectionContainer'
+        - 'TransportsListContent'
+        - 'ListeDesUnitesDuDeck'
+    operations:
+      - op: 'add'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'TransportSelectionContainer.ComponentFrame.RelativeWidthHeight'
+        value:
+          $raw: '[0.71, 0.0]'
+      - op: 'remove'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'TransportSelectionContainer.ComponentFrame.AlignementToAnchor'
+      - op: 'remove'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'TransportSelectionContainer.ComponentFrame.AlignementToFather'
+      - op: 'remove'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'TransportSelectionContainer.BreadthComputationMode'
+      - op: 'remove'
+        selector:
+          kind: 'object'
+          by: 'name'
+          value: 'TransportsListContent'
+      - op: 'add'
+        position: { mode: 'after', anchor: 'TransportsListTitle' }
+        value:
+          $raw: |-
+            TransportsListContent is BUCKSpecificScrollingContainerDescriptor
+            (
+                ElementName = "TransportsListContentContainerYSM"
+                ComponentFrame = TUIFramePropertyRTTI
+                (
+                    RelativeWidthHeight = [1.0, 0.0]
+                    MagnifiableWidthHeight = [0.0, 100.0]
+                )
+
+                ExternalScrollbar = true
+                ScrollStepSize = [40.0, 0.0]
+
+                HasHorizontalScrollbar = true
+                HorizontalScrollbarComponentFrame = TUIFramePropertyRTTI
+                (
+                    MagnifiableWidthHeight = [0.0, 7.0]
+                    MagnifiableOffset = [0.0, 95.0]
+                )
+
+                Components =
+                [
+                    BUCKListDescriptor
+                    (
+                        ElementName = "TransportsListContent"
+                        ComponentFrame = TUIFramePropertyRTTI
+                        (
+                            MagnifiableWidthHeight = [0.0, 100.0]
+                        )
+
+                        Axis = ~/ListAxis/Horizontal
+                        FirstMargin = TRTTILength( Magnifiable = 20.0 )
+                        LastMargin = TRTTILength( Magnifiable = 20.0 )
+                        InterItemMargin = TRTTILength( Magnifiable = 15.0 )
+                    )
+                ]
+            )
+      - op: 'remove'
+        selector:
+          kind: 'object'
+          by: 'name'
+          value: 'ListeDesUnitesDuDeck'
+      - op: 'add'
+        position: { mode: 'after', anchor: 'TransportsListContent' }
+        value:
+          $raw: |-
+            ListeDesUnitesDuDeck is BUCKSpecificScrollingContainerDescriptor
+            (
+                ElementName = "UnitDeckListContainerYSM"
+                ComponentFrame = TUIFramePropertyRTTI
+                (
+                    RelativeWidthHeight = [1.0, 0.0]
+                    MagnifiableWidthHeight = [0.0, 100.0]
+                )
+
+                ExternalScrollbar = true
+                ScrollStepSize = [40.0, 0.0]
+
+                HasHorizontalScrollbar = true
+                HorizontalScrollbarComponentFrame = TUIFramePropertyRTTI
+                (
+                    MagnifiableWidthHeight = [0.0, 7.0]
+                    MagnifiableOffset = [0.0, 108.0]
+                )
+
+                Components =
+                [
+                    BUCKListDescriptor
+                    (
+                        ElementName = "UnitDeckList"
+
+                        ComponentFrame = TUIFramePropertyRTTI
+                        (
+                            MagnifiableWidthHeight = [0.0, ~/UnitListHeight]
+                            MagnifiableOffset = [0.0, 8.0]
+                            AlignementToAnchor = [0.0, 0.5]
+                            AlignementToFather = [0.0, 0.5]
+                        )
+
+                        Axis = ~/ListAxis/Horizontal
+                        ClipContent = true
+                        LastMargin = TRTTILength(Magnifiable = 5 * MargePanneaux)
+                        FirstMargin = TRTTILength(Magnifiable = 5 * MargePanneaux)
+                        MagnifierMultiplication = 1
+                        Elements = []
+
+                        ForegroundComponents =
+                        [
+                            BUCKContainerDescriptor
+                            (
+                                ElementName = "UnitDeckListDnDFeedback"
+                                HasBackground = true
+                                BackgroundBlockColorToken = "Black80"
+                                ComponentFrame = TUIFramePropertyRTTI
+                                (
+                                    MagnifiableWidthHeight = [4.0, ~/UnitListHeight]
+                                    AlignementToAnchor = [0.5, 0.5]
+                                    AlignementToFather = [0.0, 0.5]
+                                )
+                            ),
+                            BUCKDroppableContainerDescriptor
+                            (
+                                ElementName = "UnitDeckListDroppable"
+                                ComponentFrame = TUIFramePropertyRTTI
+                                (
+                                    RelativeWidthHeight = [1.0, 1.0]
+                                )
+                            )
+                        ]
+
+                        BackgroundComponents =
+                        [
+                            BUCKContainerDescriptor
+                            (
+                                UniqueName = "DeckBuildingUnitDeckList"
+                                ElementName = "UnitDeckListSpotlight"
+
+                                ComponentFrame = TUIFramePropertyRTTI
+                                (
+                                    RelativeWidthHeight = [1.0, 1.0]
+                                )
+                            )
+                        ]
+                    )
+                ]
+            )
+      - op: 'remove'
+        selector:
+          kind: 'object'
+          by: 'name'
+          value: 'DeckCreatorMaxUnitsInDeckPerCategory'
+      - op: 'add'
+        position: { mode: 'after', anchor: 'DeckCreatorTransportUnitButtonRadioManager' }
+        value:
+          $raw: 'DeckCreatorMaxUnitsInDeckPerCategory is ${deckSlotCount}'
+      - op: 'modify'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'DeckEditorTopBar.Components.[BUCKListDescriptor].Elements.[ComponentDescriptor=DeckEditorTopBarLeftContent( SelectedTab = <SelectedTab> )].ExtendWeight'
+        value:
+          $raw: '0.87'

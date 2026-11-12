@@ -1,0 +1,85 @@
+version: 1
+id: 'ysm.core.faction'
+name: 'YSM Faction'
+description: 'Adds YSM faction identity, flags and national and coalition emblems.'
+enabled: true
+scope: 'prod'
+# Not optional: every generated division is labelled with this faction.
+dependsOn: []
+files:
+  - op: 'copy'
+    source: { root: 'patch', path: 'assets/textures' }
+    destination: 'GameData/Assets/2D/Interface/Common'
+    expect: { files: 6 }
+  # WARNO wants the tag in each file name and a folder per file, so it goes on at the destination.
+  - op: 'copy'
+    source: { root: 'patch', path: 'assets/names/names.csv' }
+    destination: 'GameData/Gameplay/Unit/Names/NAMES_${modTag}.csv'
+  - op: 'copy'
+    source: { root: 'patch', path: 'assets/names/nation-to-dico.ndf' }
+    destination: 'GameData/Generated/Gameplay/UnitNames/UnitNames_${modTag}.ndf'
+  - op: 'copy'
+    source: { root: 'patch', path: 'assets/names/dico-resource.ndf' }
+    destination: 'GameData/Generated/Gameplay/UnitNamesDico/Dico_NAMES_${modTag}.ndf'
+targets:
+  # Referenced by the bank entries, the chat tokens, the flag, and every division emblem.
+  - file: 'GameData/UserInterface/Use/Common/CommonTextures.ndf'
+    operations:
+      - op: 'add'
+        position: { mode: 'after', anchor: 'TextureMapTaille4v4' }
+        value:
+          $raw: |-
+            Texture${modTag}_BrandLogo is TUIResourceTexture(FileName = 'GameData:/Assets/2D/Interface/Common/y-brand-logo.png')
+            Texture${modTag}_CountryFlag is TUIResourceTexture(FileName = 'GameData:/Assets/2D/Interface/Common/y-country-flag.png')
+
+            Texture${modTag}_Division_NATO is TUIResourceTexture(FileName = 'GameData:/Assets/2D/Interface/Common/y-division-nato-unlimited.png')
+            Texture${modTag}_Division_NATO_Balanced is TUIResourceTexture(FileName = 'GameData:/Assets/2D/Interface/Common/y-division-nato-balanced.png')
+            Texture${modTag}_Division_PACT is TUIResourceTexture(FileName = 'GameData:/Assets/2D/Interface/Common/y-division-pact-unlimited.png')
+            Texture${modTag}_Division_PACT_Balanced is TUIResourceTexture(FileName = 'GameData:/Assets/2D/Interface/Common/y-division-pact-balanced.png')
+
+      - op: 'add'
+        selector:
+          kind: 'collection'
+          by: 'path'
+          value: 'CommonTexture_AdditionalTextureBank.Textures'
+        value:
+          $raw: |-
+            ("Texture${modTag}_BrandLogo",              MAP [ (~/ComponentState/Normal, ~/Texture${modTag}_BrandLogo), ] ),
+            ("Texture${modTag}_CountryFlag",            MAP [ (~/ComponentState/Normal, ~/Texture${modTag}_CountryFlag), ] ),
+            ("Texture${modTag}_Division_NATO",          MAP [ (~/ComponentState/Normal, ~/Texture${modTag}_Division_NATO), ] ),
+            ("Texture${modTag}_Division_NATO_Balanced", MAP [ (~/ComponentState/Normal, ~/Texture${modTag}_Division_NATO_Balanced), ] ),
+            ("Texture${modTag}_Division_PACT",          MAP [ (~/ComponentState/Normal, ~/Texture${modTag}_Division_PACT), ] ),
+            ("Texture${modTag}_Division_PACT_Balanced", MAP [ (~/ComponentState/Normal, ~/Texture${modTag}_Division_PACT_Balanced), ] ),
+
+  # `NameToken` resolves through INTERFACE_OUTGAME.csv, seeded from the mod identity.
+  - file: 'GameData/Generated/UserInterface/UISpecificCountriesInfos.ndf'
+    operations:
+      - op: 'add'
+        selector:
+          kind: 'collection'
+          by: 'path'
+          value: '@type:TUISpecificCountriesInfos.CountriesInfos'
+        value:
+          $raw: |-
+            ("${modTag}", TUISpecificCountryInfos
+                        (
+                            FlagTexture = "Texture${modTag}_CountryFlag"
+                            Country = "${modTag}"
+                            NameToken = "${modTag}"
+                            Coalition = TWargameCoalition/NATO
+                        )
+                    ),
+
+  - file: 'GameData/Generated/UserInterface/DivisionTypes.ndf'
+    operations:
+      - op: 'add'
+        selector:
+          kind: 'collection'
+          by: 'path'
+          value: 'DivisionTypeDescriptions.DivisionTypes'
+        position:
+          mode: 'before'
+          anchor: "('MECHANIZ'"
+        value:
+          $raw: |-
+            ('${modTag}', 'Texture${modTag}_CountryFlag'),

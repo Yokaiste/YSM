@@ -1,0 +1,16 @@
+version: 1
+id: 'ysm.ui.ingame.score-panel'
+name: 'YSM Score Panel'
+description: 'Removes the background shell behind the score panel.'
+enabled: true
+scope: 'prod'
+optional: true
+dependsOn: []
+targets:
+  - file: 'GameData/UserInterface/Use/InGame/UISpecificHUDScoreView.ndf'
+    operations:
+      - op: 'remove'
+        selector:
+          kind: 'field'
+          by: 'path'
+          value: 'MainScorePanelComponent.BackgroundComponents'

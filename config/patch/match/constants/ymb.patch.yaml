@@ -1,0 +1,233 @@
+version: 1
+id: 'ysm.match.constants'
+name: 'YSM Match Settings'
+description: 'Offers more match lengths, income rates, starting resources and
+  victory targets.'
+enabled: true
+scope: 'prod'
+# Only widens vanilla option lists.
+optional: true
+dependsOn: []
+variables:
+  # Derived representations of the match options below.
+  economyModeTokensRaw: "${'[ ' + join(pluck(gameplayConstants.incomeModes, 'token'), ', ') + ' ]'}"
+  upkeepPercentValuesRaw: "${'[ ' + join(pluck(gameplayConstants.incomeModes, 'rate'), ', ') + ' ]'}"
+  scoreValuesWithZero: ${concat(gameplayConstants.scoreValues, [0])}
+  scoreValuesWithZeroRaw: "${'[ ' + join(scoreValuesWithZero, ', ') + ' ]'}"
+  destructionScoreLevelsTableRaw: |-
+    MAP
+    [
+        ${join(cartesian(scoreValuesWithZero, ['VictoryTypeDestructionLevelsTableOptions' + modTag], '({left}, {right})'), ',\n        ')}
+    ]
+  gameplayConstants:
+    # Initially selected match duration; separate from the available menu options.
+    defaultTimeLimitInMinutes: 41
+    # Match length in minutes; 0 means unlimited.
+    timeLimitTable:
+      [
+        5,
+        10,
+        15,
+        21,
+        25,
+        30,
+        35,
+        41,
+        45,
+        50,
+        55,
+        60,
+        67,
+        80,
+        89,
+        101,
+        110,
+        120,
+        150,
+        180,
+        210,
+        240,
+        300,
+        360,
+        404,
+        480,
+        540,
+        600,
+        666,
+        720,
+        1080,
+        1337,
+        2880,
+        0,
+      ]
+    # Starting money and destruction-mode score targets.
+    scoreValues:
+      [
+        67,
+        100,
+        404,
+        500,
+        666,
+        1000,
+        1337,
+        1500,
+        1750,
+        2000,
+        2500,
+        3000,
+        3500,
+        4000,
+        4500,
+        5000,
+        5500,
+        6000,
+        6500,
+        7000,
+        7500,
+        8008,
+        8500,
+        9001,
+        9500,
+        10000,
+        12345,
+        15000,
+        17500,
+        20000,
+        25000,
+        30000,
+        35000,
+        40000,
+        42069,
+        45000,
+        50000,
+        55000,
+        60000,
+        65000,
+        70000,
+        75000,
+        80085,
+        90000,
+        95000,
+        100000,
+        200000,
+        300000,
+        400000,
+        500000,
+        694200,
+        1000000,
+        2000000,
+      ]
+    incomeModes:
+      - rate: 0
+        token: "'CONQ_NONE'"
+      - rate: 0.25
+        token: "'${modTag}_CON_0l'"
+      - rate: 0.5
+        token: "'${modTag}_CON_0m'"
+      - rate: 0.75
+        token: "'${modTag}_CON_0h'"
+      - rate: 1
+        token: "'${modTag}_CON_1'"
+      - rate: 1.25
+        token: "'${modTag}_CON_1l'"
+      - rate: 1.5
+        token: "'${modTag}_CON_1m'"
+      - rate: 1.75
+        token: "'${modTag}_CON_1h'"
+      - rate: 2
+        token: "'${modTag}_CON_2'"
+      - rate: 2.25
+        token: "'${modTag}_CON_2l'"
+      - rate: 2.5
+        token: "'${modTag}_CON_2m'"
+      - rate: 2.75
+        token: "'${modTag}_CON_2h'"
+      - rate: 3
+        token: "'${modTag}_CON_3'"
+      - rate: 3.5
+        token: "'${modTag}_CON_3m'"
+      - rate: 4
+        token: "'${modTag}_CON_4'"
+      - rate: 4.5
+        token: "'${modTag}_CON_4m'"
+      - rate: 5
+        token: "'${modTag}_CON_5'"
+      - rate: 5.5
+        token: "'${modTag}_CON_5m'"
+      - rate: 6
+        token: "'${modTag}_CON_6'"
+      - rate: 6.5
+        token: "'${modTag}_CON_6m'"
+      - rate: 7
+        token: "'${modTag}_CON_7'"
+      - rate: 7.5
+        token: "'${modTag}_CON_7m'"
+      - rate: 8
+        token: "'${modTag}_CON_8'"
+      - rate: 8.5
+        token: "'${modTag}_CON_8m'"
+      - rate: 9
+        token: "'${modTag}_CON_9'"
+      - rate: 9.5
+        token: "'${modTag}_CON_9m'"
+      - rate: 10
+        token: "'${modTag}_CON_10'"
+      - rate: 15
+        token: "'${modTag}_CON_15'"
+      - rate: 20
+        token: "'${modTag}_CON_20'"
+      - rate: 30
+        token: "'${modTag}_CON_30'"
+      - rate: 40
+        token: "'${modTag}_CON_40'"
+      - rate: 50
+        token: "'${modTag}_CON_50'"
+      - rate: 99
+        token: "'${modTag}_CON_99'"
+targets:
+  - file: GameData/Gameplay/Constantes/WargameMatchSetupConstantes.ndf
+    operations:
+      - op: modify
+        selector: { kind: field, by: path, value: 'WargameMatchSetupConstantes.TimeLimitTable' }
+        value:
+          $raw: '[ ${join(gameplayConstants.timeLimitTable, ", ")} ]'
+      - op: modify
+        selector:
+          { kind: field, by: path, value: 'WargameMatchSetupConstantes.DefaultTimeLimitInMinutes' }
+        value: '${gameplayConstants.defaultTimeLimitInMinutes}'
+      - forEach:
+          - { at: 'MoneyWinLocalisationTokensInConquestMode', value: '${economyModeTokensRaw}' }
+          - { at: 'MoneyWinPerAllianceInConquestMode', value: '${upkeepPercentValuesRaw}' }
+          - {
+              at: 'ConquestPossibleScores',
+              value: '[ ${join(gameplayConstants.scoreValues, ", ")} ]',
+            }
+          - { at: 'IncomeMultiplier', value: '${upkeepPercentValuesRaw}' }
+          - { at: 'IncomeMultiplierTokensInDestructionMode', value: '${economyModeTokensRaw}' }
+          - { at: 'IncomeMultiplierInDestructionMode', value: '${upkeepPercentValuesRaw}' }
+          - { at: 'ArgentInitialSetting', value: '${scoreValuesWithZeroRaw}' }
+          - { at: 'DefaultDestructionScoreToReachSetting', value: '${scoreValuesWithZeroRaw}' }
+          - { at: 'VictoryTypeDestructionLevelsTable', value: '${destructionScoreLevelsTableRaw}' }
+        as: edit
+        do:
+          - op: modify
+            selector: { kind: field, by: path, value: 'WargameMatchSetupConstantes.${edit.at}' }
+            value:
+              $raw: ${edit.value}
+      - op: add
+        position: { mode: after, anchor: 'WargameMatchSetupConstantes' }
+        value:
+          $raw: 'VictoryTypeDestructionLevelsTableOptions${modTag} is [
+            ${join(scoreValuesWithZero, ", ")} ]'
+      - op: modify
+        selector:
+          {
+            kind: field,
+            by: path,
+            value: 'WargameMatchSetupConstantes.UpkeepPercentAvailableSettings',
+          }
+        value:
+          $raw: '[ ${join(integers(pluck(gameplayConstants.incomeModes, "rate")), ", ")}
+            ]'
+scripts:
+  - path: localisation.ts

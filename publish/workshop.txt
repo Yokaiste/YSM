@@ -1,0 +1,134 @@
+Yokaiste's Sandbox Mod 2.8 — Break the limits. Build the battle you want.
+
+[b]WARNO gives you an army. YSM gives you the entire toy box.[/b]
+
+Field absurdly large divisions, unleash Zombie Horde, launch nukes, or keep unit availability more restrained with Balanced variants. Expanded decks, match settings, and interface layouts give you room to experiment.
+
+[b]Made for Skirmish and Multiplayer sandbox battles.[/b] The figures below describe the standard YSM setup; custom builds can change them.
+
+[hr][/hr]
+[h1]🔥 One Mod. A Ridiculous Amount of WARNO.[/h1]
+
+[h2]🔓 Unlimited Sandbox Divisions[/h2]
+[list]
+[*]Country, coalition, NATO, PACT, and all units sandbox divisions
+[*]Expanded armory access, including hidden units available in the underlying game data
+[*][b]999 units per card in Unlimited divisions[/b] and [b]80 deck slots per category[/b]
+[*]Available veterancy levels and compatible transports for your chosen units
+[*]Built for experimentation, scenario testing, spectacular battles, and terrible ideas at industrial scale
+[/list]
+
+[h2]⚖️ Balanced Freedom[/h2]
+[list]
+[*]Broad division rosters with more restrained unit availability than Unlimited
+[*]A starting point for conventional battles and agreed rules with friends
+[*]Balanced changes division availability; it does not switch off the rest of the sandbox features
+[/list]
+
+[h2]🧟 Zombie Horde[/h2]
+[list]
+[*]Dedicated [b]ZOMBIE HORDE[/b] divisions
+[*]Seven custom threats: Swarm, Breaker, Screecher, Stalker, Smoker, Pack Leader, and Demolisher
+[*]A complete alternate battle experience where the front line is hungry and retreat is cardio
+[/list]
+
+[h2]🃏 Play Immediately — or Build Something Monstrous[/h2]
+[list]
+[*]Ready-to-play decks spanning factions, division types, specialized builds, balanced setups, and pure chaos
+[*]Skip the armory work when you want instant action, or use YSM's expanded deck creator to build without ordinary limits
+[/list]
+
+[hr][/hr]
+[h1]💥 Weapons for the End of the World[/h1]
+[list]
+[*]Helicopter, truck, and amphibious logistics units carrying [b]2,000,000 supply[/b]
+[*]Resupply points, hardened bunkers, and a missile-equipped doomsday base with enormous forward-deployment reach
+[*]The Illegal Cannon, Illegal Recon, and [b]two strategic nuclear bombers[/b]
+[*]Balanced tools when you want a battle; forbidden tools when you want a historical event
+[/list]
+
+[hr][/hr]
+[h1]⚙️ Turn Every Dial Past Sensible[/h1]
+[list]
+[*]Extended time limits for quick games, marathons, and wars of questionable duration
+[*][b]Income and upkeep multipliers up to x99[/b]
+[*][b]Starting resources and destruction targets up to 2,000,000[/b]
+[*][b]Air cap up to 297 aircraft[/b]—air superiority by numerical intimidation
+[/list]
+
+[hr][/hr]
+[h1]✨ Gameplay & Interface Upgrades[/h1]
+[list]
+[*]Ground explosions can damage helicopters and aircraft caught in the blast radius
+[*]Expanded deck creator and armory layouts keep gigantic YSM decks practical to build and browse
+[*]A cleaner HUD reorganizes resources, score, time controls, shortcuts, minimap, off-map controls, beacons, and chat
+[*][b]A new dark charcoal HUD[/b] brings soft white text and light accents — because the battlefield already has enough things glowing ominously
+[/list]
+
+[hr][/hr]
+[h1]🧰 YSM × ANY MOD — Through Yuri's WARNO Toolkit[/h1]
+
+[b]Bring YSM's sandbox to a mod you already love.[/b]
+
+[url=https://github.com/dary1337/yuri-warno-toolkit][b]Yuri's WARNO Toolkit (YWT)[/b][/url] lets you pick a Workshop mod, add YSM, and generate one combined build. Choose the features you want, or add [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3387658237][b]WARNO Tactical Overhaul (WTO)[/b][/url] for its balance changes.
+
+[h2]🚀 Generate a Combination[/h2]
+[olist]
+[*][url=https://github.com/dary1337/yuri-warno-toolkit/releases/latest][b]Download YWT[/b][/url] and open the toolkit
+[*]Subscribe to the base mod in the Steam Workshop
+[*]Open the [b]Mod Builder[/b] and select that mod
+[*]Choose YSM, optionally add WTO, review the feature choices, and generate your local build
+[/olist]
+
+[h2]🃏 Also Inside YWT[/h2]
+[list]
+[*]Edit and recover decks: units, veterancy, transports, names, duplicates, and coalition switching
+[*]Back up and restore profiles, or install YSM-family mods from the catalog
+[/list]
+
+[h2]📌 Good to Know[/h2]
+[list]
+[*]Combinations are generated entirely on your PC
+[*]Compatibility varies. For help, send logs to the [url=https://discord.gg/J4wpAswAua][b]YSM Community[/b][/url]—not the base mod author
+[*]Do not reupload or redistribute combined builds; every included mod remains the work of its original authors
+[/list]
+
+Want to tune YSM yourself? See the [url=https://github.com/Yokaiste/YSM/blob/master/docs/README.md][b]customization guide[/b][/url].
+
+[hr][/hr]
+[h1]💡 Before You Launch[/h1]
+[list]
+[*]Subscribe, then [b]activate YSM in WARNO's Mod Center[/b]
+[*]Deploy only what you need if you would like your frame rate to remain involved in the battle
+[*]Mods that change the same gameplay or interface files can conflict when enabled separately; use a combined build where supported
+[*]Map-only mods may work alongside YSM; compatibility depends on what each mod changes
+[/list]
+
+[hr][/hr]
+[h1]🛠️ Built With YMB[/h1]
+YSM is built with [url=https://github.com/Yokaiste/YMB][b]Yokaiste's Mod Builder (YMB)[/b][/url]. It keeps a mod's authored changes separate from WARNO's generated files, making large projects easier to maintain through game updates.
+
+[list]
+[*]For mod authors: structural patches, bulk rules, shared settings, generation scripts, and automation for tools and AI agents
+[*]Build previews and conflict reports help you inspect changes; saved originals support recovery
+[*]YSM's source shows these tools working together across divisions, units, localisation, and interface features
+[/list]
+
+[hr][/hr]
+[h1]💬 Put a Flag on the Chaos[/h1]
+Decorate chat messages and nicknames with YSM badges, logos, and division marks:
+
+[list]
+[*][b]#YSM[/b] or [b]#YSM_FLAG[/b]
+[*][b]#YSM_DIVISION_NATO[/b] or [b]#YSM_DIVISION_PACT[/b]
+[*][b]#YSM_DIVISION_NATO_BALANCED[/b] or [b]#YSM_DIVISION_PACT_BALANCED[/b]
+[/list]
+
+[hr][/hr]
+[h1]🌐 Downloads, Source & Support[/h1]
+[list]
+[*][url=https://discord.gg/J4wpAswAua][b]YSM Community[/b][/url] — support, updates, feedback, and YWT troubleshooting
+[*][url=https://github.com/dary1337/yuri-warno-toolkit/releases/latest][b]Download Yuri's WARNO Toolkit[/b][/url]
+[*][url=https://github.com/Yokaiste/YMB][b]Yokaiste's Mod Builder[/b][/url]
+[*][url=https://github.com/Yokaiste/YSM][b]YSM Source Code[/b][/url]
+[/list]
