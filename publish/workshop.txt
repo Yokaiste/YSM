@@ -48,7 +48,12 @@ A charcoal HUD and revised resource, selection, minimap, offmap, and chat panels
 
 [img]https://raw.githubusercontent.com/Yokaiste/YSM/master/publish/headers/compatibility.jpg[/img]
 
-[url=https://github.com/dary1337/yuri-warno-toolkit]Yuri's WARNO Toolkit[/url] lets you combine YSM's features with a mod you already play. You can also add [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3387658237]WARNO Tactical Overhaul[/url] for different ranges, movement, and weapon behavior.
+[url=https://github.com/dary1337/yuri-warno-toolkit]Yuri's WARNO Toolkit (YWT)[/url] lets you:
+[list]
+[*]Combine any mod with YSM or [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3387658237]WTO[/url]; choose features and tune mod settings to your taste.
+[*]Edit units, veterancy, and transports; create decks, recover decks from older builds or other mods, and save decks too large for in-game codes.
+[*]Install supported mods in one click, with game-version matching, backups, and rollback.
+[/list]
 
 Compatibility depends on the mods you choose. Visit the [url=https://discord.gg/33Sqn6dTjf]YSM Community[/url] for help with combinations.
 
