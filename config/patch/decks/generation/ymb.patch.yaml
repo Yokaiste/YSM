@@ -1,0 +1,107 @@
+version: 1
+id: 'ysm.decks.generation'
+name: 'YSM Deck Generation'
+description: 'Build country, coalition, and all-unit divisions with ready-made decks.'
+enabled: true
+scope: 'prod'
+# Only the faction is required: every division names its country, type, and emblem.
+dependsOn:
+  - 'ysm.core.faction'
+variables:
+  # One cost per slot. Referenced by every division this patch generates.
+  deckSlotCostMatrixRow: ${join(repeat(1, deckSlotCount), ', ')}
+  deckGeneration:
+    deckSlotCount: ${deckSlotCount}
+    unlimitedPackUnitCount: 999
+    staticPackCounts: [10, 6, 3, 1]
+    deckVeterancy: 1
+    excludeHidden: false
+    minimumContextUnitCount: 3
+    requireCommandUnitInContext: true
+    commentDirectives: ${commentDirectives}
+    naming:
+      unlimitedDescription: >-
+        Assemble an army from {label} forces with vast reserves.
+        Choose higher veterancy without giving up units. Bring the reinforcements.
+      balancedDescription: >-
+        Assemble an army from {label} forces with availability drawn from standard divisions.
+        Each unit has its own reserves and veterancy choices, so plan around what you can replace.
+      staticBalancedDescription: >-
+        Assemble an army from {label} forces with equal availability for every unit
+        at the same veterancy. Choose between more troops and more experienced troops.
+    modes: [Unlimited, Balanced, StaticBalanced]
+    # Vanilla rule blocks to skip when learning Balanced availability. Never add `_multi_`
+    # -- those are the primary source of sane numbers.
+    ignoredDivisionRuleNamePatterns:
+      - '_challenge_'
+      - '_special_'
+
+    # Independent roster filters. Regexes match unit descriptor names.
+    # A division exclusion also removes premade eligibility; a division force only adds availability.
+    divisionIgnoredUnitPatterns: []
+    divisionForcedUnitPatterns:
+      default: []
+
+    # Every regular division offers all mod-country units, even outside its context.
+    divisionPolicies:
+      default:
+        includeModUnits: true
+        includeModSupply: true
+        modUnitsIgnoreContext: true
+
+    # Availability does not imply a premade pick. Balanced decks contain no YSM units.
+    deckPolicies:
+      default:
+        includeModUnits: false
+        includeModSupply: false
+      customUnlimited:
+        includeModUnits: true
+        includeModSupply: true
+    # Premade exclusions leave manual division choices available. Horde uses its own zombie-only roster.
+    deckIgnoredUnitPatterns:
+      - '^Descriptor_Unit_YZ_'
+    # Forces override exclusions and scoring, and also make the unit available in the division.
+    deckForcedUnitPatterns:
+      default: []
+      countryUnlimited:
+        - '^Descriptor_Unit_YS_'
+        - '^Descriptor_Unit_YC_'
+        - '^Descriptor_Unit_YN_'
+      sideUnlimited:
+        - '^Descriptor_Unit_YS_'
+        - '^Descriptor_Unit_YC_'
+        - '^Descriptor_Unit_YN_'
+      allSideUnlimited:
+        - '^Descriptor_Unit_YS_'
+        - '^Descriptor_Unit_YC_'
+        - '^Descriptor_Unit_YN_'
+    deckMaxTransportCostRatio: 2
+
+targets:
+  - file: 'GameData/Generated/Gameplay/Decks/DivisionCostMatrix.ndf'
+    operations:
+      - op: 'add'
+        position: { mode: 'after', anchor: 'MatrixCostName_WP_Unternehmen_Zentrum_multi' }
+        value:
+          $raw: |-
+            MatrixCostName_${modTag} is MAP
+            [
+                (Factory/Art, [${deckSlotCostMatrixRow}]),
+                (Factory/DCA, [${deckSlotCostMatrixRow}]),
+                (Factory/Defense, [${deckSlotCostMatrixRow}]),
+                (Factory/Helis, [${deckSlotCostMatrixRow}]),
+                (Factory/Infantry, [${deckSlotCostMatrixRow}]),
+                (Factory/Logistic, [${deckSlotCostMatrixRow}]),
+                (Factory/Planes, [${deckSlotCostMatrixRow}]),
+                (Factory/Recons, [${deckSlotCostMatrixRow}]),
+                (Factory/Tanks, [${deckSlotCostMatrixRow}]),
+            ]
+scripts:
+  - path: 'generate-decks.ts'
+    tests:
+      - 'config-validation.test.ts'
+      - 'roster-policy.test.ts'
+      - 'scoring-audit.test.ts'
+      - 'generate-decks.test.ts'
+      - 'identity-stores.test.ts'
+      - 'render.test.ts'

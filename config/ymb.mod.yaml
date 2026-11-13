@@ -1,0 +1,38 @@
+version: 1
+id: 'ysm'
+name: 'Yokaiste’s Sandbox Mod'
+description: 'Break the limits. Build the battle you want.'
+enabled: true
+
+# Settings that coordinate independent features. Local overrides belong in YMB/ymb.config.yaml.
+variables:
+  # Shared identity and settings used by independent features.
+  modTag: 'YSM'
+
+  # Cards per category. Generation, cost matrix, armory, and deck creator must agree.
+  deckSlotCount: 80
+
+  # Scale YSM-authored balance; 1.0 keeps the designed values.
+  multipliers:
+    cost: 1.0
+    health: 1.0
+    speed: 1.0
+    damage: 1.0
+    range: 1.0
+  # Shared by bottomless vehicles and buildings.
+  supplyCostMultiplier: 1.0
+  # Fixed bottomless pool: scaling it can exceed the game's numeric limits.
+  unlimitedSupplyCapacity: '2000000.0'
+  # Off-map air slots. Read by the off-map panel and skirmish production.
+  planeCap: 297
+
+  # Comments you can put in a descriptor to steer deck generation by hand.
+  commentDirectives:
+    ignore: '${modTag}-ignore' # skip this one descriptor
+    everythingBelow: '${modTag}-ignore-everything-below' # skip the rest of the file
+    forceInclude: '${modTag}-force-include' # keep it despite the rules above
+
+scripts:
+  - path: localisation.ts
+    tests:
+      - localisation.test.ts

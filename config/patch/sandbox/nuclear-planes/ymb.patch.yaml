@@ -1,0 +1,473 @@
+version: 1
+id: 'ysm.sandbox.nuclear-planes'
+name: 'YSM Nuclear Planes'
+description: 'Add two nuclear bombers. Subtlety is optional.'
+enabled: true
+scope: 'prod'
+# Cloned from a vanilla bomber and the native nuke effects.
+optional: true
+dependsOn: []
+files:
+  - op: 'copy'
+    source: { root: 'patch', path: 'assets' }
+    destination: 'GameData/Assets/2D/Interface/Common/UnitsIcons/NATO'
+    expect: { files: 2 }
+# GRU per LBU, read from the game: vanilla says 2.92198967, at least one overhaul 1.0.
+readValues:
+  lbuToGruConversionFactor:
+    file: 'CommonData/Gameplay/Constantes/InitialisationGameDistanceUnits.ndf'
+    path: '@type:TInitialisationGameDistanceUnits.LBUToGRUConversionFactor'
+variables:
+  nukeUnitSourceDescriptorName: Descriptor_Unit_Tu_22_HE_SOV
+  nukeDamageMultiplier: 1.0
+  nukeRadiusMultiplier: 1.0
+  nukeCostMultiplier: 1.0
+  # Shared blast, fire and depiction radii stay below the engine's 1000 LBU limit.
+  # 999.999 also survives the game's float32 GRU-to-LBU round trip.
+  nukeRadiusScale: ${multipliers.range * nukeRadiusMultiplier}
+  nukeRadiusGruRaw: '${(500 * nukeRadiusScale > 999.999 ? 999.999 : 500 * nukeRadiusScale) * lbuToGruConversionFactor}'
+  nukeX2RadiusGruRaw: '${(nukeRadiusScale > 1 ? 999.999 : 999.999 * nukeRadiusScale) * lbuToGruConversionFactor}'
+
+targets:
+  - file: GameData/Fx/Set/FX_Impact_Nuke.ndf
+    operations:
+      - op: copy
+        selector: { kind: object, by: name, value: 'fx_impact_sol_Tactical_Nuke' }
+        destination: { name: 'fx_impact_sol_YN_Nuke' }
+      - op: modify
+        selector: { kind: field, by: path, value: 'fx_impact_sol_YN_Nuke.SizeFactor' }
+        value:
+          $raw: '12.0'
+      - op: copy
+        selector: { kind: object, by: name, value: 'fx_impact_sol_Tactical_Nuke' }
+        destination: { name: 'fx_impact_sol_YN_Nuke_X2' }
+      - op: modify
+        selector: { kind: field, by: path, value: 'fx_impact_sol_YN_Nuke_X2.SizeFactor' }
+        value:
+          $raw: '15.0'
+  - file: GameData/Generated/Gameplay/Gfx/MimeticImpactMapping.ndf
+    operations:
+      - op: add
+        position: { mode: after, anchor: 'FxImpactSolTacticalNuke' }
+        value:
+          $raw: |-
+            FxImpactSolYNNuke is ImpactWrapper( Action = $/GFX/GameFx/fx_impact_sol_YN_Nuke )
+            FxImpactSolYNNukeX2 is ImpactWrapper( Action = $/GFX/GameFx/fx_impact_sol_YN_Nuke_X2 )
+
+            unnamed TMimeticWorldHappeningRegistration
+            (
+                MimeticWorldDescriptor = $/DepictionCore/MimeticWorldDescriptor
+                Happenings = MAP
+                [
+                    ('YSMNuke50', TImpactHappening( Happenings = MAP[
+                        ( EImpactSurface/Ground , FxImpactSolYNNuke ),
+                        ( EImpactSurface/Water , FxImpactSolYNNuke ),
+                        ( EImpactSurface/Air , FxImpactSolYNNuke ),
+                        ( EImpactSurface/Wall , FxImpactSolYNNuke ),
+                        ( EImpactSurface/Vehicle , FxImpactSolYNNuke ),
+                        ( EImpactSurface/FlyingVehicle , FxImpactSolYNNuke ),
+                        ( EImpactSurface/Missile , nil ),
+                        ( EImpactSurface/Ricochet , nil ),
+                    ])),
+                    ('YSMNuke100', TImpactHappening( Happenings = MAP[
+                        ( EImpactSurface/Ground , FxImpactSolYNNukeX2 ),
+                        ( EImpactSurface/Water , FxImpactSolYNNukeX2 ),
+                        ( EImpactSurface/Air , FxImpactSolYNNukeX2 ),
+                        ( EImpactSurface/Wall , FxImpactSolYNNukeX2 ),
+                        ( EImpactSurface/Vehicle , FxImpactSolYNNukeX2 ),
+                        ( EImpactSurface/FlyingVehicle , FxImpactSolYNNukeX2 ),
+                        ( EImpactSurface/Missile , nil ),
+                        ( EImpactSurface/Ricochet , nil ),
+                    ])),
+                ]
+            )
+  - file: GameData/Generated/Gameplay/Gfx/FireDescriptor.ndf
+    operations:
+      - op: copy
+        selector: { kind: object, by: name, value: 'Descriptor_Fire_NapalmSpecial' }
+        destination: { name: 'Descriptor_Fire_YN_Nuke' }
+      - forEach:
+          - { at: 'DescriptorId', value: 'GUID:{9d1cac3e-c432-4696-93d7-85d45b688c5f}' }
+          - { at: 'ClassNameForDebug', value: "'Fire_YN_Nuke'" }
+          - at: 'ModulesDescriptors.[TApparenceModuleDescriptor].Depiction.DepictionDescriptor.Radius'
+            value: '${nukeRadiusGruRaw + " * 26 * 2.83"}'
+          - at: 'ModulesDescriptors.[TFireModuleDescriptor].TimeToLive'
+            value: '60'
+          - at: 'ModulesDescriptors.[TFireModuleDescriptor].TimeBeforeSpreading'
+            value: '0.5'
+          - at: 'ModulesDescriptors.[TFireModuleDescriptor].TimeBeforeSpreadAttempt'
+            value: '0.5'
+          - at: 'ModulesDescriptors.[TFireModuleDescriptor].IsNewFireProbability'
+            value: '1.0'
+          - at: 'ModulesDescriptors.[TFireModuleDescriptor].RadiusGRU'
+            value: '${nukeRadiusGruRaw}'
+          - at: 'ModulesDescriptors.[TFireModuleDescriptor].AmmunitionForBurn'
+            value: '$/GFX/Weapon/Ammo_Degats_napalm_lourd'
+          - { at: 'ModulesDescriptors.[TFireModuleDescriptor].IgniteDistricts', value: 'True' }
+        as: edit
+        do:
+          - op: modify
+            selector: { kind: field, by: path, value: 'Descriptor_Fire_YN_Nuke.${edit.at}' }
+            value:
+              $raw: ${edit.value}
+      - op: copy
+        selector: { kind: object, by: name, value: 'Descriptor_Fire_YN_Nuke' }
+        destination: { name: 'Descriptor_Fire_YN_Nuke_X2' }
+      - forEach:
+          - { at: 'DescriptorId', value: 'GUID:{43c680d5-50da-44e4-b691-75b3b0a49a00}' }
+          - { at: 'ClassNameForDebug', value: "'Fire_YN_Nuke_X2'" }
+          - at: 'ModulesDescriptors.[TApparenceModuleDescriptor].Depiction.DepictionDescriptor.Radius'
+            value: '${nukeX2RadiusGruRaw + " * 26 * 2.83"}'
+          - at: 'ModulesDescriptors.[TFireModuleDescriptor].RadiusGRU'
+            value: '${nukeX2RadiusGruRaw}'
+        as: edit
+        do:
+          - op: modify
+            selector: { kind: field, by: path, value: 'Descriptor_Fire_YN_Nuke_X2.${edit.at}' }
+            value:
+              $raw: ${edit.value}
+  - file: GameData/Generated/Gameplay/Gfx/Ammunition.ndf
+    operations:
+      - op: copy
+        selector: { kind: object, by: name, value: 'Ammo_Bomb_BRF_1000kg_x2' }
+        destination: { name: 'Ammo_YN_Nuke' }
+      - forEach:
+          - { at: 'DescriptorId', value: 'GUID:{1f62bd62-4b23-4527-908b-4bb94da242f0}' }
+        as: edit
+        do:
+          - op: modify
+            selector: { kind: field, by: path, value: 'Ammo_YN_Nuke.${edit.at}' }
+            value:
+              $raw: ${edit.value}
+      - forEach:
+          - { at: 'FxPower', value: 'EFXPower/UltraLourd' }
+          - { at: 'ImpactHappening', value: "'YSMNuke50'" }
+          - { at: 'AffecteParNombre', value: 'True' }
+          - { at: 'DispersionAtMaxRangeGRU', value: '0' }
+          - { at: 'DispersionAtMinRangeGRU', value: '0' }
+          - { at: 'MaximumRangeHelicopterGRU', value: '${nukeRadiusGruRaw}' }
+          - { at: 'MaximumRangeAirplaneGRU', value: '${nukeRadiusGruRaw}' }
+          - { at: 'RadiusSplashPhysicalDamagesGRU', value: '${nukeRadiusGruRaw}' }
+          - {
+              at: 'PhysicalDamages',
+              value: '${decimal(500 * multipliers.damage * nukeDamageMultiplier)}',
+            }
+          - { at: 'RadiusSplashSuppressDamagesGRU', value: '${nukeRadiusGruRaw + " * 2.5"}' }
+          - { at: 'SuppressDamages', value: '100000.0' }
+          - { at: 'AllowSuppressDamageWhenNoImpact', value: 'True' }
+          - { at: 'FireDescriptor', value: '$/GFX/Weapon/Descriptor_Fire_YN_Nuke' }
+          - { at: 'FireTriggeringProbability', value: '1.0' }
+          - { at: 'IgnoreInflammabilityConditions', value: 'True' }
+          - { at: 'ShotsCountPerSalvo', value: '1' }
+          - { at: 'AffichageMunitionParSalve', value: '1' }
+          - { at: 'SupplyCost', value: '700.0' }
+          - at: 'HitRollRuleDescriptor'
+            value: |-
+              TDiceHitRollRuleDescriptor
+              (
+                  BaseCriticModifier = 100
+                  BaseHitValueModifiers =
+                  [
+                      (EBaseHitValueModifier/Base, 100),
+                      (EBaseHitValueModifier/Idling, 100),
+                      (EBaseHitValueModifier/Moving, 100),
+                      (EBaseHitValueModifier/Targeted, 100),
+                  ]
+                  DistanceToTarget = False
+              )
+        as: edit
+        do:
+          - op: modify
+            selector: { kind: field, by: path, value: 'Ammo_YN_Nuke.${edit.at}' }
+            value:
+              $raw: ${edit.value}
+      - op: copy
+        selector: { kind: object, by: name, value: 'Ammo_YN_Nuke' }
+        destination: { name: 'Ammo_YN_Nuke_X2' }
+      - forEach:
+          - { at: 'DescriptorId', value: 'GUID:{3bc7accf-e4dc-4ef2-b28f-97de121526ee}' }
+          - { at: 'ImpactHappening', value: "'YSMNuke100'" }
+          - { at: 'MaximumRangeHelicopterGRU', value: '${nukeX2RadiusGruRaw}' }
+          - { at: 'MaximumRangeAirplaneGRU', value: '${nukeX2RadiusGruRaw}' }
+          - { at: 'RadiusSplashPhysicalDamagesGRU', value: '${nukeX2RadiusGruRaw}' }
+          - { at: 'RadiusSplashSuppressDamagesGRU', value: '${nukeX2RadiusGruRaw + " * 2.5"}' }
+          - { at: 'FireDescriptor', value: '$/GFX/Weapon/Descriptor_Fire_YN_Nuke_X2' }
+        as: edit
+        do:
+          - op: modify
+            selector: { kind: field, by: path, value: 'Ammo_YN_Nuke_X2.${edit.at}' }
+            value:
+              $raw: ${edit.value}
+  - file: GameData/Generated/Gameplay/Gfx/WeaponDescriptor.ndf
+    operations:
+      # The turret list is written out rather than edited: the Tu-22's two bays sit on bones 2
+      # and 3, and a base mod hanging another weapon there makes the ordinal match twice.
+      - forEach: ['YN_Nuke', 'YN_Nuke_X2']
+        as: carrier
+        do:
+          - op: copy
+            reidentify: true
+            selector: { kind: object, by: name, value: 'WeaponDescriptor_Tu_22_HE_SOV' }
+            destination: { name: 'WeaponDescriptor_${carrier}' }
+          - forEach:
+              - { at: Salves, value: '[1]' }
+              - { at: SalvoIsMainSalvo, value: '[True]' }
+            as: edit
+            do:
+              - op: modify
+                selector: { kind: field, by: path, value: 'WeaponDescriptor_${carrier}.${edit.at}' }
+                value: { $raw: '${edit.value}' }
+          - op: modify
+            selector:
+              { kind: field, by: path, value: 'WeaponDescriptor_${carrier}.TurretDescriptorList' }
+            value:
+              $raw: |-
+                [
+                    TTurretBombardierDescriptor
+                    (
+                        MountedWeaponDescriptorList =
+                        [
+                            TMountedWeaponDescriptor
+                            (
+                                AmmoBoxIndex = 0
+                                Ammunition = $/GFX/Weapon/Ammo_${carrier}
+                                Name = "${carrierIndex == 0 ? 'YNWNUKE' : 'YNWNUKE2'}"
+                                Caliber = "${carrierIndex == 0 ? 'YNWCAL' : 'YNWCAL2'}"
+                                TypeCategoryName = "YNWTYPE"
+                                InterfaceWeaponTexture = "Texture_Interface_Weapon_FAB_500"
+                                TraitsToken = ["MOTION", "HE"]
+                                AnimateOnlyOneSoldier = True
+                                DispersionRadiusOffColor = RGBA[0,0,0,0]
+                                DispersionRadiusOffThickness = -0.1
+                                DispersionRadiusOnColor = RGBA[0,0,0,0]
+                                DispersionRadiusOnThickness = -0.1
+                                EffectTag = "FireEffect_Bomb_FAB_500kg_x9"
+                                HandheldEquipmentKey = "WeaponAlternative_2"
+                                NbWeapons = 1
+                                ShowDispersion = False
+                                WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_2"
+                                WeaponIgnoredPropertyName = "WeaponIgnored_2"
+                                WeaponShootDataPropertyName =
+                                [
+                                    "WeaponShootData_0_2",
+                                ]
+                            ),
+                        ]
+                        Tag = "tourelle2"
+                        YulBoneOrdinal = 2
+                    ),
+                ]
+  - file: GameData/Generated/Gameplay/TacticalUnits.ndf
+    operations:
+      - op: copy
+        leadingComment: '${commentDirectives.forceInclude}'
+        selector: { kind: object, by: name, value: '${nukeUnitSourceDescriptorName}' }
+        destination: { name: 'Descriptor_Unit_YN_Nuke' }
+      - forEach:
+          - { at: 'DescriptorId', value: 'GUID:{4a60ddeb-d9a6-4bfb-9ea4-9a0c94df15a1}' }
+          - { at: 'ClassNameForDebug', value: "'Unit_YN_Nuke'" }
+          - at: 'ModulesDescriptors.[TTypeUnitModuleDescriptor].MotherCountry'
+            value: "'${modTag}'"
+        as: edit
+        do:
+          - op: modify
+            selector: { kind: field, by: path, value: 'Descriptor_Unit_YN_Nuke.${edit.at}' }
+            value:
+              $raw: ${edit.value}
+      - op: add
+        selector:
+          {
+            kind: collection,
+            by: path,
+            value: 'Descriptor_Unit_YN_Nuke.ModulesDescriptors.[TTagsModuleDescriptor].TagSet',
+          }
+        position: { mode: before, anchor: '"Unite"' }
+        value:
+          $raw: '"UNITE_YN_Nuke",'
+      - op: remove
+        selector:
+          {
+            kind: field,
+            by: path,
+            value: 'Descriptor_Unit_YN_Nuke.ModulesDescriptors.[value=$/GFX/Weapon/WeaponDescriptor_Tu_22_HE_SOV]',
+          }
+      - op: add
+        selector:
+          { kind: collection, by: path, value: 'Descriptor_Unit_YN_Nuke.ModulesDescriptors' }
+        position: { mode: before, anchor: 'TBaseDamageModuleDescriptor' }
+        value:
+          $raw: '$/GFX/Weapon/WeaponDescriptor_YN_Nuke,'
+      - op: modify
+        selector:
+          {
+            kind: field,
+            by: path,
+            value: 'Descriptor_Unit_YN_Nuke.ModulesDescriptors.[TProductionModuleDescriptor].ProductionRessourcesNeeded',
+          }
+        value:
+          $raw: |-
+            MAP [
+                ($/GFX/Resources/Resource_CommandPoints, ${round(5000 * multipliers.cost * nukeCostMultiplier)}),
+                ($/GFX/Resources/Resource_Tickets, 10),
+            ]
+      - op: modify
+        selector:
+          {
+            kind: field,
+            by: path,
+            value: 'Descriptor_Unit_YN_Nuke.ModulesDescriptors.[TStrategicDataModuleDescriptor].UnitAttackValue',
+          }
+        value: 999
+      - op: modify
+        selector:
+          {
+            kind: field,
+            by: path,
+            value: 'Descriptor_Unit_YN_Nuke.ModulesDescriptors.[TStrategicDataModuleDescriptor].UnitDefenseValue',
+          }
+        value: 450
+      - op: modify
+        selector:
+          {
+            kind: field,
+            by: path,
+            value: 'Descriptor_Unit_YN_Nuke.ModulesDescriptors.[TUnitUIModuleDescriptor].NameToken',
+          }
+        value:
+          $raw: "'YNNUKE'"
+      - op: remove
+        selector:
+          {
+            kind: field,
+            by: path,
+            value: 'Descriptor_Unit_YN_Nuke.ModulesDescriptors.[TUnitUIModuleDescriptor].UpgradeFromUnit',
+          }
+      - op: modify
+        selector:
+          {
+            kind: field,
+            by: path,
+            value: 'Descriptor_Unit_YN_Nuke.ModulesDescriptors.[TAirplaneModuleDescriptor].TravelDuration',
+          }
+        value:
+          $raw: '33'
+      - op: copy
+        leadingComment: '${commentDirectives.forceInclude}'
+        selector: { kind: object, by: name, value: '${nukeUnitSourceDescriptorName}' }
+        destination: { name: 'Descriptor_Unit_YN_Nuke_X2' }
+      - forEach:
+          - { at: 'DescriptorId', value: 'GUID:{54c88e1b-8db2-4549-9326-ebd3854c0259}' }
+          - { at: 'ClassNameForDebug', value: "'Unit_YN_Nuke_X2'" }
+          - at: 'ModulesDescriptors.[TTypeUnitModuleDescriptor].MotherCountry'
+            value: "'${modTag}'"
+        as: edit
+        do:
+          - op: modify
+            selector: { kind: field, by: path, value: 'Descriptor_Unit_YN_Nuke_X2.${edit.at}' }
+            value:
+              $raw: ${edit.value}
+      - op: add
+        selector:
+          {
+            kind: collection,
+            by: path,
+            value: 'Descriptor_Unit_YN_Nuke_X2.ModulesDescriptors.[TTagsModuleDescriptor].TagSet',
+          }
+        position: { mode: before, anchor: '"Unite"' }
+        value:
+          $raw: '"UNITE_YN_Nuke_X2",'
+      - op: remove
+        selector:
+          {
+            kind: field,
+            by: path,
+            value: 'Descriptor_Unit_YN_Nuke_X2.ModulesDescriptors.[value=$/GFX/Weapon/WeaponDescriptor_Tu_22_HE_SOV]',
+          }
+      - op: add
+        selector:
+          { kind: collection, by: path, value: 'Descriptor_Unit_YN_Nuke_X2.ModulesDescriptors' }
+        position: { mode: before, anchor: 'TBaseDamageModuleDescriptor' }
+        value:
+          $raw: '$/GFX/Weapon/WeaponDescriptor_YN_Nuke_X2,'
+      - op: modify
+        selector:
+          {
+            kind: field,
+            by: path,
+            value: 'Descriptor_Unit_YN_Nuke_X2.ModulesDescriptors.[TProductionModuleDescriptor].ProductionRessourcesNeeded',
+          }
+        value:
+          $raw: |-
+            MAP [
+                ($/GFX/Resources/Resource_CommandPoints, ${round(10000 * multipliers.cost * nukeCostMultiplier)}),
+                ($/GFX/Resources/Resource_Tickets, 10),
+            ]
+      - op: modify
+        selector:
+          {
+            kind: field,
+            by: path,
+            value: 'Descriptor_Unit_YN_Nuke_X2.ModulesDescriptors.[TStrategicDataModuleDescriptor].UnitAttackValue',
+          }
+        value: 999
+      - op: modify
+        selector:
+          {
+            kind: field,
+            by: path,
+            value: 'Descriptor_Unit_YN_Nuke_X2.ModulesDescriptors.[TStrategicDataModuleDescriptor].UnitDefenseValue',
+          }
+        value: 450
+      - op: modify
+        selector:
+          {
+            kind: field,
+            by: path,
+            value: 'Descriptor_Unit_YN_Nuke_X2.ModulesDescriptors.[TUnitUIModuleDescriptor].NameToken',
+          }
+        value:
+          $raw: "'YNNUKE2'"
+      - op: remove
+        selector:
+          {
+            kind: field,
+            by: path,
+            value: 'Descriptor_Unit_YN_Nuke_X2.ModulesDescriptors.[TUnitUIModuleDescriptor].UpgradeFromUnit',
+          }
+      - op: modify
+        selector:
+          {
+            kind: field,
+            by: path,
+            value: 'Descriptor_Unit_YN_Nuke_X2.ModulesDescriptors.[TAirplaneModuleDescriptor].TravelDuration',
+          }
+        value:
+          $raw: '33'
+      - op: modify
+        selector:
+          {
+            kind: field,
+            by: path,
+            value: 'Descriptor_Unit_YN_Nuke.ModulesDescriptors.[TUnitUIModuleDescriptor].ButtonTexture',
+          }
+        value:
+          $raw: "'Texture_Button_Unit_YN_Nuke'"
+      - op: modify
+        selector:
+          {
+            kind: field,
+            by: path,
+            value: 'Descriptor_Unit_YN_Nuke_X2.ModulesDescriptors.[TUnitUIModuleDescriptor].ButtonTexture',
+          }
+        value:
+          $raw: "'Texture_Button_Unit_YN_Nuke_X2'"
+  - file: GameData/Generated/UserInterface/Textures/ButtonTexturesUnites.ndf
+    operations:
+      - op: add
+        selector: { kind: collection, by: path, value: 'UnitButtonTextureAdditionalBank.Textures' }
+        value:
+          $raw: |-
+            ("Texture_Button_Unit_YN_Nuke", MAP [( ~/ComponentState/Normal, TUIResourceTexture( FileName = "GameData:/Assets/2D/Interface/Common/UnitsIcons/NATO/yn-nuke.png"))]),
+            ("Texture_Button_Unit_YN_Nuke_X2", MAP [( ~/ComponentState/Normal, TUIResourceTexture( FileName = "GameData:/Assets/2D/Interface/Common/UnitsIcons/NATO/yn-nuke-x2.png"))]),
+scripts:
+  - path: build.ts

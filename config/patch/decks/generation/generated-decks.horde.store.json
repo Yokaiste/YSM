@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "nextDivisionNameToken": 69,
+  "nextDeckNameToken": 69,
+  "divisions": {
+    "YSM_ZOMBIE_HORDE_BLUE_UNLIMITED": {
+      "guid": "4a7cf454-3fec-4300-af97-bdaf2617cfd7",
+      "divisionNameToken": "YD00000067",
+      "deckNameToken": "YK00000067"
+    },
+    "YSM_ZOMBIE_HORDE_RED_UNLIMITED": {
+      "guid": "b63c09ec-7fd9-4d3c-839c-10e4c1ad83d1",
+      "divisionNameToken": "YD00000068",
+      "deckNameToken": "YK00000068"
+    }
+  },
+  "serializer": {
+    "nextDivisionId": 1668,
+    "nextUnitId": 16017,
+    "divisionIds": {
+      "Descriptor_Deck_Division_YSM_ZOMBIE_HORDE_BLUE_UNLIMITED": 1666,
+      "Descriptor_Deck_Division_YSM_ZOMBIE_HORDE_RED_UNLIMITED": 1667
+    },
+    "unitIds": {}
+  }
+}

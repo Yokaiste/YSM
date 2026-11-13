@@ -1,0 +1,25 @@
+{{MOD}} mod project
+
+To play the published mod, use its Steam Workshop page. This package is for
+building a local version with YMB.
+
+Manual setup:
+  1. Install YMB in a WARNO mod folder created with CreateNewMod.bat.
+  2. Extract this archive so YMB/mods/{{MOD}}/config/ymb.mod.yaml exists.
+  3. Open YMB/YMB.bat and run list to check discovery.
+  4. Read GUIDE.md beside this file for preview, apply, compile, and settings.
+
+The Auto Deploy installer performs the download and placement steps for you.
+Keep local settings in YMB/ymb.config.yaml; installer updates replace the
+downloaded config folder and preserve saved-deck *.store.json identities.
+
+Contents:
+  config/     editable settings, patches, scripts, and assets
+  GUIDE.md    install, customize, and build
+  AGENTS.md   instructions for an AI working on this mod
+  LICENSE     this project's terms
+  NOTICE      attribution
+
+Full project and history: https://github.com/{{REPOSITORY}}
+Packaged commit: {{COMMIT}}
+Package date: {{DATE}}

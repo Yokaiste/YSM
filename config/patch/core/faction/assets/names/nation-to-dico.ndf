@@ -1,0 +1,7 @@
+// Ne pas editer, ce fichier est gere par YSM.
+
+unnamed TUnitNameNationToDicoToken
+(
+    Nation = "${modTag}"
+    DicoToken = "NAMES_${modTag}"
+)

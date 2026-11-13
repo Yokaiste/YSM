@@ -1,0 +1,77 @@
+Yokaiste's Sandbox Mod 2.8
+
+[b]Break the limits. Build the battle you want.[/b]
+
+Pick a country, coalition, or all-unit division. Field an enormous army, try a ready-made deck, or fight Zombie Horde. YSM gives Skirmish and Multiplayer battles more room to get out of hand.
+
+[img]https://raw.githubusercontent.com/Yokaiste/YSM/master/publish/headers/divisions.jpg[/img]
+
+[h2]Unlimited[/h2]
+999 units per card, with the same reserves at higher veterancy. Country, coalition, and all-unit divisions let you assemble combinations the standard rosters leave out. Great for experiments. Also great for discovering how many tanks your PC considers unreasonable.
+
+[h2]Balanced[/h2]
+Broad rosters with tighter reserves. Dynamic divisions use unit-specific availability drawn from standard divisions. Static divisions give every unit the same count at a given veterancy, with fewer at higher veterancy.
+
+Balanced changes availability. Sandbox units remain available, so agree on house rules before somebody calls their nuclear bomber "close support."
+
+Ready-made decks get you into a match quickly. The expanded armory and deck creator give you room to make your own.
+
+[img]https://raw.githubusercontent.com/Yokaiste/YSM/master/publish/headers/zombies.jpg[/img]
+
+Pick the dedicated Zombie Horde division and field seven undead roles: Swarm, Breaker, Screecher, Stalker, Smoker, Pack Leader, and Demolisher. Or bring a conventional army and try to keep them out. Your front line is also their lunch.
+
+[img]https://raw.githubusercontent.com/Yokaiste/YSM/master/publish/headers/sandbox.jpg[/img]
+
+Keep an enormous army supplied, fortify a position, or reach for something wildly unfair:
+[list]
+[*]Supply helicopters, trucks, and amphibious vehicles carry [b]2,000,000 supply[/b] each.
+[*]Resupply posts, hardened bunkers, and a missile-equipped doomsday base turn a patch of ground into a stronghold.
+[*]The [b]Illegal Cannon[/b] and [b]Illegal Recon[/b] give you cheat units to experiment with.
+[*][b]Two nuclear bombers[/b] handle the problems you have stopped being reasonable about.
+[/list]
+
+[img]https://raw.githubusercontent.com/Yokaiste/YSM/master/publish/headers/battles.jpg[/img]
+
+[list]
+[*][b]80 deck slots per category[/b]
+[*]Starting resources and destruction targets up to [b]2,000,000[/b]
+[*]Income and upkeep up to [b]x99[/b], plus more time-limit choices
+[*][b]297 aircraft slots[/b], with a scrolling aircraft panel
+[/list]
+Your frame rate may want a word about that last one.
+
+[img]https://raw.githubusercontent.com/Yokaiste/YSM/master/publish/headers/interface.jpg[/img]
+
+Ground explosions can catch aircraft and helicopters in their blast radius.
+
+A charcoal HUD and revised resource, selection, minimap, offmap, and chat panels help you manage the larger battles.
+
+[img]https://raw.githubusercontent.com/Yokaiste/YSM/master/publish/headers/compatibility.jpg[/img]
+
+[url=https://github.com/dary1337/yuri-warno-toolkit]Yuri's WARNO Toolkit[/url] lets you combine YSM's features with a mod you already play. You can also add [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3387658237]WARNO Tactical Overhaul[/url] for different ranges, movement, and weapon behavior.
+
+Compatibility depends on the mods you choose. Visit the [url=https://discord.gg/33Sqn6dTjf]YSM Community[/url] for help with combinations.
+
+[img]https://raw.githubusercontent.com/Yokaiste/YSM/master/publish/headers/play.jpg[/img]
+
+[olist]
+[*]Subscribe and let Steam finish downloading.
+[*]Activate YSM in WARNO's Mod Center.
+[*]Choose a ready-made deck or build your own, then start a Skirmish or Multiplayer match.
+[/olist]
+Use matching mod builds for multiplayer. Mods that edit the same gameplay or interface files can conflict when enabled separately; use a supported combined build. Map-only mods may work alongside YSM, depending on their changes.
+
+[h2]Flags for your chat[/h2]
+Add YSM emblems to chat messages and nicknames with these tokens:
+[list]
+[*][b]#YSM[/b] or [b]#YSM_FLAG[/b]
+[*][b]#YSM_DIVISION_NATO[/b] or [b]#YSM_DIVISION_PACT[/b]
+[*][b]#YSM_DIVISION_NATO_BALANCED[/b] or [b]#YSM_DIVISION_PACT_BALANCED[/b]
+[/list]
+
+Share your battles, ask questions, and bring feedback or bug reports to [url=https://discord.gg/33Sqn6dTjf]YSM Community Discord[/url]. Use its troubleshooting forum when something breaks.
+
+YSM is by Yokaiste. Built with [url=https://github.com/Yokaiste/YMB]Yokaiste's Mod Builder[/url]. [url=https://github.com/Yokaiste/YSM]Source code[/url].
+
+[h2]Enjoying the chaos?[/h2]
+Give YSM a [b]thumbs-up[/b] and add it to your [b]favorites[/b] here on the Workshop.

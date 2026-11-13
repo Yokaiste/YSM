@@ -1,0 +1,45 @@
+version: 1
+id: 'ysm.ui.welcome-screen'
+name: 'YSM Welcome Screen'
+description: 'Show the mod title, author, and useful links on the main menu.'
+enabled: true
+scope: 'prod'
+dependsOn: []
+scripts:
+  - path: 'generate-welcome-screen.ts'
+    tests:
+      - 'generate-welcome-screen.test.ts'
+      - 'qr-code.test.ts'
+      - 'png.test.ts'
+targets:
+  # Register the texture used by each link button.
+  - file: 'GameData/UserInterface/Use/Common/CommonTextures.ndf'
+    operations:
+      - forEach: ${links}
+        as: link
+        do:
+          - op: 'add'
+            position: { mode: 'after', anchor: 'TextureMapTaille4v4' }
+            value:
+              $raw: |-
+                Texture${modTag}_QR${linkIndex + 1} is TUIResourceTexture(FileName = 'GameData:/Assets/2D/Interface/Common/y-qr-${linkIndex + 1}.png')
+          - op: 'add'
+            selector:
+              kind: 'collection'
+              by: 'path'
+              value: 'CommonTexture_AdditionalTextureBank.Textures'
+            value:
+              $raw: |-
+                ("Texture${modTag}_QR${linkIndex + 1}", MAP [ (~/ComponentState/Normal, ~/Texture${modTag}_QR${linkIndex + 1}), ] ),
+variables:
+  author: 'Yokaiste'
+  modVersion: '2.8'
+  links:
+    - name: 'Steam Workshop'
+      url: 't.ly/87TI3'
+    - name: 'YSM Community'
+      url: 't.ly/ZRnSO'
+    - name: 'Deck tools | YSM x ANY MOD'
+      url: 't.ly/Nk20O'
+    - name: "Yokaiste's Mod Builder"
+      url: 't.ly/NIJ0e'

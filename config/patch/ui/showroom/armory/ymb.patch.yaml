@@ -1,0 +1,21 @@
+version: 1
+id: 'ysm.ui.showroom.armory'
+name: 'YSM Armory'
+description: 'Let the armory use the full YSM deck capacity in each category.'
+enabled: true
+scope: 'prod'
+optional: true
+dependsOn: []
+targets:
+  - file: 'GameData/UserInterface/Use/ShowRoom/Views/UISpecificShowRoomArmoryComponent.ndf'
+    operations:
+      - op: 'remove'
+        selector:
+          kind: 'object'
+          by: 'name'
+          value: 'MaxUnitsInDeckPerCategory'
+      - op: 'add'
+        position: { mode: 'after', anchor: 'ArmoryUnitButtonRadioManager' }
+        value:
+          $raw: |-
+            MaxUnitsInDeckPerCategory is ${deckSlotCount}

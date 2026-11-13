@@ -1,0 +1,16 @@
+unnamed TResourcePackLoader
+(
+    Packs =
+    [
+        TResourceDescriptorMeshPack
+        (
+            PackName = "Base"
+            PackRelativePath = "MeshPack/${modRootName}/Mesh_All.spk"
+        ),
+        TResourceDescriptorProxyPack
+        (
+            PackName = "Base"
+            PackRelativePath = "TextureProxy/${modRootName}/Mesh_All.ndfbin"
+        ),
+    ]
+)
