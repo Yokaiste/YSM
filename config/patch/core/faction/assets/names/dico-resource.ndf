@@ -1,0 +1,7 @@
+// Ne pas editer, ce fichier est gere par YSM.
+
+unnamed TLocalisationDicoResource
+(
+    DicoToken = "NAMES_${modTag}"
+    FileName = "GameData:/Gameplay/Unit/Names/NAMES_${modTag}.csv"
+)

@@ -1,0 +1,12 @@
+version: 2
+id: ysm.compatibility.specialties
+name: Missing specialty vocabulary
+description: Restore missing vanilla specialty entries referenced by YSM units.
+scope: prod
+# Intentional no-op when the selected base supplies the required entries.
+generators:
+  - id: specialties
+    root: mod
+    project: generator/Cargo.toml
+    binary: ysm
+    entry: specialties

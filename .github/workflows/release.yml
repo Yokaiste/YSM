@@ -1,0 +1,126 @@
+name: Check and release a mod
+
+on:
+  pull_request:
+  push:
+    branches: ['**']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: mod-releases-${{ github.repository }}
+  queue: max
+
+env:
+  YMB_PROJECT: "YSM"
+
+jobs:
+  package:
+    outputs:
+      publish: ${{ steps.builder.outputs.publish }}
+    runs-on: windows-latest
+    timeout-minutes: 30
+    defaults:
+      run:
+        shell: pwsh
+        working-directory: YMB
+    steps:
+      - name: Check the project name
+        working-directory: .
+        run: |
+          if ($env:YMB_PROJECT -cnotmatch '^[A-Za-z0-9][A-Za-z0-9_.-]*$') { throw 'Invalid project name.' }
+
+      - uses: actions/checkout@v7.0.1
+        with:
+          path: YMB/mods/YSM
+          persist-credentials: false
+
+      - name: Install the YAML reader
+        working-directory: .
+        run: Install-Module powershell-yaml -RequiredVersion 0.4.12 -Scope CurrentUser -Repository PSGallery -Force
+
+      - name: Get the portable builder and SDK
+        id: builder
+        working-directory: .
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          $project = Join-Path $pwd "YMB/mods/$env:YMB_PROJECT"
+          . "$project/.github/scripts/releases.ps1"
+          $config = Get-ModReleaseConfig $project
+          $publish = $false
+          if ($env:GITHUB_EVENT_NAME -ne 'pull_request' -and (Get-ReleaseBranch $env:GITHUB_REF_NAME $config)) {
+            $plan = @(Get-RepositoryModReleasePlan $env:GITHUB_REPOSITORY $config)
+            $release = $plan | Where-Object branch -CEQ $env:GITHUB_REF_NAME
+            if ($release) {
+              if ($release.sha -cne $env:GITHUB_SHA) { throw 'The release branch changed. Run the workflow again.' }
+              Set-ModReleaseChannel $project $env:GITHUB_REPOSITORY $release.tag ($release.latest -and -not $config.draft)
+              $publish = $true
+            }
+          }
+          "publish=$($publish.ToString().ToLowerInvariant())" >> $env:GITHUB_OUTPUT
+          $projects = @(Get-ModProjects $project (Join-Path $env:RUNNER_TEMP 'mod-dependencies'))
+          $builderArchive = Get-CompatibleBuilder $projects (Join-Path $pwd 'YMB') $env:RUNNER_TEMP
+          & "$project/.github/scripts/test-releases.ps1" -BuilderArchive $builderArchive
+          foreach ($manifest in @(Get-ChildItem -LiteralPath "YMB/mods" -Recurse -Filter Cargo.toml -File | Where-Object FullName -NotMatch '[\\/]target[\\/]')) {
+            $source = [IO.File]::ReadAllText($manifest.FullName).Replace('../../../../src/sdk','../../../../sdk/src/sdk')
+            [IO.File]::WriteAllText($manifest.FullName, $source, [Text.UTF8Encoding]::new($false))
+          }
+
+      - name: Select the stable compiler
+        run: rustup update stable --no-self-update
+
+      - name: Format, lint and test
+        run: |
+          $manifests = @(Get-ChildItem -LiteralPath mods -Recurse -Filter Cargo.toml -File | Where-Object FullName -NotMatch '[\\/]target[\\/]')
+          foreach ($manifest in $manifests) {
+            cargo +stable fmt --manifest-path $manifest.FullName --check
+            if ($LASTEXITCODE) { exit $LASTEXITCODE }
+            cargo +stable clippy --manifest-path $manifest.FullName --all-targets --locked -- -D warnings
+            if ($LASTEXITCODE) { exit $LASTEXITCODE }
+            cargo +stable test --manifest-path $manifest.FullName --locked
+            if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          }
+
+      - name: Prepare and verify portable artifacts
+        run: |
+          .\YMB.exe release --ymb-path $pwd --json
+          exit $LASTEXITCODE
+
+      - uses: actions/upload-artifact@v7.0.2
+        with:
+          name: "YSM-portable-${{ github.sha }}"
+          if-no-files-found: error
+          path: YMB/mods/YSM/config/dist/**
+
+  publish:
+    if: needs.package.result == 'success' && needs.package.outputs.publish == 'true'
+    needs: package
+    runs-on: windows-latest
+    permissions:
+      actions: read
+      contents: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Install the YAML reader
+        shell: pwsh
+        run: Install-Module powershell-yaml -RequiredVersion 0.4.12 -Scope CurrentUser -Repository PSGallery -Force
+
+      - name: Download the checked artifacts
+        shell: pwsh
+        run: |
+          gh run download $env:GITHUB_RUN_ID --repo $env:GITHUB_REPOSITORY --name "$env:YMB_PROJECT-portable-$env:GITHUB_SHA" --dir dist
+          if ($LASTEXITCODE) { throw 'Could not download checked artifacts.' }
+
+      - name: Publish the checked commit
+        shell: pwsh
+        run: |
+          . .github/scripts/releases.ps1
+          Publish-ModRelease -Project $pwd -Name $env:YMB_PROJECT -Directory (Join-Path $pwd 'dist') -Repository $env:GITHUB_REPOSITORY -Branch $env:GITHUB_REF_NAME -Sha $env:GITHUB_SHA
