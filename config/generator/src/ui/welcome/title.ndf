@@ -1,0 +1,32 @@
+BUCKTextDescriptor
+(
+    ElementName = "MainMenuTitle@tag@"
+    ComponentFrame = TUIFramePropertyRTTI
+    (
+        AlignementToAnchor = [0.5, 0.0]
+        AlignementToFather = [0.5, 0.0]
+    )
+    ParagraphStyle = TParagraphStyle
+    (
+        VerticalAlignment = ~/UIText_VerticalCenter
+        Alignment = ~/UIText_Center
+    )
+    HorizontalFitStyle = ~/FitStyle/FitToContent
+    VerticalFitStyle = ~/FitStyle/FitToContent
+    BigLineAction = ~/BigLineAction/MultiLine
+    TextColor = "ListeExcel/Cartouche"
+    TextSize  = "42"
+    TextStyle = "Default"
+    TypefaceToken = "UIMainFont"
+    TextDico = ~/LocalisationConstantes/dico_interface_outgame
+    TextToken = "@tag@TIT"
+    TextPadding = TRTTILength4(Magnifiable = [0.0, 0.0, 0.0, 8.0])
+    Components =
+    [
+        BUCKSpecificHintableArea
+        (
+            HintTitleToken = "@tag@MT"
+            DicoToken = ~/LocalisationConstantes/dico_interface_outgame
+        ),
+    ]
+)

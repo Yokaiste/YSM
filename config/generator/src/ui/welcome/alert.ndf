@@ -1,0 +1,169 @@
+BUCKTranslationAnimatedContainerDescriptor
+(
+    ElementName = "MainMenuAlert@tag@"
+    ButtonNameForTrigger = "MainMenuAlertClose@tag@"
+    FramePropertyBeforeAnimation = TUIFramePropertyRTTI
+    (
+        MagnifiableOffset = [0.0, 0.0]
+        AlignementToAnchor = [0.5, 0.5]
+        AlignementToFather = [0.5, 0.5]
+    )
+    AnimationTotalDuration = 0.20
+    FramePropertyAfterAnimation = TUIFramePropertyRTTI
+    (
+        MagnifiableOffset = [0.0, -900.0]
+        AlignementToAnchor = [0.5, 0.5]
+        AlignementToFather = [0.5, 0.5]
+    )
+    Components =
+    [
+        BUCKContainerDescriptor
+        (
+            ElementName = "MainMenuAlertPanel@tag@"
+            ComponentFrame = TUIFramePropertyRTTI
+            (
+                MagnifiableWidthHeight = [300.0, 0.0]
+                AlignementToAnchor = [0.5, 0.5]
+                AlignementToFather = [0.5, 0.5]
+            )
+            FitStyle = ~/ContainerFitStyle/MaxBetweenUserDefinedAndContent
+            HasBackground = true
+            BackgroundBlockColorToken = "DarkestGray"
+            HasBorder = true
+            BorderLineColorToken = "VertLogin"
+            BorderThicknessToken = "3"
+            Components =
+            [
+                BUCKButtonDescriptor
+                (
+                    ElementName = "MainMenuAlertPanelBlocker@tag@"
+                    ComponentFrame = TUIFramePropertyRTTI
+                    (
+                        RelativeWidthHeight = [1.0, 1.0]
+                    )
+                    HasBackground = false
+                    HasBorder = false
+                ),
+                BUCKListDescriptor
+                (
+                    ElementName = "MainMenuAlertContent@tag@"
+                    ComponentFrame = TUIFramePropertyRTTI
+                    (
+                        AlignementToAnchor = [0.5, 0.0]
+                        AlignementToFather = [0.5, 0.0]
+                    )
+                    Axis = ~/ListAxis/Vertical
+                    BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
+                    ChildFitToContent = true
+                    FirstMargin = TRTTILength(Magnifiable = 30.0)
+                    LastMargin = TRTTILength(Magnifiable = 30.0)
+                    Elements =
+                    [
+                        BUCKListElementDescriptor
+                        (
+                            ComponentDescriptor = BUCKTextDescriptor
+                            (
+                                ElementName = "MainMenuAlertTitle@tag@"
+                                ComponentFrame = TUIFramePropertyRTTI
+                                (
+                                    AlignementToAnchor = [0.5, 0.0]
+                                    AlignementToFather = [0.5, 0.0]
+                                )
+                                ParagraphStyle = TParagraphStyle
+                                (
+                                    VerticalAlignment = ~/UIText_VerticalCenter
+                                    Alignment = ~/UIText_Center
+                                )
+                                HorizontalFitStyle = ~/FitStyle/FitToContent
+                                VerticalFitStyle = ~/FitStyle/FitToContent
+                                BigLineAction = ~/BigLineAction/MultiLine
+                                TextStyle = "Default"
+                                TypefaceToken = "UIMainFont"
+                                TextColor = "loginBlanc"
+                                TextSize = "28"
+                                TextDico = ~/LocalisationConstantes/dico_interface_outgame
+                                TextToken = "@tag@ALT"
+                                TextFormatScript = nil
+                                TextPadding = TRTTILength4(Magnifiable = [40.0, 0.0, 40.0, 18.0])
+                            )
+                        ),
+                        BUCKListElementDescriptor
+                        (
+                            ComponentDescriptor = BUCKTextDescriptor
+                            (
+                                ElementName = "MainMenuAlertBody@tag@"
+                                ComponentFrame = TUIFramePropertyRTTI
+                                (
+                                    AlignementToAnchor = [0.5, 0.0]
+                                    AlignementToFather = [0.5, 0.0]
+                                )
+                                ParagraphStyle = TParagraphStyle
+                                (
+                                    VerticalAlignment = ~/UIText_VerticalCenter
+                                    Alignment = ~/UIText_Left
+                                )
+                                HorizontalFitStyle = ~/FitStyle/FitToContent
+                                VerticalFitStyle = ~/FitStyle/FitToContent
+                                BigLineAction = ~/BigLineAction/MultiLine
+                                TextStyle = "Default"
+                                TypefaceToken = "UIMainFont"
+                                TextColor = "loginBlanc"
+                                TextSize = "18"
+                                TextDico = ~/LocalisationConstantes/dico_interface_outgame
+                                TextToken = "@tag@ALB"
+                                TextFormatScript = nil
+                                TextPadding = TRTTILength4(Magnifiable = [40.0, 0.0, 40.0, 30.0])
+                            )
+                        ),
+                        BUCKListElementDescriptor
+                        (
+                            ComponentDescriptor = BUCKButtonDescriptor
+                            (
+                                ElementName = "MainMenuAlertClose@tag@"
+                                ComponentFrame = TUIFramePropertyRTTI
+                                (
+                                    AlignementToAnchor = [0.5, 0.0]
+                                    AlignementToFather = [0.5, 0.0]
+                                )
+                                FitStyle = ~/ContainerFitStyle/FitToContent
+                                IsTogglable = true
+                                DefaultToggleValue = false
+                                CannotDeselect = false
+                                HasBorder = true
+                                BorderLineColorToken = "VertLogin"
+                                BorderThicknessToken = "3"
+                                HasBackground = true
+                                BackgroundBlockColorToken = "loginBoutonBackground_vert"
+                                LeftClickSound = SoundEvent_EnterMods
+                                Components =
+                                [
+                                    BUCKTextDescriptor
+                                    (
+                                        ElementName = "MainMenuAlertCloseText@tag@"
+                                        ComponentFrame = TUIFramePropertyRTTI
+                                        (
+                                            AlignementToAnchor = [0.5, 0.5]
+                                            AlignementToFather = [0.5, 0.5]
+                                        )
+                                        ParagraphStyle = CenteredParagraphStyle
+                                        TextStyle = "Default"
+                                        HorizontalFitStyle = ~/FitStyle/FitToContent
+                                        VerticalFitStyle = ~/FitStyle/FitToContent
+                                        BigLineAction = ~/BigLineAction/MultiLine
+                                        TypefaceToken = "UISecondFont"
+                                        TextColor = "loginBlanc"
+                                        TextSize = "18"
+                                        TextDico = ~/LocalisationConstantes/dico_interface_outgame
+                                        TextToken = "@tag@ALC"
+                                        TextFormatScript = nil
+                                        TextPadding = TRTTILength4(Magnifiable = [90.0, 10.0, 90.0, 10.0])
+                                    ),
+                                ]
+                            )
+                        ),
+                    ]
+                ),
+            ]
+        ),
+    ]
+)

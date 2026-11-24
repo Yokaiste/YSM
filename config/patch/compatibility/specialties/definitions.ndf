@@ -1,0 +1,24 @@
+Fallback is TUnitSpecialtiesContainer(Descriptors = MAP [
+(
+            "_singint",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_singint"
+                SpecialtyHintTitleToken    = "NWRIKXJLND"
+                SpecialtyHintBodyToken     = "BERHQPQPHU"
+                SpecialtyHintExtendedToken = "OAQYKODKFQ"
+                ShowAsFilterInShowroom = True
+            )
+        ),
+(
+            "_jammer",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_jammer"
+                SpecialtyHintTitleToken    = "HNVPJAYHUW"
+                SpecialtyHintBodyToken     = "ALBKAPAUKL"
+                SpecialtyHintExtendedToken = "OMRDTDBYQW"
+                ShowAsFilterInShowroom = True
+            )
+        ),
+])
