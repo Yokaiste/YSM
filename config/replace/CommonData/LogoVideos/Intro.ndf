@@ -1,0 +1,1 @@
+CurrentVideoLogo is template_VideoLogo(VideoFile = 'GameData:/Assets/Videos/Logo/YSM.webm' SubtitleComponent = nil)

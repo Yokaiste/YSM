@@ -1,0 +1,13 @@
+{
+  "title": "{{version}}",
+  "description": "{{modName}}\n\n{{modDescription}}\n\n{{instructions}}\n\nUse [YMB](https://github.com/Yokaiste/YMB) to customize the project. See the [documentation](https://github.com/Yokaiste/YMB/blob/master/docs/README.md), read the included licenses before sharing, and ask the [YSM community](https://discord.gg/33Sqn6dTjf) for help.\n\n{{checksums}}",
+  "assets": ["*-config.zip", "Deploy-*.exe", "THIRD_PARTY_NOTICES.md", "rust-standard-library.html"],
+  "draft": false,
+  "generateNotes": false,
+  "discussionCategory": "",
+  "managedTags": "^(?:stable|preview)$",
+  "branches": [
+    { "name": "master", "tag": "stable", "prerelease": false, "latest": true },
+    { "name": "dev", "tag": "preview", "prerelease": true, "latest": false }
+  ]
+}

@@ -1,0 +1,45 @@
+BUCKButtonDescriptor
+(
+    ElementName = "MainMenuLink@number@@tag@"
+    ComponentFrame = TUIFramePropertyRTTI()
+    FitStyle = ~/ContainerFitStyle/FitToContent
+    IsTogglable = true
+    DefaultToggleValue = false
+    CannotDeselect = false
+    HasBorder = true
+    BorderLineColorToken = "VertLogin"
+    BorderThicknessToken = "3"
+    HasBackground = true
+    BackgroundBlockColorToken = "loginBoutonBackground_vert"
+    LeftClickSound = SoundEvent_EnterMods
+    Components =
+    [
+        BUCKTextDescriptor
+        (
+            ElementName = "MainMenuLinkText@number@@tag@"
+            ComponentFrame = TUIFramePropertyRTTI
+            (
+                AlignementToAnchor = [0.5, 0.5]
+                AlignementToFather = [0.5, 0.5]
+            )
+            ParagraphStyle = CenteredParagraphStyle
+            TextStyle = "TextStyleEcranMoniteur"
+            HorizontalFitStyle = ~/FitStyle/FitToContent
+            VerticalFitStyle = ~/FitStyle/FitToContent
+            BigLineAction = ~/BigLineAction/MultiLine
+            TypefaceToken = "UISecondFont"
+            TextColor = "loginBlanc"
+            TextSize = "17"
+            TextDico = ~/LocalisationConstantes/dico_interface_outgame
+            TextToken = "@label@"
+            TextPadding = TRTTILength4(Magnifiable = [18.0, 6.0, 18.0, 6.0])
+        ),
+        BUCKSpecificHintableArea
+        (
+            ElementName = "MainMenuLinkHint@number@@tag@"
+            HintTitleToken = "@label@"
+            HintBodyToken = "@url@"
+            DicoToken = ~/LocalisationConstantes/dico_interface_outgame
+        ),
+    ]
+)

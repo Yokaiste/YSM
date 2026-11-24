@@ -1,0 +1,107 @@
+BUCKTranslationAnimatedContainerDescriptor
+(
+    ElementName = "MainMenuLinkReveal@number@@tag@"
+    ButtonNameForTrigger = "MainMenuLink@number@@tag@"
+    FramePropertyBeforeAnimation = TUIFramePropertyRTTI
+    (
+        MagnifiableOffset = [0.0, -1000.0]
+        AlignementToAnchor = [0.5, 0.0]
+        AlignementToFather = [0.5, 0.0]
+    )
+    AnimationTotalDuration = 0.15
+    FramePropertyAfterAnimation = TUIFramePropertyRTTI
+    (
+        MagnifiableOffset = [0.0, 8.0]
+        AlignementToAnchor = [0.5, 0.0]
+        AlignementToFather = [0.5, 0.0]
+    )
+    Components =
+    [
+        BUCKContainerDescriptor
+        (
+            ElementName = "MainMenuLinkRevealPanel@number@@tag@"
+            ComponentFrame = TUIFramePropertyRTTI
+            (
+                AlignementToAnchor = [0.5, 0.0]
+                AlignementToFather = [0.5, 0.0]
+            )
+            FitStyle = ~/ContainerFitStyle/FitToContent
+            HasBackground = true
+            BackgroundBlockColorToken = "Black80"
+            HasBorder = true
+            BorderLineColorToken = "VertLogin"
+            BorderThicknessToken = "2"
+            Components =
+            [
+                BUCKButtonDescriptor
+                (
+                    ElementName = "MainMenuLinkRevealBlocker@number@@tag@"
+                    ComponentFrame = TUIFramePropertyRTTI
+                    (
+                        RelativeWidthHeight = [1.0, 1.0]
+                    )
+                    HasBackground = false
+                    HasBorder = false
+                ),
+                BUCKListDescriptor
+                (
+                    ElementName = "MainMenuLinkRevealContent@number@@tag@"
+                    ComponentFrame = TUIFramePropertyRTTI
+                    (
+                        AlignementToAnchor = [0.5, 0.0]
+                        AlignementToFather = [0.5, 0.0]
+                    )
+                    Axis = ~/ListAxis/Vertical
+                    BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
+                    ChildFitToContent = true
+                    Elements =
+                    [
+                        BUCKListElementDescriptor
+                        (
+                            ComponentDescriptor = BUCKTextureDescriptor
+                            (
+                                ElementName = "MainMenuLinkRevealImage@number@@tag@"
+                                ComponentFrame = TUIFramePropertyRTTI
+                                (
+                                    AlignementToAnchor = [0.5, 0.0]
+                                    AlignementToFather = [0.5, 0.0]
+                                )
+                                TextureToken = "Texture@tag@_QR@number@"
+                                ResizeMode = ~/TextureResizeMode/FitToContent
+                                TextureFrame = TUIFramePropertyRTTI()
+                            )
+                        ),
+                        BUCKListElementDescriptor
+                        (
+                            ComponentDescriptor = BUCKTextDescriptor
+                            (
+                                ElementName = "MainMenuLinkRevealText@number@@tag@"
+                                ComponentFrame = TUIFramePropertyRTTI
+                                (
+                                    AlignementToAnchor = [0.5, 0.0]
+                                    AlignementToFather = [0.5, 0.0]
+                                )
+                                ParagraphStyle = TParagraphStyle
+                                (
+                                    VerticalAlignment = ~/UIText_VerticalCenter
+                                    Alignment = ~/UIText_Center
+                                )
+                                HorizontalFitStyle = ~/FitStyle/FitToContent
+                                VerticalFitStyle = ~/FitStyle/FitToContent
+                                BigLineAction = ~/BigLineAction/MultiLine
+                                TextStyle = "Default"
+                                TypefaceToken = "UIMainFont"
+                                TextColor = "loginBlanc"
+                                TextSize = "15"
+                                TextDico = ~/LocalisationConstantes/dico_interface_outgame
+                                TextToken = "@url@"
+                                TextFormatScript = nil
+                                TextPadding = TRTTILength4(Magnifiable = [16.0, 10.0, 16.0, 12.0])
+                            )
+                        ),
+                    ]
+                ),
+            ]
+        ),
+    ]
+)
